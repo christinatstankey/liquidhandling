@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medra — Reagent Handling Intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+<nav>
+  <div class="container inner">
+    <span class="wordmark">medra<span>.</span></span>
+    <ul>
+      <li><a href="index.html">Reagents</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <section class="hero container">
+    <p class="hero-thesis">
+      <strong>SDS tells you what's dangerous.</strong> Medra tells your robot
+      what to do about it — pre-wet cycles, reverse pipetting, LoBind tubes,
+      fume hoods — every rule cited.
+    </p>
+    <p class="hero-sub">CAS# → structured handling profile. Built for liquid handlers.</p>
+  </section>
+
+  <section class="grid-section container">
+    <h2>Reagent library</h2>
+    <div id="reagent-grid" class="reagent-grid">
+      <p class="loading">Loading reagents…</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    Medra — proof of work. Data sourced from manufacturer SDS sheets and published bench protocols.
+  </div>
+</footer>
+
+<script>
+/* GHS pictogram → display glyph mapping */
+const GHS_GLYPHS = {
+  flame:             { glyph: '🔥', cls: 'pic-flame' },
+  skull_crossbones:  { glyph: '☠',  cls: 'pic-skull_crossbones' },
+  health_hazard:     { glyph: '⚠',  cls: 'pic-health_hazard' },
+  corrosion:         { glyph: '⬡',  cls: 'pic-corrosion' },
+  exclamation_mark:  { glyph: '!',   cls: 'pic-exclamation_mark' },
+  environment:       { glyph: '🌿', cls: 'pic-environment' },
+};
+
+/* Human-readable category labels */
+const CATEGORY_LABELS = {
+  enzyme_glycerol:    'Enzyme / glycerol',
+  volatile_solvent:   'Volatile solvent',
+  viscous_reagent:    'Viscous reagent',
+  detergent:          'Detergent',
+  fluorophore:        'Fluorophore',
+  reducing_agent:     'Reducing agent',
+  fixative:           'Fixative',
+  dmso:               'DMSO',
+  adsorption_prone:   'Adsorption-prone',
+  hygroscopic_solid:  'Hygroscopic solid',
+};
+
+function ghsBadge(pictogram) {
+  if (!pictogram) return '';
+  const g = GHS_GLYPHS[pictogram] || { glyph: '⬡', cls: '' };
+  return `<span class="ghs-badge ${g.cls}" title="${pictogram}">${g.glyph}</span>`;
+}
+
+function renderCard(r) {
+  const label = CATEGORY_LABELS[r.category] || r.category;
+  const cas    = r.cas !== 'N/A' ? r.cas : 'Biologic';
+  const href   = `reagent.html?cas=${encodeURIComponent(r.file.replace('.json', ''))}`;
+  return `
+    <a class="reagent-card" href="${href}" data-category="${r.category}">
+      <div class="card-header">
+        <div>
+          <div class="card-name">${r.name}</div>
+          <div class="card-cas">${cas}</div>
+        </div>
+        ${ghsBadge(r.top_pictogram)}
+      </div>
+      <span class="card-category">${label}</span>
+      <p class="card-fact">${r.striking_fact}</p>
+    </a>`;
+}
+
+async function init() {
+  const grid = document.getElementById('reagent-grid');
+  try {
+    const res = await fetch('data/manifest.json');
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const reagents = await res.json();
+    grid.innerHTML = reagents.map(renderCard).join('');
+  } catch (err) {
+    grid.innerHTML = `<p class="error">Could not load reagents: ${err.message}<br>
+      Run <code>python scripts/build.py</code> then serve from the <code>site/</code> directory.</p>`;
+  }
+}
+
+init();
+</script>
+</body>
+</html>

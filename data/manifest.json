@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Sodium Hydroxide (NaOH), pellets",
+    "cas": "1310-73-2",
+    "category": "hygroscopic_solid",
+    "striking_fact": "NaOH pellets can absorb enough moisture from humid air to dissolve themselves in minutes \u2014 weigh quickly and cap immediately.",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "file": "1310-73-2.json"
+  },
+  {
+    "name": "DAPI (4\u2032,6-Diamidino-2-phenylindole dihydrochloride)",
+    "cas": "28718-90-3",
+    "category": "fluorophore",
+    "striking_fact": "DAPI photobleaches rapidly under UV \u2014 even 30 seconds on the UV transilluminator before imaging will kill your signal.",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "file": "28718-90-3.json"
+  },
+  {
+    "name": "Paraformaldehyde (PFA), solid",
+    "cas": "30525-89-4",
+    "category": "fixative",
+    "striking_fact": "PFA releases formaldehyde gas (IARC Group 1 carcinogen) during dissolution \u2014 always prepare and use in a fume hood.",
+    "top_pictogram": "flame",
+    "signal_word": "Danger",
+    "file": "30525-89-4.json"
+  },
+  {
+    "name": "DTT (Dithiothreitol, DL-Dithiothreitol)",
+    "cas": "3483-12-3",
+    "category": "reducing_agent",
+    "striking_fact": "DTT in solution oxidizes and loses reducing power within ~1 week at 4\u00b0C \u2014 make fresh on the day of use for sensitive applications.",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "file": "3483-12-3.json"
+  },
+  {
+    "name": "Glycerol, 99%+ (anhydrous)",
+    "cas": "56-81-5",
+    "category": "viscous_reagent",
+    "striking_fact": "1400\u00d7 more viscous than water \u2014 standard pipetting speed causes air bubble entrapment and large volume errors.",
+    "top_pictogram": null,
+    "signal_word": null,
+    "file": "56-81-5.json"
+  },
+  {
+    "name": "Ethanol, 200 proof (absolute)",
+    "cas": "64-17-5",
+    "category": "volatile_solvent",
+    "striking_fact": "Vapor pressure is high enough to cause volume drift on every aspirate \u2014 pre-wet tips 3\u00d7 before dispensing.",
+    "top_pictogram": "flame",
+    "signal_word": "Danger",
+    "file": "64-17-5.json"
+  },
+  {
+    "name": "DMSO (Dimethyl sulfoxide)",
+    "cas": "67-68-5",
+    "category": "dmso",
+    "striking_fact": "DMSO freezes at 19\u00b0C and is solid in a 4\u00b0C cold room \u2014 always warm to room temperature before pipetting.",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "file": "67-68-5.json"
+  },
+  {
+    "name": "Tween-20 (Polysorbate 20)",
+    "cas": "9005-64-5",
+    "category": "detergent",
+    "striking_fact": "Even 0.1% Tween-20 foams aggressively if dispensed with air \u2014 always dispense along the tube wall with no air gap.",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "file": "9005-64-5.json"
+  },
+  {
+    "name": "Taq DNA Polymerase",
+    "cas": "9012-90-2",
+    "category": "enzyme_glycerol",
+    "striking_fact": "Stays liquid at \u221220\u00b0C because it\u2019s in 50% glycerol \u2014 take it out, use it, return it immediately.",
+    "top_pictogram": null,
+    "signal_word": null,
+    "file": "9012-90-2.json"
+  },
+  {
+    "name": "Polyclonal IgG Antibody (generic, dilute)",
+    "cas": "N/A",
+    "category": "adsorption_prone",
+    "striking_fact": "Dilute antibodies adsorb irreversibly to standard plastic \u2014 use LoBind tubes and never let concentration drop below 10 \u00b5g/mL without adding BSA carrier.",
+    "top_pictogram": null,
+    "signal_word": null,
+    "file": "polyclonal-igg.json"
+  }
+]
