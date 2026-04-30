@@ -203,9 +203,9 @@ nav a:hover { color: var(--text); text-decoration: none; }
 }
 
 /* Category colour accents */
-.card[data-category="fixative"]        .card-category { border-color: #FCA5A5; color: #B91C1C; }
-.card[data-category="volatile_solvent"] .card-category { border-color: #FDE68A; color: #B45309; }
-.card[data-category="reducing_agent"]  .card-category { border-color: #A7F3D0; color: #065F46; }
+.reagent-card[data-category="fixative"]        .card-category { border-color: #FCA5A5; color: #B91C1C; }
+.reagent-card[data-category="volatile_solvent"] .card-category { border-color: #FDE68A; color: #B45309; }
+.reagent-card[data-category="reducing_agent"]   .card-category { border-color: #A7F3D0; color: #065F46; }
 
 /* ── Detail page ─────────────────────────────────────────── */
 
@@ -418,12 +418,20 @@ footer {
 
 /* ── GHS pictogram SVG stand-ins ─────────────────────────── */
 /* Render as text glyphs for MVP; Phase 4 will use official SVGs */
-.pic-flame           { color: #D97706; }
-.pic-skull_crossbones{ color: #1F2937; }
-.pic-health_hazard   { color: #7C3AED; }
-.pic-corrosion       { color: #B45309; }
-.pic-exclamation_mark{ color: #6B7280; }
-.pic-environment     { color: #065F46; }
+.pic-flame            { color: #D97706; }
+.pic-skull_crossbones { color: #1F2937; }
+.pic-health_hazard    { color: #7C3AED; }
+.pic-corrosion        { color: #B45309; }
+.pic-environment      { color: #065F46; }
+
+/* Exclamation-mark badge: give the "!" enough weight to read as an icon */
+.pic-exclamation_mark {
+  color: #6B7280;
+  font-weight: 700;
+  font-size: 1.1rem;
+  font-family: var(--font-body);
+  border-color: #D1D5DB;
+}
 
 /* ── Loading / error states ──────────────────────────────── */
 .loading { color: var(--muted); font-size: 0.9rem; padding: 2rem 0; }

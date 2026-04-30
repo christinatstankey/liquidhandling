@@ -20,10 +20,35 @@ PROFILES_DEST = REPO_ROOT / "site" / "data" / "profiles"
 MANIFEST_PATH = REPO_ROOT / "site" / "data" / "manifest.json"
 APPLY_RULES   = REPO_ROOT / "ingest" / "apply_rules.py"
 
+# Diversity-matrix slot order (slot 1–10). Controls card order on the index page.
+CATEGORY_ORDER = [
+    "enzyme_glycerol",
+    "volatile_solvent",
+    "viscous_reagent",
+    "detergent",
+    "fluorophore",
+    "reducing_agent",
+    "fixative",
+    "dmso",
+    "adsorption_prone",
+    "hygroscopic_solid",
+]
+
+
+def _sort_key(path: Path) -> int:
+    """Sort reagent files by diversity-matrix slot; unknown categories go last."""
+    with open(path) as f:
+        data = json.load(f)
+    cat = data.get("category", "")
+    try:
+        return CATEGORY_ORDER.index(cat)
+    except ValueError:
+        return len(CATEGORY_ORDER)
+
 
 def copy_reagents():
     REAGENTS_DEST.mkdir(parents=True, exist_ok=True)
-    for src in sorted(REAGENTS_SRC.glob("*.json")):
+    for src in sorted(REAGENTS_SRC.glob("*.json"), key=_sort_key):
         dest = REAGENTS_DEST / src.name
         shutil.copy2(src, dest)
         print(f"  copied {src.name}")
@@ -31,7 +56,7 @@ def copy_reagents():
 
 def generate_profiles():
     PROFILES_DEST.mkdir(parents=True, exist_ok=True)
-    for src in sorted(REAGENTS_SRC.glob("*.json")):
+    for src in sorted(REAGENTS_SRC.glob("*.json"), key=_sort_key):
         stem = src.stem
         out = PROFILES_DEST / f"{stem}.json"
         result = subprocess.run(
@@ -47,7 +72,7 @@ def generate_profiles():
 
 def build_manifest():
     entries = []
-    for src in sorted(REAGENTS_SRC.glob("*.json")):
+    for src in sorted(REAGENTS_SRC.glob("*.json"), key=_sort_key):
         with open(src) as f:
             reagent = json.load(f)
         # top_pictogram is the first (most severe) GHS pictogram, or None
