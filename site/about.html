@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Medra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <style>
+    .about-body { max-width: 640px; padding: 3rem 0 5rem; }
+    .about-body p  { margin-top: 1rem; font-size: .95rem; color: #374151; line-height: 1.7; }
+    .about-body h2 { margin-top: 2.5rem; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="container inner">
+    <a class="wordmark" href="index.html">medra<span>.</span></a>
+    <ul>
+      <li><a href="index.html">Reagents</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="container">
+  <div class="about-body">
+    <h1>About Medra</h1>
+
+    <h2>The problem</h2>
+    <p>
+      Safety Data Sheets tell you a reagent is flammable, irritating, or hazardous.
+      They don't tell your liquid handler to pre-wet tips three times before
+      aspirating ethanol, or to warm DMSO to room temperature before it becomes a
+      solid plug in your tip.
+    </p>
+    <p>
+      That knowledge lives in the heads of experienced bench scientists. It's passed
+      on verbally, buried in methods sections, or learned by ruining an experiment.
+    </p>
+
+    <h2>What Medra does</h2>
+    <p>
+      Medra is a transparent rules layer between chemical properties and robot
+      instructions. Each reagent has a structured property profile — vapor pressure,
+      viscosity, light sensitivity, and so on. A declarative rules engine maps those
+      properties to handling instructions. Every rule cites a property value or a
+      published source. Nothing is hidden inside a model.
+    </p>
+    <p>
+      The output is a JSON handling profile a liquid handler can consume directly:
+      aspiration speed, tip type, pre-wet cycles, container type, storage conditions,
+      safety requirements.
+    </p>
+
+    <h2>What it isn't</h2>
+    <p>
+      Medra is not an SDS database, not an EH&amp;S compliance tool, and not a
+      general protocol library. It is a narrow, high-fidelity bridge between
+      physicochemical properties and robot-actionable handling decisions, scoped
+      to reagents on a stockroom shelf.
+    </p>
+
+    <h2>Sources and honesty</h2>
+    <p>
+      Every rule is cited. Where a rule reflects common bench practice without a
+      clean primary source, it is flagged explicitly as <em>field consensus</em>
+      in the UI. The goal is to surface uncertainty, not hide it.
+    </p>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    Medra — proof of work. Data sourced from manufacturer SDS sheets and published bench protocols.
+  </div>
+</footer>
+
+</body>
+</html>

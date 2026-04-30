@@ -1,0 +1,11 @@
+# Core — pin for reproducibility
+jsonschema==4.23.0
+pyyaml==6.0.2
+
+# PDF ingestion (Phase 2)
+pypdf==4.3.1
+pdfplumber==0.11.4
+pandas==2.2.2
+
+# OCR fallback (Phase 2, uncomment only if needed)
+# pytesseract==0.3.13

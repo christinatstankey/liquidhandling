@@ -1,0 +1,60 @@
+{
+  "name": "Ethanol, 200 proof (absolute)",
+  "cas": "64-17-5",
+  "category": "volatile_solvent",
+  "vendor_example": "Sigma-Aldrich 459844, Thermo A405P",
+  "physical_state": "liquid",
+  "striking_fact": "Vapor pressure is high enough to cause volume drift on every aspirate — pre-wet tips 3× before dispensing.",
+  "properties": {
+    "is_protein": false,
+    "glycerol_pct": null,
+    "viscosity_class": "low",
+    "viscosity_mPas_20C": 1.2,
+    "vapor_pressure_kPa_20C": 5.95,
+    "is_volatile": true,
+    "is_flammable": true,
+    "flash_point_C": 13,
+    "is_light_sensitive": false,
+    "is_fluorophore": false,
+    "is_reducing_agent": false,
+    "oxidizes_in_solution": false,
+    "solution_half_life_at_4C_days": null,
+    "make_fresh": false,
+    "is_detergent": false,
+    "is_foaming": false,
+    "is_fixative": false,
+    "fume_hood_required": false,
+    "is_hygroscopic": true,
+    "is_deliquescent": false,
+    "is_corrosive": false,
+    "is_adsorption_prone": false,
+    "lo_bind_required": false,
+    "freeze_point_C": -114.1,
+    "requires_ice": false,
+    "freeze_thaw_max_cycles": null,
+    "skin_penetrant": false,
+    "plastic_incompatible": [],
+    "storage_temp_C": 4
+  },
+  "ghs": {
+    "pictograms": ["flame", "exclamation_mark"],
+    "signal_word": "Danger",
+    "hazard_statements": [
+      "H225: Highly flammable liquid and vapour",
+      "H319: Causes serious eye irritation"
+    ]
+  },
+  "sds_facts": {
+    "storage": "Store at 4°C, tightly sealed, away from ignition sources. In a flammables cabinet.",
+    "ppe": ["nitrile gloves", "eye protection"],
+    "incompatibilities": ["oxidizing agents", "peroxides", "bleach (generates chloroform and chloroacetone)"]
+  },
+  "bench_knowledge": [
+    "Pre-wet tip 3× before aspirating: aspirate and expel ethanol without dispensing into sample. This saturates the headspace inside the tip and stops volume drift.",
+    "Ethanol evaporates from the tip exterior within seconds; work quickly and keep the reservoir sealed between uses.",
+    "Absolute (200 proof) ethanol is hygroscopic — opened bottles absorb atmospheric water. Use a desiccant closure or aliquot into sealed amber vials.",
+    "Never use polystyrene reservoirs; use polypropylene. Ethanol is compatible with both, but PS reservoirs may leach styrene oligomers with extended contact.",
+    "Bleach + ethanol generates chloroform and chloroacetone — do NOT decontaminate ethanol spills with bleach.",
+    "At −20°C ethanol is fully liquid (mp −114°C) and stays fluid; used deliberately for cold methanol/ethanol fixation of cells."
+  ]
+}

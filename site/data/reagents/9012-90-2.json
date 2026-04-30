@@ -1,0 +1,57 @@
+{
+  "name": "Taq DNA Polymerase",
+  "cas": "9012-90-2",
+  "category": "enzyme_glycerol",
+  "vendor_example": "NEB M0267, Thermo EP0402",
+  "physical_state": "liquid",
+  "striking_fact": "Stays liquid at −20°C because it’s in 50% glycerol — take it out, use it, return it immediately.",
+  "properties": {
+    "is_protein": true,
+    "glycerol_pct": 50,
+    "viscosity_class": "high",
+    "viscosity_mPas_20C": null,
+    "vapor_pressure_kPa_20C": null,
+    "is_volatile": false,
+    "is_flammable": false,
+    "flash_point_C": null,
+    "is_light_sensitive": false,
+    "is_fluorophore": false,
+    "is_reducing_agent": false,
+    "oxidizes_in_solution": false,
+    "solution_half_life_at_4C_days": null,
+    "make_fresh": false,
+    "is_detergent": false,
+    "is_foaming": false,
+    "is_fixative": false,
+    "fume_hood_required": false,
+    "is_hygroscopic": false,
+    "is_deliquescent": false,
+    "is_corrosive": false,
+    "is_adsorption_prone": false,
+    "lo_bind_required": false,
+    "freeze_point_C": null,
+    "requires_ice": true,
+    "freeze_thaw_max_cycles": 30,
+    "skin_penetrant": false,
+    "plastic_incompatible": [],
+    "storage_temp_C": -20
+  },
+  "ghs": {
+    "pictograms": [],
+    "signal_word": null,
+    "hazard_statements": []
+  },
+  "sds_facts": {
+    "storage": "Store at −20°C. Do not store in frost-free freezer (temperature cycling degrades activity).",
+    "ppe": ["nitrile gloves"],
+    "incompatibilities": []
+  },
+  "bench_knowledge": [
+    "50% glycerol depresses the freezing point below −20°C; the enzyme is liquid in the freezer. Do not let it sit at room temperature or it will denature.",
+    "Reverse pipette: aspirate beyond the desired volume, then dispense to the first stop only. This prevents air bubbles in viscous glycerol stocks.",
+    "Never vortex — shear force denatures the polymerase. Mix by gentle flicking or inversion.",
+    "Keep on ice the entire time the tube is out of the freezer; return within 30 minutes.",
+    "Add last to PCR master mix to minimize pre-amplification activity.",
+    "Taq lacks 3′→5′ proofreading (error rate ~10⁻⁵ per bp). Use a proofreading polymerase (Phusion, Q5) for cloning or when fidelity matters."
+  ]
+}

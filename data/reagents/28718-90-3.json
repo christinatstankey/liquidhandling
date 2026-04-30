@@ -1,0 +1,62 @@
+{
+  "name": "DAPI (4′,6-Diamidino-2-phenylindole dihydrochloride)",
+  "cas": "28718-90-3",
+  "category": "fluorophore",
+  "vendor_example": "Sigma-Aldrich D9542, Thermo D1306",
+  "physical_state": "powder",
+  "striking_fact": "DAPI photobleaches rapidly under UV — even 30 seconds on the UV transilluminator before imaging will kill your signal.",
+  "properties": {
+    "is_protein": false,
+    "glycerol_pct": null,
+    "viscosity_class": null,
+    "viscosity_mPas_20C": null,
+    "vapor_pressure_kPa_20C": null,
+    "is_volatile": false,
+    "is_flammable": false,
+    "flash_point_C": null,
+    "is_light_sensitive": true,
+    "is_fluorophore": true,
+    "excitation_nm": 360,
+    "emission_nm": 460,
+    "is_reducing_agent": false,
+    "oxidizes_in_solution": false,
+    "solution_half_life_at_4C_days": 180,
+    "make_fresh": false,
+    "is_detergent": false,
+    "is_foaming": false,
+    "is_fixative": false,
+    "fume_hood_required": false,
+    "is_hygroscopic": false,
+    "is_deliquescent": false,
+    "is_corrosive": false,
+    "is_adsorption_prone": false,
+    "lo_bind_required": false,
+    "freeze_point_C": null,
+    "requires_ice": false,
+    "freeze_thaw_max_cycles": 10,
+    "skin_penetrant": false,
+    "plastic_incompatible": [],
+    "storage_temp_C": -20
+  },
+  "ghs": {
+    "pictograms": ["exclamation_mark", "health_hazard"],
+    "signal_word": "Warning",
+    "hazard_statements": [
+      "H302: Harmful if swallowed",
+      "H341: Suspected of causing genetic defects (DNA intercalator)"
+    ]
+  },
+  "sds_facts": {
+    "storage": "Store at −20°C in the dark (amber or foil-wrapped tube). Stock solutions in water or PBS are stable for months when frozen and light-protected.",
+    "ppe": ["nitrile gloves", "eye protection"],
+    "incompatibilities": []
+  },
+  "bench_knowledge": [
+    "DAPI is a potent DNA dye and suspected mutagen — always wear gloves; do not mouth-pipette.",
+    "Protect from light at every step: use amber tubes, wrap in foil, minimize time under bench lighting. Even brief UV exposure before imaging causes irreversible photobleaching.",
+    "Standard stock: 1 mg/mL in sterile water (2.84 mM). Working concentration for live cells: 1–5 µg/mL; for fixed cells: 0.5–2 µg/mL. Dilute in the dark immediately before use.",
+    "DNA-bound DAPI fluoresces ~20× brighter and blue-shifts: excitation ~360 nm, emission ~460 nm. Unbound DAPI in solution emits at ~500 nm (greener) — background baseline indicates incomplete washing.",
+    "For live-cell imaging, use a cell-permeable variant (regular DAPI enters most cells but wash well). For fixed cells, any DAPI works after permeabilization.",
+    "Store aliquots in foil-wrapped amber tubes at −20°C. Stock solution is stable ≥6 months. Minimize freeze-thaw cycles (< 10 recommended for stock solutions)."
+  ]
+}

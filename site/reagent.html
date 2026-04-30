@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reagent — Medra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+<nav>
+  <div class="container inner">
+    <a class="wordmark" href="index.html">medra<span>.</span></a>
+    <ul>
+      <li><a href="index.html">Reagents</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="main" class="container">
+  <p class="loading" style="padding:3rem 0">Loading…</p>
+</main>
+
+<footer>
+  <div class="container">
+    Medra — proof of work. Data sourced from manufacturer SDS sheets and published bench protocols.
+  </div>
+</footer>
+
+<script>
+const GHS_GLYPHS = {
+  flame:             { glyph: '🔥', cls: 'pic-flame',            label: 'Flammable' },
+  skull_crossbones:  { glyph: '☠',  cls: 'pic-skull_crossbones', label: 'Acute toxicity' },
+  health_hazard:     { glyph: '⚠',  cls: 'pic-health_hazard',    label: 'Health hazard' },
+  corrosion:         { glyph: '⬡',  cls: 'pic-corrosion',        label: 'Corrosive' },
+  exclamation_mark:  { glyph: '!',   cls: 'pic-exclamation_mark', label: 'Irritant / warning' },
+  environment:       { glyph: '🌿', cls: 'pic-environment',      label: 'Environmental hazard' },
+};
+
+const CATEGORY_LABELS = {
+  enzyme_glycerol:    'Enzyme / glycerol',
+  volatile_solvent:   'Volatile solvent',
+  viscous_reagent:    'Viscous reagent',
+  detergent:          'Detergent',
+  fluorophore:        'Fluorophore',
+  reducing_agent:     'Reducing agent',
+  fixative:           'Fixative',
+  dmso:               'DMSO',
+  adsorption_prone:   'Adsorption-prone',
+  hygroscopic_solid:  'Hygroscopic solid',
+};
+
+function ghsBadges(pictograms) {
+  if (!pictograms || pictograms.length === 0) return '<em style="color:var(--muted);font-size:.85rem">No GHS hazard classification</em>';
+  return pictograms.map(p => {
+    const g = GHS_GLYPHS[p] || { glyph: '⬡', cls: '', label: p };
+    return `<span class="ghs-badge ${g.cls}" title="${g.label}" style="width:36px;height:36px;font-size:1.3rem">${g.glyph}</span>`;
+  }).join(' ');
+}
+
+function renderPage(reagent, profile) {
+  const cas   = reagent.cas !== 'N/A' ? reagent.cas : 'Biologic';
+  const label = CATEGORY_LABELS[reagent.category] || reagent.category;
+  const sw    = reagent.ghs.signal_word;
+  const signalTag = sw
+    ? `<span class="tag ${sw === 'Danger' ? 'signal-danger' : 'signal-warning'}">${sw}</span>`
+    : '';
+
+  // SDS facts panel
+  const sds = reagent.sds_facts;
+  const sdsItems = [
+    `<strong>Storage:</strong> ${sds.storage}`,
+    `<strong>PPE:</strong> ${sds.ppe.join(', ')}`,
+    sds.incompatibilities.length
+      ? `<strong>Incompatibilities:</strong> ${sds.incompatibilities.join('; ')}`
+      : null,
+  ].filter(Boolean).map(t => `<li>${t}</li>`).join('');
+
+  // Bench knowledge panel
+  const bkItems = reagent.bench_knowledge
+    .map(fact => `<li>${fact}</li>`)
+    .join('');
+
+  // Rules fired tab
+  let rulesHtml = '<p style="color:var(--muted);font-size:.9rem">No rules fired.</p>';
+  if (profile && profile.rules_fired && profile.rules_fired.length > 0) {
+    rulesHtml = '<div class="rules-list">' + profile.rules_fired.map(r => {
+      const fcBadge = r.field_consensus
+        ? '<span class="field-consensus-badge">field consensus</span>'
+        : '';
+      return `
+        <div class="rule-card">
+          <div class="rule-id">${r.id}${fcBadge}</div>
+          <div class="rule-because">${r.because}</div>
+          <div class="rule-cite">Cite: ${r.cite}</div>
+        </div>`;
+    }).join('') + '</div>';
+  }
+
+  // Handling profile JSON tab
+  const profileJson = profile
+    ? JSON.stringify(profile.handling_profile, null, 2)
+    : '{}';
+
+  document.title = `${reagent.name} — Medra`;
+  document.getElementById('main').innerHTML = `
+    <div class="detail-header">
+      <a href="index.html" style="font-size:.85rem;color:var(--muted)">← All reagents</a>
+      <h1 style="margin-top:.75rem">${reagent.name}</h1>
+      <div class="detail-meta">
+        <code class="cas">${cas}</code>
+        <span class="tag">${label}</span>
+        ${signalTag}
+        <span style="display:flex;gap:.4rem;align-items:center">${ghsBadges(reagent.ghs.pictograms)}</span>
+      </div>
+      ${reagent.striking_fact ? `<p style="margin-top:.9rem;font-size:.95rem;color:var(--muted);max-width:600px">${reagent.striking_fact}</p>` : ''}
+    </div>
+
+    <div class="detail-panels">
+      <div class="panel">
+        <div class="panel-title">SDS facts</div>
+        <ul class="fact-list">${sdsItems}</ul>
+        ${reagent.ghs.hazard_statements.length ? `
+          <div style="margin-top:1.25rem">
+            <div class="panel-title">GHS hazard statements</div>
+            <ul class="hazards-list">
+              ${reagent.ghs.hazard_statements.map(h => {
+                const [code, ...rest] = h.split(':');
+                return `<li><strong>${code.trim()}:</strong>${rest.join(':')}</li>`;
+              }).join('')}
+            </ul>
+          </div>` : ''}
+      </div>
+      <div class="panel">
+        <div class="panel-title">Bench knowledge</div>
+        <ul class="fact-list">${bkItems}</ul>
+      </div>
+    </div>
+
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab(event, 'tab-rules')">Rules fired</button>
+      <button class="tab-btn" onclick="switchTab(event, 'tab-profile')">Robot profile (JSON)</button>
+    </div>
+    <div id="tab-rules" class="tab-panel active">
+      ${rulesHtml}
+    </div>
+    <div id="tab-profile" class="tab-panel">
+      <div class="json-block">${escapeHtml(profileJson)}</div>
+    </div>
+  `;
+}
+
+function escapeHtml(str) {
+  return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+function switchTab(event, tabId) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  event.currentTarget.classList.add('active');
+  document.getElementById(tabId).classList.add('active');
+}
+
+async function init() {
+  const params  = new URLSearchParams(location.search);
+  const cas     = params.get('cas');
+  const main    = document.getElementById('main');
+
+  if (!cas) {
+    main.innerHTML = '<p class="error">No reagent specified. <a href="index.html">← Back to reagents</a></p>';
+    return;
+  }
+
+  try {
+    const [reagentRes, profileRes] = await Promise.all([
+      fetch(`data/reagents/${cas}.json`),
+      fetch(`data/profiles/${cas}.json`).catch(() => null),
+    ]);
+    if (!reagentRes.ok) throw new Error(`Reagent not found: ${cas}`);
+    const reagent = await reagentRes.json();
+    const profile = profileRes && profileRes.ok ? await profileRes.json() : null;
+    renderPage(reagent, profile);
+  } catch (err) {
+    main.innerHTML = `<p class="error">${err.message} — <a href="index.html">← Back</a></p>`;
+  }
+}
+
+init();
+</script>
+</body>
+</html>

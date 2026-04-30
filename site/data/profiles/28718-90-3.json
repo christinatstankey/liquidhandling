@@ -1,0 +1,22 @@
+{
+  "reagent_name": "DAPI (4\u2032,6-Diamidino-2-phenylindole dihydrochloride)",
+  "cas": "28718-90-3",
+  "handling_profile": {
+    "storage": {
+      "light_protected": true,
+      "container": "amber_or_foil"
+    },
+    "safety": {
+      "minimize_light_exposure": true
+    }
+  },
+  "rules_fired": [
+    {
+      "id": "light_protect_fluorophore",
+      "because": "Fluorophores absorb photons and can undergo irreversible photobleaching \u2014 the chromophore is destroyed by oxidation or bond cleavage under illumination. For DAPI specifically, UV transilluminator exposure for as little as 30 seconds before imaging causes measurable signal loss.",
+      "cite": "Thermo Fisher Scientific: DAPI Technical Data Sheet (D1306). Lakowicz, Principles of Fluorescence Spectroscopy, 3rd ed., Ch. 1.",
+      "field_consensus": false
+    }
+  ],
+  "conflicts": []
+}

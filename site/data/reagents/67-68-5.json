@@ -1,0 +1,61 @@
+{
+  "name": "DMSO (Dimethyl sulfoxide)",
+  "cas": "67-68-5",
+  "category": "dmso",
+  "vendor_example": "Sigma-Aldrich 276855, Thermo D12345",
+  "physical_state": "liquid",
+  "striking_fact": "DMSO freezes at 19°C and is solid in a 4°C cold room — always warm to room temperature before pipetting.",
+  "properties": {
+    "is_protein": false,
+    "glycerol_pct": null,
+    "viscosity_class": "low",
+    "viscosity_mPas_20C": 2.0,
+    "vapor_pressure_kPa_20C": 0.055,
+    "is_volatile": false,
+    "is_flammable": false,
+    "flash_point_C": 89,
+    "is_light_sensitive": false,
+    "is_fluorophore": false,
+    "is_reducing_agent": false,
+    "oxidizes_in_solution": false,
+    "solution_half_life_at_4C_days": null,
+    "make_fresh": false,
+    "is_detergent": false,
+    "is_foaming": false,
+    "is_fixative": false,
+    "fume_hood_required": false,
+    "is_hygroscopic": true,
+    "is_deliquescent": false,
+    "is_corrosive": false,
+    "is_adsorption_prone": false,
+    "lo_bind_required": false,
+    "freeze_point_C": 18.45,
+    "requires_ice": false,
+    "freeze_thaw_max_cycles": null,
+    "skin_penetrant": true,
+    "plastic_incompatible": ["polystyrene"],
+    "storage_temp_C": 25
+  },
+  "ghs": {
+    "pictograms": ["exclamation_mark"],
+    "signal_word": "Warning",
+    "hazard_statements": [
+      "H315: Causes skin irritation",
+      "H319: Causes serious eye irritation",
+      "H335: May cause respiratory irritation"
+    ]
+  },
+  "sds_facts": {
+    "storage": "Store at room temperature, tightly sealed. Do not store in polystyrene containers. Store in glass for long-term stocks.",
+    "ppe": ["nitrile gloves (note: DMSO penetrates some nitrile; double-glove or use thick nitrile)", "eye protection"],
+    "incompatibilities": ["strong oxidizing agents", "acyl chlorides", "polystyrene containers"]
+  },
+  "bench_knowledge": [
+    "DMSO is solid at room temperature if your lab is cool (<19°C) and always solid in a 4°C cold room or on ice. Warm to 25°C and confirm fully liquid before pipetting — partially solidified DMSO gives wrong volumes.",
+    "DMSO rapidly penetrates skin and mucous membranes, carrying dissolved solutes with it. A DMSO stock of a toxic compound can deliver the dissolved material transdermally — never touch DMSO drug solutions without heavy nitrile gloves.",
+    "DMSO dissolves polystyrene: never use standard cell-culture plates, polystyrene tubes, or clear conical Falcon tubes for DMSO stocks. Use polypropylene Eppendorfs or glass vials.",
+    "DMSO is hygroscopic — an open bottle gains water content, which can affect assay results (especially kinase inhibitor stocks where anhydrous DMSO is assumed). Aliquot into glass vials, cap immediately, and use molecular sieves if anhydrous is critical.",
+    "Maximum DMSO concentration tolerated by most mammalian cell lines is 0.1–0.5%; >1% causes cytotoxicity independent of the dissolved compound. Always dilute DMSO stocks appropriately and include a vehicle control.",
+    "At cryogenic concentrations (10% v/v in media), DMSO acts as a cryoprotectant by preventing ice crystal formation. Thaw cryovials quickly at 37°C and immediately dilute out the DMSO — prolonged exposure at 37°C is toxic."
+  ]
+}

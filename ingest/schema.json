@@ -1,0 +1,96 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Reagent",
+  "description": "One CAS#-keyed reagent entry with properties, GHS hazards, and bench knowledge.",
+  "type": "object",
+  "required": ["name", "cas", "category", "physical_state", "striking_fact", "properties", "ghs", "sds_facts", "bench_knowledge"],
+  "additionalProperties": false,
+  "properties": {
+    "name":          { "type": "string" },
+    "cas":           { "type": "string" },
+    "cas_note":      { "type": "string" },
+    "category": {
+      "type": "string",
+      "enum": [
+        "enzyme_glycerol",
+        "volatile_solvent",
+        "viscous_reagent",
+        "detergent",
+        "fluorophore",
+        "reducing_agent",
+        "fixative",
+        "dmso",
+        "adsorption_prone",
+        "hygroscopic_solid"
+      ]
+    },
+    "vendor_example":  { "type": "string" },
+    "physical_state": {
+      "type": "string",
+      "enum": ["liquid", "solid", "powder", "solution"]
+    },
+    "striking_fact": { "type": "string" },
+    "properties": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "is_protein":                    { "type": ["boolean", "null"] },
+        "glycerol_pct":                  { "type": ["number",  "null"] },
+        "viscosity_class":               { "type": ["string",  "null"], "enum": ["low", "moderate", "high", null] },
+        "viscosity_mPas_20C":            { "type": ["number",  "null"] },
+        "vapor_pressure_kPa_20C":        { "type": ["number",  "null"] },
+        "is_volatile":                   { "type": ["boolean", "null"] },
+        "is_flammable":                  { "type": ["boolean", "null"] },
+        "flash_point_C":                 { "type": ["number",  "null"] },
+        "is_light_sensitive":            { "type": ["boolean", "null"] },
+        "is_fluorophore":                { "type": ["boolean", "null"] },
+        "excitation_nm":                 { "type": ["number",  "null"] },
+        "emission_nm":                   { "type": ["number",  "null"] },
+        "is_reducing_agent":             { "type": ["boolean", "null"] },
+        "oxidizes_in_solution":          { "type": ["boolean", "null"] },
+        "solution_half_life_at_4C_days": { "type": ["number",  "null"] },
+        "make_fresh":                    { "type": ["boolean", "null"] },
+        "is_detergent":                  { "type": ["boolean", "null"] },
+        "is_foaming":                    { "type": ["boolean", "null"] },
+        "is_fixative":                   { "type": ["boolean", "null"] },
+        "fume_hood_required":            { "type": ["boolean", "null"] },
+        "is_hygroscopic":                { "type": ["boolean", "null"] },
+        "is_deliquescent":               { "type": ["boolean", "null"] },
+        "is_corrosive":                  { "type": ["boolean", "null"] },
+        "is_adsorption_prone":           { "type": ["boolean", "null"] },
+        "lo_bind_required":              { "type": ["boolean", "null"] },
+        "freeze_point_C":                { "type": ["number",  "null"] },
+        "requires_ice":                  { "type": ["boolean", "null"] },
+        "freeze_thaw_max_cycles":        { "type": ["integer", "null"] },
+        "skin_penetrant":                { "type": ["boolean", "null"] },
+        "plastic_incompatible":          { "type": "array", "items": { "type": "string" } },
+        "storage_temp_C":                { "type": ["number",  "null"] }
+      }
+    },
+    "ghs": {
+      "type": "object",
+      "required": ["pictograms", "signal_word", "hazard_statements"],
+      "additionalProperties": false,
+      "properties": {
+        "pictograms":        { "type": "array", "items": { "type": "string" } },
+        "signal_word":       { "type": ["string", "null"] },
+        "hazard_statements": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "sds_facts": {
+      "type": "object",
+      "required": ["storage", "ppe", "incompatibilities"],
+      "additionalProperties": false,
+      "properties": {
+        "storage":            { "type": "string" },
+        "ppe":                { "type": "array", "items": { "type": "string" } },
+        "incompatibilities":  { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "bench_knowledge": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    }
+  }
+}
