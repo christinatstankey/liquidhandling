@@ -13,13 +13,31 @@ Defer to `~/.claude/CLAUDE.md` for anything not covered here.
 
 ## Thesis
 
-SDS = legal safety facts. Bench scientist = how to actually use the reagent
+SDS = legal safety facts.
+Bench scientist = how to actually use the reagent
 (pre-wet for volatiles, thaw enzymes on ice, LoBind for dilute proteins, make DTT
-fresh). This project is the bridge: CAS# → structured JSON profile a liquid
+fresh). 
+This project is the bridge: CAS# → structured JSON profile a liquid
 handler could consume directly.
 
 The differentiator vs. "another SDS database" is a transparent rules layer —
 properties + reagent class → handling, every rule cited.
+
+---
+
+## Scope
+
+In scope: reagents — bottles you'd find on a stockroom shelf. Solvents,
+enzymes, dyes, salts, fixatives, solid powders, antibodies, oligos. Each gets
+a CAS#-keyed handling profile.
+
+Out of scope (for now): cells (competent cells, cell lines, primary cells —
+their handling is biologically rather than chemically constrained), buffer
+prep workflows (titration, pH adjustment, sterilization), and freeform
+protocol text (see Phase 2).
+
+These exclusions are deferral, not abandonment — cells and buffer prep are
+candidates for later phases once the reagent core is solid.
 
 ---
 
@@ -33,6 +51,37 @@ properties + reagent class → handling, every rule cited.
 - Rules engine: YAML + small Python evaluator. NOT ML.
 - Hosting: GitHub Pages or Vercel.
 - git from day one; commit per logical unit.
+
+---
+
+## Data sources
+
+Two parallel streams feed each reagent profile. Don't conflate them — they
+solve different problems and have different reliability characteristics.
+
+1. **SDS PDFs (legal/safety facts)** — Sigma-Aldrich (MilliporeSigma) is the
+   single source of truth. One vendor template = one parser. Fisher Scientific
+   or specialty vendors (NEB, Tocris, Cell Signaling) only as fallback when
+   Sigma doesn't carry the product. No public SDS API exists; download URLs
+   are predictable enough to script, but respect ToS — polite rate limits, no
+   redistribution.
+2. **Numeric properties (rule inputs)** — PubChem PUG REST API, base URL
+   `https://pubchem.ncbi.nlm.nih.gov/rest/pug/`. Free, no auth, structured
+   JSON, keyed by CAS or CID. Pulls vapor pressure, melting/boiling point,
+   density, LogP, flash point, GHS hazard codes. More reliable than parsing
+   Section 9 free text from the SDS, and gives an independent cross-check.
+
+**Coverage gap:** PubChem is weak on enzymes, antibodies, and oligos. For
+those, fall back to manufacturer datasheets (NEB product pages, IDT spec
+sheets, antibody vendor PDFs) — and accept that some "properties" for
+biologics are categorical (e.g., "store at -20 °C in 50% glycerol") rather
+than numeric.
+
+**PDFs stay local.** `data/sds-pdfs/` is gitignored — keeping vendor SDSs
+local avoids redistribution questions while preserving the ability to
+re-parse when the extractor improves. Only the extracted JSON in
+`data/reagents/` is committed. The directory itself is tracked via
+`data/sds-pdfs/.gitkeep` so the layout is reproducible.
 
 ---
 
@@ -89,9 +138,11 @@ reagent-handler/
 
 1. **MVP:** hand-author JSON for the 10 reagents in the diversity matrix
    (see below), static frontend, deploy. Sendable.
-2. **Ingestion:** SDS PDF → JSON, scoped to vendor templates only (Sigma-Aldrich,
-   Thermo Fisher, etc.). The standardized 16-section GHS/OSHA layout makes this
-   tractable. Validate against MVP set. Expand to ~30 reagents.
+2. **Ingestion:** SDS PDF → JSON (Sigma template only — see Data sources)
+   plus PubChem PUG REST for numeric properties. The standardized 16-section
+   GHS/OSHA layout makes PDF parsing tractable; PubChem gives a cleaner cross-
+   check on Section 9 numbers. Validate end-to-end on 2–3 reagents from the
+   MVP set before scaling. Expand to ~30 reagents.
    *Out of scope:* freeform protocol PDFs, lab notebook entries, or any
    unstructured procedure text. That's a different research problem.
 3. **Rules engine:** lift handling logic from per-reagent JSON into `rules.yaml`.
@@ -127,8 +178,9 @@ Specific products TBD; pick during build.
    warm before pipetting, polystyrene incompatibility, skin-permeation.
 9. **Dilute oligo / antibody** — adsorption-prone. Forces: LoBind, carrier
    protein, single-use aliquots, freeze-thaw avoidance.
-10. **Competent cells** — biologically fragile. Forces: thaw on ice, no vortex,
-    no refreeze, heat-shock timing.
+10. **Hygroscopic / deliquescent solid** (e.g., NaOH pellets, anhydrous
+    CaCl₂) — solid-state handling. Forces: desiccator storage, weigh fast
+    or by difference, cap immediately, date on first opening.
 
 Each category should fire at least one rule that no other category in the set
 fires. If two slots end up firing only overlapping rules, swap one out for
@@ -159,6 +211,8 @@ something from `data/tacit-knowledge.md` that covers a missing rule family.
 4. Validate ingestion on 2–3 PDFs end-to-end before running the full set.
 5. When two rules conflict, surface the conflict. Don't silently pick.
 6. Pin versions; anyone should clone + run from `requirements.txt`.
+7. SDS PDFs stay local — never committed to git, never redistributed. Only
+   the extracted JSON in `data/reagents/` is committed.
 
 ---
 
@@ -192,7 +246,7 @@ categories or bullets; lift from it into `rules.yaml` when codifying.
 
 - Frontend: static now; reconsider Astro / React island only if rule-tracing UI
   gets complex.
-- Scale: 10 → 30 → 100 reagents. Don't gold-plate the demo before shipping.
+- Scale: 10 → 50 → 500 reagents. Don't gold-plate the demo before shipping.
 - Specific reagent products for each diversity-matrix slot: TBD as we build.
 - Public `GET /handling/{cas}` endpoint: probably yes for the pitch, not in v1.
 - Rule conflicts: design surfacing before there are conflicts to surface.

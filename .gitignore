@@ -5,3 +5,7 @@ __pycache__/
 data/.DS_Store
 site/.DS_Store
 site/assets/.DS_Store
+
+# Vendor SDS PDFs — kept local, never committed (see CLAUDE.md → Data sources)
+data/sds-pdfs/*.pdf
+!data/sds-pdfs/.gitkeep
