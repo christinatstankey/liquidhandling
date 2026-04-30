@@ -7,7 +7,7 @@
   "additionalProperties": false,
   "properties": {
     "name":          { "type": "string" },
-    "cas":           { "type": "string" },
+    "cas":           { "type": ["string", "null"] },
     "cas_note":      { "type": "string" },
     "category": {
       "type": "string",
@@ -89,8 +89,16 @@
     },
     "bench_knowledge": {
       "type": "array",
-      "items": { "type": "string" },
-      "minItems": 1
+      "items": { "type": "string" }
+    },
+    "sds_source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "revision_date":  { "type": ["string", "null"] },
+        "version":        { "type": ["string", "null"] },
+        "product_number": { "type": ["string", "null"] }
+      }
     }
   }
 }

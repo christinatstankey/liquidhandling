@@ -31,7 +31,15 @@ Defer to `~/.claude/CLAUDE.md` for anything not covered here.
 - Slot 1 label corrected during MVP-10 download: previously "DNA polymerase I
   (*E. coli*)", now "Taq DNA Polymerase" — matches the JSON, which was always
   authored for Taq. (Both share generic CAS 9012-90-2.)
-- Not yet built: `ingest/parse_sds.py` (referenced in Commands; next deliverable).
+- `ingest/parse_sds.py` **built and validated.** Extracts GHS data, physical
+  properties, storage/PPE/incompatibilities from Sigma's 16-section template.
+  All 10 MVP JSONs re-parsed from their SDSs; 10/10 pass `validate.py`.
+  Several corrections vs. model-memory originals (e.g., DTT signal word
+  Warning→Danger, H318 not H319; glycerol viscosity 412→1412 mPas;
+  Tween-20 flash point 110→275°C; PFA physical_state powder→solid).
+- **Next:** run `parse_sds.py` on the 20 Phase 2 expansion SDSs, add
+  `category`, `striking_fact`, and `bench_knowledge` to each new record,
+  then validate. See `data/reagent-inventory.md` for expansion CAS list.
 
 ---
 

@@ -4,7 +4,7 @@
   "category": "hygroscopic_solid",
   "vendor_example": "Sigma-Aldrich S8045, Fisher S318",
   "physical_state": "solid",
-  "striking_fact": "NaOH pellets can absorb enough moisture from humid air to dissolve themselves in minutes — weigh quickly and cap immediately.",
+  "striking_fact": "NaOH pellets can absorb enough moisture from humid air to dissolve themselves in minutes \u2014 weigh quickly and cap immediately.",
   "properties": {
     "is_protein": false,
     "glycerol_pct": null,
@@ -16,6 +16,8 @@
     "flash_point_C": null,
     "is_light_sensitive": false,
     "is_fluorophore": false,
+    "excitation_nm": null,
+    "emission_nm": null,
     "is_reducing_agent": false,
     "oxidizes_in_solution": false,
     "solution_half_life_at_4C_days": null,
@@ -29,7 +31,7 @@
     "is_corrosive": true,
     "is_adsorption_prone": false,
     "lo_bind_required": false,
-    "freeze_point_C": null,
+    "freeze_point_C": 318.0,
     "requires_ice": false,
     "freeze_thaw_max_cycles": null,
     "skin_penetrant": false,
@@ -37,24 +39,40 @@
     "storage_temp_C": 25
   },
   "ghs": {
-    "pictograms": ["corrosion", "exclamation_mark"],
+    "pictograms": [
+      "corrosion"
+    ],
     "signal_word": "Danger",
     "hazard_statements": [
-      "H290: May be corrosive to metals",
-      "H314: Causes severe skin burns and eye damage"
+      "H290 May be corrosive to metals",
+      "H314 Causes severe skin burns and eye damage",
+      "H402 Harmful to aquatic life"
     ]
   },
   "sds_facts": {
     "storage": "Store in a sealed, airtight container in a cool, dry, well-ventilated area. Keep away from moisture, acids, and metals. Desiccated storage recommended.",
-    "ppe": ["nitrile gloves", "eye protection / face shield", "lab coat"],
-    "incompatibilities": ["acids (violent exothermic reaction)", "moisture / water (highly exothermic dissolution)", "aluminum, zinc (produces H₂ gas)"]
+    "ppe": [
+      "nitrile gloves",
+      "safety goggles",
+      "respiratory protection"
+    ],
+    "incompatibilities": [
+      "acids (violent exothermic reaction)",
+      "moisture / water (highly exothermic dissolution)",
+      "aluminum, zinc (produces H\u2082 gas)"
+    ]
   },
   "bench_knowledge": [
-    "NaOH is deliquescent — it absorbs water from air and liquefies. Work quickly: pour pellets directly onto the scale, weigh, and cap the stock bottle immediately. In high-humidity environments, weigh over dry ice or in a desiccator.",
+    "NaOH is deliquescent \u2014 it absorbs water from air and liquefies. Work quickly: pour pellets directly onto the scale, weigh, and cap the stock bottle immediately. In high-humidity environments, weigh over dry ice or in a desiccator.",
     "Weigh by difference when working in humid conditions: note the full bottle weight, remove pellets, reweigh. This avoids accumulated error from moisture gain during the weighing process.",
     "Store in a desiccator or with desiccant packets inside the stock bottle cap. Write the date of first opening on the bottle; significantly moisture-contaminated NaOH has a lower effective molarity.",
-    "Dissolution in water is highly exothermic — add NaOH slowly to water (never water to NaOH) and stir continuously. Always add base to water, never the reverse.",
+    "Dissolution in water is highly exothermic \u2014 add NaOH slowly to water (never water to NaOH) and stir continuously. Always add base to water, never the reverse.",
     "PP (polypropylene) and HDPE are compatible for NaOH up to ~10 M at room temperature. Glass is fine but can etch slowly with prolonged contact with strong base; borosilicate is more resistant than soda-lime.",
-    "When preparing 10 N NaOH (400 g/L), the solution gets hot (~80°C); prepare in a heat-resistant container, cool completely before pH measurement — NaOH electrodes are affected by temperature."
-  ]
+    "When preparing 10 N NaOH (400 g/L), the solution gets hot (~80\u00b0C); prepare in a heat-resistant container, cool completely before pH measurement \u2014 NaOH electrodes are affected by temperature."
+  ],
+  "sds_source": {
+    "revision_date": "09/11/2025",
+    "version": "6.30",
+    "product_number": "221465"
+  }
 }

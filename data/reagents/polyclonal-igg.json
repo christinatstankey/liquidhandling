@@ -1,11 +1,10 @@
 {
   "name": "Polyclonal IgG Antibody (generic, dilute)",
   "cas": "N/A",
-  "cas_note": "Antibodies are biologics; no CAS number applies. This entry represents a generic ~0.1–1 mg/mL polyclonal IgG in PBS + 0.1% BSA, 50% glycerol storage buffer.",
   "category": "adsorption_prone",
   "vendor_example": "Jackson ImmunoResearch 111-005-003 (normal goat IgG reference), Abcam ab37355",
-  "physical_state": "liquid",
-  "striking_fact": "Dilute antibodies adsorb irreversibly to standard plastic — use LoBind tubes and never let concentration drop below 10 µg/mL without adding BSA carrier.",
+  "physical_state": "solid",
+  "striking_fact": "Dilute antibodies adsorb irreversibly to standard plastic \u2014 use LoBind tubes and never let concentration drop below 10 \u00b5g/mL without adding BSA carrier.",
   "properties": {
     "is_protein": true,
     "glycerol_pct": 50,
@@ -17,6 +16,8 @@
     "flash_point_C": null,
     "is_light_sensitive": false,
     "is_fluorophore": false,
+    "excitation_nm": null,
+    "emission_nm": null,
     "is_reducing_agent": false,
     "oxidizes_in_solution": false,
     "solution_half_life_at_4C_days": null,
@@ -34,8 +35,10 @@
     "requires_ice": true,
     "freeze_thaw_max_cycles": 3,
     "skin_penetrant": false,
-    "plastic_incompatible": ["polystyrene_prolonged"],
-    "storage_temp_C": -20
+    "plastic_incompatible": [
+      "polystyrene_prolonged"
+    ],
+    "storage_temp_C": 5.0
   },
   "ghs": {
     "pictograms": [],
@@ -43,16 +46,27 @@
     "hazard_statements": []
   },
   "sds_facts": {
-    "storage": "Store at −20°C for long-term, or 4°C for up to 4 weeks. Aliquot before first freeze to avoid repeated freeze-thaw. 50% glycerol storage buffer prevents freezing at −20°C.",
-    "ppe": ["nitrile gloves"],
-    "incompatibilities": ["reducing agents (if covalent conjugate)", "azide-free formulations should not contain sodium azide if used with HRP conjugates"]
+    "storage": "Store at \u221220\u00b0C for long-term, or 4\u00b0C for up to 4 weeks. Aliquot before first freeze to avoid repeated freeze-thaw. 50% glycerol storage buffer prevents freezing at \u221220\u00b0C.",
+    "ppe": [
+      "nitrile gloves",
+      "safety glasses",
+      "respiratory protection"
+    ],
+    "incompatibilities": [
+      "Strong oxidizing agents"
+    ]
   },
   "bench_knowledge": [
     "Aliquot before first thaw: divide into single-use volumes so the working aliquot is never refrozen. Freeze-thaw cycles aggregate IgG, reducing titer and creating non-specific staining artifacts.",
-    "Use LoBind (low-protein-binding) polypropylene tubes for all dilutions below ~0.5 mg/mL. Standard PP and PS tubes adsorb significant antibody from dilute solutions within 30–60 minutes.",
-    "Add BSA or another carrier protein (0.1–1% BSA) to very dilute working stocks (< 10 µg/mL) to occupy adsorption sites. Gelatin or casein work as alternatives if BSA interferes with your assay.",
-    "Never vortex antibody stocks — shear force at the air-water interface denatures IgG and creates aggregates. Mix by gentle inversion or flicking.",
-    "Keep on ice during use; do not leave at room temperature for more than 1–2 hours during extended staining procedures.",
-    "Spin briefly (1 min, 10,000 × g) before use if the antibody has been frozen — this pellets any aggregates that have formed and removes them from the working stock."
-  ]
+    "Use LoBind (low-protein-binding) polypropylene tubes for all dilutions below ~0.5 mg/mL. Standard PP and PS tubes adsorb significant antibody from dilute solutions within 30\u201360 minutes.",
+    "Add BSA or another carrier protein (0.1\u20131% BSA) to very dilute working stocks (< 10 \u00b5g/mL) to occupy adsorption sites. Gelatin or casein work as alternatives if BSA interferes with your assay.",
+    "Never vortex antibody stocks \u2014 shear force at the air-water interface denatures IgG and creates aggregates. Mix by gentle inversion or flicking.",
+    "Keep on ice during use; do not leave at room temperature for more than 1\u20132 hours during extended staining procedures.",
+    "Spin briefly (1 min, 10,000 \u00d7 g) before use if the antibody has been frozen \u2014 this pellets any aggregates that have formed and removes them from the working stock."
+  ],
+  "sds_source": {
+    "revision_date": "04/30/2025",
+    "version": "6.6",
+    "product_number": "I5256"
+  }
 }

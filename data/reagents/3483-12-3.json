@@ -4,18 +4,20 @@
   "category": "reducing_agent",
   "vendor_example": "Sigma-Aldrich D9779, Thermo R0861",
   "physical_state": "powder",
-  "striking_fact": "DTT in solution oxidizes and loses reducing power within ~1 week at 4°C — make fresh on the day of use for sensitive applications.",
+  "striking_fact": "DTT in solution oxidizes and loses reducing power within ~1 week at 4\u00b0C \u2014 make fresh on the day of use for sensitive applications.",
   "properties": {
     "is_protein": false,
     "glycerol_pct": null,
     "viscosity_class": null,
     "viscosity_mPas_20C": null,
-    "vapor_pressure_kPa_20C": null,
+    "vapor_pressure_kPa_20C": 0.01,
     "is_volatile": false,
     "is_flammable": false,
     "flash_point_C": null,
     "is_light_sensitive": false,
     "is_fluorophore": false,
+    "excitation_nm": null,
+    "emission_nm": null,
     "is_reducing_agent": true,
     "oxidizes_in_solution": true,
     "solution_half_life_at_4C_days": 7,
@@ -26,7 +28,7 @@
     "fume_hood_required": false,
     "is_hygroscopic": false,
     "is_deliquescent": false,
-    "is_corrosive": false,
+    "is_corrosive": true,
     "is_adsorption_prone": false,
     "lo_bind_required": false,
     "freeze_point_C": null,
@@ -34,29 +36,43 @@
     "freeze_thaw_max_cycles": null,
     "skin_penetrant": false,
     "plastic_incompatible": [],
-    "storage_temp_C": -20
+    "storage_temp_C": 5.0
   },
   "ghs": {
-    "pictograms": ["exclamation_mark"],
-    "signal_word": "Warning",
+    "pictograms": [
+      "corrosion",
+      "exclamation_mark"
+    ],
+    "signal_word": "Danger",
     "hazard_statements": [
-      "H302: Harmful if swallowed",
-      "H315: Causes skin irritation",
-      "H319: Causes serious eye irritation",
-      "H335: May cause respiratory irritation"
+      "H302 Harmful if swallowed",
+      "H315 Causes skin irritation",
+      "H318 Causes serious eye damage",
+      "H402 Harmful to aquatic life"
     ]
   },
   "sds_facts": {
-    "storage": "Store powder at −20°C, desiccated. Aqueous stocks may be stored at −20°C in single-use aliquots; discard after thawing once.",
-    "ppe": ["nitrile gloves", "eye protection"],
-    "incompatibilities": ["oxidizing agents", "molecular oxygen (air)"]
+    "storage": "Store powder at \u221220\u00b0C, desiccated. Aqueous stocks may be stored at \u221220\u00b0C in single-use aliquots; discard after thawing once.",
+    "ppe": [
+      "nitrile gloves",
+      "safety goggles",
+      "respiratory protection"
+    ],
+    "incompatibilities": [
+      "Strong oxidizing agents"
+    ]
   },
   "bench_knowledge": [
-    "DTT oxidizes rapidly in aqueous solution exposed to air — the disulfide form is inactive. For critical reductions (e.g., elution of disulfide-linked proteins), always make a fresh stock on the day of use.",
-    "At 4°C in degassed or nitrogen-purged buffer, DTT stock solutions retain activity for ~1 week; at room temperature in air-exposed buffer, activity drops within hours.",
-    "Typical working concentrations: 0.5–5 mM in enzymatic reactions; 10–100 mM for protein denaturation/reduction before gel electrophoresis.",
-    "DTT is incompatible with maleimide-based dyes and crosslinkers — it will quench the maleimide before it can react with your cysteine. Add DTT only when you want to reduce, never when you want to label.",
+    "DTT oxidizes rapidly in aqueous solution exposed to air \u2014 the disulfide form is inactive. For critical reductions (e.g., elution of disulfide-linked proteins), always make a fresh stock on the day of use.",
+    "At 4\u00b0C in degassed or nitrogen-purged buffer, DTT stock solutions retain activity for ~1 week; at room temperature in air-exposed buffer, activity drops within hours.",
+    "Typical working concentrations: 0.5\u20135 mM in enzymatic reactions; 10\u2013100 mM for protein denaturation/reduction before gel electrophoresis.",
+    "DTT is incompatible with maleimide-based dyes and crosslinkers \u2014 it will quench the maleimide before it can react with your cysteine. Add DTT only when you want to reduce, never when you want to label.",
     "TCEP is a non-thiol alternative that is stable in solution at room temperature for months and compatible at low pH. Use TCEP when stability matters more than cost.",
-    "Aliquot powder stocks into small tubes, backfill with nitrogen if available, and seal with Parafilm before returning to −20°C to limit oxidation on each opening."
-  ]
+    "Aliquot powder stocks into small tubes, backfill with nitrogen if available, and seal with Parafilm before returning to \u221220\u00b0C to limit oxidation on each opening."
+  ],
+  "sds_source": {
+    "revision_date": "12/17/2025",
+    "version": "6.21",
+    "product_number": "D9779"
+  }
 }
