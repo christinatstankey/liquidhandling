@@ -11,6 +11,30 @@ Defer to `~/.claude/CLAUDE.md` for anything not covered here.
 
 ---
 
+## Status (2026-04-30)
+
+**Current phase: Phase 2 — Ingestion (in progress).**
+
+- Phase 1 MVP shipped: 10 reagent JSONs hand-authored, static site live, rules
+  engine + schema in place.
+- SDS collection: **30/30 SDSs downloaded** from Sigma-Aldrich via Claude in
+  Chrome (HCl 37%, CAS 7647-01-0, was the validation reagent before scaling).
+  Files in `data/sds-pdfs/<CAS>.pdf` (or `polyclonal-igg.pdf` for the
+  no-CAS antibody slot), all verified as real PDFs (148–385 KB, Sigma's
+  standard 16-section template).
+- Sigma uses brand prefixes inconsistently — `sigma/`, `sigald/`, and `sial/`
+  all appear across the 30 SKUs. The download script needs to probe brand
+  prefixes when building canonical URLs; don't assume one prefix per product
+  line.
+- Inventory of record lives in `data/reagent-inventory.md` (Sigma SKUs, SDS
+  status, JSON status). Update that file as work progresses.
+- Slot 1 label corrected during MVP-10 download: previously "DNA polymerase I
+  (*E. coli*)", now "Taq DNA Polymerase" — matches the JSON, which was always
+  authored for Taq. (Both share generic CAS 9012-90-2.)
+- Not yet built: `ingest/parse_sds.py` (referenced in Commands; next deliverable).
+
+---
+
 ## Thesis
 
 SDS = legal safety facts.
@@ -83,6 +107,13 @@ re-parse when the extractor improves. Only the extracted JSON in
 `data/reagents/` is committed. The directory itself is tracked via
 `data/sds-pdfs/.gitkeep` so the layout is reproducible.
 
+**Duplicate SDS resolution.** If two PDFs exist for the same CAS (e.g.,
+`<CAS>.pdf` and `<CAS> (1).pdf`), keep the one with the later Revision Date
+as reported in the PDF itself (Section 1 footer on Sigma SDSs). If the
+revision dates are identical, keep the higher version number. Delete the
+older file — do not rename or archive it. Verify with `pdfplumber` before
+deleting; never rely on filename, file size, or mtime alone.
+
 ---
 
 ## Commands
@@ -116,35 +147,41 @@ python -m http.server 8080 --directory site/
 reagent-handler/
   CLAUDE.md, README.md, requirements.txt
   data/
-    reagents/         # one JSON per reagent
-    sds-pdfs/         # source PDFs, named by CAS#
-    rules.yaml        # the rules engine
+    reagents/             # one JSON per reagent (canonical, committed)
+    sds-pdfs/             # source PDFs, named by CAS# (gitignored, local only)
+    rules.yaml            # the rules engine
+    reagent-inventory.md  # SKU + SDS + JSON status table for the 30-reagent set
+    tacit-knowledge.md    # bench knowledge taxonomy (rules.yaml source material)
     citations.bib
   ingest/
-    parse_sds.py      # PDF → JSON
-    apply_rules.py    # reagent + rules.yaml → handling profile
+    parse_sds.py          # PDF → JSON  (Phase 2; not yet built)
+    apply_rules.py        # reagent + rules.yaml → handling profile
+    schema.json           # JSON Schema for reagent records
     validate.py
   site/
     index.html, reagent.html, about.html
     assets/styles.css, assets/diagrams/
-  scripts/build.py    # data/ → site/
+  scripts/build.py        # data/ → site/
 ```
 
 ---
 
 ## Phases (ship one before starting next)
 
-**Current phase: Phase 1 (MVP)** — update this line when advancing.
+Current phase is tracked at the top of this file under **Status**.
 
-1. **MVP:** hand-author JSON for the 10 reagents in the diversity matrix
-   (see below), static frontend, deploy. Sendable.
-2. **Ingestion:** SDS PDF → JSON (Sigma template only — see Data sources)
-   plus PubChem PUG REST for numeric properties. The standardized 16-section
-   GHS/OSHA layout makes PDF parsing tractable; PubChem gives a cleaner cross-
-   check on Section 9 numbers. Validate end-to-end on 2–3 reagents from the
-   MVP set before scaling. Expand to ~30 reagents.
-   *Out of scope:* freeform protocol PDFs, lab notebook entries, or any
-   unstructured procedure text. That's a different research problem.
+1. **MVP — done.** 10 reagent JSONs hand-authored across the diversity matrix,
+   static frontend up, rules engine + schema scaffolded.
+2. **Ingestion — in progress.** SDS PDF → JSON (Sigma template only — see Data
+   sources) plus PubChem PUG REST for numeric properties. The standardized
+   16-section GHS/OSHA layout makes PDF parsing tractable; PubChem gives a
+   cleaner cross-check on Section 9 numbers. Validate end-to-end on 2–3
+   reagents from the MVP set before scaling. Expand to ~30 reagents.
+   - *SDSs collected:* 20/20 Phase 2 expansion. MVP-10 SDSs deferred.
+   - *Next:* build `ingest/parse_sds.py`, validate on 2–3 reagents end-to-end,
+     then batch the rest.
+   - *Out of scope:* freeform protocol PDFs, lab notebook entries, or any
+     unstructured procedure text. That's a different research problem.
 3. **Rules engine:** lift handling logic from per-reagent JSON into `rules.yaml`.
    Expose the file in the UI.
 4. **Polish:** SVG pipetting diagrams, rule-fired tooltips, About-page essay,
@@ -202,6 +239,58 @@ something from `data/tacit-knowledge.md` that covers a missing rule family.
 
 ---
 
+## Machine-readability principles
+
+The database is built **machine-first, human-second**: a liquid handler or LLM
+agent must be able to consume a reagent's complete handling profile without
+parsing prose, scraping HTML, or running code. The static site is a *view* over
+the canonical data — never the source of truth. Concretely:
+
+1. **JSON is the canonical wire format.** Per-reagent files live at
+   `data/reagents/<CAS>.json`. CAS# is the primary key. Biologics that lack a
+   CAS (antibodies, oligo mixes) use a stable slug (`polyclonal-igg.json`) and
+   set `cas: null` with a `cas_note` explaining why. JSON is the format LLMs
+   handle most reliably (largest training distribution, no whitespace
+   ambiguity, schema-checkable). Don't migrate to anything more exotic.
+2. **YAML for rules, Markdown for prose, JSON for data.** YAML is for human-
+   edited declarative content (`rules.yaml`); Markdown is for narrative docs
+   (`tacit-knowledge.md`, `reagent-inventory.md`); JSON is for everything an
+   agent consumes. No data lives only in HTML.
+3. **One file per reagent, fully self-contained.** Small enough to fit
+   comfortably in an LLM context window; no cross-file joins needed to act on
+   it. Properties + GHS + bench knowledge + (eventually) computed handling
+   profile all in the same record.
+4. **Predictable paths and a manifest.** `data/index.json` (to be added in
+   Phase 2) lists every reagent — `[{cas, name, path, schema_version}]` — so
+   an agent can crawl the database with one fetch and then pull individual
+   records. Stable URL pattern: `/data/reagents/<CAS>.json`.
+5. **Persist computed handling profiles to disk.** `apply_rules.py` should
+   write its output to `data/handling/<CAS>.json` (not just stdout) so robots
+   consume static files, not Python scripts. Each profile carries the list of
+   rules that fired with their `cite` strings, so the chain of reasoning is
+   inspectable.
+6. **Schema versioning.** Every reagent JSON includes `schema_version`; the
+   schema itself is at `ingest/schema.json` and `validate.py` enforces it.
+   Bumping the schema is a deliberate act with a migration note.
+7. **Citations are linkable.** Move from free-text `cite:` strings toward
+   BibTeX keys that resolve in `data/citations.bib`. Keeps human readability
+   while letting an agent dereference the source.
+8. **Bench knowledge is dual-use.** Each `bench_knowledge` bullet stays as
+   readable English (so an LLM can summarize it) but, where it corresponds to
+   a codified rule, gets tagged with the `rule_id` it came from. Untagged
+   bullets are narrative tips; tagged bullets are the human-readable face of
+   a structured rule.
+9. **Public read endpoint.** A `GET /handling/{cas}` route returning
+   `data/handling/<CAS>.json` is part of the v1 surface, not a stretch goal —
+   robots need a stable URL scheme more than humans do.
+
+The reverse principle holds too: don't sacrifice human readability to chase
+machine readability. JSON keys are descriptive (`vapor_pressure_kPa_20C`, not
+`vp20`), units live in field names, and the bench-knowledge prose is written
+for a postdoc, not a parser. Both audiences win when the data is precise.
+
+---
+
 ## Non-negotiables
 
 1. Every rule cites a property in the reagent's data OR a published source
@@ -247,6 +336,15 @@ categories or bullets; lift from it into `rules.yaml` when codifying.
 - Frontend: static now; reconsider Astro / React island only if rule-tracing UI
   gets complex.
 - Scale: 10 → 50 → 500 reagents. Don't gold-plate the demo before shipping.
-- Specific reagent products for each diversity-matrix slot: TBD as we build.
-- Public `GET /handling/{cas}` endpoint: probably yes for the pitch, not in v1.
 - Rule conflicts: design surfacing before there are conflicts to surface.
+
+### Resolved
+
+- Sigma SKUs locked in for all 30 reagents (MVP 10 + Phase 2 expansion 20);
+  see `data/reagent-inventory.md`.
+- `<CAS> (1).pdf` duplicate cluster cleaned up — single canonical PDF per slot.
+- Public `GET /handling/{cas}` endpoint: yes, in v1 — promoted to a
+  Machine-readability principle (see above), since robots need a stable URL
+  scheme more than humans do.
+- Slot-1 enzyme identity (Taq vs DNA Pol I, both CAS 9012-90-2): resolved as
+  Taq, matching the existing JSON; inventory label corrected.

@@ -19,25 +19,31 @@ JSON in `data/reagents/` is committed.
 
 ## MVP 10 — diversity matrix
 
-Each slot was chosen to force a distinct rule family. All 10 JSONs already
-exist in `data/reagents/`; the SDS PDFs are not yet collected.
+Each slot was chosen to force a distinct rule family. All 10 JSONs and SDS
+PDFs are now in place.
 
 | # | Slot | Reagent | CAS | Sigma SKU | SDS file | JSON |
 |---|---|---|---|---|---|---|
-| 1 | Enzyme in 50% glycerol | DNA polymerase I (*E. coli*) | 9012-90-2 | TBD | — | ✓ |
-| 2 | Volatile solvent | Ethanol, anhydrous | 64-17-5 | TBD | — | ✓ |
-| 3 | Viscous (no protein) | Glycerol | 56-81-5 | TBD | — | ✓ |
-| 4 | Detergent | Polysorbate 20 (Tween 20) | 9005-64-5 | TBD | — | ✓ |
-| 5 | Fluorophore | DAPI dihydrochloride | 28718-90-3 | TBD | — | ✓ |
-| 6 | Reducing agent | DTT (dithiothreitol) | 3483-12-3 | TBD | — | ✓ |
-| 7 | Fixative | Paraformaldehyde | 30525-89-4 | TBD | — | ✓ |
-| 8 | DMSO | Dimethyl sulfoxide | 67-68-5 | TBD | — | ✓ |
-| 9 | Dilute biologic | Polyclonal IgG | n/a | TBD | — | ✓ |
-| 10 | Hygroscopic solid | Sodium hydroxide (pellets) | 1310-73-2 | TBD | — | ✓ |
+| 1 | Enzyme in 50% glycerol | Taq DNA Polymerase | 9012-90-2 | sigma/d1806 (recombinant in *E. coli*) | ✓ | ✓ |
+| 2 | Volatile solvent | Ethanol, anhydrous | 64-17-5 | sial/459836 (≥99.5%, ACS, anhydrous) | ✓ | ✓ |
+| 3 | Viscous (no protein) | Glycerol | 56-81-5 | sigma/g5516 (≥99%, BioReagent) | ✓ | ✓ |
+| 4 | Detergent | Polysorbate 20 (Tween 20) | 9005-64-5 | sigma/p9416 (for molecular biology) | ✓ | ✓ |
+| 5 | Fluorophore | DAPI dihydrochloride | 28718-90-3 | sigma/d9542 (≥98%, for nucleic acid staining) | ✓ | ✓ |
+| 6 | Reducing agent | DTT (dithiothreitol) | 3483-12-3 | sigma/d9779 (≥99%) | ✓ | ✓ |
+| 7 | Fixative | Paraformaldehyde | 30525-89-4 | sial/p6148 (powder, reagent grade) | ✓ | ✓ |
+| 8 | DMSO | Dimethyl sulfoxide | 67-68-5 | sigma/d8418 (BioReagent ≥99.9%) | ✓ | ✓ |
+| 9 | Dilute biologic | Polyclonal goat IgG | n/a | sigma/i5256 (whole molecule, lyophilized) | ✓ (`polyclonal-igg.pdf`) | ✓ |
+| 10 | Hygroscopic solid | Sodium hydroxide (pellets) | 1310-73-2 | sigald/221465 (ACS reagent ≥97%) | ✓ | ✓ |
 
-> SDS PDFs for slots 1–10 not yet collected — these reagents already have JSONs
-> authored, so SDS download is deferred until the Phase 2 ingestion validation
-> needs them.
+> Slot 1 note: the inventory previously labeled this slot "DNA polymerase I
+> (*E. coli*)" but the JSON was actually authored for Taq polymerase (*Thermus
+> aquaticus*) — they share the generic CAS 9012-90-2. The SDS downloaded
+> matches the JSON's chosen enzyme (Taq).
+>
+> Slot 9 note: antibodies have no CAS, so the SDS is keyed by the slug
+> `polyclonal-igg` (matching `data/reagents/polyclonal-igg.json`). Goat IgG
+> chosen because it's the species closest to the JSON's `vendor_example`
+> (Jackson ImmunoResearch 111-005-003 normal goat IgG).
 
 ---
 
@@ -81,3 +87,10 @@ rules (e.g., CaCl₂ + EDTA) are deliberate.
   All files verified as real PDFs (`%PDF` magic bytes); sizes 148–385 KB,
   consistent with Sigma's 13–18-page SDS template. Sigma SKU column locked
   in. MVP 10 SDSs deferred until Phase 2 ingestion needs them.
+- 2026-04-30 — All 10 MVP SDSs collected (same Claude in Chrome flow). Sigma
+  SKUs locked in for the MVP 10 (some required brand-prefix probing —
+  Sigma uses `sigma/`, `sigald/`, and `sial/` inconsistently across product
+  lines). Slot 1 label corrected to "Taq DNA Polymerase" to match the JSON.
+  Slot 9 IgG saved as `polyclonal-igg.pdf` since antibodies have no CAS.
+  Database now at 30/30 SDSs + 10 hand-authored JSONs. The previous
+  `<CAS> (1).pdf` duplicate cluster has been cleaned up.
