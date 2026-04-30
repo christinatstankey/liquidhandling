@@ -87,16 +87,52 @@ reagent-handler/
 
 **Current phase: Phase 1 (MVP)** — update this line when advancing.
 
-1. **MVP:** hand-author JSON for 10 reagents, static frontend, deploy. Sendable.
-2. **Ingestion:** SDS PDF → JSON. Validate against MVP set. Expand to ~30.
+1. **MVP:** hand-author JSON for the 10 reagents in the diversity matrix
+   (see below), static frontend, deploy. Sendable.
+2. **Ingestion:** SDS PDF → JSON, scoped to vendor templates only (Sigma-Aldrich,
+   Thermo Fisher, etc.). The standardized 16-section GHS/OSHA layout makes this
+   tractable. Validate against MVP set. Expand to ~30 reagents.
+   *Out of scope:* freeform protocol PDFs, lab notebook entries, or any
+   unstructured procedure text. That's a different research problem.
 3. **Rules engine:** lift handling logic from per-reagent JSON into `rules.yaml`.
    Expose the file in the UI.
 4. **Polish:** SVG pipetting diagrams, rule-fired tooltips, About-page essay,
    deploy.
 
-MVP reagent set must cover this diversity (each forces a distinct rule):
-enzyme in 50% glycerol, volatile solvent, viscous reagent, detergent, fluorophore,
-reducing agent, fixative, DMSO, dilute oligo/antibody, competent cells.
+---
+
+## MVP reagent diversity matrix
+
+The 10-reagent MVP set is structured by category, not by popularity. Each slot
+forces a distinct rule family — the goal is to demonstrate the rules engine has
+range, not to catalog the most-used reagents in a lab.
+
+Specific products TBD; pick during build.
+
+1. **Enzyme in 50% glycerol** — viscous + protein. Forces: slow aspirate/dispense,
+   no vortex, on-ice handling, reverse pipetting.
+2. **Volatile solvent** — high vapor pressure. Forces: pre-wet tip cycles, sealed
+   reservoirs, fast dispense.
+3. **Viscous reagent (no protein)** — Forces: slow aspirate + post-aspirate
+   delay, reverse pipetting, wide-bore tips.
+4. **Detergent** — surface-active, foaming. Forces: pre-wet, no air gaps,
+   careful blow-out.
+5. **Fluorophore** — light-sensitive. Forces: amber tubes / foil, photobleaching
+   awareness, freeze-thaw cycles.
+6. **Reducing agent** — air-oxidizing. Forces: make fresh on day of use,
+   single-use aliquots, max-age limit.
+7. **Fixative** — hazard + freshness. Forces: fume hood, fresh PFA from powder,
+   dedicated waste stream.
+8. **DMSO** — hygroscopic + plastic-incompatible + freezes at 19 °C. Forces:
+   warm before pipetting, polystyrene incompatibility, skin-permeation.
+9. **Dilute oligo / antibody** — adsorption-prone. Forces: LoBind, carrier
+   protein, single-use aliquots, freeze-thaw avoidance.
+10. **Competent cells** — biologically fragile. Forces: thaw on ice, no vortex,
+    no refreeze, heat-shock timing.
+
+Each category should fire at least one rule that no other category in the set
+fires. If two slots end up firing only overlapping rules, swap one out for
+something from `data/tacit-knowledge.md` that covers a missing rule family.
 
 ---
 
@@ -157,5 +193,6 @@ categories or bullets; lift from it into `rules.yaml` when codifying.
 - Frontend: static now; reconsider Astro / React island only if rule-tracing UI
   gets complex.
 - Scale: 10 → 30 → 100 reagents. Don't gold-plate the demo before shipping.
+- Specific reagent products for each diversity-matrix slot: TBD as we build.
 - Public `GET /handling/{cas}` endpoint: probably yes for the pitch, not in v1.
 - Rule conflicts: design surfacing before there are conflicts to surface.
