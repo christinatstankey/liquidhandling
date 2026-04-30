@@ -115,6 +115,33 @@ re-parse when the extractor improves. Only the extracted JSON in
 `data/reagents/` is committed. The directory itself is tracked via
 `data/sds-pdfs/.gitkeep` so the layout is reproducible.
 
+**Who authors tacit knowledge fields.** Claude fills in all tacit fields
+(`category`, `striking_fact`, `bench_knowledge`, and the tacit `properties`
+booleans) using `data/tacit-knowledge.md` as the knowledge base and
+`data/rules.yaml` as the rule taxonomy. The user does not hand-author any of
+these. The workflow for each new reagent is:
+
+1. `parse_sds.py` generates the SDS scaffold (physical/GHS data).
+2. Claude assigns `category` from the schema enum based on the reagent's
+   primary handling challenge (see MVP diversity matrix for examples).
+3. Claude sets all tacit `properties` booleans from chemical knowledge
+   (`is_protein`, `is_reducing_agent`, `is_hygroscopic`, etc.).
+4. Claude writes `bench_knowledge` bullets by:
+   a. Running `apply_rules.py` on the scaffold to see which rules fire.
+   b. Reading `tacit-knowledge.md` for the relevant category sections.
+   c. Writing 4–7 bullets: one per fired rule (the human-readable WHY) plus
+      any category-specific gotchas from `tacit-knowledge.md` not yet
+      covered by a rule.
+5. Claude writes `striking_fact` as the single most counter-intuitive or
+   safety-critical handling point — the one thing a scientist must know
+   before touching the reagent.
+6. Claude runs `validate.py` to confirm the completed record passes schema.
+
+Bench knowledge bullets follow this style: plain English, written for a
+postdoc. Lead with the consequence, then give the mechanism. No bullet should
+duplicate content already visible in the GHS section. Cite the rule_id where
+the bullet corresponds to a codified rule (future-proofing for rule tagging).
+
 **Duplicate SDS resolution.** If two PDFs exist for the same CAS (e.g.,
 `<CAS>.pdf` and `<CAS> (1).pdf`), keep the one with the later Revision Date
 as reported in the PDF itself (Section 1 footer on Sigma SDSs). If the
