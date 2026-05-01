@@ -9,3 +9,7 @@ pandas==2.2.2
 
 # OCR fallback (Phase 2, uncomment only if needed)
 # pytesseract==0.3.13
+
+# STAR Methods corpus harvest (research/star_methods/)
+requests==2.32.3
+lxml==5.3.0

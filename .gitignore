@@ -9,3 +9,8 @@ site/assets/.DS_Store
 # Vendor SDS PDFs — kept local, never committed (see CLAUDE.md → Data sources)
 data/sds-pdfs/*.pdf
 !data/sds-pdfs/.gitkeep
+
+# JATS XML cache for the STAR Methods corpus harvest. ~5-10 GB at full
+# scale; regenerable from Europe PMC. Only the parsed CSVs are tracked.
+research/star_methods/xml_cache/*.xml
+!research/star_methods/xml_cache/.gitkeep

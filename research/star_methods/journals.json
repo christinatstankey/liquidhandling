@@ -1,0 +1,20 @@
+{
+  "_comment": "Cell Press journals that adopted the STAR Methods Key Resources Table format. ISSNs verified against the Cell Press journal index. The 'electronic' ISSN (e-ISSN) is used for the Europe PMC search since that's how the API indexes recent OA articles.",
+  "_format_adopted": "STAR Methods became mandatory across Cell Press in 2017; some journals adopted earlier in 2016. Filter by FIRST_PDATE >= 2017-01-01 for safety.",
+  "journals": [
+    {"name": "Cell",                    "issn": "0092-8674", "eissn": "1097-4172"},
+    {"name": "Cell Reports",            "issn": "2211-1247", "eissn": "2211-1247"},
+    {"name": "Molecular Cell",          "issn": "1097-2765", "eissn": "1097-4164"},
+    {"name": "Cell Host & Microbe",     "issn": "1931-3128", "eissn": "1934-6069"},
+    {"name": "Immunity",                "issn": "1074-7613", "eissn": "1097-4180"},
+    {"name": "Cancer Cell",             "issn": "1535-6108", "eissn": "1878-3686"},
+    {"name": "Cell Stem Cell",          "issn": "1934-5909", "eissn": "1875-9777"},
+    {"name": "Cell Metabolism",         "issn": "1550-4131", "eissn": "1932-7420"},
+    {"name": "Developmental Cell",      "issn": "1534-5807", "eissn": "1878-1551"},
+    {"name": "Neuron",                  "issn": "0896-6273", "eissn": "1097-4199"},
+    {"name": "Current Biology",         "issn": "0960-9822", "eissn": "1879-0445"},
+    {"name": "Cell Chemical Biology",   "issn": "2451-9456", "eissn": "2451-9448"},
+    {"name": "Cell Systems",            "issn": "2405-4712", "eissn": "2405-4720"},
+    {"name": "Med",                     "issn": "2666-6340", "eissn": "2666-6340"}
+  ]
+}
