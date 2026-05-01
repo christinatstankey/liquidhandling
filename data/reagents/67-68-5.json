@@ -5,39 +5,273 @@
   "vendor_example": "Sigma-Aldrich 276855, Thermo D12345",
   "physical_state": "liquid",
   "properties": {
-    "is_protein": false,
+    "is_protein": {
+      "value": false,
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        }
+      ]
+    },
     "glycerol_pct": null,
     "viscosity_class": "low",
     "viscosity_mPas_20C": 2.14,
     "vapor_pressure_kPa_20C": 0.055,
-    "is_volatile": false,
-    "is_flammable": false,
+    "is_volatile": {
+      "value": false,
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        }
+      ]
+    },
+    "is_flammable": {
+      "value": false,
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        }
+      ]
+    },
     "flash_point_C": 87.0,
-    "is_light_sensitive": false,
-    "is_fluorophore": false,
+    "is_light_sensitive": {
+      "value": false,
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        }
+      ]
+    },
+    "is_fluorophore": {
+      "value": false,
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        }
+      ]
+    },
     "excitation_nm": null,
     "emission_nm": null,
-    "is_reducing_agent": false,
-    "oxidizes_in_solution": false,
+    "is_reducing_agent": {
+      "value": false,
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        }
+      ]
+    },
+    "oxidizes_in_solution": {
+      "value": false,
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        }
+      ]
+    },
     "solution_half_life_at_4C_days": null,
-    "make_fresh": false,
-    "is_detergent": false,
-    "is_foaming": false,
-    "is_fixative": false,
-    "fume_hood_required": false,
-    "is_hygroscopic": true,
-    "is_deliquescent": false,
-    "is_corrosive": false,
-    "is_adsorption_prone": false,
-    "lo_bind_required": false,
+    "make_fresh": {
+      "value": false,
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        }
+      ]
+    },
+    "is_detergent": {
+      "value": false,
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        }
+      ]
+    },
+    "is_foaming": {
+      "value": false,
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        }
+      ]
+    },
+    "is_fixative": {
+      "value": false,
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        }
+      ]
+    },
+    "fume_hood_required": {
+      "value": false,
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        }
+      ]
+    },
+    "is_hygroscopic": {
+      "value": true,
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        }
+      ]
+    },
+    "is_deliquescent": {
+      "value": false,
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        }
+      ]
+    },
+    "is_corrosive": {
+      "value": false,
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        }
+      ]
+    },
+    "is_adsorption_prone": {
+      "value": false,
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        }
+      ]
+    },
+    "lo_bind_required": {
+      "value": false,
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        }
+      ]
+    },
     "freeze_point_C": 17.5,
-    "requires_ice": false,
+    "requires_ice": {
+      "value": false,
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        }
+      ]
+    },
     "freeze_thaw_max_cycles": null,
-    "skin_penetrant": true,
+    "skin_penetrant": {
+      "value": true,
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        }
+      ]
+    },
     "plastic_incompatible": [
       "polystyrene"
     ],
-    "storage_temp_C": 25
+    "storage_temp_C": 25,
+    "is_oxidizer": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_air_sensitive": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_peroxide_forming": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_water_reactive": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    }
   },
   "ghs": {
     "pictograms": [],
@@ -67,5 +301,6 @@
     "revision_date": "04/02/2026",
     "version": "6.16",
     "product_number": "D8418"
-  }
+  },
+  "schema_version": "2.0"
 }

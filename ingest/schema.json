@@ -1,14 +1,56 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Reagent",
-  "description": "One CAS#-keyed reagent entry with properties, GHS hazards, and bench knowledge.",
+  "description": "CAS#-keyed reagent handling profile. Schema v2.0 adds sourced booleans — every tacit flag carries its evidence chain.",
   "type": "object",
-  "required": ["name", "cas", "category", "physical_state", "properties", "ghs", "sds_facts", "bench_knowledge"],
+  "required": ["schema_version", "name", "cas", "category", "physical_state", "properties", "ghs", "sds_facts", "bench_knowledge"],
   "additionalProperties": false,
+
+  "definitions": {
+    "sourced_boolean": {
+      "description": "A boolean flag with a mandatory evidence chain. confidence is computed from sources by validate.py.",
+      "type": "object",
+      "required": ["value", "sources"],
+      "additionalProperties": false,
+      "properties": {
+        "value":      { "type": ["boolean", "null"] },
+        "confidence": { "type": "string", "enum": ["high", "medium", "low"] },
+        "sources": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["type", "ref", "agrees"],
+            "additionalProperties": false,
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "sds_phrase",
+                  "storage_class",
+                  "ghs_hcode",
+                  "pubchem",
+                  "chebi",
+                  "rule_derived",
+                  "tacit_knowledge",
+                  "claude_inference",
+                  "manufacturer_protocol"
+                ]
+              },
+              "ref":    { "type": "string" },
+              "agrees": { "type": "boolean" }
+            }
+          }
+        }
+      }
+    }
+  },
+
   "properties": {
-    "name":          { "type": "string" },
-    "cas":           { "type": ["string", "null"] },
-    "cas_note":      { "type": "string" },
+    "schema_version": { "type": "string", "pattern": "^\\d+\\.\\d+$" },
+    "name":           { "type": "string" },
+    "cas":            { "type": ["string", "null"] },
+    "cas_note":       { "type": "string" },
     "category": {
       "type": "string",
       "enum": [
@@ -33,37 +75,41 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "is_protein":                    { "type": ["boolean", "null"] },
-        "glycerol_pct":                  { "type": ["number",  "null"] },
-        "viscosity_class":               { "type": ["string",  "null"], "enum": ["low", "moderate", "high", null] },
-        "viscosity_mPas_20C":            { "type": ["number",  "null"] },
-        "vapor_pressure_kPa_20C":        { "type": ["number",  "null"] },
-        "is_volatile":                   { "type": ["boolean", "null"] },
-        "is_flammable":                  { "type": ["boolean", "null"] },
-        "flash_point_C":                 { "type": ["number",  "null"] },
-        "is_light_sensitive":            { "type": ["boolean", "null"] },
-        "is_fluorophore":                { "type": ["boolean", "null"] },
-        "excitation_nm":                 { "type": ["number",  "null"] },
-        "emission_nm":                   { "type": ["number",  "null"] },
-        "is_reducing_agent":             { "type": ["boolean", "null"] },
-        "oxidizes_in_solution":          { "type": ["boolean", "null"] },
-        "solution_half_life_at_4C_days": { "type": ["number",  "null"] },
-        "make_fresh":                    { "type": ["boolean", "null"] },
-        "is_detergent":                  { "type": ["boolean", "null"] },
-        "is_foaming":                    { "type": ["boolean", "null"] },
-        "is_fixative":                   { "type": ["boolean", "null"] },
-        "fume_hood_required":            { "type": ["boolean", "null"] },
-        "is_hygroscopic":                { "type": ["boolean", "null"] },
-        "is_deliquescent":               { "type": ["boolean", "null"] },
-        "is_corrosive":                  { "type": ["boolean", "null"] },
-        "is_adsorption_prone":           { "type": ["boolean", "null"] },
-        "lo_bind_required":              { "type": ["boolean", "null"] },
-        "freeze_point_C":                { "type": ["number",  "null"] },
-        "requires_ice":                  { "type": ["boolean", "null"] },
-        "freeze_thaw_max_cycles":        { "type": ["integer", "null"] },
-        "skin_penetrant":                { "type": ["boolean", "null"] },
-        "plastic_incompatible":          { "type": "array", "items": { "type": "string" } },
-        "storage_temp_C":                { "type": ["number",  "null"] }
+        "is_protein":            { "$ref": "#/definitions/sourced_boolean" },
+        "glycerol_pct":          { "type": ["number",  "null"] },
+        "viscosity_class":       { "type": ["string",  "null"], "enum": ["low", "moderate", "high", null] },
+        "viscosity_mPas_20C":    { "type": ["number",  "null"] },
+        "vapor_pressure_kPa_20C":{ "type": ["number",  "null"] },
+        "is_volatile":           { "$ref": "#/definitions/sourced_boolean" },
+        "is_flammable":          { "$ref": "#/definitions/sourced_boolean" },
+        "flash_point_C":         { "type": ["number",  "null"] },
+        "is_light_sensitive":    { "$ref": "#/definitions/sourced_boolean" },
+        "is_fluorophore":        { "$ref": "#/definitions/sourced_boolean" },
+        "excitation_nm":         { "type": ["number",  "null"] },
+        "emission_nm":           { "type": ["number",  "null"] },
+        "is_reducing_agent":     { "$ref": "#/definitions/sourced_boolean" },
+        "oxidizes_in_solution":  { "$ref": "#/definitions/sourced_boolean" },
+        "solution_half_life_at_4C_days": { "type": ["number", "null"] },
+        "make_fresh":            { "$ref": "#/definitions/sourced_boolean" },
+        "is_detergent":          { "$ref": "#/definitions/sourced_boolean" },
+        "is_foaming":            { "$ref": "#/definitions/sourced_boolean" },
+        "is_fixative":           { "$ref": "#/definitions/sourced_boolean" },
+        "fume_hood_required":    { "$ref": "#/definitions/sourced_boolean" },
+        "is_hygroscopic":        { "$ref": "#/definitions/sourced_boolean" },
+        "is_deliquescent":       { "$ref": "#/definitions/sourced_boolean" },
+        "is_corrosive":          { "$ref": "#/definitions/sourced_boolean" },
+        "is_adsorption_prone":   { "$ref": "#/definitions/sourced_boolean" },
+        "lo_bind_required":      { "$ref": "#/definitions/sourced_boolean" },
+        "freeze_point_C":        { "type": ["number",  "null"] },
+        "requires_ice":          { "$ref": "#/definitions/sourced_boolean" },
+        "freeze_thaw_max_cycles":{ "type": ["integer", "null"] },
+        "skin_penetrant":        { "$ref": "#/definitions/sourced_boolean" },
+        "plastic_incompatible":  { "type": "array", "items": { "type": "string" } },
+        "storage_temp_C":        { "type": ["number",  "null"] },
+        "is_oxidizer":           { "$ref": "#/definitions/sourced_boolean" },
+        "is_air_sensitive":      { "$ref": "#/definitions/sourced_boolean" },
+        "is_peroxide_forming":   { "$ref": "#/definitions/sourced_boolean" },
+        "is_water_reactive":     { "$ref": "#/definitions/sourced_boolean" }
       }
     },
     "ghs": {
@@ -81,9 +127,9 @@
       "required": ["storage", "ppe", "incompatibilities"],
       "additionalProperties": false,
       "properties": {
-        "storage":            { "type": "string" },
-        "ppe":                { "type": "array", "items": { "type": "string" } },
-        "incompatibilities":  { "type": "array", "items": { "type": "string" } }
+        "storage":           { "type": "string" },
+        "ppe":               { "type": "array", "items": { "type": "string" } },
+        "incompatibilities": { "type": "array", "items": { "type": "string" } }
       }
     },
     "bench_knowledge": {
