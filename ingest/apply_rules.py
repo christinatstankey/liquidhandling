@@ -111,7 +111,12 @@ def apply_rules(reagent: dict, rules: list[dict]) -> dict:
 def main():
     parser = argparse.ArgumentParser(description="Apply rules.yaml to a reagent JSON.")
     parser.add_argument("reagent_path", help="Path to reagent JSON file")
-    parser.add_argument("--out", help="Write output to this path instead of stdout")
+    parser.add_argument("--out", help="Write handling profile to this path instead of stdout")
+    parser.add_argument(
+        "--write-bench-knowledge", action="store_true",
+        help="Overwrite bench_knowledge in the source reagent JSON with the "
+             "'because' text from each fired rule (deterministic, no prose).",
+    )
     args = parser.parse_args()
 
     reagent_path = Path(args.reagent_path)
@@ -126,13 +131,24 @@ def main():
         rules = yaml.safe_load(f)
 
     profile = apply_rules(reagent, rules)
+
+    # Optionally overwrite bench_knowledge in the source reagent JSON.
+    if args.write_bench_knowledge:
+        bullets = [r["because"] for r in profile["rules_fired"]]
+        reagent["bench_knowledge"] = bullets
+        # Remove striking_fact if still present (field is retired).
+        reagent.pop("striking_fact", None)
+        reagent_path.write_text(json.dumps(reagent, indent=2) + "\n")
+        n = len(bullets)
+        print(f"bench_knowledge updated ({n} bullet{'s' if n != 1 else ''} from fired rules) → {reagent_path}")
+
     output = json.dumps(profile, indent=2)
 
     if args.out:
         out_path = Path(args.out)
         out_path.parent.mkdir(parents=True, exist_ok=True)
         out_path.write_text(output)
-        print(f"Written to {out_path}")
+        print(f"Handling profile written to {out_path}")
     else:
         print(output)
 

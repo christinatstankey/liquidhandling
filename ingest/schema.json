@@ -3,7 +3,7 @@
   "title": "Reagent",
   "description": "One CAS#-keyed reagent entry with properties, GHS hazards, and bench knowledge.",
   "type": "object",
-  "required": ["name", "cas", "category", "physical_state", "striking_fact", "properties", "ghs", "sds_facts", "bench_knowledge"],
+  "required": ["name", "cas", "category", "physical_state", "properties", "ghs", "sds_facts", "bench_knowledge"],
   "additionalProperties": false,
   "properties": {
     "name":          { "type": "string" },
@@ -29,7 +29,6 @@
       "type": "string",
       "enum": ["liquid", "solid", "powder", "solution"]
     },
-    "striking_fact": { "type": "string" },
     "properties": {
       "type": "object",
       "additionalProperties": false,

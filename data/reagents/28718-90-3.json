@@ -1,10 +1,9 @@
 {
-  "name": "DAPI (4′,6-Diamidino-2-phenylindole dihydrochloride)",
+  "name": "DAPI (4\u2032,6-Diamidino-2-phenylindole dihydrochloride)",
   "cas": "28718-90-3",
   "category": "fluorophore",
   "vendor_example": "Sigma-Aldrich D9542, Thermo D1306",
   "physical_state": "powder",
-  "striking_fact": "DAPI photobleaches rapidly under UV — even 30 seconds on the UV transilluminator before imaging will kill your signal.",
   "properties": {
     "is_protein": false,
     "glycerol_pct": null,
@@ -50,7 +49,7 @@
     ]
   },
   "sds_facts": {
-    "storage": "Store at −20°C in the dark (amber or foil-wrapped tube). Stock solutions in water or PBS are stable for months when frozen and light-protected.",
+    "storage": "Store at \u221220\u00b0C in the dark (amber or foil-wrapped tube). Stock solutions in water or PBS are stable for months when frozen and light-protected.",
     "ppe": [
       "nitrile gloves",
       "safety glasses",
@@ -59,8 +58,7 @@
     "incompatibilities": []
   },
   "bench_knowledge": [
-    "Protect from light at every step: use amber tubes, wrap in foil, minimize time under bench lighting. Even brief UV exposure before imaging causes irreversible photobleaching.",
-    "Store aliquots in foil-wrapped amber tubes at −20°C. Stock solution is stable ≥6 months. Minimize freeze-thaw cycles (< 10 recommended for stock solutions)."
+    "Fluorophores absorb photons and can undergo irreversible photobleaching \u2014 the chromophore is destroyed by oxidation or bond cleavage under illumination. For DAPI specifically, UV transilluminator exposure for as little as 30 seconds before imaging causes measurable signal loss."
   ],
   "sds_source": {
     "revision_date": "11/06/2025",

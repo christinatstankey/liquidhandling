@@ -4,7 +4,6 @@
   "category": "hygroscopic_solid",
   "vendor_example": "Sigma-Aldrich S8045, Fisher S318",
   "physical_state": "solid",
-  "striking_fact": "NaOH pellets can absorb enough moisture from humid air to dissolve themselves in minutes — weigh quickly and cap immediately.",
   "properties": {
     "is_protein": false,
     "glycerol_pct": null,
@@ -59,14 +58,11 @@
     "incompatibilities": [
       "acids (violent exothermic reaction)",
       "moisture / water (highly exothermic dissolution)",
-      "aluminum, zinc (produces H₂ gas)"
+      "aluminum, zinc (produces H\u2082 gas)"
     ]
   },
   "bench_knowledge": [
-    "NaOH is deliquescent — it absorbs water from air and liquefies. Work quickly: pour pellets directly onto the scale, weigh, and cap the stock bottle immediately. In high-humidity environments, weigh over dry ice or in a desiccator.",
-    "Weigh by difference when working in humid conditions: note the full bottle weight, remove pellets, reweigh. This avoids accumulated error from moisture gain during the weighing process.",
-    "Store in a desiccator or with desiccant packets inside the stock bottle cap. Write the date of first opening on the bottle; significantly moisture-contaminated NaOH has a lower effective molarity.",
-    "PP (polypropylene) and HDPE are compatible for NaOH up to ~10 M at room temperature. Glass is fine but can etch slowly with prolonged contact with strong base; borosilicate is more resistant than soda-lime."
+    "Hygroscopic and deliquescent solids absorb atmospheric water during each weighing event. Mass gain directly dilutes the effective molarity of the solution you prepare. Deliquescent solids (e.g., NaOH pellets) can become partially-dissolved slush within minutes in humid air, further confounding accurate weighing. Desiccator storage and fast weighing are the only controls for this."
   ],
   "sds_source": {
     "revision_date": "09/11/2025",

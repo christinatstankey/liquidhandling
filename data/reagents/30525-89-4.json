@@ -4,7 +4,6 @@
   "category": "fixative",
   "vendor_example": "Sigma-Aldrich 158127, Electron Microscopy Sciences 19200",
   "physical_state": "solid",
-  "striking_fact": "PFA releases formaldehyde gas (IARC Group 1 carcinogen) during dissolution — always prepare and use in a fume hood.",
   "properties": {
     "is_protein": false,
     "glycerol_pct": null,
@@ -59,7 +58,7 @@
     ]
   },
   "sds_facts": {
-    "storage": "Store at room temperature in a well-ventilated area, away from heat and ignition sources. Sealed original container. Opened bottles should be used within 1–2 years.",
+    "storage": "Store at room temperature in a well-ventilated area, away from heat and ignition sources. Sealed original container. Opened bottles should be used within 1\u20132 years.",
     "ppe": [
       "nitrile gloves",
       "safety goggles",
@@ -72,9 +71,7 @@
     ]
   },
   "bench_knowledge": [
-    "Always prepare and use 4% PFA solutions in a fume hood — the dissolution step releases formaldehyde vapor, which is a carcinogen and respiratory sensitizer.",
-    "For most histology and immunofluorescence, prepare fresh 4% PFA in PBS (pH 7.4) on the day of use: dissolve PFA powder at 60°C with NaOH to clarify, cool to RT, adjust pH. Old stock solutions from 16% ampules are convenient but drift in quality over weeks.",
-    "Never mix PFA waste with bleach — bleach + formaldehyde generates bis(chloromethyl) ether (a potent carcinogen) and chloromethyl methyl ether. Separate waste streams."
+    "PFA dissolves to release formaldehyde, an IARC Group 1 (known) human carcinogen and respiratory sensitiser. Even brief vapour exposure during preparation is a documented occupational hazard. Fresh preparation from powder in PBS (rather than from stored 16% stock solutions) provides better morphological preservation and avoids formate contamination that accumulates in aged solutions."
   ],
   "sds_source": {
     "revision_date": "11/06/2025",

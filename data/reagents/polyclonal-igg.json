@@ -4,7 +4,6 @@
   "category": "adsorption_prone",
   "vendor_example": "Jackson ImmunoResearch 111-005-003 (normal goat IgG reference), Abcam ab37355",
   "physical_state": "solid",
-  "striking_fact": "Dilute antibodies adsorb irreversibly to standard plastic — use LoBind tubes and never let concentration drop below 10 µg/mL without adding BSA carrier.",
   "properties": {
     "is_protein": true,
     "glycerol_pct": 50,
@@ -46,7 +45,7 @@
     "hazard_statements": []
   },
   "sds_facts": {
-    "storage": "Store at −20°C for long-term, or 4°C for up to 4 weeks. Aliquot before first freeze to avoid repeated freeze-thaw. 50% glycerol storage buffer prevents freezing at −20°C.",
+    "storage": "Store at \u221220\u00b0C for long-term, or 4\u00b0C for up to 4 weeks. Aliquot before first freeze to avoid repeated freeze-thaw. 50% glycerol storage buffer prevents freezing at \u221220\u00b0C.",
     "ppe": [
       "nitrile gloves",
       "safety glasses",
@@ -57,11 +56,8 @@
     ]
   },
   "bench_knowledge": [
-    "Aliquot before first thaw: divide into single-use volumes so the working aliquot is never refrozen. Freeze-thaw cycles aggregate IgG, reducing titer and creating non-specific staining artifacts.",
-    "Use LoBind (low-protein-binding) polypropylene tubes for all dilutions below ~0.5 mg/mL. Standard PP and PS tubes adsorb significant antibody from dilute solutions within 30–60 minutes.",
-    "Add BSA or another carrier protein (0.1–1% BSA) to very dilute working stocks (< 10 µg/mL) to occupy adsorption sites. Gelatin or casein work as alternatives if BSA interferes with your assay.",
-    "Never vortex antibody stocks — shear force at the air-water interface denatures IgG and creates aggregates. Mix by gentle inversion or flicking.",
-    "Keep on ice during use; do not leave at room temperature for more than 1–2 hours during extended staining procedures."
+    "Proteins in 50% glycerol stocks (enzymes, antibodies, recombinant carriers) stay liquid at \u221220\u00b0C but denature rapidly above ~4\u00b0C. The glycerol stock is viscous, requiring reverse pipetting to eliminate air bubbles. Vortexing creates a high-shear air\u2013water interface that unfolds proteins.",
+    "Proteins, oligonucleotides, and antibodies at low concentrations lose significant material to non-specific adsorption onto standard polypropylene and polystyrene surfaces within 30\u201360 minutes, particularly below 100 \u00b5g/mL. LoBind surfaces have reduced hydrophobic character; adding BSA or another carrier protein competes for adsorption sites and stabilises the stock at very low concentrations."
   ],
   "sds_source": {
     "revision_date": "04/30/2025",

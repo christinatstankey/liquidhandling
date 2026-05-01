@@ -507,7 +507,6 @@ def build_output(sds_data: dict, existing: dict | None) -> dict:
         "category":       ex.get("category", ""),
         "vendor_example": vendor_example,
         "physical_state": sds_data.get("physical_state") or ex.get("physical_state", "liquid"),
-        "striking_fact":  ex.get("striking_fact", ""),
         "properties":     properties,
         "ghs":            ghs,
         "sds_facts":      sds_facts,

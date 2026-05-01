@@ -4,7 +4,6 @@
   "category": "enzyme_glycerol",
   "vendor_example": "NEB M0267, Thermo EP0402",
   "physical_state": "liquid",
-  "striking_fact": "Stays liquid at −20°C because it’s in 50% glycerol — take it out, use it, return it immediately.",
   "properties": {
     "is_protein": true,
     "glycerol_pct": 50,
@@ -44,7 +43,7 @@
     "hazard_statements": []
   },
   "sds_facts": {
-    "storage": "Store at −20°C. Do not store in frost-free freezer (temperature cycling degrades activity).",
+    "storage": "Store at \u221220\u00b0C. Do not store in frost-free freezer (temperature cycling degrades activity).",
     "ppe": [
       "gloves",
       "eye protection"
@@ -52,10 +51,7 @@
     "incompatibilities": []
   },
   "bench_knowledge": [
-    "50% glycerol depresses the freezing point below −20°C; the enzyme is liquid in the freezer. Do not let it sit at room temperature or it will denature.",
-    "Reverse pipette: aspirate beyond the desired volume, then dispense to the first stop only. This prevents air bubbles in viscous glycerol stocks.",
-    "Never vortex — shear force denatures the polymerase. Mix by gentle flicking or inversion.",
-    "Keep on ice the entire time the tube is out of the freezer; return within 30 minutes."
+    "Proteins in 50% glycerol stocks (enzymes, antibodies, recombinant carriers) stay liquid at \u221220\u00b0C but denature rapidly above ~4\u00b0C. The glycerol stock is viscous, requiring reverse pipetting to eliminate air bubbles. Vortexing creates a high-shear air\u2013water interface that unfolds proteins."
   ],
   "sds_source": {
     "revision_date": "10/14/2025",

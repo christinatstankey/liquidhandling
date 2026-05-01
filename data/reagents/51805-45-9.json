@@ -1,15 +1,15 @@
 {
-  "name": "DTT (Dithiothreitol, DL-Dithiothreitol)",
-  "cas": "3483-12-3",
+  "name": "Tris(2-carboxyethyl)phosphine hydrochloride",
+  "cas": "51805-45-9",
   "category": "reducing_agent",
-  "vendor_example": "Sigma-Aldrich D9779, Thermo R0861",
+  "vendor_example": "Aldrich C4706",
   "physical_state": "powder",
   "properties": {
     "is_protein": false,
     "glycerol_pct": null,
     "viscosity_class": null,
     "viscosity_mPas_20C": null,
-    "vapor_pressure_kPa_20C": 0.01,
+    "vapor_pressure_kPa_20C": null,
     "is_volatile": false,
     "is_flammable": false,
     "flash_point_C": null,
@@ -18,14 +18,14 @@
     "excitation_nm": null,
     "emission_nm": null,
     "is_reducing_agent": true,
-    "oxidizes_in_solution": true,
-    "solution_half_life_at_4C_days": 7,
-    "make_fresh": true,
+    "oxidizes_in_solution": false,
+    "solution_half_life_at_4C_days": null,
+    "make_fresh": false,
     "is_detergent": false,
     "is_foaming": false,
     "is_fixative": false,
     "fume_hood_required": false,
-    "is_hygroscopic": false,
+    "is_hygroscopic": true,
     "is_deliquescent": false,
     "is_corrosive": true,
     "is_adsorption_prone": false,
@@ -39,34 +39,28 @@
   },
   "ghs": {
     "pictograms": [
-      "corrosion",
-      "exclamation_mark"
+      "corrosion"
     ],
     "signal_word": "Danger",
     "hazard_statements": [
-      "H302 Harmful if swallowed",
-      "H315 Causes skin irritation",
-      "H318 Causes serious eye damage",
-      "H402 Harmful to aquatic life"
+      "H314 Causes severe skin burns and eye damage"
     ]
   },
   "sds_facts": {
-    "storage": "Store powder at \u221220\u00b0C, desiccated. Aqueous stocks may be stored at \u221220\u00b0C in single-use aliquots; discard after thawing once.",
+    "storage": "Store at 2\u20138\u00b0C (refrigerator).",
     "ppe": [
       "nitrile gloves",
       "safety goggles",
       "respiratory protection"
     ],
-    "incompatibilities": [
-      "Strong oxidizing agents"
-    ]
+    "incompatibilities": []
   },
   "bench_knowledge": [
     "Thiol-based reducing agents (DTT, \u03b2-mercaptoethanol) are rapidly oxidised by dissolved O\u2082 in aqueous buffers. At 4\u00b0C in standard buffer, DTT has an effective half-life of approximately 1 week; at room temperature in air-exposed buffer, this drops to hours. For critical applications (disulfide bond reduction, enzyme protection), the stock should be made fresh on the day of use."
   ],
   "sds_source": {
-    "revision_date": "12/17/2025",
-    "version": "6.21",
-    "product_number": "D9779"
+    "revision_date": "08/14/2025",
+    "version": "6.11",
+    "product_number": "C4706"
   }
 }
