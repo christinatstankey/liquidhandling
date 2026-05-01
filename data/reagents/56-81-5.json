@@ -4,7 +4,7 @@
   "category": "viscous_reagent",
   "vendor_example": "Sigma-Aldrich G5516, Fisher G33",
   "physical_state": "liquid",
-  "striking_fact": "1400\u00d7 more viscous than water \u2014 standard pipetting speed causes air bubble entrapment and large volume errors.",
+  "striking_fact": "1400× more viscous than water — standard pipetting speed causes air bubble entrapment and large volume errors.",
   "properties": {
     "is_protein": false,
     "glycerol_pct": 100,
@@ -56,11 +56,10 @@
   },
   "bench_knowledge": [
     "Use reverse pipetting: press plunger to second stop before aspirating, then release to first stop. This eliminates the dead air volume that causes bubbles.",
-    "After aspirating, wait 2\u20133 seconds before withdrawing the tip from the liquid \u2014 glycerol clings to the outer tip and drips after removal.",
+    "After aspirating, wait 2–3 seconds before withdrawing the tip from the liquid — glycerol clings to the outer tip and drips after removal.",
     "Wide-bore tips cut aspiration resistance and reduce shear; standard tips build enough back-pressure to stall standard pipette pistons at high volumes.",
-    "Glycerol is hygroscopic \u2014 an open bottle gains mass (and dilutes concentration) as it absorbs atmospheric water. Cap immediately after use.",
-    "Freezing point is 17.8\u00b0C: pure glycerol can solidify in a 4\u00b0C cold room or on ice. Warm to room temperature and confirm it is fully liquid before pipetting.",
-    "Glycerol-containing buffers (50% enzyme stocks, glycerol stocks of bacteria) stay liquid at \u221220\u00b0C; exploited for bacterial cryopreservation without ice crystal damage."
+    "Freezing point is 17.8°C: pure glycerol can solidify in a 4°C cold room or on ice. Warm to room temperature and confirm it is fully liquid before pipetting.",
+    "Glycerol-containing buffers (50% enzyme stocks, glycerol stocks of bacteria) stay liquid at −20°C; exploited for bacterial cryopreservation without ice crystal damage."
   ],
   "sds_source": {
     "revision_date": "05/01/2025",

@@ -4,7 +4,7 @@
   "category": "detergent",
   "vendor_example": "Sigma-Aldrich P9416, Thermo 28320",
   "physical_state": "liquid",
-  "striking_fact": "Even 0.1% Tween-20 foams aggressively if dispensed with air \u2014 always dispense along the tube wall with no air gap.",
+  "striking_fact": "Even 0.1% Tween-20 foams aggressively if dispensed with air — always dispense along the tube wall with no air gap.",
   "properties": {
     "is_protein": false,
     "glycerol_pct": null,
@@ -56,12 +56,10 @@
     ]
   },
   "bench_knowledge": [
-    "Dispense slowly along the tube wall with the tip touching the side \u2014 this prevents air entrainment and foam formation.",
+    "Dispense slowly along the tube wall with the tip touching the side — this prevents air entrainment and foam formation.",
     "Never blow out the last drop with a full air blowout: the air bubble causes visible foam. Touch-off on the wall instead.",
     "Tween-20 adsorbs onto polystyrene over time; use polypropylene tubes for long-term storage of Tween-containing buffers.",
-    "Pre-wet the tip before aspirating from the stock bottle to prevent a sticky film on the tip exterior causing trailing drops.",
-    "Tween-20 at >0.5% can interfere with SDS-PAGE by competing with SDS; use the minimum concentration needed for your assay.",
-    "In ELISA wash buffers, 0.05% Tween-20 (PBST) is the standard; higher concentrations can strip antibodies off the plate."
+    "Pre-wet the tip before aspirating from the stock bottle to prevent a sticky film on the tip exterior causing trailing drops."
   ],
   "sds_source": {
     "revision_date": "11/06/2025",

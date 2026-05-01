@@ -4,7 +4,7 @@
   "category": "volatile_solvent",
   "vendor_example": "Sigma-Aldrich 459844, Thermo A405P",
   "physical_state": "liquid",
-  "striking_fact": "Vapor pressure is high enough to cause volume drift on every aspirate \u2014 pre-wet tips 3\u00d7 before dispensing.",
+  "striking_fact": "Vapor pressure is high enough to cause volume drift on every aspirate — pre-wet tips 3× before dispensing.",
   "properties": {
     "is_protein": false,
     "glycerol_pct": null,
@@ -50,7 +50,7 @@
     ]
   },
   "sds_facts": {
-    "storage": "Store at 4\u00b0C, tightly sealed, away from ignition sources. In a flammables cabinet.",
+    "storage": "Store at 4°C, tightly sealed, away from ignition sources. In a flammables cabinet.",
     "ppe": [
       "butyl rubber gloves",
       "safety glasses",
@@ -63,12 +63,9 @@
     ]
   },
   "bench_knowledge": [
-    "Pre-wet tip 3\u00d7 before aspirating: aspirate and expel ethanol without dispensing into sample. This saturates the headspace inside the tip and stops volume drift.",
+    "Pre-wet tip 3× before aspirating: aspirate and expel ethanol without dispensing into sample. This saturates the headspace inside the tip and stops volume drift.",
     "Ethanol evaporates from the tip exterior within seconds; work quickly and keep the reservoir sealed between uses.",
-    "Absolute (200 proof) ethanol is hygroscopic \u2014 opened bottles absorb atmospheric water. Use a desiccant closure or aliquot into sealed amber vials.",
-    "Never use polystyrene reservoirs; use polypropylene. Ethanol is compatible with both, but PS reservoirs may leach styrene oligomers with extended contact.",
-    "Bleach + ethanol generates chloroform and chloroacetone \u2014 do NOT decontaminate ethanol spills with bleach.",
-    "At \u221220\u00b0C ethanol is fully liquid (mp \u2212114\u00b0C) and stays fluid; used deliberately for cold methanol/ethanol fixation of cells."
+    "Bleach + ethanol generates chloroform and chloroacetone — do NOT decontaminate ethanol spills with bleach."
   ],
   "sds_source": {
     "revision_date": "07/08/2025",

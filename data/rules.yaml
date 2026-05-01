@@ -113,20 +113,29 @@
     and avoids formate contamination that accumulates in aged solutions.
   cite: "IARC Monographs Vol. 100F (2012): Formaldehyde classified Group 1. Fox CH et al. (1985) J Histochem Cytochem 33:845–853 (PFA fixation kinetics)."
 
-- id: warm_dmso_before_use
+- id: warm_freeze_prone_liquid
   when:
     freeze_point_C: {gte: 15}
   then:
     preparation.warm_to_RT_first: true
+  because: >
+    Liquids with freeze points at or above 15°C (DMSO ~19°C, glycerol ~18°C)
+    can solidify partially or fully in a 4°C cold room or on ice. Pipetting
+    a partially-solidified liquid causes systematic volume errors.
+  cite: "Sigma-Aldrich DMSO Product Information Sheet 276855 (freeze point 18.45°C). Perry's Chemical Engineers' Handbook, 8th ed. (glycerol freeze point 17.8°C)."
+
+- id: dmso_skin_and_plastics
+  when:
+    skin_penetrant: true
+  then:
     storage.avoid_plastics: ["polystyrene"]
     safety.skin_penetrant_warning: true
   because: >
-    DMSO freezes at ~19°C and is completely solid in a 4°C cold room or on ice.
-    Pipetting partially-solidified DMSO gives large systematic volume errors.
-    DMSO also rapidly penetrates skin and carries dissolved solutes transdermally,
-    making skin contact with DMSO drug stocks a real toxicity exposure route.
-    Polystyrene is dissolved/leached by DMSO over hours.
-  cite: "Sigma-Aldrich DMSO Product Information Sheet 276855. NIOSH CAS 67-68-5 skin absorption note. Polychemistry compatibility table (DMSO vs. plastics)."
+    DMSO rapidly penetrates intact skin and carries dissolved solutes
+    transdermally, making skin contact with DMSO drug stocks a real toxicity
+    exposure route. Polystyrene is leached by DMSO over hours-to-days; use
+    glass or polypropylene for stock storage.
+  cite: "NIOSH CAS 67-68-5 skin absorption note. Sigma-Aldrich DMSO Product Information Sheet 276855. Polychemistry compatibility table (DMSO vs. plastics)."
 
 - id: lo_bind_adsorption_prone
   when:

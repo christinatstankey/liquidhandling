@@ -4,7 +4,7 @@
   "category": "reducing_agent",
   "vendor_example": "Sigma-Aldrich D9779, Thermo R0861",
   "physical_state": "powder",
-  "striking_fact": "DTT in solution oxidizes and loses reducing power within ~1 week at 4\u00b0C \u2014 make fresh on the day of use for sensitive applications.",
+  "striking_fact": "DTT in solution oxidizes and loses reducing power within ~1 week at 4°C — make fresh on the day of use for sensitive applications.",
   "properties": {
     "is_protein": false,
     "glycerol_pct": null,
@@ -52,7 +52,7 @@
     ]
   },
   "sds_facts": {
-    "storage": "Store powder at \u221220\u00b0C, desiccated. Aqueous stocks may be stored at \u221220\u00b0C in single-use aliquots; discard after thawing once.",
+    "storage": "Store powder at −20°C, desiccated. Aqueous stocks may be stored at −20°C in single-use aliquots; discard after thawing once.",
     "ppe": [
       "nitrile gloves",
       "safety goggles",
@@ -63,12 +63,9 @@
     ]
   },
   "bench_knowledge": [
-    "DTT oxidizes rapidly in aqueous solution exposed to air \u2014 the disulfide form is inactive. For critical reductions (e.g., elution of disulfide-linked proteins), always make a fresh stock on the day of use.",
-    "At 4\u00b0C in degassed or nitrogen-purged buffer, DTT stock solutions retain activity for ~1 week; at room temperature in air-exposed buffer, activity drops within hours.",
-    "Typical working concentrations: 0.5\u20135 mM in enzymatic reactions; 10\u2013100 mM for protein denaturation/reduction before gel electrophoresis.",
-    "DTT is incompatible with maleimide-based dyes and crosslinkers \u2014 it will quench the maleimide before it can react with your cysteine. Add DTT only when you want to reduce, never when you want to label.",
-    "TCEP is a non-thiol alternative that is stable in solution at room temperature for months and compatible at low pH. Use TCEP when stability matters more than cost.",
-    "Aliquot powder stocks into small tubes, backfill with nitrogen if available, and seal with Parafilm before returning to \u221220\u00b0C to limit oxidation on each opening."
+    "DTT oxidizes rapidly in aqueous solution exposed to air — the disulfide form is inactive. For critical reductions (e.g., elution of disulfide-linked proteins), always make a fresh stock on the day of use.",
+    "At 4°C in degassed or nitrogen-purged buffer, DTT stock solutions retain activity for ~1 week; at room temperature in air-exposed buffer, activity drops within hours.",
+    "Aliquot powder stocks into small tubes, backfill with nitrogen if available, and seal with Parafilm before returning to −20°C to limit oxidation on each opening."
   ],
   "sds_source": {
     "revision_date": "12/17/2025",

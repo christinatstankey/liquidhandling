@@ -4,7 +4,7 @@
   "category": "dmso",
   "vendor_example": "Sigma-Aldrich 276855, Thermo D12345",
   "physical_state": "liquid",
-  "striking_fact": "DMSO freezes at 19\u00b0C and is solid in a 4\u00b0C cold room \u2014 always warm to room temperature before pipetting.",
+  "striking_fact": "DMSO freezes at 19°C and is solid in a 4°C cold room — always warm to room temperature before pipetting.",
   "properties": {
     "is_protein": false,
     "glycerol_pct": null,
@@ -61,12 +61,9 @@
     ]
   },
   "bench_knowledge": [
-    "DMSO is solid at room temperature if your lab is cool (<19\u00b0C) and always solid in a 4\u00b0C cold room or on ice. Warm to 25\u00b0C and confirm fully liquid before pipetting \u2014 partially solidified DMSO gives wrong volumes.",
-    "DMSO rapidly penetrates skin and mucous membranes, carrying dissolved solutes with it. A DMSO stock of a toxic compound can deliver the dissolved material transdermally \u2014 never touch DMSO drug solutions without heavy nitrile gloves.",
-    "DMSO dissolves polystyrene: never use standard cell-culture plates, polystyrene tubes, or clear conical Falcon tubes for DMSO stocks. Use polypropylene Eppendorfs or glass vials.",
-    "DMSO is hygroscopic \u2014 an open bottle gains water content, which can affect assay results (especially kinase inhibitor stocks where anhydrous DMSO is assumed). Aliquot into glass vials, cap immediately, and use molecular sieves if anhydrous is critical.",
-    "Maximum DMSO concentration tolerated by most mammalian cell lines is 0.1\u20130.5%; >1% causes cytotoxicity independent of the dissolved compound. Always dilute DMSO stocks appropriately and include a vehicle control.",
-    "At cryogenic concentrations (10% v/v in media), DMSO acts as a cryoprotectant by preventing ice crystal formation. Thaw cryovials quickly at 37\u00b0C and immediately dilute out the DMSO \u2014 prolonged exposure at 37\u00b0C is toxic."
+    "DMSO is solid at room temperature if your lab is cool (<19°C) and always solid in a 4°C cold room or on ice. Warm to 25°C and confirm fully liquid before pipetting — partially solidified DMSO gives wrong volumes.",
+    "DMSO rapidly penetrates skin and mucous membranes, carrying dissolved solutes with it. A DMSO stock of a toxic compound can deliver the dissolved material transdermally — never touch DMSO drug solutions without heavy nitrile gloves.",
+    "DMSO dissolves polystyrene: never use standard cell-culture plates, polystyrene tubes, or clear conical Falcon tubes for DMSO stocks. Use polypropylene Eppendorfs or glass vials."
   ],
   "sds_source": {
     "revision_date": "04/02/2026",
