@@ -32,16 +32,82 @@ See `CLAUDE.md` (project root) for thesis and Phase 2 context.
   parse_krt.py             ──► parsed/krt_rows.csv
        │
        ▼
-  Phase 3: identifier      ──► parsed/krt_rows_normalized.csv
-  normalization                 (vendor cleaned, catalog# regex'd)
+  Phase 3: dedup +         ──► parsed/krt_rows_normalized.csv
+  identifier normalization      (dedup on (name, source, identifier))
        │
        ▼
-  Phase 4: PubChem/ChEMBL  ──► parsed/krt_reagents_ranked.csv
-  crosswalk + freq rank         (CAS-keyed where possible, freq-ranked)
+  Phase 4: freq rank +     ──► parsed/krt_reagents_ranked.csv
+  PubChem crosswalk             (per-year normalized; trend_slope)
 ```
 
 Phases 3 and 4 are not yet implemented; Phase 2 (parser) is the validation
-gate.
+gate. The design below pins the metric down up front so it doesn't get
+bolted on after the parser ships.
+
+## Phase 3/4 design
+
+**Phase 3 — deduplication and identifier normalization.** The unit of
+identity is the `(reagent_name, source, identifier)` tuple, not
+`reagent_name` alone. The same chemical name can resolve to different
+vendors and catalog#s with materially different products (e.g., DTT from
+Sigma D9779 vs Thermo R0861 — same molecule, but different formulation /
+grade / downstream handling rules), and we want both visible in the
+ranked output rather than collapsed.
+
+Light normalization is applied before the dedup to absorb formatting
+drift, not to merge across vendors:
+
+- Lowercase and strip surrounding whitespace.
+- Collapse internal whitespace runs to a single space.
+- Normalize catalog# variants — hyphens, spaces, underscores, leading
+  zeros — so `D-9779`, `D 9779`, and `D9779` collapse to the same
+  identifier.
+- Preserve the original strings in `reagent_name_raw` and
+  `identifier_raw` columns for downstream auditing.
+
+Output: `parsed/krt_rows_normalized.csv` — one row per
+`(paper, normalized_reagent_tuple)`. Same shape as `krt_rows.csv` plus
+the `_raw` columns.
+
+**Phase 4 — frequency ranking, normalized by papers-with-KRT.** For each
+`(reagent_name, source, identifier)`, count how many *distinct papers*
+cite it per year. Normalize by the total number of papers-*with-KRT* in
+that year — **not** the corpus total. Only KRT-bearing papers can
+contribute reagent mentions, so the right base rate is "what fraction of
+papers that could have mentioned this reagent did." Year-by-year
+normalization also absorbs the fact that the proportion of OA Cell Press
+papers carrying a parseable KRT changes over time (mandate phase-in,
+journal-level template drift, parser coverage gaps).
+
+Output: `parsed/krt_reagents_ranked.csv`, one row per reagent tuple:
+
+```
+reagent_name | source | identifier | years_cited | total_papers | normalized_freq_per_year | trend_slope
+```
+
+- `years_cited` — count of distinct years the reagent appeared in any
+  paper.
+- `total_papers` — distinct paper count across all years.
+- `normalized_freq_per_year` — JSON-encoded year→fraction dict.
+- `trend_slope` — linear regression slope of the per-year fractions
+  against year. `null` if `years_cited < 2`.
+
+The slope is the useful derived column. A reagent used in ~2% of
+KRT-bearing papers every year is stable (slope ≈ 0). One going from
+0.5% to 3% over five years is trending up (slope > 0). Stable-and-high
+and trending-up are both interesting candidates for the rules engine,
+and the slope cleanly separates them. Downstream consumers should
+require `years_cited >= 3` before treating the slope as meaningful —
+reagents only present in the most recent 1–2 years can throw
+artificially large slopes.
+
+PubChem crosswalk (CAS lookup keyed by vendor catalog#) is best-effort
+and runs alongside Phase 4, not as a hard prerequisite. Sigma is
+indexed in PubChem; NEB / Cell Signaling / Tocris are not. Reagents
+without a resolved CAS keep `(vendor, catalog#)` as their canonical
+identifier — the rules engine doesn't require CAS for the
+adsorption / freeze-thaw / dilute-protein rule families that biologics
+fire.
 
 ## How to run
 
