@@ -1,0 +1,31 @@
+slug,name,category,storage_class,is_hygroscopic,is_deliquescent,is_light_sensitive,is_air_sensitive,is_heat_sensitive,is_peroxide_forming,is_oxidizer,is_water_reactive,is_pyrophoric,fume_hood_required,is_corrosive_storage_hint,is_dry_storage_hint,json_is_hygroscopic,json_is_deliquescent,json_is_light_sensitive,json_is_reducing_agent,json_is_fluorophore,json_make_fresh,json_fume_hood_required,json_is_corrosive,json_is_fixative,json_oxidizes_in_solution
+10035-04-8,,,"11, Combustible Solids",,,,,,,,,,,,,,,,,,,,,,
+111-30-8,,,"8A, Combustible, corrosive hazardous materials",,,,Y,,,,Y,,Y,Y,,,,,,,,,,,
+1239-45-8,,,"6.1D, Non-combustible, acute toxic Cat.3 / toxic",,,,,,,,Y,,Y,,,,,,,,,,,,
+1310-73-2,"Sodium Hydroxide (NaOH), pellets",hygroscopic_solid,"8B, Non-combustible, corrosive hazardous materials",,,,,,,,,,,Y,,True,True,False,False,False,False,False,True,False,False
+151-21-3,,,"4.1B, Flammable solid hazardous materials",Y,,,,,,,,,Y,,,,,,,,,,,,
+1609-47-8,,,"10, Combustible liquids",,,,Y,,,,,,,,,,,,,,,,,,
+25322-68-3,,,"11, Combustible Solids",,,,,,,,,,,,,,,,,,,,,,
+28718-90-3,"DAPI (4′,6-Diamidino-2-phenylindole dihydrochloride)",fluorophore,"11, Combustible Solids",,,,,,,,,,,,,False,False,True,False,True,False,False,False,False,False
+30525-89-4,"Paraformaldehyde (PFA), solid",fixative,"4.1B, Flammable solid hazardous materials",,,,,,,,,,Y,,,False,False,False,False,False,True,True,True,True,False
+3483-12-3,"DTT (Dithiothreitol, DL-Dithiothreitol)",reducing_agent,"11, Combustible Solids",,,,,,,,,,,,,False,False,False,True,False,True,False,True,False,True
+51805-45-9,,,"8A, Combustible, corrosive hazardous materials",,,,,,,,,,,Y,,,,,,,,,,,
+56-81-5,"Glycerol, 99%+ (anhydrous)",viscous_reagent,"10, Combustible liquids",Y,,,,,,,,,,,,True,False,False,False,False,False,False,False,False,False
+60-24-2,,,"6.1A, Combustible, acute toxic Cat. 1 and 2 / very",,,,,,,,,,Y,,,,,,,,,,,,
+60-29-7,,,"3, Flammable liquids",,,Y,Y,Y,Y,,,,Y,,,,,,,,,,,,
+6381-92-6,,,"11, Combustible Solids",,,,,,,,,,Y,,,,,,,,,,,,
+64-17-5,"Ethanol, 200 proof (absolute)",volatile_solvent,"3, Flammable liquids",Y,,,,,,,,,,,,True,False,False,False,False,False,False,False,False,False
+67-68-5,DMSO (Dimethyl sulfoxide),dmso,"10, Combustible liquids",Y,,,Y,,,,,,,,,True,False,False,False,False,False,False,False,False,False
+7365-45-9,,,"11, Combustible Solids",,,,,,,,,,,,,,,,,,,,,,
+75-05-8,,,"3, Flammable liquids",,,,,,,,,,Y,,,,,,,,,,,,
+75621-03-3,,,"11, Combustible Solids",,,,,,,,,,,,,,,,,,,,,,
+76-05-1,,,"8A, Combustible, corrosive hazardous materials",Y,,,Y,,,,,,Y,Y,,,,,,,,,,,
+7647-01-0,,,"8B, Non-combustible, corrosive hazardous materials",,,,,,,,,,,Y,,,,,,,,,,,
+7681-52-9,,,"12, Non Combustible Liquids",,,,,,,,Y,,,,,,,,,,,,,,
+7722-84-1,,,"5.1B, Oxidizing hazardous materials",,,,,,,Y,Y,,,,,,,,,,,,,,
+7791-18-6,,,"13, Non Combustible Solids",Y,,,,,,,,,,,,,,,,,,,,,
+79-06-1,,,"6.1C, Combustible, acute toxic Cat.3 / toxic",,,Y,,,,,,,Y,,,,,,,,,,,,
+9005-64-5,Tween-20 (Polysorbate 20),detergent,"10, Combustible liquids",,,,,,,,,,,,,False,False,False,False,False,False,False,False,False,False
+9012-90-2,Taq DNA Polymerase,enzyme_glycerol,"12, Non Combustible Liquids",,,,,,,,,,,,,False,False,False,False,False,False,False,False,False,False
+9036-19-5,,,"10, Combustible liquids",,,,,,,,,,,,,,,,,,,,,,
+polyclonal-igg,"Polyclonal IgG Antibody (generic, dilute)",adsorption_prone,"11, Combustible Solids",,,,,,,,,,,,,False,False,False,False,False,False,False,False,False,False
