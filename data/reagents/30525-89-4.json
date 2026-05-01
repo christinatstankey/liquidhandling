@@ -130,11 +130,21 @@
     },
     "is_fixative": {
       "value": true,
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        },
+        {
+          "type": "chebi",
+          "ref": "CHEBI:75983",
+          "agrees": true
+        },
+        {
+          "type": "chebi",
+          "ref": "CHEBI:64213",
           "agrees": true
         }
       ]

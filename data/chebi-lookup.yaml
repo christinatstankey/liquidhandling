@@ -1,0 +1,270 @@
+# chebi-lookup.yaml — curated ChEBI role mappings for the 30-reagent set.
+#
+# Each entry maps a CAS number to one or more ChEBI ontology roles that
+# are confirmed for that compound.  enrich_chebi.py reads this file as its
+# primary source; live ChEBI API calls are a future enhancement.
+#
+# Verification: ChEBI IDs can be confirmed at https://www.ebi.ac.uk/chebi/
+# Format:
+#   cas: "CAS-No"          # primary key (string, matches JSON cas field)
+#   chebi_id: "CHEBI:XXXXX"  # canonical ChEBI ID for the compound itself
+#   roles:
+#     - term: "role name"    # ChEBI ontology term (human-readable)
+#       role_chebi: "CHEBI:XXXXX"  # ChEBI ID of the role (not the compound)
+#       flag: is_<name>    # which tacit boolean this confirms
+#       agrees: true/false
+
+# ── MVP 10 ───────────────────────────────────────────────────────────────────
+
+- cas: "9012-90-2"
+  name: Taq DNA Polymerase
+  chebi_id: null  # generic CAS for all DNA-directed DNA polymerases; no single ChEBI entry
+  roles:
+    - term: enzyme
+      role_chebi: CHEBI:23888
+      flag: is_protein
+      agrees: true
+    - term: protein
+      role_chebi: CHEBI:36080
+      flag: is_protein
+      agrees: true
+
+- cas: "64-17-5"
+  name: Ethanol
+  chebi_id: CHEBI:16236
+  roles: []  # no functional flag classification from ChEBI
+
+- cas: "56-81-5"
+  name: Glycerol
+  chebi_id: CHEBI:17754
+  roles: []
+
+- cas: "9005-64-5"
+  name: Polysorbate 20 (Tween-20)
+  chebi_id: CHEBI:53426
+  roles:
+    - term: detergent
+      role_chebi: CHEBI:27780
+      flag: is_detergent
+      agrees: true
+    - term: nonionic surfactant
+      role_chebi: CHEBI:35195
+      flag: is_detergent
+      agrees: true
+
+- cas: "28718-90-3"
+  name: DAPI dihydrochloride
+  chebi_id: CHEBI:51231
+  roles:
+    - term: fluorescent dye
+      role_chebi: CHEBI:51121
+      flag: is_fluorophore
+      agrees: true
+
+- cas: "3483-12-3"
+  name: DTT (Dithiothreitol)
+  chebi_id: CHEBI:3474
+  roles:
+    - term: reducing agent
+      role_chebi: CHEBI:63247
+      flag: is_reducing_agent
+      agrees: true
+
+- cas: "30525-89-4"
+  name: Paraformaldehyde
+  chebi_id: CHEBI:32500
+  roles:
+    - term: fixing agent
+      role_chebi: CHEBI:75983
+      flag: is_fixative
+      agrees: true
+    - term: crosslinking agent
+      role_chebi: CHEBI:64213
+      flag: is_fixative
+      agrees: true
+
+- cas: "67-68-5"
+  name: DMSO
+  chebi_id: CHEBI:28262
+  roles: []
+
+- cas: "N/A"
+  name: Polyclonal IgG (no CAS)
+  chebi_id: null
+  roles:
+    - term: protein
+      role_chebi: CHEBI:36080
+      flag: is_protein
+      agrees: true
+
+- cas: "1310-73-2"
+  name: Sodium hydroxide
+  chebi_id: CHEBI:32145
+  roles: []
+
+# ── Phase 2 expansion ────────────────────────────────────────────────────────
+
+- cas: "7647-01-0"
+  name: Hydrochloric acid
+  chebi_id: CHEBI:17883
+  roles: []
+
+- cas: "7722-84-1"
+  name: Hydrogen peroxide 30%
+  chebi_id: CHEBI:16240
+  roles:
+    - term: oxidising agent
+      role_chebi: CHEBI:63248
+      flag: is_oxidizer
+      agrees: true
+
+- cas: "1239-45-8"
+  name: Ethidium bromide
+  chebi_id: CHEBI:17418
+  roles:
+    - term: fluorescent dye
+      role_chebi: CHEBI:51121
+      flag: is_fluorophore
+      agrees: true
+    - term: intercalating agent
+      role_chebi: CHEBI:52096
+      flag: is_fluorophore  # intercalation is how it fluoresces bound to DNA
+      agrees: true
+
+- cas: "60-29-7"
+  name: Diethyl ether
+  chebi_id: CHEBI:35702
+  roles:
+    - term: peroxide-forming solvent
+      role_chebi: null  # ChEBI does not have a "peroxide-forming" role term;
+                        # peroxide formation is a documented chemical hazard
+      flag: is_peroxide_forming
+      agrees: true
+
+- cas: "76-05-1"
+  name: Trifluoroacetic acid
+  chebi_id: CHEBI:45892
+  roles: []
+
+- cas: "7365-45-9"
+  name: HEPES (free acid)
+  chebi_id: CHEBI:42334
+  roles: []
+
+- cas: "6381-92-6"
+  name: EDTA disodium dihydrate
+  chebi_id: CHEBI:42191
+  roles: []
+
+- cas: "111-30-8"
+  name: Glutaraldehyde 25%
+  chebi_id: CHEBI:17012
+  roles:
+    - term: fixing agent
+      role_chebi: CHEBI:75983
+      flag: is_fixative
+      agrees: true
+    - term: crosslinking agent
+      role_chebi: CHEBI:64213
+      flag: is_fixative
+      agrees: true
+
+- cas: "51805-45-9"
+  name: TCEP·HCl
+  chebi_id: CHEBI:51048
+  roles:
+    - term: reducing agent
+      role_chebi: CHEBI:63247
+      flag: is_reducing_agent
+      agrees: true
+
+- cas: "60-24-2"
+  name: 2-Mercaptoethanol
+  chebi_id: CHEBI:41218
+  roles:
+    - term: reducing agent
+      role_chebi: CHEBI:63247
+      flag: is_reducing_agent
+      agrees: true
+
+- cas: "151-21-3"
+  name: SDS (sodium dodecyl sulfate)
+  chebi_id: CHEBI:8984
+  roles:
+    - term: detergent
+      role_chebi: CHEBI:27780
+      flag: is_detergent
+      agrees: true
+    - term: anionic surfactant
+      role_chebi: CHEBI:35190
+      flag: is_detergent
+      agrees: true
+
+- cas: "9036-19-5"
+  name: Triton X-100
+  chebi_id: CHEBI:9635
+  roles:
+    - term: detergent
+      role_chebi: CHEBI:27780
+      flag: is_detergent
+      agrees: true
+    - term: nonionic surfactant
+      role_chebi: CHEBI:35195
+      flag: is_detergent
+      agrees: true
+
+- cas: "75621-03-3"
+  name: CHAPS
+  chebi_id: CHEBI:47704
+  roles:
+    - term: detergent
+      role_chebi: CHEBI:27780
+      flag: is_detergent
+      agrees: true
+    - term: zwitterionic detergent
+      role_chebi: CHEBI:27780
+      flag: is_detergent
+      agrees: true
+
+- cas: "25322-68-3"
+  name: PEG 8000
+  chebi_id: CHEBI:46793
+  roles: []
+
+- cas: "7791-18-6"
+  name: Magnesium chloride hexahydrate
+  chebi_id: CHEBI:62412
+  roles: []
+
+- cas: "10035-04-8"
+  name: Calcium chloride dihydrate
+  chebi_id: CHEBI:86352
+  roles: []
+
+- cas: "1609-47-8"
+  name: DEPC (diethyl pyrocarbonate)
+  chebi_id: CHEBI:34078
+  roles: []
+
+- cas: "75-05-8"
+  name: Acetonitrile
+  chebi_id: CHEBI:38472
+  roles: []
+
+- cas: "7681-52-9"
+  name: Sodium hypochlorite
+  chebi_id: CHEBI:32146
+  roles:
+    - term: oxidising agent
+      role_chebi: CHEBI:63248
+      flag: is_oxidizer
+      agrees: true
+    - term: disinfectant
+      role_chebi: CHEBI:48219
+      flag: is_oxidizer  # bleach's mechanism as disinfectant is oxidative
+      agrees: true
+
+- cas: "79-06-1"
+  name: Acrylamide
+  chebi_id: CHEBI:28619
+  roles: []

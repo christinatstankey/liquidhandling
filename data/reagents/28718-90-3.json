@@ -45,22 +45,32 @@
     "flash_point_C": null,
     "is_light_sensitive": {
       "value": true,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        },
+        {
+          "type": "rule_derived",
+          "ref": "rule_derived:is_fluorophore\u2192is_light_sensitive",
           "agrees": true
         }
       ]
     },
     "is_fluorophore": {
       "value": true,
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        },
+        {
+          "type": "chebi",
+          "ref": "CHEBI:51121",
           "agrees": true
         }
       ]

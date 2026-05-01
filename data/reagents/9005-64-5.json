@@ -103,11 +103,21 @@
     },
     "is_detergent": {
       "value": true,
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        },
+        {
+          "type": "chebi",
+          "ref": "CHEBI:27780",
+          "agrees": true
+        },
+        {
+          "type": "chebi",
+          "ref": "CHEBI:35195",
           "agrees": true
         }
       ]
