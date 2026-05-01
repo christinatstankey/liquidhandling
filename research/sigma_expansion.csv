@@ -1,0 +1,813 @@
+name,sigma_sku,cas_number,category,source_url
+L-Alanine,A7627,56-41-7,amino_acid,https://www.sigmaaldrich.com/US/en/product/sigma/a7627
+L-Arginine,A5006,74-79-3,amino_acid,https://www.sigmaaldrich.com/US/en/product/sigma/a5006
+L-Asparagine,A0884,70-47-3,amino_acid,https://www.sigmaaldrich.com/US/en/product/sigma/a0884
+L-Aspartic acid,A9256,56-84-8,amino_acid,https://www.sigmaaldrich.com/US/en/product/sigma/a9256
+L-Cysteine,C7352,52-90-4,amino_acid,https://www.sigmaaldrich.com/US/en/product/sigma/c7352
+L-Glutamic acid,G1251,56-86-0,amino_acid,https://www.sigmaaldrich.com/US/en/product/sigma/g1251
+Glycine,G7126,56-40-6,amino_acid,https://www.sigmaaldrich.com/US/en/product/sigma/g7126
+L-Histidine,H8000,71-00-1,amino_acid,https://www.sigmaaldrich.com/US/en/product/sigma/h8000
+L-Isoleucine,I2752,73-32-5,amino_acid,https://www.sigmaaldrich.com/US/en/product/sigma/i2752
+L-Leucine,L8000,61-90-5,amino_acid,https://www.sigmaaldrich.com/US/en/product/sigma/l8000
+L-Lysine hydrochloride,L5626,657-27-2,amino_acid,https://www.sigmaaldrich.com/US/en/product/sigma/l5626
+L-Methionine,M9625,63-68-3,amino_acid,https://www.sigmaaldrich.com/US/en/product/sigma/m9625
+L-Phenylalanine,P2126,63-91-2,amino_acid,https://www.sigmaaldrich.com/US/en/product/sigma/p2126
+L-Proline,P0380,147-85-3,amino_acid,https://www.sigmaaldrich.com/US/en/product/sigma/p0380
+L-Serine,S4500,56-45-1,amino_acid,https://www.sigmaaldrich.com/US/en/product/sigma/s4500
+L-Threonine,T8625,72-19-5,amino_acid,https://www.sigmaaldrich.com/US/en/product/sigma/t8625
+L-Tryptophan,T0254,73-22-3,amino_acid,https://www.sigmaaldrich.com/US/en/product/sigma/t0254
+L-Tyrosine,T3754,60-18-4,amino_acid,https://www.sigmaaldrich.com/US/en/product/sigma/t3754
+L-Valine,V0500,72-18-4,amino_acid,https://www.sigmaaldrich.com/US/en/product/sigma/v0500
+beta-Alanine,146064,107-95-9,amino_acid,https://www.sigmaaldrich.com/US/en/product/sigma/146064
+gamma-Aminobutyric acid (GABA),A2129,56-12-2,amino_acid,https://www.sigmaaldrich.com/US/en/product/sigma/a2129
+L-Ornithine hydrochloride,O2375,3184-13-2,amino_acid,https://www.sigmaaldrich.com/US/en/product/sigma/o2375
+L-Citrulline,C7629,372-75-8,amino_acid,https://www.sigmaaldrich.com/US/en/product/sigma/c7629
+trans-4-Hydroxy-L-proline,H5534,51-35-4,amino_acid,https://www.sigmaaldrich.com/US/en/product/sigma/h5534
+Taurine,T0625,107-35-7,amino_acid,https://www.sigmaaldrich.com/US/en/product/sigma/t0625
+Sarcosine,S9881,107-97-1,amino_acid,https://www.sigmaaldrich.com/US/en/product/sigma/s9881
+DL-Homocysteine,H4628,454-29-5,amino_acid,https://www.sigmaaldrich.com/US/en/product/sigma/h4628
+S-Adenosyl-L-methionine (SAM),A7007,29908-03-0,amino_acid,https://www.sigmaaldrich.com/US/en/product/sigma/a7007
+L-Glutathione reduced (GSH),G4251,70-18-8,amino_acid,https://www.sigmaaldrich.com/US/en/product/sigma/g4251
+L-Glutathione oxidized (GSSG),G4376,27025-41-8,amino_acid,https://www.sigmaaldrich.com/US/en/product/sigma/g4376
+L-Carnitine,C0283,541-15-1,amino_acid,https://www.sigmaaldrich.com/US/en/product/sigma/c0283
+Creatine,C0780,57-00-1,amino_acid,https://www.sigmaaldrich.com/US/en/product/sigma/c0780
+L-DOPA (Levodopa),D9628,59-92-7,amino_acid,https://www.sigmaaldrich.com/US/en/product/sigma/d9628
+Hippuric acid,112003,495-69-2,amino_acid,https://www.sigmaaldrich.com/US/en/product/sigma/112003
+Adenosine,A9251,58-61-7,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/a9251
+Guanosine,G6752,118-00-3,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/g6752
+Cytidine,C4654,65-46-3,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/c4654
+Uridine,U3003,58-96-8,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/u3003
+Inosine,I4125,58-63-9,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/i4125
+Thymidine,T1895,50-89-5,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/t1895
+AMP (Adenosine 5'-monophosphate),A1752,61-19-8,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/a1752
+GMP (Guanosine 5'-monophosphate),G8377,85-32-5,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/g8377
+CMP (Cytidine 5'-monophosphate),C1006,63-37-6,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/c1006
+UMP (Uridine 5'-monophosphate),U6375,58-97-9,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/u6375
+IMP (Inosine 5'-monophosphate),I4625,131-99-7,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/i4625
+ADP (Adenosine 5'-diphosphate),A2754,20398-34-9,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/a2754
+GDP (Guanosine 5'-diphosphate),G7127,7415-69-2,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/g7127
+ATP disodium salt,A2383,987-65-5,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/a2383
+GTP sodium salt,G8877,10393-49-4,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/g8877
+CTP disodium salt,C1506,36051-68-0,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/c1506
+UTP trisodium salt,U6625,19817-92-6,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/u6625
+"cAMP (3',5'-cyclic AMP)",A9501,60-92-4,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/a9501
+cGMP sodium salt,G6129,40732-48-7,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/g6129
+dATP,D6500,1927-31-7,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/d6500
+dGTP,D4010,2564-35-4,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/d4010
+dCTP,D4635,2056-98-6,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/d4635
+dTTP,T0251,365-08-2,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/t0251
+dUTP,D7129,1173-82-6,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/d7129
+NADH disodium salt,N8129,606-68-8,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/n8129
+NADPH tetrasodium salt,N7505,2646-71-1,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/n7505
+NADP+ sodium salt,N0505,1184-16-3,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/n0505
+FAD disodium salt,F6625,84366-81-4,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/f6625
+FMN sodium salt,F8399,130-40-5,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/f8399
+Coenzyme A trilithium salt,C3019,18439-24-2,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/c3019
+Acetyl coenzyme A sodium salt,A2056,32140-51-5,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/a2056
+8-Bromo-cAMP,B5386,23583-48-4,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/b5386
+Dibutyryl-cAMP sodium,D0260,16980-89-5,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/d0260
+D-Fructose,F0127,57-48-7,sugar,https://www.sigmaaldrich.com/US/en/product/sigma/f0127
+D-Galactose,G0750,59-23-4,sugar,https://www.sigmaaldrich.com/US/en/product/sigma/g0750
+D-Mannose,M6020,3458-28-4,sugar,https://www.sigmaaldrich.com/US/en/product/sigma/m6020
+D-Ribose,R7500,50-69-1,sugar,https://www.sigmaaldrich.com/US/en/product/sigma/r7500
+2-Deoxy-D-ribose,D1751,533-67-5,sugar,https://www.sigmaaldrich.com/US/en/product/sigma/d1751
+Lactose monohydrate,L3625,64044-51-5,sugar,https://www.sigmaaldrich.com/US/en/product/sigma/l3625
+D-Maltose monohydrate,M5885,6363-53-7,sugar,https://www.sigmaaldrich.com/US/en/product/sigma/m5885
+D-(+)-Raffinose pentahydrate,R0250,17629-30-0,sugar,https://www.sigmaaldrich.com/US/en/product/sigma/r0250
+D-(+)-Xylose,X1500,58-86-6,sugar,https://www.sigmaaldrich.com/US/en/product/sigma/x1500
+L-Arabinose,A3256,5328-37-0,sugar,https://www.sigmaaldrich.com/US/en/product/sigma/a3256
+D-Glucose-6-phosphate sodium salt,G7879,54010-71-8,sugar,https://www.sigmaaldrich.com/US/en/product/sigma/g7879
+D-Fructose-6-phosphate disodium salt,F3627,26177-86-6,sugar,https://www.sigmaaldrich.com/US/en/product/sigma/f3627
+"D-Fructose-1,6-bisphosphate trisodium",F6803,38099-82-0,sugar,https://www.sigmaaldrich.com/US/en/product/sigma/f6803
+alpha-D-Glucose-1-phosphate disodium,G7000,56401-20-8,sugar,https://www.sigmaaldrich.com/US/en/product/sigma/g7000
+D-Sorbitol,S1876,50-70-4,sugar,https://www.sigmaaldrich.com/US/en/product/sigma/s1876
+myo-Inositol,I5125,87-89-8,sugar,https://www.sigmaaldrich.com/US/en/product/sigma/i5125
+N-Acetyl-D-glucosamine,A8625,7512-17-6,sugar,https://www.sigmaaldrich.com/US/en/product/sigma/a8625
+N-Acetylneuraminic acid (sialic acid),A0812,131-48-6,sugar,https://www.sigmaaldrich.com/US/en/product/sigma/a0812
+Cellobiose,C7252,528-50-7,sugar,https://www.sigmaaldrich.com/US/en/product/sigma/c7252
+D-(+)-Melibiose,M5500,585-99-9,sugar,https://www.sigmaaldrich.com/US/en/product/sigma/m5500
+Cholesterol,C8667,57-88-5,lipid,https://www.sigmaaldrich.com/US/en/product/sigma/c8667
+Ergosterol,45480,57-87-4,lipid,https://www.sigmaaldrich.com/US/en/product/sial/45480
+L-alpha-Phosphatidylcholine (egg),P3556,8002-43-5,lipid,https://www.sigmaaldrich.com/US/en/product/sigma/p3556
+L-alpha-Phosphatidylethanolamine,P7943,39382-08-6,lipid,https://www.sigmaaldrich.com/US/en/product/sigma/p7943
+L-alpha-Phosphatidyl-L-serine,P7769,51446-62-9,lipid,https://www.sigmaaldrich.com/US/en/product/sigma/p7769
+L-alpha-Phosphatidylinositol,P0639,97281-52-2,lipid,https://www.sigmaaldrich.com/US/en/product/sigma/p0639
+Sphingomyelin (bovine brain),S7004,85187-10-6,lipid,https://www.sigmaaldrich.com/US/en/product/sigma/s7004
+D-erythro-Sphingosine,S7049,123-78-4,lipid,https://www.sigmaaldrich.com/US/en/product/sigma/s7049
+Ceramide (bovine brain),C2137,104404-17-3,lipid,https://www.sigmaaldrich.com/US/en/product/sigma/c2137
+Cardiolipin sodium (bovine heart),C0563,115404-77-8,lipid,https://www.sigmaaldrich.com/US/en/product/sigma/c0563
+Oleic acid,O1008,112-80-1,lipid,https://www.sigmaaldrich.com/US/en/product/sigma/o1008
+Palmitic acid,P0500,57-10-3,lipid,https://www.sigmaaldrich.com/US/en/product/sigma/p0500
+Stearic acid,S4751,57-11-4,lipid,https://www.sigmaaldrich.com/US/en/product/sigma/s4751
+Arachidonic acid,A9673,506-32-1,lipid,https://www.sigmaaldrich.com/US/en/product/sigma/a9673
+Docosahexaenoic acid (DHA),D2534,6217-54-5,lipid,https://www.sigmaaldrich.com/US/en/product/sigma/d2534
+Eicosapentaenoic acid (EPA),E2011,10417-94-4,lipid,https://www.sigmaaldrich.com/US/en/product/sigma/e2011
+Lipopolysaccharide (LPS) from E. coli O111:B4,L2630,297-473-0,lipid,https://www.sigmaaldrich.com/US/en/product/sigma/l2630
+"1,2-Diolein",D8894,24529-88-2,lipid,https://www.sigmaaldrich.com/US/en/product/sigma/d8894
+Linoleic acid,L1376,60-33-3,lipid,https://www.sigmaaldrich.com/US/en/product/sigma/l1376
+Lauric acid,L4250,143-07-7,lipid,https://www.sigmaaldrich.com/US/en/product/sigma/l4250
+Myristic acid,M3128,544-63-8,lipid,https://www.sigmaaldrich.com/US/en/product/sigma/m3128
+Tripalmitin,T5888,555-44-2,lipid,https://www.sigmaaldrich.com/US/en/product/sigma/t5888
+Trimyristin,T8127,555-45-3,lipid,https://www.sigmaaldrich.com/US/en/product/sigma/t8127
+Squalene,S3626,111-02-4,lipid,https://www.sigmaaldrich.com/US/en/product/sigma/s3626
+Biotin,B4501,58-85-5,vitamin,https://www.sigmaaldrich.com/US/en/product/sigma/b4501
+Thiamine hydrochloride (B1),T4625,67-03-8,vitamin,https://www.sigmaaldrich.com/US/en/product/sigma/t4625
+Riboflavin (B2),R4500,83-88-5,vitamin,https://www.sigmaaldrich.com/US/en/product/sigma/r4500
+Nicotinamide (B3),N0636,98-92-0,vitamin,https://www.sigmaaldrich.com/US/en/product/sigma/n0636
+Nicotinic acid (Niacin),N4126,59-67-6,vitamin,https://www.sigmaaldrich.com/US/en/product/sigma/n4126
+D-Pantothenic acid hemicalcium (B5),P5155,137-08-6,vitamin,https://www.sigmaaldrich.com/US/en/product/sigma/p5155
+Pyridoxine hydrochloride (B6),P9755,58-56-0,vitamin,https://www.sigmaaldrich.com/US/en/product/sigma/p9755
+Pyridoxal phosphate (PLP),P9255,54-47-7,vitamin,https://www.sigmaaldrich.com/US/en/product/sigma/p9255
+Folic acid (B9),F7876,59-30-3,vitamin,https://www.sigmaaldrich.com/US/en/product/sigma/f7876
+Cyanocobalamin (B12),V2876,68-19-9,vitamin,https://www.sigmaaldrich.com/US/en/product/sigma/v2876
+Retinol (Vitamin A),R7632,68-26-8,vitamin,https://www.sigmaaldrich.com/US/en/product/sigma/r7632
+Retinoic acid (all-trans),R2625,302-79-4,vitamin,https://www.sigmaaldrich.com/US/en/product/sigma/r2625
+Cholecalciferol (Vitamin D3),C9756,67-97-0,vitamin,https://www.sigmaaldrich.com/US/en/product/sigma/c9756
+alpha-Tocopherol (Vitamin E),T3251,59-02-9,vitamin,https://www.sigmaaldrich.com/US/en/product/sigma/t3251
+Menadione (Vitamin K3),M5625,58-27-5,vitamin,https://www.sigmaaldrich.com/US/en/product/sigma/m5625
+Biocytin,B4261,576-19-2,vitamin,https://www.sigmaaldrich.com/US/en/product/sigma/b4261
+alpha-Lipoic acid,T5625,1077-28-7,vitamin,https://www.sigmaaldrich.com/US/en/product/sigma/t5625
+Hemin,H9039,16009-13-5,vitamin,https://www.sigmaaldrich.com/US/en/product/sigma/h9039
+Choline chloride,C7527,67-48-1,vitamin,https://www.sigmaaldrich.com/US/en/product/sigma/c7527
+Inositol hexakisphosphate (phytic acid),P0109,83-86-3,vitamin,https://www.sigmaaldrich.com/US/en/product/sigma/p0109
+Staurosporine,S4400,62996-74-1,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/s4400
+K252a,K1639,97161-97-2,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/k1639
+H-89 dihydrochloride,B1427,130964-39-5,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/b1427
+Y-27632 dihydrochloride,Y0503,129830-38-2,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/y0503
+U0126,U120,109511-58-2,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/u120
+PD98059,P215,167869-21-8,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/p215
+SB203580,S8307,152121-47-6,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/s8307
+LY294002,L9908,154447-36-6,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/l9908
+Wortmannin,W1628,19545-26-7,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/w1628
+Rapamycin (sirolimus),R0395,53123-88-9,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/r0395
+Torin1,475991,1222998-36-8,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/mm/475991
+MK-2206 dihydrochloride,SML0944,1032350-13-2,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/sml0944
+Okadaic acid,O7885,78111-17-8,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/o7885
+Calyculin A,C5552,101932-71-2,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/c5552
+Sodium orthovanadate,S6508,13721-39-6,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/s6508
+Sodium fluoride,S7920,7681-49-4,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/s7920
+beta-Glycerophosphate disodium,G9422,13408-09-8,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/g9422
+Imatinib mesylate,SML1027,220127-57-1,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/sml1027
+Gefitinib,SML1657,184475-35-2,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/sml1657
+Erlotinib hydrochloride,SML2156,183319-69-9,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/sml2156
+Sorafenib,SML2653,284461-73-0,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/sml2653
+Sunitinib malate,PZ0012,341031-54-7,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/pz0012
+Dasatinib,SML2589,302962-49-8,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/sml2589
+Tofacitinib citrate,PZ0017,540737-29-9,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/pz0017
+Ibrutinib,SML1976,936563-96-1,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/sml1976
+Z-VAD-FMK,V116,187389-52-2,apoptosis_modulator,https://www.sigmaaldrich.com/US/en/product/sigma/v116
+Etoposide,E1383,33419-42-0,apoptosis_modulator,https://www.sigmaaldrich.com/US/en/product/sigma/e1383
+Camptothecin,C9911,7689-03-4,apoptosis_modulator,https://www.sigmaaldrich.com/US/en/product/sigma/c9911
+Nocodazole,M1404,31430-18-9,apoptosis_modulator,https://www.sigmaaldrich.com/US/en/product/sigma/m1404
+Paclitaxel (Taxol),T7402,33069-62-4,apoptosis_modulator,https://www.sigmaaldrich.com/US/en/product/sigma/t7402
+Doxorubicin hydrochloride,D1515,25316-40-9,apoptosis_modulator,https://www.sigmaaldrich.com/US/en/product/sigma/d1515
+Cisplatin,P4394,15663-27-1,apoptosis_modulator,https://www.sigmaaldrich.com/US/en/product/sigma/p4394
+MG-132,M7449,133407-82-6,apoptosis_modulator,https://www.sigmaaldrich.com/US/en/product/sigma/m7449
+Bortezomib,5043140001,179324-69-7,apoptosis_modulator,https://www.sigmaaldrich.com/US/en/product/mm/5043140001
+Necrostatin-1,N9037,4311-88-0,apoptosis_modulator,https://www.sigmaaldrich.com/US/en/product/sigma/n9037
+Ferrostatin-1,SML0583,347174-05-4,apoptosis_modulator,https://www.sigmaaldrich.com/US/en/product/sigma/sml0583
+Z-DEVD-FMK,C0605,210344-95-9,apoptosis_modulator,https://www.sigmaaldrich.com/US/en/product/sigma/c0605
+ABT-737,A8638,852808-04-9,apoptosis_modulator,https://www.sigmaaldrich.com/US/en/product/sigma/a8638
+ABT-199 (Venetoclax),SML2477,1257044-40-8,apoptosis_modulator,https://www.sigmaaldrich.com/US/en/product/sigma/sml2477
+Vincristine sulfate,V8879,2068-78-2,apoptosis_modulator,https://www.sigmaaldrich.com/US/en/product/sigma/v8879
+Vinblastine sulfate,V1377,143-67-9,apoptosis_modulator,https://www.sigmaaldrich.com/US/en/product/sigma/v1377
+5-Fluorouracil,F6627,51-21-8,apoptosis_modulator,https://www.sigmaaldrich.com/US/en/product/sigma/f6627
+Methotrexate,M9929,59-05-2,apoptosis_modulator,https://www.sigmaaldrich.com/US/en/product/sigma/m9929
+Hydroxyurea,H8627,127-07-1,apoptosis_modulator,https://www.sigmaaldrich.com/US/en/product/sigma/h8627
+Mitomycin C,M4287,50-07-7,apoptosis_modulator,https://www.sigmaaldrich.com/US/en/product/sigma/m4287
+Tunicamycin,T7765,11089-65-9,apoptosis_modulator,https://www.sigmaaldrich.com/US/en/product/sigma/t7765
+Brefeldin A,B7651,20350-15-6,apoptosis_modulator,https://www.sigmaaldrich.com/US/en/product/sigma/b7651
+Thapsigargin,T9033,67526-95-8,apoptosis_modulator,https://www.sigmaaldrich.com/US/en/product/sigma/t9033
+Tacrolimus (FK506),F4679,104987-11-3,apoptosis_modulator,https://www.sigmaaldrich.com/US/en/product/sigma/f4679
+Cycloheximide,C1988,66-81-9,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/c1988
+Anisomycin,A9789,22862-76-6,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/a9789
+Actinomycin D,A9415,50-76-0,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/a9415
+alpha-Amanitin,A2263,23109-05-9,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/a2263
+Rifampicin,R3501,13292-46-1,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/r3501
+"DRB (5,6-Dichlorobenzimidazole 1-beta-D-riboside)",D1916,53-85-0,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/d1916
+Flavopiridol hydrochloride,F3055,146426-40-6,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/f3055
+Triptolide,T3652,38748-32-2,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/t3652
+Erythromycin,E6376,114-07-8,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/e6376
+Spectinomycin dihydrochloride,S4014,22189-32-8,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/s4014
+Lincomycin hydrochloride,L6004,859-18-7,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/l6004
+Clindamycin hydrochloride,C5269,21462-39-5,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/c5269
+Vancomycin hydrochloride,V2002,1404-93-9,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/v2002
+Neomycin sulfate,N1876,1405-10-3,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/n1876
+Polymyxin B sulfate,P4932,1405-20-5,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/p4932
+Bacitracin,B0125,1405-87-4,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/b0125
+Fusidic acid sodium,F0881,751-94-0,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/f0881
+Trimethoprim,T7883,738-70-5,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/t7883
+Fluo-4 AM,93596,273221-67-3,calcium_indicator,https://www.sigmaaldrich.com/US/en/product/sigma/93596
+Fura-2 AM,F0888,108964-32-5,calcium_indicator,https://www.sigmaaldrich.com/US/en/product/sigma/f0888
+Indo-1 AM,I1223,112926-02-0,calcium_indicator,https://www.sigmaaldrich.com/US/en/product/sigma/i1223
+BAPTA-AM,A1076,126150-97-8,calcium_indicator,https://www.sigmaaldrich.com/US/en/product/sigma/a1076
+EGTA,E3889,67-42-5,calcium_indicator,https://www.sigmaaldrich.com/US/en/product/sigma/e3889
+W-7 hydrochloride,A3281,61714-27-0,calcium_indicator,https://www.sigmaaldrich.com/US/en/product/sigma/a3281
+Ionomycin calcium,I0634,56092-82-1,calcium_indicator,https://www.sigmaaldrich.com/US/en/product/sigma/i0634
+A23187 (calcimycin),C7522,52665-69-7,calcium_indicator,https://www.sigmaaldrich.com/US/en/product/sigma/c7522
+"DiI (1,1'-Dioctadecyl-3,3,3',3'-tetramethylindocarbocyanine)",42364,41085-99-8,calcium_indicator,https://www.sigmaaldrich.com/US/en/product/sial/42364
+DiO,468495,53213-82-4,calcium_indicator,https://www.sigmaaldrich.com/US/en/product/sigma/468495
+DiD,42364,127274-91-3,calcium_indicator,https://www.sigmaaldrich.com/US/en/product/sial/42364
+FM 1-43,S6814,149590-53-2,calcium_indicator,https://www.sigmaaldrich.com/US/en/product/sigma/s6814
+FM 4-64,T13320,162112-35-8,calcium_indicator,https://www.sigmaaldrich.com/US/en/product/sigma/t13320
+Fluo-3 AM,73881,121714-22-5,calcium_indicator,https://www.sigmaaldrich.com/US/en/product/sigma/73881
+Calcein AM,17783,148504-34-1,calcium_indicator,https://www.sigmaaldrich.com/US/en/product/sial/17783
+Calcium Green-1 AM,C3011MP,152877-01-1,calcium_indicator,https://www.sigmaaldrich.com/US/en/product/sigma/c3011mp
+Mag-Fura-2 AM,M1290,150322-05-1,calcium_indicator,https://www.sigmaaldrich.com/US/en/product/sigma/m1290
+MitoTracker Green FM,M7514,201860-17-5,organelle_dye,https://www.sigmaaldrich.com/US/en/product/sigma/m7514
+MitoTracker Red CMXRos,M7512,167095-09-2,organelle_dye,https://www.sigmaaldrich.com/US/en/product/sigma/m7512
+MitoTracker Deep Red FM,M22426,464208-37-1,organelle_dye,https://www.sigmaaldrich.com/US/en/product/sigma/m22426
+TMRM (Tetramethylrhodamine methyl ester),T5428,115532-50-8,organelle_dye,https://www.sigmaaldrich.com/US/en/product/sigma/t5428
+TMRE (Tetramethylrhodamine ethyl ester),87917,115532-52-0,organelle_dye,https://www.sigmaaldrich.com/US/en/product/sigma/87917
+JC-1,T4069,3520-43-2,organelle_dye,https://www.sigmaaldrich.com/US/en/product/sigma/t4069
+Rhodamine 123,R8004,62669-70-9,organelle_dye,https://www.sigmaaldrich.com/US/en/product/sigma/r8004
+LysoTracker Red DND-99,L7528,231947-89-0,organelle_dye,https://www.sigmaaldrich.com/US/en/product/sigma/l7528
+LysoTracker Green DND-26,L7526,231948-49-5,organelle_dye,https://www.sigmaaldrich.com/US/en/product/sigma/l7526
+BODIPY 493/503,D3922,121207-31-6,organelle_dye,https://www.sigmaaldrich.com/US/en/product/sigma/d3922
+BODIPY-FL C5-ceramide,D3521,157134-53-7,organelle_dye,https://www.sigmaaldrich.com/US/en/product/sigma/d3521
+ER-Tracker Red,E34250,915030-53-0,organelle_dye,https://www.sigmaaldrich.com/US/en/product/sigma/e34250
+Filipin III,F4767,480-49-9,organelle_dye,https://www.sigmaaldrich.com/US/en/product/sigma/f4767
+Nile Red,N3013,7385-67-3,organelle_dye,https://www.sigmaaldrich.com/US/en/product/sigma/n3013
+Acridine orange,A6014,65-61-2,organelle_dye,https://www.sigmaaldrich.com/US/en/product/sigma/a6014
+Fluorescein sodium,F6377,518-47-8,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/f6377
+Rhodamine B,R6626,81-88-9,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/r6626
+Eosin Y,E4382,17372-87-1,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/e4382
+Congo red,C6277,573-58-0,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/c6277
+Methyl green,M5015,7114-03-6,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/m5015
+Methylene blue,M9140,61-73-4,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/m9140
+Malachite green oxalate,M6880,2437-29-8,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/m6880
+Oil Red O,O0625,1320-06-5,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/o0625
+Sudan III,S4131,85-86-9,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/s4131
+Sudan IV,S4261,85-83-6,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/s4261
+Sudan Black B,199664,4197-25-5,dye_label,https://www.sigmaaldrich.com/US/en/product/sial/199664
+Hematoxylin,H3136,517-28-2,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/h3136
+Neutral red,N4638,553-24-2,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/n4638
+Trypan blue solution,T8154,72-57-1,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/t8154
+Coomassie brilliant blue R-250,27816,6104-59-2,dye_label,https://www.sigmaaldrich.com/US/en/product/sial/27816
+Coomassie brilliant blue G-250,27815,6104-58-1,dye_label,https://www.sigmaaldrich.com/US/en/product/sial/27815
+Bromophenol blue,114391,115-39-9,dye_label,https://www.sigmaaldrich.com/US/en/product/sial/114391
+Xylene cyanol FF,X4126,2650-17-1,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/x4126
+Ponceau S,P3504,6226-79-5,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/p3504
+Amido black 10B,N3393,1064-48-8,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/n3393
+Phenol red sodium salt,P5530,34487-61-1,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/p5530
+Calcofluor White M2R,F3543,4404-43-7,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/f3543
+Lucifer yellow CH lithium,L0259,67769-47-5,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/l0259
+Pyronin Y,P9172,92-32-0,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/p9172
+Toluidine blue O,198161,92-31-9,dye_label,https://www.sigmaaldrich.com/US/en/product/sial/198161
+Formic acid 98%,F0507,64-18-6,acid_base,https://www.sigmaaldrich.com/US/en/product/sigma/f0507
+Trifluoroacetic acid (TFA),T6508,76-05-1,acid_base,https://www.sigmaaldrich.com/US/en/product/sigma/t6508
+Propionic acid,402907,79-09-4,acid_base,https://www.sigmaaldrich.com/US/en/product/sial/402907
+Citric acid anhydrous,C7129,77-92-9,acid_base,https://www.sigmaaldrich.com/US/en/product/sigma/c7129
+Oxalic acid dihydrate,75688,6153-56-6,acid_base,https://www.sigmaaldrich.com/US/en/product/sial/75688
+Perchloric acid 70%,311413,7601-90-3,acid_base,https://www.sigmaaldrich.com/US/en/product/sial/311413
+Phosphoric acid 85%,P5811,7664-38-2,acid_base,https://www.sigmaaldrich.com/US/en/product/sigma/p5811
+Ammonium hydroxide solution 28-30%,320145,1336-21-6,acid_base,https://www.sigmaaldrich.com/US/en/product/sial/320145
+Boric acid,B6768,10043-35-3,acid_base,https://www.sigmaaldrich.com/US/en/product/sigma/b6768
+Lactic acid,L1750,50-21-5,acid_base,https://www.sigmaaldrich.com/US/en/product/sigma/l1750
+Pyruvic acid,107360,127-17-3,acid_base,https://www.sigmaaldrich.com/US/en/product/sial/107360
+Succinic acid,S3674,110-15-6,acid_base,https://www.sigmaaldrich.com/US/en/product/sigma/s3674
+Fumaric acid,240745,110-17-8,acid_base,https://www.sigmaaldrich.com/US/en/product/sial/240745
+Malic acid,M1000,6915-15-7,acid_base,https://www.sigmaaldrich.com/US/en/product/sigma/m1000
+Tartaric acid,228729,87-69-4,acid_base,https://www.sigmaaldrich.com/US/en/product/sial/228729
+Salicylic acid,S5922,69-72-7,acid_base,https://www.sigmaaldrich.com/US/en/product/sigma/s5922
+Benzoic acid,242381,65-85-0,acid_base,https://www.sigmaaldrich.com/US/en/product/sial/242381
+Benzenesulfonic acid,B4500,98-11-3,acid_base,https://www.sigmaaldrich.com/US/en/product/sigma/b4500
+MOPSO,M8389,68399-77-9,buffer,https://www.sigmaaldrich.com/US/en/product/sigma/m8389
+BES,B9879,10191-18-1,buffer,https://www.sigmaaldrich.com/US/en/product/sigma/b9879
+Bicine,B3876,150-25-4,buffer,https://www.sigmaaldrich.com/US/en/product/sigma/b3876
+Tricine,T0377,5704-04-1,buffer,https://www.sigmaaldrich.com/US/en/product/sigma/t0377
+ADA buffer,A9883,26239-55-4,buffer,https://www.sigmaaldrich.com/US/en/product/sigma/a9883
+AMPSO,A6659,68399-79-1,buffer,https://www.sigmaaldrich.com/US/en/product/sigma/a6659
+CAPS,C2632,1135-40-6,buffer,https://www.sigmaaldrich.com/US/en/product/sigma/c2632
+CAPSO,C2278,73463-39-5,buffer,https://www.sigmaaldrich.com/US/en/product/sigma/c2278
+CHES,C2885,103-47-9,buffer,https://www.sigmaaldrich.com/US/en/product/sigma/c2885
+Bis-Tris propane,B6755,64431-96-5,buffer,https://www.sigmaaldrich.com/US/en/product/sigma/b6755
+TAPS,T5130,29915-38-6,buffer,https://www.sigmaaldrich.com/US/en/product/sigma/t5130
+TAPSO,T9659,68399-81-5,buffer,https://www.sigmaaldrich.com/US/en/product/sigma/t9659
+TES,T1375,7365-44-8,buffer,https://www.sigmaaldrich.com/US/en/product/sigma/t1375
+Sodium cacodylate trihydrate,C0250,6131-99-3,buffer,https://www.sigmaaldrich.com/US/en/product/sigma/c0250
+Sodium pyrophosphate,S6422,7722-88-5,buffer,https://www.sigmaaldrich.com/US/en/product/sigma/s6422
+Ammonium bicarbonate,A6141,1066-33-7,buffer,https://www.sigmaaldrich.com/US/en/product/sigma/a6141
+Triethanolamine,T58300,102-71-6,buffer,https://www.sigmaaldrich.com/US/en/product/sial/t58300
+Sodium dithionite,157953,7775-14-6,reducing_agent,https://www.sigmaaldrich.com/US/en/product/sial/157953
+Sodium borohydride,452882,16940-66-2,reducing_agent,https://www.sigmaaldrich.com/US/en/product/sial/452882
+Sodium cyanoborohydride,156159,25895-60-7,reducing_agent,https://www.sigmaaldrich.com/US/en/product/sial/156159
+L-Cysteine hydrochloride monohydrate,C7880,7048-04-6,reducing_agent,https://www.sigmaaldrich.com/US/en/product/sigma/c7880
+Hydrogen peroxide solution 30%,H1009,7722-84-1,oxidizing_agent,https://www.sigmaaldrich.com/US/en/product/sigma/h1009
+Sodium periodate,311448,7790-28-5,oxidizing_agent,https://www.sigmaaldrich.com/US/en/product/sial/311448
+Sodium hypochlorite solution,425044,7681-52-9,oxidizing_agent,https://www.sigmaaldrich.com/US/en/product/sial/425044
+Potassium permanganate,223468,7722-64-7,oxidizing_agent,https://www.sigmaaldrich.com/US/en/product/sial/223468
+Ammonium persulfate (APS),A3678,7727-54-0,oxidizing_agent,https://www.sigmaaldrich.com/US/en/product/sigma/a3678
+"TEMED (N,N,N',N'-Tetramethylethylenediamine)",T9281,110-18-9,oxidizing_agent,https://www.sigmaaldrich.com/US/en/product/sigma/t9281
+Potassium persulfate,216224,7727-21-1,oxidizing_agent,https://www.sigmaaldrich.com/US/en/product/sial/216224
+tert-Butyl hydroperoxide,458139,75-91-2,oxidizing_agent,https://www.sigmaaldrich.com/US/en/product/sial/458139
+Iodoacetamide,I1149,144-48-9,oxidizing_agent,https://www.sigmaaldrich.com/US/en/product/sigma/i1149
+N-Ethylmaleimide,E3876,128-53-0,oxidizing_agent,https://www.sigmaaldrich.com/US/en/product/sigma/e3876
+Disuccinimidyl suberate (DSS),S1885,68528-80-3,crosslinker,https://www.sigmaaldrich.com/US/en/product/sigma/s1885
+"Dithiobis(succinimidyl propionate) (DSP, Lomant's reagent)",D3669,57757-57-0,crosslinker,https://www.sigmaaldrich.com/US/en/product/sigma/d3669
+BS3 (Bis(sulfosuccinimidyl) suberate),B6635,82436-77-9,crosslinker,https://www.sigmaaldrich.com/US/en/product/sigma/b6635
+EGS (Ethylene glycol bis(succinimidyl succinate)),E3257,70539-42-3,crosslinker,https://www.sigmaaldrich.com/US/en/product/sigma/e3257
+EDC (1-Ethyl-3-(3-dimethylaminopropyl)carbodiimide hydrochloride),E7750,25952-53-8,crosslinker,https://www.sigmaaldrich.com/US/en/product/sigma/e7750
+N-Hydroxysuccinimide (NHS),130672,6066-82-6,crosslinker,https://www.sigmaaldrich.com/US/en/product/sial/130672
+Sulfo-NHS,56485,106627-54-7,crosslinker,https://www.sigmaaldrich.com/US/en/product/sial/56485
+Bis(sulfosuccinimidyl)glutarate (BS2G),59330,894405-83-5,crosslinker,https://www.sigmaaldrich.com/US/en/product/sial/59330
+n-Octyl-beta-D-glucopyranoside (OG),O8001,29836-26-8,surfactant,https://www.sigmaaldrich.com/US/en/product/sigma/o8001
+n-Dodecyl-beta-D-maltoside (DDM),D4641,69227-93-6,surfactant,https://www.sigmaaldrich.com/US/en/product/sigma/d4641
+n-Decyl-beta-D-maltoside (DM),D7658,82494-09-5,surfactant,https://www.sigmaaldrich.com/US/en/product/sigma/d7658
+Saponin,47036,8047-15-2,surfactant,https://www.sigmaaldrich.com/US/en/product/sial/47036
+Sodium taurodeoxycholate hydrate,T0875,1180-95-6,surfactant,https://www.sigmaaldrich.com/US/en/product/sigma/t0875
+Sodium cholate hydrate,C1254,361-09-1,surfactant,https://www.sigmaaldrich.com/US/en/product/sigma/c1254
+Brij 35 solution,B4184,9002-92-0,surfactant,https://www.sigmaaldrich.com/US/en/product/sigma/b4184
+Brij 58,388831,9004-95-9,surfactant,https://www.sigmaaldrich.com/US/en/product/sial/388831
+MEGA-8 (Octanoyl-N-methylglucamide),M7263,85316-98-9,surfactant,https://www.sigmaaldrich.com/US/en/product/sigma/m7263
+MEGA-10 (Decanoyl-N-methylglucamide),D6277,85261-20-7,surfactant,https://www.sigmaaldrich.com/US/en/product/sigma/d6277
+Pluronic F-68 (Poloxamer 188),P1300,9003-11-6,surfactant,https://www.sigmaaldrich.com/US/en/product/sigma/p1300
+Lauryldimethylamine N-oxide (LDAO),40234,1643-20-5,surfactant,https://www.sigmaaldrich.com/US/en/product/sial/40234
+Zwittergent 3-14,693017,14933-09-6,surfactant,https://www.sigmaaldrich.com/US/en/product/sial/693017
+CTAB (Hexadecyltrimethylammonium bromide),H6269,57-09-0,surfactant,https://www.sigmaaldrich.com/US/en/product/sigma/h6269
+Sodium lauryl sarcosinate,L9150,137-16-6,surfactant,https://www.sigmaaldrich.com/US/en/product/sigma/l9150
+Sodium pyruvate,P5280,113-24-6,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/p5280
+Sodium L-lactate,L7022,867-56-1,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/l7022
+Sodium selenite,S5261,10102-18-8,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/s5261
+Putrescine dihydrochloride,P5780,333-93-7,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/p5780
+Spermidine trihydrochloride,S2501,334-50-9,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/s2501
+Spermine tetrahydrochloride,S2876,306-67-2,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/s2876
+Ferric citrate,F3388,3522-50-7,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/f3388
+Holo-transferrin (human),T0665,11096-37-0,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/t0665
+Insulin (bovine pancreas),I5500,11070-73-8,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/i5500
+Hydrocortisone,H0888,50-23-7,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/h0888
+Dexamethasone,D4902,50-02-2,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/d4902
+Progesterone,P0130,57-83-0,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/p0130
+beta-Estradiol,E2758,50-28-2,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/e2758
+Testosterone,T1500,58-22-0,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/t1500
+Forskolin,F6886,66575-29-9,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/f6886
+3-Isobutyl-1-methylxanthine (IBMX),I5879,28822-58-4,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/i5879
+Isoproterenol hydrochloride,I6504,51-30-9,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/i6504
+Heparin sodium (porcine),H3149,9041-08-1,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/h3149
+Phorbol 12-myristate 13-acetate (PMA),P8139,16561-29-8,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/p8139
+Concanavalin A (jack bean),C5275,11028-71-0,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/c5275
+Lectin from Phaseolus vulgaris (PHA),L8754,9008-97-3,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/l8754
+All-trans Retinol (Vitamin A) Acetate,R7882,127-47-9,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/r7882
+Glycine betaine,B2629,107-43-7,cryoprotectant,https://www.sigmaaldrich.com/US/en/product/sigma/b2629
+"2-Methyl-2,4-pentanediol (MPD)",112100,107-41-5,crystallization_agent,https://www.sigmaaldrich.com/US/en/product/sial/112100
+Jeffamine M-600,"23,478-1",83713-01-3,crystallization_agent,"https://www.sigmaaldrich.com/US/en/product/sigma/23,478-1"
+Lithium sulfate monohydrate,62613,10102-25-7,crystallization_agent,https://www.sigmaaldrich.com/US/en/product/sial/62613
+Sodium malonate dibasic monohydrate,63409,26522-85-0,crystallization_agent,https://www.sigmaaldrich.com/US/en/product/sial/63409
+Sodium formate,71539,141-53-7,crystallization_agent,https://www.sigmaaldrich.com/US/en/product/sial/71539
+tert-Butanol,360538,75-65-0,crystallization_agent,https://www.sigmaaldrich.com/US/en/product/sial/360538
+MTBE (Methyl tert-butyl ether),650560,1634-04-4,solvent,https://www.sigmaaldrich.com/US/en/product/sial/650560
+"1,4-Dioxane",296309,123-91-1,solvent,https://www.sigmaaldrich.com/US/en/product/sial/296309
+MEK (2-Butanone),360473,78-93-3,solvent,https://www.sigmaaldrich.com/US/en/product/sial/360473
+MIBK (4-Methyl-2-pentanone),360511,108-10-1,solvent,https://www.sigmaaldrich.com/US/en/product/sial/360511
+n-Butyl acetate,242470,123-86-4,solvent,https://www.sigmaaldrich.com/US/en/product/sial/242470
+Xylenes,247642,1330-20-7,solvent,https://www.sigmaaldrich.com/US/en/product/sial/247642
+Cyclohexane,227048,110-82-7,solvent,https://www.sigmaaldrich.com/US/en/product/sial/227048
+n-Heptane,246654,142-82-5,solvent,https://www.sigmaaldrich.com/US/en/product/sial/246654
+n-Pentane,236705,109-66-0,solvent,https://www.sigmaaldrich.com/US/en/product/sial/236705
+Petroleum ether,320501,8032-32-4,solvent,https://www.sigmaaldrich.com/US/en/product/sial/320501
+Pyridine,270407,110-86-1,heterocyclic,https://www.sigmaaldrich.com/US/en/product/sial/270407
+Phenol,P3653,108-95-2,heterocyclic,https://www.sigmaaldrich.com/US/en/product/sigma/p3653
+4-Dimethylaminopyridine (DMAP),107700,1122-58-3,heterocyclic,https://www.sigmaaldrich.com/US/en/product/sial/107700
+"N,N-Diisopropylethylamine (DIPEA)",496219,7087-68-5,heterocyclic,https://www.sigmaaldrich.com/US/en/product/sial/496219
+Triethylamine,T0886,121-44-8,heterocyclic,https://www.sigmaaldrich.com/US/en/product/sigma/t0886
+N-Methylmorpholine,224286,109-02-4,heterocyclic,https://www.sigmaaldrich.com/US/en/product/sial/224286
+Morpholine,M109,110-91-8,heterocyclic,https://www.sigmaaldrich.com/US/en/product/sigma/m109
+Pyrrolidine,P73803,123-75-1,heterocyclic,https://www.sigmaaldrich.com/US/en/product/sial/p73803
+Piperidine,104094,110-89-4,heterocyclic,https://www.sigmaaldrich.com/US/en/product/sial/104094
+Aniline,242284,62-53-3,heterocyclic,https://www.sigmaaldrich.com/US/en/product/sial/242284
+Nigericin sodium,N7143,28643-80-3,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/n7143
+Valinomycin,V0627,2001-95-8,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/v0627
+FCCP (Carbonyl cyanide-4-(trifluoromethoxy)phenylhydrazone),C2920,370-86-5,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/c2920
+CCCP (Carbonyl cyanide m-chlorophenylhydrazone),C2759,555-60-2,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/c2759
+Oligomycin A,75351,579-13-5,drug_tool,https://www.sigmaaldrich.com/US/en/product/sial/75351
+Antimycin A,A8674,1397-94-0,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/a8674
+Rotenone,R8875,83-79-4,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/r8875
+Paraquat dichloride (methyl viologen),856177,1910-42-5,drug_tool,https://www.sigmaaldrich.com/US/en/product/sial/856177
+2-Deoxy-D-glucose,D8375,154-17-6,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/d8375
+3-Methyladenine,M9281,5142-23-4,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/m9281
+Bafilomycin A1,B1793,88899-55-2,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/b1793
+Chloroquine diphosphate,C6628,50-63-5,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/c6628
+Hydroxychloroquine sulfate,H0915,747-36-4,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/h0915
+Reserpine,R0875,50-55-5,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/r0875
+Carbachol,C4382,51-83-2,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/c4382
+Atropine,A0132,51-55-8,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/a0132
+Pilocarpine hydrochloride,P6503,54-71-7,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/p6503
+Acetylcholine chloride,A6625,60-31-1,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/a6625
+Histamine dihydrochloride,H7250,56-92-8,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/h7250
+Serotonin hydrochloride,H9523,153-98-0,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/h9523
+Dopamine hydrochloride,H8502,62-31-7,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/h8502
+Norepinephrine bitartrate,A9512,51-40-1,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/a9512
+Epinephrine bitartrate,E4642,51-42-3,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/e4642
+Glutamate (monosodium),G1626,142-47-2,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/g1626
+AMPA,A6816,74341-63-2,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/a6816
+Kainic acid,K0250,487-79-6,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/k0250
+NMDA (N-Methyl-D-aspartic acid),M3262,6384-92-5,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/m3262
+Bicuculline,14343,485-49-4,drug_tool,https://www.sigmaaldrich.com/US/en/product/sial/14343
+Picrotoxin,P1675,124-87-8,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/p1675
+Strychnine hydrochloride,S8753,1421-86-9,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/s8753
+Tetrodotoxin,T8024,4368-28-9,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/t8024
+Sodium succinate dibasic,S2378,150-90-3,metabolic_substrate,https://www.sigmaaldrich.com/US/en/product/sigma/s2378
+Sodium fumarate,F1506,7704-73-6,metabolic_substrate,https://www.sigmaaldrich.com/US/en/product/sigma/f1506
+Sodium L-malate,M1125,138-09-0,metabolic_substrate,https://www.sigmaaldrich.com/US/en/product/sigma/m1125
+alpha-Ketoglutaric acid disodium,K3752,305-72-6,metabolic_substrate,https://www.sigmaaldrich.com/US/en/product/sigma/k3752
+Oxaloacetic acid,O4126,328-42-7,metabolic_substrate,https://www.sigmaaldrich.com/US/en/product/sigma/o4126
+Phosphoenolpyruvate trisodium (PEP),P0564,5541-93-5,metabolic_substrate,https://www.sigmaaldrich.com/US/en/product/sigma/p0564
+D-Glyceraldehyde 3-phosphate,G5251,591-57-1,metabolic_substrate,https://www.sigmaaldrich.com/US/en/product/sigma/g5251
+3-Phosphoglyceric acid disodium,P8877,80731-10-8,metabolic_substrate,https://www.sigmaaldrich.com/US/en/product/sigma/p8877
+L-Aspartate sodium,A6683,3792-50-5,metabolic_substrate,https://www.sigmaaldrich.com/US/en/product/sigma/a6683
+Acetate sodium trihydrate — see acid_base/buffer,S8625,6131-90-4,metabolic_substrate,https://www.sigmaaldrich.com/US/en/product/sigma/s8625
+Sodium iodide,383112,7681-82-5,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sial/383112
+Sodium bromide,310506,7647-15-6,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sial/310506
+Potassium iodide,221945,7681-11-0,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sial/221945
+Potassium bromide,221864,7758-02-3,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sial/221864
+Ammonium chloride,A9434,12125-02-9,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sigma/a9434
+Zinc sulfate heptahydrate,Z0251,7446-20-0,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sigma/z0251
+Zinc chloride,Z0152,7646-85-7,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sigma/z0152
+Zinc acetate dihydrate,Z0625,5970-45-6,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sigma/z0625
+Copper(II) sulfate pentahydrate,C8027,7758-99-8,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sigma/c8027
+Copper(II) chloride dihydrate,459097,10125-13-0,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sial/459097
+Manganese(II) chloride tetrahydrate,M3634,13446-34-9,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sigma/m3634
+Iron(III) chloride hexahydrate,236489,10025-77-1,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sial/236489
+Iron(II) sulfate heptahydrate,F8633,7782-63-0,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sigma/f8633
+Cobalt(II) chloride hexahydrate,C8661,7791-13-1,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sigma/c8661
+Nickel(II) chloride hexahydrate,N6136,7791-20-0,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sigma/n6136
+Magnesium sulfate heptahydrate,M1880,10034-99-8,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sigma/m1880
+Magnesium acetate tetrahydrate,M5661,16674-78-5,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sigma/m5661
+Calcium acetate hydrate,C1000,62-54-4,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sigma/c1000
+Calcium gluconate monohydrate,C8231,299-28-5,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sigma/c8231
+Sodium phosphate monobasic monohydrate,S9638,10049-21-5,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sigma/s9638
+Sodium phosphate tribasic dodecahydrate,S6809,10101-89-0,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sigma/s6809
+Potassium phosphate dibasic,P3786,7758-11-4,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sigma/p3786
+Potassium phosphate tribasic,P5629,7778-53-2,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sigma/p5629
+Sodium pyrophosphate decahydrate,221368,13472-36-1,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sial/221368
+Sodium thiosulfate pentahydrate,S6672,10102-17-7,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sigma/s6672
+Sodium sulfate anhydrous,238597,7757-82-6,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sial/238597
+Sodium sulfite anhydrous,S0505,7757-83-7,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sigma/s0505
+Sodium nitrate,229938,7631-99-4,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sial/229938
+Sodium nitrite,237213,7632-00-0,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sial/237213
+Sodium tetraborate decahydrate (borax),S9640,1303-96-4,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sigma/s9640
+Potassium nitrate,P6030,7757-79-1,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sigma/p6030
+Potassium sulfate,P0772,7778-80-5,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sigma/p0772
+Potassium acetate,P1190,127-08-2,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sigma/p1190
+Sodium carbonate anhydrous,S2127,497-19-8,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sigma/s2127
+Potassium carbonate,P5833,584-08-7,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sigma/p5833
+Lithium hydroxide monohydrate,402974,1310-66-3,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sial/402974
+Cesium chloride,C4036,7647-17-8,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sigma/c4036
+Rubidium chloride,R2252,7791-11-9,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sigma/r2252
+Aluminum sulfate,368458,10043-01-3,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sial/368458
+Silver nitrate,204390,7761-88-8,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sial/204390
+Cadmium chloride,202908,10108-64-2,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sial/202908
+Strontium chloride hexahydrate,204463,10025-70-4,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sial/204463
+Barium chloride dihydrate,B0750,10326-27-9,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sigma/b0750
+Sodium molybdate dihydrate,M1651,10102-40-6,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sigma/m1651
+Aspirin (acetylsalicylic acid),A2093,50-78-2,drug_common,https://www.sigmaaldrich.com/US/en/product/sigma/a2093
+Ibuprofen,I4883,15687-27-1,drug_common,https://www.sigmaaldrich.com/US/en/product/sigma/i4883
+Acetaminophen (paracetamol),A7085,103-90-2,drug_common,https://www.sigmaaldrich.com/US/en/product/sigma/a7085
+Caffeine,C0750,58-08-2,drug_common,https://www.sigmaaldrich.com/US/en/product/sigma/c0750
+Theophylline,T1633,58-55-9,drug_common,https://www.sigmaaldrich.com/US/en/product/sigma/t1633
+Quinine hemisulfate,22640,6119-70-6,drug_common,https://www.sigmaaldrich.com/US/en/product/sial/22640
+Diphenhydramine hydrochloride,D3630,147-24-0,drug_common,https://www.sigmaaldrich.com/US/en/product/sigma/d3630
+Loratadine,L9664,79794-75-5,drug_common,https://www.sigmaaldrich.com/US/en/product/sigma/l9664
+Naproxen,N8280,22204-53-1,drug_common,https://www.sigmaaldrich.com/US/en/product/sigma/n8280
+Indomethacin,I7378,53-86-1,drug_common,https://www.sigmaaldrich.com/US/en/product/sigma/i7378
+Diclofenac sodium,D6899,15307-79-6,drug_common,https://www.sigmaaldrich.com/US/en/product/sigma/d6899
+Naloxone hydrochloride,N7758,357-08-4,drug_common,https://www.sigmaaldrich.com/US/en/product/sigma/n7758
+Morphine sulfate,M8777,6211-15-0,drug_common,https://www.sigmaaldrich.com/US/en/product/sigma/m8777
+Nicotine hydrogen tartrate,N5260,65-31-6,drug_common,https://www.sigmaaldrich.com/US/en/product/sigma/n5260
+Curcumin,C1386,458-37-7,drug_common,https://www.sigmaaldrich.com/US/en/product/sigma/c1386
+Resveratrol,R5010,501-36-0,drug_common,https://www.sigmaaldrich.com/US/en/product/sigma/r5010
+Quercetin,Q4951,117-39-5,drug_common,https://www.sigmaaldrich.com/US/en/product/sigma/q4951
+Genistein,G6649,446-72-0,drug_common,https://www.sigmaaldrich.com/US/en/product/sigma/g6649
+Daidzein,D7802,486-66-8,drug_common,https://www.sigmaaldrich.com/US/en/product/sigma/d7802
+Epigallocatechin gallate (EGCG),E4143,989-51-5,drug_common,https://www.sigmaaldrich.com/US/en/product/sigma/e4143
+Dextran sulfate sodium (~40 kDa),D6924,9011-18-1,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/d6924
+Heparan sulfate sodium,H7640,9050-30-0,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/h7640
+Hyaluronic acid sodium (rooster comb),H5388,9067-32-7,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/h5388
+Chondroitin sulfate sodium,C9819,9007-28-7,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/c9819
+Poly-L-lysine hydrobromide,P1399,25988-63-0,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/p1399
+Poly-D-lysine hydrobromide,P6407,27964-99-4,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/p6407
+Poly-L-ornithine hydrobromide,P3655,27378-49-0,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/p3655
+Gelatin from porcine skin,G1890,9000-70-8,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/g1890
+Collagen from rat tail (Type I),C7661,9007-34-5,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/c7661
+Fibronectin from human plasma,F0895,86088-83-7,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/f0895
+Laminin from EHS sarcoma,L2020,114956-81-9,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/l2020
+Casein from bovine milk,C7078,9000-71-9,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/c7078
+Ovalbumin (chicken egg),A5503,9006-59-1,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/a5503
+Lactoferrin (bovine),L4765,146897-68-9,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/l4765
+Diethylpyrocarbonate (DEPC),D5758,1609-47-8,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/d5758
+Methyl methanesulfonate (MMS),129925,66-27-3,drug_tool,https://www.sigmaaldrich.com/US/en/product/sial/129925
+Mitoxantrone dihydrochloride,M6545,70476-82-3,apoptosis_modulator,https://www.sigmaaldrich.com/US/en/product/sigma/m6545
+Bleomycin sulfate,B2434,9041-93-4,apoptosis_modulator,https://www.sigmaaldrich.com/US/en/product/sigma/b2434
+Daunorubicin hydrochloride,D8809,23541-50-6,apoptosis_modulator,https://www.sigmaaldrich.com/US/en/product/sigma/d8809
+Tamoxifen citrate,T9262,54965-24-1,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/t9262
+4-Hydroxytamoxifen,H7904,68047-06-3,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/h7904
+Raloxifene hydrochloride,R1402,82640-04-8,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/r1402
+Fulvestrant,I4409,129453-61-8,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/i4409
+Bicalutamide,B9061,90357-06-5,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/b9061
+Mifepristone (RU-486),M8046,84371-65-3,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/m8046
+Spironolactone,S3378,52-01-7,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/s3378
+Aldosterone,A9477,52-39-1,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/a9477
+Cortisone,C2755,53-06-5,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/c2755
+Corticosterone,27840,50-22-6,drug_tool,https://www.sigmaaldrich.com/US/en/product/sial/27840
+Pregnenolone,P9129,145-13-1,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/p9129
+Dehydroepiandrosterone (DHEA),D4000,53-43-0,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/d4000
+Androstenedione,A9630,63-05-8,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/a9630
+17alpha-Estradiol,E8875,57-91-0,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/e8875
+Estriol,E1253,50-27-1,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/e1253
+Estrone,E9750,53-16-7,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/e9750
+Cholic acid,C1129,81-25-4,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/c1129
+Chenodeoxycholic acid,C9377,474-25-9,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/c9377
+Ursodeoxycholic acid,U5127,128-13-2,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/u5127
+Taurocholic acid sodium,T4009,345909-26-4,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/t4009
+Glycocholic acid hydrate,G7132,475-31-0,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/g7132
+Lithocholic acid,L6250,434-13-9,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/l6250
+Spautin-1,SML0440,1262888-28-7,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/sml0440
+Chloroquine — already listed,C6628,54-05-7,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/c6628
+MHY1485,SML0810,326914-10-7,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/sml0810
+KU-55933 (ATM inhibitor),SML1109,587871-26-9,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/sml1109
+VE-821 (ATR inhibitor),SML1415,1232416-25-9,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/sml1415
+AZD7762 (Chk1/2 inhibitor),SML0350,860352-01-8,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/sml0350
+Olaparib (PARP inhibitor),AZ7800,763113-22-0,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/az7800
+Veliparib (ABT-888),SML1473,912444-00-9,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/sml1473
+Niraparib,SML1814,1038915-60-4,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/sml1814
+Talazoparib,SML2080,1207456-01-6,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/sml2080
+AG1478 (EGFR inhibitor),T4182,153436-53-4,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/t4182
+Lapatinib,SML2259,388082-78-8,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/sml2259
+PD173074 (FGFR inhibitor),P2499,219580-11-7,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/p2499
+SU5402 (FGFR/VEGFR),SML0443,215543-92-3,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/sml0443
+BAY 11-7082 (NF-kB),B5556,19542-67-7,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/b5556
+SP600125 (JNK inhibitor),S5567,129-56-6,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/s5567
+SB431542 (TGF-beta inhibitor),S4317,301836-41-9,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/s4317
+DAPT (gamma-secretase inhibitor),D5942,208255-80-5,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/d5942
+CHIR99021 (GSK-3 inhibitor),SML1046,252917-06-9,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/sml1046
+Roscovitine (CDK inhibitor),R7772,186692-46-6,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/r7772
+Palbociclib,PZ0383,571190-30-2,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/pz0383
+Ruxolitinib,SML1773,941678-49-5,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/sml1773
+Trichostatin A (TSA),T8552,58880-19-6,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/t8552
+Sodium butyrate,B5887,156-54-7,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/b5887
+"Suberoylanilide hydroxamic acid (SAHA, vorinostat)",SML0061,149647-78-9,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/sml0061
+Valproic acid sodium,P4543,1069-66-5,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/p4543
+5-Azacytidine,A2385,320-67-2,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/a2385
+5-Aza-2'-deoxycytidine (decitabine),A3656,2353-33-5,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/a3656
+EX-527 (SIRT1 inhibitor),E7034,49843-98-3,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/e7034
+GSK126 (EZH2 inhibitor),500580,1346574-57-9,drug_tool,https://www.sigmaaldrich.com/US/en/product/mm/500580
+UNC1999,SML0778,1431612-23-5,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/sml0778
+JQ1 (BET inhibitor),SML1524,1268524-70-4,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/sml1524
+I-BET762,SML1272,1260907-17-2,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/sml1272
+Bromodomain inhibitor OTX015,SML2013,202590-98-5,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/sml2013
+Pargyline hydrochloride (LSD1),P8013,306-07-0,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/p8013
+GSK-J4 (KDM6 inhibitor),SML0701,1373423-53-0,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/sml0701
+8-Anilino-1-naphthalenesulfonic acid (ANS),10417,82-76-8,dye_label,https://www.sigmaaldrich.com/US/en/product/sial/10417
+Methyl orange,114510,547-58-0,dye_label,https://www.sigmaaldrich.com/US/en/product/sial/114510
+Methyl red,M0506,493-52-7,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/m0506
+Bromocresol green,114359,76-60-8,dye_label,https://www.sigmaaldrich.com/US/en/product/sial/114359
+Bromocresol purple,114375,115-40-2,dye_label,https://www.sigmaaldrich.com/US/en/product/sial/114375
+Cresol red,114472,1733-12-6,dye_label,https://www.sigmaaldrich.com/US/en/product/sial/114472
+Phenolphthalein,P9750,77-09-8,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/p9750
+Thymol blue,114545,76-61-9,dye_label,https://www.sigmaaldrich.com/US/en/product/sial/114545
+Methyl violet 2B,198099,8004-87-3,dye_label,https://www.sigmaaldrich.com/US/en/product/sial/198099
+Janus green B,201677,2869-83-2,dye_label,https://www.sigmaaldrich.com/US/en/product/sial/201677
+Acid fuchsin,F8129,3244-88-0,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/f8129
+Basic fuchsin,857343,569-61-9,dye_label,https://www.sigmaaldrich.com/US/en/product/sial/857343
+Safranin O,S2255,477-73-6,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/s2255
+Light green SF yellowish,L5382,5141-20-8,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/l5382
+Fast green FCF,F7252,2353-45-9,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/f7252
+Erythrosin B,200964,568-63-8,dye_label,https://www.sigmaaldrich.com/US/en/product/sial/200964
+Indigo carmine,I8130,860-22-0,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/i8130
+Alcian blue 8GX,A5268,33864-99-2,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/a5268
+Methyl alpha-D-glucopyranoside,M9376,97-30-3,sugar,https://www.sigmaaldrich.com/US/en/product/sigma/m9376
+Methyl alpha-D-mannopyranoside,M6882,617-04-9,sugar,https://www.sigmaaldrich.com/US/en/product/sigma/m6882
+Methyl beta-D-galactopyranoside,M6882G,1824-94-8,sugar,https://www.sigmaaldrich.com/US/en/product/sigma/m6882g
+D-Glucosamine hydrochloride,G4875,66-84-2,sugar,https://www.sigmaaldrich.com/US/en/product/sigma/g4875
+D-Galactosamine hydrochloride,G0500,1772-03-8,sugar,https://www.sigmaaldrich.com/US/en/product/sigma/g0500
+D-(-)-Arabitol,A3506,488-82-4,sugar,https://www.sigmaaldrich.com/US/en/product/sigma/a3506
+Xylitol,X3375,87-99-0,sugar,https://www.sigmaaldrich.com/US/en/product/sigma/x3375
+Erythritol,E7500,149-32-6,sugar,https://www.sigmaaldrich.com/US/en/product/sigma/e7500
+D-(+)-Glucuronic acid,G5269,6556-12-3,sugar,https://www.sigmaaldrich.com/US/en/product/sigma/g5269
+D-Gluconic acid sodium,G9005,527-07-1,sugar,https://www.sigmaaldrich.com/US/en/product/sigma/g9005
+alpha-Lactalbumin (bovine milk),L5385,9013-90-5,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/l5385
+D-Sedoheptulose anhydride,S2751,3019-74-7,sugar,https://www.sigmaaldrich.com/US/en/product/sigma/s2751
+Lactulose,L7877,4618-18-2,sugar,https://www.sigmaaldrich.com/US/en/product/sigma/l7877
+D-Sorbose,S0633,5934-33-8,sugar,https://www.sigmaaldrich.com/US/en/product/sigma/s0633
+"Phorbol 12,13-dibutyrate (PDBu)",P1269,37558-16-0,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/p1269
+Mezerein,M5793,34807-41-5,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/m5793
+Bryostatin 1,B7431,83314-01-6,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/b7431
+Latrunculin A,L5163,76343-93-6,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/l5163
+Latrunculin B,L5288,76343-94-7,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/l5288
+Cytochalasin B,C6762,14930-96-2,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/c6762
+Cytochalasin D,C8273,22144-77-0,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/c8273
+Phalloidin (unconjugated),P2141,17466-45-4,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/p2141
+Jasplakinolide,J4580,102396-24-7,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/j4580
+Blebbistatin,B0560,856925-71-8,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/b0560
+ML-7 (MLCK inhibitor),I2764,110448-33-4,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/i2764
+ML-9,C1172,105637-50-1,kinase_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/c1172
+AMP-PNP,A2647,25612-73-1,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/a2647
+ATP-gamma-S tetralithium salt,A1388,93839-89-5,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/a1388
+Cyclic ADP-ribose,C7344,119340-53-3,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/c7344
+3'-O-Methyl-GTP,M3133,1492-03-5,nucleotide,https://www.sigmaaldrich.com/US/en/product/sigma/m3133
+Aphidicolin,A0781,38966-21-1,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/a0781
+Mimosine,M0253,500-44-7,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/m0253
+Geldanamycin (HSP90 inhibitor),G3381,30562-34-6,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/g3381
+17-AAG (Tanespimycin),A8476,75747-14-7,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/a8476
+Radicicol,R2146,12772-57-5,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/r2146
+Ganetespib,SML1582,888216-25-9,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/sml1582
+Salermide,S5817,1105698-15-4,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/s5817
+Polyvinyl alcohol,P8136,9002-89-5,crystallization_agent,https://www.sigmaaldrich.com/US/en/product/sigma/p8136
+Polyvinylpyrrolidone (PVP-40),PVP40,9003-39-8,crystallization_agent,https://www.sigmaaldrich.com/US/en/product/sigma/pvp40
+Polyacrylamide,92560,9003-05-8,crystallization_agent,https://www.sigmaaldrich.com/US/en/product/sial/92560
+Acrylamide,A8887,79-06-1,crystallization_agent,https://www.sigmaaldrich.com/US/en/product/sigma/a8887
+"Bisacrylamide (N,N'-Methylenebisacrylamide)",M7279,110-26-9,crystallization_agent,https://www.sigmaaldrich.com/US/en/product/sigma/m7279
+Sephadex G-25,G25150,9050-94-6,crystallization_agent,https://www.sigmaaldrich.com/US/en/product/sial/g25150
+Sepharose 4B,4B200,61970-08-9,crystallization_agent,https://www.sigmaaldrich.com/US/en/product/sial/4b200
+Dextran T-70,31390,9004-54-0,crystallization_agent,https://www.sigmaaldrich.com/US/en/product/sial/31390
+Ficoll 400,F4375,26873-85-8,crystallization_agent,https://www.sigmaaldrich.com/US/en/product/sigma/f4375
+Ammonium formate,70221,540-69-2,buffer,https://www.sigmaaldrich.com/US/en/product/sial/70221
+Heptafluorobutyric acid (HFBA),302007,375-22-4,buffer,https://www.sigmaaldrich.com/US/en/product/sial/302007
+Pentafluoropropionic acid,P7916,422-64-0,buffer,https://www.sigmaaldrich.com/US/en/product/sigma/p7916
+Iodoacetic acid,I4386,64-69-7,oxidizing_agent,https://www.sigmaaldrich.com/US/en/product/sigma/i4386
+4-Vinylpyridine,V3204,100-43-6,crosslinker,https://www.sigmaaldrich.com/US/en/product/sigma/v3204
+Muscimol,M1523,2763-96-4,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/m1523
+Baclofen,B5399,1134-47-0,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/b5399
+CGP 55845,SML0594,149184-22-5,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/sml0594
+AP-5 (D-AP5),A8054,76326-31-3,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/a8054
+CNQX disodium,C239,479347-86-9,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/c239
+DNQX,D0540,2379-57-9,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/d0540
+MK-801 maleate,M107,77086-22-7,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/m107
+Memantine hydrochloride,M9292,41100-52-1,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/m9292
+Ketamine hydrochloride,K2753,1867-66-9,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/k2753
+Phencyclidine — controlled,P3029,956-90-1,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/p3029
+Domoic acid,D6152,14277-97-5,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/d6152
+Strychnine,S0532,57-24-9,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/s0532
+Bicuculline methiodide,14343,40709-69-1,drug_tool,https://www.sigmaaldrich.com/US/en/product/sial/14343
+SR 95531 (Gabazine),S106,104104-50-9,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/s106
+Nordihydroguaiaretic acid (NDGA),N5023,500-38-9,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/n5023
+Lipoxygenase inhibitor (Zileuton),Z4277,111406-87-2,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/z4277
+Celecoxib,PZ0008,169590-42-5,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/pz0008
+Sulindac,S8139,38194-50-2,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/s8139
+Probenecid,P8761,57-66-9,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/p8761
+Furosemide,F4381,54-31-9,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/f4381
+Bumetanide,B3023,28395-03-1,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/b3023
+Hydrochlorothiazide,H4759,58-93-5,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/h4759
+Captopril,C4042,62571-86-2,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/c4042
+Enalapril maleate,E6888,76095-16-4,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/e6888
+Losartan potassium,61188,124750-99-8,drug_tool,https://www.sigmaaldrich.com/US/en/product/sial/61188
+Verapamil hydrochloride,V4629,152-11-4,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/v4629
+Nifedipine,N7634,21829-25-4,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/n7634
+Diltiazem hydrochloride,D2521,33286-22-5,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/d2521
+Propranolol hydrochloride,P0884,318-98-9,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/p0884
+Atenolol,A7655,29122-68-7,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/a7655
+Clonidine hydrochloride,C7897,4205-91-8,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/c7897
+Phentolamine hydrochloride,P7547,73-05-2,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/p7547
+Prazosin hydrochloride,P7791,19237-84-4,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/p7791
+Amphotericin B,A2942,1397-89-3,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/a2942
+Nystatin,N6261,1400-61-9,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/n6261
+Fluconazole,F8929,86386-73-4,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/f8929
+Ketoconazole,K1003,65277-42-1,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/k1003
+Miconazole,M3512,22916-47-8,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/m3512
+Itraconazole,I6657,84625-61-6,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/i6657
+Voriconazole,PZ0005,137234-62-9,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/pz0005
+Acyclovir,A4669,59277-89-3,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/a4669
+Ganciclovir,G2536,82410-32-0,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/g2536
+AZT (Zidovudine),A2169,30516-87-1,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/a2169
+Ribavirin,R9644,36791-04-5,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/r9644
+Lamivudine,L1295,134678-17-4,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/l1295
+Tenofovir,PHR1707,147127-20-6,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/phr1707
+Ciprofloxacin,17850,85721-33-1,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sial/17850
+Levofloxacin,28266,100986-85-4,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sial/28266
+Norfloxacin,N9890,70458-96-7,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/n9890
+Ofloxacin,O8757,82419-36-1,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/o8757
+Nalidixic acid,N4382,389-08-2,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/n4382
+Cephalexin,C4895,23325-78-2,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/c4895
+Cefotaxime sodium,C7039,64485-93-4,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/c7039
+Ceftriaxone sodium,C5793,104376-79-6,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/c5793
+Penicillin V potassium,P0149,132-98-9,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/p0149
+Carbenicillin disodium,C1389,4800-94-6,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/c1389
+Methicillin sodium,M9011,132-92-3,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/m9011
+Oxacillin sodium,28221,7240-38-2,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sial/28221
+Ampicillin trihydrate,A6140,7177-48-2,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/a6140
+Cloxacillin sodium,C9393,642-78-4,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/c9393
+Azithromycin,PHR1088,83905-01-5,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/phr1088
+Clarithromycin,C9742,81103-11-9,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/c9742
+Doxycycline hyclate,D9891,24390-14-5,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/d9891
+Minocycline hydrochloride,M9511,13614-98-7,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/m9511
+Sulfamethoxazole,S7507,723-46-6,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/s7507
+Sulfanilamide,S9251,63-74-1,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/s9251
+Metronidazole,M3761,443-48-1,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/m3761
+Tinidazole,PHR1490,19387-91-8,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/phr1490
+Isoniazid,I3377,54-85-3,transcription_inhibitor,https://www.sigmaaldrich.com/US/en/product/sigma/i3377
+Fexaramine,F8175,574013-66-4,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/f8175
+GW4064 (FXR agonist),G5172,278779-30-9,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/g5172
+Obeticholic acid,SML2236,459789-99-2,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/sml2236
+Lovastatin,L154,75330-75-5,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/l154
+Simvastatin,S6196,79902-63-9,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/s6196
+Atorvastatin calcium,PZ0001,134523-03-8,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/pz0001
+Pravastatin sodium,P4498,81131-70-6,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/p4498
+Compactin (mevastatin),M2537,73573-88-3,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/m2537
+Phloretin,P7912,60-82-2,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/p7912
+Phlorizin dihydrate,P3449,60-81-1,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/p3449
+Apigenin,A3145,520-36-5,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/a3145
+Luteolin,L9283,491-70-3,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/l9283
+Kaempferol,K0133,520-18-3,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/k0133
+Naringenin,N5893,67604-48-2,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/n5893
+Hesperidin,H5254,520-26-3,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/h5254
+Catechin hydrate,C1788,225937-10-0,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/c1788
+Epicatechin,E1753,490-46-0,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/e1753
+Gallic acid monohydrate,G7384,5995-86-8,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/g7384
+Caffeic acid,C0625,331-39-5,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/c0625
+Ferulic acid,128708,1135-24-6,drug_tool,https://www.sigmaaldrich.com/US/en/product/sial/128708
+Coumaric acid (trans-p-),C9008,501-98-4,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/c9008
+Sinapic acid,D7927,530-59-6,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/d7927
+Vanillic acid,94770,121-34-6,drug_tool,https://www.sigmaaldrich.com/US/en/product/sial/94770
+Vanillin,V1104,121-33-5,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/v1104
+Eugenol,E51791,97-53-0,drug_tool,https://www.sigmaaldrich.com/US/en/product/sial/e51791
+Capsaicin,M2028,404-86-4,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/m2028
+Piperine,P49007,94-62-2,drug_tool,https://www.sigmaaldrich.com/US/en/product/sial/p49007
+Cinnamaldehyde,C80687,104-55-2,drug_tool,https://www.sigmaaldrich.com/US/en/product/sial/c80687
+Carvacrol,282197,499-75-2,drug_tool,https://www.sigmaaldrich.com/US/en/product/sial/282197
+Thymol,T0501,89-83-8,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/t0501
+Menthol,M2772,2216-51-5,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/m2772
+Camphor,C1773,464-49-3,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/c1773
+Linalool,L2602,78-70-6,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/l2602
+Geraniol,163333,106-24-1,drug_tool,https://www.sigmaaldrich.com/US/en/product/sial/163333
+Limonene,183164,5989-27-5,drug_tool,https://www.sigmaaldrich.com/US/en/product/sial/183164
+alpha-Pinene,147524,80-56-8,drug_tool,https://www.sigmaaldrich.com/US/en/product/sial/147524
+beta-Carotene,C4582,7235-40-7,vitamin,https://www.sigmaaldrich.com/US/en/product/sigma/c4582
+Lycopene,L9879,502-65-8,vitamin,https://www.sigmaaldrich.com/US/en/product/sigma/l9879
+Lutein,X6250,127-40-2,vitamin,https://www.sigmaaldrich.com/US/en/product/sigma/x6250
+Zeaxanthin,14681,144-68-3,vitamin,https://www.sigmaaldrich.com/US/en/product/sial/14681
+Astaxanthin,SML0982,472-61-7,vitamin,https://www.sigmaaldrich.com/US/en/product/sigma/sml0982
+Coenzyme Q10 (Ubiquinone-10),C9538,303-98-0,vitamin,https://www.sigmaaldrich.com/US/en/product/sigma/c9538
+Sodium tungstate dihydrate,72069,10213-10-2,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sial/72069
+Sodium metavanadate,590088,13718-26-8,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sial/590088
+Sodium meta-arsenite,S7400,7784-46-5,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sigma/s7400
+Potassium ferrocyanide trihydrate,P9387,14459-95-1,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sigma/p9387
+Potassium ferricyanide,P8131,13746-66-2,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sigma/p8131
+Sodium aurothiosulfate,T7500,10233-88-2,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sigma/t7500
+Sodium selenate,71949,13410-01-0,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sial/71949
+Sodium tellurite,T0383,10102-20-2,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sigma/t0383
+Lead(II) acetate trihydrate,215902,6080-56-4,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sial/215902
+Mercury(II) chloride,215465,7487-94-7,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sial/215465
+Tin(II) chloride dihydrate,208256,10025-69-1,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sial/208256
+Chromium(III) chloride hexahydrate,229105,10060-12-5,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sial/229105
+Sodium chromate,307831,7775-11-3,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sial/307831
+Potassium dichromate,207802,7778-50-9,inorganic_salt,https://www.sigmaaldrich.com/US/en/product/sial/207802
+Hydrazine sulfate,215155,10034-93-2,reducing_agent,https://www.sigmaaldrich.com/US/en/product/sial/215155
+Dithioerythritol,D8255,6892-68-8,reducing_agent,https://www.sigmaaldrich.com/US/en/product/sigma/d8255
+Rhodamine 110,83695,13558-31-1,dye_label,https://www.sigmaaldrich.com/US/en/product/sial/83695
+Sulforhodamine B,230162,3520-42-1,dye_label,https://www.sigmaaldrich.com/US/en/product/sial/230162
+Sulforhodamine 101,S7635,60311-02-6,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/s7635
+Texas Red-X (succinimidyl ester),T6134,216972-99-5,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/t6134
+Cy3 NHS ester,21320,146368-14-1,dye_label,https://www.sigmaaldrich.com/US/en/product/sial/21320
+Cy5 NHS ester,21376,146368-16-3,dye_label,https://www.sigmaaldrich.com/US/en/product/sial/21376
+Resorufin sodium,424455,34994-50-8,dye_label,https://www.sigmaaldrich.com/US/en/product/sial/424455
+"Amplex Red (10-acetyl-3,7-dihydroxyphenoxazine)",90101,119171-73-2,dye_label,https://www.sigmaaldrich.com/US/en/product/sial/90101
+4-Methylumbelliferone,M1381,90-33-5,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/m1381
+4-Methylumbelliferyl phosphate,M8883,3368-04-5,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/m8883
+4-Methylumbelliferyl beta-D-galactopyranoside,M1633,6160-78-7,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/m1633
+X-Gal (5-Bromo-4-chloro-3-indolyl-beta-D-galactopyranoside),B4252,7240-90-6,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/b4252
+X-Gluc (5-Bromo-4-chloro-3-indolyl-beta-D-glucuronide),B0522,18656-96-7,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/b0522
+BCIP (5-Bromo-4-chloro-3-indolyl phosphate),B8503,6578-06-9,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/b8503
+NBT (Nitro blue tetrazolium chloride),N6876,298-83-9,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/n6876
+"MTT (3-(4,5-Dimethylthiazol-2-yl)-2,5-diphenyltetrazolium bromide)",M5655,298-93-1,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/m5655
+XTT sodium,X4626,111072-31-2,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/x4626
+WST-1,11644807001,150849-52-8,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/11644807001
+Resazurin sodium,R7017,62758-13-8,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/r7017
+Luminol,123072,521-31-3,dye_label,https://www.sigmaaldrich.com/US/en/product/sial/123072
+4-Iodophenylboronic acid (luminol enhancer),I7889,5285-67-6,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/i7889
+Acridinium ester,A1846,73219-92-2,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/a1846
+Coelenterazine,C2230,55779-48-1,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/c2230
+D-Luciferin potassium salt,L9504,115144-35-9,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/l9504
+D-Luciferin (free acid),L6882,2591-17-5,dye_label,https://www.sigmaaldrich.com/US/en/product/sigma/l6882
+DiSC3(5),43608,514-73-8,organelle_dye,https://www.sigmaaldrich.com/US/en/product/sial/43608
+Castanospermine,C3784,79831-76-8,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/c3784
+1-Deoxynojirimycin hydrochloride,D9305,73465-43-7,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/d9305
+Swainsonine,S8195,72741-87-8,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/s8195
+Kifunensine,K1140,109944-15-2,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/k1140
+PNGase F (peptide N-glycosidase F),P7367,9075-03-7,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/p7367
+Endo H (Endoglycosidase H),A0810,37278-88-9,drug_tool,https://www.sigmaaldrich.com/US/en/product/sigma/a0810
+Glycogen from oyster,G0885,9005-79-2,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/g0885
+Yeast tRNA,R6750,9014-25-9,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/r6750
+Salmon sperm DNA,D1626,9007-49-2,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/d1626
+Polyriboadenylic acid,P9403,30918-54-8,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/p9403
+Poly(I:C) sodium,P1530,31852-29-6,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/p1530
+Poly(dI-dC),P4929,27078-72-2,cell_culture_additive,https://www.sigmaaldrich.com/US/en/product/sigma/p4929
+Ethylene glycol,324558,107-21-1,solvent,https://www.sigmaaldrich.com/US/en/product/sial/324558
+Propylene glycol,82280,57-55-6,solvent,https://www.sigmaaldrich.com/US/en/product/sial/82280
+"1,2-Butanediol",B84909,584-03-2,solvent,https://www.sigmaaldrich.com/US/en/product/sial/b84909
+"1,3-Propanediol",P50404,504-63-2,solvent,https://www.sigmaaldrich.com/US/en/product/sial/p50404
+Diethylene glycol,32160,111-46-6,solvent,https://www.sigmaaldrich.com/US/en/product/sial/32160
+Triethylene glycol,95126,112-27-6,solvent,https://www.sigmaaldrich.com/US/en/product/sial/95126
+2-Butoxyethanol,537551,111-76-2,solvent,https://www.sigmaaldrich.com/US/en/product/sial/537551
+2-Methoxyethanol,284467,109-86-4,solvent,https://www.sigmaaldrich.com/US/en/product/sial/284467
+N-Methyl-2-pyrrolidone (NMP),328634,872-50-4,solvent,https://www.sigmaaldrich.com/US/en/product/sial/328634
+"N,N-Dimethylacetamide (DMAc)",271012,127-19-5,solvent,https://www.sigmaaldrich.com/US/en/product/sial/271012
+Hexamethylphosphoramide (HMPA),176931,680-31-9,solvent,https://www.sigmaaldrich.com/US/en/product/sial/176931
+Sulfolane,T22209,126-33-0,solvent,https://www.sigmaaldrich.com/US/en/product/sial/t22209
+Glycerol formal,G9384,4740-78-7,solvent,https://www.sigmaaldrich.com/US/en/product/sigma/g9384
+Diglyme,169579,111-96-6,solvent,https://www.sigmaaldrich.com/US/en/product/sial/169579
+Triglyme,T63606,112-49-2,solvent,https://www.sigmaaldrich.com/US/en/product/sial/t63606
+Tetraglyme,172405,143-24-8,solvent,https://www.sigmaaldrich.com/US/en/product/sial/172405
+Cyclopentanone,W391506,120-92-3,solvent,https://www.sigmaaldrich.com/US/en/product/sial/w391506
+Cyclohexanone,398241,108-94-1,solvent,https://www.sigmaaldrich.com/US/en/product/sial/398241
+Hexafluoroisopropanol (HFIP),105228,920-66-1,solvent,https://www.sigmaaldrich.com/US/en/product/sial/105228
+"2,2,2-Trifluoroethanol (TFE)",T63002,75-89-8,solvent,https://www.sigmaaldrich.com/US/en/product/sial/t63002
