@@ -10,7 +10,7 @@
 #   cite: source — manufacturer protocol, textbook, paper, or "field consensus"
 #   note: if cite is "field consensus", mark as such for UI display
 
-- id: enzyme_glycerol_on_ice
+- id: protein_glycerol_on_ice
   when:
     is_protein: true
     glycerol_pct: {gte: 50}
@@ -20,9 +20,10 @@
     pipetting.aspirate_speed: "slow"
     mixing.no_vortex: true
   because: >
-    Enzymes in 50% glycerol stay liquid at −20°C but denature rapidly above ~4°C.
-    The glycerol stock is viscous, requiring reverse pipetting to eliminate air bubbles.
-    Vortexing creates a high-shear air-water interface that unfolds proteins.
+    Proteins in 50% glycerol stocks (enzymes, antibodies, recombinant carriers)
+    stay liquid at −20°C but denature rapidly above ~4°C. The glycerol stock is
+    viscous, requiring reverse pipetting to eliminate air bubbles. Vortexing
+    creates a high-shear air–water interface that unfolds proteins.
   cite: "NEB Cloning & PCR guidelines; Eppendorf Technical Guide: Viscous Liquids, 2020."
 
 - id: pre_wet_volatile
@@ -115,13 +116,17 @@
 
 - id: warm_freeze_prone_liquid
   when:
+    physical_state: "liquid"
     freeze_point_C: {gte: 15}
   then:
     preparation.warm_to_RT_first: true
   because: >
     Liquids with freeze points at or above 15°C (DMSO ~19°C, glycerol ~18°C)
     can solidify partially or fully in a 4°C cold room or on ice. Pipetting
-    a partially-solidified liquid causes systematic volume errors.
+    a partially-solidified liquid causes systematic volume errors. The
+    physical_state guard prevents the rule from misfiring on solids whose
+    melting point happens to be reported in freeze_point_C (e.g. NaOH
+    pellets, PFA powder).
   cite: "Sigma-Aldrich DMSO Product Information Sheet 276855 (freeze point 18.45°C). Perry's Chemical Engineers' Handbook, 8th ed. (glycerol freeze point 17.8°C)."
 
 - id: dmso_skin_and_plastics

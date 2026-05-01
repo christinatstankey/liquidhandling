@@ -31,7 +31,7 @@
     "is_corrosive": true,
     "is_adsorption_prone": false,
     "lo_bind_required": false,
-    "freeze_point_C": 145.0,
+    "freeze_point_C": null,
     "requires_ice": false,
     "freeze_thaw_max_cycles": null,
     "skin_penetrant": false,
