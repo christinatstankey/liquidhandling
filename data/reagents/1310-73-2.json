@@ -169,11 +169,26 @@
     },
     "is_corrosive": {
       "value": true,
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        },
+        {
+          "type": "ghs_hcode",
+          "ref": "H290",
+          "agrees": true
+        },
+        {
+          "type": "ghs_hcode",
+          "ref": "H314",
+          "agrees": true
+        },
+        {
+          "type": "storage_class",
+          "ref": "Storage class : 8",
           "agrees": true
         }
       ]

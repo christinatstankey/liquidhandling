@@ -147,11 +147,16 @@
     },
     "is_hygroscopic": {
       "value": true,
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        },
+        {
+          "type": "sds_phrase",
+          "ref": "section_7:'hygroscopic'",
           "agrees": true
         }
       ]

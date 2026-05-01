@@ -147,11 +147,16 @@
     },
     "is_hygroscopic": {
       "value": true,
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        },
+        {
+          "type": "sds_phrase",
+          "ref": "section_7:'hygroscopic'",
           "agrees": true
         }
       ]
@@ -240,13 +245,18 @@
       ]
     },
     "is_air_sensitive": {
-      "value": null,
-      "confidence": "low",
+      "value": true,
+      "confidence": "high",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "not_yet_assessed",
           "agrees": false
+        },
+        {
+          "type": "sds_phrase",
+          "ref": "section_7:'Store under inert gas'",
+          "agrees": true
         }
       ]
     },
