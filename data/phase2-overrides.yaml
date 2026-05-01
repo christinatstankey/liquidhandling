@@ -1,0 +1,271 @@
+# phase2-overrides.yaml — per-reagent overrides applied by tools/apply_overrides.py
+#
+# Sets category and any tacit boolean flags that the automated pipeline
+# (SDS prose + ChEBI) did not detect. Source type for all entries here is
+# claude_inference with ref "phase2_batch_ingest".
+#
+# Flags omitted from a reagent's `flags` block are left as-is (whatever
+# automation set). Only explicitly listed flags are touched.
+
+# ── H₂O₂ 30% ────────────────────────────────────────────────────────────────
+- cas: "7722-84-1"
+  category: volatile_solvent
+  flags:
+    is_protein: false
+    is_light_sensitive: true   # H₂O₂ decomposes on UV exposure; store dark
+    is_reducing_agent: false
+    is_detergent: false
+    is_fixative: false
+    is_foaming: false
+    is_hygroscopic: false
+    is_adsorption_prone: false
+    requires_ice: false
+    skin_penetrant: false
+
+# ── Ethidium bromide 10 mg/mL ────────────────────────────────────────────────
+- cas: "1239-45-8"
+  category: fluorophore
+  flags:
+    is_protein: false
+    is_reducing_agent: false
+    is_detergent: false
+    is_fixative: false
+    is_foaming: false
+    is_hygroscopic: false
+    is_adsorption_prone: false
+    requires_ice: false
+    skin_penetrant: false
+
+# ── Diethyl ether ────────────────────────────────────────────────────────────
+- cas: "60-29-7"
+  category: volatile_solvent
+  flags:
+    is_protein: false
+    is_reducing_agent: false
+    is_detergent: false
+    is_fixative: false
+    is_foaming: false
+    is_hygroscopic: false
+    is_adsorption_prone: false
+    requires_ice: false
+    skin_penetrant: false
+
+# ── Trifluoroacetic acid ─────────────────────────────────────────────────────
+- cas: "76-05-1"
+  category: volatile_solvent
+  flags:
+    is_protein: false
+    is_reducing_agent: false
+    is_detergent: false
+    is_fixative: false
+    is_foaming: false
+    is_adsorption_prone: false
+    requires_ice: false
+    skin_penetrant: false
+    # is_hygroscopic: already set true by prose (TFA absorbs atmospheric water)
+
+# ── HEPES (free acid) ────────────────────────────────────────────────────────
+- cas: "7365-45-9"
+  category: hygroscopic_solid
+  flags:
+    is_protein: false
+    is_reducing_agent: false
+    is_detergent: false
+    is_fixative: false
+    is_foaming: false
+    is_hygroscopic: true       # free acid powder absorbs moisture; store sealed
+    is_deliquescent: false
+    is_adsorption_prone: false
+    is_light_sensitive: false
+    requires_ice: false
+    skin_penetrant: false
+
+# ── EDTA disodium dihydrate ──────────────────────────────────────────────────
+- cas: "6381-92-6"
+  category: hygroscopic_solid
+  flags:
+    is_protein: false
+    is_reducing_agent: false
+    is_detergent: false
+    is_fixative: false
+    is_foaming: false
+    is_hygroscopic: true       # dihydrate is mildly hygroscopic
+    is_deliquescent: false
+    is_adsorption_prone: false
+    is_light_sensitive: false
+    requires_ice: false
+    skin_penetrant: false
+
+# ── Glutaraldehyde 25% ───────────────────────────────────────────────────────
+- cas: "111-30-8"
+  category: fixative
+  flags:
+    is_protein: false
+    is_reducing_agent: false
+    is_detergent: false
+    is_foaming: false
+    is_hygroscopic: false
+    is_adsorption_prone: false
+    is_light_sensitive: false
+    requires_ice: false
+    skin_penetrant: false
+    # fume_hood_required: already set true by prose
+    # is_fixative: already set true by ChEBI
+
+# ── 2-Mercaptoethanol ────────────────────────────────────────────────────────
+- cas: "60-24-2"
+  category: reducing_agent
+  flags:
+    is_protein: false
+    oxidizes_in_solution: true  # thiol-based, oxidizes like DTT
+    make_fresh: true            # make fresh on day of use (same as DTT)
+    is_detergent: false
+    is_fixative: false
+    is_foaming: false
+    is_hygroscopic: false
+    is_adsorption_prone: false
+    is_light_sensitive: false
+    requires_ice: false
+    skin_penetrant: true        # 2-ME penetrates skin; a real toxicity route
+    # is_reducing_agent: already set true by ChEBI
+    # fume_hood_required: already set true by prose
+
+# ── SDS (sodium dodecyl sulfate) ─────────────────────────────────────────────
+- cas: "151-21-3"
+  category: detergent
+  flags:
+    is_protein: false
+    is_reducing_agent: false
+    is_foaming: true            # SDS is strongly foaming
+    is_fixative: false
+    is_adsorption_prone: false
+    is_light_sensitive: false
+    requires_ice: false
+    skin_penetrant: false
+    # is_detergent: already set true by ChEBI
+    # is_hygroscopic: already set true by prose
+
+# ── Triton X-100 ─────────────────────────────────────────────────────────────
+- cas: "9036-19-5"
+  category: detergent
+  flags:
+    is_protein: false
+    is_reducing_agent: false
+    is_foaming: false          # nonionic — low foaming (much less than SDS)
+    is_fixative: false
+    is_hygroscopic: false
+    is_adsorption_prone: false
+    is_light_sensitive: false
+    requires_ice: false
+    skin_penetrant: false
+    # is_detergent: already set true by ChEBI
+
+# ── CHAPS ────────────────────────────────────────────────────────────────────
+- cas: "75621-03-3"
+  category: detergent
+  flags:
+    is_protein: false
+    is_reducing_agent: false
+    is_foaming: false          # zwitterionic — specifically non-foaming
+    is_fixative: false
+    is_hygroscopic: false
+    is_adsorption_prone: false
+    is_light_sensitive: false
+    requires_ice: false
+    skin_penetrant: false
+    # is_detergent: already set true by ChEBI
+
+# ── Magnesium chloride hexahydrate ───────────────────────────────────────────
+- cas: "7791-18-6"
+  category: hygroscopic_solid
+  flags:
+    is_protein: false
+    is_reducing_agent: false
+    is_detergent: false
+    is_fixative: false
+    is_foaming: false
+    is_deliquescent: false
+    is_adsorption_prone: false
+    is_light_sensitive: false
+    requires_ice: false
+    skin_penetrant: false
+    # is_hygroscopic: already set true by prose
+
+# ── Calcium chloride dihydrate ───────────────────────────────────────────────
+- cas: "10035-04-8"
+  category: hygroscopic_solid
+  flags:
+    is_protein: false
+    is_reducing_agent: false
+    is_detergent: false
+    is_fixative: false
+    is_foaming: false
+    is_hygroscopic: true       # extremely hygroscopic; SDS prose did not fire
+    is_deliquescent: true      # CaCl₂ is deliquescent — liquefies in humid air
+    is_adsorption_prone: false
+    is_light_sensitive: false
+    requires_ice: false
+    skin_penetrant: false
+
+# ── DEPC (diethyl pyrocarbonate) ─────────────────────────────────────────────
+- cas: "1609-47-8"
+  category: volatile_solvent
+  flags:
+    is_protein: false
+    is_reducing_agent: false
+    is_detergent: false
+    is_fixative: false
+    is_foaming: false
+    is_hygroscopic: false
+    is_adsorption_prone: false
+    is_light_sensitive: false
+    requires_ice: false
+    skin_penetrant: false
+    fume_hood_required: true   # carbamoylates amines; must be inactivated
+
+# ── Acetonitrile ─────────────────────────────────────────────────────────────
+- cas: "75-05-8"
+  category: volatile_solvent
+  flags:
+    is_protein: false
+    is_reducing_agent: false
+    is_detergent: false
+    is_fixative: false
+    is_foaming: false
+    is_hygroscopic: false
+    is_adsorption_prone: false
+    is_light_sensitive: false
+    requires_ice: false
+    skin_penetrant: false
+
+# ── Sodium hypochlorite 5–6% ─────────────────────────────────────────────────
+- cas: "7681-52-9"
+  category: volatile_solvent
+  flags:
+    is_protein: false
+    is_reducing_agent: false
+    is_detergent: false
+    is_fixative: false
+    is_foaming: false
+    is_hygroscopic: false
+    is_adsorption_prone: false
+    is_light_sensitive: true   # bleach decomposes faster in light; store dark
+    requires_ice: false
+    skin_penetrant: false
+
+# ── Acrylamide ───────────────────────────────────────────────────────────────
+- cas: "79-06-1"
+  category: hygroscopic_solid
+  flags:
+    is_protein: false
+    is_reducing_agent: false
+    is_detergent: false
+    is_fixative: false
+    is_foaming: false
+    is_hygroscopic: false      # solid monomer is not notably hygroscopic
+    is_deliquescent: false
+    is_adsorption_prone: false
+    requires_ice: false
+    skin_penetrant: true       # neurotoxin absorbed through skin; no safe exposure
+    # is_light_sensitive: already set true by prose (Sigma SDS says "Light sensitive")
+    # fume_hood_required: already set true by prose

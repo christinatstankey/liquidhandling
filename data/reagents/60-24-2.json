@@ -1,0 +1,332 @@
+{
+  "name": "2-Mercaptoethanol",
+  "cas": "60-24-2",
+  "category": "",
+  "vendor_example": "Sigma M3148",
+  "physical_state": "liquid",
+  "properties": {
+    "is_protein": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        }
+      ]
+    },
+    "glycerol_pct": null,
+    "viscosity_class": "low",
+    "viscosity_mPas_20C": 3.4,
+    "vapor_pressure_kPa_20C": 0.076,
+    "is_volatile": {
+      "value": false,
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        }
+      ]
+    },
+    "is_flammable": {
+      "value": false,
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        }
+      ]
+    },
+    "flash_point_C": 74.0,
+    "is_light_sensitive": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        }
+      ]
+    },
+    "is_fluorophore": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        }
+      ]
+    },
+    "excitation_nm": null,
+    "emission_nm": null,
+    "is_reducing_agent": {
+      "value": true,
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        },
+        {
+          "type": "chebi",
+          "ref": "CHEBI:63247",
+          "agrees": true
+        }
+      ]
+    },
+    "oxidizes_in_solution": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        }
+      ]
+    },
+    "solution_half_life_at_4C_days": null,
+    "make_fresh": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        }
+      ]
+    },
+    "is_detergent": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        }
+      ]
+    },
+    "is_foaming": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        }
+      ]
+    },
+    "is_fixative": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        }
+      ]
+    },
+    "fume_hood_required": {
+      "value": true,
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        },
+        {
+          "type": "sds_phrase",
+          "ref": "section_7:'Work under hood'",
+          "agrees": true
+        }
+      ]
+    },
+    "is_hygroscopic": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        }
+      ]
+    },
+    "is_deliquescent": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        }
+      ]
+    },
+    "is_corrosive": {
+      "value": true,
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        },
+        {
+          "type": "ghs_hcode",
+          "ref": "H318",
+          "agrees": true
+        }
+      ]
+    },
+    "is_adsorption_prone": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        }
+      ]
+    },
+    "lo_bind_required": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        }
+      ]
+    },
+    "freeze_point_C": -50.0,
+    "requires_ice": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        }
+      ]
+    },
+    "freeze_thaw_max_cycles": null,
+    "skin_penetrant": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "legacy_handauthored_mvp",
+          "agrees": true
+        }
+      ]
+    },
+    "plastic_incompatible": [],
+    "storage_temp_C": 5.0,
+    "is_oxidizer": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_air_sensitive": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_peroxide_forming": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_water_reactive": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    }
+  },
+  "ghs": {
+    "pictograms": [
+      "corrosion",
+      "environment",
+      "exclamation_mark",
+      "health_hazard",
+      "skull_crossbones"
+    ],
+    "signal_word": "Danger",
+    "hazard_statements": [
+      "H227 Combustible liquid",
+      "H331 Toxic if swallowed or if inhaled",
+      "H310 Fatal in contact with skin",
+      "H315 Causes skin irritation",
+      "H317 May cause an allergic skin reaction",
+      "H318 Causes serious eye damage",
+      "H361 Suspected of damaging fertility or the unborn",
+      "H373 May cause damage to organs (Liver, Heart)",
+      "H400 Very toxic to aquatic life",
+      "H411 Toxic to aquatic life with long lasting effects"
+    ]
+  },
+  "sds_facts": {
+    "storage": "Store at 2\u20138\u00b0C (refrigerator).",
+    "ppe": [
+      "butyl rubber gloves",
+      "safety goggles",
+      "respiratory protection"
+    ],
+    "incompatibilities": [
+      "Metals",
+      "Oxidizing agents",
+      "Strong oxidizing agents",
+      "operates as MilliporeSigma in the US and Canada"
+    ]
+  },
+  "bench_knowledge": [],
+  "sds_source": {
+    "revision_date": "09/28/2025",
+    "version": "6.27",
+    "product_number": "M3148"
+  },
+  "schema_version": "2.0"
+}

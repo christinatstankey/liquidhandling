@@ -1,13 +1,13 @@
-# CLAUDE.md
+# AGENTS.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This file provides guidance to Codex (Codex.ai/code) when working with code in this repository.
 
 # Reagent Handling Intelligence
 
 Proof-of-work project for a lab automation company hiring team. Turns SDS sheets
 + tacit bench knowledge into robot-actionable handling profiles, keyed by CAS#.
 
-Defer to `~/.claude/CLAUDE.md` for anything not covered here.
+Defer to `~/.Codex/AGENTS.md` for anything not covered here.
 
 ---
 
@@ -17,7 +17,7 @@ Defer to `~/.claude/CLAUDE.md` for anything not covered here.
 
 - Phase 1 MVP shipped: 10 reagent JSONs hand-authored, static site live, rules
   engine + schema in place.
-- SDS collection: **30/30 SDSs downloaded** from Sigma-Aldrich via Claude in
+- SDS collection: **30/30 SDSs downloaded** from Sigma-Aldrich via Codex in
   Chrome (HCl 37%, CAS 7647-01-0, was the validation reagent before scaling).
   Files in `data/sds-pdfs/<CAS>.pdf` (or `polyclonal-igg.pdf` for the
   no-CAS antibody slot), all verified as real PDFs (148–385 KB, Sigma's
@@ -43,7 +43,7 @@ Defer to `~/.claude/CLAUDE.md` for anything not covered here.
   prose, GHS codes, storage class, PubChem, or ChEBI. The 10 MVP records
   are wrapped with a single `claude_inference: legacy_handauthored_mvp`
   source (medium confidence) on migration; all *new* records are populated
-  only from extracted evidence — no Claude-authored tacit knowledge.
+  only from extracted evidence — no model-authored tacit knowledge.
 - **STAR methods corpus** (`research/star_methods/`) replaces model-memory
   candidate lists with a frequency-ranked reagent list mined from Cell Press
   Key Resources Tables (PMC OA, 2017+). This is the input feed for future
@@ -126,7 +126,7 @@ this section is the short version.
    intercalators). Both are high-confidence.
 3. **Honest fallback.** When neither SDS nor ChEBI corroborate a flag, the
    value is set from `tacit-knowledge.md` (`tacit_knowledge` source) or a
-   short Claude reason string (`claude_inference` source). Both are
+   short model reason string (`claude_inference` source). Both are
    low-confidence. For bulk-imported records, the preferred fallback is
    `value: null` with a placeholder source — *not* an invented true/false.
    `tacit-knowledge.md` is now rule source material, not a per-record
@@ -148,9 +148,9 @@ re-parse when the extractor improves. Only the extracted JSON in
 because they *are* different:
 
 *MVP-10 (legacy, hand-authored).* The original 10 reagent JSONs were
-hand-authored by Claude from chemical knowledge during MVP. On migration to
-the sourced-flags schema, every tacit boolean in those records is wrapped
-with a single `claude_inference: legacy_handauthored_mvp` source at medium
+hand-authored from chemical knowledge during MVP. On migration to the
+sourced-flags schema, every tacit boolean in those records is wrapped with a
+single `claude_inference: legacy_handauthored_mvp` source at medium
 confidence. No new hand-authoring on these records — follow-up passes only
 add corroborating sources from the extraction pipeline.
 
@@ -171,7 +171,7 @@ source — never an invented true/false. The workflow for each new reagent is:
    `apply_rules.py`, citing the `rule_id`. No narrative bullets written
    from chemical knowledge for bulk records.
 5. `striking_fact` is either omitted or derived deterministically from the
-   highest-priority fired rule. Not Claude-authored prose.
+   highest-priority fired rule. Not model-authored prose.
 6. `validate.py` confirms the record passes schema and reconciles
    `confidence` from `sources`.
 
@@ -213,7 +213,7 @@ python -m http.server 8080 --directory site/
 
 ```
 reagent-handler/
-  CLAUDE.md, README.md, requirements.txt
+  AGENTS.md, README.md, requirements.txt
   data/
     reagents/             # one JSON per reagent (canonical, committed)
     sds-pdfs/             # source PDFs, named by CAS# (gitignored, local only)
