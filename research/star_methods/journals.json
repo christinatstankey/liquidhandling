@@ -12,9 +12,6 @@
     {"name": "Cell Metabolism",         "issn": "1550-4131", "eissn": "1932-7420"},
     {"name": "Developmental Cell",      "issn": "1534-5807", "eissn": "1878-1551"},
     {"name": "Neuron",                  "issn": "0896-6273", "eissn": "1097-4199"},
-    {"name": "Current Biology",         "issn": "0960-9822", "eissn": "1879-0445"},
-    {"name": "Cell Chemical Biology",   "issn": "2451-9456", "eissn": "2451-9448"},
-    {"name": "Cell Systems",            "issn": "2405-4712", "eissn": "2405-4720"},
-    {"name": "Med",                     "issn": "2666-6340", "eissn": "2666-6340"}
+    {"name": "Cell Chemical Biology",   "issn": "2451-9456", "eissn": "2451-9448"}
   ]
 }
