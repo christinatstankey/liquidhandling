@@ -1,18 +1,23 @@
 {
   "name": "Glutaraldehyde solution",
   "cas": "111-30-8",
-  "category": "",
+  "category": "fixative",
   "vendor_example": "Sigma-Aldrich G5882",
   "physical_state": "liquid",
   "properties": {
     "is_protein": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
           "agrees": true
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
         }
       ]
     },
@@ -44,13 +49,18 @@
     },
     "flash_point_C": null,
     "is_light_sensitive": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
           "agrees": true
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
         }
       ]
     },
@@ -68,13 +78,18 @@
     "excitation_nm": null,
     "emission_nm": null,
     "is_reducing_agent": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
           "agrees": true
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
         }
       ]
     },
@@ -102,24 +117,34 @@
       ]
     },
     "is_detergent": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
           "agrees": true
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
         }
       ]
     },
     "is_foaming": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
           "agrees": true
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
         }
       ]
     },
@@ -161,13 +186,18 @@
       ]
     },
     "is_hygroscopic": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
           "agrees": true
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
         }
       ]
     },
@@ -204,13 +234,18 @@
       ]
     },
     "is_adsorption_prone": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
           "agrees": true
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
         }
       ]
     },
@@ -227,25 +262,35 @@
     },
     "freeze_point_C": -10.0,
     "requires_ice": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
           "agrees": true
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
         }
       ]
     },
     "freeze_thaw_max_cycles": null,
     "skin_penetrant": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
           "agrees": true
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
         }
       ]
     },
@@ -337,7 +382,9 @@
       "Strong oxidizing agents"
     ]
   },
-  "bench_knowledge": [],
+  "bench_knowledge": [
+    "PFA dissolves to release formaldehyde, an IARC Group 1 (known) human carcinogen and respiratory sensitiser. Even brief vapour exposure during preparation is a documented occupational hazard. Fresh preparation from powder in PBS (rather than from stored 16% stock solutions) provides better morphological preservation and avoids formate contamination that accumulates in aged solutions."
+  ],
   "sds_source": {
     "revision_date": "04/23/2026",
     "version": "6.18",
