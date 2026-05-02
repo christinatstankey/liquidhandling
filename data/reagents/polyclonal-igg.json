@@ -27,46 +27,46 @@
     "vapor_pressure_kPa_20C": null,
     "is_volatile": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_flammable": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "flash_point_C": null,
     "is_light_sensitive": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_fluorophore": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
@@ -74,112 +74,112 @@
     "emission_nm": null,
     "is_reducing_agent": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "oxidizes_in_solution": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "solution_half_life_at_4C_days": null,
     "make_fresh": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_detergent": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_foaming": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_fixative": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "fume_hood_required": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_hygroscopic": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_deliquescent": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_corrosive": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
@@ -220,12 +220,12 @@
     "freeze_thaw_max_cycles": 3,
     "skin_penetrant": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
@@ -295,8 +295,18 @@
     ]
   },
   "bench_knowledge": [
-    "Proteins in 50% glycerol stocks (enzymes, antibodies, recombinant carriers) stay liquid at \u221220\u00b0C but denature rapidly above ~4\u00b0C. The glycerol stock is viscous, requiring reverse pipetting to eliminate air bubbles. Vortexing creates a high-shear air\u2013water interface that unfolds proteins.",
-    "Proteins, oligonucleotides, and antibodies at low concentrations lose significant material to non-specific adsorption onto standard polypropylene and polystyrene surfaces within 30\u201360 minutes, particularly below 100 \u00b5g/mL. LoBind surfaces have reduced hydrophobic character; adding BSA or another carrier protein competes for adsorption sites and stabilises the stock at very low concentrations."
+    {
+      "rule_id": "protein_glycerol_on_ice",
+      "because": "Proteins in 50% glycerol stocks (enzymes, antibodies, recombinant carriers) stay liquid at \u221220\u00b0C but denature rapidly above ~4\u00b0C. The glycerol stock is viscous, requiring reverse pipetting to eliminate air bubbles. Vortexing creates a high-shear air\u2013water interface that unfolds proteins.",
+      "cite": "NEB Cloning & PCR guidelines; Eppendorf Technical Guide: Viscous Liquids, 2020.",
+      "confidence": "high"
+    },
+    {
+      "rule_id": "lo_bind_adsorption_prone",
+      "because": "Proteins, oligonucleotides, and antibodies at low concentrations lose significant material to non-specific adsorption onto standard polypropylene and polystyrene surfaces within 30\u201360 minutes, particularly below 100 \u00b5g/mL. LoBind surfaces have reduced hydrophobic character; adding BSA or another carrier protein competes for adsorption sites and stabilises the stock at very low concentrations.",
+      "cite": "Eppendorf LoBind Technology Technical Note, 2019. Kingston RE et al. (2003) Current Protocols in Mol. Bio.: nucleic acid quantification and dilution.",
+      "confidence": "medium"
+    }
   ],
   "sds_source": {
     "revision_date": "04/30/2025",

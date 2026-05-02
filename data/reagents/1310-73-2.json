@@ -7,12 +7,12 @@
   "properties": {
     "is_protein": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
@@ -22,46 +22,46 @@
     "vapor_pressure_kPa_20C": 0.0,
     "is_volatile": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_flammable": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "flash_point_C": null,
     "is_light_sensitive": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_fluorophore": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
@@ -69,79 +69,79 @@
     "emission_nm": null,
     "is_reducing_agent": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "oxidizes_in_solution": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "solution_half_life_at_4C_days": null,
     "make_fresh": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_detergent": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_foaming": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_fixative": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "fume_hood_required": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
@@ -195,47 +195,47 @@
     },
     "is_adsorption_prone": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "lo_bind_required": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "freeze_point_C": null,
     "requires_ice": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "freeze_thaw_max_cycles": null,
     "skin_penetrant": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
@@ -311,7 +311,12 @@
     ]
   },
   "bench_knowledge": [
-    "Hygroscopic and deliquescent solids absorb atmospheric water during each weighing event. Mass gain directly dilutes the effective molarity of the solution you prepare. Deliquescent solids (e.g., NaOH pellets) can become partially-dissolved slush within minutes in humid air, further confounding accurate weighing. Desiccator storage and fast weighing are the only controls for this."
+    {
+      "rule_id": "desiccator_hygroscopic_solid",
+      "because": "Hygroscopic and deliquescent solids absorb atmospheric water during each weighing event. Mass gain directly dilutes the effective molarity of the solution you prepare. Deliquescent solids (e.g., NaOH pellets) can become partially-dissolved slush within minutes in humid air, further confounding accurate weighing. Desiccator storage and fast weighing are the only controls for this.",
+      "cite": "Sigma-Aldrich Handling Hygroscopic Compounds Technical Note. ASHP Guidelines on Handling Hazardous Drugs (weighing-by-difference rationale).",
+      "confidence": "medium"
+    }
   ],
   "sds_source": {
     "revision_date": "09/11/2025",

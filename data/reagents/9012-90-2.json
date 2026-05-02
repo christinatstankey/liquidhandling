@@ -32,46 +32,46 @@
     "vapor_pressure_kPa_20C": null,
     "is_volatile": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_flammable": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "flash_point_C": null,
     "is_light_sensitive": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_fluorophore": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
@@ -79,134 +79,134 @@
     "emission_nm": null,
     "is_reducing_agent": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "oxidizes_in_solution": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "solution_half_life_at_4C_days": null,
     "make_fresh": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_detergent": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_foaming": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_fixative": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "fume_hood_required": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_hygroscopic": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_deliquescent": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_corrosive": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_adsorption_prone": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "lo_bind_required": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
@@ -225,12 +225,12 @@
     "freeze_thaw_max_cycles": 30,
     "skin_penetrant": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
@@ -295,7 +295,12 @@
     "incompatibilities": []
   },
   "bench_knowledge": [
-    "Proteins in 50% glycerol stocks (enzymes, antibodies, recombinant carriers) stay liquid at \u221220\u00b0C but denature rapidly above ~4\u00b0C. The glycerol stock is viscous, requiring reverse pipetting to eliminate air bubbles. Vortexing creates a high-shear air\u2013water interface that unfolds proteins."
+    {
+      "rule_id": "protein_glycerol_on_ice",
+      "because": "Proteins in 50% glycerol stocks (enzymes, antibodies, recombinant carriers) stay liquid at \u221220\u00b0C but denature rapidly above ~4\u00b0C. The glycerol stock is viscous, requiring reverse pipetting to eliminate air bubbles. Vortexing creates a high-shear air\u2013water interface that unfolds proteins.",
+      "cite": "NEB Cloning & PCR guidelines; Eppendorf Technical Guide: Viscous Liquids, 2020.",
+      "confidence": "high"
+    }
   ],
   "sds_source": {
     "revision_date": "10/14/2025",

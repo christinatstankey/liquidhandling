@@ -11,8 +11,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -27,23 +27,23 @@
     "vapor_pressure_kPa_20C": 0.001,
     "is_volatile": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
     "is_flammable": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -54,8 +54,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -70,8 +70,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -83,8 +83,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -99,8 +99,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -111,8 +111,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -122,8 +122,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "chebi",
@@ -143,8 +143,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -159,8 +159,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -175,8 +175,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -186,8 +186,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -202,24 +202,19 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
     "is_corrosive": {
-      "value": true,
-      "confidence": "high",
+      "value": null,
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
-        },
-        {
-          "type": "ghs_hcode",
-          "ref": "H318",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -229,8 +224,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -245,8 +240,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -257,8 +252,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -274,8 +269,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -355,7 +350,12 @@
     "incompatibilities": []
   },
   "bench_knowledge": [
-    "Surfactants above their CMC form micelles that stabilise foam. Any air-liquid interface created by dispensing rapidly or by blowout air bubbles generates persistent foam. Dispensing slowly along the tube wall prevents air entrainment. Touch-off tip on the wall instead of final blowout eliminates the last drop of air."
+    {
+      "rule_id": "detergent_no_foam",
+      "because": "Surfactants above their CMC form micelles that stabilise foam. Any air-liquid interface created by dispensing rapidly or by blowout air bubbles generates persistent foam. Dispensing slowly along the tube wall prevents air entrainment. Touch-off tip on the wall instead of final blowout eliminates the last drop of air.",
+      "cite": "Corning Life Sciences Application Note: Surfactants in Liquid Handling, 2019. Field consensus.",
+      "confidence": "high"
+    }
   ],
   "sds_source": {
     "revision_date": "03/05/2026",

@@ -11,8 +11,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -31,19 +31,19 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
     "is_flammable": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -54,8 +54,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -70,8 +70,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -83,8 +83,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -99,8 +99,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -111,8 +111,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -122,8 +122,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -138,8 +138,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -154,8 +154,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -170,8 +170,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -186,8 +186,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -202,19 +202,19 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
     "is_corrosive": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -224,8 +224,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -240,8 +240,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -252,8 +252,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -269,8 +269,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",

@@ -7,12 +7,12 @@
   "properties": {
     "is_protein": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
@@ -22,46 +22,46 @@
     "vapor_pressure_kPa_20C": 0.01,
     "is_volatile": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_flammable": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "flash_point_C": null,
     "is_light_sensitive": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_fluorophore": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
@@ -108,129 +108,124 @@
     },
     "is_detergent": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_foaming": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_fixative": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "fume_hood_required": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_hygroscopic": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_deliquescent": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_corrosive": {
-      "value": true,
-      "confidence": "high",
+      "value": null,
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
-        },
-        {
-          "type": "ghs_hcode",
-          "ref": "H318",
           "agrees": true
         }
       ]
     },
     "is_adsorption_prone": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "lo_bind_required": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "freeze_point_C": null,
     "requires_ice": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "freeze_thaw_max_cycles": null,
     "skin_penetrant": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
@@ -306,7 +301,12 @@
     ]
   },
   "bench_knowledge": [
-    "Thiol-based reducing agents (DTT, \u03b2-mercaptoethanol) are rapidly oxidised by dissolved O\u2082 in aqueous buffers. At 4\u00b0C in standard buffer, DTT has an effective half-life of approximately 1 week; at room temperature in air-exposed buffer, this drops to hours. For critical applications (disulfide bond reduction, enzyme protection), the stock should be made fresh on the day of use."
+    {
+      "rule_id": "make_fresh_reducing_agent",
+      "because": "Thiol-based reducing agents (DTT, \u03b2-mercaptoethanol) are rapidly oxidised by dissolved O\u2082 in aqueous buffers. At 4\u00b0C in standard buffer, DTT has an effective half-life of approximately 1 week; at room temperature in air-exposed buffer, this drops to hours. For critical applications (disulfide bond reduction, enzyme protection), the stock should be made fresh on the day of use.",
+      "cite": "Cleland WW (1964) Biochemistry 3:480\u2013482 (original DTT paper, redox characterisation). Sigma-Aldrich DTT Product Information Sheet D9779.",
+      "confidence": "high"
+    }
   ],
   "sds_source": {
     "revision_date": "12/17/2025",

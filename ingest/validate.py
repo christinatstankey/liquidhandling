@@ -41,22 +41,47 @@ CATEGORY_FLAG_INVARIANTS = [
 ]
 
 
-def _compute_confidence(sources: list[dict]) -> str:
-    """Derive the correct confidence string from a sources list."""
-    tiers = []
+def _compute_confidence(sources: list[dict], props=None) -> str:
+    """
+    Derive the correct confidence string from a sources list.
+
+    If the flag has only rule_derived sources (no direct-evidence tier), the
+    confidence is inherited from the parent flag named in the rule_derived ref
+    (format: "rule_derived:<parent>→<this>").  props must be supplied for
+    inheritance to work; if omitted, rule_derived-only flags fall back to 'low'.
+    """
+    non_inherit: list[tuple[str, bool]] = []
+    inherit_refs: list[str] = []
+
     for s in sources:
         tier = SOURCE_TIER.get(s.get("type", ""), "low")
-        if tier != "inherit":
-            tiers.append((tier, s.get("agrees", True)))
+        if tier == "inherit":
+            inherit_refs.append(s.get("ref", ""))
+        else:
+            non_inherit.append((tier, s.get("agrees", True)))
 
-    high_agrees    = any(t == "high"   and a for t, a in tiers)
-    high_disagrees = any(t == "high"   and not a for t, a in tiers)
-    med_agrees     = any(t == "medium" and a for t, a in tiers)
+    # If there are rule_derived (inherit) sources AND no high/medium-tier direct
+    # evidence, prefer inherited confidence over low-tier placeholder sources.
+    has_substantive = any(t in ("high", "medium") for t, _ in non_inherit)
+    if inherit_refs and not has_substantive and props is not None:
+        for ref in inherit_refs:
+            # Refs look like "rule_derived:is_fluorophore→is_light_sensitive"
+            if "→" in ref:
+                parent_flag = ref.split(":")[-1].split("→")[0]
+                parent_obj = props.get(parent_flag, {})
+                if isinstance(parent_obj, dict) and "confidence" in parent_obj:
+                    return parent_obj["confidence"]
 
-    if high_agrees and not high_disagrees:
-        return "high"
-    if (med_agrees and not high_disagrees) or (high_agrees and high_disagrees):
-        return "medium"
+    if non_inherit:
+        high_agrees    = any(t == "high"   and a for t, a in non_inherit)
+        high_disagrees = any(t == "high"   and not a for t, a in non_inherit)
+        med_agrees     = any(t == "medium" and a for t, a in non_inherit)
+        if high_agrees and not high_disagrees:
+            return "high"
+        if (med_agrees and not high_disagrees) or (high_agrees and high_disagrees):
+            return "medium"
+        return "low"
+
     return "low"
 
 
@@ -74,7 +99,7 @@ def _check_sourced_flags(record: dict) -> list[str]:
         if not isinstance(val, dict) or "sources" not in val:
             continue
         stored_conf = val.get("confidence")
-        expected_conf = _compute_confidence(val["sources"])
+        expected_conf = _compute_confidence(val["sources"], props=props)
         if stored_conf and stored_conf != expected_conf:
             warnings.append(
                 f"  CONF  {key}: stored='{stored_conf}' computed='{expected_conf}'"

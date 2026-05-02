@@ -11,8 +11,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -31,8 +31,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "ghs_hcode",
@@ -47,8 +47,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "ghs_hcode",
@@ -64,8 +64,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "sds_phrase",
@@ -85,8 +85,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -98,8 +98,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -114,8 +114,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -126,8 +126,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -137,8 +137,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -153,8 +153,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -169,8 +169,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -185,8 +185,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "sds_phrase",
@@ -201,8 +201,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -217,19 +217,19 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
     "is_corrosive": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -239,8 +239,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -255,8 +255,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -267,8 +267,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -284,8 +284,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -390,8 +390,18 @@
     "incompatibilities": []
   },
   "bench_knowledge": [
-    "High vapor pressure (\u22655 kPa at 20\u00b0C) causes significant evaporation inside the tip. Without pre-wetting, the headspace is dry air; the solvent flash-evaporates into it, creating a vapour cushion that compresses and releases unpredictably, drifting dispensed volume by 5\u201315%. Three aspirate-expel cycles saturate the headspace before the actual dispensing step. Fast dispense minimises dwell-time in the tip.",
-    "Fluorophores absorb photons and can undergo irreversible photobleaching \u2014 the chromophore is destroyed by oxidation or bond cleavage under illumination. For DAPI specifically, UV transilluminator exposure for as little as 30 seconds before imaging causes measurable signal loss."
+    {
+      "rule_id": "pre_wet_volatile",
+      "because": "High vapor pressure (\u22655 kPa at 20\u00b0C) causes significant evaporation inside the tip. Without pre-wetting, the headspace is dry air; the solvent flash-evaporates into it, creating a vapour cushion that compresses and releases unpredictably, drifting dispensed volume by 5\u201315%. Three aspirate-expel cycles saturate the headspace before the actual dispensing step. Fast dispense minimises dwell-time in the tip.",
+      "cite": "Eppendorf Application Note: Pipetting Volatile Liquids, 2018. NIST WebBook CAS 64-17-5 (vapor pressure 5.95 kPa at 20\u00b0C).",
+      "confidence": "high"
+    },
+    {
+      "rule_id": "light_protect_fluorophore",
+      "because": "Fluorophores absorb photons and can undergo irreversible photobleaching \u2014 the chromophore is destroyed by oxidation or bond cleavage under illumination. For DAPI specifically, UV transilluminator exposure for as little as 30 seconds before imaging causes measurable signal loss.",
+      "cite": "Thermo Fisher Scientific: DAPI Technical Data Sheet (D1306). Lakowicz, Principles of Fluorescence Spectroscopy, 3rd ed., Ch. 1.",
+      "confidence": "high"
+    }
   ],
   "sds_source": {
     "revision_date": "03/26/2026",

@@ -7,12 +7,12 @@
   "properties": {
     "is_protein": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -22,12 +22,12 @@
     "vapor_pressure_kPa_20C": null,
     "is_volatile": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -37,31 +37,31 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
     "flash_point_C": null,
     "is_light_sensitive": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
     "is_fluorophore": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -69,101 +69,101 @@
     "emission_nm": null,
     "is_reducing_agent": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
     "oxidizes_in_solution": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
     "solution_half_life_at_4C_days": null,
     "make_fresh": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
     "is_detergent": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
     "is_foaming": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
     "is_fixative": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
     "fume_hood_required": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
     "is_hygroscopic": {
       "value": true,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
     "is_deliquescent": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -173,54 +173,54 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
     "is_adsorption_prone": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
     "lo_bind_required": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
     "freeze_point_C": null,
     "requires_ice": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
     "freeze_thaw_max_cycles": null,
     "skin_penetrant": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -288,8 +288,18 @@
     ]
   },
   "bench_knowledge": [
-    "High-viscosity non-protein liquids (e.g., pure glycerol, PEG solutions) resist aspiration, causing back-pressure that stalls the piston and under-delivers volume. Wide-bore tips reduce hydraulic resistance. Reverse pipetting removes the dead-air step. A 2\u20133 s post-aspirate pause lets the meniscus stabilise before withdrawal.",
-    "Hygroscopic and deliquescent solids absorb atmospheric water during each weighing event. Mass gain directly dilutes the effective molarity of the solution you prepare. Deliquescent solids (e.g., NaOH pellets) can become partially-dissolved slush within minutes in humid air, further confounding accurate weighing. Desiccator storage and fast weighing are the only controls for this."
+    {
+      "rule_id": "viscous_no_protein",
+      "because": "High-viscosity non-protein liquids (e.g., pure glycerol, PEG solutions) resist aspiration, causing back-pressure that stalls the piston and under-delivers volume. Wide-bore tips reduce hydraulic resistance. Reverse pipetting removes the dead-air step. A 2\u20133 s post-aspirate pause lets the meniscus stabilise before withdrawal.",
+      "cite": "Eppendorf Technical Guide: Pipetting Viscous Liquids, 2020. Perry's Chemical Engineers' Handbook, 8th ed. (glycerol viscosity 1412 mPa\u00b7s at 20\u00b0C).",
+      "confidence": "low"
+    },
+    {
+      "rule_id": "desiccator_hygroscopic_solid",
+      "because": "Hygroscopic and deliquescent solids absorb atmospheric water during each weighing event. Mass gain directly dilutes the effective molarity of the solution you prepare. Deliquescent solids (e.g., NaOH pellets) can become partially-dissolved slush within minutes in humid air, further confounding accurate weighing. Desiccator storage and fast weighing are the only controls for this.",
+      "cite": "Sigma-Aldrich Handling Hygroscopic Compounds Technical Note. ASHP Guidelines on Handling Hazardous Drugs (weighing-by-difference rationale).",
+      "confidence": "low"
+    }
   ],
   "sds_source": {
     "revision_date": "04/24/2025",

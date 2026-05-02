@@ -71,7 +71,9 @@ HCODE_FLAG_MAP: dict[str, list[tuple[str, bool]]] = {
     "H228": [("is_flammable", True)],
     "H290": [("is_corrosive", True)],
     "H314": [("is_corrosive", True)],
-    "H318": [("is_corrosive", True)],
+    # H318 = serious eye damage — eye-specific injury, not bulk corrosive behavior.
+    # Mapping H318 to is_corrosive overfires (SDS, Triton, DTT, 2-ME all have it).
+    # H314 (skin corrosion/burns) and H290 (corrosive to metals) are correct signals.
     "H270": [("is_oxidizer", True)],
     "H271": [("is_oxidizer", True)],
     "H272": [("is_oxidizer", True)],

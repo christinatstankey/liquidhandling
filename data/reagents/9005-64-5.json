@@ -7,12 +7,12 @@
   "properties": {
     "is_protein": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
@@ -33,35 +33,35 @@
     },
     "is_flammable": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "flash_point_C": 275.0,
     "is_light_sensitive": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_fluorophore": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
@@ -69,35 +69,35 @@
     "emission_nm": null,
     "is_reducing_agent": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "oxidizes_in_solution": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "solution_half_life_at_4C_days": null,
     "make_fresh": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
@@ -135,102 +135,102 @@
     },
     "is_fixative": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "fume_hood_required": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_hygroscopic": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_deliquescent": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_corrosive": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_adsorption_prone": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "lo_bind_required": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "freeze_point_C": null,
     "requires_ice": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "freeze_thaw_max_cycles": null,
     "skin_penetrant": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
@@ -299,8 +299,18 @@
     ]
   },
   "bench_knowledge": [
-    "High-viscosity non-protein liquids (e.g., pure glycerol, PEG solutions) resist aspiration, causing back-pressure that stalls the piston and under-delivers volume. Wide-bore tips reduce hydraulic resistance. Reverse pipetting removes the dead-air step. A 2\u20133 s post-aspirate pause lets the meniscus stabilise before withdrawal.",
-    "Surfactants above their CMC form micelles that stabilise foam. Any air-liquid interface created by dispensing rapidly or by blowout air bubbles generates persistent foam. Dispensing slowly along the tube wall prevents air entrainment. Touch-off tip on the wall instead of final blowout eliminates the last drop of air."
+    {
+      "rule_id": "viscous_no_protein",
+      "because": "High-viscosity non-protein liquids (e.g., pure glycerol, PEG solutions) resist aspiration, causing back-pressure that stalls the piston and under-delivers volume. Wide-bore tips reduce hydraulic resistance. Reverse pipetting removes the dead-air step. A 2\u20133 s post-aspirate pause lets the meniscus stabilise before withdrawal.",
+      "cite": "Eppendorf Technical Guide: Pipetting Viscous Liquids, 2020. Perry's Chemical Engineers' Handbook, 8th ed. (glycerol viscosity 1412 mPa\u00b7s at 20\u00b0C).",
+      "confidence": "low"
+    },
+    {
+      "rule_id": "detergent_no_foam",
+      "because": "Surfactants above their CMC form micelles that stabilise foam. Any air-liquid interface created by dispensing rapidly or by blowout air bubbles generates persistent foam. Dispensing slowly along the tube wall prevents air entrainment. Touch-off tip on the wall instead of final blowout eliminates the last drop of air.",
+      "cite": "Corning Life Sciences Application Note: Surfactants in Liquid Handling, 2019. Field consensus.",
+      "confidence": "high"
+    }
   ],
   "sds_source": {
     "revision_date": "11/06/2025",

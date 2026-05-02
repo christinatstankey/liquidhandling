@@ -81,7 +81,6 @@ def build_manifest():
             "name":          reagent["name"],
             "cas":           reagent["cas"],
             "category":      reagent["category"],
-            "striking_fact": reagent.get("striking_fact", ""),
             "top_pictogram": pictograms[0] if pictograms else None,
             "signal_word":   reagent.get("ghs", {}).get("signal_word"),
             "file":          src.name,

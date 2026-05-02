@@ -52,7 +52,7 @@
     "cas":            { "type": ["string", "null"] },
     "cas_note":       { "type": "string" },
     "category": {
-      "type": "string",
+      "type": ["string", "null"],
       "enum": [
         "enzyme_glycerol",
         "volatile_solvent",
@@ -63,7 +63,8 @@
         "fixative",
         "dmso",
         "adsorption_prone",
-        "hygroscopic_solid"
+        "hygroscopic_solid",
+        null
       ]
     },
     "vendor_example":  { "type": "string" },
@@ -134,7 +135,22 @@
     },
     "bench_knowledge": {
       "type": "array",
-      "items": { "type": "string" }
+      "items": {
+        "oneOf": [
+          { "type": "string" },
+          {
+            "type": "object",
+            "required": ["rule_id", "because"],
+            "additionalProperties": false,
+            "properties": {
+              "rule_id":    { "type": "string" },
+              "because":   { "type": "string" },
+              "cite":      { "type": "string" },
+              "confidence": { "type": "string", "enum": ["high", "medium", "low"] }
+            }
+          }
+        ]
+      }
     },
     "sds_source": {
       "type": "object",

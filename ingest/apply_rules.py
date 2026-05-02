@@ -171,8 +171,17 @@ def main():
     profile = apply_rules(reagent, rules)
 
     # Optionally overwrite bench_knowledge in the source reagent JSON.
+    # Each entry is a structured dict so the rule_id and cite are traceable.
     if args.write_bench_knowledge:
-        bullets = [r["because"] for r in profile["rules_fired"]]
+        bullets = [
+            {
+                "rule_id":    r["id"],
+                "because":    r["because"],
+                "cite":       r["cite"],
+                "confidence": r["confidence"],
+            }
+            for r in profile["rules_fired"]
+        ]
         reagent["bench_knowledge"] = bullets
         # Remove striking_fact if still present (field is retired).
         reagent.pop("striking_fact", None)

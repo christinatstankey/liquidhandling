@@ -118,7 +118,9 @@ def enrich(reagent: dict, lookup: dict) -> tuple[dict, list[str]]:
                 props[flag]["value"] = True
             changes.append(f"  + {flag}: chebi:{ref} ({term!r})")
 
-    # Rule-derived corollary: is_fluorophore=true → is_light_sensitive=true
+    # Rule-derived corollary: is_fluorophore=true → is_light_sensitive=true.
+    # Confidence is inherited from the parent is_fluorophore flag rather than
+    # recomputed from the rule_derived tier (which has no tier weight of its own).
     fluor = props.get("is_fluorophore", {})
     if isinstance(fluor, dict) and fluor.get("value") is True:
         ls_key = "is_light_sensitive"
@@ -128,10 +130,23 @@ def enrich(reagent: dict, lookup: dict) -> tuple[dict, list[str]]:
             props[ls_key] = _ensure_sourced(props[ls_key])
         ref = "rule_derived:is_fluorophore→is_light_sensitive"
         added = _add_source(props[ls_key], "rule_derived", ref, True)
-        if added:
-            if props[ls_key].get("value") is None:
-                props[ls_key]["value"] = True
-            changes.append(f"  + is_light_sensitive: rule_derived (from is_fluorophore=true)")
+        if added and props[ls_key].get("value") is None:
+            props[ls_key]["value"] = True
+
+        # Always sync confidence to parent, not just on first add.
+        # rule_derived has no tier weight of its own, so confidence would
+        # otherwise stay low even when the parent ChEBI evidence is high.
+        parent_conf = fluor.get("confidence", "low")
+        if props[ls_key].get("confidence") != parent_conf:
+            props[ls_key]["confidence"] = parent_conf
+            changes.append(
+                f"  + is_light_sensitive: confidence synced to is_fluorophore={parent_conf}"
+            )
+        elif added:
+            changes.append(
+                f"  + is_light_sensitive: rule_derived (from is_fluorophore=true, "
+                f"confidence={parent_conf})"
+            )
 
     reagent["properties"] = props
     return reagent, changes

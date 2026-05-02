@@ -7,12 +7,12 @@
   "properties": {
     "is_protein": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
@@ -22,46 +22,46 @@
     "vapor_pressure_kPa_20C": 0.055,
     "is_volatile": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_flammable": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "flash_point_C": 87.0,
     "is_light_sensitive": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_fluorophore": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
@@ -69,79 +69,79 @@
     "emission_nm": null,
     "is_reducing_agent": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "oxidizes_in_solution": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "solution_half_life_at_4C_days": null,
     "make_fresh": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_detergent": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_foaming": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_fixative": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "fume_hood_required": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
@@ -163,57 +163,57 @@
     },
     "is_deliquescent": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_corrosive": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "is_adsorption_prone": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "lo_bind_required": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
     "freeze_point_C": 17.5,
     "requires_ice": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "agrees": false
         }
       ]
     },
@@ -304,8 +304,18 @@
     ]
   },
   "bench_knowledge": [
-    "Liquids with freeze points at or above 15\u00b0C (DMSO ~19\u00b0C, glycerol ~18\u00b0C) can solidify partially or fully in a 4\u00b0C cold room or on ice. Pipetting a partially-solidified liquid causes systematic volume errors. The physical_state guard prevents the rule from misfiring on solids whose melting point happens to be reported in freeze_point_C (e.g. NaOH pellets, PFA powder).",
-    "DMSO rapidly penetrates intact skin and carries dissolved solutes transdermally, making skin contact with DMSO drug stocks a real toxicity exposure route. Polystyrene is leached by DMSO over hours-to-days; use glass or polypropylene for stock storage."
+    {
+      "rule_id": "warm_freeze_prone_liquid",
+      "because": "Liquids with freeze points at or above 15\u00b0C (DMSO ~19\u00b0C, glycerol ~18\u00b0C) can solidify partially or fully in a 4\u00b0C cold room or on ice. Pipetting a partially-solidified liquid causes systematic volume errors. The physical_state guard prevents the rule from misfiring on solids whose melting point happens to be reported in freeze_point_C (e.g. NaOH pellets, PFA powder).",
+      "cite": "Sigma-Aldrich DMSO Product Information Sheet 276855 (freeze point 18.45\u00b0C). Perry's Chemical Engineers' Handbook, 8th ed. (glycerol freeze point 17.8\u00b0C).",
+      "confidence": "high"
+    },
+    {
+      "rule_id": "dmso_skin_and_plastics",
+      "because": "DMSO rapidly penetrates intact skin and carries dissolved solutes transdermally, making skin contact with DMSO drug stocks a real toxicity exposure route. Polystyrene is leached by DMSO over hours-to-days; use glass or polypropylene for stock storage.",
+      "cite": "NIOSH CAS 67-68-5 skin absorption note. Sigma-Aldrich DMSO Product Information Sheet 276855. Polychemistry compatibility table (DMSO vs. plastics).",
+      "confidence": "medium"
+    }
   ],
   "sds_source": {
     "revision_date": "04/02/2026",

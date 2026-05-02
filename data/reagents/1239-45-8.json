@@ -11,8 +11,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -31,31 +31,31 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
     "is_flammable": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
     "flash_point_C": null,
     "is_light_sensitive": {
       "value": true,
-      "confidence": "low",
+      "confidence": "high",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "rule_derived",
@@ -70,8 +70,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "chebi",
@@ -93,8 +93,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -109,8 +109,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -121,8 +121,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -132,8 +132,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -148,8 +148,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -164,8 +164,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -180,8 +180,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "sds_phrase",
@@ -196,8 +196,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -212,19 +212,19 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
     "is_corrosive": {
       "value": false,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -234,8 +234,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -250,8 +250,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -262,8 +262,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -279,8 +279,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -359,7 +359,12 @@
     ]
   },
   "bench_knowledge": [
-    "Fluorophores absorb photons and can undergo irreversible photobleaching \u2014 the chromophore is destroyed by oxidation or bond cleavage under illumination. For DAPI specifically, UV transilluminator exposure for as little as 30 seconds before imaging causes measurable signal loss."
+    {
+      "rule_id": "light_protect_fluorophore",
+      "because": "Fluorophores absorb photons and can undergo irreversible photobleaching \u2014 the chromophore is destroyed by oxidation or bond cleavage under illumination. For DAPI specifically, UV transilluminator exposure for as little as 30 seconds before imaging causes measurable signal loss.",
+      "cite": "Thermo Fisher Scientific: DAPI Technical Data Sheet (D1306). Lakowicz, Principles of Fluorescence Spectroscopy, 3rd ed., Ch. 1.",
+      "confidence": "high"
+    }
   ],
   "sds_source": {
     "revision_date": "05/12/2025",

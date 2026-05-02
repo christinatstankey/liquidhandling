@@ -11,8 +11,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -31,8 +31,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -42,8 +42,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -54,8 +54,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -70,8 +70,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -83,8 +83,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -99,8 +99,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -111,8 +111,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -122,8 +122,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -138,8 +138,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -154,8 +154,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -170,8 +170,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -181,8 +181,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "sds_phrase",
@@ -197,8 +197,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -213,8 +213,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -224,8 +224,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -240,8 +240,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -252,8 +252,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -269,8 +269,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "claude_inference",
@@ -344,7 +344,12 @@
     ]
   },
   "bench_knowledge": [
-    "Hygroscopic and deliquescent solids absorb atmospheric water during each weighing event. Mass gain directly dilutes the effective molarity of the solution you prepare. Deliquescent solids (e.g., NaOH pellets) can become partially-dissolved slush within minutes in humid air, further confounding accurate weighing. Desiccator storage and fast weighing are the only controls for this."
+    {
+      "rule_id": "desiccator_hygroscopic_solid",
+      "because": "Hygroscopic and deliquescent solids absorb atmospheric water during each weighing event. Mass gain directly dilutes the effective molarity of the solution you prepare. Deliquescent solids (e.g., NaOH pellets) can become partially-dissolved slush within minutes in humid air, further confounding accurate weighing. Desiccator storage and fast weighing are the only controls for this.",
+      "cite": "Sigma-Aldrich Handling Hygroscopic Compounds Technical Note. ASHP Guidelines on Handling Hazardous Drugs (weighing-by-difference rationale).",
+      "confidence": "high"
+    }
   ],
   "sds_source": {
     "revision_date": "11/06/2025",
