@@ -1,8 +1,8 @@
 {
-  "name": "DMSO (Dimethyl sulfoxide)",
+  "name": "Dimethyl sulfoxide",
   "cas": "67-68-5",
   "category": "dmso",
-  "vendor_example": "Sigma-Aldrich 276855, Thermo D12345",
+  "vendor_example": "Sigma D8418",
   "physical_state": "liquid",
   "properties": {
     "is_protein": {
@@ -11,7 +11,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -26,7 +31,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -37,7 +47,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -49,7 +64,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -60,7 +80,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -73,7 +98,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -84,7 +114,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -96,7 +131,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -107,7 +147,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -118,7 +163,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -129,35 +179,45 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
     },
     "fume_hood_required": {
-      "value": false,
+      "value": null,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
           "agrees": false
         }
       ]
     },
     "is_hygroscopic": {
-      "value": true,
+      "value": false,
       "confidence": "high",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "sds_phrase",
           "ref": "section_7:'hygroscopic'",
           "agrees": true
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
         }
       ]
     },
@@ -167,7 +227,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -178,7 +243,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -189,7 +259,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -200,7 +275,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -212,7 +292,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -220,19 +305,22 @@
     "freeze_thaw_max_cycles": null,
     "skin_penetrant": {
       "value": true,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": true
         }
       ]
     },
-    "plastic_incompatible": [
-      "polystyrene"
-    ],
-    "storage_temp_C": 25,
+    "plastic_incompatible": [],
+    "storage_temp_C": null,
     "is_oxidizer": {
       "value": null,
       "confidence": "low",
@@ -291,17 +379,13 @@
     ]
   },
   "sds_facts": {
-    "storage": "Store at room temperature, tightly sealed. Do not store in polystyrene containers. Store in glass for long-term stocks.",
+    "storage": "Store per SDS.",
     "ppe": [
       "chemical-resistant gloves",
       "safety glasses",
       "respiratory protection"
     ],
-    "incompatibilities": [
-      "strong oxidizing agents",
-      "acyl chlorides",
-      "polystyrene containers"
-    ]
+    "incompatibilities": []
   },
   "bench_knowledge": [
     {
@@ -311,10 +395,10 @@
       "confidence": "high"
     },
     {
-      "rule_id": "dmso_skin_and_plastics",
-      "because": "DMSO rapidly penetrates intact skin and carries dissolved solutes transdermally, making skin contact with DMSO drug stocks a real toxicity exposure route. Polystyrene is leached by DMSO over hours-to-days; use glass or polypropylene for stock storage.",
-      "cite": "NIOSH CAS 67-68-5 skin absorption note. Sigma-Aldrich DMSO Product Information Sheet 276855. Polychemistry compatibility table (DMSO vs. plastics).",
-      "confidence": "medium"
+      "rule_id": "skin_penetrant_hazard",
+      "because": "Skin-penetrant reagents cross intact skin and can carry dissolved solutes transdermally. DMSO is the canonical example \u2014 contact with a DMSO drug stock is a real toxicity exposure route even through nitrile gloves with extended contact. 2-mercaptoethanol and acrylamide are similarly absorbed through skin. Nitrile gloves (not latex) are required; change gloves immediately after any spill; never work with these without gloves.",
+      "cite": "NIOSH skin absorption hazard notes. Braue EH et al. (1999) Occup Environ Med: percutaneous absorption review.",
+      "confidence": "low"
     }
   ],
   "sds_source": {

@@ -1,8 +1,8 @@
 {
-  "name": "Glycerol, 99%+ (anhydrous)",
+  "name": "Glycerol",
   "cas": "56-81-5",
   "category": "viscous_reagent",
-  "vendor_example": "Sigma-Aldrich G5516, Fisher G33",
+  "vendor_example": "Sigma G5516",
   "physical_state": "liquid",
   "properties": {
     "is_protein": {
@@ -11,12 +11,17 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
     },
-    "glycerol_pct": 100,
+    "glycerol_pct": null,
     "viscosity_class": "high",
     "viscosity_mPas_20C": 1412.0,
     "vapor_pressure_kPa_20C": 0.0001,
@@ -26,7 +31,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -37,7 +47,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -49,7 +64,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -60,7 +80,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -73,7 +98,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -84,7 +114,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -96,7 +131,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -107,7 +147,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -118,7 +163,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -129,35 +179,45 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
     },
     "fume_hood_required": {
-      "value": false,
+      "value": null,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
           "agrees": false
         }
       ]
     },
     "is_hygroscopic": {
-      "value": true,
+      "value": false,
       "confidence": "high",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "sds_phrase",
           "ref": "section_7:'hygroscopic'",
           "agrees": true
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
         }
       ]
     },
@@ -167,7 +227,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -178,7 +243,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -189,7 +259,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -200,7 +275,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -212,7 +292,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -224,13 +309,18 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
     },
     "plastic_incompatible": [],
-    "storage_temp_C": 25,
+    "storage_temp_C": null,
     "is_oxidizer": {
       "value": null,
       "confidence": "low",
@@ -282,15 +372,13 @@
     "hazard_statements": []
   },
   "sds_facts": {
-    "storage": "Store at room temperature, tightly sealed to prevent moisture uptake.",
+    "storage": "Store per SDS.",
     "ppe": [
       "nitrile gloves",
       "safety glasses",
       "respiratory protection"
     ],
-    "incompatibilities": [
-      "strong oxidizing agents"
-    ]
+    "incompatibilities": []
   },
   "bench_knowledge": [
     {

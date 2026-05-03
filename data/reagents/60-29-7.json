@@ -397,9 +397,15 @@
       "confidence": "high"
     },
     {
-      "rule_id": "light_protect_fluorophore",
-      "because": "Fluorophores absorb photons and can undergo irreversible photobleaching \u2014 the chromophore is destroyed by oxidation or bond cleavage under illumination. For DAPI specifically, UV transilluminator exposure for as little as 30 seconds before imaging causes measurable signal loss.",
-      "cite": "Thermo Fisher Scientific: DAPI Technical Data Sheet (D1306). Lakowicz, Principles of Fluorescence Spectroscopy, 3rd ed., Ch. 1.",
+      "rule_id": "light_protect_sensitive",
+      "because": "Light-sensitive reagents degrade under UV or visible light by different mechanisms depending on the compound class. Fluorophores (DAPI, ethidium bromide) undergo irreversible photobleaching \u2014 the chromophore is destroyed; 30 seconds of UV transilluminator exposure causes measurable DAPI signal loss. Oxidizers (H\u2082O\u2082, NaOCl) photodecompose, losing titer. Peroxide-forming solvents (diethyl ether) form hydroperoxides faster in light. Light-activated monomers (acrylamide) can begin polymerising spontaneously. Amber containers or foil-wrap block the relevant wavelengths for all of these.",
+      "cite": "Thermo Fisher Scientific: DAPI Technical Data Sheet (D1306). Lakowicz, Principles of Fluorescence Spectroscopy, 3rd ed., Ch. 1. Sigma-Aldrich H\u2082O\u2082 Product Information (216763).",
+      "confidence": "high"
+    },
+    {
+      "rule_id": "peroxide_forming_track",
+      "because": "Ethers (diethyl ether, THF, dioxane) form shock-sensitive hydroperoxides on exposure to air and light via autoxidation. Peroxide concentration increases with time and is highest in the last few millilitres as the solvent evaporates. Opening a bottle without a peroxide test when the contents are old or unknown is a documented explosion hazard. Max 3-month working life after opening; test with commercial peroxide strips before each use; discard at 25 ppm peroxide or above.",
+      "cite": "Jackson HL et al. (1998) Chem Health Safety 5(3): 16\u201318 (ether peroxide hazards). Prudent Practices in the Laboratory, NRC 2011, Ch. 6.",
       "confidence": "high"
     }
   ],

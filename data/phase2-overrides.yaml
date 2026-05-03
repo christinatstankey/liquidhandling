@@ -7,6 +7,245 @@
 # Flags omitted from a reagent's `flags` block are left as-is (whatever
 # automation set). Only explicitly listed flags are touched.
 
+# ── MVP-10 (re-ingested from SDS) ────────────────────────────────────────────
+# These were originally hand-authored; now re-parsed from SDS like any other
+# reagent. Only tacit flags that SDS + ChEBI cannot detect are listed here.
+
+- cas: "9012-90-2"   # Taq DNA Polymerase
+  category: enzyme_glycerol
+  numeric_properties:
+    glycerol_pct: 50    # Sigma Taq D1806 is supplied in 50% glycerol (product datasheet)
+  flags:
+    requires_ice: true        # enzymes denature above ~4°C; thaw on ice
+    is_protein: true          # enzyme = protein (ChEBI should catch this too)
+    is_volatile: false
+    is_flammable: false
+    is_light_sensitive: false
+    is_fluorophore: false
+    is_reducing_agent: false
+    oxidizes_in_solution: false
+    make_fresh: false
+    is_detergent: false
+    is_foaming: false
+    is_fixative: false
+    is_hygroscopic: false
+    is_deliquescent: false
+    is_corrosive: false
+    is_adsorption_prone: false
+    lo_bind_required: false
+    skin_penetrant: false
+
+- cas: "64-17-5"     # Ethanol, anhydrous
+  category: volatile_solvent
+  flags:
+    is_protein: false
+    is_light_sensitive: false
+    is_fluorophore: false
+    is_reducing_agent: false
+    oxidizes_in_solution: false
+    make_fresh: false
+    is_detergent: false
+    is_foaming: false
+    is_fixative: false
+    is_hygroscopic: false
+    is_deliquescent: false
+    is_corrosive: false
+    is_adsorption_prone: false
+    lo_bind_required: false
+    requires_ice: false
+    skin_penetrant: false
+
+- cas: "56-81-5"     # Glycerol
+  category: viscous_reagent
+  flags:
+    is_protein: false
+    is_volatile: false
+    is_flammable: false
+    is_light_sensitive: false
+    is_fluorophore: false
+    is_reducing_agent: false
+    oxidizes_in_solution: false
+    make_fresh: false
+    is_detergent: false
+    is_foaming: false
+    is_fixative: false
+    is_hygroscopic: false
+    is_deliquescent: false
+    is_corrosive: false
+    is_adsorption_prone: false
+    lo_bind_required: false
+    requires_ice: false
+    skin_penetrant: false
+
+- cas: "9005-64-5"   # Polysorbate 20 (Tween-20)
+  category: detergent
+  flags:
+    is_protein: false
+    is_volatile: false
+    is_flammable: false
+    is_light_sensitive: false
+    is_fluorophore: false
+    is_reducing_agent: false
+    oxidizes_in_solution: false
+    make_fresh: false
+    is_foaming: true          # Tween-20 does foam, less than SDS but still
+    is_fixative: false
+    is_hygroscopic: false
+    is_deliquescent: false
+    is_corrosive: false
+    is_adsorption_prone: false
+    lo_bind_required: false
+    requires_ice: false
+    skin_penetrant: false
+
+- cas: "28718-90-3"  # DAPI dihydrochloride
+  category: fluorophore
+  flags:
+    is_protein: false
+    is_volatile: false
+    is_flammable: false
+    is_reducing_agent: false
+    oxidizes_in_solution: false
+    make_fresh: false
+    is_detergent: false
+    is_foaming: false
+    is_fixative: false
+    is_hygroscopic: false
+    is_deliquescent: false
+    is_corrosive: false
+    is_adsorption_prone: false
+    lo_bind_required: false
+    requires_ice: false
+    skin_penetrant: false
+
+- cas: "3483-12-3"   # DTT (dithiothreitol)
+  category: reducing_agent
+  flags:
+    is_protein: false
+    is_volatile: false
+    is_flammable: false
+    is_light_sensitive: false
+    is_fluorophore: false
+    oxidizes_in_solution: true   # thiol rapidly oxidised by dissolved O₂
+    make_fresh: true             # make fresh on day of use
+    is_detergent: false
+    is_foaming: false
+    is_fixative: false
+    is_hygroscopic: false
+    is_deliquescent: false
+    is_adsorption_prone: false
+    lo_bind_required: false
+    requires_ice: false
+    skin_penetrant: false
+
+- cas: "30525-89-4"  # Paraformaldehyde
+  category: fixative
+  flags:
+    is_protein: false
+    is_volatile: false
+    is_light_sensitive: false
+    is_fluorophore: false
+    is_reducing_agent: false
+    oxidizes_in_solution: false
+    make_fresh: true             # fresh PFA in PBS > stored 16% stock
+    is_detergent: false
+    is_foaming: false
+    is_hygroscopic: false
+    is_deliquescent: false
+    is_adsorption_prone: false
+    lo_bind_required: false
+    requires_ice: false
+    skin_penetrant: false
+
+- cas: "67-68-5"     # DMSO
+  category: dmso
+  flags:
+    is_protein: false
+    is_volatile: false
+    is_flammable: false
+    is_light_sensitive: false
+    is_fluorophore: false
+    is_reducing_agent: false
+    oxidizes_in_solution: false
+    make_fresh: false
+    is_detergent: false
+    is_foaming: false
+    is_fixative: false
+    is_hygroscopic: false
+    is_deliquescent: false
+    is_corrosive: false
+    is_adsorption_prone: false
+    lo_bind_required: false
+    requires_ice: false
+    skin_penetrant: true         # penetrates intact skin; carries dissolved solutes transdermally
+
+# polyclonal IgG uses slug key (no CAS)
+- cas: "N/A"
+  category: adsorption_prone
+  numeric_properties:
+    glycerol_pct: 50    # standard antibody storage buffer contains 50% glycerol
+  flags:
+    is_protein: true             # antibody = protein
+    is_volatile: false
+    is_flammable: false
+    is_light_sensitive: false
+    is_fluorophore: false
+    is_reducing_agent: false
+    oxidizes_in_solution: false
+    make_fresh: false
+    is_detergent: false
+    is_foaming: false
+    is_fixative: false
+    is_hygroscopic: false
+    is_deliquescent: false
+    is_corrosive: false
+    is_adsorption_prone: true    # proteins at low conc adsorb to standard PP surfaces
+    lo_bind_required: true       # LoBind tubes required
+    requires_ice: true           # keep on ice; protein stability
+    skin_penetrant: false
+
+- cas: "1310-73-2"   # Sodium hydroxide pellets
+  category: hygroscopic_solid
+  flags:
+    is_protein: false
+    is_volatile: false
+    is_flammable: false
+    is_light_sensitive: false
+    is_fluorophore: false
+    is_reducing_agent: false
+    oxidizes_in_solution: false
+    make_fresh: false
+    is_detergent: false
+    is_foaming: false
+    is_fixative: false
+    is_hygroscopic: true         # NaOH pellets absorb atmospheric moisture rapidly
+    is_deliquescent: true        # dissolves in absorbed moisture in humid air
+    is_adsorption_prone: false
+    lo_bind_required: false
+    requires_ice: false
+    skin_penetrant: false
+
+# ── TCEP·HCl — oxidizes_in_solution correction ───────────────────────────────
+- cas: "51805-45-9"
+  category: reducing_agent
+  flags:
+    oxidizes_in_solution: false  # phosphine-based; air-stable unlike thiol reagents
+    make_fresh: false            # counter to DTT/2-ME; TCEP solutions stable ≥30 days
+    is_protein: false
+    is_volatile: false
+    is_flammable: false
+    is_light_sensitive: false
+    is_fluorophore: false
+    is_detergent: false
+    is_foaming: false
+    is_fixative: false
+    is_hygroscopic: false
+    is_deliquescent: false
+    is_adsorption_prone: false
+    lo_bind_required: false
+    requires_ice: false
+    skin_penetrant: false
+
 # ── H₂O₂ 30% ────────────────────────────────────────────────────────────────
 - cas: "7722-84-1"
   category: volatile_solvent

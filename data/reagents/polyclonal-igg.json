@@ -1,8 +1,8 @@
 {
-  "name": "Polyclonal IgG Antibody (generic, dilute)",
-  "cas": "N/A",
+  "name": "IgG, from goat serum",
+  "cas": null,
   "category": "adsorption_prone",
-  "vendor_example": "Jackson ImmunoResearch 111-005-003 (normal goat IgG reference), Abcam ab37355",
+  "vendor_example": "Sigma I5256",
   "physical_state": "solid",
   "properties": {
     "is_protein": {
@@ -11,7 +11,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": true
         },
         {
@@ -22,7 +27,7 @@
       ]
     },
     "glycerol_pct": 50,
-    "viscosity_class": "low",
+    "viscosity_class": null,
     "viscosity_mPas_20C": null,
     "vapor_pressure_kPa_20C": null,
     "is_volatile": {
@@ -31,7 +36,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -42,7 +52,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -54,7 +69,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -65,7 +85,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -78,7 +103,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -89,7 +119,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -101,7 +136,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -112,7 +152,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -123,7 +168,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -134,18 +184,23 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
     },
     "fume_hood_required": {
-      "value": false,
+      "value": null,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
           "agrees": false
         }
       ]
@@ -156,7 +211,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -167,7 +227,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -178,29 +243,44 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
     },
     "is_adsorption_prone": {
       "value": true,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": true
         }
       ]
     },
     "lo_bind_required": {
       "value": true,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": true
         }
       ]
@@ -208,30 +288,38 @@
     "freeze_point_C": null,
     "requires_ice": {
       "value": true,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": true
         }
       ]
     },
-    "freeze_thaw_max_cycles": 3,
+    "freeze_thaw_max_cycles": null,
     "skin_penetrant": {
       "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
     },
-    "plastic_incompatible": [
-      "polystyrene_prolonged"
-    ],
+    "plastic_incompatible": [],
     "storage_temp_C": 5.0,
     "is_oxidizer": {
       "value": null,
@@ -284,7 +372,7 @@
     "hazard_statements": []
   },
   "sds_facts": {
-    "storage": "Store at \u221220\u00b0C for long-term, or 4\u00b0C for up to 4 weeks. Aliquot before first freeze to avoid repeated freeze-thaw. 50% glycerol storage buffer prevents freezing at \u221220\u00b0C.",
+    "storage": "Store at 2\u20138\u00b0C (refrigerator).",
     "ppe": [
       "nitrile gloves",
       "safety glasses",
@@ -305,7 +393,7 @@
       "rule_id": "lo_bind_adsorption_prone",
       "because": "Proteins, oligonucleotides, and antibodies at low concentrations lose significant material to non-specific adsorption onto standard polypropylene and polystyrene surfaces within 30\u201360 minutes, particularly below 100 \u00b5g/mL. LoBind surfaces have reduced hydrophobic character; adding BSA or another carrier protein competes for adsorption sites and stabilises the stock at very low concentrations.",
       "cite": "Eppendorf LoBind Technology Technical Note, 2019. Kingston RE et al. (2003) Current Protocols in Mol. Bio.: nucleic acid quantification and dilution.",
-      "confidence": "medium"
+      "confidence": "low"
     }
   ],
   "sds_source": {

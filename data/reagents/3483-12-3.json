@@ -1,8 +1,8 @@
 {
-  "name": "DTT (Dithiothreitol, DL-Dithiothreitol)",
+  "name": "DL-Dithiothreitol",
   "cas": "3483-12-3",
   "category": "reducing_agent",
-  "vendor_example": "Sigma-Aldrich D9779, Thermo R0861",
+  "vendor_example": "Sigma D9779",
   "physical_state": "powder",
   "properties": {
     "is_protein": {
@@ -11,7 +11,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -26,7 +31,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -37,7 +47,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -49,7 +64,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -60,7 +80,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -73,8 +98,8 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         },
         {
           "type": "chebi",
@@ -85,23 +110,33 @@
     },
     "oxidizes_in_solution": {
       "value": true,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": true
         }
       ]
     },
-    "solution_half_life_at_4C_days": 7,
+    "solution_half_life_at_4C_days": null,
     "make_fresh": {
       "value": true,
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": true
         }
       ]
@@ -112,7 +147,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -123,7 +163,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -134,18 +179,23 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
     },
     "fume_hood_required": {
-      "value": false,
+      "value": null,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
           "agrees": false
         }
       ]
@@ -156,7 +206,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -167,19 +222,24 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
     },
     "is_corrosive": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
-          "agrees": true
+          "ref": "not_yet_assessed",
+          "agrees": false
         }
       ]
     },
@@ -189,7 +249,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -200,7 +265,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -212,7 +282,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -224,7 +299,12 @@
       "sources": [
         {
           "type": "claude_inference",
-          "ref": "legacy_handauthored_mvp",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -290,7 +370,7 @@
     ]
   },
   "sds_facts": {
-    "storage": "Store powder at \u221220\u00b0C, desiccated. Aqueous stocks may be stored at \u221220\u00b0C in single-use aliquots; discard after thawing once.",
+    "storage": "Store at 2\u20138\u00b0C (refrigerator).",
     "ppe": [
       "nitrile gloves",
       "safety goggles",
@@ -303,9 +383,9 @@
   "bench_knowledge": [
     {
       "rule_id": "make_fresh_reducing_agent",
-      "because": "Thiol-based reducing agents (DTT, \u03b2-mercaptoethanol) are rapidly oxidised by dissolved O\u2082 in aqueous buffers. At 4\u00b0C in standard buffer, DTT has an effective half-life of approximately 1 week; at room temperature in air-exposed buffer, this drops to hours. For critical applications (disulfide bond reduction, enzyme protection), the stock should be made fresh on the day of use.",
+      "because": "Thiol-based reducing agents (DTT, \u03b2-mercaptoethanol) are rapidly oxidised by dissolved O\u2082 in aqueous buffers. At 4\u00b0C in standard buffer, DTT has an effective half-life of approximately 1 week; at room temperature in air-exposed buffer, this drops to hours. \u03b2-mercaptoethanol oxidises at comparable rates and also volatilises, making fresh preparation doubly important. For critical applications (disulfide bond reduction, enzyme protection), the stock should be made fresh on the day of use. Note: phosphine-based reducing agents (TCEP) are air-stable and are excluded from this rule \u2014 see tcep_air_stable.",
       "cite": "Cleland WW (1964) Biochemistry 3:480\u2013482 (original DTT paper, redox characterisation). Sigma-Aldrich DTT Product Information Sheet D9779.",
-      "confidence": "high"
+      "confidence": "low"
     }
   ],
   "sds_source": {

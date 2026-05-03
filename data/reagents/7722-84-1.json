@@ -368,10 +368,16 @@
   },
   "bench_knowledge": [
     {
-      "rule_id": "light_protect_fluorophore",
-      "because": "Fluorophores absorb photons and can undergo irreversible photobleaching \u2014 the chromophore is destroyed by oxidation or bond cleavage under illumination. For DAPI specifically, UV transilluminator exposure for as little as 30 seconds before imaging causes measurable signal loss.",
-      "cite": "Thermo Fisher Scientific: DAPI Technical Data Sheet (D1306). Lakowicz, Principles of Fluorescence Spectroscopy, 3rd ed., Ch. 1.",
+      "rule_id": "light_protect_sensitive",
+      "because": "Light-sensitive reagents degrade under UV or visible light by different mechanisms depending on the compound class. Fluorophores (DAPI, ethidium bromide) undergo irreversible photobleaching \u2014 the chromophore is destroyed; 30 seconds of UV transilluminator exposure causes measurable DAPI signal loss. Oxidizers (H\u2082O\u2082, NaOCl) photodecompose, losing titer. Peroxide-forming solvents (diethyl ether) form hydroperoxides faster in light. Light-activated monomers (acrylamide) can begin polymerising spontaneously. Amber containers or foil-wrap block the relevant wavelengths for all of these.",
+      "cite": "Thermo Fisher Scientific: DAPI Technical Data Sheet (D1306). Lakowicz, Principles of Fluorescence Spectroscopy, 3rd ed., Ch. 1. Sigma-Aldrich H\u2082O\u2082 Product Information (216763).",
       "confidence": "low"
+    },
+    {
+      "rule_id": "oxidizer_segregate",
+      "because": "Strong oxidizers (hydrogen peroxide 30%, sodium hypochlorite) react exothermically with organic materials and flammables, risking fire or explosion. H\u2082O\u2082 decomposes catalytically in contact with iron, copper, or manganese \u2014 use glass, polypropylene, or HDPE containers only. Bleach mixed with acids releases chlorine gas; mixed with ammonia or amines releases chloramines \u2014 never co-dispose in the same sink drain.",
+      "cite": "Sigma-Aldrich Hydrogen Peroxide Safety Information (216763). OSHA Sodium Hypochlorite Hazard Bulletin. Bretherick's Handbook of Reactive Chemical Hazards, 7th ed.",
+      "confidence": "high"
     }
   ],
   "sds_source": {

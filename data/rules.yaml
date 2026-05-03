@@ -70,7 +70,7 @@
     Touch-off tip on the wall instead of final blowout eliminates the last drop of air.
   cite: "Corning Life Sciences Application Note: Surfactants in Liquid Handling, 2019. Field consensus."
 
-- id: light_protect_fluorophore
+- id: light_protect_sensitive
   when:
     is_light_sensitive: true
   then:
@@ -78,15 +78,19 @@
     storage.container: "amber_or_foil"
     safety.minimize_light_exposure: true
   because: >
-    Fluorophores absorb photons and can undergo irreversible photobleaching — the
-    chromophore is destroyed by oxidation or bond cleavage under illumination.
-    For DAPI specifically, UV transilluminator exposure for as little as 30 seconds
-    before imaging causes measurable signal loss.
-  cite: "Thermo Fisher Scientific: DAPI Technical Data Sheet (D1306). Lakowicz, Principles of Fluorescence Spectroscopy, 3rd ed., Ch. 1."
+    Light-sensitive reagents degrade under UV or visible light by different
+    mechanisms depending on the compound class. Fluorophores (DAPI, ethidium
+    bromide) undergo irreversible photobleaching — the chromophore is destroyed;
+    30 seconds of UV transilluminator exposure causes measurable DAPI signal loss.
+    Oxidizers (H₂O₂, NaOCl) photodecompose, losing titer. Peroxide-forming
+    solvents (diethyl ether) form hydroperoxides faster in light. Light-activated
+    monomers (acrylamide) can begin polymerising spontaneously. Amber containers
+    or foil-wrap block the relevant wavelengths for all of these.
+  cite: "Thermo Fisher Scientific: DAPI Technical Data Sheet (D1306). Lakowicz, Principles of Fluorescence Spectroscopy, 3rd ed., Ch. 1. Sigma-Aldrich H₂O₂ Product Information (216763)."
 
 - id: make_fresh_reducing_agent
   when:
-    is_reducing_agent: true
+    oxidizes_in_solution: true
   then:
     preparation.make_fresh: true
     preparation.single_use_aliquots: true
@@ -95,8 +99,11 @@
     Thiol-based reducing agents (DTT, β-mercaptoethanol) are rapidly oxidised by
     dissolved O₂ in aqueous buffers. At 4°C in standard buffer, DTT has an effective
     half-life of approximately 1 week; at room temperature in air-exposed buffer,
-    this drops to hours. For critical applications (disulfide bond reduction, enzyme
-    protection), the stock should be made fresh on the day of use.
+    this drops to hours. β-mercaptoethanol oxidises at comparable rates and also
+    volatilises, making fresh preparation doubly important. For critical applications
+    (disulfide bond reduction, enzyme protection), the stock should be made fresh on
+    the day of use. Note: phosphine-based reducing agents (TCEP) are air-stable and
+    are excluded from this rule — see tcep_air_stable.
   cite: "Cleland WW (1964) Biochemistry 3:480–482 (original DTT paper, redox characterisation). Sigma-Aldrich DTT Product Information Sheet D9779."
 
 - id: fume_hood_fixative
@@ -129,18 +136,6 @@
     pellets, PFA powder).
   cite: "Sigma-Aldrich DMSO Product Information Sheet 276855 (freeze point 18.45°C). Perry's Chemical Engineers' Handbook, 8th ed. (glycerol freeze point 17.8°C)."
 
-- id: dmso_skin_and_plastics
-  when:
-    skin_penetrant: true
-  then:
-    storage.avoid_plastics: ["polystyrene"]
-    safety.skin_penetrant_warning: true
-  because: >
-    DMSO rapidly penetrates intact skin and carries dissolved solutes
-    transdermally, making skin contact with DMSO drug stocks a real toxicity
-    exposure route. Polystyrene is leached by DMSO over hours-to-days; use
-    glass or polypropylene for stock storage.
-  cite: "NIOSH CAS 67-68-5 skin absorption note. Sigma-Aldrich DMSO Product Information Sheet 276855. Polychemistry compatibility table (DMSO vs. plastics)."
 
 - id: lo_bind_adsorption_prone
   when:
@@ -174,3 +169,86 @@
     slush within minutes in humid air, further confounding accurate weighing. Desiccator
     storage and fast weighing are the only controls for this.
   cite: "Sigma-Aldrich Handling Hygroscopic Compounds Technical Note. ASHP Guidelines on Handling Hazardous Drugs (weighing-by-difference rationale)."
+
+- id: oxidizer_segregate
+  when:
+    is_oxidizer: true
+  then:
+    storage.segregate_from_flammables: true
+    storage.segregate_from_organics: true
+    safety.dedicated_waste: "oxidizer"
+    safety.avoid_metal_contact: true
+  because: >
+    Strong oxidizers (hydrogen peroxide 30%, sodium hypochlorite) react
+    exothermically with organic materials and flammables, risking fire or
+    explosion. H₂O₂ decomposes catalytically in contact with iron, copper,
+    or manganese — use glass, polypropylene, or HDPE containers only.
+    Bleach mixed with acids releases chlorine gas; mixed with ammonia or
+    amines releases chloramines — never co-dispose in the same sink drain.
+  cite: "Sigma-Aldrich Hydrogen Peroxide Safety Information (216763). OSHA Sodium Hypochlorite Hazard Bulletin. Bretherick's Handbook of Reactive Chemical Hazards, 7th ed."
+
+- id: peroxide_forming_track
+  when:
+    is_peroxide_forming: true
+  then:
+    storage.date_first_opening: true
+    storage.max_age_months: 3
+    preparation.test_before_use: "peroxide_strip"
+    safety.no_evaporation_to_dryness: true
+  because: >
+    Ethers (diethyl ether, THF, dioxane) form shock-sensitive hydroperoxides
+    on exposure to air and light via autoxidation. Peroxide concentration
+    increases with time and is highest in the last few millilitres as the
+    solvent evaporates. Opening a bottle without a peroxide test when the
+    contents are old or unknown is a documented explosion hazard. Max
+    3-month working life after opening; test with commercial peroxide strips
+    before each use; discard at 25 ppm peroxide or above.
+  cite: "Jackson HL et al. (1998) Chem Health Safety 5(3): 16–18 (ether peroxide hazards). Prudent Practices in the Laboratory, NRC 2011, Ch. 6."
+
+- id: corrosive_add_to_water
+  when:
+    is_corrosive: true
+  then:
+    preparation.add_to_water: true
+    safety.acid_resistant_tips: true
+    safety.neutralize_before_disposal: true
+    safety.fume_hood_required: true
+  because: >
+    Concentrated corrosive reagents (HCl, TFA, NaOH) release significant heat
+    on dilution. Adding water to a concentrated corrosive can boil the liquid
+    and cause spattering; always add the corrosive slowly to water. TFA and
+    HCl volatilise in the hood — decant and dilute in a ventilated space.
+    Neutralise to pH 6–8 before drain disposal per local regulations.
+  cite: "Sigma-Aldrich HCl Safety Note 258148. ACS Safety in Academic Chemistry Laboratories, 7th ed., Ch. 4. EPA 40 CFR Part 261 (hazardous waste neutralisation)."
+
+- id: tcep_air_stable
+  when:
+    is_reducing_agent: true
+    oxidizes_in_solution: false
+  then:
+    preparation.make_fresh: false
+    preparation.max_storage_days: 30
+  because: >
+    TCEP (tris(2-carboxyethyl)phosphine) is a phosphine-based reducing agent
+    that is stable to atmospheric oxygen in aqueous solution — unlike thiol
+    reagents (DTT, β-mercaptoethanol) which oxidise within hours to days.
+    TCEP solutions in standard buffer can be stored at 4°C for up to 30 days
+    without significant loss of reducing activity. Single-use aliquots are
+    recommended for irreplaceable stocks but are not obligatory for routine
+    working solutions.
+  cite: "Getz EB et al. (1999) Anal Biochem 273:73–80 (TCEP stability characterisation). Pierce TCEP·HCl Product Manual."
+
+- id: skin_penetrant_hazard
+  when:
+    skin_penetrant: true
+  then:
+    safety.skin_penetrant_warning: true
+    safety.gloves: "nitrile"
+  because: >
+    Skin-penetrant reagents cross intact skin and can carry dissolved solutes
+    transdermally. DMSO is the canonical example — contact with a DMSO drug
+    stock is a real toxicity exposure route even through nitrile gloves with
+    extended contact. 2-mercaptoethanol and acrylamide are similarly absorbed
+    through skin. Nitrile gloves (not latex) are required; change gloves
+    immediately after any spill; never work with these without gloves.
+  cite: "NIOSH skin absorption hazard notes. Braue EH et al. (1999) Occup Environ Med: percutaneous absorption review."

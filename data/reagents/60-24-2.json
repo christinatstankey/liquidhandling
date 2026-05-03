@@ -375,14 +375,14 @@
   "bench_knowledge": [
     {
       "rule_id": "make_fresh_reducing_agent",
-      "because": "Thiol-based reducing agents (DTT, \u03b2-mercaptoethanol) are rapidly oxidised by dissolved O\u2082 in aqueous buffers. At 4\u00b0C in standard buffer, DTT has an effective half-life of approximately 1 week; at room temperature in air-exposed buffer, this drops to hours. For critical applications (disulfide bond reduction, enzyme protection), the stock should be made fresh on the day of use.",
+      "because": "Thiol-based reducing agents (DTT, \u03b2-mercaptoethanol) are rapidly oxidised by dissolved O\u2082 in aqueous buffers. At 4\u00b0C in standard buffer, DTT has an effective half-life of approximately 1 week; at room temperature in air-exposed buffer, this drops to hours. \u03b2-mercaptoethanol oxidises at comparable rates and also volatilises, making fresh preparation doubly important. For critical applications (disulfide bond reduction, enzyme protection), the stock should be made fresh on the day of use. Note: phosphine-based reducing agents (TCEP) are air-stable and are excluded from this rule \u2014 see tcep_air_stable.",
       "cite": "Cleland WW (1964) Biochemistry 3:480\u2013482 (original DTT paper, redox characterisation). Sigma-Aldrich DTT Product Information Sheet D9779.",
-      "confidence": "high"
+      "confidence": "low"
     },
     {
-      "rule_id": "dmso_skin_and_plastics",
-      "because": "DMSO rapidly penetrates intact skin and carries dissolved solutes transdermally, making skin contact with DMSO drug stocks a real toxicity exposure route. Polystyrene is leached by DMSO over hours-to-days; use glass or polypropylene for stock storage.",
-      "cite": "NIOSH CAS 67-68-5 skin absorption note. Sigma-Aldrich DMSO Product Information Sheet 276855. Polychemistry compatibility table (DMSO vs. plastics).",
+      "rule_id": "skin_penetrant_hazard",
+      "because": "Skin-penetrant reagents cross intact skin and can carry dissolved solutes transdermally. DMSO is the canonical example \u2014 contact with a DMSO drug stock is a real toxicity exposure route even through nitrile gloves with extended contact. 2-mercaptoethanol and acrylamide are similarly absorbed through skin. Nitrile gloves (not latex) are required; change gloves immediately after any spill; never work with these without gloves.",
+      "cite": "NIOSH skin absorption hazard notes. Braue EH et al. (1999) Occup Environ Med: percutaneous absorption review.",
       "confidence": "low"
     }
   ],

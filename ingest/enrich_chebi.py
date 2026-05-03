@@ -79,7 +79,7 @@ def load_lookup() -> dict[str | None, dict]:
 
 
 def enrich(reagent: dict, lookup: dict) -> tuple[dict, list[str]]:
-    cas     = reagent.get("cas")
+    cas     = reagent.get("cas") or "N/A"   # null CAS (antibodies etc.) → "N/A" key
     props   = reagent.get("properties", {})
     changes: list[str] = []
 

@@ -94,7 +94,7 @@ def main():
 
     for json_path in sorted(REAGENTS_DIR.glob("*.json")):
         reagent = json.loads(json_path.read_text())
-        cas = reagent.get("cas")
+        cas = reagent.get("cas") or "N/A"
         entry = by_cas.get(cas)
         if entry is None:
             continue
@@ -109,7 +109,14 @@ def main():
             reagent["category"] = new_cat
             changes.append(f"  category: {old_cat!r} → {new_cat!r}")
 
-        # Set flags
+        # Set flat numeric/scalar properties (not sourced_boolean — set directly).
+        for key, value in entry.get("numeric_properties", {}).items():
+            old_val = props.get(key)
+            if old_val != value:
+                props[key] = value
+                changes.append(f"  {key}: {old_val!r} → {value!r}")
+
+        # Set sourced_boolean flags
         for flag, value in entry.get("flags", {}).items():
             changes.extend(_set_flag(props, flag, value))
 

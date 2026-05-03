@@ -404,8 +404,10 @@ def derive_properties(sds_data: dict) -> dict:
     elif h_codes or fp is not None:
         derived["is_flammable"] = False
 
-    # is_corrosive: H314 (skin corrosion) or H318 (irreversible eye damage)
-    if {"H290", "H314", "H318"} & h_codes:
+    # is_corrosive: H314 (skin corrosion/burns) or H290 (corrosive to metals).
+    # H318 (serious eye damage) is intentionally excluded — eye damage does not
+    # imply bulk corrosive handling behaviour (same decision as enrich_sds_sources.py).
+    if {"H290", "H314"} & h_codes:
         derived["is_corrosive"] = True
     elif h_codes:
         derived["is_corrosive"] = False
@@ -504,7 +506,7 @@ def build_output(sds_data: dict, existing: dict | None) -> dict:
         # fall back to the SDS official name for new reagents.
         "name":           ex.get("name") or sds_data.get("name") or "",
         "cas":            sds_data.get("cas") or ex.get("cas"),
-        "category":       ex.get("category", ""),
+        "category":       ex.get("category") or None,
         "vendor_example": vendor_example,
         "physical_state": sds_data.get("physical_state") or ex.get("physical_state", "liquid"),
         "properties":     properties,
@@ -604,6 +606,16 @@ def main():
 
     # Parse the PDF
     sds_data = parse_pdf(pdf_path)
+
+    # CAS fallback: if the PDF text didn't contain a CAS, infer it from the
+    # filename (pattern: <CAS>.pdf).  This handles SDSs where parse_pdf can't
+    # locate the CAS-No. line (e.g., enzyme/protein SDSs, slug-named files).
+    # Slug names like "polyclonal-igg" are kept as-is (no hyphenated CAS).
+    if not sds_data.get("cas"):
+        stem = pdf_path.stem
+        # A valid CAS looks like digits-digits-digits (e.g. 9012-90-2)
+        if re.match(r"^\d+(?:-\d+){1,2}$", stem):
+            sds_data["cas"] = stem
 
     # Try to find an existing reagent JSON by CAS or by the PDF stem
     cas = sds_data.get("cas")
