@@ -107,10 +107,11 @@
         "skin_penetrant":        { "$ref": "#/definitions/sourced_boolean" },
         "plastic_incompatible":  { "type": "array", "items": { "type": "string" } },
         "storage_temp_C":        { "type": ["number",  "null"] },
-        "is_oxidizer":           { "$ref": "#/definitions/sourced_boolean" },
-        "is_air_sensitive":      { "$ref": "#/definitions/sourced_boolean" },
-        "is_peroxide_forming":   { "$ref": "#/definitions/sourced_boolean" },
-        "is_water_reactive":     { "$ref": "#/definitions/sourced_boolean" }
+        "is_oxidizer":              { "$ref": "#/definitions/sourced_boolean" },
+        "is_air_sensitive":         { "$ref": "#/definitions/sourced_boolean" },
+        "is_peroxide_forming":      { "$ref": "#/definitions/sourced_boolean" },
+        "is_water_reactive":        { "$ref": "#/definitions/sourced_boolean" },
+        "is_rnase_decontaminant":   { "$ref": "#/definitions/sourced_boolean" }
       }
     },
     "ghs": {

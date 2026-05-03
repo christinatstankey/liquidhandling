@@ -460,7 +460,8 @@
     is_light_sensitive: false
     requires_ice: false
     skin_penetrant: false
-    fume_hood_required: true   # carbamoylates amines; must be inactivated
+    fume_hood_required: true        # volatile; carcinogen concern; work in hood
+    is_rnase_decontaminant: true    # specific functional classification for DEPC
 
 # ── Acetonitrile ─────────────────────────────────────────────────────────────
 - cas: "75-05-8"

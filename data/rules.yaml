@@ -252,3 +252,34 @@
     through skin. Nitrile gloves (not latex) are required; change gloves
     immediately after any spill; never work with these without gloves.
   cite: "NIOSH skin absorption hazard notes. Braue EH et al. (1999) Occup Environ Med: percutaneous absorption review."
+
+- id: depc_tris_incompatible
+  when:
+    is_rnase_decontaminant: true
+  then:
+    preparation.tris_incompatible: true
+    preparation.use_in_water_only: true
+    preparation.working_concentration_pct: 0.1
+  because: >
+    DEPC carbamoylates primary amines, including the amine group in Tris buffer.
+    Adding DEPC to Tris-containing solutions does not decontaminate them — it
+    simply inactivates DEPC while leaving RNases untouched. Always prepare
+    DEPC-treated water first (0.1% DEPC in nuclease-free water, stir 1 h),
+    then use that water to prepare Tris or other buffers afterward.
+  cite: "Sambrook J & Russell DW (2001) Molecular Cloning 3rd ed., Appendix 1 (DEPC treatment). Ambion RNase decontamination guide."
+
+- id: depc_autoclave_inactivate
+  when:
+    is_rnase_decontaminant: true
+  then:
+    preparation.autoclave_after_treatment: true
+    preparation.storage_single_use: true
+    preparation.expires_months_after_opening: 3
+  because: >
+    Residual DEPC in treated water carbamoylates adenosine residues in RNA,
+    destroying yield and introducing A260 artefacts. Autoclaving (121°C, 15 min)
+    hydrolyses DEPC completely to CO₂ and ethanol — both volatile and harmless.
+    Do not use DEPC-treated solutions in RNA reactions without autoclaving first.
+    DEPC stock hydrolyses on contact with water; once opened, activity drops
+    within months even in a sealed bottle. Aliquot and store at 4°C.
+  cite: "Chomczynski P (1993) BioTechniques 15:532–534 (TRIzol/DEPC rationale). Sigma-Aldrich DEPC Product Info 40718."
