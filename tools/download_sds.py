@@ -33,7 +33,7 @@ from pathlib import Path
 
 # Override the OS-level socket timeout (default 60s) so stalled connections
 # don't block longer than our intended application timeout.
-socket.setdefaulttimeout(15)
+socket.setdefaulttimeout(40)
 
 import pandas as pd
 import requests
@@ -50,7 +50,7 @@ SIGMA_SDS  = "https://www.sigmaaldrich.com/US/en/sds"
 BRANDS     = ["sigma", "sigald", "sial"]   # "aldrich" excluded — causes OS-level timeouts
 PC_DELAY   = 0.21           # seconds between PubChem requests
 DL_DELAY   = 12.0           # base seconds between SDS downloads; jitter added below
-DL_TIMEOUT = (10, 15)       # (connect_timeout, read_timeout) — overrides OS default (set above)
+DL_TIMEOUT = (10, 35)       # (connect_timeout, read_timeout) — Sigma can take 7-10s to serve a PDF
 MIN_PDF_KB = 50             # reject files smaller than this as non-PDFs
 
 
@@ -140,36 +140,34 @@ def download_pdf(cas: str, catalog: str) -> tuple:
     out_path = SDS_DIR / f"{cas}.pdf"
     session = requests.Session()
     session.headers.update({
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-                      "AppleWebKit/537.36 (KHTML, like Gecko) "
-                      "Chrome/120.0.0.0 Safari/537.36",
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
         "Accept": "application/pdf,*/*",
     })
-    last_reason = "all brands failed"
+    all_reasons = []
     for brand in BRANDS:
         url = f"{SIGMA_SDS}/{brand}/{catalog}"
         try:
             r = session.get(url, timeout=DL_TIMEOUT, allow_redirects=True)
+            ct = r.headers.get("Content-Type", "?")[:40]
+            is_pdf = r.content[:4] == b"%PDF"
+            size_kb = len(r.content) // 1024
             if r.status_code != 200:
-                last_reason = f"HTTP {r.status_code} ({brand})"
-                time.sleep(DL_DELAY)
+                all_reasons.append(f"HTTP {r.status_code}/{brand}")
+                continue       # no sleep between brand retries
+            if not is_pdf:
+                all_reasons.append(f"not-PDF({ct})/{brand}")
                 continue
-            if r.content[:4] != b"%PDF":
-                last_reason = f"not PDF ({brand}), ct={r.headers.get('Content-Type','?')[:40]}"
-                time.sleep(DL_DELAY)
-                continue
-            if len(r.content) < MIN_PDF_KB * 1024:
-                last_reason = f"too small {len(r.content)//1024}KB ({brand})"
-                time.sleep(DL_DELAY)
+            if size_kb < MIN_PDF_KB:
+                all_reasons.append(f"too-small-{size_kb}KB/{brand}")
                 continue
             out_path.write_bytes(r.content)
-            time.sleep(DL_DELAY + random.uniform(0, 4))
+            time.sleep(DL_DELAY + random.uniform(0, 4))  # polite gap after success
             return True, brand
         except Exception as exc:
-            last_reason = f"{type(exc).__name__}: {exc} ({brand})"
-            time.sleep(DL_DELAY + random.uniform(0, 4))
-            continue
-    return False, last_reason
+            all_reasons.append(f"{type(exc).__name__}/{brand}")
+            continue           # no sleep between brand retries
+    time.sleep(DL_DELAY + random.uniform(0, 4))           # polite gap after all-fail
+    return False, " | ".join(all_reasons)
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────
