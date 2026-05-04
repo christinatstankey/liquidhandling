@@ -41,10 +41,11 @@ CAT_CACHE    = SDS_DIR / "catalog_cache.json"
 
 PUBCHEM    = "https://pubchem.ncbi.nlm.nih.gov/rest/pug"
 SIGMA_SDS  = "https://www.sigmaaldrich.com/US/en/sds"
-BRANDS     = ["sigma", "sigald", "sial", "aldrich"]
-PC_DELAY   = 0.21   # seconds between PubChem requests
-DL_DELAY   = 2.0    # seconds between SDS downloads (polite rate limit)
-MIN_PDF_KB = 50     # reject files smaller than this as non-PDFs
+BRANDS     = ["sigma", "sigald", "sial"]   # "aldrich" excluded — causes 60s OS timeouts
+PC_DELAY   = 0.21           # seconds between PubChem requests
+DL_DELAY   = 5.0            # seconds between SDS downloads — conservative to avoid rate-limiting
+DL_TIMEOUT = (10, 20)       # (connect_timeout, read_timeout) in seconds
+MIN_PDF_KB = 50             # reject files smaller than this as non-PDFs
 
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
@@ -123,29 +124,46 @@ def find_sigma_catalog_for_cid(cid: int, session: requests.Session) -> str | Non
     return None
 
 
-def download_pdf(cas: str, catalog: str, dl_session: requests.Session) -> bool:
+def download_pdf(cas: str, catalog: str) -> tuple:
     """
     Try known Sigma brand prefixes to download the SDS PDF for catalog.
-    Saves to data/sds-pdfs/<CAS>.pdf if successful. Returns True on success.
+    Uses a fresh session per call to avoid session-level blocking.
+    Saves to data/sds-pdfs/<CAS>.pdf if successful.
+    Returns (True, brand) on success, (False, reason) on failure.
     """
     out_path = SDS_DIR / f"{cas}.pdf"
+    session = requests.Session()
+    session.headers.update({
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                      "AppleWebKit/537.36 (KHTML, like Gecko) "
+                      "Chrome/120.0.0.0 Safari/537.36",
+        "Accept": "application/pdf,*/*",
+    })
+    last_reason = "all brands failed"
     for brand in BRANDS:
         url = f"{SIGMA_SDS}/{brand}/{catalog}"
         try:
-            r = dl_session.get(url, timeout=30, allow_redirects=True)
+            r = session.get(url, timeout=DL_TIMEOUT, allow_redirects=True)
             if r.status_code != 200:
+                last_reason = f"HTTP {r.status_code} ({brand})"
+                time.sleep(DL_DELAY)
                 continue
             if r.content[:4] != b"%PDF":
+                last_reason = f"not PDF ({brand}), ct={r.headers.get('Content-Type','?')[:40]}"
+                time.sleep(DL_DELAY)
                 continue
             if len(r.content) < MIN_PDF_KB * 1024:
+                last_reason = f"too small {len(r.content)//1024}KB ({brand})"
+                time.sleep(DL_DELAY)
                 continue
             out_path.write_bytes(r.content)
-            return True
-        except Exception:
-            continue
-        finally:
             time.sleep(DL_DELAY)
-    return False
+            return True, brand
+        except Exception as exc:
+            last_reason = f"{type(exc).__name__}: {exc} ({brand})"
+            time.sleep(DL_DELAY)
+            continue
+    return False, last_reason
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────
@@ -188,7 +206,7 @@ def main(argv):
     new_without_pdf = todo[~todo["cas"].isin(existing_pdf)]
     new_with_pdf    = todo[todo["cas"].isin(existing_pdf)]
 
-    print(f"CAS-resolved unique:       {len(resolved)}")
+    print(f"CAS-resolved unique:       {len(resolved)}", flush=True)
     print(f"Already have JSON:          {len(resolved) - len(todo)}")
     print(f"Need PDF + ingest:          {len(new_without_pdf)}")
     print(f"Have PDF, need ingest only: {len(new_with_pdf)}")
@@ -215,14 +233,6 @@ def main(argv):
     # ── Fetch mode ────────────────────────────────────────────────────────
     pc_session = requests.Session()
     pc_session.headers["User-Agent"] = "MedraReagentPipeline/1.0 (research)"
-
-    dl_session = requests.Session()
-    dl_session.headers.update({
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-                      "AppleWebKit/537.36 (KHTML, like Gecko) "
-                      "Chrome/120.0.0.0 Safari/537.36",
-        "Accept":     "application/pdf,*/*",
-    })
 
     downloaded = 0
     failed_cat = 0
@@ -263,14 +273,15 @@ def main(argv):
             failed_cat += 1
             continue
 
-        ok = download_pdf(cas, catalog, dl_session)
+        ok, detail = download_pdf(cas, catalog)
         if ok:
             size_kb = pdf_path.stat().st_size // 1024
             print(f"[{i+1}/{len(rows_to_dl)}] OK  {cas}  {name}  "
-                  f"catalog={catalog}  {size_kb} KB")
+                  f"catalog={catalog}/{detail}  {size_kb} KB", flush=True)
             downloaded += 1
         else:
-            print(f"[{i+1}/{len(rows_to_dl)}] FAIL  {cas}  {name}  catalog={catalog}")
+            print(f"[{i+1}/{len(rows_to_dl)}] FAIL  {cas}  {name}  "
+                  f"catalog={catalog}  reason={detail}", flush=True)
             failed_dl += 1
 
     print(f"\n─────────────────────────────")
