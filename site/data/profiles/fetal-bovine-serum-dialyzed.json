@@ -1,0 +1,34 @@
+{
+  "reagent_name": "Fetal Bovine Serum, Dialyzed",
+  "cas": null,
+  "handling_profile": {
+    "storage": {
+      "requires_ice": true,
+      "freeze_thaw_max_cycles": 3
+    },
+    "mixing": {
+      "no_vortex": true
+    },
+    "preparation": {
+      "thaw_method": "37C_water_bath_with_periodic_mixing",
+      "aliquot_on_first_thaw": true
+    }
+  },
+  "rules_fired": [
+    {
+      "id": "protein_keep_on_ice",
+      "because": "Proteins lose activity rapidly above 4\u00b0C via thermal denaturation and proteolytic degradation. Even brief exposure to room temperature can reduce the activity of sensitive enzymes (reverse transcriptase, ligase, Klenow) by 20\u201350%. Keep vials on ice throughout the entire workflow. Vortexing creates a high-shear air\u2013water interface that can unfold proteins; mix by gentle inversion or brief centrifugation instead.",
+      "cite": "NEB Enzyme Storage and Handling Guidelines. Sambrook J & Russell DW (2001) Molecular Cloning 3rd ed., Appendix 1.",
+      "confidence": "low",
+      "field_consensus": false
+    },
+    {
+      "id": "thaw_serum_gently",
+      "because": "Sera contain labile complement proteins, growth factors (EGF, IGF-1, FGF), and hormones that are destroyed by slow thawing at room temperature or by repeated freeze-thaw cycling. A 37\u00b0C water bath with periodic swirling achieves full thaw in 30\u201360 minutes while minimising protein denaturation. Aliquoting on first thaw prevents the repeated freeze-thaw cycles that precipitate proteins and reduce growth-promoting activity. Most manufacturers specify \u22643 freeze-thaw cycles for full activity retention.",
+      "cite": "Gibco FBS Handling and Use Guide. Sigma-Aldrich Fetal Bovine Serum Technical Bulletin F2442. ATCC Animal Cell Culture Guide.",
+      "confidence": "low",
+      "field_consensus": false
+    }
+  ],
+  "conflicts": []
+}
