@@ -21,7 +21,7 @@
         }
       ]
     },
-    "glycerol_pct": null,
+    "glycerol_pct": 100,
     "viscosity_class": "high",
     "viscosity_mPas_20C": 1412.0,
     "vapor_pressure_kPa_20C": 0.0001,
@@ -201,7 +201,7 @@
       ]
     },
     "is_hygroscopic": {
-      "value": false,
+      "value": true,
       "confidence": "high",
       "sources": [
         {

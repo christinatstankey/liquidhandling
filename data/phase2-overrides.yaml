@@ -47,7 +47,7 @@
     is_detergent: false
     is_foaming: false
     is_fixative: false
-    is_hygroscopic: false
+    is_hygroscopic: true     # anhydrous EtOH absorbs atmospheric moisture; SDS says "keep dry"
     is_deliquescent: false
     is_corrosive: false
     is_adsorption_prone: false
@@ -57,6 +57,8 @@
 
 - cas: "56-81-5"     # Glycerol
   category: viscous_reagent
+  numeric_properties:
+    glycerol_pct: 100   # pure glycerol by definition
   flags:
     is_protein: false
     is_volatile: false
@@ -69,7 +71,7 @@
     is_detergent: false
     is_foaming: false
     is_fixative: false
-    is_hygroscopic: false
+    is_hygroscopic: true    # glycerol absorbs atmospheric water readily
     is_deliquescent: false
     is_corrosive: false
     is_adsorption_prone: false
@@ -100,6 +102,8 @@
 
 - cas: "28718-90-3"  # DAPI dihydrochloride
   category: fluorophore
+  numeric_properties:
+    solution_half_life_at_4C_days: 180   # Thermo Fisher DAPI datasheet D1306
   flags:
     is_protein: false
     is_volatile: false
@@ -120,6 +124,8 @@
 
 - cas: "3483-12-3"   # DTT (dithiothreitol)
   category: reducing_agent
+  numeric_properties:
+    solution_half_life_at_4C_days: 7   # Cleland WW (1964) Biochemistry 3:480–482
   flags:
     is_protein: false
     is_volatile: false
@@ -140,6 +146,8 @@
 
 - cas: "30525-89-4"  # Paraformaldehyde
   category: fixative
+  numeric_properties:
+    solution_half_life_at_4C_days: 30   # field consensus; freshly prepared 4% PFA stable ~1 month at 4°C
   flags:
     is_protein: false
     is_volatile: false
@@ -171,7 +179,7 @@
     is_detergent: false
     is_foaming: false
     is_fixative: false
-    is_hygroscopic: false
+    is_hygroscopic: true    # DMSO absorbs atmospheric water; use sealed containers
     is_deliquescent: false
     is_corrosive: false
     is_adsorption_prone: false

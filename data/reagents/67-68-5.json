@@ -201,7 +201,7 @@
       ]
     },
     "is_hygroscopic": {
-      "value": false,
+      "value": true,
       "confidence": "high",
       "sources": [
         {

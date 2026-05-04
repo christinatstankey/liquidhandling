@@ -124,7 +124,7 @@
         }
       ]
     },
-    "solution_half_life_at_4C_days": null,
+    "solution_half_life_at_4C_days": 30,
     "make_fresh": {
       "value": true,
       "confidence": "low",
