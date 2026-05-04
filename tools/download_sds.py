@@ -24,10 +24,16 @@ from __future__ import annotations
 
 import argparse
 import json
+import random
 import re
+import socket
 import sys
 import time
 from pathlib import Path
+
+# Override the OS-level socket timeout (default 60s) so stalled connections
+# don't block longer than our intended application timeout.
+socket.setdefaulttimeout(15)
 
 import pandas as pd
 import requests
@@ -41,10 +47,10 @@ CAT_CACHE    = SDS_DIR / "catalog_cache.json"
 
 PUBCHEM    = "https://pubchem.ncbi.nlm.nih.gov/rest/pug"
 SIGMA_SDS  = "https://www.sigmaaldrich.com/US/en/sds"
-BRANDS     = ["sigma", "sigald", "sial"]   # "aldrich" excluded — causes 60s OS timeouts
+BRANDS     = ["sigma", "sigald", "sial"]   # "aldrich" excluded — causes OS-level timeouts
 PC_DELAY   = 0.21           # seconds between PubChem requests
-DL_DELAY   = 5.0            # seconds between SDS downloads — conservative to avoid rate-limiting
-DL_TIMEOUT = (10, 20)       # (connect_timeout, read_timeout) in seconds
+DL_DELAY   = 12.0           # base seconds between SDS downloads; jitter added below
+DL_TIMEOUT = (10, 15)       # (connect_timeout, read_timeout) — overrides OS default (set above)
 MIN_PDF_KB = 50             # reject files smaller than this as non-PDFs
 
 
@@ -157,11 +163,11 @@ def download_pdf(cas: str, catalog: str) -> tuple:
                 time.sleep(DL_DELAY)
                 continue
             out_path.write_bytes(r.content)
-            time.sleep(DL_DELAY)
+            time.sleep(DL_DELAY + random.uniform(0, 4))
             return True, brand
         except Exception as exc:
             last_reason = f"{type(exc).__name__}: {exc} ({brand})"
-            time.sleep(DL_DELAY)
+            time.sleep(DL_DELAY + random.uniform(0, 4))
             continue
     return False, last_reason
 
