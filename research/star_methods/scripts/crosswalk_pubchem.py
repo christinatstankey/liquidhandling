@@ -231,8 +231,10 @@ def main(argv):
                 }
                 log.info("  sigma_sid → cas=%s  cid=%s", cas, cid)
 
-            # Path 2: Name fallback — if Sigma path didn't resolve, or non-Sigma.
-            if cid is None:
+            # Path 2: Name fallback — if Sigma path didn't produce a CAS, or non-Sigma.
+            # Check cas (not cid): Sigma SID can return a CID with no CAS synonym,
+            # in which case we still want the name fallback.
+            if cas is None:
                 cid, cas, method = _lookup_name(name, session)
                 cache[_name_key(row)] = {
                     "cas": cas, "cid": cid,
