@@ -32,8 +32,12 @@ TACIT_BOOLEANS = [
     "lo_bind_required", "requires_ice", "skin_penetrant",
 ]
 
-# Four new flags introduced in v2.0 — not present in v1 JSONs.
-NEW_FLAGS = ["is_oxidizer", "is_air_sensitive", "is_peroxide_forming", "is_water_reactive"]
+# Flags added after initial v2.0 migration — initialised as null for any
+# record that doesn't already have them.
+NEW_FLAGS = [
+    "is_oxidizer", "is_air_sensitive", "is_peroxide_forming", "is_water_reactive",
+    "is_rnase_decontaminant", "is_serum",
+]
 
 
 def _wrap(value) -> dict:
