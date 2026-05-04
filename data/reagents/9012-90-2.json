@@ -386,6 +386,12 @@
   },
   "bench_knowledge": [
     {
+      "rule_id": "protein_keep_on_ice",
+      "because": "Proteins lose activity rapidly above 4\u00b0C via thermal denaturation and proteolytic degradation. Even brief exposure to room temperature can reduce the activity of sensitive enzymes (reverse transcriptase, ligase, Klenow) by 20\u201350%. Keep vials on ice throughout the entire workflow. Vortexing creates a high-shear air\u2013water interface that can unfold proteins; mix by gentle inversion or brief centrifugation instead.",
+      "cite": "NEB Enzyme Storage and Handling Guidelines. Sambrook J & Russell DW (2001) Molecular Cloning 3rd ed., Appendix 1.",
+      "confidence": "high"
+    },
+    {
       "rule_id": "protein_glycerol_on_ice",
       "because": "Proteins in 50% glycerol stocks (enzymes, antibodies, recombinant carriers) stay liquid at \u221220\u00b0C but denature rapidly above ~4\u00b0C. The glycerol stock is viscous, requiring reverse pipetting to eliminate air bubbles. Vortexing creates a high-shear air\u2013water interface that unfolds proteins.",
       "cite": "NEB Cloning & PCR guidelines; Eppendorf Technical Guide: Viscous Liquids, 2020.",

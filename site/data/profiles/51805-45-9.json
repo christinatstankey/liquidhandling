@@ -1,0 +1,33 @@
+{
+  "reagent_name": "Tris(2-carboxyethyl)phosphine hydrochloride",
+  "cas": "51805-45-9",
+  "handling_profile": {
+    "preparation": {
+      "add_to_water": true,
+      "make_fresh": false,
+      "max_storage_days": 30
+    },
+    "safety": {
+      "acid_resistant_tips": true,
+      "neutralize_before_disposal": true,
+      "fume_hood_required": true
+    }
+  },
+  "rules_fired": [
+    {
+      "id": "corrosive_add_to_water",
+      "because": "Concentrated corrosive reagents (HCl, TFA, NaOH) release significant heat on dilution. Adding water to a concentrated corrosive can boil the liquid and cause spattering; always add the corrosive slowly to water. TFA and HCl volatilise in the hood \u2014 decant and dilute in a ventilated space. Neutralise to pH 6\u20138 before drain disposal per local regulations.",
+      "cite": "Sigma-Aldrich HCl Safety Note 258148. ACS Safety in Academic Chemistry Laboratories, 7th ed., Ch. 4. EPA 40 CFR Part 261 (hazardous waste neutralisation).",
+      "confidence": "high",
+      "field_consensus": false
+    },
+    {
+      "id": "tcep_air_stable",
+      "because": "TCEP (tris(2-carboxyethyl)phosphine) is a phosphine-based reducing agent that is stable to atmospheric oxygen in aqueous solution \u2014 unlike thiol reagents (DTT, \u03b2-mercaptoethanol) which oxidise within hours to days. TCEP solutions in standard buffer can be stored at 4\u00b0C for up to 30 days without significant loss of reducing activity. Single-use aliquots are recommended for irreplaceable stocks but are not obligatory for routine working solutions.",
+      "cite": "Getz EB et al. (1999) Anal Biochem 273:73\u201380 (TCEP stability characterisation). Pierce TCEP\u00b7HCl Product Manual.",
+      "confidence": "low",
+      "field_consensus": false
+    }
+  ],
+  "conflicts": []
+}

@@ -1,61 +1,410 @@
 {
-  "name": "DMSO (Dimethyl sulfoxide)",
+  "name": "Dimethyl sulfoxide",
   "cas": "67-68-5",
   "category": "dmso",
-  "vendor_example": "Sigma-Aldrich 276855, Thermo D12345",
+  "vendor_example": "Sigma D8418",
   "physical_state": "liquid",
-  "striking_fact": "DMSO freezes at 19°C and is solid in a 4°C cold room — always warm to room temperature before pipetting.",
   "properties": {
-    "is_protein": false,
+    "is_protein": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
     "glycerol_pct": null,
     "viscosity_class": "low",
-    "viscosity_mPas_20C": 2.0,
+    "viscosity_mPas_20C": 2.14,
     "vapor_pressure_kPa_20C": 0.055,
-    "is_volatile": false,
-    "is_flammable": false,
-    "flash_point_C": 89,
-    "is_light_sensitive": false,
-    "is_fluorophore": false,
-    "is_reducing_agent": false,
-    "oxidizes_in_solution": false,
+    "is_volatile": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_flammable": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "flash_point_C": 87.0,
+    "is_light_sensitive": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_fluorophore": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "excitation_nm": null,
+    "emission_nm": null,
+    "is_reducing_agent": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "oxidizes_in_solution": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
     "solution_half_life_at_4C_days": null,
-    "make_fresh": false,
-    "is_detergent": false,
-    "is_foaming": false,
-    "is_fixative": false,
-    "fume_hood_required": false,
-    "is_hygroscopic": true,
-    "is_deliquescent": false,
-    "is_corrosive": false,
-    "is_adsorption_prone": false,
-    "lo_bind_required": false,
-    "freeze_point_C": 18.45,
-    "requires_ice": false,
+    "make_fresh": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_detergent": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_foaming": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_fixative": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "fume_hood_required": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_hygroscopic": {
+      "value": true,
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "sds_phrase",
+          "ref": "section_7:'hygroscopic'",
+          "agrees": true
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_deliquescent": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_corrosive": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_adsorption_prone": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "lo_bind_required": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "freeze_point_C": 17.5,
+    "requires_ice": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
     "freeze_thaw_max_cycles": null,
-    "skin_penetrant": true,
-    "plastic_incompatible": ["polystyrene"],
-    "storage_temp_C": 25
+    "skin_penetrant": {
+      "value": true,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": true
+        }
+      ]
+    },
+    "plastic_incompatible": [],
+    "storage_temp_C": null,
+    "is_oxidizer": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_air_sensitive": {
+      "value": true,
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "sds_phrase",
+          "ref": "section_7:'Store under inert gas'",
+          "agrees": true
+        }
+      ]
+    },
+    "is_peroxide_forming": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_water_reactive": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    }
   },
   "ghs": {
-    "pictograms": ["exclamation_mark"],
+    "pictograms": [],
     "signal_word": "Warning",
     "hazard_statements": [
-      "H315: Causes skin irritation",
-      "H319: Causes serious eye irritation",
-      "H335: May cause respiratory irritation"
+      "H227 Combustible liquid"
     ]
   },
   "sds_facts": {
-    "storage": "Store at room temperature, tightly sealed. Do not store in polystyrene containers. Store in glass for long-term stocks.",
-    "ppe": ["nitrile gloves (note: DMSO penetrates some nitrile; double-glove or use thick nitrile)", "eye protection"],
-    "incompatibilities": ["strong oxidizing agents", "acyl chlorides", "polystyrene containers"]
+    "storage": "Store per SDS.",
+    "ppe": [
+      "chemical-resistant gloves",
+      "safety glasses",
+      "respiratory protection"
+    ],
+    "incompatibilities": []
   },
   "bench_knowledge": [
-    "DMSO is solid at room temperature if your lab is cool (<19°C) and always solid in a 4°C cold room or on ice. Warm to 25°C and confirm fully liquid before pipetting — partially solidified DMSO gives wrong volumes.",
-    "DMSO rapidly penetrates skin and mucous membranes, carrying dissolved solutes with it. A DMSO stock of a toxic compound can deliver the dissolved material transdermally — never touch DMSO drug solutions without heavy nitrile gloves.",
-    "DMSO dissolves polystyrene: never use standard cell-culture plates, polystyrene tubes, or clear conical Falcon tubes for DMSO stocks. Use polypropylene Eppendorfs or glass vials.",
-    "DMSO is hygroscopic — an open bottle gains water content, which can affect assay results (especially kinase inhibitor stocks where anhydrous DMSO is assumed). Aliquot into glass vials, cap immediately, and use molecular sieves if anhydrous is critical.",
-    "Maximum DMSO concentration tolerated by most mammalian cell lines is 0.1–0.5%; >1% causes cytotoxicity independent of the dissolved compound. Always dilute DMSO stocks appropriately and include a vehicle control.",
-    "At cryogenic concentrations (10% v/v in media), DMSO acts as a cryoprotectant by preventing ice crystal formation. Thaw cryovials quickly at 37°C and immediately dilute out the DMSO — prolonged exposure at 37°C is toxic."
-  ]
+    {
+      "rule_id": "warm_freeze_prone_liquid",
+      "because": "Liquids with freeze points at or above 15\u00b0C (DMSO ~19\u00b0C, glycerol ~18\u00b0C) can solidify partially or fully in a 4\u00b0C cold room or on ice. Pipetting a partially-solidified liquid causes systematic volume errors. The physical_state guard prevents the rule from misfiring on solids whose melting point happens to be reported in freeze_point_C (e.g. NaOH pellets, PFA powder).",
+      "cite": "Sigma-Aldrich DMSO Product Information Sheet 276855 (freeze point 18.45\u00b0C). Perry's Chemical Engineers' Handbook, 8th ed. (glycerol freeze point 17.8\u00b0C).",
+      "confidence": "high"
+    },
+    {
+      "rule_id": "skin_penetrant_hazard",
+      "because": "Skin-penetrant reagents cross intact skin and can carry dissolved solutes transdermally. DMSO is the canonical example \u2014 contact with a DMSO drug stock is a real toxicity exposure route even through nitrile gloves with extended contact. 2-mercaptoethanol and acrylamide are similarly absorbed through skin. Nitrile gloves (not latex) are required; change gloves immediately after any spill; never work with these without gloves.",
+      "cite": "NIOSH skin absorption hazard notes. Braue EH et al. (1999) Occup Environ Med: percutaneous absorption review.",
+      "confidence": "low"
+    }
+  ],
+  "sds_source": {
+    "revision_date": "04/02/2026",
+    "version": "6.16",
+    "product_number": "D8418"
+  },
+  "schema_version": "2.0"
 }

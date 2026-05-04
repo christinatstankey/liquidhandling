@@ -1,0 +1,44 @@
+{
+  "name:bovine serum albumin": {
+    "cas": null,
+    "cid": null,
+    "method": "not_found",
+    "queried_at": "2026-05-04"
+  },
+  "name:fetal bovine serum": {
+    "cas": null,
+    "cid": null,
+    "method": "not_found",
+    "queried_at": "2026-05-04"
+  },
+  "name:penicillin-streptomycin": {
+    "cas": null,
+    "cid": 176540074,
+    "method": "name",
+    "queried_at": "2026-05-04"
+  },
+  "sigma:A9418": {
+    "cas": null,
+    "cid": null,
+    "method": "sigma_not_found",
+    "queried_at": "2026-05-04"
+  },
+  "sigma:D9542": {
+    "cas": "28718-90-3",
+    "cid": 160166,
+    "method": "sigma_sid",
+    "queried_at": "2026-05-04"
+  },
+  "sigma:F2442": {
+    "cas": null,
+    "cid": null,
+    "method": "sigma_not_found",
+    "queried_at": "2026-05-04"
+  },
+  "sigma:T8787": {
+    "cas": "2497-59-8",
+    "cid": 75622,
+    "method": "sigma_sid",
+    "queried_at": "2026-05-04"
+  }
+}

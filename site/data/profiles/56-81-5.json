@@ -1,5 +1,5 @@
 {
-  "reagent_name": "Glycerol, 99%+ (anhydrous)",
+  "reagent_name": "Glycerol",
   "cas": "56-81-5",
   "handling_profile": {
     "pipetting": {
@@ -10,14 +10,6 @@
     },
     "preparation": {
       "warm_to_RT_first": true
-    },
-    "storage": {
-      "avoid_plastics": [
-        "polystyrene"
-      ]
-    },
-    "safety": {
-      "skin_penetrant_warning": true
     }
   },
   "rules_fired": [
@@ -25,12 +17,14 @@
       "id": "viscous_no_protein",
       "because": "High-viscosity non-protein liquids (e.g., pure glycerol, PEG solutions) resist aspiration, causing back-pressure that stalls the piston and under-delivers volume. Wide-bore tips reduce hydraulic resistance. Reverse pipetting removes the dead-air step. A 2\u20133 s post-aspirate pause lets the meniscus stabilise before withdrawal.",
       "cite": "Eppendorf Technical Guide: Pipetting Viscous Liquids, 2020. Perry's Chemical Engineers' Handbook, 8th ed. (glycerol viscosity 1412 mPa\u00b7s at 20\u00b0C).",
+      "confidence": "low",
       "field_consensus": false
     },
     {
-      "id": "warm_dmso_before_use",
-      "because": "DMSO freezes at ~19\u00b0C and is completely solid in a 4\u00b0C cold room or on ice. Pipetting partially-solidified DMSO gives large systematic volume errors. DMSO also rapidly penetrates skin and carries dissolved solutes transdermally, making skin contact with DMSO drug stocks a real toxicity exposure route. Polystyrene is dissolved/leached by DMSO over hours.",
-      "cite": "Sigma-Aldrich DMSO Product Information Sheet 276855. NIOSH CAS 67-68-5 skin absorption note. Polychemistry compatibility table (DMSO vs. plastics).",
+      "id": "warm_freeze_prone_liquid",
+      "because": "Liquids with freeze points at or above 15\u00b0C (DMSO ~19\u00b0C, glycerol ~18\u00b0C) can solidify partially or fully in a 4\u00b0C cold room or on ice. Pipetting a partially-solidified liquid causes systematic volume errors. The physical_state guard prevents the rule from misfiring on solids whose melting point happens to be reported in freeze_point_C (e.g. NaOH pellets, PFA powder).",
+      "cite": "Sigma-Aldrich DMSO Product Information Sheet 276855 (freeze point 18.45\u00b0C). Perry's Chemical Engineers' Handbook, 8th ed. (glycerol freeze point 17.8\u00b0C).",
+      "confidence": "high",
       "field_consensus": false
     }
   ],

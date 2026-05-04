@@ -1,60 +1,403 @@
 {
-  "name": "Ethanol, 200 proof (absolute)",
+  "name": "Ethyl Alcohol, pure",
   "cas": "64-17-5",
   "category": "volatile_solvent",
-  "vendor_example": "Sigma-Aldrich 459844, Thermo A405P",
+  "vendor_example": "Sigma-Aldrich 459836",
   "physical_state": "liquid",
-  "striking_fact": "Vapor pressure is high enough to cause volume drift on every aspirate — pre-wet tips 3× before dispensing.",
   "properties": {
-    "is_protein": false,
+    "is_protein": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
     "glycerol_pct": null,
     "viscosity_class": "low",
     "viscosity_mPas_20C": 1.2,
-    "vapor_pressure_kPa_20C": 5.95,
-    "is_volatile": true,
-    "is_flammable": true,
-    "flash_point_C": 13,
-    "is_light_sensitive": false,
-    "is_fluorophore": false,
-    "is_reducing_agent": false,
-    "oxidizes_in_solution": false,
+    "vapor_pressure_kPa_20C": 5.726,
+    "is_volatile": {
+      "value": true,
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "ghs_hcode",
+          "ref": "H225",
+          "agrees": true
+        }
+      ]
+    },
+    "is_flammable": {
+      "value": true,
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "ghs_hcode",
+          "ref": "H225",
+          "agrees": true
+        }
+      ]
+    },
+    "flash_point_C": 13.0,
+    "is_light_sensitive": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_fluorophore": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "excitation_nm": null,
+    "emission_nm": null,
+    "is_reducing_agent": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "oxidizes_in_solution": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
     "solution_half_life_at_4C_days": null,
-    "make_fresh": false,
-    "is_detergent": false,
-    "is_foaming": false,
-    "is_fixative": false,
-    "fume_hood_required": false,
-    "is_hygroscopic": true,
-    "is_deliquescent": false,
-    "is_corrosive": false,
-    "is_adsorption_prone": false,
-    "lo_bind_required": false,
-    "freeze_point_C": -114.1,
-    "requires_ice": false,
+    "make_fresh": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_detergent": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_foaming": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_fixative": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "fume_hood_required": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_hygroscopic": {
+      "value": true,
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "sds_phrase",
+          "ref": "section_7:'Hygroscopic'",
+          "agrees": true
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_deliquescent": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_corrosive": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_adsorption_prone": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "lo_bind_required": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "freeze_point_C": -114.0,
+    "requires_ice": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
     "freeze_thaw_max_cycles": null,
-    "skin_penetrant": false,
+    "skin_penetrant": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
     "plastic_incompatible": [],
-    "storage_temp_C": 4
+    "storage_temp_C": null,
+    "is_oxidizer": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_air_sensitive": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_peroxide_forming": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_water_reactive": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    }
   },
   "ghs": {
-    "pictograms": ["flame", "exclamation_mark"],
+    "pictograms": [
+      "exclamation_mark",
+      "flame"
+    ],
     "signal_word": "Danger",
     "hazard_statements": [
-      "H225: Highly flammable liquid and vapour",
-      "H319: Causes serious eye irritation"
+      "H225 Highly flammable liquid and vapour",
+      "H319 Causes serious eye irritation"
     ]
   },
   "sds_facts": {
-    "storage": "Store at 4°C, tightly sealed, away from ignition sources. In a flammables cabinet.",
-    "ppe": ["nitrile gloves", "eye protection"],
-    "incompatibilities": ["oxidizing agents", "peroxides", "bleach (generates chloroform and chloroacetone)"]
+    "storage": "Store per SDS.",
+    "ppe": [
+      "butyl rubber gloves",
+      "safety glasses",
+      "respiratory protection"
+    ],
+    "incompatibilities": []
   },
   "bench_knowledge": [
-    "Pre-wet tip 3× before aspirating: aspirate and expel ethanol without dispensing into sample. This saturates the headspace inside the tip and stops volume drift.",
-    "Ethanol evaporates from the tip exterior within seconds; work quickly and keep the reservoir sealed between uses.",
-    "Absolute (200 proof) ethanol is hygroscopic — opened bottles absorb atmospheric water. Use a desiccant closure or aliquot into sealed amber vials.",
-    "Never use polystyrene reservoirs; use polypropylene. Ethanol is compatible with both, but PS reservoirs may leach styrene oligomers with extended contact.",
-    "Bleach + ethanol generates chloroform and chloroacetone — do NOT decontaminate ethanol spills with bleach.",
-    "At −20°C ethanol is fully liquid (mp −114°C) and stays fluid; used deliberately for cold methanol/ethanol fixation of cells."
-  ]
+    {
+      "rule_id": "pre_wet_volatile",
+      "because": "High vapor pressure (\u22655 kPa at 20\u00b0C) causes significant evaporation inside the tip. Without pre-wetting, the headspace is dry air; the solvent flash-evaporates into it, creating a vapour cushion that compresses and releases unpredictably, drifting dispensed volume by 5\u201315%. Three aspirate-expel cycles saturate the headspace before the actual dispensing step. Fast dispense minimises dwell-time in the tip.",
+      "cite": "Eppendorf Application Note: Pipetting Volatile Liquids, 2018. NIST WebBook CAS 64-17-5 (vapor pressure 5.95 kPa at 20\u00b0C).",
+      "confidence": "high"
+    }
+  ],
+  "sds_source": {
+    "revision_date": "07/08/2025",
+    "version": "6.17",
+    "product_number": "459836"
+  },
+  "schema_version": "2.0"
 }

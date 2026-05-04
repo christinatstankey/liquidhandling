@@ -1,92 +1,242 @@
 [
   {
-    "name": "Taq DNA Polymerase",
+    "name": "Taq DNA Polymerase, from Thermus",
     "cas": "9012-90-2",
     "category": "enzyme_glycerol",
-    "striking_fact": "Stays liquid at \u221220\u00b0C because it\u2019s in 50% glycerol \u2014 take it out, use it, return it immediately.",
     "top_pictogram": null,
     "signal_word": null,
     "file": "9012-90-2.json"
   },
   {
-    "name": "Ethanol, 200 proof (absolute)",
+    "name": "Trifluoroacetic acid",
+    "cas": "76-05-1",
+    "category": "volatile_solvent",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "file": "76-05-1.json"
+  },
+  {
+    "name": "Hydrogen peroxide solution",
+    "cas": "7722-84-1",
+    "category": "volatile_solvent",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "file": "7722-84-1.json"
+  },
+  {
+    "name": "Diethyl pyrocarbonate",
+    "cas": "1609-47-8",
+    "category": "volatile_solvent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "file": "1609-47-8.json"
+  },
+  {
+    "name": "Sodium hypochlorite solution",
+    "cas": "7681-52-9",
+    "category": "volatile_solvent",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "file": "7681-52-9.json"
+  },
+  {
+    "name": "Hydrochloric acid",
+    "cas": "7647-01-0",
+    "category": "volatile_solvent",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "file": "7647-01-0.json"
+  },
+  {
+    "name": "Acetonitrile",
+    "cas": "75-05-8",
+    "category": "volatile_solvent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Danger",
+    "file": "75-05-8.json"
+  },
+  {
+    "name": "Ethyl Alcohol, pure",
     "cas": "64-17-5",
     "category": "volatile_solvent",
-    "striking_fact": "Vapor pressure is high enough to cause volume drift on every aspirate \u2014 pre-wet tips 3\u00d7 before dispensing.",
-    "top_pictogram": "flame",
+    "top_pictogram": "exclamation_mark",
     "signal_word": "Danger",
     "file": "64-17-5.json"
   },
   {
-    "name": "Glycerol, 99%+ (anhydrous)",
+    "name": "Diethyl ether",
+    "cas": "60-29-7",
+    "category": "volatile_solvent",
+    "top_pictogram": "environment",
+    "signal_word": "Danger",
+    "file": "60-29-7.json"
+  },
+  {
+    "name": "Glycerol",
     "cas": "56-81-5",
     "category": "viscous_reagent",
-    "striking_fact": "1400\u00d7 more viscous than water \u2014 standard pipetting speed causes air bubble entrapment and large volume errors.",
     "top_pictogram": null,
     "signal_word": null,
     "file": "56-81-5.json"
   },
   {
-    "name": "Tween-20 (Polysorbate 20)",
+    "name": "Poly(ethylene glycol)",
+    "cas": "25322-68-3",
+    "category": "viscous_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "file": "25322-68-3.json"
+  },
+  {
+    "name": "Sodium dodecyl sulfate",
+    "cas": "151-21-3",
+    "category": "detergent",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "file": "151-21-3.json"
+  },
+  {
+    "name": "TWEEN\u00ae 20",
     "cas": "9005-64-5",
     "category": "detergent",
-    "striking_fact": "Even 0.1% Tween-20 foams aggressively if dispensed with air \u2014 always dispense along the tube wall with no air gap.",
-    "top_pictogram": "exclamation_mark",
-    "signal_word": "Warning",
+    "top_pictogram": null,
+    "signal_word": null,
     "file": "9005-64-5.json"
   },
   {
-    "name": "DAPI (4\u2032,6-Diamidino-2-phenylindole dihydrochloride)",
+    "name": "Triton\u2122 X-100",
+    "cas": "9036-19-5",
+    "category": "detergent",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "file": "9036-19-5.json"
+  },
+  {
+    "name": "CHAPS, Molecular Biology Grade",
+    "cas": "75621-03-3",
+    "category": "detergent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "file": "75621-03-3.json"
+  },
+  {
+    "name": "DAPI",
     "cas": "28718-90-3",
     "category": "fluorophore",
-    "striking_fact": "DAPI photobleaches rapidly under UV \u2014 even 30 seconds on the UV transilluminator before imaging will kill your signal.",
     "top_pictogram": "exclamation_mark",
     "signal_word": "Warning",
     "file": "28718-90-3.json"
   },
   {
-    "name": "DTT (Dithiothreitol, DL-Dithiothreitol)",
+    "name": "Ethidium bromide solution",
+    "cas": "1239-45-8",
+    "category": "fluorophore",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "file": "1239-45-8.json"
+  },
+  {
+    "name": "DL-Dithiothreitol",
     "cas": "3483-12-3",
     "category": "reducing_agent",
-    "striking_fact": "DTT in solution oxidizes and loses reducing power within ~1 week at 4\u00b0C \u2014 make fresh on the day of use for sensitive applications.",
-    "top_pictogram": "exclamation_mark",
-    "signal_word": "Warning",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
     "file": "3483-12-3.json"
   },
   {
-    "name": "Paraformaldehyde (PFA), solid",
+    "name": "Tris(2-carboxyethyl)phosphine hydrochloride",
+    "cas": "51805-45-9",
+    "category": "reducing_agent",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "file": "51805-45-9.json"
+  },
+  {
+    "name": "2-Mercaptoethanol",
+    "cas": "60-24-2",
+    "category": "reducing_agent",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "file": "60-24-2.json"
+  },
+  {
+    "name": "Glutaraldehyde solution",
+    "cas": "111-30-8",
+    "category": "fixative",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "file": "111-30-8.json"
+  },
+  {
+    "name": "Paraformaldehyde",
     "cas": "30525-89-4",
     "category": "fixative",
-    "striking_fact": "PFA releases formaldehyde gas (IARC Group 1 carcinogen) during dissolution \u2014 always prepare and use in a fume hood.",
-    "top_pictogram": "flame",
+    "top_pictogram": "corrosion",
     "signal_word": "Danger",
     "file": "30525-89-4.json"
   },
   {
-    "name": "DMSO (Dimethyl sulfoxide)",
+    "name": "Dimethyl sulfoxide",
     "cas": "67-68-5",
     "category": "dmso",
-    "striking_fact": "DMSO freezes at 19\u00b0C and is solid in a 4\u00b0C cold room \u2014 always warm to room temperature before pipetting.",
-    "top_pictogram": "exclamation_mark",
+    "top_pictogram": null,
     "signal_word": "Warning",
     "file": "67-68-5.json"
   },
   {
-    "name": "Polyclonal IgG Antibody (generic, dilute)",
-    "cas": "N/A",
+    "name": "IgG, from goat serum",
+    "cas": null,
     "category": "adsorption_prone",
-    "striking_fact": "Dilute antibodies adsorb irreversibly to standard plastic \u2014 use LoBind tubes and never let concentration drop below 10 \u00b5g/mL without adding BSA carrier.",
     "top_pictogram": null,
     "signal_word": null,
     "file": "polyclonal-igg.json"
   },
   {
-    "name": "Sodium Hydroxide (NaOH), pellets",
+    "name": "Ethylenediaminetetraacetic acid disodium salt",
+    "cas": "6381-92-6",
+    "category": "hygroscopic_solid",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "file": "6381-92-6.json"
+  },
+  {
+    "name": "Acrylamide",
+    "cas": "79-06-1",
+    "category": "hygroscopic_solid",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Danger",
+    "file": "79-06-1.json"
+  },
+  {
+    "name": "Magnesium chloride hexahydrate",
+    "cas": "7791-18-6",
+    "category": "hygroscopic_solid",
+    "top_pictogram": null,
+    "signal_word": null,
+    "file": "7791-18-6.json"
+  },
+  {
+    "name": "Calcium chloride",
+    "cas": "10035-04-8",
+    "category": "hygroscopic_solid",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "file": "10035-04-8.json"
+  },
+  {
+    "name": "Sodium hydroxide",
     "cas": "1310-73-2",
     "category": "hygroscopic_solid",
-    "striking_fact": "NaOH pellets can absorb enough moisture from humid air to dissolve themselves in minutes \u2014 weigh quickly and cap immediately.",
     "top_pictogram": "corrosion",
     "signal_word": "Danger",
     "file": "1310-73-2.json"
+  },
+  {
+    "name": "HEPES",
+    "cas": "7365-45-9",
+    "category": "hygroscopic_solid",
+    "top_pictogram": null,
+    "signal_word": null,
+    "file": "7365-45-9.json"
   }
 ]

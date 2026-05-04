@@ -1,41 +1,370 @@
 {
-  "name": "Polyclonal IgG Antibody (generic, dilute)",
-  "cas": "N/A",
-  "cas_note": "Antibodies are biologics; no CAS number applies. This entry represents a generic ~0.1–1 mg/mL polyclonal IgG in PBS + 0.1% BSA, 50% glycerol storage buffer.",
+  "name": "IgG, from goat serum",
+  "cas": null,
   "category": "adsorption_prone",
-  "vendor_example": "Jackson ImmunoResearch 111-005-003 (normal goat IgG reference), Abcam ab37355",
-  "physical_state": "liquid",
-  "striking_fact": "Dilute antibodies adsorb irreversibly to standard plastic — use LoBind tubes and never let concentration drop below 10 µg/mL without adding BSA carrier.",
+  "vendor_example": "Sigma I5256",
+  "physical_state": "solid",
   "properties": {
-    "is_protein": true,
+    "is_protein": {
+      "value": true,
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": true
+        },
+        {
+          "type": "chebi",
+          "ref": "CHEBI:36080",
+          "agrees": true
+        }
+      ]
+    },
     "glycerol_pct": 50,
-    "viscosity_class": "low",
+    "viscosity_class": null,
     "viscosity_mPas_20C": null,
     "vapor_pressure_kPa_20C": null,
-    "is_volatile": false,
-    "is_flammable": false,
+    "is_volatile": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_flammable": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
     "flash_point_C": null,
-    "is_light_sensitive": false,
-    "is_fluorophore": false,
-    "is_reducing_agent": false,
-    "oxidizes_in_solution": false,
+    "is_light_sensitive": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_fluorophore": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "excitation_nm": null,
+    "emission_nm": null,
+    "is_reducing_agent": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "oxidizes_in_solution": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
     "solution_half_life_at_4C_days": null,
-    "make_fresh": false,
-    "is_detergent": false,
-    "is_foaming": false,
-    "is_fixative": false,
-    "fume_hood_required": false,
-    "is_hygroscopic": false,
-    "is_deliquescent": false,
-    "is_corrosive": false,
-    "is_adsorption_prone": true,
-    "lo_bind_required": true,
+    "make_fresh": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_detergent": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_foaming": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_fixative": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "fume_hood_required": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_hygroscopic": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_deliquescent": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_corrosive": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_adsorption_prone": {
+      "value": true,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": true
+        }
+      ]
+    },
+    "lo_bind_required": {
+      "value": true,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": true
+        }
+      ]
+    },
     "freeze_point_C": null,
-    "requires_ice": true,
-    "freeze_thaw_max_cycles": 3,
-    "skin_penetrant": false,
-    "plastic_incompatible": ["polystyrene_prolonged"],
-    "storage_temp_C": -20
+    "requires_ice": {
+      "value": true,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": true
+        }
+      ]
+    },
+    "freeze_thaw_max_cycles": null,
+    "skin_penetrant": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "plastic_incompatible": [],
+    "storage_temp_C": 5.0,
+    "is_oxidizer": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_air_sensitive": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_peroxide_forming": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_water_reactive": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    }
   },
   "ghs": {
     "pictograms": [],
@@ -43,16 +372,40 @@
     "hazard_statements": []
   },
   "sds_facts": {
-    "storage": "Store at −20°C for long-term, or 4°C for up to 4 weeks. Aliquot before first freeze to avoid repeated freeze-thaw. 50% glycerol storage buffer prevents freezing at −20°C.",
-    "ppe": ["nitrile gloves"],
-    "incompatibilities": ["reducing agents (if covalent conjugate)", "azide-free formulations should not contain sodium azide if used with HRP conjugates"]
+    "storage": "Store at 2\u20138\u00b0C (refrigerator).",
+    "ppe": [
+      "nitrile gloves",
+      "safety glasses",
+      "respiratory protection"
+    ],
+    "incompatibilities": [
+      "Strong oxidizing agents"
+    ]
   },
   "bench_knowledge": [
-    "Aliquot before first thaw: divide into single-use volumes so the working aliquot is never refrozen. Freeze-thaw cycles aggregate IgG, reducing titer and creating non-specific staining artifacts.",
-    "Use LoBind (low-protein-binding) polypropylene tubes for all dilutions below ~0.5 mg/mL. Standard PP and PS tubes adsorb significant antibody from dilute solutions within 30–60 minutes.",
-    "Add BSA or another carrier protein (0.1–1% BSA) to very dilute working stocks (< 10 µg/mL) to occupy adsorption sites. Gelatin or casein work as alternatives if BSA interferes with your assay.",
-    "Never vortex antibody stocks — shear force at the air-water interface denatures IgG and creates aggregates. Mix by gentle inversion or flicking.",
-    "Keep on ice during use; do not leave at room temperature for more than 1–2 hours during extended staining procedures.",
-    "Spin briefly (1 min, 10,000 × g) before use if the antibody has been frozen — this pellets any aggregates that have formed and removes them from the working stock."
-  ]
+    {
+      "rule_id": "protein_keep_on_ice",
+      "because": "Proteins lose activity rapidly above 4\u00b0C via thermal denaturation and proteolytic degradation. Even brief exposure to room temperature can reduce the activity of sensitive enzymes (reverse transcriptase, ligase, Klenow) by 20\u201350%. Keep vials on ice throughout the entire workflow. Vortexing creates a high-shear air\u2013water interface that can unfold proteins; mix by gentle inversion or brief centrifugation instead.",
+      "cite": "NEB Enzyme Storage and Handling Guidelines. Sambrook J & Russell DW (2001) Molecular Cloning 3rd ed., Appendix 1.",
+      "confidence": "high"
+    },
+    {
+      "rule_id": "protein_glycerol_on_ice",
+      "because": "Proteins in 50% glycerol stocks (enzymes, antibodies, recombinant carriers) stay liquid at \u221220\u00b0C but denature rapidly above ~4\u00b0C. The glycerol stock is viscous, requiring reverse pipetting to eliminate air bubbles. Vortexing creates a high-shear air\u2013water interface that unfolds proteins.",
+      "cite": "NEB Cloning & PCR guidelines; Eppendorf Technical Guide: Viscous Liquids, 2020.",
+      "confidence": "high"
+    },
+    {
+      "rule_id": "lo_bind_adsorption_prone",
+      "because": "Proteins, oligonucleotides, and antibodies at low concentrations lose significant material to non-specific adsorption onto standard polypropylene and polystyrene surfaces within 30\u201360 minutes, particularly below 100 \u00b5g/mL. LoBind surfaces have reduced hydrophobic character; adding BSA or another carrier protein competes for adsorption sites and stabilises the stock at very low concentrations.",
+      "cite": "Eppendorf LoBind Technology Technical Note, 2019. Kingston RE et al. (2003) Current Protocols in Mol. Bio.: nucleic acid quantification and dilution.",
+      "confidence": "low"
+    }
+  ],
+  "sds_source": {
+    "revision_date": "04/30/2025",
+    "version": "6.6",
+    "product_number": "I5256"
+  },
+  "schema_version": "2.0"
 }
