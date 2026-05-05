@@ -1,0 +1,376 @@
+{
+  "name": "Tetrahydrofuran",
+  "cas": "109-99-9",
+  "category": null,
+  "vendor_example": "Sigma-Aldrich 186562",
+  "physical_state": "liquid",
+  "properties": {
+    "is_protein": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "glycerol_pct": null,
+    "viscosity_class": "low",
+    "viscosity_mPas_20C": 0.359,
+    "vapor_pressure_kPa_20C": 17.0,
+    "is_volatile": {
+      "value": true,
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "ghs_hcode",
+          "ref": "H225",
+          "agrees": true
+        }
+      ]
+    },
+    "is_flammable": {
+      "value": true,
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "ghs_hcode",
+          "ref": "H225",
+          "agrees": true
+        }
+      ]
+    },
+    "flash_point_C": -21.2,
+    "is_light_sensitive": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_fluorophore": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "excitation_nm": null,
+    "emission_nm": null,
+    "is_reducing_agent": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "oxidizes_in_solution": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "solution_half_life_at_4C_days": null,
+    "make_fresh": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_detergent": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_foaming": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_fixative": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "fume_hood_required": {
+      "value": true,
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "sds_phrase",
+          "ref": "section_7:'Work under hood'",
+          "agrees": true
+        }
+      ]
+    },
+    "is_hygroscopic": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_deliquescent": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_corrosive": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_adsorption_prone": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "lo_bind_required": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "freeze_point_C": -108.44,
+    "requires_ice": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "freeze_thaw_max_cycles": null,
+    "skin_penetrant": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "plastic_incompatible": [],
+    "storage_temp_C": null,
+    "is_oxidizer": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_air_sensitive": {
+      "value": true,
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "sds_phrase",
+          "ref": "section_7:'Store under nitrogen'",
+          "agrees": true
+        }
+      ]
+    },
+    "is_peroxide_forming": {
+      "value": true,
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "sds_phrase",
+          "ref": "section_7:'peroxide formation'",
+          "agrees": true
+        },
+        {
+          "type": "sds_phrase",
+          "ref": "section_10:'Formation of peroxides'",
+          "agrees": true
+        },
+        {
+          "type": "sds_phrase",
+          "ref": "section_7:'Test for peroxide'",
+          "agrees": true
+        }
+      ]
+    },
+    "is_water_reactive": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_rnase_decontaminant": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_serum": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    }
+  },
+  "ghs": {
+    "pictograms": [
+      "corrosion",
+      "exclamation_mark",
+      "flame",
+      "health_hazard"
+    ],
+    "signal_word": "Danger",
+    "hazard_statements": [
+      "H225 Highly flammable liquid and vapour",
+      "H302 Harmful if swallowed",
+      "H318 Causes serious eye damage",
+      "H336 May cause drowsiness or dizziness",
+      "H351 Suspected of causing cancer"
+    ]
+  },
+  "sds_facts": {
+    "storage": "Store per SDS.",
+    "ppe": [
+      "butyl rubber gloves",
+      "safety goggles",
+      "respiratory protection"
+    ],
+    "incompatibilities": []
+  },
+  "bench_knowledge": [
+    {
+      "rule_id": "pre_wet_volatile",
+      "because": "High vapor pressure (\u22655 kPa at 20\u00b0C) causes significant evaporation inside the tip. Without pre-wetting, the headspace is dry air; the solvent flash-evaporates into it, creating a vapour cushion that compresses and releases unpredictably, drifting dispensed volume by 5\u201315%. Three aspirate-expel cycles saturate the headspace before the actual dispensing step. Fast dispense minimises dwell-time in the tip.",
+      "cite": "Eppendorf Application Note: Pipetting Volatile Liquids, 2018. NIST WebBook CAS 64-17-5 (vapor pressure 5.95 kPa at 20\u00b0C).",
+      "confidence": "high"
+    },
+    {
+      "rule_id": "peroxide_forming_track",
+      "because": "Ethers (diethyl ether, THF, dioxane) form shock-sensitive hydroperoxides on exposure to air and light via autoxidation. Peroxide concentration increases with time and is highest in the last few millilitres as the solvent evaporates. Opening a bottle without a peroxide test when the contents are old or unknown is a documented explosion hazard. Max 3-month working life after opening; test with commercial peroxide strips before each use; discard at 25 ppm peroxide or above.",
+      "cite": "Jackson HL et al. (1998) Chem Health Safety 5(3): 16\u201318 (ether peroxide hazards). Prudent Practices in the Laboratory, NRC 2011, Ch. 6.",
+      "confidence": "high"
+    }
+  ],
+  "sds_source": {
+    "revision_date": "04/20/2026",
+    "version": "6.29",
+    "product_number": "186562"
+  },
+  "schema_version": "2.0"
+}
