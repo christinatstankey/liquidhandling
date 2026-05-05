@@ -362,13 +362,13 @@
       ]
     },
     "is_serum": {
-      "value": true,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "tacit_knowledge",
           "ref": "reagent_class:serum",
-          "agrees": true
+          "agrees": false
         }
       ]
     },

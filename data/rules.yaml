@@ -77,6 +77,7 @@
   when:
     viscosity_class: "high"
     is_protein: false
+    is_detergent: false
   then:
     pipetting.tip_type: "wide_bore"
     pipetting.technique: "reverse"
@@ -172,7 +173,7 @@
 
 - id: lo_bind_adsorption_prone
   when:
-    is_adsorption_prone: true
+    lo_bind_required: true
   then:
     storage.container: "lo_bind"
     preparation.single_use_aliquots: true
