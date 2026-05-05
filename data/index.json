@@ -1,0 +1,5294 @@
+[
+  {
+    "cas": "10035-04-8",
+    "name": "Calcium chloride",
+    "path": "data/reagents/10035-04-8.json",
+    "schema_version": "2.0",
+    "category": "hygroscopic_solid"
+  },
+  {
+    "cas": "10049-21-5",
+    "name": "Sodium phosphate monobasic monohydrate",
+    "path": "data/reagents/10049-21-5.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "102-71-6",
+    "name": "Triethanolamine",
+    "path": "data/reagents/102-71-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "102396-24-7",
+    "name": "Jasplakinolide",
+    "path": "data/reagents/102396-24-7.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "102601-49-0",
+    "name": "Cholesteryl hemisuccinate tris salt",
+    "path": "data/reagents/102601-49-0.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "102783-51-7",
+    "name": "2\u2032-Deoxycytidine 5\u2032-triphosphate disodium",
+    "path": "data/reagents/102783-51-7.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "103-90-2",
+    "name": "Acetaminophen",
+    "path": "data/reagents/103-90-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "103404-75-7",
+    "name": "D-Luciferin sodium salt",
+    "path": "data/reagents/103404-75-7.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "103476-89-7",
+    "name": "Leupeptin hemisulfate salt",
+    "path": "data/reagents/103476-89-7.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "104821-25-2",
+    "name": "Dihydroethidium",
+    "path": "data/reagents/104821-25-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "10510-54-0",
+    "name": "Cresyl Violet acetate",
+    "path": "data/reagents/10510-54-0.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "10540-29-1",
+    "name": "Tamoxifen",
+    "path": "data/reagents/10540-29-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "1062368-62-0",
+    "name": "LDN193189 hydrochloride",
+    "path": "data/reagents/1062368-62-0.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "107-35-7",
+    "name": "Taurine",
+    "path": "data/reagents/107-35-7.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "107-92-6",
+    "name": "Butyric acid",
+    "path": "data/reagents/107-92-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "108-24-7",
+    "name": "Acetic anhydride",
+    "path": "data/reagents/108-24-7.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "108-45-2",
+    "name": "m-Phenylenediamine",
+    "path": "data/reagents/108-45-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "108964-32-5",
+    "name": "Fura 2-AM",
+    "path": "data/reagents/108964-32-5.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "109-99-9",
+    "name": "Tetrahydrofuran",
+    "path": "data/reagents/109-99-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "110-15-6",
+    "name": "Succinic acid",
+    "path": "data/reagents/110-15-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "110-54-3",
+    "name": "Hexane",
+    "path": "data/reagents/110-54-3.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "110-86-1",
+    "name": "Pyridine",
+    "path": "data/reagents/110-86-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "110-89-4",
+    "name": "Piperidine",
+    "path": "data/reagents/110-89-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "11024-24-1",
+    "name": "Digitonin",
+    "path": "data/reagents/11024-24-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "111-30-8",
+    "name": "Glutaraldehyde solution",
+    "path": "data/reagents/111-30-8.json",
+    "schema_version": "2.0",
+    "category": "fixative"
+  },
+  {
+    "cas": "112-80-1",
+    "name": "Oleic acid",
+    "path": "data/reagents/112-80-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "1132-61-2",
+    "name": "MOPS",
+    "path": "data/reagents/1132-61-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "1134-47-0",
+    "name": "(\u00b1)-Baclofen",
+    "path": "data/reagents/1134-47-0.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "114-07-8",
+    "name": "Erythromycin",
+    "path": "data/reagents/114-07-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "6533-68-2",
+    "name": "Scopolamine hydrobromide",
+    "path": "data/reagents/114-49-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "114977-28-5",
+    "name": "Docetaxel",
+    "path": "data/reagents/114977-28-5.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "115-39-9",
+    "name": "Bromophenol Blue",
+    "path": "data/reagents/115-39-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "115144-35-9",
+    "name": "D-Luciferin potassium salt",
+    "path": "data/reagents/115144-35-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "1154-25-2",
+    "name": "5-(N-Ethyl-N-isopropyl)amiloride",
+    "path": "data/reagents/1154-25-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "115532-52-0",
+    "name": "Tetramethylrhodamine ethyl ester perchlorate",
+    "path": "data/reagents/115532-52-0.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "117570-53-3",
+    "name": "DMXAA",
+    "path": "data/reagents/117570-53-3.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "118-00-3",
+    "name": "Guanosine",
+    "path": "data/reagents/118-00-3.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "1185-53-1",
+    "name": "Trizma\u00ae hydrochloride solution",
+    "path": "data/reagents/1185-53-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "120-51-4",
+    "name": "Benzyl benzoate",
+    "path": "data/reagents/120-51-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "1202867-00-2",
+    "name": "Dynasore hydrate",
+    "path": "data/reagents/1202867-00-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "1206711-16-1",
+    "name": "DMH1",
+    "path": "data/reagents/1206711-16-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "122320-73-4",
+    "name": "Rosiglitazone",
+    "path": "data/reagents/122320-73-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "1232410-49-9",
+    "name": "VE-821",
+    "path": "data/reagents/1232410-49-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "1233339-22-4",
+    "name": "ZSTK474",
+    "path": "data/reagents/1233339-22-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "1239-45-8",
+    "name": "Ethidium bromide solution",
+    "path": "data/reagents/1239-45-8.json",
+    "schema_version": "2.0",
+    "category": "fluorophore"
+  },
+  {
+    "cas": "124-20-9",
+    "name": "Spermidine",
+    "path": "data/reagents/124-20-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "126150-97-8",
+    "name": "BAPTA-AM",
+    "path": "data/reagents/126150-97-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "1266615-59-1",
+    "name": "MES hydrate",
+    "path": "data/reagents/1266615-59-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "1268524-70-4",
+    "name": "(+)-JQ1",
+    "path": "data/reagents/1268524-70-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "127-07-1",
+    "name": "Hydroxyurea",
+    "path": "data/reagents/127-07-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "128-53-0",
+    "name": "N-Ethylmaleimide",
+    "path": "data/reagents/128-53-0.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "128517-07-7",
+    "name": "Romidepsin",
+    "path": "data/reagents/128517-07-7.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "129-56-6",
+    "name": "SP600125",
+    "path": "data/reagents/129-56-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "129830-38-2",
+    "name": "Y-27632 dihydrochloride",
+    "path": "data/reagents/129830-38-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "1310-58-3",
+    "name": "POTASSIUM HYDROXIDE PELLET",
+    "path": "data/reagents/1310-58-3.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "1310-73-2",
+    "name": "Sodium hydroxide",
+    "path": "data/reagents/1310-73-2.json",
+    "schema_version": "2.0",
+    "category": "hygroscopic_solid"
+  },
+  {
+    "cas": "56092-82-1",
+    "name": "Ionomycin calcium salt, from Streptomyces",
+    "path": "data/reagents/1315085-41-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "131740-09-5",
+    "name": "Flavopiridol hydrochloride hydrate",
+    "path": "data/reagents/131740-09-5.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "13292-46-1",
+    "name": "Rifampicin",
+    "path": "data/reagents/13292-46-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "133407-82-6",
+    "name": "Z-Leu-Leu-Leu-al",
+    "path": "data/reagents/133407-82-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "134381-21-8",
+    "name": "Epoxomicin",
+    "path": "data/reagents/134381-21-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "1346704-33-3",
+    "name": "GSK343",
+    "path": "data/reagents/1346704-33-3.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "13472-35-0",
+    "name": "Sodium phosphate monobasic dihydrate",
+    "path": "data/reagents/13472-35-0.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "137-58-6",
+    "name": "Lidocaine",
+    "path": "data/reagents/137-58-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "13721-39-6",
+    "name": "Sodium orthovanadate",
+    "path": "data/reagents/13721-39-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "13746-66-2",
+    "name": "Potassium hexacyanoferrate(III)",
+    "path": "data/reagents/13746-66-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "13803-65-1",
+    "name": "Anhydrotetracycline hydrochloride",
+    "path": "data/reagents/13803-65-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "13957-31-8",
+    "name": "4-Thiouridine",
+    "path": "data/reagents/13957-31-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "1397-89-3",
+    "name": "Amphotericin B solution",
+    "path": "data/reagents/1397-89-3.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "141-43-5",
+    "name": "Ethanolamine",
+    "path": "data/reagents/141-43-5.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "141-78-6",
+    "name": "Ethyl acetate",
+    "path": "data/reagents/141-78-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "1418013-75-8",
+    "name": "NMS-873",
+    "path": "data/reagents/1418013-75-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "142-82-5",
+    "name": "Heptane",
+    "path": "data/reagents/142-82-5.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "1421-86-9",
+    "name": "Strychnine hydrochloride",
+    "path": "data/reagents/1421-86-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "1320-06-5",
+    "name": "Oil Red O",
+    "path": "data/reagents/14288-70-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "143-74-8",
+    "name": "Phenol Red",
+    "path": "data/reagents/143-74-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "1431612-23-5",
+    "name": "UNC1999",
+    "path": "data/reagents/1431612-23-5.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "144-48-9",
+    "name": "Iodoacetamide",
+    "path": "data/reagents/144-48-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "144875-48-9",
+    "name": "Resiquimod",
+    "path": "data/reagents/144875-48-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "14639-81-7",
+    "name": "Calcium chloride solution ~1 M in H2O",
+    "path": "data/reagents/14639-81-7.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "1469924-27-3",
+    "name": "Atglistatin",
+    "path": "data/reagents/1469924-27-3.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "5328-37-0",
+    "name": "L-(+)-Arabinose",
+    "path": "data/reagents/147-81-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "147-94-4",
+    "name": "Cytosine \u03b2-D-arabinofuranoside",
+    "path": "data/reagents/147-94-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "14930-96-2",
+    "name": "Cytochalasin B, from Drechslera dematioidea",
+    "path": "data/reagents/14930-96-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "149647-78-9",
+    "name": "SAHA",
+    "path": "data/reagents/149647-78-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "15086-94-9",
+    "name": "Eosin Y",
+    "path": "data/reagents/15086-94-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "151-21-3",
+    "name": "Sodium dodecyl sulfate",
+    "path": "data/reagents/151-21-3.json",
+    "schema_version": "2.0",
+    "category": "detergent"
+  },
+  {
+    "cas": "151-50-8",
+    "name": "Potassium cyanide",
+    "path": "data/reagents/151-50-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "1510-21-0",
+    "name": "Cholesteryl hemisuccinate",
+    "path": "data/reagents/1510-21-0.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "152-11-4",
+    "name": "(\u00b1)-Verapamil hydrochloride",
+    "path": "data/reagents/152-11-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "152121-30-7",
+    "name": "SB 202190",
+    "path": "data/reagents/152121-30-7.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "152121-47-6",
+    "name": "SB 203580",
+    "path": "data/reagents/152121-47-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "154-17-6",
+    "name": "2-Deoxy-D-glucose",
+    "path": "data/reagents/154-17-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "154039-60-8",
+    "name": "Marimastat",
+    "path": "data/reagents/154039-60-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "934389-88-5",
+    "name": "LY-294,002 hydrochloride",
+    "path": "data/reagents/154447-36-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "151-21-3",
+    "name": "Sodium dodecyl sulfate",
+    "path": "data/reagents/155614-07-6.json",
+    "schema_version": "2.0",
+    "category": "detergent"
+  },
+  {
+    "cas": "15715-58-9",
+    "name": "Triethylammonium bicarbonate",
+    "path": "data/reagents/15715-58-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "1597403-47-8",
+    "name": "ISRIB",
+    "path": "data/reagents/1597403-47-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "16052-06-5",
+    "name": "EPPS",
+    "path": "data/reagents/16052-06-5.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "1609-47-8",
+    "name": "Diethyl pyrocarbonate",
+    "path": "data/reagents/1609-47-8.json",
+    "schema_version": "2.0",
+    "category": "volatile_solvent"
+  },
+  {
+    "cas": "16393-49-0",
+    "name": "Ammonium hydroxide solution",
+    "path": "data/reagents/16393-49-0.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "16561-29-8",
+    "name": "Phorbol 12-myristate 13-acetate",
+    "path": "data/reagents/16561-29-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "16595-80-5",
+    "name": "Levamisole hydrochloride",
+    "path": "data/reagents/16595-80-5.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "1670-14-0",
+    "name": "Benzamidine hydrochloride",
+    "path": "data/reagents/1670-14-0.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "167869-21-8",
+    "name": "PD 98,059",
+    "path": "data/reagents/167869-21-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "16980-89-5",
+    "name": "N6,2\u2032-O-Dibutyryladenosine 3\u2032,5\u2032-cyclic",
+    "path": "data/reagents/16980-89-5.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "1713265-25-8",
+    "name": "L-Ascorbic acid 2-phosphate",
+    "path": "data/reagents/1713265-25-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "186689-07-6",
+    "name": "2-deoxy-2-[(7-nitro-2,1,3-benzoxadiazol-4-",
+    "path": "data/reagents/186689-07-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "186692-46-6",
+    "name": "Roscovitine",
+    "path": "data/reagents/186692-46-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "18883-66-4",
+    "name": "Streptozocin",
+    "path": "data/reagents/18883-66-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "19333-65-4",
+    "name": "Phosphocreatine disodium salt hydrate",
+    "path": "data/reagents/19333-65-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "606-68-8",
+    "name": "\u03b2-Nicotinamide adenine dinucleotide, reduced",
+    "path": "data/reagents/1949720-50-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "19542-67-7",
+    "name": "Bay 11-7082",
+    "path": "data/reagents/19542-67-7.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "19545-26-7",
+    "name": "Wortmannin",
+    "path": "data/reagents/19545-26-7.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "19817-92-6",
+    "name": "Uridine 5\u2032-triphosphate sodium",
+    "path": "data/reagents/19817-92-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "2001-95-8",
+    "name": "Valinomycin",
+    "path": "data/reagents/2001-95-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "206752-36-5",
+    "name": "Benzamidine hydrochloride hydrate",
+    "path": "data/reagents/206752-36-5.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "2140-46-7",
+    "name": "25-Hydroxycholesterol",
+    "path": "data/reagents/2140-46-7.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "218137-86-1",
+    "name": "C75",
+    "path": "data/reagents/218137-86-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "21829-25-4",
+    "name": "Nifedipine",
+    "path": "data/reagents/21829-25-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "219911-35-0",
+    "name": "6-Methyl-2-(phenylethynyl)pyridine",
+    "path": "data/reagents/219911-35-0.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "220141-70-8",
+    "name": "5-Fluoroorotic acid monohydrate",
+    "path": "data/reagents/220141-70-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "22144-77-0",
+    "name": "Cytochalasin D",
+    "path": "data/reagents/22144-77-0.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "22189-32-8",
+    "name": "Spectinomycin dihydrochloride pentahydrate",
+    "path": "data/reagents/22189-32-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "22862-76-6",
+    "name": "Anisomycin, from Streptomyces griseolus",
+    "path": "data/reagents/22862-76-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "2315-67-5",
+    "name": "Triton X-100",
+    "path": "data/reagents/2315-67-5.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "2353-45-9",
+    "name": "Fast Green FCF",
+    "path": "data/reagents/2353-45-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "2379-57-9",
+    "name": "DNQX",
+    "path": "data/reagents/2379-57-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "2390-54-7",
+    "name": "Thioflavin T",
+    "path": "data/reagents/2390-54-7.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "24280-93-1",
+    "name": "Mycophenolic acid",
+    "path": "data/reagents/24280-93-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "2497-59-8",
+    "name": "Triton\u2122 X-100",
+    "path": "data/reagents/2497-59-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "252917-06-9",
+    "name": "CHIR99021",
+    "path": "data/reagents/252917-06-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "25316-40-9",
+    "name": "Doxorubicin hydrochloride",
+    "path": "data/reagents/25316-40-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "25322-68-3",
+    "name": "Poly(ethylene glycol)",
+    "path": "data/reagents/25322-68-3.json",
+    "schema_version": "2.0",
+    "category": "viscous_reagent"
+  },
+  {
+    "cas": "25389-94-0",
+    "name": "Kanamycin sulfate, from Streptomyces",
+    "path": "data/reagents/25389-94-0.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "25843-45-2",
+    "name": "Azoxymethane",
+    "path": "data/reagents/25843-45-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "26305-03-3",
+    "name": "Pepstatin A",
+    "path": "data/reagents/26305-03-3.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "2645-32-1",
+    "name": "PR-619",
+    "path": "data/reagents/2645-32-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "59-23-4",
+    "name": "D-(+)-Galactose",
+    "path": "data/reagents/26566-61-0.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "26833-87-4",
+    "name": "Omacetaxine mepesuccinate",
+    "path": "data/reagents/26833-87-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "26993-30-6",
+    "name": "Sphingosine 1-phosphate",
+    "path": "data/reagents/26993-30-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "2738-64-9",
+    "name": "Piericidin A, from microbial source",
+    "path": "data/reagents/2738-64-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "27565-41-9",
+    "name": "DL-Dithiothreitol solution",
+    "path": "data/reagents/27565-41-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "2763-96-4",
+    "name": "Muscimol",
+    "path": "data/reagents/2763-96-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "16941-32-5",
+    "name": "Glucagon",
+    "path": "data/reagents/28270-04-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "284028-89-3",
+    "name": "XAV939",
+    "path": "data/reagents/284028-89-3.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "28643-80-3",
+    "name": "Nigericin sodium salt",
+    "path": "data/reagents/28643-80-3.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "28718-90-3",
+    "name": "DAPI",
+    "path": "data/reagents/28718-90-3.json",
+    "schema_version": "2.0",
+    "category": "fluorophore"
+  },
+  {
+    "cas": "288-32-4",
+    "name": "Imidazole",
+    "path": "data/reagents/288-32-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "28822-58-4",
+    "name": "3-Isobutyl-1-methylxanthine",
+    "path": "data/reagents/28822-58-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "298-93-1",
+    "name": "Thiazolyl Blue Tetrazolium Bromide",
+    "path": "data/reagents/298-93-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "29836-26-8",
+    "name": "Octyl \u03b2-D-glucopyranoside",
+    "path": "data/reagents/29836-26-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "299-27-4",
+    "name": "Potassium D-gluconate",
+    "path": "data/reagents/299-27-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "299953-00-7",
+    "name": "Mirin",
+    "path": "data/reagents/299953-00-7.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "302-79-4",
+    "name": "Retinoic acid",
+    "path": "data/reagents/302-79-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "302-95-4",
+    "name": "Sodium deoxycholate",
+    "path": "data/reagents/302-95-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "3031-94-5",
+    "name": "AICAR (AICA ribotide)",
+    "path": "data/reagents/3031-94-5.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "30525-89-4",
+    "name": "Paraformaldehyde",
+    "path": "data/reagents/30525-89-4.json",
+    "schema_version": "2.0",
+    "category": "fixative"
+  },
+  {
+    "cas": "30827-99-7",
+    "name": "4-(2-Aminoethyl)benzenesulfonyl fluoride",
+    "path": "data/reagents/30827-99-7.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "314045-39-1",
+    "name": "BPTES",
+    "path": "data/reagents/314045-39-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "31430-18-9",
+    "name": "Nocodazole",
+    "path": "data/reagents/31430-18-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "319460-85-0",
+    "name": "Axitinib",
+    "path": "data/reagents/319460-85-0.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "320-67-2",
+    "name": "5-Azacytidine",
+    "path": "data/reagents/320-67-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "329-98-6",
+    "name": "Phenylmethanesulfonyl fluoride",
+    "path": "data/reagents/329-98-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "254753-54-3",
+    "name": "Monastrol",
+    "path": "data/reagents/329689-23-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "33069-62-4",
+    "name": "Paclitaxel",
+    "path": "data/reagents/33069-62-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "333-93-7",
+    "name": "Putrescine dihydrochloride",
+    "path": "data/reagents/333-93-7.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "334-50-9",
+    "name": "Spermidine trihydrochloride",
+    "path": "data/reagents/334-50-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "33419-42-0",
+    "name": "Etoposide",
+    "path": "data/reagents/33419-42-0.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "338967-87-6",
+    "name": "Mdivi-1",
+    "path": "data/reagents/338967-87-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "34233-69-7",
+    "name": "Clozapine N-oxide",
+    "path": "data/reagents/34233-69-7.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "34369-07-8",
+    "name": "Adenosine 5\u2032-triphosphate disodium salt",
+    "path": "data/reagents/34369-07-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "3483-12-3",
+    "name": "DL-Dithiothreitol",
+    "path": "data/reagents/3483-12-3.json",
+    "schema_version": "2.0",
+    "category": "reducing_agent"
+  },
+  {
+    "cas": "35891-70-4",
+    "name": "Myriocin From Mycelia Sterilia",
+    "path": "data/reagents/35891-70-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "36051-68-0",
+    "name": "Cytidine 5\u2032-triphosphate disodium salt",
+    "path": "data/reagents/36051-68-0.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "363-24-6",
+    "name": "Prostaglandin E2",
+    "path": "data/reagents/363-24-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "364-98-7",
+    "name": "Diazoxide",
+    "path": "data/reagents/364-98-7.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "367-93-1",
+    "name": "Isopropyl \u03b2-D-thiogalactopyranoside solution",
+    "path": "data/reagents/367-93-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "370-86-5",
+    "name": "Carbonyl cyanide 4-",
+    "path": "data/reagents/370-86-5.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "298-83-9",
+    "name": "Nitro Blue Tetrazolium",
+    "path": "data/reagents/38184-50-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "38966-21-1",
+    "name": "Aphidicolin, from Nigrospora sphaerica",
+    "path": "data/reagents/38966-21-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "3902-71-4",
+    "name": "Trioxsalen",
+    "path": "data/reagents/3902-71-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "391210-10-9",
+    "name": "PD 0325901",
+    "path": "data/reagents/391210-10-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "39537-23-0",
+    "name": "Ala-Gln",
+    "path": "data/reagents/39537-23-0.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": null,
+    "name": "3C Protease",
+    "path": "data/reagents/3c-protease.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": "404-86-4",
+    "name": "Capsaicin",
+    "path": "data/reagents/404-86-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "40709-69-1",
+    "name": "1(S),9(R)-(\u2212)-Bicuculline methiodide",
+    "path": "data/reagents/40709-69-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "4091-99-0",
+    "name": "2',7'-Dichlorodihydrofluorescein diacetate",
+    "path": "data/reagents/4091-99-0.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "4197-25-5",
+    "name": "Sudan Black B",
+    "path": "data/reagents/4197-25-5.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "4265-07-0",
+    "name": "Phospho(enol)pyruvic acid monopotassium",
+    "path": "data/reagents/4265-07-0.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "4311-88-0",
+    "name": "Necrostatin-1",
+    "path": "data/reagents/4311-88-0.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "434-13-9",
+    "name": "Lithocholic acid",
+    "path": "data/reagents/434-13-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "443-48-1",
+    "name": "Metronidazole",
+    "path": "data/reagents/443-48-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "68521-88-0",
+    "name": "ProteoMass\u2122 Angiotensin II MALDI-MS",
+    "path": "data/reagents/4474-91-3.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "4697-36-3",
+    "name": "Carbenicillin",
+    "path": "data/reagents/4697-36-3.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "47326-86-3",
+    "name": "Chlorhexidine diacetate",
+    "path": "data/reagents/47326-86-3.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "477-30-5",
+    "name": "DEMECOLCINE SOLUTION 10 UG/ML",
+    "path": "data/reagents/477-30-5.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "4800-94-6",
+    "name": "Carbenicillin disodium salt",
+    "path": "data/reagents/4800-94-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "487-60-5",
+    "name": "Indoxyl \u03b2-D-glucoside",
+    "path": "data/reagents/487-60-5.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "492-27-3",
+    "name": "Kynurenic acid",
+    "path": "data/reagents/492-27-3.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "50-99-7",
+    "name": "D-(+)-Glucose",
+    "path": "data/reagents/492-62-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "497-19-8",
+    "name": "Sodium carbonate",
+    "path": "data/reagents/497-19-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "50-00-0",
+    "name": "Formaldehyde solution, 36.5-38%",
+    "path": "data/reagents/50-00-0.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "50-01-1",
+    "name": "Guanidine hydrochloride",
+    "path": "data/reagents/50-01-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "50-02-2",
+    "name": "Dexamethasone",
+    "path": "data/reagents/50-02-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "50-07-7",
+    "name": "Mitomycin C, from Streptomyces caespitosus",
+    "path": "data/reagents/50-07-7.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "50-23-7",
+    "name": "Hydrocortisone",
+    "path": "data/reagents/50-23-7.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "50-28-2",
+    "name": "\u03b2-Estradiol",
+    "path": "data/reagents/50-28-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "50-67-9",
+    "name": "Serotonin",
+    "path": "data/reagents/50-67-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "50-76-0",
+    "name": "Dactinomycin",
+    "path": "data/reagents/50-76-0.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "50-81-7",
+    "name": "L-Ascorbic acid",
+    "path": "data/reagents/50-81-7.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "50-89-5",
+    "name": "Thymidine",
+    "path": "data/reagents/50-89-5.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "50-90-8",
+    "name": "5-Chloro-2\u2032-deoxyuridine",
+    "path": "data/reagents/50-90-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "50-91-9",
+    "name": "5-Fluoro-2\u2032-deoxyuridine",
+    "path": "data/reagents/50-91-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "506-32-1",
+    "name": "Arachidonic acid",
+    "path": "data/reagents/506-32-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "50909-86-9",
+    "name": "Coelenterazine h",
+    "path": "data/reagents/50909-86-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "51-21-8",
+    "name": "5-Fluorouracil",
+    "path": "data/reagents/51-21-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "51-41-2",
+    "name": "Norepinephrine",
+    "path": "data/reagents/51-41-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "51-45-6",
+    "name": "Histamine",
+    "path": "data/reagents/51-45-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "51-55-8",
+    "name": "Atropine",
+    "path": "data/reagents/51-55-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "51-79-6",
+    "name": "Urethane",
+    "path": "data/reagents/51-79-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "51-83-2",
+    "name": "Carbamoylcholine chloride",
+    "path": "data/reagents/51-83-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "5142-23-4",
+    "name": "3-Methyladenine",
+    "path": "data/reagents/5142-23-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "517-28-2",
+    "name": "Hematoxylin",
+    "path": "data/reagents/517-28-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "51805-45-9",
+    "name": "Tris(2-carboxyethyl)phosphine hydrochloride",
+    "path": "data/reagents/51805-45-9.json",
+    "schema_version": "2.0",
+    "category": "reducing_agent"
+  },
+  {
+    "cas": "52-90-4",
+    "name": "L-Cysteine",
+    "path": "data/reagents/52-90-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "53-84-9",
+    "name": "\u03b2-Nicotinamide adenine dinucleotide hydrate",
+    "path": "data/reagents/53-84-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "53-85-0",
+    "name": "5,6-Dichlorobenzimidazole 1-\u03b2-D-",
+    "path": "data/reagents/53-85-0.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "53-86-1",
+    "name": "Indomethacin",
+    "path": "data/reagents/53-86-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "53123-88-9",
+    "name": "Rapamycin, from Streptomyces",
+    "path": "data/reagents/53123-88-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "533-48-2",
+    "name": "d-Desthiobiotin",
+    "path": "data/reagents/533-48-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "54-42-2",
+    "name": "5-Iodo-2\u2032-deoxyuridine",
+    "path": "data/reagents/54-42-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "54-71-7",
+    "name": "Pilocarpine hydrochloride",
+    "path": "data/reagents/54-71-7.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "541-15-1",
+    "name": "L-Carnitine",
+    "path": "data/reagents/541-15-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "1401-55-4",
+    "name": "Tannic acid",
+    "path": "data/reagents/5424-20-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "548-62-9",
+    "name": "Crystal Violet",
+    "path": "data/reagents/548-62-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "675576-98-4",
+    "name": "Nutlin-3a",
+    "path": "data/reagents/548472-68-0.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "54857-86-2",
+    "name": "TOFA",
+    "path": "data/reagents/54857-86-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "55-06-1",
+    "name": "3,3\u2032,5-Triiodo-L-thyronine sodium salt",
+    "path": "data/reagents/55-06-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "55-98-1",
+    "name": "Busulfan",
+    "path": "data/reagents/55-98-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "555-60-2",
+    "name": "Carbonyl cyanide 3-chlorophenylhydrazone",
+    "path": "data/reagents/555-60-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "55779-48-1",
+    "name": "Coelenterazine, native",
+    "path": "data/reagents/55779-48-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "56-34-8",
+    "name": "Tetraethylammonium chloride",
+    "path": "data/reagents/56-34-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "56-38-2",
+    "name": "Parathion",
+    "path": "data/reagents/56-38-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "56-40-6",
+    "name": "Glycine",
+    "path": "data/reagents/56-40-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "56-41-7",
+    "name": "L-Alanine",
+    "path": "data/reagents/56-41-7.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "56-45-1",
+    "name": "L-Serine",
+    "path": "data/reagents/56-45-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "56-75-7",
+    "name": "Chloramphenicol",
+    "path": "data/reagents/56-75-7.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "56-81-5",
+    "name": "Glycerol",
+    "path": "data/reagents/56-81-5.json",
+    "schema_version": "2.0",
+    "category": "viscous_reagent"
+  },
+  {
+    "cas": "56-84-8",
+    "name": "L-Aspartic acid",
+    "path": "data/reagents/56-84-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "56-85-9",
+    "name": "L-Glutamine",
+    "path": "data/reagents/56-85-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "56-86-0",
+    "name": "L-Glutamic acid",
+    "path": "data/reagents/56-86-0.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "56-87-1",
+    "name": "L-Lysine",
+    "path": "data/reagents/56-87-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "56-92-8",
+    "name": "Histamine dihydrochloride",
+    "path": "data/reagents/56-92-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "5625-37-6",
+    "name": "PIPES",
+    "path": "data/reagents/5625-37-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "56396-35-1",
+    "name": "UK-5099",
+    "path": "data/reagents/56396-35-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "57-10-3",
+    "name": "Palmitic acid",
+    "path": "data/reagents/57-10-3.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "57-13-6",
+    "name": "Urea",
+    "path": "data/reagents/57-13-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "57-24-9",
+    "name": "Strychnine",
+    "path": "data/reagents/57-24-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "57-50-1",
+    "name": "Sucrose",
+    "path": "data/reagents/57-50-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "57-55-6",
+    "name": "1,2-Propanediol",
+    "path": "data/reagents/57-55-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "57-66-9",
+    "name": "Probenecid",
+    "path": "data/reagents/57-66-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "57-83-0",
+    "name": "Progesterone",
+    "path": "data/reagents/57-83-0.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "57-88-5",
+    "name": "Cholesterol",
+    "path": "data/reagents/57-88-5.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "571203-78-6",
+    "name": "Erastin",
+    "path": "data/reagents/571203-78-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "576-19-2",
+    "name": "Biocytin",
+    "path": "data/reagents/576-19-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "58-08-2",
+    "name": "Caffeine",
+    "path": "data/reagents/58-08-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "58-58-2",
+    "name": "Puromycin dihydrochloride, from",
+    "path": "data/reagents/58-58-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "58-61-7",
+    "name": "Adenosine",
+    "path": "data/reagents/58-61-7.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "58-63-9",
+    "name": "Inosine",
+    "path": "data/reagents/58-63-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "58-85-5",
+    "name": "Biotin",
+    "path": "data/reagents/58-85-5.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "58-96-8",
+    "name": "Uridine",
+    "path": "data/reagents/58-96-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "581-88-4",
+    "name": "Debrisoquine sulfate",
+    "path": "data/reagents/581-88-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "584-79-2",
+    "name": "Esbiothrin",
+    "path": "data/reagents/584-79-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "587871-26-9",
+    "name": "KU-55933",
+    "path": "data/reagents/587871-26-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "58880-19-6",
+    "name": "Trichostatin A",
+    "path": "data/reagents/58880-19-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "59-14-3",
+    "name": "5-Bromo-2\u2032-deoxyuridine",
+    "path": "data/reagents/59-14-3.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "59467-70-8",
+    "name": "Midazolam",
+    "path": "data/reagents/59467-70-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "59721-29-8",
+    "name": "Camostat mesylate",
+    "path": "data/reagents/59721-29-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "5984-95-2",
+    "name": "(\u2212)-Isoproterenol hydrochloride",
+    "path": "data/reagents/5984-95-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "59865-13-3",
+    "name": "Cyclosporin A",
+    "path": "data/reagents/59865-13-3.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "60-00-4",
+    "name": "Ethylenediaminetetraacetic acid",
+    "path": "data/reagents/60-00-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "60-24-2",
+    "name": "2-Mercaptoethanol",
+    "path": "data/reagents/60-24-2.json",
+    "schema_version": "2.0",
+    "category": "reducing_agent"
+  },
+  {
+    "cas": "60-29-7",
+    "name": "Diethyl ether",
+    "path": "data/reagents/60-29-7.json",
+    "schema_version": "2.0",
+    "category": "volatile_solvent"
+  },
+  {
+    "cas": "60-33-3",
+    "name": "Linoleic acid",
+    "path": "data/reagents/60-33-3.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "60-92-4",
+    "name": "Adenosine 3\u2032,5\u2032-cyclic monophosphate",
+    "path": "data/reagents/60-92-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "6055-19-2",
+    "name": "Cyclophosphamide monohydrate",
+    "path": "data/reagents/6055-19-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "6131-99-3",
+    "name": "Sodium cacodylate trihydrate",
+    "path": "data/reagents/6131-99-3.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "6132-04-3",
+    "name": "Sodium citrate dihydrate",
+    "path": "data/reagents/6132-04-3.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "6138-23-4",
+    "name": "D-(+)-Trehalose dihydrate",
+    "path": "data/reagents/6138-23-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "616-91-1",
+    "name": "N-Acetyl-L-cysteine",
+    "path": "data/reagents/616-91-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "62-56-6",
+    "name": "Thiourea",
+    "path": "data/reagents/62-56-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "62758-13-8",
+    "name": "Resazurin sodium salt",
+    "path": "data/reagents/62758-13-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "63-68-3",
+    "name": "L-Methionine",
+    "path": "data/reagents/63-68-3.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "63-91-2",
+    "name": "L-Phenylalanine",
+    "path": "data/reagents/63-91-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "635-65-4",
+    "name": "Bilirubin",
+    "path": "data/reagents/635-65-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "6381-92-6",
+    "name": "Ethylenediaminetetraacetic acid disodium salt",
+    "path": "data/reagents/6381-92-6.json",
+    "schema_version": "2.0",
+    "category": "hygroscopic_solid"
+  },
+  {
+    "cas": "6384-92-5",
+    "name": "N-Methyl-D-aspartic acid",
+    "path": "data/reagents/6384-92-5.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "64-17-5",
+    "name": "Ethyl Alcohol, pure",
+    "path": "data/reagents/64-17-5.json",
+    "schema_version": "2.0",
+    "category": "volatile_solvent"
+  },
+  {
+    "cas": "64-18-6",
+    "name": "Formic acid",
+    "path": "data/reagents/64-18-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "64-75-5",
+    "name": "Tetracycline hydrochloride",
+    "path": "data/reagents/64-75-5.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "64-86-8",
+    "name": "Colchicine",
+    "path": "data/reagents/64-86-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "65-46-3",
+    "name": "Cytidine",
+    "path": "data/reagents/65-46-3.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "6505-45-9",
+    "name": "Indole-3-acetic acid sodium salt",
+    "path": "data/reagents/6505-45-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "656820-32-5",
+    "name": "Reversine",
+    "path": "data/reagents/656820-32-5.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "657-27-2",
+    "name": "L-Lysine monohydrochloride",
+    "path": "data/reagents/657-27-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "66-22-8",
+    "name": "Uracil",
+    "path": "data/reagents/66-22-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "66-81-9",
+    "name": "Cycloheximide",
+    "path": "data/reagents/66-81-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "66108-95-0",
+    "name": "Histodenz\u2122",
+    "path": "data/reagents/66108-95-0.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "107-43-7",
+    "name": "Betaine",
+    "path": "data/reagents/6640-00-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "66575-29-9",
+    "name": "Forskolin",
+    "path": "data/reagents/66575-29-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "667463-62-9",
+    "name": "BIO",
+    "path": "data/reagents/667463-62-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "67-42-5",
+    "name": "Ethylene glycol-bis(2-aminoethylether)-",
+    "path": "data/reagents/67-42-5.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "67-63-0",
+    "name": "2-Propanol",
+    "path": "data/reagents/67-63-0.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "67-64-1",
+    "name": "Acetone",
+    "path": "data/reagents/67-64-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "67-66-3",
+    "name": "Chloroform",
+    "path": "data/reagents/67-66-3.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "67-68-5",
+    "name": "Dimethyl sulfoxide",
+    "path": "data/reagents/67-68-5.json",
+    "schema_version": "2.0",
+    "category": "dmso"
+  },
+  {
+    "cas": "67526-95-8",
+    "name": "Thapsigargin",
+    "path": "data/reagents/67526-95-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "548472-68-0",
+    "name": "Nutlin-3",
+    "path": "data/reagents/675576-97-3.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "68-04-2",
+    "name": "Trisodium citrate",
+    "path": "data/reagents/68-04-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "68-12-2",
+    "name": "N,N-Dimethylformamide",
+    "path": "data/reagents/68-12-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "68-41-7",
+    "name": "D-Cycloserine",
+    "path": "data/reagents/68-41-7.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "68-94-0",
+    "name": "Hypoxanthine",
+    "path": "data/reagents/68-94-0.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "68047-06-3",
+    "name": "(Z)-4-Hydroxytamoxifen",
+    "path": "data/reagents/68047-06-3.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "68310-57-6",
+    "name": "Triton X-100 potassium salt",
+    "path": "data/reagents/68310-57-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "6893-02-3",
+    "name": "3,3\u2032,5-Triiodo-L-thyronine",
+    "path": "data/reagents/6893-02-3.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "69-53-4",
+    "name": "Ampicillin",
+    "path": "data/reagents/69-53-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "69-65-8",
+    "name": "D-Mannitol",
+    "path": "data/reagents/69-65-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "69-89-6",
+    "name": "Xanthine",
+    "path": "data/reagents/69-89-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "69227-93-6",
+    "name": "n-Dodecyl \u03b2-D-maltoside",
+    "path": "data/reagents/69227-93-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "6976-37-0",
+    "name": "Bis-Tris",
+    "path": "data/reagents/6976-37-0.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "70-18-8",
+    "name": "L-Glutathione reduced",
+    "path": "data/reagents/70-18-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "70-47-3",
+    "name": "L-Asparagine",
+    "path": "data/reagents/70-47-3.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "316-42-7",
+    "name": "Emetine dihydrochloride",
+    "path": "data/reagents/7083-71-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "71-00-1",
+    "name": "L-Histidine",
+    "path": "data/reagents/71-00-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "71-44-3",
+    "name": "Spermine",
+    "path": "data/reagents/71-44-3.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "71203-35-5",
+    "name": "ML 141",
+    "path": "data/reagents/71203-35-5.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "39024-57-2",
+    "name": "[Leu15]-Gastrin I human",
+    "path": "data/reagents/71526-06-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "71827-03-7",
+    "name": "Ivermectin",
+    "path": "data/reagents/71827-03-7.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "72-18-4",
+    "name": "L-Valine",
+    "path": "data/reagents/72-18-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "72-19-5",
+    "name": "L-Threonine",
+    "path": "data/reagents/72-19-5.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "7240-90-6",
+    "name": "5-Bromo-4-chloro-3-indolyl \u03b2-D-",
+    "path": "data/reagents/7240-90-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "73-22-3",
+    "name": "L-Tryptophan",
+    "path": "data/reagents/73-22-3.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "73-24-5",
+    "name": "Adenine",
+    "path": "data/reagents/73-24-5.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "73-32-5",
+    "name": "L-Isoleucine",
+    "path": "data/reagents/73-32-5.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "27964-99-4",
+    "name": "Poly-D-lysine hydrobromide",
+    "path": "data/reagents/73565-55-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "7361-61-7",
+    "name": "Xylazine",
+    "path": "data/reagents/7361-61-7.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "7365-45-9",
+    "name": "HEPES",
+    "path": "data/reagents/7365-45-9.json",
+    "schema_version": "2.0",
+    "category": "hygroscopic_solid"
+  },
+  {
+    "cas": "738-70-5",
+    "name": "Trimethoprim",
+    "path": "data/reagents/738-70-5.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "74-79-3",
+    "name": "L-Arginine",
+    "path": "data/reagents/74-79-3.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "7447-40-7",
+    "name": "Potassium chloride",
+    "path": "data/reagents/7447-40-7.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "7447-41-8",
+    "name": "Lithium chloride",
+    "path": "data/reagents/7447-41-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "75-05-8",
+    "name": "Acetonitrile",
+    "path": "data/reagents/75-05-8.json",
+    "schema_version": "2.0",
+    "category": "volatile_solvent"
+  },
+  {
+    "cas": "75-09-2",
+    "name": "Dichloromethane",
+    "path": "data/reagents/75-09-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "75-12-7",
+    "name": "Formamide",
+    "path": "data/reagents/75-12-7.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "75330-75-5",
+    "name": "Mevinolin, from Aspergillus sp.",
+    "path": "data/reagents/75330-75-5.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "75621-03-3",
+    "name": "CHAPS, Molecular Biology Grade",
+    "path": "data/reagents/75621-03-3.json",
+    "schema_version": "2.0",
+    "category": "detergent"
+  },
+  {
+    "cas": "76-03-9",
+    "name": "Trichloroacetic acid",
+    "path": "data/reagents/76-03-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "76-05-1",
+    "name": "Trifluoroacetic acid",
+    "path": "data/reagents/76-05-1.json",
+    "schema_version": "2.0",
+    "category": "volatile_solvent"
+  },
+  {
+    "cas": "76326-31-3",
+    "name": "DL-2-Amino-5-phosphonopentanoic acid",
+    "path": "data/reagents/76326-31-3.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "76343-93-6",
+    "name": "Latrunculin A",
+    "path": "data/reagents/76343-93-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "76343-94-7",
+    "name": "Latrunculin B, from Latruncula magnifica",
+    "path": "data/reagents/76343-94-7.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "7646-85-7",
+    "name": "Zinc chloride",
+    "path": "data/reagents/7646-85-7.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "7647-01-0",
+    "name": "Hydrochloric acid",
+    "path": "data/reagents/7647-01-0.json",
+    "schema_version": "2.0",
+    "category": "volatile_solvent"
+  },
+  {
+    "cas": "7664-93-9",
+    "name": "Sulfuric acid",
+    "path": "data/reagents/7664-93-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "7681-52-9",
+    "name": "Sodium hypochlorite solution",
+    "path": "data/reagents/7681-52-9.json",
+    "schema_version": "2.0",
+    "category": "volatile_solvent"
+  },
+  {
+    "cas": "7689-03-4",
+    "name": "(S)-(+)-Camptothecin",
+    "path": "data/reagents/7689-03-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "77-78-1",
+    "name": "Dimethyl sulfate",
+    "path": "data/reagents/77-78-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "7722-84-1",
+    "name": "Hydrogen peroxide solution",
+    "path": "data/reagents/7722-84-1.json",
+    "schema_version": "2.0",
+    "category": "volatile_solvent"
+  },
+  {
+    "cas": "7732-18-5",
+    "name": "E-Toxate\u2122 Water",
+    "path": "data/reagents/7732-18-5.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "7758-11-4",
+    "name": "Potassium phosphate dibasic, anhydrous,",
+    "path": "data/reagents/7758-11-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "7784-46-5",
+    "name": "Sodium (meta)arsenite",
+    "path": "data/reagents/7784-46-5.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "7789-20-0",
+    "name": "DEUTERIUM OXIDE byproduct from",
+    "path": "data/reagents/7789-20-0.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "7791-18-6",
+    "name": "Magnesium chloride hexahydrate",
+    "path": "data/reagents/7791-18-6.json",
+    "schema_version": "2.0",
+    "category": "hygroscopic_solid"
+  },
+  {
+    "cas": "78-78-4",
+    "name": "2-Methylbutane",
+    "path": "data/reagents/78-78-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "78111-17-8",
+    "name": "Okadaic acid",
+    "path": "data/reagents/78111-17-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "78755-81-4",
+    "name": "Flumazenil",
+    "path": "data/reagents/78755-81-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "79-06-1",
+    "name": "Acrylamide",
+    "path": "data/reagents/79-06-1.json",
+    "schema_version": "2.0",
+    "category": "hygroscopic_solid"
+  },
+  {
+    "cas": "79-09-4",
+    "name": "Propionic acid",
+    "path": "data/reagents/79-09-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "79-31-2",
+    "name": "Isobutyric acid",
+    "path": "data/reagents/79-31-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "79642-50-5",
+    "name": "Disuccinimidyl glutarate",
+    "path": "data/reagents/79642-50-5.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "79902-63-9",
+    "name": "Simvastatin",
+    "path": "data/reagents/79902-63-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "8063-07-8",
+    "name": "Kanamycin solution, from Streptomyces",
+    "path": "data/reagents/8063-07-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "819-83-0",
+    "name": "Disodium glycerophosphate",
+    "path": "data/reagents/819-83-0.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "82410-32-0",
+    "name": "Ganciclovir",
+    "path": "data/reagents/82410-32-0.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "83-44-3",
+    "name": "Deoxycholic acid",
+    "path": "data/reagents/83-44-3.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "83-79-4",
+    "name": "Rotenone",
+    "path": "data/reagents/83-79-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "834-28-6",
+    "name": "Phenformin hydrochloride",
+    "path": "data/reagents/834-28-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "84371-65-3",
+    "name": "Mifepristone",
+    "path": "data/reagents/84371-65-3.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "85622-93-1",
+    "name": "Temozolomide",
+    "path": "data/reagents/85622-93-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "856925-71-8",
+    "name": "(\u2212)-Blebbistatin",
+    "path": "data/reagents/856925-71-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "85721-33-1",
+    "name": "Ciprofloxacin",
+    "path": "data/reagents/85721-33-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "866405-64-3",
+    "name": "Dorsomorphin",
+    "path": "data/reagents/866405-64-3.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "87-51-4",
+    "name": "3-Indoleacetic acid",
+    "path": "data/reagents/87-51-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "88-89-1",
+    "name": "Picric acid",
+    "path": "data/reagents/88-89-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "88321-09-9",
+    "name": "E-64d",
+    "path": "data/reagents/88321-09-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "9005-64-5",
+    "name": "TWEEN\u00ae 20",
+    "path": "data/reagents/9005-64-5.json",
+    "schema_version": "2.0",
+    "category": "detergent"
+  },
+  {
+    "cas": "9012-90-2",
+    "name": "Taq DNA Polymerase, from Thermus",
+    "path": "data/reagents/9012-90-2.json",
+    "schema_version": "2.0",
+    "category": "enzyme_glycerol"
+  },
+  {
+    "cas": "9036-19-5",
+    "name": "Triton\u2122 X-100",
+    "path": "data/reagents/9036-19-5.json",
+    "schema_version": "2.0",
+    "category": "detergent"
+  },
+  {
+    "cas": "912545-86-9",
+    "name": "SAG 1.3 (Smoothened agonist)",
+    "path": "data/reagents/912545-86-9.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "92339-11-2",
+    "name": "OptiPrep\u2122 Density Gradient Medium",
+    "path": "data/reagents/92339-11-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "92557-81-8",
+    "name": "6-Carboxyfluorescein succinimidyl ester",
+    "path": "data/reagents/92557-81-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "93211-80-4",
+    "name": "Giemsa Stain, Modified Solution",
+    "path": "data/reagents/93211-80-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "93777-65-2",
+    "name": "EGTA-Tris (Tris-EGTA)",
+    "path": "data/reagents/93777-65-2.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "96-27-5",
+    "name": "Thioglycerol",
+    "path": "data/reagents/96-27-5.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "96-49-1",
+    "name": "Ethylene carbonate",
+    "path": "data/reagents/96-49-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "97-16-5",
+    "name": "Genite",
+    "path": "data/reagents/97-16-5.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "97-67-6",
+    "name": "L-(\u2212)-Malic acid",
+    "path": "data/reagents/97-67-6.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "83730-53-4",
+    "name": "L-Buthionine-sulfoximine",
+    "path": "data/reagents/97590-40-4.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "98-92-0",
+    "name": "Nicotinamide",
+    "path": "data/reagents/98-92-0.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "98849-88-8",
+    "name": "FLAG\u00ae Peptide",
+    "path": "data/reagents/98849-88-8.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": "99-66-1",
+    "name": "2-Propylpentanoic acid",
+    "path": "data/reagents/99-66-1.json",
+    "schema_version": "2.0",
+    "category": null
+  },
+  {
+    "cas": null,
+    "name": "Accutase",
+    "path": "data/reagents/accutase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Actev Protease",
+    "path": "data/reagents/actev-protease.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Albumin From Chicken Egg White",
+    "path": "data/reagents/albumin-from-chicken-egg-white.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Alexa Fluor 488 Phalloidin",
+    "path": "data/reagents/alexa-fluor-488-phalloidin.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Alexa Fluor 647 Phalloidin",
+    "path": "data/reagents/alexa-fluor-647-phalloidin.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Alpha Lytic Protease",
+    "path": "data/reagents/alpha-lytic-protease.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Alt-R S.P. Cas9 Nuclease V3",
+    "path": "data/reagents/alt-r-s-p-cas9-nuclease-v3.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Antarctic Phosphatase",
+    "path": "data/reagents/antarctic-phosphatase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Anti-Adherence Rinsing Solution",
+    "path": "data/reagents/anti-adherence-rinsing-solution.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Anti-Biotin Microbeads",
+    "path": "data/reagents/anti-biotin-microbeads.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Anti-Flag M2 Affinity Gel",
+    "path": "data/reagents/anti-flag-m2-affinity-gel.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Anti-Flag M2 Agarose Resin",
+    "path": "data/reagents/anti-flag-m2-agarose-resin.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Anti-Flag M2 Magnetic Beads",
+    "path": "data/reagents/anti-flag-m2-magnetic-beads.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Anti-Ha Magnetic Beads",
+    "path": "data/reagents/anti-ha-magnetic-beads.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Anti-Pe Microbeads",
+    "path": "data/reagents/anti-pe-microbeads.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Antibody Diluent",
+    "path": "data/reagents/antibody-diluent.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "B27 Supplement Without Vitamin A",
+    "path": "data/reagents/b27-supplement-without-vitamin-a.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "B27 Supplement",
+    "path": "data/reagents/b27-supplement.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Basic Fibroblast Growth Factor",
+    "path": "data/reagents/basic-fibroblast-growth-factor.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Bdnf",
+    "path": "data/reagents/bdnf.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Benzonase",
+    "path": "data/reagents/benzonase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Blasticidin S Hydrochloride",
+    "path": "data/reagents/blasticidin-s-hydrochloride.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Blasticidin",
+    "path": "data/reagents/blasticidin.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Bovine Calf Serum",
+    "path": "data/reagents/bovine-calf-serum.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Bovine Growth Serum",
+    "path": "data/reagents/bovine-growth-serum.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Bovine Serum Albumin",
+    "path": "data/reagents/bovine-serum-albumin.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Bright-Glo Luciferase Assay System",
+    "path": "data/reagents/bright-glo-luciferase-assay-system.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Cas9 Protein",
+    "path": "data/reagents/cas9-protein.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Cas9",
+    "path": "data/reagents/cas9.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Catalase",
+    "path": "data/reagents/catalase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Chicken Serum",
+    "path": "data/reagents/chicken-serum.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Chymotrypsin",
+    "path": "data/reagents/chymotrypsin.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Circligase Ssdna Ligase",
+    "path": "data/reagents/circligase-ssdna-ligase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Cntf",
+    "path": "data/reagents/cntf.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Collagenase Iv",
+    "path": "data/reagents/collagenase-iv.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Complete, Edta-Free Protease Inhibitor Cocktail Tablets",
+    "path": "data/reagents/complete-edta-free-protease-inhibitor-cocktail-tablets.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Complete, Edta-Free Protease Inhibitor Cocktail",
+    "path": "data/reagents/complete-edta-free-protease-inhibitor-cocktail.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Complete \u2122 , Mini, Edta-Free Protease Inhibitor Cocktail",
+    "path": "data/reagents/complete-mini-edta-free-protease-inhibitor-cocktail.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Complete\u2122, Mini Protease Inhibitor Cocktail",
+    "path": "data/reagents/complete-mini-protease-inhibitor-cocktail.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Complete Protease Inhibitor Cocktail, Edta-Free",
+    "path": "data/reagents/complete-protease-inhibitor-cocktail-edta-free.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Cre Recombinase",
+    "path": "data/reagents/cre-recombinase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Creatine Kinase",
+    "path": "data/reagents/creatine-kinase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Cxcl12",
+    "path": "data/reagents/cxcl12.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Dispase Ii, Powder",
+    "path": "data/reagents/dispase-ii-powder.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Dispase",
+    "path": "data/reagents/dispase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Dmem",
+    "path": "data/reagents/dmem.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Dna Polymerase I, Large (Klenow) Fragment",
+    "path": "data/reagents/dna-polymerase-i-large-klenow-fragment.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Dna Polymerase I",
+    "path": "data/reagents/dna-polymerase-i.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Dnase I Recombinant, Rnase-Free",
+    "path": "data/reagents/dnase-i-recombinant-rnase-free.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Dnase I Recombinant",
+    "path": "data/reagents/dnase-i-recombinant.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Dnase I, Rnase-Free",
+    "path": "data/reagents/dnase-i-rnase-free.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Dnase I",
+    "path": "data/reagents/dnase-i.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Dulbecco\u2019S Modification Of Eagle\u2019S Medium",
+    "path": "data/reagents/dulbecco-s-modification-of-eagle-s-medium.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Dulbecco\u2019S Modified Eagle Medium, High Glucose",
+    "path": "data/reagents/dulbecco-s-modified-eagle-medium-high-glucose.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Dulbecco\u2019S Modified Eagle Medium, Low Glucose",
+    "path": "data/reagents/dulbecco-s-modified-eagle-medium-low-glucose.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Dulbecco\u2019S Modified Eagle Medium",
+    "path": "data/reagents/dulbecco-s-modified-eagle-medium.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Dulbecco\u2019S Modified Eagle\u2019S Medium",
+    "path": "data/reagents/dulbecco-s-modified-eagle-s-medium.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Dulbecco\u2019S Pbs",
+    "path": "data/reagents/dulbecco-s-pbs.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Dulbecco\u2019S Phosphate Buffered Saline",
+    "path": "data/reagents/dulbecco-s-phosphate-buffered-saline.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Dynabeads Protein A",
+    "path": "data/reagents/dynabeads-protein-a.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Dynabeads Protein G",
+    "path": "data/reagents/dynabeads-protein-g.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Edta (0.5 M), Ph 8.0, Rnase-Free",
+    "path": "data/reagents/edta-0-5-m-ph-8-0-rnase-free.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Egf Recombinant Human Protein",
+    "path": "data/reagents/egf-recombinant-human-protein.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Egf",
+    "path": "data/reagents/egf.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Endoglycosidase H",
+    "path": "data/reagents/endoglycosidase-h.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Essential 8 Medium",
+    "path": "data/reagents/essential-8-medium.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Exonuclease I",
+    "path": "data/reagents/exonuclease-i.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Exonuclease Iii",
+    "path": "data/reagents/exonuclease-iii.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Expi293 Expression Medium",
+    "path": "data/reagents/expi293-expression-medium.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Expicho Expression Medium",
+    "path": "data/reagents/expicho-expression-medium.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Fastap Thermosensitive Alkaline Phosphatase",
+    "path": "data/reagents/fastap-thermosensitive-alkaline-phosphatase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Fetal Bovine Serum",
+    "path": "data/reagents/fetal-bovine-serum.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Fgf-2",
+    "path": "data/reagents/fgf-2.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Fibronectin Bovine Plasma",
+    "path": "data/reagents/fibronectin-bovine-plasma.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Firefly Luciferase",
+    "path": "data/reagents/firefly-luciferase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Freestyle 293 Expression Medium",
+    "path": "data/reagents/freestyle-293-expression-medium.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "G-Csf",
+    "path": "data/reagents/g-csf.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Gateway Lr Clonase Ii Enzyme Mix",
+    "path": "data/reagents/gateway-lr-clonase-ii-enzyme-mix.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Gdnf",
+    "path": "data/reagents/gdnf.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Geltrex Ldev-Free, Hesc-Qualified, Reduced Growth Factor Basement Membrane Matrix",
+    "path": "data/reagents/geltrex-ldev-free-hesc-qualified-reduced-growth-factor-basement-membrane-matrix.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Geltrex",
+    "path": "data/reagents/geltrex.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Gentamicin Solution",
+    "path": "data/reagents/gentamicin-solution.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Gibco\u2122 Freestyle\u2122 293 Expression Medium",
+    "path": "data/reagents/gibco-freestyle-293-expression-medium.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Glutamax Supplement",
+    "path": "data/reagents/glutamax-supplement.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Gm-Csf",
+    "path": "data/reagents/gm-csf.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Growth Factor Reduced Matrigel",
+    "path": "data/reagents/growth-factor-reduced-matrigel.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Halt Protease And Phosphatase Inhibitor Cocktail",
+    "path": "data/reagents/halt-protease-and-phosphatase-inhibitor-cocktail.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Halt \u2122 Protease Inhibitor Cocktail",
+    "path": "data/reagents/halt-protease-inhibitor-cocktail.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Hbss Medium",
+    "path": "data/reagents/hbss-medium.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Hegf",
+    "path": "data/reagents/hegf.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Herculase Ii Fusion Dna Polymerase",
+    "path": "data/reagents/herculase-ii-fusion-dna-polymerase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Horse Serum",
+    "path": "data/reagents/horse-serum.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Horseradish Peroxidase",
+    "path": "data/reagents/horseradish-peroxidase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Hotstartaq Dna Polymerase",
+    "path": "data/reagents/hotstartaq-dna-polymerase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Human Ab Serum",
+    "path": "data/reagents/human-ab-serum.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Human Fgf-Basic",
+    "path": "data/reagents/human-fgf-basic.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Human Fibronectin",
+    "path": "data/reagents/human-fibronectin.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Human Gm-Csf",
+    "path": "data/reagents/human-gm-csf.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Human Il-15",
+    "path": "data/reagents/human-il-15.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Human Il-2",
+    "path": "data/reagents/human-il-2.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Human Il-4",
+    "path": "data/reagents/human-il-4.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Human Il-6",
+    "path": "data/reagents/human-il-6.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Human Il-7",
+    "path": "data/reagents/human-il-7.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Human Lif",
+    "path": "data/reagents/human-lif.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Human Pdgf-Aa",
+    "path": "data/reagents/human-pdgf-aa.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Human Recombinant Egf",
+    "path": "data/reagents/human-recombinant-egf.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Human Recombinant Il-2",
+    "path": "data/reagents/human-recombinant-il-2.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Human Recombinant Il-4",
+    "path": "data/reagents/human-recombinant-il-4.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Human Scf",
+    "path": "data/reagents/human-scf.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Human Serum",
+    "path": "data/reagents/human-serum.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Hyaluronidase",
+    "path": "data/reagents/hyaluronidase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Hygromycin B Gold",
+    "path": "data/reagents/hygromycin-b-gold.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Ifn-\u0393",
+    "path": "data/reagents/ifn.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Igg Elution Buffer",
+    "path": "data/reagents/igg-elution-buffer.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Igg Sepharose 6 Fast Flow",
+    "path": "data/reagents/igg-sepharose-6-fast-flow.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Il-1\u0391",
+    "path": "data/reagents/il-1.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Il-12",
+    "path": "data/reagents/il-12.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Il-15",
+    "path": "data/reagents/il-15.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Il-2",
+    "path": "data/reagents/il-2.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Il-3",
+    "path": "data/reagents/il-3.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Il-4",
+    "path": "data/reagents/il-4.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Il-6",
+    "path": "data/reagents/il-6.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Il-7",
+    "path": "data/reagents/il-7.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Immobilized Papain",
+    "path": "data/reagents/immobilized-papain.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Immpact Dab Peroxidase (Hrp) Substrate",
+    "path": "data/reagents/immpact-dab-peroxidase-hrp-substrate.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Insect-Xpress Protein-Free Insect Cell Medium With L-Glutamine",
+    "path": "data/reagents/insect-xpress-protein-free-insect-cell-medium-with-l-glutamine.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Insulin, Human Recombinant",
+    "path": "data/reagents/insulin-human-recombinant.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Insulin-Transferrin-Selenium-Ethanolamine (Its -X)",
+    "path": "data/reagents/insulin-transferrin-selenium-ethanolamine-its-x.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Insulin-Transferrin-Selenium",
+    "path": "data/reagents/insulin-transferrin-selenium.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Iscove\u2019S Modified Dulbecco\u2019S Medium",
+    "path": "data/reagents/iscove-s-modified-dulbecco-s-medium.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Kod Hot Start Dna Polymerase",
+    "path": "data/reagents/kod-hot-start-dna-polymerase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "L-15 Medium",
+    "path": "data/reagents/l-15-medium.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Lambda Exonuclease",
+    "path": "data/reagents/lambda-exonuclease.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Lambda Protein Phosphatase",
+    "path": "data/reagents/lambda-protein-phosphatase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Laminin",
+    "path": "data/reagents/laminin.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Lb Medium",
+    "path": "data/reagents/lb-medium.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Leibovitz\u2019S L15 Medium",
+    "path": "data/reagents/leibovitz-s-l15-medium.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Leukemia Inhibitory Factor",
+    "path": "data/reagents/leukemia-inhibitory-factor.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Liberase",
+    "path": "data/reagents/liberase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Luciferase Cell Culture Lysis 5X Reagent",
+    "path": "data/reagents/luciferase-cell-culture-lysis-5x-reagent.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Lymphocyte Separation Medium",
+    "path": "data/reagents/lymphocyte-separation-medium.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Lysyl Endopeptidase",
+    "path": "data/reagents/lysyl-endopeptidase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "M-Csf",
+    "path": "data/reagents/m-csf.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "M-Mlv Reverse Transcriptase",
+    "path": "data/reagents/m-mlv-reverse-transcriptase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "M2 Medium",
+    "path": "data/reagents/m2-medium.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Matrigel Growth Factor Reduced",
+    "path": "data/reagents/matrigel-growth-factor-reduced.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Matrigel",
+    "path": "data/reagents/matrigel.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Maxima H Minus Reverse Transcriptase",
+    "path": "data/reagents/maxima-h-minus-reverse-transcriptase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Micrococcal Nuclease",
+    "path": "data/reagents/micrococcal-nuclease.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Middlebrook 7H11 Agar",
+    "path": "data/reagents/middlebrook-7h11-agar.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Middlebrook 7H9 Broth",
+    "path": "data/reagents/middlebrook-7h9-broth.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Minimal Essential Medium",
+    "path": "data/reagents/minimal-essential-medium.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Minimum Essential Medium Eagle",
+    "path": "data/reagents/minimum-essential-medium-eagle.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Minimum Essential Medium",
+    "path": "data/reagents/minimum-essential-medium.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Mouse Il-2",
+    "path": "data/reagents/mouse-il-2.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Mouse Recombinant Il-4",
+    "path": "data/reagents/mouse-recombinant-il-4.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Mtesr1 Medium",
+    "path": "data/reagents/mtesr1-medium.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Murine Egf",
+    "path": "data/reagents/murine-egf.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "N2 Supplement",
+    "path": "data/reagents/n2-supplement.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Neurobasal-A Medium",
+    "path": "data/reagents/neurobasal-a-medium.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Neurobasal A",
+    "path": "data/reagents/neurobasal-a.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Neurobasal Medium",
+    "path": "data/reagents/neurobasal-medium.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Neutravidin Protein",
+    "path": "data/reagents/neutravidin-protein.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Neutravidin",
+    "path": "data/reagents/neutravidin.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Newborn Calf Serum",
+    "path": "data/reagents/newborn-calf-serum.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Noggin",
+    "path": "data/reagents/noggin.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Normal Donkey Serum",
+    "path": "data/reagents/normal-donkey-serum.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Normal Goat Serum",
+    "path": "data/reagents/normal-goat-serum.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Normal Mouse Serum",
+    "path": "data/reagents/normal-mouse-serum.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Normocin",
+    "path": "data/reagents/normocin.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Nt-3",
+    "path": "data/reagents/nt-3.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Nuclease Free Water",
+    "path": "data/reagents/nuclease-free-water.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Opti-Mem",
+    "path": "data/reagents/opti-mem.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Ovalbumin",
+    "path": "data/reagents/ovalbumin.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Papain",
+    "path": "data/reagents/papain.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Pdgf-Aa",
+    "path": "data/reagents/pdgf-aa.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Pen/Strep",
+    "path": "data/reagents/pen-strep.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Penicillin-Streptomycin-Glutamine",
+    "path": "data/reagents/penicillin-streptomycin-glutamine.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Penicillin-Streptomycin",
+    "path": "data/reagents/penicillin-streptomycin.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Pfuultra Ii Fusion Hs Dna Polymerase",
+    "path": "data/reagents/pfuultra-ii-fusion-hs-dna-polymerase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Phi29 Dna Polymerase",
+    "path": "data/reagents/phi29-dna-polymerase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Phosphatase Inhibitor Cocktail 2",
+    "path": "data/reagents/phosphatase-inhibitor-cocktail-2.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Phusion Dna Polymerase",
+    "path": "data/reagents/phusion-dna-polymerase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Phusion Hf Dna Polymerase",
+    "path": "data/reagents/phusion-hf-dna-polymerase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Phusion High-Fidelity Dna Polymerase",
+    "path": "data/reagents/phusion-high-fidelity-dna-polymerase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Phusion Polymerase",
+    "path": "data/reagents/phusion-polymerase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Pierce Protease Inhibitor Mini Tablets, Edta-Free",
+    "path": "data/reagents/pierce-protease-inhibitor-mini-tablets-edta-free.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Pierce Protease Inhibitor Tablets",
+    "path": "data/reagents/pierce-protease-inhibitor-tablets.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Pierce Protein A/G Magnetic Beads",
+    "path": "data/reagents/pierce-protein-a-g-magnetic-beads.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Platinum Taq Dna Polymerase",
+    "path": "data/reagents/platinum-taq-dna-polymerase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Pmsf Protease Inhibitor",
+    "path": "data/reagents/pmsf-protease-inhibitor.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Pngase F",
+    "path": "data/reagents/pngase-f.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "IgG, from goat serum",
+    "path": "data/reagents/polyclonal-igg.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Prescission Protease",
+    "path": "data/reagents/prescission-protease.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Primestar Gxl Dna Polymerase",
+    "path": "data/reagents/primestar-gxl-dna-polymerase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Pronase",
+    "path": "data/reagents/pronase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Protease And Phosphatase Inhibitor Cocktail",
+    "path": "data/reagents/protease-and-phosphatase-inhibitor-cocktail.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Protease And Phosphatase Inhibitor",
+    "path": "data/reagents/protease-and-phosphatase-inhibitor.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Protease Inhibitor Cocktail Set Iii, Edta-Free",
+    "path": "data/reagents/protease-inhibitor-cocktail-set-iii-edta-free.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Protease Inhibitor Cocktail",
+    "path": "data/reagents/protease-inhibitor-cocktail.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Protease/Phosphatase Inhibitor Cocktail",
+    "path": "data/reagents/protease-phosphatase-inhibitor-cocktail.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Protein A Agarose Beads",
+    "path": "data/reagents/protein-a-agarose-beads.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Protein A Dynabeads",
+    "path": "data/reagents/protein-a-dynabeads.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Protein A/G Agarose",
+    "path": "data/reagents/protein-a-g-agarose.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Protein A/G Plus-Agarose",
+    "path": "data/reagents/protein-a-g-plus-agarose.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Protein A Magnetic Beads",
+    "path": "data/reagents/protein-a-magnetic-beads.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Protein A Sepharose",
+    "path": "data/reagents/protein-a-sepharose.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Protein G Agarose Beads",
+    "path": "data/reagents/protein-g-agarose-beads.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Protein G Dynabeads",
+    "path": "data/reagents/protein-g-dynabeads.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Protein G Magnetic Beads",
+    "path": "data/reagents/protein-g-magnetic-beads.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Protein G Sepharose 4 Fast Flow",
+    "path": "data/reagents/protein-g-sepharose-4-fast-flow.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Protein G Sepharose",
+    "path": "data/reagents/protein-g-sepharose.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Proteinase K, Recombinant, Pcr Grade",
+    "path": "data/reagents/proteinase-k-recombinant-pcr-grade.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Proteinase K, Recombinant",
+    "path": "data/reagents/proteinase-k-recombinant.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Proteinase K",
+    "path": "data/reagents/proteinase-k.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Pyruvate Kinase",
+    "path": "data/reagents/pyruvate-kinase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Q5 High-Fidelity Dna Polymerase",
+    "path": "data/reagents/q5-high-fidelity-dna-polymerase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Quick Ligase",
+    "path": "data/reagents/quick-ligase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "R-Spondin",
+    "path": "data/reagents/r-spondin.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Rat Serum",
+    "path": "data/reagents/rat-serum.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human Bfgf",
+    "path": "data/reagents/recombinant-human-bfgf.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human Bmp-4 Protein",
+    "path": "data/reagents/recombinant-human-bmp-4-protein.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human Bmp4",
+    "path": "data/reagents/recombinant-human-bmp4.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human Egf",
+    "path": "data/reagents/recombinant-human-egf.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human Fgf-Basic",
+    "path": "data/reagents/recombinant-human-fgf-basic.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human Fgf10",
+    "path": "data/reagents/recombinant-human-fgf10.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human Fgf2",
+    "path": "data/reagents/recombinant-human-fgf2.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human Flt3-Ligand",
+    "path": "data/reagents/recombinant-human-flt3-ligand.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human Gm-Csf",
+    "path": "data/reagents/recombinant-human-gm-csf.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human Hgf",
+    "path": "data/reagents/recombinant-human-hgf.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human Ifn-Gamma Protein",
+    "path": "data/reagents/recombinant-human-ifn-gamma-protein.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human Ifn-\u0393",
+    "path": "data/reagents/recombinant-human-ifn.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human Il-1\u0392",
+    "path": "data/reagents/recombinant-human-il-1.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human Il-12 P70",
+    "path": "data/reagents/recombinant-human-il-12-p70.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human Il-15",
+    "path": "data/reagents/recombinant-human-il-15.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human Il-18",
+    "path": "data/reagents/recombinant-human-il-18.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human Il-2",
+    "path": "data/reagents/recombinant-human-il-2.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human Il-21",
+    "path": "data/reagents/recombinant-human-il-21.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human Il-3",
+    "path": "data/reagents/recombinant-human-il-3.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human Il-33",
+    "path": "data/reagents/recombinant-human-il-33.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human Il-4",
+    "path": "data/reagents/recombinant-human-il-4.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human Il-6 Protein",
+    "path": "data/reagents/recombinant-human-il-6-protein.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human Il-6",
+    "path": "data/reagents/recombinant-human-il-6.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human Il-7",
+    "path": "data/reagents/recombinant-human-il-7.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human Lif",
+    "path": "data/reagents/recombinant-human-lif.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human M-Csf",
+    "path": "data/reagents/recombinant-human-m-csf.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human/Murine/Rat Activin A",
+    "path": "data/reagents/recombinant-human-murine-rat-activin-a.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human Noggin",
+    "path": "data/reagents/recombinant-human-noggin.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human Scf Protein",
+    "path": "data/reagents/recombinant-human-scf-protein.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human Scf",
+    "path": "data/reagents/recombinant-human-scf.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human Stem Cell Factor",
+    "path": "data/reagents/recombinant-human-stem-cell-factor.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human Tgf-\u03921",
+    "path": "data/reagents/recombinant-human-tgf-1.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human Tgf\u03b2",
+    "path": "data/reagents/recombinant-human-tgf.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human Thrombopoietin",
+    "path": "data/reagents/recombinant-human-thrombopoietin.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human Tnf-\u0391",
+    "path": "data/reagents/recombinant-human-tnf.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human Tpo",
+    "path": "data/reagents/recombinant-human-tpo.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Human Vegf",
+    "path": "data/reagents/recombinant-human-vegf.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Il-2",
+    "path": "data/reagents/recombinant-il-2.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Mouse Egf",
+    "path": "data/reagents/recombinant-mouse-egf.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Mouse Gm-Csf",
+    "path": "data/reagents/recombinant-mouse-gm-csf.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Mouse Ifn-\u0393",
+    "path": "data/reagents/recombinant-mouse-ifn.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Mouse Il-1\u0392",
+    "path": "data/reagents/recombinant-mouse-il-1.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Mouse Il-12",
+    "path": "data/reagents/recombinant-mouse-il-12.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Mouse Il-15",
+    "path": "data/reagents/recombinant-mouse-il-15.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Mouse Il-2",
+    "path": "data/reagents/recombinant-mouse-il-2.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Mouse Il-23",
+    "path": "data/reagents/recombinant-mouse-il-23.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Mouse Il-33",
+    "path": "data/reagents/recombinant-mouse-il-33.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Mouse Il-4",
+    "path": "data/reagents/recombinant-mouse-il-4.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Mouse Il-6",
+    "path": "data/reagents/recombinant-mouse-il-6.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Mouse Il-7",
+    "path": "data/reagents/recombinant-mouse-il-7.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Mouse M-Csf",
+    "path": "data/reagents/recombinant-mouse-m-csf.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Mouse Scf",
+    "path": "data/reagents/recombinant-mouse-scf.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Mouse Tnf-\u0391",
+    "path": "data/reagents/recombinant-mouse-tnf.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Mouse Tslp",
+    "path": "data/reagents/recombinant-mouse-tslp.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Murine Egf",
+    "path": "data/reagents/recombinant-murine-egf.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Murine Gm-Csf",
+    "path": "data/reagents/recombinant-murine-gm-csf.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Murine Ifn-\u0393",
+    "path": "data/reagents/recombinant-murine-ifn.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Murine Il-1\u0392",
+    "path": "data/reagents/recombinant-murine-il-1.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Murine Il-2",
+    "path": "data/reagents/recombinant-murine-il-2.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Murine Il-3",
+    "path": "data/reagents/recombinant-murine-il-3.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Murine Il-4",
+    "path": "data/reagents/recombinant-murine-il-4.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Murine Il-6",
+    "path": "data/reagents/recombinant-murine-il-6.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Murine Il-7",
+    "path": "data/reagents/recombinant-murine-il-7.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Murine M-Csf",
+    "path": "data/reagents/recombinant-murine-m-csf.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Murine Scf",
+    "path": "data/reagents/recombinant-murine-scf.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Murine Tpo",
+    "path": "data/reagents/recombinant-murine-tpo.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Rbd",
+    "path": "data/reagents/recombinant-rbd.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Recombinant Sars-Cov-2 Spike Protein",
+    "path": "data/reagents/recombinant-sars-cov-2-spike-protein.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Revertaid Reverse Transcriptase",
+    "path": "data/reagents/revertaid-reverse-transcriptase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Rhil-2",
+    "path": "data/reagents/rhil-2.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Rhodamine Phalloidin",
+    "path": "data/reagents/rhodamine-phalloidin.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Rnase A, Dnase And Protease-Free",
+    "path": "data/reagents/rnase-a-dnase-and-protease-free.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Rnase A/T1",
+    "path": "data/reagents/rnase-a-t1.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Rnase A",
+    "path": "data/reagents/rnase-a.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Rnase-Free Dnase Set",
+    "path": "data/reagents/rnase-free-dnase-set.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Rnase H",
+    "path": "data/reagents/rnase-h.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Rnase I",
+    "path": "data/reagents/rnase-i.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Rnase Inhibitor, Murine",
+    "path": "data/reagents/rnase-inhibitor-murine.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Rnase Inhibitor",
+    "path": "data/reagents/rnase-inhibitor.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Rnase T1",
+    "path": "data/reagents/rnase-t1.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Rnase",
+    "path": "data/reagents/rnase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Rpmi 1640 With L-Glutamine",
+    "path": "data/reagents/rpmi-1640-with-l-glutamine.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Rpmi 1640",
+    "path": "data/reagents/rpmi-1640.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Rq1 Dnase",
+    "path": "data/reagents/rq1-dnase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Rq1 Rnase-Free Dnase",
+    "path": "data/reagents/rq1-rnase-free-dnase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Scf",
+    "path": "data/reagents/scf.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Schneider\u2019S Drosophila Medium",
+    "path": "data/reagents/schneider-s-drosophila-medium.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Schneider\u2019S Medium",
+    "path": "data/reagents/schneider-s-medium.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Sequencing Grade Chymotrypsin",
+    "path": "data/reagents/sequencing-grade-chymotrypsin.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Shrimp Alkaline Phosphatase",
+    "path": "data/reagents/shrimp-alkaline-phosphatase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Smartscribe Reverse Transcriptase",
+    "path": "data/reagents/smartscribe-reverse-transcriptase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Sp6 Rna Polymerase",
+    "path": "data/reagents/sp6-rna-polymerase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Streptavidin",
+    "path": "data/reagents/streptavidin.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Superase-In Rnase Inhibitor",
+    "path": "data/reagents/superase-in-rnase-inhibitor.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Superase-In",
+    "path": "data/reagents/superase-in.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Superscript Ii Reverse Transcriptase",
+    "path": "data/reagents/superscript-ii-reverse-transcriptase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Superscript Iii Reverse Transcriptase",
+    "path": "data/reagents/superscript-iii-reverse-transcriptase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Superscript Iv Reverse Transcriptase",
+    "path": "data/reagents/superscript-iv-reverse-transcriptase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "T3 Rna Polymerase",
+    "path": "data/reagents/t3-rna-polymerase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "T4 Dna Ligase Buffer",
+    "path": "data/reagents/t4-dna-ligase-buffer.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "T4 Dna Polymerase",
+    "path": "data/reagents/t4-dna-polymerase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "T4 Ligase",
+    "path": "data/reagents/t4-ligase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "T4 Polynucleotide Kinase",
+    "path": "data/reagents/t4-polynucleotide-kinase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "T4 Rna Ligase 1",
+    "path": "data/reagents/t4-rna-ligase-1.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "T4 Rna Ligase 2, Truncated K227Q",
+    "path": "data/reagents/t4-rna-ligase-2-truncated-k227q.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "T4 Rna Ligase 2, Truncated",
+    "path": "data/reagents/t4-rna-ligase-2-truncated.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "T4 Rna Ligase 2",
+    "path": "data/reagents/t4-rna-ligase-2.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "T4 Rna Ligase",
+    "path": "data/reagents/t4-rna-ligase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "T5 Exonuclease",
+    "path": "data/reagents/t5-exonuclease.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "T7 Dna Ligase",
+    "path": "data/reagents/t7-dna-ligase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "T7 Rna Polymerase",
+    "path": "data/reagents/t7-rna-polymerase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Tankyrase Inhibitor Xav939",
+    "path": "data/reagents/tankyrase-inhibitor-xav939.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Taq Dna Polymerase",
+    "path": "data/reagents/taq-dna-polymerase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Tev Protease",
+    "path": "data/reagents/tev-protease.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Thrombin Protease",
+    "path": "data/reagents/thrombin-protease.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Tn5 Transposase",
+    "path": "data/reagents/tn5-transposase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Tnf-\u0391",
+    "path": "data/reagents/tnf.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Truecut Cas9 Protein V2",
+    "path": "data/reagents/truecut-cas9-protein-v2.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Trypsin-Edta",
+    "path": "data/reagents/trypsin-edta.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Turbo Dnase",
+    "path": "data/reagents/turbo-dnase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Turbonuclease",
+    "path": "data/reagents/turbonuclease.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Ultradoma Pf Protein-Free Medium",
+    "path": "data/reagents/ultradoma-pf-protein-free-medium.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Vitronectin",
+    "path": "data/reagents/vitronectin.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  },
+  {
+    "cas": null,
+    "name": "Zymolyase",
+    "path": "data/reagents/zymolyase.json",
+    "schema_version": "2.0",
+    "category": "adsorption_prone"
+  }
+]
