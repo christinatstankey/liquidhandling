@@ -1,0 +1,34 @@
+{
+  "reagent_name": "Recombinant Mouse Ifn-\u0393",
+  "cas": null,
+  "handling_profile": {
+    "storage": {
+      "requires_ice": true,
+      "container": "lo_bind"
+    },
+    "mixing": {
+      "no_vortex": true
+    },
+    "preparation": {
+      "single_use_aliquots": true,
+      "add_carrier_if_dilute": "BSA 0.1% if < 10 \u00b5g/mL"
+    }
+  },
+  "rules_fired": [
+    {
+      "id": "protein_keep_on_ice",
+      "because": "Proteins lose activity rapidly above 4\u00b0C via thermal denaturation and proteolytic degradation. Even brief exposure to room temperature can reduce the activity of sensitive enzymes (reverse transcriptase, ligase, Klenow) by 20\u201350%. Keep vials on ice throughout the entire workflow. Vortexing creates a high-shear air\u2013water interface that can unfold proteins; mix by gentle inversion or brief centrifugation instead.",
+      "cite": "NEB Enzyme Storage and Handling Guidelines. Sambrook J & Russell DW (2001) Molecular Cloning 3rd ed., Appendix 1.",
+      "confidence": "high",
+      "field_consensus": false
+    },
+    {
+      "id": "lo_bind_adsorption_prone",
+      "because": "Proteins, oligonucleotides, and antibodies at low concentrations lose significant material to non-specific adsorption onto standard polypropylene and polystyrene surfaces within 30\u201360 minutes, particularly below 100 \u00b5g/mL. LoBind surfaces have reduced hydrophobic character; adding BSA or another carrier protein competes for adsorption sites and stabilises the stock at very low concentrations.",
+      "cite": "Eppendorf LoBind Technology Technical Note, 2019. Kingston RE et al. (2003) Current Protocols in Mol. Bio.: nucleic acid quantification and dilution.",
+      "confidence": "high",
+      "field_consensus": false
+    }
+  ],
+  "conflicts": []
+}

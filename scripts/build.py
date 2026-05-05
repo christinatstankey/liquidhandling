@@ -3,20 +3,53 @@
 build.py — build the static site from data/.
 
 Steps:
-  1. Copy data/reagents/*.json  → site/data/reagents/
-  2. Copy data/handling/*.json  → site/data/profiles/   (pre-generated profiles)
-  3. Generate site/data/manifest.json (index for the frontend)
+  1. Copy data/reagents/*.json  → site/data/reagents/   (clears stale files first)
+  2. Copy data/handling/*.json  → site/data/profiles/   (clears stale files first)
+  3. Copy data/handling/*.json  → site/handling/        (public GET /handling/{cas} endpoint)
+  4. Generate site/data/manifest.json (index for the frontend)
 """
 import json
 import shutil
 from pathlib import Path
 
-REPO_ROOT     = Path(__file__).parent.parent
-REAGENTS_SRC  = REPO_ROOT / "data" / "reagents"
-HANDLING_SRC  = REPO_ROOT / "data" / "handling"
-REAGENTS_DEST = REPO_ROOT / "site" / "data" / "reagents"
-PROFILES_DEST = REPO_ROOT / "site" / "data" / "profiles"
-MANIFEST_PATH = REPO_ROOT / "site" / "data" / "manifest.json"
+REPO_ROOT        = Path(__file__).parent.parent
+REAGENTS_SRC     = REPO_ROOT / "data" / "reagents"
+HANDLING_SRC     = REPO_ROOT / "data" / "handling"
+REAGENTS_DEST    = REPO_ROOT / "site" / "data" / "reagents"
+PROFILES_DEST    = REPO_ROOT / "site" / "data" / "profiles"
+HANDLING_ENDPOINT= REPO_ROOT / "site" / "handling"   # public GET /handling/{cas}
+MANIFEST_PATH    = REPO_ROOT / "site" / "data" / "manifest.json"
+
+# GHS pictogram severity ranking (most → least dangerous).
+# Used to pick the most safety-relevant badge for the card view.
+PICTOGRAM_SEVERITY = [
+    "skull_crossbones",  # acute toxicity
+    "health_hazard",     # CMR, respiratory sensitizer
+    "corrosion",         # corrosive
+    "oxidizer",          # oxidiser
+    "exploding_bomb",    # explosives
+    "flame",             # flammable
+    "gas_cylinder",      # compressed gas
+    "environment",       # environmental hazard
+    "exclamation_mark",  # irritant / warning
+]
+
+
+def _top_pictogram(pictograms: list):
+    """Return the highest-severity pictogram from the list, or the first if none match."""
+    for p in PICTOGRAM_SEVERITY:
+        if p in pictograms:
+            return p
+    return pictograms[0] if pictograms else None
+
+
+def _clear_dest(dest: Path) -> int:
+    """Delete all *.json files in dest, return count removed."""
+    removed = 0
+    for f in dest.glob("*.json"):
+        f.unlink()
+        removed += 1
+    return removed
 
 # One-line card summary per rule — highest-priority match wins
 RULE_SUMMARIES = {
@@ -57,6 +90,9 @@ def _summary_fact(profile: dict) -> str:
 
 def copy_reagents() -> int:
     REAGENTS_DEST.mkdir(parents=True, exist_ok=True)
+    removed = _clear_dest(REAGENTS_DEST)
+    if removed:
+        print(f"  cleared {removed} stale reagent JSONs from site/data/reagents/")
     count = 0
     for src in sorted(REAGENTS_SRC.glob("*.json")):
         shutil.copy2(src, REAGENTS_DEST / src.name)
@@ -67,11 +103,28 @@ def copy_reagents() -> int:
 
 def copy_profiles() -> int:
     PROFILES_DEST.mkdir(parents=True, exist_ok=True)
+    removed = _clear_dest(PROFILES_DEST)
+    if removed:
+        print(f"  cleared {removed} stale profiles from site/data/profiles/")
     count = 0
     for src in sorted(HANDLING_SRC.glob("*.json")):
         shutil.copy2(src, PROFILES_DEST / src.name)
         count += 1
     print(f"  {count} handling profiles → site/data/profiles/")
+    return count
+
+
+def copy_handling_endpoint() -> int:
+    """Publish profiles at /handling/{cas}.json to fulfil the documented v1 URL contract."""
+    HANDLING_ENDPOINT.mkdir(parents=True, exist_ok=True)
+    removed = _clear_dest(HANDLING_ENDPOINT)
+    if removed:
+        print(f"  cleared {removed} stale files from site/handling/")
+    count = 0
+    for src in sorted(HANDLING_SRC.glob("*.json")):
+        shutil.copy2(src, HANDLING_ENDPOINT / src.name)
+        count += 1
+    print(f"  {count} handling profiles → site/handling/  (GET /handling/{{cas}})")
     return count
 
 
@@ -88,7 +141,7 @@ def build_manifest() -> int:
             "name":              reagent["name"],
             "cas":               reagent.get("cas"),
             "category":          reagent.get("category"),
-            "top_pictogram":     pictograms[0] if pictograms else None,
+            "top_pictogram":     _top_pictogram(pictograms),
             "signal_word":       reagent.get("ghs", {}).get("signal_word"),
             "summary_fact":      _summary_fact(profile),
             "rules_fired_count": len(profile.get("rules_fired", [])),
@@ -108,6 +161,8 @@ def main():
     copy_reagents()
     print("\n=== build: handling profiles ===")
     copy_profiles()
+    print("\n=== build: /handling endpoint ===")
+    copy_handling_endpoint()
     print("\n=== build: manifest ===")
     build_manifest()
     print("\nDone. Serve with: python -m http.server 8080 --directory site/")

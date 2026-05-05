@@ -1,0 +1,34 @@
+{
+  "reagent_name": "2-deoxy-2-[(7-nitro-2,1,3-benzoxadiazol-4-",
+  "cas": "186689-07-6",
+  "handling_profile": {
+    "storage": {
+      "light_protected": true,
+      "container": "amber_or_foil",
+      "seal_tightly": true
+    },
+    "safety": {
+      "minimize_light_exposure": true
+    },
+    "preparation": {
+      "minimize_air_exposure": true
+    }
+  },
+  "rules_fired": [
+    {
+      "id": "light_protect_sensitive",
+      "because": "Light-sensitive reagents degrade under UV or visible light by different mechanisms depending on the compound class. Fluorophores (DAPI, ethidium bromide) undergo irreversible photobleaching \u2014 the chromophore is destroyed; 30 seconds of UV transilluminator exposure causes measurable DAPI signal loss. Oxidizers (H\u2082O\u2082, NaOCl) photodecompose, losing titer. Peroxide-forming solvents (diethyl ether) form hydroperoxides faster in light. Light-activated monomers (acrylamide) can begin polymerising spontaneously. Amber containers or foil-wrap block the relevant wavelengths for all of these.",
+      "cite": "Thermo Fisher Scientific: DAPI Technical Data Sheet (D1306). Lakowicz, Principles of Fluorescence Spectroscopy, 3rd ed., Ch. 1. Sigma-Aldrich H\u2082O\u2082 Product Information (216763).",
+      "confidence": "high",
+      "field_consensus": false
+    },
+    {
+      "id": "air_sensitive_seal",
+      "because": "Air-sensitive reagents deteriorate on contact with atmospheric oxygen or moisture. Linoleic acid oxidises to cytotoxic lipid peroxides within hours in open air. Rifampicin degrades to the inactive 3-formyl-rifamycin SV quinone on oxidation. Histamine autooxidises at alkaline pH and is also hygroscopic. DMF absorbs moisture and slowly hydrolyses to dimethylamine (an irritant). Keep bottles tightly capped between uses; aliquot into single-use volumes for high-frequency access. For oxygen-critical applications, consider dispensing under argon.",
+      "cite": "Sigma-Aldrich product information: linoleic acid L1376, rifampicin R3501, DMF D4551. SDS Section 7.",
+      "confidence": "high",
+      "field_consensus": false
+    }
+  ],
+  "conflicts": []
+}

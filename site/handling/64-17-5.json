@@ -1,0 +1,34 @@
+{
+  "reagent_name": "Ethyl Alcohol, pure",
+  "cas": "64-17-5",
+  "handling_profile": {
+    "pipetting": {
+      "pre_wet_cycles": 3,
+      "dispense_speed": "fast"
+    },
+    "storage": {
+      "flammable_cabinet": true
+    },
+    "safety": {
+      "avoid_ignition_sources": true,
+      "fume_hood_required": true
+    }
+  },
+  "rules_fired": [
+    {
+      "id": "pre_wet_volatile",
+      "because": "High vapor pressure (\u22655 kPa at 20\u00b0C) causes significant evaporation inside the tip. Without pre-wetting, the headspace is dry air; the solvent flash-evaporates into it, creating a vapour cushion that compresses and releases unpredictably, drifting dispensed volume by 5\u201315%. Three aspirate-expel cycles saturate the headspace before the actual dispensing step. Fast dispense minimises dwell-time in the tip.",
+      "cite": "Eppendorf Application Note: Pipetting Volatile Liquids, 2018. NIST WebBook CAS 64-17-5 (vapor pressure 5.95 kPa at 20\u00b0C).",
+      "confidence": "high",
+      "field_consensus": false
+    },
+    {
+      "id": "flammable_storage",
+      "because": "Flammable liquids (flash point < 60\u00b0C) generate ignitable vapours at or near room temperature. NFPA 30 and OSHA 29 CFR 1910.106 require storage in FM-approved flammable liquid storage cabinets whenever quantities exceed the exempt amount in standard laboratory containers. Class IB/IC solvents (heptane fp \u22124\u00b0C, ethyl acetate fp \u22124\u00b0C, pyridine fp 20\u00b0C) have vapour densities > 1 and will pool at floor level near ignition sources such as hot plates and electrical outlets. Always handle in a chemical fume hood to prevent vapour accumulation.",
+      "cite": "NFPA 30: Flammable and Combustible Liquids Code (2021). OSHA 29 CFR 1910.106 (flammable liquids storage).",
+      "confidence": "high",
+      "field_consensus": false
+    }
+  ],
+  "conflicts": []
+}

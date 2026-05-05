@@ -1,0 +1,41 @@
+{
+  "reagent_name": "Dimethyl sulfoxide",
+  "cas": "67-68-5",
+  "handling_profile": {
+    "preparation": {
+      "warm_to_RT_first": true,
+      "minimize_air_exposure": true
+    },
+    "safety": {
+      "skin_penetrant_warning": true,
+      "gloves": "nitrile"
+    },
+    "storage": {
+      "seal_tightly": true
+    }
+  },
+  "rules_fired": [
+    {
+      "id": "warm_freeze_prone_liquid",
+      "because": "Liquids with freeze points at or above 15\u00b0C (DMSO ~19\u00b0C, glycerol ~18\u00b0C) can solidify partially or fully in a 4\u00b0C cold room or on ice. Pipetting a partially-solidified liquid causes systematic volume errors. The physical_state guard prevents the rule from misfiring on solids whose melting point happens to be reported in freeze_point_C (e.g. NaOH pellets, PFA powder).",
+      "cite": "Sigma-Aldrich DMSO Product Information Sheet 276855 (freeze point 18.45\u00b0C). Perry's Chemical Engineers' Handbook, 8th ed. (glycerol freeze point 17.8\u00b0C).",
+      "confidence": "high",
+      "field_consensus": false
+    },
+    {
+      "id": "skin_penetrant_hazard",
+      "because": "Skin-penetrant reagents cross intact skin and can carry dissolved solutes transdermally. DMSO is the canonical example \u2014 contact with a DMSO drug stock is a real toxicity exposure route even through nitrile gloves with extended contact. 2-mercaptoethanol and acrylamide are similarly absorbed through skin. Nitrile gloves (not latex) are required; change gloves immediately after any spill; never work with these without gloves.",
+      "cite": "NIOSH skin absorption hazard notes. Braue EH et al. (1999) Occup Environ Med: percutaneous absorption review.",
+      "confidence": "low",
+      "field_consensus": false
+    },
+    {
+      "id": "air_sensitive_seal",
+      "because": "Air-sensitive reagents deteriorate on contact with atmospheric oxygen or moisture. Linoleic acid oxidises to cytotoxic lipid peroxides within hours in open air. Rifampicin degrades to the inactive 3-formyl-rifamycin SV quinone on oxidation. Histamine autooxidises at alkaline pH and is also hygroscopic. DMF absorbs moisture and slowly hydrolyses to dimethylamine (an irritant). Keep bottles tightly capped between uses; aliquot into single-use volumes for high-frequency access. For oxygen-critical applications, consider dispensing under argon.",
+      "cite": "Sigma-Aldrich product information: linoleic acid L1376, rifampicin R3501, DMF D4551. SDS Section 7.",
+      "confidence": "high",
+      "field_consensus": false
+    }
+  ],
+  "conflicts": []
+}

@@ -208,8 +208,11 @@ function flattenProfile(obj, prefix) {
 }
 
 function renderHandlingChips(profile) {
-  if (!profile || !Object.keys(profile.handling_profile || {}).length) {
-    return '<p class="no-handling">No special handling required for this reagent.</p>';
+  if (!profile) {
+    return '<p class="no-handling" style="color:#B45309">Handling profile not yet generated for this reagent.</p>';
+  }
+  if (!Object.keys(profile.handling_profile || {}).length) {
+    return '<p class="no-handling">No special handling required — zero rules fired.</p>';
   }
 
   const pairs = flattenProfile(profile.handling_profile);
@@ -276,7 +279,9 @@ function renderHandlingChips(profile) {
 }
 
 function renderRules(profile) {
-  if (!profile || !profile.rules_fired || !profile.rules_fired.length)
+  if (!profile)
+    return '<p style="color:#B45309;font-size:.9rem">Handling profile not yet generated.</p>';
+  if (!profile.rules_fired || !profile.rules_fired.length)
     return '<p style="color:var(--muted);font-size:.9rem">No rules fired — standard handling applies.</p>';
 
   return '<div class="rules-list">' + profile.rules_fired.map(r => {
@@ -315,13 +320,15 @@ function renderPage(reagent, profile) {
         <div class="panel-title">GHS hazard statements</div>
         <ul class="hazards-list">
           ${reagent.ghs.hazard_statements.map(h => {
-            const [code, ...rest] = h.split(':');
-            return `<li><strong>${esc(code.trim())}:</strong>${esc(rest.join(':'))}</li>`;
+            const spaceIdx = h.indexOf(' ');
+            const code = spaceIdx >= 0 ? h.slice(0, spaceIdx) : h;
+            const desc = spaceIdx >= 0 ? h.slice(spaceIdx + 1) : '';
+            return `<li><strong>${esc(code)}:</strong> ${esc(desc)}</li>`;
           }).join('')}
         </ul>
       </div>` : '';
 
-  const profileJson = profile ? JSON.stringify(profile.handling_profile || {}, null, 2) : '{}';
+  const profileJson = profile ? JSON.stringify(profile, null, 2) : null;
 
   document.title = `${reagent.name} — Liquid Handling`;
   document.getElementById('main').innerHTML = `
@@ -356,7 +363,9 @@ function renderPage(reagent, profile) {
       ${renderRules(profile)}
     </div>
     <div id="tab-profile" class="tab-panel">
-      <div class="json-block">${esc(profileJson)}</div>
+      ${profileJson
+        ? `<div class="json-block">${esc(profileJson)}</div>`
+        : '<p style="color:#B45309;font-size:.9rem">Handling profile not yet generated for this reagent.</p>'}
     </div>
   `;
 }
