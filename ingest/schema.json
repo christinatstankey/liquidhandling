@@ -34,7 +34,8 @@
                   "rule_derived",
                   "tacit_knowledge",
                   "claude_inference",
-                  "manufacturer_protocol"
+                  "manufacturer_protocol",
+                  "uniprot"
                 ]
               },
               "ref":    { "type": "string" },

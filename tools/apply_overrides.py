@@ -26,7 +26,7 @@ OVERRIDES_PATH = REPO_ROOT / "data" / "phase2-overrides.yaml"
 
 SOURCE_TIER = {
     "sds_phrase": "high", "storage_class": "high", "ghs_hcode": "high",
-    "pubchem": "high", "chebi": "high",
+    "pubchem": "high", "chebi": "high", "uniprot": "high",
     "rule_derived": "inherit",
     "manufacturer_protocol": "medium",
     "tacit_knowledge": "low", "claude_inference": "low",

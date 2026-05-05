@@ -9,7 +9,7 @@
   "properties": {
     "is_protein": {
       "value": true,
-      "confidence": "low",
+      "confidence": "high",
       "sources": [
         {
           "type": "tacit_knowledge",
@@ -19,6 +19,11 @@
         {
           "type": "claude_inference",
           "ref": "phase2_batch_ingest",
+          "agrees": true
+        },
+        {
+          "type": "uniprot",
+          "ref": "uniprot:P49771",
           "agrees": true
         }
       ]
@@ -260,7 +265,7 @@
     },
     "lo_bind_required": {
       "value": true,
-      "confidence": "low",
+      "confidence": "high",
       "sources": [
         {
           "type": "claude_inference",
@@ -270,6 +275,11 @@
         {
           "type": "claude_inference",
           "ref": "phase2_batch_ingest",
+          "agrees": true
+        },
+        {
+          "type": "uniprot",
+          "ref": "uniprot:P49771",
           "agrees": true
         }
       ]

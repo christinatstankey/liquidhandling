@@ -1,0 +1,62 @@
+{
+  "name": "2\u2032-Deoxycytidine 5\u2032-triphosphate disodium",
+  "cas": "102783-51-7",
+  "category": null,
+  "vendor_example": "Sigma D4913",
+  "physical_state": "powder",
+  "properties": {
+    "is_protein": null,
+    "glycerol_pct": null,
+    "viscosity_class": null,
+    "viscosity_mPas_20C": null,
+    "vapor_pressure_kPa_20C": null,
+    "is_volatile": null,
+    "is_flammable": null,
+    "flash_point_C": null,
+    "is_light_sensitive": null,
+    "is_fluorophore": null,
+    "excitation_nm": null,
+    "emission_nm": null,
+    "is_reducing_agent": null,
+    "oxidizes_in_solution": null,
+    "solution_half_life_at_4C_days": null,
+    "make_fresh": null,
+    "is_detergent": null,
+    "is_foaming": null,
+    "is_fixative": null,
+    "fume_hood_required": null,
+    "is_hygroscopic": null,
+    "is_deliquescent": null,
+    "is_corrosive": null,
+    "is_adsorption_prone": null,
+    "lo_bind_required": null,
+    "freeze_point_C": null,
+    "requires_ice": null,
+    "freeze_thaw_max_cycles": null,
+    "skin_penetrant": null,
+    "plastic_incompatible": [],
+    "storage_temp_C": -20.0
+  },
+  "ghs": {
+    "pictograms": [],
+    "signal_word": null,
+    "hazard_statements": []
+  },
+  "sds_facts": {
+    "storage": "Store at -20\u00b0C (freezer).",
+    "ppe": [
+      "nitrile gloves",
+      "safety glasses",
+      "respiratory protection"
+    ],
+    "incompatibilities": [
+      "Strong oxidizing agents"
+    ]
+  },
+  "bench_knowledge": [],
+  "sds_source": {
+    "revision_date": "04/30/2025",
+    "version": "6.6",
+    "product_number": "D4913"
+  }
+}
