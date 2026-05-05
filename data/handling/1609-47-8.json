@@ -1,0 +1,31 @@
+{
+  "reagent_name": "Diethyl pyrocarbonate",
+  "cas": "1609-47-8",
+  "handling_profile": {
+    "preparation": {
+      "tris_incompatible": true,
+      "use_in_water_only": true,
+      "working_concentration_pct": 0.1,
+      "autoclave_after_treatment": true,
+      "storage_single_use": true,
+      "expires_months_after_opening": 3
+    }
+  },
+  "rules_fired": [
+    {
+      "id": "depc_tris_incompatible",
+      "because": "DEPC carbamoylates primary amines, including the amine group in Tris buffer. Adding DEPC to Tris-containing solutions does not decontaminate them \u2014 it simply inactivates DEPC while leaving RNases untouched. Always prepare DEPC-treated water first (0.1% DEPC in nuclease-free water, stir 1 h), then use that water to prepare Tris or other buffers afterward.",
+      "cite": "Sambrook J & Russell DW (2001) Molecular Cloning 3rd ed., Appendix 1 (DEPC treatment). Ambion RNase decontamination guide.",
+      "confidence": "low",
+      "field_consensus": false
+    },
+    {
+      "id": "depc_autoclave_inactivate",
+      "because": "Residual DEPC in treated water carbamoylates adenosine residues in RNA, destroying yield and introducing A260 artefacts. Autoclaving (121\u00b0C, 15 min) hydrolyses DEPC completely to CO\u2082 and ethanol \u2014 both volatile and harmless. Do not use DEPC-treated solutions in RNA reactions without autoclaving first. DEPC stock hydrolyses on contact with water; once opened, activity drops within months even in a sealed bottle. Aliquot and store at 4\u00b0C.",
+      "cite": "Chomczynski P (1993) BioTechniques 15:532\u2013534 (TRIzol/DEPC rationale). Sigma-Aldrich DEPC Product Info 40718.",
+      "confidence": "low",
+      "field_consensus": false
+    }
+  ],
+  "conflicts": []
+}

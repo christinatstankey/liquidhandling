@@ -1,0 +1,37 @@
+{
+  "reagent_name": "Poly(ethylene glycol)",
+  "cas": "25322-68-3",
+  "handling_profile": {
+    "pipetting": {
+      "tip_type": "wide_bore",
+      "technique": "reverse",
+      "aspirate_speed": "slow",
+      "post_aspirate_delay_s": 3
+    },
+    "storage": {
+      "desiccator": true
+    },
+    "preparation": {
+      "weigh_fast": true,
+      "cap_immediately": true,
+      "date_first_opening": true
+    }
+  },
+  "rules_fired": [
+    {
+      "id": "viscous_no_protein",
+      "because": "High-viscosity non-protein liquids (e.g., pure glycerol, PEG solutions) resist aspiration, causing back-pressure that stalls the piston and under-delivers volume. Wide-bore tips reduce hydraulic resistance. Reverse pipetting removes the dead-air step. A 2\u20133 s post-aspirate pause lets the meniscus stabilise before withdrawal.",
+      "cite": "Eppendorf Technical Guide: Pipetting Viscous Liquids, 2020. Perry's Chemical Engineers' Handbook, 8th ed. (glycerol viscosity 1412 mPa\u00b7s at 20\u00b0C).",
+      "confidence": "low",
+      "field_consensus": false
+    },
+    {
+      "id": "desiccator_hygroscopic_solid",
+      "because": "Hygroscopic and deliquescent solids absorb atmospheric water during each weighing event. Mass gain directly dilutes the effective molarity of the solution you prepare. Deliquescent solids (e.g., NaOH pellets) can become partially-dissolved slush within minutes in humid air, further confounding accurate weighing. Desiccator storage and fast weighing are the only controls for this.",
+      "cite": "Sigma-Aldrich Handling Hygroscopic Compounds Technical Note. ASHP Guidelines on Handling Hazardous Drugs (weighing-by-difference rationale).",
+      "confidence": "low",
+      "field_consensus": false
+    }
+  ],
+  "conflicts": []
+}

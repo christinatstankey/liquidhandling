@@ -1,0 +1,33 @@
+{
+  "reagent_name": "Glutaraldehyde solution",
+  "cas": "111-30-8",
+  "handling_profile": {
+    "safety": {
+      "fume_hood_required": true,
+      "waste_stream": "formaldehyde",
+      "acid_resistant_tips": true,
+      "neutralize_before_disposal": true
+    },
+    "preparation": {
+      "make_fresh": true,
+      "add_to_water": true
+    }
+  },
+  "rules_fired": [
+    {
+      "id": "fume_hood_fixative",
+      "because": "PFA dissolves to release formaldehyde, an IARC Group 1 (known) human carcinogen and respiratory sensitiser. Even brief vapour exposure during preparation is a documented occupational hazard. Fresh preparation from powder in PBS (rather than from stored 16% stock solutions) provides better morphological preservation and avoids formate contamination that accumulates in aged solutions.",
+      "cite": "IARC Monographs Vol. 100F (2012): Formaldehyde classified Group 1. Fox CH et al. (1985) J Histochem Cytochem 33:845\u2013853 (PFA fixation kinetics).",
+      "confidence": "high",
+      "field_consensus": false
+    },
+    {
+      "id": "corrosive_add_to_water",
+      "because": "Concentrated corrosive reagents (HCl, TFA, NaOH) release significant heat on dilution. Adding water to a concentrated corrosive can boil the liquid and cause spattering; always add the corrosive slowly to water. TFA and HCl volatilise in the hood \u2014 decant and dilute in a ventilated space. Neutralise to pH 6\u20138 before drain disposal per local regulations.",
+      "cite": "Sigma-Aldrich HCl Safety Note 258148. ACS Safety in Academic Chemistry Laboratories, 7th ed., Ch. 4. EPA 40 CFR Part 261 (hazardous waste neutralisation).",
+      "confidence": "high",
+      "field_consensus": false
+    }
+  ],
+  "conflicts": []
+}

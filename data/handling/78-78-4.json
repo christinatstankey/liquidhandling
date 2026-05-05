@@ -1,0 +1,20 @@
+{
+  "reagent_name": "2-Methylbutane",
+  "cas": "78-78-4",
+  "handling_profile": {
+    "pipetting": {
+      "pre_wet_cycles": 3,
+      "dispense_speed": "fast"
+    }
+  },
+  "rules_fired": [
+    {
+      "id": "pre_wet_volatile",
+      "because": "High vapor pressure (\u22655 kPa at 20\u00b0C) causes significant evaporation inside the tip. Without pre-wetting, the headspace is dry air; the solvent flash-evaporates into it, creating a vapour cushion that compresses and releases unpredictably, drifting dispensed volume by 5\u201315%. Three aspirate-expel cycles saturate the headspace before the actual dispensing step. Fast dispense minimises dwell-time in the tip.",
+      "cite": "Eppendorf Application Note: Pipetting Volatile Liquids, 2018. NIST WebBook CAS 64-17-5 (vapor pressure 5.95 kPa at 20\u00b0C).",
+      "confidence": "high",
+      "field_consensus": false
+    }
+  ],
+  "conflicts": []
+}

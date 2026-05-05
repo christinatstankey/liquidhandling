@@ -1,0 +1,26 @@
+{
+  "reagent_name": "2-Propanol",
+  "cas": "67-63-0",
+  "handling_profile": {
+    "storage": {
+      "date_first_opening": true,
+      "max_age_months": 3
+    },
+    "preparation": {
+      "test_before_use": "peroxide_strip"
+    },
+    "safety": {
+      "no_evaporation_to_dryness": true
+    }
+  },
+  "rules_fired": [
+    {
+      "id": "peroxide_forming_track",
+      "because": "Ethers (diethyl ether, THF, dioxane) form shock-sensitive hydroperoxides on exposure to air and light via autoxidation. Peroxide concentration increases with time and is highest in the last few millilitres as the solvent evaporates. Opening a bottle without a peroxide test when the contents are old or unknown is a documented explosion hazard. Max 3-month working life after opening; test with commercial peroxide strips before each use; discard at 25 ppm peroxide or above.",
+      "cite": "Jackson HL et al. (1998) Chem Health Safety 5(3): 16\u201318 (ether peroxide hazards). Prudent Practices in the Laboratory, NRC 2011, Ch. 6.",
+      "confidence": "high",
+      "field_consensus": false
+    }
+  ],
+  "conflicts": []
+}

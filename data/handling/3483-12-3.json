@@ -1,0 +1,21 @@
+{
+  "reagent_name": "DL-Dithiothreitol",
+  "cas": "3483-12-3",
+  "handling_profile": {
+    "preparation": {
+      "make_fresh": true,
+      "single_use_aliquots": true,
+      "max_age_in_solution_days": 7
+    }
+  },
+  "rules_fired": [
+    {
+      "id": "make_fresh_reducing_agent",
+      "because": "Thiol-based reducing agents (DTT, \u03b2-mercaptoethanol) are rapidly oxidised by dissolved O\u2082 in aqueous buffers. At 4\u00b0C in standard buffer, DTT has an effective half-life of approximately 1 week; at room temperature in air-exposed buffer, this drops to hours. \u03b2-mercaptoethanol oxidises at comparable rates and also volatilises, making fresh preparation doubly important. For critical applications (disulfide bond reduction, enzyme protection), the stock should be made fresh on the day of use. Note: phosphine-based reducing agents (TCEP) are air-stable and are excluded from this rule \u2014 see tcep_air_stable.",
+      "cite": "Cleland WW (1964) Biochemistry 3:480\u2013482 (original DTT paper, redox characterisation). Sigma-Aldrich DTT Product Information Sheet D9779.",
+      "confidence": "low",
+      "field_consensus": false
+    }
+  ],
+  "conflicts": []
+}

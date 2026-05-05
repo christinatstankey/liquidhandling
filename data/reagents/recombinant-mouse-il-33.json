@@ -382,7 +382,7 @@
         }
       ]
     },
-    "glycerol_pct": 50
+    "glycerol_pct": null
   },
   "ghs": {
     "pictograms": [],

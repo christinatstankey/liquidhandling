@@ -1,0 +1,23 @@
+{
+  "reagent_name": "Paraformaldehyde",
+  "cas": "30525-89-4",
+  "handling_profile": {
+    "safety": {
+      "fume_hood_required": true,
+      "waste_stream": "formaldehyde"
+    },
+    "preparation": {
+      "make_fresh": true
+    }
+  },
+  "rules_fired": [
+    {
+      "id": "fume_hood_fixative",
+      "because": "PFA dissolves to release formaldehyde, an IARC Group 1 (known) human carcinogen and respiratory sensitiser. Even brief vapour exposure during preparation is a documented occupational hazard. Fresh preparation from powder in PBS (rather than from stored 16% stock solutions) provides better morphological preservation and avoids formate contamination that accumulates in aged solutions.",
+      "cite": "IARC Monographs Vol. 100F (2012): Formaldehyde classified Group 1. Fox CH et al. (1985) J Histochem Cytochem 33:845\u2013853 (PFA fixation kinetics).",
+      "confidence": "high",
+      "field_consensus": false
+    }
+  ],
+  "conflicts": []
+}
