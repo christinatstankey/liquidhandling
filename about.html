@@ -9,9 +9,22 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/styles.css" />
   <style>
-    .about-body { max-width: 640px; padding: 3rem 0 5rem; }
-    .about-body p  { margin-top: 1rem; font-size: .95rem; color: #374151; line-height: 1.7; }
-    .about-body h2 { margin-top: 2.5rem; }
+    .about-body { max-width: 660px; padding: 3rem 0 5rem; }
+    .about-body p { margin-top: 1rem; font-size: .95rem; color: #374151; line-height: 1.75; }
+    .about-body h2 { margin-top: 2.5rem; font-size: 1.1rem; }
+    .about-body ul { margin-top: .75rem; padding-left: 1.25rem; }
+    .about-body li { font-size: .9rem; color: #374151; line-height: 1.7; margin-top: .35rem; }
+    .about-body code { font-size: .85em; }
+    .pipeline-table { width: 100%; border-collapse: collapse; margin-top: 1rem; font-size: .875rem; }
+    .pipeline-table th { text-align: left; font-size: .75rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: .06em; color: var(--muted); border-bottom: 1px solid var(--hairline); padding: .5rem .75rem; }
+    .pipeline-table td { padding: .55rem .75rem; border-bottom: 1px solid var(--hairline); color: #374151; vertical-align: top; }
+    .pipeline-table td:first-child { font-family: var(--font-mono); font-size: .8rem; color: var(--accent); white-space: nowrap; }
+    .conf-pill { display: inline-block; font-size: .7rem; font-weight: 600; padding: .1em .45em;
+      border-radius: 3px; font-family: var(--font-mono); }
+    .conf-high   { background: #ECFDF5; color: #065F46; }
+    .conf-medium { background: #FFFBEB; color: #92400E; }
+    .conf-low    { background: #F9FAFB; color: #6B7280; border: 1px solid #E5E7EB; }
   </style>
 </head>
 <body>
@@ -32,50 +45,121 @@
 
     <h2>The problem</h2>
     <p>
-      Safety Data Sheets tell you a reagent is flammable, irritating, or hazardous.
-      They don't tell your liquid handler to pre-wet tips three times before
-      aspirating ethanol, or to warm DMSO to room temperature before it becomes a
-      solid plug in your tip.
+      Safety Data Sheets tell you a reagent is flammable, irritating, or hazardous. They do not tell
+      your liquid handler to pre-wet tips three times before aspirating ethanol, or to warm DMSO to
+      room temperature before it becomes a solid plug in your tip. They do not tell it that proteins
+      need LoBind tubes or that DTT is useless if it was made yesterday.
     </p>
     <p>
-      That knowledge lives in the heads of experienced bench scientists. It's passed
-      on verbally, buried in methods sections, or learned by ruining an experiment.
+      That knowledge lives in the heads of experienced bench scientists. It is passed on verbally,
+      buried in methods sections, or learned by ruining an experiment. The gap between "safe to handle"
+      and "correct to pipette" is where liquid handlers fail — not because the robot lacks precision,
+      but because no one gave it the tacit knowledge the operator takes for granted.
     </p>
 
     <h2>What this does</h2>
     <p>
-      This is a transparent rules layer between chemical properties and robot
-      instructions. Each reagent has a structured property profile — vapor pressure,
-      viscosity, light sensitivity, and so on. A declarative rules engine maps those
-      properties to handling instructions. Every rule cites a property value or a
-      published source. Nothing is hidden inside a model.
+      This database is a transparent rules layer between chemical properties and robot instructions.
+      Each reagent has a structured property profile — vapor pressure, viscosity, light sensitivity,
+      adsorption tendency, and so on. A declarative rules engine maps those properties to handling
+      instructions. Every rule cites a property value or a published source. Nothing is hidden inside
+      a model.
     </p>
     <p>
       The output is a JSON handling profile a liquid handler can consume directly:
-      aspiration speed, tip type, pre-wet cycles, container type, storage conditions,
-      safety requirements.
     </p>
+    <ul>
+      <li>Aspiration speed and technique (reverse pipetting, pre-wet cycles, wide-bore tips)</li>
+      <li>Container type (LoBind, amber, flammable cabinet)</li>
+      <li>Preparation requirements (make fresh, warm to RT, thaw method)</li>
+      <li>Safety controls (fume hood, gloves, waste stream, segregation)</li>
+    </ul>
+    <p>
+      Each instruction carries a confidence level derived from the evidence chain — high for
+      SDS-extracted or ontology-grounded facts, lower for bench consensus. The robot knows
+      which instructions to trust.
+    </p>
+
+    <h2>Data pipeline</h2>
+    <p>
+      Each reagent record is populated by a layered extraction pipeline. Source types are
+      explicitly tracked so the downstream consumer can evaluate reliability:
+    </p>
+    <table class="pipeline-table">
+      <thead>
+        <tr><th>Source type</th><th>What it provides</th><th>Confidence</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>sds_phrase</td>
+          <td>Literal phrase match in SDS §7/§10 (e.g., "hygroscopic", "flammable")</td>
+          <td><span class="conf-pill conf-high">high</span></td>
+        </tr>
+        <tr>
+          <td>ghs_hcode</td>
+          <td>GHS hazard code from SDS §2 (e.g., H228 → flammable solid)</td>
+          <td><span class="conf-pill conf-high">high</span></td>
+        </tr>
+        <tr>
+          <td>storage_class</td>
+          <td>ADR storage class from SDS §7 (e.g., 3 → flammable liquid)</td>
+          <td><span class="conf-pill conf-high">high</span></td>
+        </tr>
+        <tr>
+          <td>chebi</td>
+          <td>ChEBI ontology role (e.g., CHEBI:25944 → fluorophore → light-sensitive)</td>
+          <td><span class="conf-pill conf-high">high</span></td>
+        </tr>
+        <tr>
+          <td>uniprot</td>
+          <td>Swiss-Prot reviewed entry confirms protein identity; LoBind requirement is a handling inference, not a UniProt claim</td>
+          <td><span class="conf-pill conf-high">high</span></td>
+        </tr>
+        <tr>
+          <td>manufacturer_protocol</td>
+          <td>NEB product datasheet (storage conditions, glycerol pct, enzyme class)</td>
+          <td><span class="conf-pill conf-medium">medium</span></td>
+        </tr>
+        <tr>
+          <td>claude_inference</td>
+          <td>Model inference from chemical knowledge — fallback when no other source applies</td>
+          <td><span class="conf-pill conf-low">low</span></td>
+        </tr>
+      </tbody>
+    </table>
 
     <h2>What it isn't</h2>
     <p>
-      This is not an SDS database, not an EH&amp;S compliance tool, and not a
-      general protocol library. It is a narrow, high-fidelity bridge between
-      physicochemical properties and robot-actionable handling decisions, scoped
-      to reagents on a stockroom shelf.
+      This is not an SDS database, not an EH&amp;S compliance tool, and not a general protocol
+      library. It is a narrow, high-fidelity bridge between physicochemical properties and
+      robot-actionable handling decisions, scoped to reagents on a stockroom shelf.
+    </p>
+    <p>
+      Out of scope by design: cell culture handling (biologically rather than chemically
+      constrained), buffer preparation workflows, and freeform protocol text. These are deferral
+      calls, not omissions — the reagent core needs to be solid before layering on biological
+      or procedural complexity.
     </p>
 
-    <h2>Sources and honesty</h2>
+    <h2>Honesty by construction</h2>
     <p>
-      Every rule is cited. Where a rule reflects common bench practice without a
-      clean primary source, it is flagged explicitly as <em>field consensus</em>
-      in the UI. The goal is to surface uncertainty, not hide it.
+      Rules that rely on common bench practice without a clean primary source are flagged
+      explicitly as <em>field consensus</em> in the UI. Confidence levels are computed from
+      evidence and stored in the record — not re-derived at read time, not hidden.
+      When two sources disagree, the disagreement is kept in the record rather than silently
+      resolved. The goal is to surface uncertainty, not hide it behind a clean output.
+    </p>
+    <p>
+      The rules engine is a plain YAML file. Anyone can audit it, add to it, or fork it
+      for a different compound class. The database is JSON files checked into version control.
+      No opaque model weights; no hidden heuristics.
     </p>
   </div>
 </main>
 
 <footer>
   <div class="container">
-    Data sourced from manufacturer SDS sheets and published bench protocols.
+    Data sourced from manufacturer SDS sheets and published bench protocols. Rules engine: transparent YAML — no ML.
   </div>
 </footer>
 

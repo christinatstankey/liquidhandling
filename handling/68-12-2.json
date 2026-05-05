@@ -1,0 +1,41 @@
+{
+  "reagent_name": "N,N-Dimethylformamide",
+  "cas": "68-12-2",
+  "handling_profile": {
+    "safety": {
+      "fume_hood_required": true,
+      "avoid_ignition_sources": true
+    },
+    "storage": {
+      "flammable_cabinet": true,
+      "seal_tightly": true
+    },
+    "preparation": {
+      "minimize_air_exposure": true
+    }
+  },
+  "rules_fired": [
+    {
+      "id": "fume_hood_toxic",
+      "because": "The SDS (Section 7 or 8) specifies ventilation controls or fume hood use for this reagent. This category spans volatile toxic solvents (pyridine, DMF, heptane), cytotoxic and genotoxic compounds (docetaxel, streptozocin, azoxymethane), and reagents whose vapours or aerosols pose an inhalation hazard. A chemical fume hood provides the primary engineering control \u2014 never handle these reagents on the open bench.",
+      "cite": "OSHA Laboratory Standard 29 CFR 1910.1450. Manufacturer SDS Section 7/8.",
+      "confidence": "high",
+      "field_consensus": false
+    },
+    {
+      "id": "flammable_storage",
+      "because": "Flammable liquids (flash point < 60\u00b0C) generate ignitable vapours at or near room temperature. NFPA 30 and OSHA 29 CFR 1910.106 require storage in FM-approved flammable liquid storage cabinets whenever quantities exceed the exempt amount in standard laboratory containers. Class IB/IC solvents (heptane fp \u22124\u00b0C, ethyl acetate fp \u22124\u00b0C, pyridine fp 20\u00b0C) have vapour densities > 1 and will pool at floor level near ignition sources such as hot plates and electrical outlets. Always handle in a chemical fume hood to prevent vapour accumulation.",
+      "cite": "NFPA 30: Flammable and Combustible Liquids Code (2021). OSHA 29 CFR 1910.106 (flammable liquids storage).",
+      "confidence": "high",
+      "field_consensus": false
+    },
+    {
+      "id": "air_sensitive_seal",
+      "because": "Air-sensitive reagents deteriorate on contact with atmospheric oxygen or moisture. Linoleic acid oxidises to cytotoxic lipid peroxides within hours in open air. Rifampicin degrades to the inactive 3-formyl-rifamycin SV quinone on oxidation. Histamine autooxidises at alkaline pH and is also hygroscopic. DMF absorbs moisture and slowly hydrolyses to dimethylamine (an irritant). Keep bottles tightly capped between uses; aliquot into single-use volumes for high-frequency access. For oxygen-critical applications, consider dispensing under argon.",
+      "cite": "Sigma-Aldrich product information: linoleic acid L1376, rifampicin R3501, DMF D4551. SDS Section 7.",
+      "confidence": "high",
+      "field_consensus": false
+    }
+  ],
+  "conflicts": []
+}

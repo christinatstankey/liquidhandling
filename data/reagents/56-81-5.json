@@ -1,40 +1,370 @@
 {
-  "name": "Glycerol, 99%+ (anhydrous)",
+  "name": "Glycerol",
   "cas": "56-81-5",
   "category": "viscous_reagent",
-  "vendor_example": "Sigma-Aldrich G5516, Fisher G33",
+  "vendor_example": "Sigma G5516",
   "physical_state": "liquid",
-  "striking_fact": "1400× more viscous than water — standard pipetting speed causes air bubble entrapment and large volume errors.",
   "properties": {
-    "is_protein": false,
+    "is_protein": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
     "glycerol_pct": 100,
     "viscosity_class": "high",
-    "viscosity_mPas_20C": 1412,
-    "vapor_pressure_kPa_20C": 0.00008,
-    "is_volatile": false,
-    "is_flammable": false,
-    "flash_point_C": 160,
-    "is_light_sensitive": false,
-    "is_fluorophore": false,
-    "is_reducing_agent": false,
-    "oxidizes_in_solution": false,
+    "viscosity_mPas_20C": 1412.0,
+    "vapor_pressure_kPa_20C": 0.0001,
+    "is_volatile": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_flammable": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "flash_point_C": 199.0,
+    "is_light_sensitive": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_fluorophore": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "excitation_nm": null,
+    "emission_nm": null,
+    "is_reducing_agent": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "oxidizes_in_solution": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
     "solution_half_life_at_4C_days": null,
-    "make_fresh": false,
-    "is_detergent": false,
-    "is_foaming": false,
-    "is_fixative": false,
-    "fume_hood_required": false,
-    "is_hygroscopic": true,
-    "is_deliquescent": false,
-    "is_corrosive": false,
-    "is_adsorption_prone": false,
-    "lo_bind_required": false,
-    "freeze_point_C": 17.8,
-    "requires_ice": false,
+    "make_fresh": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_detergent": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_foaming": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_fixative": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "fume_hood_required": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_hygroscopic": {
+      "value": true,
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "sds_phrase",
+          "ref": "section_7:'hygroscopic'",
+          "agrees": true
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_deliquescent": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_corrosive": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_adsorption_prone": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "lo_bind_required": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "freeze_point_C": 20.0,
+    "requires_ice": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
     "freeze_thaw_max_cycles": null,
-    "skin_penetrant": false,
+    "skin_penetrant": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
     "plastic_incompatible": [],
-    "storage_temp_C": 25
+    "storage_temp_C": null,
+    "is_oxidizer": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_air_sensitive": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_peroxide_forming": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_water_reactive": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    }
   },
   "ghs": {
     "pictograms": [],
@@ -42,16 +372,32 @@
     "hazard_statements": []
   },
   "sds_facts": {
-    "storage": "Store at room temperature, tightly sealed to prevent moisture uptake.",
-    "ppe": ["nitrile gloves"],
-    "incompatibilities": ["strong oxidizing agents"]
+    "storage": "Store per SDS.",
+    "ppe": [
+      "nitrile gloves",
+      "safety glasses",
+      "respiratory protection"
+    ],
+    "incompatibilities": []
   },
   "bench_knowledge": [
-    "Use reverse pipetting: press plunger to second stop before aspirating, then release to first stop. This eliminates the dead air volume that causes bubbles.",
-    "After aspirating, wait 2–3 seconds before withdrawing the tip from the liquid — glycerol clings to the outer tip and drips after removal.",
-    "Wide-bore tips cut aspiration resistance and reduce shear; standard tips build enough back-pressure to stall standard pipette pistons at high volumes.",
-    "Glycerol is hygroscopic — an open bottle gains mass (and dilutes concentration) as it absorbs atmospheric water. Cap immediately after use.",
-    "Freezing point is 17.8°C: pure glycerol can solidify in a 4°C cold room or on ice. Warm to room temperature and confirm it is fully liquid before pipetting.",
-    "Glycerol-containing buffers (50% enzyme stocks, glycerol stocks of bacteria) stay liquid at −20°C; exploited for bacterial cryopreservation without ice crystal damage."
-  ]
+    {
+      "rule_id": "viscous_no_protein",
+      "because": "High-viscosity non-protein liquids (e.g., pure glycerol, PEG solutions) resist aspiration, causing back-pressure that stalls the piston and under-delivers volume. Wide-bore tips reduce hydraulic resistance. Reverse pipetting removes the dead-air step. A 2\u20133 s post-aspirate pause lets the meniscus stabilise before withdrawal.",
+      "cite": "Eppendorf Technical Guide: Pipetting Viscous Liquids, 2020. Perry's Chemical Engineers' Handbook, 8th ed. (glycerol viscosity 1412 mPa\u00b7s at 20\u00b0C).",
+      "confidence": "low"
+    },
+    {
+      "rule_id": "warm_freeze_prone_liquid",
+      "because": "Liquids with freeze points at or above 15\u00b0C (DMSO ~19\u00b0C, glycerol ~18\u00b0C) can solidify partially or fully in a 4\u00b0C cold room or on ice. Pipetting a partially-solidified liquid causes systematic volume errors. The physical_state guard prevents the rule from misfiring on solids whose melting point happens to be reported in freeze_point_C (e.g. NaOH pellets, PFA powder).",
+      "cite": "Sigma-Aldrich DMSO Product Information Sheet 276855 (freeze point 18.45\u00b0C). Perry's Chemical Engineers' Handbook, 8th ed. (glycerol freeze point 17.8\u00b0C).",
+      "confidence": "high"
+    }
+  ],
+  "sds_source": {
+    "revision_date": "05/01/2025",
+    "version": "6.18",
+    "product_number": "G5516"
+  },
+  "schema_version": "2.0"
 }

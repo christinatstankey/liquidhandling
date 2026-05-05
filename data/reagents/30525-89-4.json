@@ -1,65 +1,412 @@
 {
-  "name": "Paraformaldehyde (PFA), solid",
+  "name": "Paraformaldehyde",
   "cas": "30525-89-4",
   "category": "fixative",
-  "vendor_example": "Sigma-Aldrich 158127, Electron Microscopy Sciences 19200",
-  "physical_state": "powder",
-  "striking_fact": "PFA releases formaldehyde gas (IARC Group 1 carcinogen) during dissolution — always prepare and use in a fume hood.",
+  "vendor_example": "Sigma-Aldrich P6148",
+  "physical_state": "solid",
   "properties": {
-    "is_protein": false,
+    "is_protein": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
     "glycerol_pct": null,
     "viscosity_class": null,
     "viscosity_mPas_20C": null,
-    "vapor_pressure_kPa_20C": 0.001,
-    "is_volatile": false,
-    "is_flammable": true,
-    "flash_point_C": 70,
-    "is_light_sensitive": false,
-    "is_fluorophore": false,
-    "is_reducing_agent": false,
-    "oxidizes_in_solution": false,
+    "vapor_pressure_kPa_20C": null,
+    "is_volatile": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_flammable": {
+      "value": true,
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "ghs_hcode",
+          "ref": "H228",
+          "agrees": true
+        }
+      ]
+    },
+    "flash_point_C": null,
+    "is_light_sensitive": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_fluorophore": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "excitation_nm": null,
+    "emission_nm": null,
+    "is_reducing_agent": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "oxidizes_in_solution": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
     "solution_half_life_at_4C_days": 30,
-    "make_fresh": true,
-    "is_detergent": false,
-    "is_foaming": false,
-    "is_fixative": true,
-    "fume_hood_required": true,
-    "is_hygroscopic": false,
-    "is_deliquescent": false,
-    "is_corrosive": true,
-    "is_adsorption_prone": false,
-    "lo_bind_required": false,
+    "make_fresh": {
+      "value": true,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": true
+        }
+      ]
+    },
+    "is_detergent": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_foaming": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_fixative": {
+      "value": true,
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "chebi",
+          "ref": "CHEBI:75983",
+          "agrees": true
+        },
+        {
+          "type": "chebi",
+          "ref": "CHEBI:64213",
+          "agrees": true
+        }
+      ]
+    },
+    "fume_hood_required": {
+      "value": true,
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "sds_phrase",
+          "ref": "section_7:'Work under hood'",
+          "agrees": true
+        }
+      ]
+    },
+    "is_hygroscopic": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_deliquescent": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_corrosive": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_adsorption_prone": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "lo_bind_required": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
     "freeze_point_C": null,
-    "requires_ice": false,
+    "requires_ice": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
     "freeze_thaw_max_cycles": null,
-    "skin_penetrant": false,
+    "skin_penetrant": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
     "plastic_incompatible": [],
-    "storage_temp_C": 25
+    "storage_temp_C": 5.0,
+    "is_oxidizer": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_air_sensitive": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_peroxide_forming": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_water_reactive": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    }
   },
   "ghs": {
-    "pictograms": ["flame", "skull_crossbones", "health_hazard", "corrosion", "exclamation_mark"],
+    "pictograms": [
+      "corrosion",
+      "exclamation_mark",
+      "flame",
+      "health_hazard"
+    ],
     "signal_word": "Danger",
     "hazard_statements": [
-      "H228: Flammable solid",
-      "H301+H311+H331: Toxic if swallowed, in contact with skin, or if inhaled",
-      "H314: Causes severe skin burns and eye damage",
-      "H317: May cause an allergic skin reaction",
-      "H335: May cause respiratory irritation",
-      "H341: Suspected of causing genetic defects",
-      "H350: May cause cancer (formaldehyde released; IARC Group 1)"
+      "H228 Flammable solid",
+      "H332 Harmful if swallowed or if inhaled",
+      "H315 Causes skin irritation",
+      "H317 May cause an allergic skin reaction",
+      "H318 Causes serious eye damage",
+      "H335 May cause respiratory irritation",
+      "H341 Suspected of causing genetic defects",
+      "H350 May cause cancer",
+      "H402 Harmful to aquatic life"
     ]
   },
   "sds_facts": {
-    "storage": "Store at room temperature in a well-ventilated area, away from heat and ignition sources. Sealed original container. Opened bottles should be used within 1–2 years.",
-    "ppe": ["nitrile gloves", "eye protection", "lab coat", "fume hood"],
-    "incompatibilities": ["strong oxidizing agents", "strong bases", "alkali metals"]
+    "storage": "Store at 2\u20138\u00b0C (refrigerator).",
+    "ppe": [
+      "nitrile gloves",
+      "safety goggles",
+      "respiratory protection"
+    ],
+    "incompatibilities": []
   },
   "bench_knowledge": [
-    "Always prepare and use 4% PFA solutions in a fume hood — the dissolution step releases formaldehyde vapor, which is a carcinogen and respiratory sensitizer.",
-    "For most histology and immunofluorescence, prepare fresh 4% PFA in PBS (pH 7.4) on the day of use: dissolve PFA powder at 60°C with NaOH to clarify, cool to RT, adjust pH. Old stock solutions from 16% ampules are convenient but drift in quality over weeks.",
-    "Cells are typically fixed in 4% PFA for 10–15 min at room temperature; over-fixation (>30 min or high concentration) can mask epitopes and reduce antibody signal.",
-    "Inactivate PFA waste with excess sodium bicarbonate (raise pH >9) or dilute with large volumes of water; dispose as formaldehyde-containing hazardous waste — not down the drain.",
-    "PFA fixation crosslinks proteins via methylene bridges; it does not precipitate. Precipitation fixation (methanol, acetone) is different and incompatible with some antibodies that require crosslinked antigen architecture.",
-    "Never mix PFA waste with bleach — bleach + formaldehyde generates bis(chloromethyl) ether (a potent carcinogen) and chloromethyl methyl ether. Separate waste streams."
-  ]
+    {
+      "rule_id": "fume_hood_fixative",
+      "because": "PFA dissolves to release formaldehyde, an IARC Group 1 (known) human carcinogen and respiratory sensitiser. Even brief vapour exposure during preparation is a documented occupational hazard. Fresh preparation from powder in PBS (rather than from stored 16% stock solutions) provides better morphological preservation and avoids formate contamination that accumulates in aged solutions.",
+      "cite": "IARC Monographs Vol. 100F (2012): Formaldehyde classified Group 1. Fox CH et al. (1985) J Histochem Cytochem 33:845\u2013853 (PFA fixation kinetics).",
+      "confidence": "high"
+    }
+  ],
+  "sds_source": {
+    "revision_date": "11/06/2025",
+    "version": "6.10",
+    "product_number": "P6148"
+  },
+  "schema_version": "2.0"
 }

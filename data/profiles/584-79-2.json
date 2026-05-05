@@ -1,0 +1,19 @@
+{
+  "reagent_name": "Esbiothrin",
+  "cas": "584-79-2",
+  "handling_profile": {
+    "safety": {
+      "fume_hood_required": true
+    }
+  },
+  "rules_fired": [
+    {
+      "id": "fume_hood_toxic",
+      "because": "The SDS (Section 7 or 8) specifies ventilation controls or fume hood use for this reagent. This category spans volatile toxic solvents (pyridine, DMF, heptane), cytotoxic and genotoxic compounds (docetaxel, streptozocin, azoxymethane), and reagents whose vapours or aerosols pose an inhalation hazard. A chemical fume hood provides the primary engineering control \u2014 never handle these reagents on the open bench.",
+      "cite": "OSHA Laboratory Standard 29 CFR 1910.1450. Manufacturer SDS Section 7/8.",
+      "confidence": "high",
+      "field_consensus": false
+    }
+  ],
+  "conflicts": []
+}

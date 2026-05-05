@@ -1,0 +1,24 @@
+{
+  "reagent_name": "Potassium phosphate dibasic, anhydrous,",
+  "cas": "7758-11-4",
+  "handling_profile": {
+    "storage": {
+      "desiccator": true
+    },
+    "preparation": {
+      "weigh_fast": true,
+      "cap_immediately": true,
+      "date_first_opening": true
+    }
+  },
+  "rules_fired": [
+    {
+      "id": "desiccator_hygroscopic_solid",
+      "because": "Hygroscopic and deliquescent solids absorb atmospheric water during each weighing event. Mass gain directly dilutes the effective molarity of the solution you prepare. Deliquescent solids (e.g., NaOH pellets) can become partially-dissolved slush within minutes in humid air, further confounding accurate weighing. Desiccator storage and fast weighing are the only controls for this.",
+      "cite": "Sigma-Aldrich Handling Hygroscopic Compounds Technical Note. ASHP Guidelines on Handling Hazardous Drugs (weighing-by-difference rationale).",
+      "confidence": "high",
+      "field_consensus": false
+    }
+  ],
+  "conflicts": []
+}

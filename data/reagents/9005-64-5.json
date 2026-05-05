@@ -1,61 +1,402 @@
 {
-  "name": "Tween-20 (Polysorbate 20)",
+  "name": "TWEEN\u00ae 20",
   "cas": "9005-64-5",
   "category": "detergent",
-  "vendor_example": "Sigma-Aldrich P9416, Thermo 28320",
+  "vendor_example": "Sigma P9416",
   "physical_state": "liquid",
-  "striking_fact": "Even 0.1% Tween-20 foams aggressively if dispensed with air — always dispense along the tube wall with no air gap.",
   "properties": {
-    "is_protein": false,
+    "is_protein": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
     "glycerol_pct": null,
-    "viscosity_class": "moderate",
-    "viscosity_mPas_20C": 250,
-    "vapor_pressure_kPa_20C": 0.0001,
-    "is_volatile": false,
-    "is_flammable": false,
-    "flash_point_C": 110,
-    "is_light_sensitive": false,
-    "is_fluorophore": false,
-    "is_reducing_agent": false,
-    "oxidizes_in_solution": false,
+    "viscosity_class": "high",
+    "viscosity_mPas_20C": 400.0,
+    "vapor_pressure_kPa_20C": 0.14,
+    "is_volatile": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_flammable": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "flash_point_C": 275.0,
+    "is_light_sensitive": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_fluorophore": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "excitation_nm": null,
+    "emission_nm": null,
+    "is_reducing_agent": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "oxidizes_in_solution": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
     "solution_half_life_at_4C_days": null,
-    "make_fresh": false,
-    "is_detergent": true,
-    "is_foaming": true,
-    "is_fixative": false,
-    "fume_hood_required": false,
-    "is_hygroscopic": false,
-    "is_deliquescent": false,
-    "is_corrosive": false,
-    "is_adsorption_prone": false,
-    "lo_bind_required": false,
+    "make_fresh": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_detergent": {
+      "value": true,
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "chebi",
+          "ref": "CHEBI:27780",
+          "agrees": true
+        },
+        {
+          "type": "chebi",
+          "ref": "CHEBI:35195",
+          "agrees": true
+        }
+      ]
+    },
+    "is_foaming": {
+      "value": true,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": true
+        }
+      ]
+    },
+    "is_fixative": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "fume_hood_required": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_hygroscopic": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_deliquescent": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_corrosive": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_adsorption_prone": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "lo_bind_required": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
     "freeze_point_C": null,
-    "requires_ice": false,
+    "requires_ice": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
     "freeze_thaw_max_cycles": null,
-    "skin_penetrant": false,
-    "plastic_incompatible": ["polystyrene_prolonged"],
-    "storage_temp_C": 25
+    "skin_penetrant": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "plastic_incompatible": [],
+    "storage_temp_C": null,
+    "is_oxidizer": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_air_sensitive": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_peroxide_forming": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_water_reactive": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    }
   },
   "ghs": {
-    "pictograms": ["exclamation_mark"],
-    "signal_word": "Warning",
-    "hazard_statements": [
-      "H315: Causes skin irritation",
-      "H319: Causes serious eye irritation",
-      "H335: May cause respiratory irritation"
-    ]
+    "pictograms": [],
+    "signal_word": null,
+    "hazard_statements": []
   },
   "sds_facts": {
-    "storage": "Store at room temperature. Avoid prolonged contact with polystyrene containers.",
-    "ppe": ["nitrile gloves", "eye protection"],
-    "incompatibilities": ["strong oxidizing agents"]
+    "storage": "Store per SDS.",
+    "ppe": [
+      "nitrile gloves",
+      "safety glasses"
+    ],
+    "incompatibilities": []
   },
   "bench_knowledge": [
-    "Dispense slowly along the tube wall with the tip touching the side — this prevents air entrainment and foam formation.",
-    "Never blow out the last drop with a full air blowout: the air bubble causes visible foam. Touch-off on the wall instead.",
-    "Tween-20 adsorbs onto polystyrene over time; use polypropylene tubes for long-term storage of Tween-containing buffers.",
-    "Pre-wet the tip before aspirating from the stock bottle to prevent a sticky film on the tip exterior causing trailing drops.",
-    "Tween-20 at >0.5% can interfere with SDS-PAGE by competing with SDS; use the minimum concentration needed for your assay.",
-    "In ELISA wash buffers, 0.05% Tween-20 (PBST) is the standard; higher concentrations can strip antibodies off the plate."
-  ]
+    {
+      "rule_id": "viscous_no_protein",
+      "because": "High-viscosity non-protein liquids (e.g., pure glycerol, PEG solutions) resist aspiration, causing back-pressure that stalls the piston and under-delivers volume. Wide-bore tips reduce hydraulic resistance. Reverse pipetting removes the dead-air step. A 2\u20133 s post-aspirate pause lets the meniscus stabilise before withdrawal.",
+      "cite": "Eppendorf Technical Guide: Pipetting Viscous Liquids, 2020. Perry's Chemical Engineers' Handbook, 8th ed. (glycerol viscosity 1412 mPa\u00b7s at 20\u00b0C).",
+      "confidence": "low"
+    },
+    {
+      "rule_id": "detergent_no_foam",
+      "because": "Surfactants above their CMC form micelles that stabilise foam. Any air-liquid interface created by dispensing rapidly or by blowout air bubbles generates persistent foam. Dispensing slowly along the tube wall prevents air entrainment. Touch-off tip on the wall instead of final blowout eliminates the last drop of air.",
+      "cite": "Corning Life Sciences Application Note: Surfactants in Liquid Handling, 2019. Field consensus.",
+      "confidence": "high"
+    }
+  ],
+  "sds_source": {
+    "revision_date": "11/06/2025",
+    "version": "6.9",
+    "product_number": "P9416"
+  },
+  "schema_version": "2.0"
 }

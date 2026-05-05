@@ -1,0 +1,41 @@
+{
+  "reagent_name": "2-Methylbutane",
+  "cas": "78-78-4",
+  "handling_profile": {
+    "pipetting": {
+      "pre_wet_cycles": 3,
+      "dispense_speed": "fast"
+    },
+    "safety": {
+      "fume_hood_required": true,
+      "avoid_ignition_sources": true
+    },
+    "storage": {
+      "flammable_cabinet": true
+    }
+  },
+  "rules_fired": [
+    {
+      "id": "pre_wet_volatile",
+      "because": "High vapor pressure (\u22655 kPa at 20\u00b0C) causes significant evaporation inside the tip. Without pre-wetting, the headspace is dry air; the solvent flash-evaporates into it, creating a vapour cushion that compresses and releases unpredictably, drifting dispensed volume by 5\u201315%. Three aspirate-expel cycles saturate the headspace before the actual dispensing step. Fast dispense minimises dwell-time in the tip.",
+      "cite": "Eppendorf Application Note: Pipetting Volatile Liquids, 2018. NIST WebBook CAS 64-17-5 (vapor pressure 5.95 kPa at 20\u00b0C).",
+      "confidence": "high",
+      "field_consensus": false
+    },
+    {
+      "id": "fume_hood_toxic",
+      "because": "The SDS (Section 7 or 8) specifies ventilation controls or fume hood use for this reagent. This category spans volatile toxic solvents (pyridine, DMF, heptane), cytotoxic and genotoxic compounds (docetaxel, streptozocin, azoxymethane), and reagents whose vapours or aerosols pose an inhalation hazard. A chemical fume hood provides the primary engineering control \u2014 never handle these reagents on the open bench.",
+      "cite": "OSHA Laboratory Standard 29 CFR 1910.1450. Manufacturer SDS Section 7/8.",
+      "confidence": "high",
+      "field_consensus": false
+    },
+    {
+      "id": "flammable_storage",
+      "because": "Flammable liquids (flash point < 60\u00b0C) generate ignitable vapours at or near room temperature. NFPA 30 and OSHA 29 CFR 1910.106 require storage in FM-approved flammable liquid storage cabinets whenever quantities exceed the exempt amount in standard laboratory containers. Class IB/IC solvents (heptane fp \u22124\u00b0C, ethyl acetate fp \u22124\u00b0C, pyridine fp 20\u00b0C) have vapour densities > 1 and will pool at floor level near ignition sources such as hot plates and electrical outlets. Always handle in a chemical fume hood to prevent vapour accumulation.",
+      "cite": "NFPA 30: Flammable and Combustible Liquids Code (2021). OSHA 29 CFR 1910.106 (flammable liquids storage).",
+      "confidence": "high",
+      "field_consensus": false
+    }
+  ],
+  "conflicts": []
+}

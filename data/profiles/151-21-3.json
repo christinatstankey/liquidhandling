@@ -1,0 +1,42 @@
+{
+  "reagent_name": "Sodium dodecyl sulfate",
+  "cas": "151-21-3",
+  "handling_profile": {
+    "pipetting": {
+      "dispense_speed": "slow",
+      "technique": "wall_touch_off",
+      "no_blowout": true
+    },
+    "safety": {
+      "fume_hood_required": true,
+      "avoid_ignition_sources": true
+    },
+    "storage": {
+      "flammable_cabinet": true
+    }
+  },
+  "rules_fired": [
+    {
+      "id": "detergent_no_foam",
+      "because": "Surfactants above their CMC form micelles that stabilise foam. Any air-liquid interface created by dispensing rapidly or by blowout air bubbles generates persistent foam. Dispensing slowly along the tube wall prevents air entrainment. Touch-off tip on the wall instead of final blowout eliminates the last drop of air.",
+      "cite": "Corning Life Sciences Application Note: Surfactants in Liquid Handling, 2019. Field consensus.",
+      "confidence": "high",
+      "field_consensus": true
+    },
+    {
+      "id": "fume_hood_toxic",
+      "because": "The SDS (Section 7 or 8) specifies ventilation controls or fume hood use for this reagent. This category spans volatile toxic solvents (pyridine, DMF, heptane), cytotoxic and genotoxic compounds (docetaxel, streptozocin, azoxymethane), and reagents whose vapours or aerosols pose an inhalation hazard. A chemical fume hood provides the primary engineering control \u2014 never handle these reagents on the open bench.",
+      "cite": "OSHA Laboratory Standard 29 CFR 1910.1450. Manufacturer SDS Section 7/8.",
+      "confidence": "high",
+      "field_consensus": false
+    },
+    {
+      "id": "flammable_storage",
+      "because": "Flammable liquids (flash point < 60\u00b0C) generate ignitable vapours at or near room temperature. NFPA 30 and OSHA 29 CFR 1910.106 require storage in FM-approved flammable liquid storage cabinets whenever quantities exceed the exempt amount in standard laboratory containers. Class IB/IC solvents (heptane fp \u22124\u00b0C, ethyl acetate fp \u22124\u00b0C, pyridine fp 20\u00b0C) have vapour densities > 1 and will pool at floor level near ignition sources such as hot plates and electrical outlets. Always handle in a chemical fume hood to prevent vapour accumulation.",
+      "cite": "NFPA 30: Flammable and Combustible Liquids Code (2021). OSHA 29 CFR 1910.106 (flammable liquids storage).",
+      "confidence": "high",
+      "field_consensus": false
+    }
+  ],
+  "conflicts": []
+}

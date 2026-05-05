@@ -1,0 +1,35 @@
+{
+  "reagent_name": "Ammonium hydroxide solution",
+  "cas": "16393-49-0",
+  "handling_profile": {
+    "pipetting": {
+      "pre_wet_cycles": 3,
+      "dispense_speed": "fast"
+    },
+    "preparation": {
+      "add_to_water": true
+    },
+    "safety": {
+      "acid_resistant_tips": true,
+      "neutralize_before_disposal": true,
+      "fume_hood_required": true
+    }
+  },
+  "rules_fired": [
+    {
+      "id": "pre_wet_volatile",
+      "because": "High vapor pressure (\u22655 kPa at 20\u00b0C) causes significant evaporation inside the tip. Without pre-wetting, the headspace is dry air; the solvent flash-evaporates into it, creating a vapour cushion that compresses and releases unpredictably, drifting dispensed volume by 5\u201315%. Three aspirate-expel cycles saturate the headspace before the actual dispensing step. Fast dispense minimises dwell-time in the tip.",
+      "cite": "Eppendorf Application Note: Pipetting Volatile Liquids, 2018. NIST WebBook CAS 64-17-5 (vapor pressure 5.95 kPa at 20\u00b0C).",
+      "confidence": "high",
+      "field_consensus": false
+    },
+    {
+      "id": "corrosive_add_to_water",
+      "because": "Concentrated corrosive reagents (HCl, TFA, NaOH) release significant heat on dilution. Adding water to a concentrated corrosive can boil the liquid and cause spattering; always add the corrosive slowly to water. TFA and HCl volatilise in the hood \u2014 decant and dilute in a ventilated space. Neutralise to pH 6\u20138 before drain disposal per local regulations.",
+      "cite": "Sigma-Aldrich HCl Safety Note 258148. ACS Safety in Academic Chemistry Laboratories, 7th ed., Ch. 4. EPA 40 CFR Part 261 (hazardous waste neutralisation).",
+      "confidence": "high",
+      "field_consensus": false
+    }
+  ],
+  "conflicts": []
+}
