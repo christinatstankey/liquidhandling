@@ -4,14 +4,17 @@
   "handling_profile": {
     "storage": {
       "requires_ice": true,
-      "freeze_thaw_max_cycles": 3
+      "freeze_thaw_max_cycles": 3,
+      "container": "lo_bind"
     },
     "mixing": {
       "no_vortex": true
     },
     "preparation": {
       "thaw_method": "37C_water_bath_with_periodic_mixing",
-      "aliquot_on_first_thaw": true
+      "aliquot_on_first_thaw": true,
+      "single_use_aliquots": true,
+      "add_carrier_if_dilute": "BSA 0.1% if < 10 \u00b5g/mL"
     }
   },
   "rules_fired": [
@@ -26,6 +29,13 @@
       "id": "thaw_serum_gently",
       "because": "Sera contain labile complement proteins, growth factors (EGF, IGF-1, FGF), and hormones that are destroyed by slow thawing at room temperature or by repeated freeze-thaw cycling. A 37\u00b0C water bath with periodic swirling achieves full thaw in 30\u201360 minutes while minimising protein denaturation. Aliquoting on first thaw prevents the repeated freeze-thaw cycles that precipitate proteins and reduce growth-promoting activity. Most manufacturers specify \u22643 freeze-thaw cycles for full activity retention.",
       "cite": "Gibco FBS Handling and Use Guide. Sigma-Aldrich Fetal Bovine Serum Technical Bulletin F2442. ATCC Animal Cell Culture Guide.",
+      "confidence": "low",
+      "field_consensus": false
+    },
+    {
+      "id": "lo_bind_adsorption_prone",
+      "because": "Proteins, oligonucleotides, and antibodies at low concentrations lose significant material to non-specific adsorption onto standard polypropylene and polystyrene surfaces within 30\u201360 minutes, particularly below 100 \u00b5g/mL. LoBind surfaces have reduced hydrophobic character; adding BSA or another carrier protein competes for adsorption sites and stabilises the stock at very low concentrations.",
+      "cite": "Eppendorf LoBind Technology Technical Note, 2019. Kingston RE et al. (2003) Current Protocols in Mol. Bio.: nucleic acid quantification and dilution.",
       "confidence": "low",
       "field_consensus": false
     }

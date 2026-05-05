@@ -8,6 +8,57 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/styles.css" />
+  <style>
+    /* ── Handling instruction chips ─────────────── */
+    .instr-group { margin-bottom: 1.1rem; }
+    .instr-group-label {
+      font-size: .68rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: .08em; margin-bottom: .4rem;
+    }
+    .instr-chips { display: flex; flex-wrap: wrap; gap: .35rem; }
+    .chip {
+      display: inline-flex; align-items: center; gap: .3rem;
+      font-size: .78rem; font-weight: 500; line-height: 1.3;
+      padding: .28em .65em; border-radius: 4px;
+      border: 1px solid transparent;
+    }
+    .chip-storage     { background: #EFF6FF; border-color: #BFDBFE; color: #1E40AF; }
+    .chip-pipetting   { background: #F5F3FF; border-color: #DDD6FE; color: #5B21B6; }
+    .chip-preparation { background: #FFF7ED; border-color: #FED7AA; color: #92400E; }
+    .chip-safety      { background: #FEF2F2; border-color: #FCA5A5; color: #991B1B; }
+    .chip-mixing      { background: #F9FAFB; border-color: #E5E7EB; color: #374151; }
+    .chip-icon { font-size: .85rem; line-height: 1; }
+
+    /* ── Rule confidence badge ─────────────────── */
+    .conf-badge {
+      font-size: .65rem; font-weight: 600; text-transform: uppercase;
+      letter-spacing: .04em; padding: .12em .45em; border-radius: 3px;
+      margin-left: .4rem; vertical-align: middle;
+    }
+    .conf-high   { background: #ECFDF5; color: #065F46; border: 1px solid #A7F3D0; }
+    .conf-medium { background: #FFFBEB; color: #92400E; border: 1px solid #FDE68A; }
+    .conf-low    { background: #F9FAFB; color: #6B7280; border: 1px solid #E5E7EB; }
+
+    /* ── Diagram embed ─────────────────────────── */
+    .technique-diagram {
+      margin-top: 1rem;
+      border: 1px solid var(--hairline);
+      border-radius: 6px;
+      overflow: hidden;
+      background: var(--surface);
+    }
+    .technique-diagram img { width: 100%; display: block; }
+    .technique-diagram figcaption {
+      font-size: .75rem; color: var(--muted);
+      padding: .4rem .75rem; border-top: 1px solid var(--hairline);
+    }
+
+    /* ── No-profile placeholder ─────────────────── */
+    .no-handling {
+      color: var(--muted); font-size: .875rem; font-style: italic;
+      padding: 1.25rem 0;
+    }
+  </style>
 </head>
 <body>
 
@@ -27,7 +78,7 @@
 
 <footer>
   <div class="container">
-    Data sourced from manufacturer SDS sheets and published bench protocols.
+    Data sourced from manufacturer SDS sheets and published bench protocols. Rules engine: transparent YAML — no ML.
   </div>
 </footer>
 
@@ -39,123 +90,275 @@ const GHS_GLYPHS = {
   corrosion:         { glyph: '⬡',  cls: 'pic-corrosion',        label: 'Corrosive' },
   exclamation_mark:  { glyph: '!',   cls: 'pic-exclamation_mark', label: 'Irritant / warning' },
   environment:       { glyph: '🌿', cls: 'pic-environment',      label: 'Environmental hazard' },
+  oxidizer:          { glyph: '○',  cls: '',                      label: 'Oxidiser' },
 };
 
 const CATEGORY_LABELS = {
-  enzyme_glycerol:    'Enzyme / glycerol',
-  volatile_solvent:   'Volatile solvent',
-  viscous_reagent:    'Viscous reagent',
-  detergent:          'Detergent',
-  fluorophore:        'Fluorophore',
-  reducing_agent:     'Reducing agent',
-  fixative:           'Fixative',
-  dmso:               'DMSO',
-  adsorption_prone:   'Adsorption-prone',
-  hygroscopic_solid:  'Hygroscopic solid',
+  enzyme_glycerol:   'Enzyme / glycerol',
+  volatile_solvent:  'Volatile solvent',
+  viscous_reagent:   'Viscous reagent',
+  detergent:         'Detergent',
+  fluorophore:       'Fluorophore',
+  reducing_agent:    'Reducing agent',
+  fixative:          'Fixative',
+  dmso:              'DMSO',
+  adsorption_prone:  'Protein',
+  hygroscopic_solid: 'Hygroscopic solid',
 };
 
+/* Human-readable labels for each handling profile key */
+const PROFILE_LABELS = {
+  // storage
+  'storage.requires_ice':              { text: 'Keep on ice',            icon: '🧊', cls: 'chip-storage' },
+  'storage.container':                 { fn: v => v === 'lo_bind' ? 'LoBind tubes' : v === 'amber_or_foil' ? 'Amber / foil wrap' : v,
+                                         icon: '🧪', cls: 'chip-storage' },
+  'storage.flammable_cabinet':         { text: 'Flammable storage cabinet', icon: '🔥', cls: 'chip-safety' },
+  'storage.desiccator':                { text: 'Store in desiccator',    icon: '⬡',  cls: 'chip-storage' },
+  'storage.light_protected':           { text: 'Light-protected storage', icon: '🌑', cls: 'chip-storage' },
+  'storage.seal_tightly':              { text: 'Keep tightly sealed',    icon: '⊙',  cls: 'chip-storage' },
+  'storage.segregate_from_flammables': { text: 'Segregate from flammables', icon: '⚠', cls: 'chip-safety' },
+  'storage.segregate_from_organics':   { text: 'Segregate from organics',  icon: '⚠', cls: 'chip-safety' },
+  'storage.date_first_opening':        { text: 'Date on first opening',  icon: '📅', cls: 'chip-storage' },
+  'storage.max_age_months':            { fn: v => `Replace after ${v} months`, icon: '⏱', cls: 'chip-storage' },
+  'storage.freeze_thaw_max_cycles':    { fn: v => `Max ${v} freeze-thaw cycles`, icon: '♻', cls: 'chip-preparation' },
+  // pipetting
+  'pipetting.technique':               { fn: v => ({'reverse':'Reverse pipetting','wall_touch_off':'Wall touch-off'})[v] || v,
+                                         icon: '⬆', cls: 'chip-pipetting' },
+  'pipetting.pre_wet_cycles':          { fn: v => `Pre-wet ${v}×`,        icon: '↺',  cls: 'chip-pipetting' },
+  'pipetting.aspirate_speed':          { fn: v => `${v.charAt(0).toUpperCase()+v.slice(1)} aspirate`, icon: '↓', cls: 'chip-pipetting' },
+  'pipetting.dispense_speed':          { fn: v => `${v.charAt(0).toUpperCase()+v.slice(1)} dispense`, icon: '↑', cls: 'chip-pipetting' },
+  'pipetting.post_aspirate_delay_s':   { fn: v => `${v}s post-aspirate pause`, icon: '⏸', cls: 'chip-pipetting' },
+  'pipetting.tip_type':                { fn: v => v === 'wide_bore' ? 'Wide-bore tips' : v, icon: '⬡', cls: 'chip-pipetting' },
+  'pipetting.no_blowout':              { text: 'No blowout',              icon: '⊘',  cls: 'chip-pipetting' },
+  // preparation
+  'preparation.make_fresh':            { fn: v => v === true ? 'Make fresh' : v === false ? 'Air-stable — no need to make fresh' : null,
+                                         icon: '⚗', cls: 'chip-preparation' },
+  'preparation.single_use_aliquots':   { text: 'Single-use aliquots',     icon: '⊙',  cls: 'chip-preparation' },
+  'preparation.add_carrier_if_dilute': { fn: v => `Carrier: ${v}`,        icon: '+',  cls: 'chip-preparation' },
+  'preparation.thaw_method':           { text: '37 °C water-bath thaw',   icon: '🌡', cls: 'chip-preparation' },
+  'preparation.aliquot_on_first_thaw': { text: 'Aliquot on first thaw',   icon: '⊙',  cls: 'chip-preparation' },
+  'preparation.warm_to_RT_first':      { text: 'Warm to RT before use',   icon: '🌡', cls: 'chip-preparation' },
+  'preparation.weigh_fast':            { text: 'Weigh quickly',           icon: '⚖',  cls: 'chip-preparation' },
+  'preparation.cap_immediately':       { text: 'Cap immediately',         icon: '⊘',  cls: 'chip-preparation' },
+  'preparation.date_first_opening':    { text: 'Date on first opening',   icon: '📅', cls: 'chip-preparation' },
+  'preparation.tris_incompatible':     { text: 'Incompatible with Tris',  icon: '⊘',  cls: 'chip-safety' },
+  'preparation.use_in_water_only':     { text: 'Prepare in water only',   icon: '💧', cls: 'chip-preparation' },
+  'preparation.autoclave_after_treatment': { text: 'Autoclave after treatment', icon: '♨', cls: 'chip-preparation' },
+  'preparation.test_before_use':       { fn: v => `Test for ${v} before use`, icon: '⚗', cls: 'chip-safety' },
+  'preparation.add_to_water':          { text: 'Add reagent to water',    icon: '💧', cls: 'chip-preparation' },
+  'preparation.minimize_air_exposure': { text: 'Minimise air exposure',   icon: '○',  cls: 'chip-storage' },
+  'preparation.purge_with_inert_if_critical': { text: 'Purge with inert gas if critical', icon: '○', cls: 'chip-preparation' },
+  'preparation.max_storage_days':      { fn: v => `Stable up to ${v} days at 4 °C`, icon: '⏱', cls: 'chip-storage' },
+  'preparation.max_age_in_solution_days': { fn: v => `Replace in solution after ${v} days`, icon: '⏱', cls: 'chip-preparation' },
+  // safety
+  'safety.fume_hood_required':         { text: 'Fume hood required',      icon: '⬡',  cls: 'chip-safety' },
+  'safety.waste_stream':               { fn: v => `${v.replace(/_/g,' ')} waste stream`, icon: '⬡', cls: 'chip-safety' },
+  'safety.gloves':                     { fn: v => `${v.charAt(0).toUpperCase()+v.slice(1)} gloves`, icon: '⬡', cls: 'chip-safety' },
+  'safety.skin_penetrant_warning':     { text: 'Skin penetrant — change gloves on contact', icon: '⚠', cls: 'chip-safety' },
+  'safety.avoid_ignition_sources':     { text: 'Avoid ignition sources',  icon: '🔥', cls: 'chip-safety' },
+  'safety.acid_resistant_tips':        { text: 'Acid-resistant tips',     icon: '⬡',  cls: 'chip-safety' },
+  'safety.neutralize_before_disposal': { text: 'Neutralise before disposal', icon: '⬡', cls: 'chip-safety' },
+  'safety.minimize_light_exposure':    { text: 'Minimise light exposure', icon: '🌑', cls: 'chip-safety' },
+  'safety.no_evaporation_to_dryness':  { text: 'Never evaporate to dryness', icon: '⚠', cls: 'chip-safety' },
+  'safety.dedicated_waste':            { fn: v => `Dedicated ${v} waste`, icon: '⬡',  cls: 'chip-safety' },
+  'safety.avoid_metal_contact':        { text: 'Avoid metal contact',     icon: '⬡',  cls: 'chip-safety' },
+  // mixing
+  'mixing.no_vortex':                  { text: 'No vortex — invert gently', icon: '↺', cls: 'chip-mixing' },
+};
+
+/* Which technique diagram to show (if any) */
+const TECHNIQUE_DIAGRAMS = {
+  reverse:      { src: 'assets/diagrams/reverse-pipette.svg', caption: 'Reverse pipetting — aspirate past stop 1; dispense only to stop 1' },
+  wall_touch_off: null,
+};
+
+const RULE_DIAGRAMS = {
+  pre_wet_volatile:    { src: 'assets/diagrams/pre-wet.svg',           caption: 'Pre-wet tip cycles saturate the headspace before dispensing' },
+  lo_bind_adsorption_prone: { src: 'assets/diagrams/lo-bind.svg',     caption: 'LoBind surfaces prevent protein adsorption at low concentrations' },
+  protein_glycerol_on_ice:  { src: 'assets/diagrams/reverse-pipette.svg', caption: 'Reverse pipetting for viscous glycerol stocks' },
+};
+
+/* ── Helpers ─────────────────────────────────────────────────── */
+
+function esc(s) {
+  return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
 function ghsBadges(pictograms) {
-  if (!pictograms || pictograms.length === 0) return '<em style="color:var(--muted);font-size:.85rem">No GHS hazard classification</em>';
+  if (!pictograms || !pictograms.length)
+    return '<em style="color:var(--muted);font-size:.85rem">No GHS classification</em>';
   return pictograms.map(p => {
     const g = GHS_GLYPHS[p] || { glyph: '⬡', cls: '', label: p };
     return `<span class="ghs-badge ${g.cls}" title="${g.label}" style="width:36px;height:36px;font-size:1.3rem">${g.glyph}</span>`;
   }).join(' ');
 }
 
-function renderPage(reagent, profile) {
-  const cas   = reagent.cas !== 'N/A' ? reagent.cas : 'Biologic';
-  const label = CATEGORY_LABELS[reagent.category] || reagent.category;
-  const sw    = reagent.ghs.signal_word;
-  const signalTag = sw
-    ? `<span class="tag ${sw === 'Danger' ? 'signal-danger' : 'signal-warning'}">${sw}</span>`
-    : '';
+/* Flatten a nested handling_profile into key/value pairs */
+function flattenProfile(obj, prefix) {
+  const out = [];
+  for (const [k, v] of Object.entries(obj || {})) {
+    const key = prefix ? `${prefix}.${k}` : k;
+    if (v !== null && typeof v === 'object' && !Array.isArray(v)) {
+      out.push(...flattenProfile(v, key));
+    } else if (v !== null && v !== false) {
+      out.push([key, v]);
+    }
+  }
+  return out;
+}
 
-  // SDS facts panel
-  const sds = reagent.sds_facts;
-  const sdsItems = [
-    `<strong>Storage:</strong> ${sds.storage}`,
-    `<strong>PPE:</strong> ${sds.ppe.join(', ')}`,
-    sds.incompatibilities.length
-      ? `<strong>Incompatibilities:</strong> ${sds.incompatibilities.join('; ')}`
-      : null,
-  ].filter(Boolean).map(t => `<li>${t}</li>`).join('');
-
-  // Bench knowledge panel
-  const bkItems = reagent.bench_knowledge
-    .map(fact => `<li>${fact}</li>`)
-    .join('');
-
-  // Rules fired tab
-  let rulesHtml = '<p style="color:var(--muted);font-size:.9rem">No rules fired.</p>';
-  if (profile && profile.rules_fired && profile.rules_fired.length > 0) {
-    rulesHtml = '<div class="rules-list">' + profile.rules_fired.map(r => {
-      const fcBadge = r.field_consensus
-        ? '<span class="field-consensus-badge">field consensus</span>'
-        : '';
-      return `
-        <div class="rule-card">
-          <div class="rule-id">${r.id}${fcBadge}</div>
-          <div class="rule-because">${r.because}</div>
-          <div class="rule-cite">Cite: ${r.cite}</div>
-        </div>`;
-    }).join('') + '</div>';
+function renderHandlingChips(profile) {
+  if (!profile || !Object.keys(profile.handling_profile || {}).length) {
+    return '<p class="no-handling">No special handling required for this reagent.</p>';
   }
 
-  // Handling profile JSON tab
-  const profileJson = profile
-    ? JSON.stringify(profile.handling_profile, null, 2)
-    : '{}';
+  const pairs = flattenProfile(profile.handling_profile);
+  const groups = { storage: [], pipetting: [], preparation: [], safety: [], mixing: [] };
+
+  for (const [key, val] of pairs) {
+    const group = key.split('.')[0];
+    const spec = PROFILE_LABELS[key];
+    let text;
+    if (spec) {
+      if (spec.fn) {
+        text = spec.fn(val);
+        if (!text) continue;
+      } else {
+        text = val === true ? spec.text : String(val);
+      }
+      const chip = `<span class="chip ${spec.cls}" title="${esc(key)}">${spec.icon ? `<span class="chip-icon">${spec.icon}</span>` : ''}${esc(text)}</span>`;
+      if (groups[group]) groups[group].push(chip);
+    }
+  }
+
+  const GROUP_LABELS = {
+    storage:     'Storage',
+    pipetting:   'Pipetting',
+    preparation: 'Preparation',
+    safety:      'Safety',
+    mixing:      'Mixing',
+  };
+
+  let html = '';
+  for (const [grp, label] of Object.entries(GROUP_LABELS)) {
+    if (!groups[grp].length) continue;
+    const color = { storage:'#1E40AF', pipetting:'#5B21B6', preparation:'#92400E', safety:'#991B1B', mixing:'#374151' }[grp];
+    html += `<div class="instr-group">
+      <div class="instr-group-label" style="color:${color}">${label}</div>
+      <div class="instr-chips">${groups[grp].join('')}</div>
+    </div>`;
+  }
+
+  // Diagram for relevant technique
+  const firedIds = (profile.rules_fired || []).map(r => r.id);
+  for (const ruleId of firedIds) {
+    const diag = RULE_DIAGRAMS[ruleId];
+    if (diag) {
+      html += `<figure class="technique-diagram">
+        <img src="${diag.src}" alt="${esc(diag.caption)}" loading="lazy"/>
+        <figcaption>${esc(diag.caption)}</figcaption>
+      </figure>`;
+      break;
+    }
+  }
+  const technique = profile.handling_profile?.pipetting?.technique;
+  if (!firedIds.some(id => RULE_DIAGRAMS[id]) && technique && TECHNIQUE_DIAGRAMS[technique]) {
+    const diag = TECHNIQUE_DIAGRAMS[technique];
+    if (diag) {
+      html += `<figure class="technique-diagram">
+        <img src="${diag.src}" alt="${esc(diag.caption)}" loading="lazy"/>
+        <figcaption>${esc(diag.caption)}</figcaption>
+      </figure>`;
+    }
+  }
+
+  return html;
+}
+
+function renderRules(profile) {
+  if (!profile || !profile.rules_fired || !profile.rules_fired.length)
+    return '<p style="color:var(--muted);font-size:.9rem">No rules fired — standard handling applies.</p>';
+
+  return '<div class="rules-list">' + profile.rules_fired.map(r => {
+    const fcBadge = r.field_consensus
+      ? '<span class="field-consensus-badge">field consensus</span>' : '';
+    const confBadge = r.confidence
+      ? `<span class="conf-badge conf-${r.confidence}">${r.confidence}</span>` : '';
+    return `<div class="rule-card">
+      <div class="rule-id">${esc(r.id)}${fcBadge}${confBadge}</div>
+      <div class="rule-because">${esc(r.because)}</div>
+      <div class="rule-cite">Cite: ${esc(r.cite)}</div>
+    </div>`;
+  }).join('') + '</div>';
+}
+
+function renderPage(reagent, profile) {
+  const cas   = reagent.cas || 'Biologic';
+  const label = CATEGORY_LABELS[reagent.category] || reagent.category;
+  const sw    = reagent.ghs?.signal_word;
+  const signalTag = sw
+    ? `<span class="tag ${sw === 'Danger' ? 'signal-danger' : 'signal-warning'}">${sw}</span>` : '';
+
+  const sds = reagent.sds_facts || {};
+  const ppeStr = (sds.ppe || []).join(', ') || '—';
+  const incompStr = (sds.incompatibilities || []).join('; ');
+  const storageStr = sds.storage || '—';
+
+  const sdsItems = [
+    `<strong>Storage:</strong> ${esc(storageStr)}`,
+    `<strong>PPE:</strong> ${esc(ppeStr)}`,
+    incompStr ? `<strong>Incompatibilities:</strong> ${esc(incompStr)}` : null,
+  ].filter(Boolean).map(t => `<li>${t}</li>`).join('');
+
+  const hazardsHtml = (reagent.ghs?.hazard_statements || []).length
+    ? `<div style="margin-top:1.25rem">
+        <div class="panel-title">GHS hazard statements</div>
+        <ul class="hazards-list">
+          ${reagent.ghs.hazard_statements.map(h => {
+            const [code, ...rest] = h.split(':');
+            return `<li><strong>${esc(code.trim())}:</strong>${esc(rest.join(':'))}</li>`;
+          }).join('')}
+        </ul>
+      </div>` : '';
+
+  const profileJson = profile ? JSON.stringify(profile.handling_profile || {}, null, 2) : '{}';
 
   document.title = `${reagent.name} — Liquid Handling`;
   document.getElementById('main').innerHTML = `
     <div class="detail-header">
       <a href="index.html" style="font-size:.85rem;color:var(--muted)">← All reagents</a>
-      <h1 style="margin-top:.75rem">${reagent.name}</h1>
+      <h1 style="margin-top:.75rem">${esc(reagent.name)}</h1>
       <div class="detail-meta">
-        <code class="cas">${cas}</code>
-        <span class="tag">${label}</span>
+        <code class="cas">${esc(cas)}</code>
+        ${label ? `<span class="tag">${esc(label)}</span>` : ''}
         ${signalTag}
-        <span style="display:flex;gap:.4rem;align-items:center">${ghsBadges(reagent.ghs.pictograms)}</span>
+        <span style="display:flex;gap:.4rem;align-items:center">${ghsBadges(reagent.ghs?.pictograms)}</span>
       </div>
-      ${reagent.striking_fact ? `<p style="margin-top:.9rem;font-size:.95rem;color:var(--muted);max-width:600px">${reagent.striking_fact}</p>` : ''}
     </div>
 
     <div class="detail-panels">
       <div class="panel">
         <div class="panel-title">SDS facts</div>
         <ul class="fact-list">${sdsItems}</ul>
-        ${reagent.ghs.hazard_statements.length ? `
-          <div style="margin-top:1.25rem">
-            <div class="panel-title">GHS hazard statements</div>
-            <ul class="hazards-list">
-              ${reagent.ghs.hazard_statements.map(h => {
-                const [code, ...rest] = h.split(':');
-                return `<li><strong>${code.trim()}:</strong>${rest.join(':')}</li>`;
-              }).join('')}
-            </ul>
-          </div>` : ''}
+        ${hazardsHtml}
       </div>
       <div class="panel">
-        <div class="panel-title">Bench knowledge</div>
-        <ul class="fact-list">${bkItems}</ul>
+        <div class="panel-title">Handling instructions</div>
+        ${renderHandlingChips(profile)}
       </div>
     </div>
 
     <div class="tabs">
-      <button class="tab-btn active" onclick="switchTab(event, 'tab-rules')">Rules fired</button>
-      <button class="tab-btn" onclick="switchTab(event, 'tab-profile')">Robot profile (JSON)</button>
+      <button class="tab-btn active" onclick="switchTab(event,'tab-rules')">Rules fired</button>
+      <button class="tab-btn" onclick="switchTab(event,'tab-profile')">Robot profile (JSON)</button>
     </div>
     <div id="tab-rules" class="tab-panel active">
-      ${rulesHtml}
+      ${renderRules(profile)}
     </div>
     <div id="tab-profile" class="tab-panel">
-      <div class="json-block">${escapeHtml(profileJson)}</div>
+      <div class="json-block">${esc(profileJson)}</div>
     </div>
   `;
-}
-
-function escapeHtml(str) {
-  return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 }
 
 function switchTab(event, tabId) {
@@ -166,12 +369,12 @@ function switchTab(event, tabId) {
 }
 
 async function init() {
-  const params  = new URLSearchParams(location.search);
-  const cas     = params.get('cas');
-  const main    = document.getElementById('main');
+  const params = new URLSearchParams(location.search);
+  const cas    = params.get('cas');
+  const main   = document.getElementById('main');
 
   if (!cas) {
-    main.innerHTML = '<p class="error">No reagent specified. <a href="index.html">← Back to reagents</a></p>';
+    main.innerHTML = '<p class="error">No reagent specified. <a href="index.html">← Back</a></p>';
     return;
   }
 
@@ -182,10 +385,10 @@ async function init() {
     ]);
     if (!reagentRes.ok) throw new Error(`Reagent not found: ${cas}`);
     const reagent = await reagentRes.json();
-    const profile = profileRes && profileRes.ok ? await profileRes.json() : null;
+    const profile = profileRes?.ok ? await profileRes.json() : null;
     renderPage(reagent, profile);
   } catch (err) {
-    main.innerHTML = `<p class="error">${err.message} — <a href="index.html">← Back</a></p>`;
+    main.innerHTML = `<p class="error">${esc(err.message)} — <a href="index.html">← Back</a></p>`;
   }
 }
 
