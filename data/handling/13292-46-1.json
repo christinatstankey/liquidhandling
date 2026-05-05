@@ -1,7 +1,22 @@
 {
   "reagent_name": "Rifampicin",
   "cas": "13292-46-1",
-  "handling_profile": {},
-  "rules_fired": [],
+  "handling_profile": {
+    "storage": {
+      "seal_tightly": true
+    },
+    "preparation": {
+      "minimize_air_exposure": true
+    }
+  },
+  "rules_fired": [
+    {
+      "id": "air_sensitive_seal",
+      "because": "Air-sensitive reagents deteriorate on contact with atmospheric oxygen or moisture. Linoleic acid oxidises to cytotoxic lipid peroxides within hours in open air. Rifampicin degrades to the inactive 3-formyl-rifamycin SV quinone on oxidation. Histamine autooxidises at alkaline pH and is also hygroscopic. DMF absorbs moisture and slowly hydrolyses to dimethylamine (an irritant). Keep bottles tightly capped between uses; aliquot into single-use volumes for high-frequency access. For oxygen-critical applications, consider dispensing under argon.",
+      "cite": "Sigma-Aldrich product information: linoleic acid L1376, rifampicin R3501, DMF D4551. SDS Section 7.",
+      "confidence": "high",
+      "field_consensus": false
+    }
+  ],
   "conflicts": []
 }

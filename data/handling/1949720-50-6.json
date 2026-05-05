@@ -4,10 +4,16 @@
   "handling_profile": {
     "storage": {
       "light_protected": true,
-      "container": "amber_or_foil"
+      "container": "amber_or_foil",
+      "desiccator": true
     },
     "safety": {
       "minimize_light_exposure": true
+    },
+    "preparation": {
+      "weigh_fast": true,
+      "cap_immediately": true,
+      "date_first_opening": true
     }
   },
   "rules_fired": [
@@ -15,6 +21,13 @@
       "id": "light_protect_sensitive",
       "because": "Light-sensitive reagents degrade under UV or visible light by different mechanisms depending on the compound class. Fluorophores (DAPI, ethidium bromide) undergo irreversible photobleaching \u2014 the chromophore is destroyed; 30 seconds of UV transilluminator exposure causes measurable DAPI signal loss. Oxidizers (H\u2082O\u2082, NaOCl) photodecompose, losing titer. Peroxide-forming solvents (diethyl ether) form hydroperoxides faster in light. Light-activated monomers (acrylamide) can begin polymerising spontaneously. Amber containers or foil-wrap block the relevant wavelengths for all of these.",
       "cite": "Thermo Fisher Scientific: DAPI Technical Data Sheet (D1306). Lakowicz, Principles of Fluorescence Spectroscopy, 3rd ed., Ch. 1. Sigma-Aldrich H\u2082O\u2082 Product Information (216763).",
+      "confidence": "high",
+      "field_consensus": false
+    },
+    {
+      "id": "desiccator_hygroscopic_solid",
+      "because": "Hygroscopic and deliquescent solids absorb atmospheric water during each weighing event. Mass gain directly dilutes the effective molarity of the solution you prepare. Deliquescent solids (e.g., NaOH pellets) can become partially-dissolved slush within minutes in humid air, further confounding accurate weighing. Desiccator storage and fast weighing are the only controls for this.",
+      "cite": "Sigma-Aldrich Handling Hygroscopic Compounds Technical Note. ASHP Guidelines on Handling Hazardous Drugs (weighing-by-difference rationale).",
       "confidence": "high",
       "field_consensus": false
     }

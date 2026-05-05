@@ -2,8 +2,16 @@
   "reagent_name": "Zinc chloride",
   "cas": "7646-85-7",
   "handling_profile": {
+    "storage": {
+      "desiccator": true,
+      "seal_tightly": true
+    },
     "preparation": {
-      "add_to_water": true
+      "weigh_fast": true,
+      "cap_immediately": true,
+      "date_first_opening": true,
+      "add_to_water": true,
+      "minimize_air_exposure": true
     },
     "safety": {
       "acid_resistant_tips": true,
@@ -13,9 +21,23 @@
   },
   "rules_fired": [
     {
+      "id": "desiccator_hygroscopic_solid",
+      "because": "Hygroscopic and deliquescent solids absorb atmospheric water during each weighing event. Mass gain directly dilutes the effective molarity of the solution you prepare. Deliquescent solids (e.g., NaOH pellets) can become partially-dissolved slush within minutes in humid air, further confounding accurate weighing. Desiccator storage and fast weighing are the only controls for this.",
+      "cite": "Sigma-Aldrich Handling Hygroscopic Compounds Technical Note. ASHP Guidelines on Handling Hazardous Drugs (weighing-by-difference rationale).",
+      "confidence": "high",
+      "field_consensus": false
+    },
+    {
       "id": "corrosive_add_to_water",
       "because": "Concentrated corrosive reagents (HCl, TFA, NaOH) release significant heat on dilution. Adding water to a concentrated corrosive can boil the liquid and cause spattering; always add the corrosive slowly to water. TFA and HCl volatilise in the hood \u2014 decant and dilute in a ventilated space. Neutralise to pH 6\u20138 before drain disposal per local regulations.",
       "cite": "Sigma-Aldrich HCl Safety Note 258148. ACS Safety in Academic Chemistry Laboratories, 7th ed., Ch. 4. EPA 40 CFR Part 261 (hazardous waste neutralisation).",
+      "confidence": "high",
+      "field_consensus": false
+    },
+    {
+      "id": "air_sensitive_seal",
+      "because": "Air-sensitive reagents deteriorate on contact with atmospheric oxygen or moisture. Linoleic acid oxidises to cytotoxic lipid peroxides within hours in open air. Rifampicin degrades to the inactive 3-formyl-rifamycin SV quinone on oxidation. Histamine autooxidises at alkaline pH and is also hygroscopic. DMF absorbs moisture and slowly hydrolyses to dimethylamine (an irritant). Keep bottles tightly capped between uses; aliquot into single-use volumes for high-frequency access. For oxygen-critical applications, consider dispensing under argon.",
+      "cite": "Sigma-Aldrich product information: linoleic acid L1376, rifampicin R3501, DMF D4551. SDS Section 7.",
       "confidence": "high",
       "field_consensus": false
     }

@@ -8,13 +8,18 @@
     },
     "storage": {
       "date_first_opening": true,
-      "max_age_months": 3
+      "max_age_months": 3,
+      "flammable_cabinet": true,
+      "seal_tightly": true
     },
     "preparation": {
-      "test_before_use": "peroxide_strip"
+      "test_before_use": "peroxide_strip",
+      "minimize_air_exposure": true
     },
     "safety": {
-      "no_evaporation_to_dryness": true
+      "no_evaporation_to_dryness": true,
+      "fume_hood_required": true,
+      "avoid_ignition_sources": true
     }
   },
   "rules_fired": [
@@ -29,6 +34,27 @@
       "id": "peroxide_forming_track",
       "because": "Ethers (diethyl ether, THF, dioxane) form shock-sensitive hydroperoxides on exposure to air and light via autoxidation. Peroxide concentration increases with time and is highest in the last few millilitres as the solvent evaporates. Opening a bottle without a peroxide test when the contents are old or unknown is a documented explosion hazard. Max 3-month working life after opening; test with commercial peroxide strips before each use; discard at 25 ppm peroxide or above.",
       "cite": "Jackson HL et al. (1998) Chem Health Safety 5(3): 16\u201318 (ether peroxide hazards). Prudent Practices in the Laboratory, NRC 2011, Ch. 6.",
+      "confidence": "high",
+      "field_consensus": false
+    },
+    {
+      "id": "fume_hood_toxic",
+      "because": "The SDS (Section 7 or 8) specifies ventilation controls or fume hood use for this reagent. This category spans volatile toxic solvents (pyridine, DMF, heptane), cytotoxic and genotoxic compounds (docetaxel, streptozocin, azoxymethane), and reagents whose vapours or aerosols pose an inhalation hazard. A chemical fume hood provides the primary engineering control \u2014 never handle these reagents on the open bench.",
+      "cite": "OSHA Laboratory Standard 29 CFR 1910.1450. Manufacturer SDS Section 7/8.",
+      "confidence": "high",
+      "field_consensus": false
+    },
+    {
+      "id": "flammable_storage",
+      "because": "Flammable liquids (flash point < 60\u00b0C) generate ignitable vapours at or near room temperature. NFPA 30 and OSHA 29 CFR 1910.106 require storage in FM-approved flammable liquid storage cabinets whenever quantities exceed the exempt amount in standard laboratory containers. Class IB/IC solvents (heptane fp \u22124\u00b0C, ethyl acetate fp \u22124\u00b0C, pyridine fp 20\u00b0C) have vapour densities > 1 and will pool at floor level near ignition sources such as hot plates and electrical outlets. Always handle in a chemical fume hood to prevent vapour accumulation.",
+      "cite": "NFPA 30: Flammable and Combustible Liquids Code (2021). OSHA 29 CFR 1910.106 (flammable liquids storage).",
+      "confidence": "high",
+      "field_consensus": false
+    },
+    {
+      "id": "air_sensitive_seal",
+      "because": "Air-sensitive reagents deteriorate on contact with atmospheric oxygen or moisture. Linoleic acid oxidises to cytotoxic lipid peroxides within hours in open air. Rifampicin degrades to the inactive 3-formyl-rifamycin SV quinone on oxidation. Histamine autooxidises at alkaline pH and is also hygroscopic. DMF absorbs moisture and slowly hydrolyses to dimethylamine (an irritant). Keep bottles tightly capped between uses; aliquot into single-use volumes for high-frequency access. For oxygen-critical applications, consider dispensing under argon.",
+      "cite": "Sigma-Aldrich product information: linoleic acid L1376, rifampicin R3501, DMF D4551. SDS Section 7.",
       "confidence": "high",
       "field_consensus": false
     }
