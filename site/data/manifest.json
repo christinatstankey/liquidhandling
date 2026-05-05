@@ -304,14 +304,6 @@
     "file": "human-recombinant-il-4.json"
   },
   {
-    "name": "Rnase Out",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "rnase-out.json"
-  },
-  {
     "name": "Pierce Protease Inhibitor Mini Tablets, Edta-Free",
     "cas": null,
     "category": null,
@@ -456,38 +448,6 @@
     "file": "recombinant-human-ifn-gamma-protein.json"
   },
   {
-    "name": "Zymolyase 20T",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "zymolyase-20t.json"
-  },
-  {
-    "name": "Roswell Park Memorial Institute",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "roswell-park-memorial-institute.json"
-  },
-  {
-    "name": "Trypsin From Bovine Pancreas",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "trypsin-from-bovine-pancreas.json"
-  },
-  {
-    "name": "Rnaseout Recombinant Ribonuclease Inhibitor",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "rnaseout-recombinant-ribonuclease-inhibitor.json"
-  },
-  {
     "name": "Human Lif",
     "cas": null,
     "category": null,
@@ -518,14 +478,6 @@
     "top_pictogram": null,
     "signal_word": null,
     "file": "dmem-f12-glutamax.json"
-  },
-  {
-    "name": "Dynabeads Protein A For Immunoprecipitation",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "dynabeads-protein-a-for-immunoprecipitation.json"
   },
   {
     "name": "Penicillin-Streptomycin-Glutamine",
@@ -616,14 +568,6 @@
     "file": "truecut-cas9-protein-v2.json"
   },
   {
-    "name": "Dmem Medium",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "dmem-medium.json"
-  },
-  {
     "name": "Insulin, Human Recombinant",
     "cas": null,
     "category": null,
@@ -686,14 +630,6 @@
     "top_pictogram": null,
     "signal_word": null,
     "file": "recombinant-mouse-ifn.json"
-  },
-  {
-    "name": "Catalase From Bovine Liver",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "catalase-from-bovine-liver.json"
   },
   {
     "name": "Human Il-4",
@@ -766,14 +702,6 @@
     "top_pictogram": null,
     "signal_word": null,
     "file": "pyruvate-kinase.json"
-  },
-  {
-    "name": "Complete Edta-Free Protease Inhibitor",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "complete-edta-free-protease-inhibitor.json"
   },
   {
     "name": "Recombinant Murine Egf",
@@ -872,14 +800,6 @@
     "file": "dulbecco-s-modified-eagle-medium-high-glucose.json"
   },
   {
-    "name": "Rnasin Plus Rnase Inhibitor",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "rnasin-plus-rnase-inhibitor.json"
-  },
-  {
     "name": "Accutase",
     "cas": null,
     "category": null,
@@ -944,28 +864,12 @@
     "file": "dmem-no-glucose-no-glutamine-no-phenol-red.json"
   },
   {
-    "name": "Recombinant Human Tgf-B1",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "recombinant-human-tgf-b1.json"
-  },
-  {
     "name": "Seahorse Xf Dmem Medium",
     "cas": null,
     "category": null,
     "top_pictogram": null,
     "signal_word": null,
     "file": "seahorse-xf-dmem-medium.json"
-  },
-  {
-    "name": "B-27 Supplement",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "b-27-supplement.json"
   },
   {
     "name": "Schneider\u2019S Drosophila Medium",
@@ -1000,44 +904,12 @@
     "file": "proteinase-k-recombinant-pcr-grade.json"
   },
   {
-    "name": "Halt Protease Inhibitor",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "halt-protease-inhibitor.json"
-  },
-  {
-    "name": "Rpmi Medium 1640",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "rpmi-medium-1640.json"
-  },
-  {
     "name": "Chymotrypsin",
     "cas": null,
     "category": null,
     "top_pictogram": null,
     "signal_word": null,
     "file": "chymotrypsin.json"
-  },
-  {
-    "name": "Opti-Mem Reduced Serum Media",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "opti-mem-reduced-serum-media.json"
-  },
-  {
-    "name": "Complete Protease Inhibitor",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "complete-protease-inhibitor.json"
   },
   {
     "name": "Dmem, High Glucose, No Glutamine",
@@ -1048,36 +920,12 @@
     "file": "dmem-high-glucose-no-glutamine.json"
   },
   {
-    "name": "Protein A Sepharose Beads",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "protein-a-sepharose-beads.json"
-  },
-  {
-    "name": "Bovine Serum Albumin Solution",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "bovine-serum-albumin-solution.json"
-  },
-  {
     "name": "Exonuclease I",
     "cas": null,
     "category": null,
     "top_pictogram": null,
     "signal_word": null,
     "file": "exonuclease-i.json"
-  },
-  {
-    "name": "Ribolock Rnase Inhibitor",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "ribolock-rnase-inhibitor.json"
   },
   {
     "name": "Recombinant Human Vegf",
@@ -1104,22 +952,6 @@
     "file": "recombinant-mouse-il-33.json"
   },
   {
-    "name": "Roswell Park Memorial Institute Medium",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "roswell-park-memorial-institute-medium.json"
-  },
-  {
-    "name": "Dnasei",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "dnasei.json"
-  },
-  {
     "name": "Liberase Th",
     "cas": null,
     "category": null,
@@ -1134,14 +966,6 @@
     "top_pictogram": null,
     "signal_word": null,
     "file": "rnase-a.json"
-  },
-  {
-    "name": "Protein A Agarose Resin",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "protein-a-agarose-resin.json"
   },
   {
     "name": "Phusion Dna Polymerase",
@@ -1232,14 +1056,6 @@
     "file": "lb-medium.json"
   },
   {
-    "name": "Rpmi1640",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "rpmi1640.json"
-  },
-  {
     "name": "Cre Recombinase",
     "cas": null,
     "category": null,
@@ -1288,14 +1104,6 @@
     "file": "collagenase-dispase.json"
   },
   {
-    "name": "Rpmi Medium",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "rpmi-medium.json"
-  },
-  {
     "name": "Il-4",
     "cas": null,
     "category": null,
@@ -1328,28 +1136,12 @@
     "file": "prescission-protease.json"
   },
   {
-    "name": "Foetal Bovine Serum",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "foetal-bovine-serum.json"
-  },
-  {
     "name": "Dnase I Recombinant, Rnase-Free",
     "cas": null,
     "category": null,
     "top_pictogram": null,
     "signal_word": null,
     "file": "dnase-i-recombinant-rnase-free.json"
-  },
-  {
-    "name": "Bovine Albumin Fraction V",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "bovine-albumin-fraction-v.json"
   },
   {
     "name": "Bovine Serum Albumin",
@@ -1382,14 +1174,6 @@
     "top_pictogram": null,
     "signal_word": null,
     "file": "t4-dna-ligase-buffer.json"
-  },
-  {
-    "name": "Edta-Free Protease Inhibitor Cocktail",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "edta-free-protease-inhibitor-cocktail.json"
   },
   {
     "name": "Recombinant Human Tgf\u03b2",
@@ -1504,14 +1288,6 @@
     "file": "dulbecco-s-pbs.json"
   },
   {
-    "name": "Recombinant Human Il6",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "recombinant-human-il6.json"
-  },
-  {
     "name": "Tn5 Transposase",
     "cas": null,
     "category": null,
@@ -1608,14 +1384,6 @@
     "file": "anti-flag-m2-affinity-gel.json"
   },
   {
-    "name": "Opti-Mem I Reduced Serum Medium",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "opti-mem-i-reduced-serum-medium.json"
-  },
-  {
     "name": "Knockout Dmem",
     "cas": null,
     "category": null,
@@ -1646,14 +1414,6 @@
     "top_pictogram": null,
     "signal_word": null,
     "file": "rq1-dnase.json"
-  },
-  {
-    "name": "Mouse Serum",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "mouse-serum.json"
   },
   {
     "name": "Hotstartaq Dna Polymerase",
@@ -1696,14 +1456,6 @@
     "file": "antarctic-phosphatase.json"
   },
   {
-    "name": "B-27",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "b-27.json"
-  },
-  {
     "name": "Recombinant Mouse Il-7",
     "cas": null,
     "category": null,
@@ -1736,22 +1488,6 @@
     "file": "egf.json"
   },
   {
-    "name": "Edta-Free Complete Protease Inhibitor Cocktail",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "edta-free-complete-protease-inhibitor-cocktail.json"
-  },
-  {
-    "name": "Donkey Serum",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "donkey-serum.json"
-  },
-  {
     "name": "Rhodamine Phalloidin",
     "cas": null,
     "category": null,
@@ -1760,28 +1496,12 @@
     "file": "rhodamine-phalloidin.json"
   },
   {
-    "name": "Gibco Penicillin-Streptomycin",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "gibco-penicillin-streptomycin.json"
-  },
-  {
     "name": "Protein A Dynabeads",
     "cas": null,
     "category": null,
     "top_pictogram": null,
     "signal_word": null,
     "file": "protein-a-dynabeads.json"
-  },
-  {
-    "name": "Complete Protease Inhibitor Cocktail",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "complete-protease-inhibitor-cocktail.json"
   },
   {
     "name": "T4 Rna Ligase 1",
@@ -1800,14 +1520,6 @@
     "file": "scf.json"
   },
   {
-    "name": "Protease Inhibitors",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "protease-inhibitors.json"
-  },
-  {
     "name": "Lymphocyte Separation Medium",
     "cas": null,
     "category": null,
@@ -1824,22 +1536,6 @@
     "file": "anti-ha-magnetic-beads.json"
   },
   {
-    "name": "Gibco Fetal Bovine Serum",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "gibco-fetal-bovine-serum.json"
-  },
-  {
-    "name": "Bovine Serum Albumine",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "bovine-serum-albumine.json"
-  },
-  {
     "name": "Geltrex",
     "cas": null,
     "category": null,
@@ -1854,14 +1550,6 @@
     "top_pictogram": null,
     "signal_word": null,
     "file": "glutamax-supplement.json"
-  },
-  {
-    "name": "Dispase Ii",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "dispase-ii.json"
   },
   {
     "name": "Gm-Csf",
@@ -1934,14 +1622,6 @@
     "top_pictogram": null,
     "signal_word": null,
     "file": "human-pdgf-aa.json"
-  },
-  {
-    "name": "Rnasea",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "rnasea.json"
   },
   {
     "name": "Recombinant Murine Il-1\u0392",
@@ -2088,14 +1768,6 @@
     "file": "il-2.json"
   },
   {
-    "name": "Normal Horse Serum",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "normal-horse-serum.json"
-  },
-  {
     "name": "Endoglycosidase H",
     "cas": null,
     "category": null,
@@ -2104,28 +1776,12 @@
     "file": "endoglycosidase-h.json"
   },
   {
-    "name": "Neurobasal Media",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "neurobasal-media.json"
-  },
-  {
     "name": "0.05% Trypsin-Edta",
     "cas": null,
     "category": null,
     "top_pictogram": null,
     "signal_word": null,
     "file": "0-05-trypsin-edta.json"
-  },
-  {
-    "name": "Purelink Rnase A",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "purelink-rnase-a.json"
   },
   {
     "name": "Protein G Dynabeads",
@@ -2192,14 +1848,6 @@
     "file": "human-il-15.json"
   },
   {
-    "name": "Dnase",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "dnase.json"
-  },
-  {
     "name": "Luciferase Cell Culture Lysis 5X Reagent",
     "cas": null,
     "category": null,
@@ -2240,14 +1888,6 @@
     "file": "recombinant-mouse-il-23.json"
   },
   {
-    "name": "Protein A/G Magnetic Beads",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "protein-a-g-magnetic-beads.json"
-  },
-  {
     "name": "Neutravidin",
     "cas": null,
     "category": null,
@@ -2270,14 +1910,6 @@
     "top_pictogram": null,
     "signal_word": null,
     "file": "platinum-taq-dna-polymerase.json"
-  },
-  {
-    "name": "Phosphatase Inhibitor",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "phosphatase-inhibitor.json"
   },
   {
     "name": "Trypsin Gold, Mass Spectrometry Grade",
@@ -2312,36 +1944,12 @@
     "file": "dynabeads-myone-streptavidin-t1.json"
   },
   {
-    "name": "Dynabeads Protein G For Immunoprecipitation",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "dynabeads-protein-g-for-immunoprecipitation.json"
-  },
-  {
-    "name": "Fetal Calf Serum",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "fetal-calf-serum.json"
-  },
-  {
     "name": "Recombinant Human Thrombopoietin",
     "cas": null,
     "category": null,
     "top_pictogram": null,
     "signal_word": null,
     "file": "recombinant-human-thrombopoietin.json"
-  },
-  {
-    "name": "Accutase Solution",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "accutase-solution.json"
   },
   {
     "name": "Recombinant Human Il-33",
@@ -2368,22 +1976,6 @@
     "file": "rnase-h.json"
   },
   {
-    "name": "Deoxyribonuclease I From Bovine Pancreas",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "deoxyribonuclease-i-from-bovine-pancreas.json"
-  },
-  {
-    "name": "Dmem/F-12",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "dmem-f-12.json"
-  },
-  {
     "name": "Pe Streptavidin",
     "cas": null,
     "category": null,
@@ -2398,14 +1990,6 @@
     "top_pictogram": null,
     "signal_word": null,
     "file": "pen-strep.json"
-  },
-  {
-    "name": "Normal Rat Serum",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "normal-rat-serum.json"
   },
   {
     "name": "Dulbecco\u2019S Modified Eagle\u2019S Medium",
@@ -2462,30 +2046,6 @@
     "top_pictogram": null,
     "signal_word": null,
     "file": "phi29-dna-polymerase.json"
-  },
-  {
-    "name": "Phosphatase Inhibitor Cocktail 3",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "phosphatase-inhibitor-cocktail-3.json"
-  },
-  {
-    "name": "Mmlv Reverse Transcriptase",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "mmlv-reverse-transcriptase.json"
-  },
-  {
-    "name": "Dnase I From Bovine Pancreas",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "dnase-i-from-bovine-pancreas.json"
   },
   {
     "name": "Ifn-\u0393",
@@ -2552,22 +2112,6 @@
     "file": "newborn-calf-serum.json"
   },
   {
-    "name": "Bovine Serum Albumin Fraction V",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "bovine-serum-albumin-fraction-v.json"
-  },
-  {
-    "name": "N-2 Supplement",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "n-2-supplement.json"
-  },
-  {
     "name": "B27 Supplement",
     "cas": null,
     "category": null,
@@ -2584,28 +2128,12 @@
     "file": "sequencing-grade-chymotrypsin.json"
   },
   {
-    "name": "Benzonase Nuclease",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "benzonase-nuclease.json"
-  },
-  {
     "name": "Immpact Dab Peroxidase (Hrp) Substrate",
     "cas": null,
     "category": null,
     "top_pictogram": null,
     "signal_word": null,
     "file": "immpact-dab-peroxidase-hrp-substrate.json"
-  },
-  {
-    "name": "Rpmi 1640 Medium",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "rpmi-1640-medium.json"
   },
   {
     "name": "Pierce Trypsin Protease, Ms Grade",
@@ -2632,14 +2160,6 @@
     "file": "collagenase.json"
   },
   {
-    "name": "Advanced Dmem/F-12",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "advanced-dmem-f-12.json"
-  },
-  {
     "name": "Collagenase Ii",
     "cas": null,
     "category": null,
@@ -2662,14 +2182,6 @@
     "top_pictogram": null,
     "signal_word": null,
     "file": "liberase-tm.json"
-  },
-  {
-    "name": "Papain From Papaya Latex",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "papain-from-papaya-latex.json"
   },
   {
     "name": "Complete, Edta-Free Protease Inhibitor Cocktail Tablets",
@@ -2702,14 +2214,6 @@
     "top_pictogram": null,
     "signal_word": null,
     "file": "trypsin-edta-0-25.json"
-  },
-  {
-    "name": "Protease And Phosphatase Inhibitors",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "protease-and-phosphatase-inhibitors.json"
   },
   {
     "name": "Complete\u2122, Mini Protease Inhibitor Cocktail",
@@ -2752,14 +2256,6 @@
     "file": "herculase-ii-fusion-dna-polymerase.json"
   },
   {
-    "name": "Matrigel Matrix",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "matrigel-matrix.json"
-  },
-  {
     "name": "Rhil-2",
     "cas": null,
     "category": null,
@@ -2790,14 +2286,6 @@
     "top_pictogram": null,
     "signal_word": null,
     "file": "ovalbumin.json"
-  },
-  {
-    "name": "Complete Protease Inhibitor Tablets",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "complete-protease-inhibitor-tablets.json"
   },
   {
     "name": "Phusion Hf Dna Polymerase",
@@ -2832,14 +2320,6 @@
     "file": "cas9.json"
   },
   {
-    "name": "Protease Inhibitor Cocktail Tablets",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "protease-inhibitor-cocktail-tablets.json"
-  },
-  {
     "name": "Il-1\u0391",
     "cas": null,
     "category": null,
@@ -2856,28 +2336,12 @@
     "file": "essential-8-medium.json"
   },
   {
-    "name": "Recombinant Rnasin Ribonuclease Inhibitor",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "recombinant-rnasin-ribonuclease-inhibitor.json"
-  },
-  {
     "name": "Dmem, High Glucose, Pyruvate",
     "cas": null,
     "category": null,
     "top_pictogram": null,
     "signal_word": null,
     "file": "dmem-high-glucose-pyruvate.json"
-  },
-  {
-    "name": "Protease Inhibitor",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "protease-inhibitor.json"
   },
   {
     "name": "Blasticidin S Hydrochloride",
@@ -2936,28 +2400,12 @@
     "file": "g-csf.json"
   },
   {
-    "name": "Deoxyribonuclease I",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "deoxyribonuclease-i.json"
-  },
-  {
     "name": "Minimum Essential Medium Eagle",
     "cas": null,
     "category": null,
     "top_pictogram": null,
     "signal_word": null,
     "file": "minimum-essential-medium-eagle.json"
-  },
-  {
-    "name": "Phosstop Phosphatase Inhibitor",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "phosstop-phosphatase-inhibitor.json"
   },
   {
     "name": "Recombinant Mouse Il-4",
@@ -3032,14 +2480,6 @@
     "file": "recombinant-murine-il-3.json"
   },
   {
-    "name": "Opti-Mem Reduced Serum Medium",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "opti-mem-reduced-serum-medium.json"
-  },
-  {
     "name": "Normocin",
     "cas": null,
     "category": null,
@@ -3072,14 +2512,6 @@
     "file": "n2-supplement.json"
   },
   {
-    "name": "Penicillin-Streptomycin Solution",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "penicillin-streptomycin-solution.json"
-  },
-  {
     "name": "Recombinant Murine Tpo",
     "cas": null,
     "category": null,
@@ -3104,36 +2536,12 @@
     "file": "complete-mini-edta-free-protease-inhibitor-cocktail.json"
   },
   {
-    "name": "Stempro Accutase",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "stempro-accutase.json"
-  },
-  {
-    "name": "Dulbecco\u2019S Modified Eagles Medium",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "dulbecco-s-modified-eagles-medium.json"
-  },
-  {
     "name": "T4 Rna Ligase 2",
     "cas": null,
     "category": null,
     "top_pictogram": null,
     "signal_word": null,
     "file": "t4-rna-ligase-2.json"
-  },
-  {
-    "name": "Bovine Serum Albumin, Bsa",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "bovine-serum-albumin-bsa.json"
   },
   {
     "name": "M-Csf",
@@ -3240,22 +2648,6 @@
     "file": "immobilized-papain.json"
   },
   {
-    "name": "Rnaseout",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "rnaseout.json"
-  },
-  {
-    "name": "Dmem Media",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "dmem-media.json"
-  },
-  {
     "name": "T4 Rna Ligase 2, Truncated",
     "cas": null,
     "category": null,
@@ -3270,14 +2662,6 @@
     "top_pictogram": null,
     "signal_word": null,
     "file": "phosphatase-inhibitor-cocktail-2.json"
-  },
-  {
-    "name": "Murine Rnase Inhibitor",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "murine-rnase-inhibitor.json"
   },
   {
     "name": "Recombinant Human Egf",
@@ -3312,22 +2696,6 @@
     "file": "m2-medium.json"
   },
   {
-    "name": "Hyclone Fetal Bovine Serum",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "hyclone-fetal-bovine-serum.json"
-  },
-  {
-    "name": "Rpmi",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "rpmi.json"
-  },
-  {
     "name": "Dulbecco\u2019S Modified Eagle Medium, Low Glucose",
     "cas": null,
     "category": null,
@@ -3358,14 +2726,6 @@
     "top_pictogram": null,
     "signal_word": null,
     "file": "dna-polymerase-i.json"
-  },
-  {
-    "name": "Proteinase K Solution",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "proteinase-k-solution.json"
   },
   {
     "name": "Recombinant Human Scf",
@@ -3406,14 +2766,6 @@
     "top_pictogram": null,
     "signal_word": null,
     "file": "normal-goat-serum.json"
-  },
-  {
-    "name": "Protease Inhibitors Cocktail",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "protease-inhibitors-cocktail.json"
   },
   {
     "name": "Nt-3",
@@ -3464,14 +2816,6 @@
     "file": "recombinant-mouse-egf.json"
   },
   {
-    "name": "Phosstop Phosphatase Inhibitors",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "phosstop-phosphatase-inhibitors.json"
-  },
-  {
     "name": "Dmem, High Glucose",
     "cas": null,
     "category": null,
@@ -3496,22 +2840,6 @@
     "file": "recombinant-murine-il-4.json"
   },
   {
-    "name": "Pierce Protein A Agarose",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "pierce-protein-a-agarose.json"
-  },
-  {
-    "name": "Collagenase Type 2",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "collagenase-type-2.json"
-  },
-  {
     "name": "Superase-In",
     "cas": null,
     "category": null,
@@ -3526,22 +2854,6 @@
     "top_pictogram": null,
     "signal_word": null,
     "file": "collagenase-type-iv-powder.json"
-  },
-  {
-    "name": "Protein G Agarose",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "protein-g-agarose.json"
-  },
-  {
-    "name": "Phosstop Phosphatase Inhibitor Tablets",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "phosstop-phosphatase-inhibitor-tablets.json"
   },
   {
     "name": "Dispase",
@@ -3672,30 +2984,6 @@
     "file": "neutravidin-protein.json"
   },
   {
-    "name": "High Glucose Dmem",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "high-glucose-dmem.json"
-  },
-  {
-    "name": "Pierce Anti-Ha Magnetic Beads",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "pierce-anti-ha-magnetic-beads.json"
-  },
-  {
-    "name": "Rpmi 1640 Media",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "rpmi-1640-media.json"
-  },
-  {
     "name": "Recombinant Murine Gm-Csf",
     "cas": null,
     "category": null,
@@ -3710,14 +2998,6 @@
     "top_pictogram": null,
     "signal_word": null,
     "file": "alexa-fluor-647-phalloidin.json"
-  },
-  {
-    "name": "Opti-Mem Medium",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "opti-mem-medium.json"
   },
   {
     "name": "Matrigel Growth Factor Reduced",
@@ -3758,14 +3038,6 @@
     "top_pictogram": null,
     "signal_word": null,
     "file": "recombinant-human-tnf.json"
-  },
-  {
-    "name": "Collagenase Type Iv",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "collagenase-type-iv.json"
   },
   {
     "name": "Primestar Gxl Dna Polymerase",
@@ -3816,52 +3088,12 @@
     "file": "neurobasal-a.json"
   },
   {
-    "name": "Phosphatase Inhibitors",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "phosphatase-inhibitors.json"
-  },
-  {
     "name": "Hyaluronidase",
     "cas": null,
     "category": null,
     "top_pictogram": null,
     "signal_word": null,
     "file": "hyaluronidase.json"
-  },
-  {
-    "name": "Rnaseh",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "rnaseh.json"
-  },
-  {
-    "name": "Neurobasal",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "neurobasal.json"
-  },
-  {
-    "name": "Rnasin Ribonuclease Inhibitor",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "rnasin-ribonuclease-inhibitor.json"
-  },
-  {
-    "name": "Phosstop Phosphatase Inhibitor Cocktail",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "phosstop-phosphatase-inhibitor-cocktail.json"
   },
   {
     "name": "Catalase",
@@ -3904,22 +3136,6 @@
     "file": "collagenase-iv.json"
   },
   {
-    "name": "Opti-Mem I",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "opti-mem-i.json"
-  },
-  {
-    "name": "Dnase1",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "dnase1.json"
-  },
-  {
     "name": "Complete, Edta-Free Protease Inhibitor Cocktail",
     "cas": null,
     "category": null,
@@ -3934,14 +3150,6 @@
     "top_pictogram": null,
     "signal_word": null,
     "file": "fetal-bovine-serum-heat-inactivated.json"
-  },
-  {
-    "name": "Protein G Sepharose Beads",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "protein-g-sepharose-beads.json"
   },
   {
     "name": "Rq1 Rnase-Free Dnase",
@@ -3974,14 +3182,6 @@
     "top_pictogram": null,
     "signal_word": null,
     "file": "circligase-ssdna-ligase.json"
-  },
-  {
-    "name": "Protein A Agarose",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "protein-a-agarose.json"
   },
   {
     "name": "Bdnf",
@@ -4072,14 +3272,6 @@
     "file": "leukemia-inhibitory-factor.json"
   },
   {
-    "name": "Recombinant Rnase Inhibitor",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "recombinant-rnase-inhibitor.json"
-  },
-  {
     "name": "Dmem, High Glucose, Glutamax Supplement",
     "cas": null,
     "category": null,
@@ -4128,22 +3320,6 @@
     "file": "human-il-7.json"
   },
   {
-    "name": "Rnase-Free Dnase I",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "rnase-free-dnase-i.json"
-  },
-  {
-    "name": "Halt Phosphatase Inhibitor Cocktail",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "halt-phosphatase-inhibitor-cocktail.json"
-  },
-  {
     "name": "Maxima H Minus Reverse Transcriptase",
     "cas": null,
     "category": null,
@@ -4168,14 +3344,6 @@
     "file": "freestyle-293-expression-medium.json"
   },
   {
-    "name": "Rnasin Plus Ribonuclease Inhibitor",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "rnasin-plus-ribonuclease-inhibitor.json"
-  },
-  {
     "name": "Il-6",
     "cas": null,
     "category": null,
@@ -4190,14 +3358,6 @@
     "top_pictogram": null,
     "signal_word": null,
     "file": "dynabeads-m-280-streptavidin.json"
-  },
-  {
-    "name": "Optimem",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "optimem.json"
   },
   {
     "name": "Proteinase K, Recombinant",
@@ -4254,22 +3414,6 @@
     "top_pictogram": null,
     "signal_word": null,
     "file": "expicho-expression-medium.json"
-  },
-  {
-    "name": "Freestyle 293F Expression Medium",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "freestyle-293f-expression-medium.json"
-  },
-  {
-    "name": "Goat Serum",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "goat-serum.json"
   },
   {
     "name": "Alt-R S.P. Cas9 Nuclease V3",
@@ -4336,14 +3480,6 @@
     "file": "horseradish-peroxidase.json"
   },
   {
-    "name": "Hyaluronidase From Bovine Testes",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "hyaluronidase-from-bovine-testes.json"
-  },
-  {
     "name": "Human Serum",
     "cas": null,
     "category": null,
@@ -4390,14 +3526,6 @@
     "top_pictogram": null,
     "signal_word": null,
     "file": "protein-a-sepharose.json"
-  },
-  {
-    "name": "Protector Rnase Inhibitor",
-    "cas": null,
-    "category": null,
-    "top_pictogram": null,
-    "signal_word": null,
-    "file": "protector-rnase-inhibitor.json"
   },
   {
     "name": "Gateway Lr Clonase Ii Enzyme Mix",
