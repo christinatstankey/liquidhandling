@@ -3,7 +3,7 @@
   "name": "Dispase",
   "cas": null,
   "cas_note": "recombinant protein or enzyme; CAS unavailable or absent from PubChem",
-  "category": null,
+  "category": "adsorption_prone",
   "vendor_example": "Corning Cat# 354235",
   "physical_state": "liquid",
   "properties": {
@@ -15,115 +15,170 @@
           "type": "tacit_knowledge",
           "ref": "reagent_class:enzyme",
           "agrees": true
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": true
         }
       ]
     },
     "is_volatile": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
     },
     "is_flammable": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
     },
     "is_light_sensitive": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
     },
     "is_fluorophore": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
     },
     "is_reducing_agent": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
     },
     "oxidizes_in_solution": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
     },
     "make_fresh": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
     },
     "is_detergent": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
     },
     "is_foaming": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "not_yet_assessed",
           "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
         }
       ]
     },
     "is_fixative": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -140,78 +195,113 @@
       ]
     },
     "is_hygroscopic": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
     },
     "is_deliquescent": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
     },
     "is_corrosive": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
     },
     "is_adsorption_prone": {
-      "value": null,
+      "value": true,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "not_yet_assessed",
           "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": true
         }
       ]
     },
     "lo_bind_required": {
-      "value": null,
+      "value": true,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "not_yet_assessed",
           "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": true
         }
       ]
     },
     "requires_ice": {
-      "value": null,
+      "value": true,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "not_yet_assessed",
           "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": true
         }
       ]
     },
     "skin_penetrant": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -281,7 +371,8 @@
           "agrees": false
         }
       ]
-    }
+    },
+    "glycerol_pct": 50
   },
   "ghs": {
     "pictograms": [],

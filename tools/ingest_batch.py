@@ -91,7 +91,8 @@ def main(argv):
     for i, pdf in enumerate(pending):
         cas       = pdf.stem
         json_path = REAGENTS_DIR / f"{cas}.json"
-        r = run([PYTHON, str(INGEST / "parse_sds.py"), str(pdf)], "parse_sds", check=False)
+        r = run([PYTHON, str(INGEST / "parse_sds.py"), str(pdf),
+                 "--out", str(json_path)], "parse_sds", check=False)
         if r.returncode == 0 and json_path.exists():
             parsed_paths.append(json_path)
             print(f"  [{i+1}/{len(pending)}] OK    {cas}")

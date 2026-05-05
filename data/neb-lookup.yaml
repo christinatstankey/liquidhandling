@@ -1,0 +1,236 @@
+# neb-lookup.yaml — curated NEB product storage and handling facts
+#
+# Source: NEB product pages (https://www.neb.com/products/<cat_base>) and
+# NEB's published heat inactivation table:
+#   https://www.neb.com/tools-and-resources/usage-guidelines/heat-inactivation
+#
+# Curation note: hand-curated from NEB product specifications known as of
+# 2024. Fields omitted where uncertain. Use
+# `python ingest/enrich_neb.py --all` to apply to reagent JSONs.
+#
+# Fields:
+#   slug         — matches data/reagents/<slug>.json filename stem
+#   cat_base     — lowercase NEB catalog base without size suffix
+#   storage_temp — NEB-specified storage temperature
+#   glycerol_pct — % glycerol in storage buffer (numeric)
+#   heat_inactivate — temp + duration string if applicable, else null
+#   notes        — optional single-sentence handling note
+
+- slug: antarctic-phosphatase
+  cat_base: m0289
+  storage_temp: "-20°C"
+  glycerol_pct: 50
+  heat_inactivate: "65°C for 15 min"
+  notes: "Active at 0–37°C; heat inactivation at 65°C makes it ideal for removing phosphates from PCR products before sequencing."
+
+- slug: cre-recombinase
+  cat_base: m0298
+  storage_temp: "-20°C"
+  glycerol_pct: 50
+  heat_inactivate: "70°C for 10 min"
+
+- slug: dna-polymerase-i-large-klenow-fragment
+  cat_base: m0210
+  storage_temp: "-20°C"
+  glycerol_pct: 50
+  heat_inactivate: null
+
+- slug: dna-polymerase-i
+  cat_base: m0209
+  storage_temp: "-20°C"
+  glycerol_pct: 50
+  heat_inactivate: null
+
+- slug: endoglycosidase-h
+  cat_base: p0702
+  storage_temp: "-20°C"
+  glycerol_pct: 50
+  heat_inactivate: "75°C for 5 min"
+
+- slug: exonuclease-i
+  cat_base: m0293
+  storage_temp: "-20°C"
+  glycerol_pct: 50
+  heat_inactivate: "80°C for 20 min"
+
+- slug: lambda-exonuclease
+  cat_base: m0262
+  storage_temp: "-20°C"
+  glycerol_pct: 50
+  heat_inactivate: "75°C for 10 min"
+
+# Lambda PP requires -80°C; unusually cold for an NEB enzyme — flag in notes.
+- slug: lambda-protein-phosphatase
+  cat_base: p0753
+  storage_temp: "-80°C"
+  glycerol_pct: 50
+  heat_inactivate: null
+  notes: "Requires -80°C storage (unusually cold for NEB enzymes). Thaw on ice; add Mn2+ for activity. Cannot be heat inactivated."
+
+- slug: micrococcal-nuclease
+  cat_base: m0247
+  storage_temp: "-20°C"
+  glycerol_pct: 50
+  heat_inactivate: null
+  notes: "Requires Ca2+ for activity; inactivate by chelation with EGTA (2 mM), not heat."
+
+# Phusion appears under two slugs (M0530 = Phusion HF; F530 = Phusion Hot Start HF)
+- slug: phusion-polymerase
+  cat_base: m0530
+  storage_temp: "-20°C"
+  glycerol_pct: 50
+  heat_inactivate: null
+
+- slug: phusion-dna-polymerase
+  cat_base: f530
+  storage_temp: "-20°C"
+  glycerol_pct: 50
+  heat_inactivate: null
+
+- slug: pngase-f
+  cat_base: p0704
+  storage_temp: "-20°C"
+  glycerol_pct: 50
+  heat_inactivate: "75°C for 10 min"
+
+- slug: q5-high-fidelity-dna-polymerase
+  cat_base: m0491
+  storage_temp: "-20°C"
+  glycerol_pct: 50
+  heat_inactivate: null
+
+- slug: quick-ligase
+  cat_base: m2200
+  storage_temp: "-20°C"
+  glycerol_pct: 50
+  heat_inactivate: "65°C for 10 min"
+
+- slug: rnase-h
+  cat_base: m0297
+  storage_temp: "-20°C"
+  glycerol_pct: 50
+  heat_inactivate: null
+
+- slug: rnase-inhibitor-murine
+  cat_base: m0314
+  storage_temp: "-20°C"
+  glycerol_pct: 50
+  heat_inactivate: null
+  notes: "Do not heat inactivate — this would destroy the inhibitor. Inactivate RNases by proteinase K digestion or phenol extraction instead."
+
+- slug: shrimp-alkaline-phosphatase
+  cat_base: m0371
+  storage_temp: "-20°C"
+  glycerol_pct: 50
+  heat_inactivate: "65°C for 5 min"
+  notes: "rSAP is the most easily heat-inactivated phosphatase NEB sells; 5 min at 65°C is sufficient."
+
+- slug: sp6-rna-polymerase
+  cat_base: m0207
+  storage_temp: "-20°C"
+  glycerol_pct: 50
+  heat_inactivate: null
+
+# Streptavidin beads: 4°C, no glycerol, not an enzyme
+- slug: streptavidin-magnetic-beads
+  cat_base: s1420
+  storage_temp: "4°C"
+  glycerol_pct: null
+  heat_inactivate: null
+  notes: "Store at 4°C; do not freeze. Resuspend by vortexing before use."
+
+# T4 Ligase and T4 DNA Ligase are the same product; both slugs may exist
+- slug: t4-ligase
+  cat_base: m0202
+  storage_temp: "-20°C"
+  glycerol_pct: 50
+  heat_inactivate: "65°C for 10 min"
+
+- slug: t4-dna-ligase
+  cat_base: m0202
+  storage_temp: "-20°C"
+  glycerol_pct: 50
+  heat_inactivate: "65°C for 10 min"
+
+- slug: t4-dna-polymerase
+  cat_base: m0203
+  storage_temp: "-20°C"
+  glycerol_pct: 50
+  heat_inactivate: "75°C for 20 min"
+
+- slug: t4-polynucleotide-kinase
+  cat_base: m0201
+  storage_temp: "-20°C"
+  glycerol_pct: 50
+  heat_inactivate: "65°C for 20 min"
+
+- slug: t4-rna-ligase-1
+  cat_base: m0204
+  storage_temp: "-20°C"
+  glycerol_pct: 50
+  heat_inactivate: "65°C for 20 min"
+
+# The generic "t4-rna-ligase" slug maps to the same NEB product
+- slug: t4-rna-ligase
+  cat_base: m0204
+  storage_temp: "-20°C"
+  glycerol_pct: 50
+  heat_inactivate: "65°C for 20 min"
+
+- slug: t4-rna-ligase-2
+  cat_base: m0239
+  storage_temp: "-20°C"
+  glycerol_pct: 50
+  heat_inactivate: null
+
+- slug: t4-rna-ligase-2-truncated
+  cat_base: m0242
+  storage_temp: "-20°C"
+  glycerol_pct: 50
+  heat_inactivate: null
+
+- slug: t4-rna-ligase-2-truncated-k227q
+  cat_base: m0351
+  storage_temp: "-20°C"
+  glycerol_pct: 50
+  heat_inactivate: null
+
+- slug: t5-exonuclease
+  cat_base: m0363
+  storage_temp: "-20°C"
+  glycerol_pct: 50
+  heat_inactivate: "70°C for 20 min"
+
+- slug: t7-dna-ligase
+  cat_base: m0318
+  storage_temp: "-20°C"
+  glycerol_pct: 50
+  heat_inactivate: "65°C for 10 min"
+
+- slug: t7-rna-polymerase
+  cat_base: m0251
+  storage_temp: "-20°C"
+  glycerol_pct: 50
+  heat_inactivate: null
+
+- slug: taq-dna-polymerase
+  cat_base: m0267
+  storage_temp: "-20°C"
+  glycerol_pct: 50
+  heat_inactivate: null
+
+# TEV Protease — vendor_example in some scaffolds may say "NEB T4455" (Sigma SKU);
+# genuine NEB product is P8112. Either way: -20°C, 50% glycerol, not heat inactivatable.
+- slug: tev-protease
+  cat_base: t4455
+  storage_temp: "-20°C"
+  glycerol_pct: 50
+  heat_inactivate: null
+  notes: "Highly active at low temperatures (4–16°C); can run digestion overnight at 4°C to minimise off-target proteolysis."
+
+# T4 DNA Ligase Buffer is a buffer, not an enzyme — no enzyme-level enrichment
+- slug: t4-dna-ligase-buffer
+  cat_base: el0011
+  storage_temp: "-20°C"
+  glycerol_pct: null
+  heat_inactivate: null

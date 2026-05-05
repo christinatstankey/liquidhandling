@@ -3,7 +3,7 @@
   "name": "Endoglycosidase H",
   "cas": null,
   "cas_note": "recombinant protein or enzyme; CAS unavailable or absent from PubChem",
-  "category": null,
+  "category": "adsorption_prone",
   "vendor_example": "New England Biolabs Cat# P0702S",
   "physical_state": "liquid",
   "properties": {
@@ -15,115 +15,170 @@
           "type": "tacit_knowledge",
           "ref": "reagent_class:enzyme",
           "agrees": true
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": true
         }
       ]
     },
     "is_volatile": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
     },
     "is_flammable": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
     },
     "is_light_sensitive": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
     },
     "is_fluorophore": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
     },
     "is_reducing_agent": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
     },
     "oxidizes_in_solution": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
     },
     "make_fresh": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
     },
     "is_detergent": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
     },
     "is_foaming": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "not_yet_assessed",
           "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
         }
       ]
     },
     "is_fixative": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -140,78 +195,123 @@
       ]
     },
     "is_hygroscopic": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
     },
     "is_deliquescent": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
     },
     "is_corrosive": {
-      "value": null,
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
     },
     "is_adsorption_prone": {
-      "value": null,
+      "value": true,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "not_yet_assessed",
           "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": true
         }
       ]
     },
     "lo_bind_required": {
-      "value": null,
-      "confidence": "low",
+      "value": true,
+      "confidence": "medium",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "not_yet_assessed",
           "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": true
+        },
+        {
+          "type": "manufacturer_protocol",
+          "ref": "neb.com/products/p0702:enzyme_protein_adsorption",
+          "agrees": true
         }
       ]
     },
     "requires_ice": {
-      "value": null,
+      "value": true,
+      "confidence": "medium",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": true
+        },
+        {
+          "type": "manufacturer_protocol",
+          "ref": "neb.com/products/p0702:storage_temp:-20\u00b0C",
+          "agrees": true
+        }
+      ]
+    },
+    "skin_penetrant": {
+      "value": false,
       "confidence": "low",
       "sources": [
         {
           "type": "claude_inference",
           "ref": "not_yet_assessed",
           "agrees": false
-        }
-      ]
-    },
-    "skin_penetrant": {
-      "value": null,
-      "confidence": "low",
-      "sources": [
+        },
         {
           "type": "claude_inference",
-          "ref": "not_yet_assessed",
+          "ref": "phase2_batch_ingest",
           "agrees": false
         }
       ]
@@ -281,7 +381,8 @@
           "agrees": false
         }
       ]
-    }
+    },
+    "glycerol_pct": 50
   },
   "ghs": {
     "pictograms": [],
@@ -289,7 +390,7 @@
     "hazard_statements": []
   },
   "sds_facts": {
-    "storage": "",
+    "storage": "Store at -20\u00b0C. 50 mM KPO4, 50% glycerol.",
     "ppe": [],
     "incompatibilities": []
   },
@@ -299,6 +400,12 @@
       "because": "Proteins lose activity rapidly above 4\u00b0C via thermal denaturation and proteolytic degradation. Even brief exposure to room temperature can reduce the activity of sensitive enzymes (reverse transcriptase, ligase, Klenow) by 20\u201350%. Keep vials on ice throughout the entire workflow. Vortexing creates a high-shear air\u2013water interface that can unfold proteins; mix by gentle inversion or brief centrifugation instead.",
       "cite": "NEB Enzyme Storage and Handling Guidelines. Sambrook J & Russell DW (2001) Molecular Cloning 3rd ed., Appendix 1.",
       "confidence": "low"
+    },
+    {
+      "rule_id": null,
+      "because": "Heat inactivatable: 75\u00b0C for 5 min. Add to the end of the reaction, then heat-inactivate before the next step rather than adding EDTA or purifying.",
+      "cite": "NEB product page: https://www.neb.com/products/p0702",
+      "confidence": "medium"
     }
   ]
 }

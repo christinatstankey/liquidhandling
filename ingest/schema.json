@@ -145,7 +145,7 @@
             "required": ["rule_id", "because"],
             "additionalProperties": false,
             "properties": {
-              "rule_id":    { "type": "string" },
+              "rule_id":    { "type": ["string", "null"] },
               "because":   { "type": "string" },
               "cite":      { "type": "string" },
               "confidence": { "type": "string", "enum": ["high", "medium", "low"] }

@@ -1,0 +1,343 @@
+{
+  "name": "Atropine",
+  "cas": "51-55-8",
+  "category": null,
+  "vendor_example": "Sigma A0132",
+  "physical_state": "powder",
+  "properties": {
+    "is_protein": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "glycerol_pct": null,
+    "viscosity_class": null,
+    "viscosity_mPas_20C": null,
+    "vapor_pressure_kPa_20C": null,
+    "is_volatile": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_flammable": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "flash_point_C": null,
+    "is_light_sensitive": {
+      "value": true,
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "sds_phrase",
+          "ref": "section_7:'Light sensitive'",
+          "agrees": true
+        },
+        {
+          "type": "sds_phrase",
+          "ref": "section_10:'Conditions to avoid : Light'",
+          "agrees": true
+        }
+      ]
+    },
+    "is_fluorophore": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "excitation_nm": null,
+    "emission_nm": null,
+    "is_reducing_agent": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "oxidizes_in_solution": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "solution_half_life_at_4C_days": null,
+    "make_fresh": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_detergent": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_foaming": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_fixative": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "fume_hood_required": {
+      "value": true,
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "sds_phrase",
+          "ref": "section_7:'Work under hood'",
+          "agrees": true
+        }
+      ]
+    },
+    "is_hygroscopic": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_deliquescent": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_corrosive": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_adsorption_prone": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "lo_bind_required": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "freeze_point_C": null,
+    "requires_ice": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "freeze_thaw_max_cycles": null,
+    "skin_penetrant": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "plastic_incompatible": [],
+    "storage_temp_C": null,
+    "is_oxidizer": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_air_sensitive": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_peroxide_forming": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_water_reactive": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_rnase_decontaminant": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_serum": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    }
+  },
+  "ghs": {
+    "pictograms": [
+      "skull_crossbones"
+    ],
+    "signal_word": "Danger",
+    "hazard_statements": [
+      "H330 Fatal if swallowed or if inhaled"
+    ]
+  },
+  "sds_facts": {
+    "storage": "Store per SDS.",
+    "ppe": [
+      "nitrile gloves",
+      "safety glasses",
+      "respiratory protection"
+    ],
+    "incompatibilities": []
+  },
+  "bench_knowledge": [
+    {
+      "rule_id": "light_protect_sensitive",
+      "because": "Light-sensitive reagents degrade under UV or visible light by different mechanisms depending on the compound class. Fluorophores (DAPI, ethidium bromide) undergo irreversible photobleaching \u2014 the chromophore is destroyed; 30 seconds of UV transilluminator exposure causes measurable DAPI signal loss. Oxidizers (H\u2082O\u2082, NaOCl) photodecompose, losing titer. Peroxide-forming solvents (diethyl ether) form hydroperoxides faster in light. Light-activated monomers (acrylamide) can begin polymerising spontaneously. Amber containers or foil-wrap block the relevant wavelengths for all of these.",
+      "cite": "Thermo Fisher Scientific: DAPI Technical Data Sheet (D1306). Lakowicz, Principles of Fluorescence Spectroscopy, 3rd ed., Ch. 1. Sigma-Aldrich H\u2082O\u2082 Product Information (216763).",
+      "confidence": "high"
+    }
+  ],
+  "sds_source": {
+    "revision_date": "11/06/2025",
+    "version": "6.5",
+    "product_number": "A0132"
+  },
+  "schema_version": "2.0"
+}
