@@ -755,10 +755,8 @@
     ]
   },
   "hygromycin-b-gold": null,
-  "ifn": null,
   "igg-elution-buffer": null,
   "igg-sepharose-6-fast-flow": null,
-  "il-1": null,
   "il-12": {
     "accession": "P42701",
     "protein_name": "Interleukin-12 receptor subunit beta-1",
@@ -1458,8 +1456,6 @@
     ]
   },
   "recombinant-human-ifn-gamma-protein": null,
-  "recombinant-human-ifn": null,
-  "recombinant-human-il-1": null,
   "recombinant-human-il-12-p70": null,
   "recombinant-human-il-15": {
     "accession": "P40933",
@@ -1787,8 +1783,6 @@
       "Transmembrane helix"
     ]
   },
-  "recombinant-human-tgf-1": null,
-  "recombinant-human-tgf": null,
   "recombinant-human-thrombopoietin": {
     "accession": "P49745",
     "protein_name": "Thrombopoietin",
@@ -1803,7 +1797,6 @@
       "Signal"
     ]
   },
-  "recombinant-human-tnf": null,
   "recombinant-human-tpo": {
     "accession": "P07202",
     "protein_name": "Thyroid peroxidase",
@@ -1922,8 +1915,6 @@
       "Signal"
     ]
   },
-  "recombinant-mouse-ifn": null,
-  "recombinant-mouse-il-1": null,
   "recombinant-mouse-il-12": {
     "accession": "P42701",
     "protein_name": "Interleukin-12 receptor subunit beta-1",
@@ -2135,7 +2126,6 @@
       "Waardenburg syndrome"
     ]
   },
-  "recombinant-mouse-tnf": null,
   "recombinant-mouse-tslp": {
     "accession": "Q969D9",
     "protein_name": "Thymic stromal lymphopoietin",
@@ -2192,8 +2182,6 @@
       "Signal"
     ]
   },
-  "recombinant-murine-ifn": null,
-  "recombinant-murine-il-1": null,
   "recombinant-murine-il-2": {
     "accession": "P01589",
     "protein_name": "Interleukin-2 receptor subunit alpha",
@@ -2515,7 +2503,6 @@
   "tankyrase-inhibitor-xav939": null,
   "thrombin-protease": null,
   "tn5-transposase": null,
-  "tnf": null,
   "tpck-treated-trypsin": null,
   "tpck-trypsin": null,
   "truecut-cas9-protein-v2": null,
@@ -2570,5 +2557,271 @@
       "Sulfation"
     ]
   },
-  "zymolyase": null
+  "zymolyase": null,
+  "ifn": {
+    "accession": "P01579",
+    "protein_name": "Interferon gamma",
+    "organism": "Homo sapiens",
+    "keywords": [
+      "3D-structure",
+      "Antiviral defense",
+      "Cleavage on pair of basic residues",
+      "Cytokine",
+      "Direct protein sequencing",
+      "Glycoprotein",
+      "Growth regulation",
+      "Pharmaceutical",
+      "Proteomics identification",
+      "Pyrrolidone carboxylic acid",
+      "Reference proteome",
+      "Secreted",
+      "Signal"
+    ]
+  },
+  "il-1": {
+    "accession": "P01583",
+    "protein_name": "Interleukin-1 alpha",
+    "organism": "Homo sapiens",
+    "keywords": [
+      "3D-structure",
+      "Acetylation",
+      "Cytokine",
+      "Cytoplasm",
+      "Direct protein sequencing",
+      "Glycoprotein",
+      "Inflammatory response",
+      "Lipoprotein",
+      "Mitogen",
+      "Myristate",
+      "Nucleus",
+      "Phosphoprotein",
+      "Proteomics identification",
+      "Pyrogen",
+      "Reference proteome",
+      "Secreted"
+    ]
+  },
+  "recombinant-human-ifn": {
+    "accession": "P01579",
+    "protein_name": "Interferon gamma",
+    "organism": "Homo sapiens",
+    "keywords": [
+      "3D-structure",
+      "Antiviral defense",
+      "Cleavage on pair of basic residues",
+      "Cytokine",
+      "Direct protein sequencing",
+      "Glycoprotein",
+      "Growth regulation",
+      "Pharmaceutical",
+      "Proteomics identification",
+      "Pyrrolidone carboxylic acid",
+      "Reference proteome",
+      "Secreted",
+      "Signal"
+    ]
+  },
+  "recombinant-human-il-1": {
+    "accession": "P01584",
+    "protein_name": "Interleukin-1 beta",
+    "organism": "Homo sapiens",
+    "keywords": [
+      "3D-structure",
+      "Cytokine",
+      "Cytoplasm",
+      "Direct protein sequencing",
+      "Inflammatory response",
+      "Lysosome",
+      "Mitogen",
+      "Proteomics identification",
+      "Pyrogen",
+      "Reference proteome",
+      "Secreted"
+    ]
+  },
+  "recombinant-human-tgf": {
+    "accession": "P01137",
+    "protein_name": "Transforming growth factor beta-1 proprotein",
+    "organism": "Homo sapiens",
+    "keywords": [
+      "3D-structure",
+      "Cleavage on pair of basic residues",
+      "Direct protein sequencing",
+      "Disease variant",
+      "Disulfide bond",
+      "Extracellular matrix",
+      "Glycoprotein",
+      "Growth factor",
+      "Mitogen",
+      "Proteomics identification",
+      "Reference proteome",
+      "Secreted",
+      "Signal"
+    ]
+  },
+  "recombinant-human-tgf-1": {
+    "accession": "P01137",
+    "protein_name": "Transforming growth factor beta-1 proprotein",
+    "organism": "Homo sapiens",
+    "keywords": [
+      "3D-structure",
+      "Cleavage on pair of basic residues",
+      "Direct protein sequencing",
+      "Disease variant",
+      "Disulfide bond",
+      "Extracellular matrix",
+      "Glycoprotein",
+      "Growth factor",
+      "Mitogen",
+      "Proteomics identification",
+      "Reference proteome",
+      "Secreted",
+      "Signal"
+    ]
+  },
+  "recombinant-human-tnf": {
+    "accession": "P01375",
+    "protein_name": "Tumor necrosis factor",
+    "organism": "Homo sapiens",
+    "keywords": [
+      "3D-structure",
+      "Cell membrane",
+      "Cytokine",
+      "Direct protein sequencing",
+      "Disulfide bond",
+      "Glycoprotein",
+      "Lipoprotein",
+      "Membrane",
+      "Myristate",
+      "Phosphoprotein",
+      "Proteomics identification",
+      "Reference proteome",
+      "Secreted",
+      "Signal-anchor",
+      "Transmembrane",
+      "Transmembrane helix"
+    ]
+  },
+  "recombinant-mouse-ifn": {
+    "accession": "P01579",
+    "protein_name": "Interferon gamma",
+    "organism": "Homo sapiens",
+    "keywords": [
+      "3D-structure",
+      "Antiviral defense",
+      "Cleavage on pair of basic residues",
+      "Cytokine",
+      "Direct protein sequencing",
+      "Glycoprotein",
+      "Growth regulation",
+      "Pharmaceutical",
+      "Proteomics identification",
+      "Pyrrolidone carboxylic acid",
+      "Reference proteome",
+      "Secreted",
+      "Signal"
+    ]
+  },
+  "recombinant-mouse-il-1": {
+    "accession": "P01584",
+    "protein_name": "Interleukin-1 beta",
+    "organism": "Homo sapiens",
+    "keywords": [
+      "3D-structure",
+      "Cytokine",
+      "Cytoplasm",
+      "Direct protein sequencing",
+      "Inflammatory response",
+      "Lysosome",
+      "Mitogen",
+      "Proteomics identification",
+      "Pyrogen",
+      "Reference proteome",
+      "Secreted"
+    ]
+  },
+  "recombinant-mouse-tnf": {
+    "accession": "P01375",
+    "protein_name": "Tumor necrosis factor",
+    "organism": "Homo sapiens",
+    "keywords": [
+      "3D-structure",
+      "Cell membrane",
+      "Cytokine",
+      "Direct protein sequencing",
+      "Disulfide bond",
+      "Glycoprotein",
+      "Lipoprotein",
+      "Membrane",
+      "Myristate",
+      "Phosphoprotein",
+      "Proteomics identification",
+      "Reference proteome",
+      "Secreted",
+      "Signal-anchor",
+      "Transmembrane",
+      "Transmembrane helix"
+    ]
+  },
+  "recombinant-murine-ifn": {
+    "accession": "P01579",
+    "protein_name": "Interferon gamma",
+    "organism": "Homo sapiens",
+    "keywords": [
+      "3D-structure",
+      "Antiviral defense",
+      "Cleavage on pair of basic residues",
+      "Cytokine",
+      "Direct protein sequencing",
+      "Glycoprotein",
+      "Growth regulation",
+      "Pharmaceutical",
+      "Proteomics identification",
+      "Pyrrolidone carboxylic acid",
+      "Reference proteome",
+      "Secreted",
+      "Signal"
+    ]
+  },
+  "recombinant-murine-il-1": {
+    "accession": "P01584",
+    "protein_name": "Interleukin-1 beta",
+    "organism": "Homo sapiens",
+    "keywords": [
+      "3D-structure",
+      "Cytokine",
+      "Cytoplasm",
+      "Direct protein sequencing",
+      "Inflammatory response",
+      "Lysosome",
+      "Mitogen",
+      "Proteomics identification",
+      "Pyrogen",
+      "Reference proteome",
+      "Secreted"
+    ]
+  },
+  "tnf": {
+    "accession": "P01375",
+    "protein_name": "Tumor necrosis factor",
+    "organism": "Homo sapiens",
+    "keywords": [
+      "3D-structure",
+      "Cell membrane",
+      "Cytokine",
+      "Direct protein sequencing",
+      "Disulfide bond",
+      "Glycoprotein",
+      "Lipoprotein",
+      "Membrane",
+      "Myristate",
+      "Phosphoprotein",
+      "Proteomics identification",
+      "Reference proteome",
+      "Secreted",
+      "Signal-anchor",
+      "Transmembrane",
+      "Transmembrane helix"
+    ]
+  }
 }

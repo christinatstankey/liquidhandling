@@ -1,0 +1,223 @@
+slug,name,category,reason
+3c-protease,3C Protease,adsorption_prone,cache_miss
+accutase,Accutase,adsorption_prone,cache_miss
+actev-protease,Actev Protease,adsorption_prone,cache_miss
+albumin-from-chicken-egg-white,Albumin From Chicken Egg White,adsorption_prone,cache_miss
+alexa-fluor-488-phalloidin,Alexa Fluor 488 Phalloidin,adsorption_prone,cache_miss
+alexa-fluor-647-phalloidin,Alexa Fluor 647 Phalloidin,adsorption_prone,cache_miss
+alt-r-s-p-cas9-nuclease-v3,Alt-R S.P. Cas9 Nuclease V3,adsorption_prone,cache_miss
+antarctic-phosphatase,Antarctic Phosphatase,adsorption_prone,neb_enriched
+anti-adherence-rinsing-solution,Anti-Adherence Rinsing Solution,adsorption_prone,cache_miss
+anti-biotin-microbeads,Anti-Biotin Microbeads,adsorption_prone,cache_miss
+anti-flag-m2-affinity-gel,Anti-Flag M2 Affinity Gel,adsorption_prone,cache_miss
+anti-flag-m2-agarose-resin,Anti-Flag M2 Agarose Resin,adsorption_prone,cache_miss
+anti-flag-m2-magnetic-beads,Anti-Flag M2 Magnetic Beads,adsorption_prone,cache_miss
+anti-ha-magnetic-beads,Anti-Ha Magnetic Beads,adsorption_prone,cache_miss
+anti-pe-microbeads,Anti-Pe Microbeads,adsorption_prone,cache_miss
+antibody-diluent,Antibody Diluent,adsorption_prone,cache_miss
+b27-supplement-without-vitamin-a,B27 Supplement Without Vitamin A,adsorption_prone,cache_miss
+b27-supplement,B27 Supplement,adsorption_prone,cache_miss
+benzonase,Benzonase,adsorption_prone,cache_miss
+blasticidin-s-hydrochloride,Blasticidin S Hydrochloride,adsorption_prone,cache_miss
+blasticidin,Blasticidin,adsorption_prone,cache_miss
+bovine-calf-serum,Bovine Calf Serum,adsorption_prone,cache_miss
+bovine-growth-serum,Bovine Growth Serum,adsorption_prone,cache_miss
+bovine-serum-albumin,Bovine Serum Albumin,adsorption_prone,cache_miss
+bright-glo-luciferase-assay-system,Bright-Glo Luciferase Assay System,adsorption_prone,cache_miss
+cas9-protein,Cas9 Protein,adsorption_prone,cache_miss
+chicken-serum,Chicken Serum,adsorption_prone,cache_miss
+circligase-ssdna-ligase,Circligase Ssdna Ligase,adsorption_prone,cache_miss
+collagenase-iv,Collagenase Iv,adsorption_prone,cache_miss
+complete-edta-free-protease-inhibitor-cocktail-tablets,"Complete, Edta-Free Protease Inhibitor Cocktail Tablets",adsorption_prone,cache_miss
+complete-edta-free-protease-inhibitor-cocktail,"Complete, Edta-Free Protease Inhibitor Cocktail",adsorption_prone,cache_miss
+complete-mini-edta-free-protease-inhibitor-cocktail,"Complete ™ , Mini, Edta-Free Protease Inhibitor Cocktail",adsorption_prone,cache_miss
+complete-mini-protease-inhibitor-cocktail,"Complete™, Mini Protease Inhibitor Cocktail",adsorption_prone,cache_miss
+complete-protease-inhibitor-cocktail-edta-free,"Complete Protease Inhibitor Cocktail, Edta-Free",adsorption_prone,cache_miss
+cre-recombinase,Cre Recombinase,adsorption_prone,neb_enriched
+dispase-ii-powder,"Dispase Ii, Powder",adsorption_prone,cache_miss
+dispase,Dispase,adsorption_prone,cache_miss
+dmem,Dmem,adsorption_prone,cache_miss
+dna-polymerase-i-large-klenow-fragment,"Dna Polymerase I, Large (Klenow) Fragment",adsorption_prone,neb_enriched
+dna-polymerase-i,Dna Polymerase I,adsorption_prone,neb_enriched
+dnase-i-rnase-free,"Dnase I, Rnase-Free",adsorption_prone,cache_miss
+dulbecco-s-modification-of-eagle-s-medium,Dulbecco’S Modification Of Eagle’S Medium,adsorption_prone,cache_miss
+dulbecco-s-modified-eagle-medium-high-glucose,"Dulbecco’S Modified Eagle Medium, High Glucose",adsorption_prone,cache_miss
+dulbecco-s-modified-eagle-medium-low-glucose,"Dulbecco’S Modified Eagle Medium, Low Glucose",adsorption_prone,cache_miss
+dulbecco-s-modified-eagle-medium,Dulbecco’S Modified Eagle Medium,adsorption_prone,cache_miss
+dulbecco-s-modified-eagle-s-medium,Dulbecco’S Modified Eagle’S Medium,adsorption_prone,cache_miss
+dulbecco-s-pbs,Dulbecco’S Pbs,adsorption_prone,cache_miss
+dulbecco-s-phosphate-buffered-saline,Dulbecco’S Phosphate Buffered Saline,adsorption_prone,cache_miss
+dynabeads-protein-a,Dynabeads Protein A,adsorption_prone,cache_miss
+dynabeads-protein-g,Dynabeads Protein G,adsorption_prone,cache_miss
+edta-0-5-m-ph-8-0-rnase-free,"Edta (0.5 M), Ph 8.0, Rnase-Free",adsorption_prone,cache_miss
+egf-recombinant-human-protein,Egf Recombinant Human Protein,adsorption_prone,cache_miss
+endoglycosidase-h,Endoglycosidase H,adsorption_prone,neb_enriched
+essential-8-medium,Essential 8 Medium,adsorption_prone,cache_miss
+exonuclease-i,Exonuclease I,adsorption_prone,neb_enriched
+expi293-expression-medium,Expi293 Expression Medium,adsorption_prone,cache_miss
+expicho-expression-medium,Expicho Expression Medium,adsorption_prone,cache_miss
+fastap-thermosensitive-alkaline-phosphatase,Fastap Thermosensitive Alkaline Phosphatase,adsorption_prone,cache_miss
+fetal-bovine-serum,Fetal Bovine Serum,adsorption_prone,cache_miss
+fibronectin-bovine-plasma,Fibronectin Bovine Plasma,adsorption_prone,cache_miss
+firefly-luciferase,Firefly Luciferase,adsorption_prone,cache_miss
+freestyle-293-expression-medium,Freestyle 293 Expression Medium,adsorption_prone,cache_miss
+gateway-lr-clonase-ii-enzyme-mix,Gateway Lr Clonase Ii Enzyme Mix,adsorption_prone,cache_miss
+geltrex-ldev-free-hesc-qualified-reduced-growth-factor-basement-membrane-matrix,"Geltrex Ldev-Free, Hesc-Qualified, Reduced Growth Factor Basement Membrane Matrix",adsorption_prone,cache_miss
+geltrex,Geltrex,adsorption_prone,cache_miss
+gentamicin-solution,Gentamicin Solution,adsorption_prone,cache_miss
+gibco-freestyle-293-expression-medium,Gibco™ Freestyle™ 293 Expression Medium,adsorption_prone,cache_miss
+glutamax-supplement,Glutamax Supplement,adsorption_prone,cache_miss
+growth-factor-reduced-matrigel,Growth Factor Reduced Matrigel,adsorption_prone,cache_miss
+halt-protease-and-phosphatase-inhibitor-cocktail,Halt Protease And Phosphatase Inhibitor Cocktail,adsorption_prone,cache_miss
+halt-protease-inhibitor-cocktail,Halt ™ Protease Inhibitor Cocktail,adsorption_prone,cache_miss
+hbss-medium,Hbss Medium,adsorption_prone,cache_miss
+hegf,Hegf,adsorption_prone,cache_miss
+herculase-ii-fusion-dna-polymerase,Herculase Ii Fusion Dna Polymerase,adsorption_prone,cache_miss
+horse-serum,Horse Serum,adsorption_prone,cache_miss
+horseradish-peroxidase,Horseradish Peroxidase,adsorption_prone,cache_miss
+hotstartaq-dna-polymerase,Hotstartaq Dna Polymerase,adsorption_prone,cache_miss
+human-ab-serum,Human Ab Serum,adsorption_prone,cache_miss
+human-fgf-basic,Human Fgf-Basic,adsorption_prone,cache_miss
+human-pdgf-aa,Human Pdgf-Aa,adsorption_prone,cache_miss
+hygromycin-b-gold,Hygromycin B Gold,adsorption_prone,cache_miss
+igg-elution-buffer,Igg Elution Buffer,adsorption_prone,cache_miss
+igg-sepharose-6-fast-flow,Igg Sepharose 6 Fast Flow,adsorption_prone,cache_miss
+immobilized-papain,Immobilized Papain,adsorption_prone,cache_miss
+immpact-dab-peroxidase-hrp-substrate,Immpact Dab Peroxidase (Hrp) Substrate,adsorption_prone,cache_miss
+insect-xpress-protein-free-insect-cell-medium-with-l-glutamine,Insect-Xpress Protein-Free Insect Cell Medium With L-Glutamine,adsorption_prone,cache_miss
+insulin-transferrin-selenium-ethanolamine-its-x,Insulin-Transferrin-Selenium-Ethanolamine (Its -X),adsorption_prone,cache_miss
+insulin-transferrin-selenium,Insulin-Transferrin-Selenium,adsorption_prone,cache_miss
+iscove-s-modified-dulbecco-s-medium,Iscove’S Modified Dulbecco’S Medium,adsorption_prone,cache_miss
+kod-hot-start-dna-polymerase,Kod Hot Start Dna Polymerase,adsorption_prone,cache_miss
+l-15-medium,L-15 Medium,adsorption_prone,cache_miss
+lambda-exonuclease,Lambda Exonuclease,adsorption_prone,neb_enriched
+lambda-protein-phosphatase,Lambda Protein Phosphatase,adsorption_prone,neb_enriched
+lb-medium,Lb Medium,adsorption_prone,cache_miss
+leibovitz-s-l15-medium,Leibovitz’S L15 Medium,adsorption_prone,cache_miss
+liberase,Liberase,adsorption_prone,cache_miss
+luciferase-cell-culture-lysis-5x-reagent,Luciferase Cell Culture Lysis 5X Reagent,adsorption_prone,cache_miss
+lymphocyte-separation-medium,Lymphocyte Separation Medium,adsorption_prone,cache_miss
+m-mlv-reverse-transcriptase,M-Mlv Reverse Transcriptase,adsorption_prone,cache_miss
+m2-medium,M2 Medium,adsorption_prone,cache_miss
+matrigel-growth-factor-reduced,Matrigel Growth Factor Reduced,adsorption_prone,cache_miss
+maxima-h-minus-reverse-transcriptase,Maxima H Minus Reverse Transcriptase,adsorption_prone,cache_miss
+micrococcal-nuclease,Micrococcal Nuclease,adsorption_prone,neb_enriched
+middlebrook-7h11-agar,Middlebrook 7H11 Agar,adsorption_prone,cache_miss
+middlebrook-7h9-broth,Middlebrook 7H9 Broth,adsorption_prone,cache_miss
+minimal-essential-medium,Minimal Essential Medium,adsorption_prone,cache_miss
+minimum-essential-medium-eagle,Minimum Essential Medium Eagle,adsorption_prone,cache_miss
+minimum-essential-medium,Minimum Essential Medium,adsorption_prone,cache_miss
+mtesr1-medium,Mtesr1 Medium,adsorption_prone,cache_miss
+n2-supplement,N2 Supplement,adsorption_prone,cache_miss
+neurobasal-a-medium,Neurobasal-A Medium,adsorption_prone,cache_miss
+neurobasal-a,Neurobasal A,adsorption_prone,cache_miss
+neurobasal-medium,Neurobasal Medium,adsorption_prone,cache_miss
+neutravidin-protein,Neutravidin Protein,adsorption_prone,cache_miss
+neutravidin,Neutravidin,adsorption_prone,cache_miss
+newborn-calf-serum,Newborn Calf Serum,adsorption_prone,cache_miss
+normal-donkey-serum,Normal Donkey Serum,adsorption_prone,cache_miss
+normal-goat-serum,Normal Goat Serum,adsorption_prone,cache_miss
+normal-mouse-serum,Normal Mouse Serum,adsorption_prone,cache_miss
+normocin,Normocin,adsorption_prone,cache_miss
+nuclease-free-water,Nuclease Free Water,adsorption_prone,cache_miss
+opti-mem,Opti-Mem,adsorption_prone,cache_miss
+ovalbumin,Ovalbumin,adsorption_prone,cache_miss
+papain,Papain,adsorption_prone,cache_miss
+pdgf-aa,Pdgf-Aa,adsorption_prone,cache_miss
+pen-strep,Pen/Strep,adsorption_prone,cache_miss
+penicillin-streptomycin-glutamine,Penicillin-Streptomycin-Glutamine,adsorption_prone,cache_miss
+penicillin-streptomycin,Penicillin-Streptomycin,adsorption_prone,cache_miss
+pfuultra-ii-fusion-hs-dna-polymerase,Pfuultra Ii Fusion Hs Dna Polymerase,adsorption_prone,cache_miss
+phi29-dna-polymerase,Phi29 Dna Polymerase,adsorption_prone,cache_miss
+phosphatase-inhibitor-cocktail-2,Phosphatase Inhibitor Cocktail 2,adsorption_prone,cache_miss
+phusion-dna-polymerase,Phusion Dna Polymerase,adsorption_prone,neb_enriched
+phusion-hf-dna-polymerase,Phusion Hf Dna Polymerase,adsorption_prone,cache_miss
+phusion-high-fidelity-dna-polymerase,Phusion High-Fidelity Dna Polymerase,adsorption_prone,cache_miss
+phusion-polymerase,Phusion Polymerase,adsorption_prone,neb_enriched
+pierce-protease-inhibitor-mini-tablets-edta-free,"Pierce Protease Inhibitor Mini Tablets, Edta-Free",adsorption_prone,cache_miss
+pierce-protease-inhibitor-tablets,Pierce Protease Inhibitor Tablets,adsorption_prone,cache_miss
+pierce-protein-a-g-magnetic-beads,Pierce Protein A/G Magnetic Beads,adsorption_prone,cache_miss
+platinum-taq-dna-polymerase,Platinum Taq Dna Polymerase,adsorption_prone,cache_miss
+pmsf-protease-inhibitor,Pmsf Protease Inhibitor,adsorption_prone,cache_miss
+pngase-f,Pngase F,adsorption_prone,neb_enriched
+polyclonal-igg,"IgG, from goat serum",adsorption_prone,cache_miss
+prescission-protease,Prescission Protease,adsorption_prone,cache_miss
+primestar-gxl-dna-polymerase,Primestar Gxl Dna Polymerase,adsorption_prone,cache_miss
+pronase,Pronase,adsorption_prone,cache_miss
+protease-and-phosphatase-inhibitor-cocktail,Protease And Phosphatase Inhibitor Cocktail,adsorption_prone,cache_miss
+protease-and-phosphatase-inhibitor,Protease And Phosphatase Inhibitor,adsorption_prone,cache_miss
+protease-inhibitor-cocktail-set-iii-edta-free,"Protease Inhibitor Cocktail Set Iii, Edta-Free",adsorption_prone,cache_miss
+protease-inhibitor-cocktail,Protease Inhibitor Cocktail,adsorption_prone,cache_miss
+protease-phosphatase-inhibitor-cocktail,Protease/Phosphatase Inhibitor Cocktail,adsorption_prone,cache_miss
+protein-a-agarose-beads,Protein A Agarose Beads,adsorption_prone,cache_miss
+protein-a-dynabeads,Protein A Dynabeads,adsorption_prone,cache_miss
+protein-a-g-agarose,Protein A/G Agarose,adsorption_prone,cache_miss
+protein-a-g-plus-agarose,Protein A/G Plus-Agarose,adsorption_prone,cache_miss
+protein-a-magnetic-beads,Protein A Magnetic Beads,adsorption_prone,cache_miss
+protein-a-sepharose,Protein A Sepharose,adsorption_prone,cache_miss
+protein-g-agarose-beads,Protein G Agarose Beads,adsorption_prone,cache_miss
+protein-g-dynabeads,Protein G Dynabeads,adsorption_prone,cache_miss
+protein-g-magnetic-beads,Protein G Magnetic Beads,adsorption_prone,cache_miss
+protein-g-sepharose-4-fast-flow,Protein G Sepharose 4 Fast Flow,adsorption_prone,cache_miss
+protein-g-sepharose,Protein G Sepharose,adsorption_prone,cache_miss
+proteinase-k-recombinant,"Proteinase K, Recombinant",adsorption_prone,cache_miss
+proteinase-k,Proteinase K,adsorption_prone,cache_miss
+q5-high-fidelity-dna-polymerase,Q5 High-Fidelity Dna Polymerase,adsorption_prone,neb_enriched
+quick-ligase,Quick Ligase,adsorption_prone,neb_enriched
+recombinant-human-bmp-4-protein,Recombinant Human Bmp-4 Protein,adsorption_prone,cache_miss
+recombinant-human-fgf-basic,Recombinant Human Fgf-Basic,adsorption_prone,cache_miss
+recombinant-human-ifn-gamma-protein,Recombinant Human Ifn-Gamma Protein,adsorption_prone,cache_miss
+recombinant-human-il-12-p70,Recombinant Human Il-12 P70,adsorption_prone,cache_miss
+recombinant-human-il-6-protein,Recombinant Human Il-6 Protein,adsorption_prone,cache_miss
+recombinant-human-scf-protein,Recombinant Human Scf Protein,adsorption_prone,cache_miss
+recombinant-sars-cov-2-spike-protein,Recombinant Sars-Cov-2 Spike Protein,adsorption_prone,cache_miss
+revertaid-reverse-transcriptase,Revertaid Reverse Transcriptase,adsorption_prone,cache_miss
+rhil-2,Rhil-2,adsorption_prone,cache_miss
+rhodamine-phalloidin,Rhodamine Phalloidin,adsorption_prone,cache_miss
+rnase-a-dnase-and-protease-free,"Rnase A, Dnase And Protease-Free",adsorption_prone,cache_miss
+rnase-a-t1,Rnase A/T1,adsorption_prone,cache_miss
+rnase-free-dnase-set,Rnase-Free Dnase Set,adsorption_prone,cache_miss
+rnase-h,Rnase H,adsorption_prone,neb_enriched
+rnase-i,Rnase I,adsorption_prone,cache_miss
+rnase-inhibitor-murine,"Rnase Inhibitor, Murine",adsorption_prone,neb_enriched
+rnase-t1,Rnase T1,adsorption_prone,cache_miss
+rpmi-1640-with-l-glutamine,Rpmi 1640 With L-Glutamine,adsorption_prone,cache_miss
+rpmi-1640,Rpmi 1640,adsorption_prone,cache_miss
+rq1-dnase,Rq1 Dnase,adsorption_prone,cache_miss
+rq1-rnase-free-dnase,Rq1 Rnase-Free Dnase,adsorption_prone,cache_miss
+schneider-s-drosophila-medium,Schneider’S Drosophila Medium,adsorption_prone,cache_miss
+schneider-s-medium,Schneider’S Medium,adsorption_prone,cache_miss
+sequencing-grade-chymotrypsin,Sequencing Grade Chymotrypsin,adsorption_prone,cache_miss
+shrimp-alkaline-phosphatase,Shrimp Alkaline Phosphatase,adsorption_prone,neb_enriched
+smartscribe-reverse-transcriptase,Smartscribe Reverse Transcriptase,adsorption_prone,cache_miss
+sp6-rna-polymerase,Sp6 Rna Polymerase,adsorption_prone,neb_enriched
+streptavidin,Streptavidin,adsorption_prone,cache_miss
+superase-in-rnase-inhibitor,Superase-In Rnase Inhibitor,adsorption_prone,cache_miss
+superase-in,Superase-In,adsorption_prone,cache_miss
+superscript-ii-reverse-transcriptase,Superscript Ii Reverse Transcriptase,adsorption_prone,cache_miss
+superscript-iii-reverse-transcriptase,Superscript Iii Reverse Transcriptase,adsorption_prone,cache_miss
+superscript-iv-reverse-transcriptase,Superscript Iv Reverse Transcriptase,adsorption_prone,cache_miss
+t3-rna-polymerase,T3 Rna Polymerase,adsorption_prone,cache_miss
+t4-dna-ligase-buffer,T4 Dna Ligase Buffer,adsorption_prone,neb_enriched
+t4-dna-polymerase,T4 Dna Polymerase,adsorption_prone,neb_enriched
+t4-ligase,T4 Ligase,adsorption_prone,neb_enriched
+t4-polynucleotide-kinase,T4 Polynucleotide Kinase,adsorption_prone,neb_enriched
+t4-rna-ligase-1,T4 Rna Ligase 1,adsorption_prone,neb_enriched
+t4-rna-ligase-2-truncated-k227q,"T4 Rna Ligase 2, Truncated K227Q",adsorption_prone,neb_enriched
+t4-rna-ligase-2-truncated,"T4 Rna Ligase 2, Truncated",adsorption_prone,neb_enriched
+t4-rna-ligase-2,T4 Rna Ligase 2,adsorption_prone,neb_enriched
+t4-rna-ligase,T4 Rna Ligase,adsorption_prone,neb_enriched
+t5-exonuclease,T5 Exonuclease,adsorption_prone,neb_enriched
+t7-dna-ligase,T7 Dna Ligase,adsorption_prone,neb_enriched
+t7-rna-polymerase,T7 Rna Polymerase,adsorption_prone,neb_enriched
+tankyrase-inhibitor-xav939,Tankyrase Inhibitor Xav939,adsorption_prone,cache_miss
+taq-dna-polymerase,Taq Dna Polymerase,adsorption_prone,neb_enriched
+tev-protease,Tev Protease,adsorption_prone,neb_enriched
+thrombin-protease,Thrombin Protease,adsorption_prone,cache_miss
+tn5-transposase,Tn5 Transposase,adsorption_prone,cache_miss
+truecut-cas9-protein-v2,Truecut Cas9 Protein V2,adsorption_prone,cache_miss
+trypsin-edta,Trypsin-Edta,adsorption_prone,cache_miss
+turbo-dnase,Turbo Dnase,adsorption_prone,cache_miss
+turbonuclease,Turbonuclease,adsorption_prone,cache_miss
+ultradoma-pf-protein-free-medium,Ultradoma Pf Protein-Free Medium,adsorption_prone,cache_miss
+zymolyase,Zymolyase,adsorption_prone,cache_miss

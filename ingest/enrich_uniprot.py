@@ -108,9 +108,19 @@ _STRIP = re.compile(
 )
 
 
+# Greek letters used in cytokine/growth-factor names → ASCII equivalents
+_GREEK = {
+    'α': 'A', 'Α': 'A', 'β': 'B', 'Β': 'B', 'γ': 'G', 'Γ': 'G',
+    'δ': 'D', 'Δ': 'D', 'ε': 'E', 'Ε': 'E', 'κ': 'K', 'Κ': 'K',
+    'λ': 'L', 'Λ': 'L', 'μ': 'M', 'Μ': 'M', 'ω': 'W', 'Ω': 'W',
+}
+_GREEK_RE = re.compile('[' + ''.join(_GREEK.keys()) + ']')
+
+
 def _clean_name(name: str) -> str:
-    """Strip vendor/species prefixes and normalise whitespace."""
-    c = _STRIP.sub(" ", name)
+    """Strip vendor/species prefixes, normalise Greek letters, and collapse whitespace."""
+    c = _GREEK_RE.sub(lambda m: _GREEK[m.group()], name)
+    c = _STRIP.sub(" ", c)
     c = re.sub(r'\s+', ' ', c).strip()
     return c
 
