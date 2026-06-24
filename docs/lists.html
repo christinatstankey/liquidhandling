@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lists — Liquid Handling</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <style>
+    /* ── Two-column shell ───────────────────────────────── */
+    .lists-shell {
+      display: grid;
+      grid-template-columns: 260px minmax(0, 1fr);
+      gap: 0;
+      min-height: calc(100vh - 56px - 48px);
+      align-items: start;
+    }
+
+    /* ── Left column: saved lists ───────────────────────── */
+    .saved-col {
+      border-right: 1px solid var(--hairline);
+      padding: 2rem 1.25rem 3rem;
+      min-height: 100%;
+    }
+    .saved-heading {
+      font-size: .72rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: .08em; color: var(--muted); margin-bottom: .9rem;
+    }
+    .saved-empty {
+      font-size: .85rem; color: var(--muted); line-height: 1.6;
+    }
+    .saved-list { display: flex; flex-direction: column; gap: .4rem; }
+    .saved-card {
+      border: 1px solid var(--hairline);
+      border-radius: 6px;
+      padding: .6rem .75rem;
+      cursor: pointer;
+      transition: border-color .1s;
+      position: relative;
+    }
+    .saved-card:hover { border-color: #C0C0C0; }
+    .saved-card.active { border-color: var(--accent); background: #FFF8F6; }
+    .saved-card-name { font-weight: 600; font-size: .875rem; line-height: 1.3; padding-right: 1.2rem; }
+    .saved-card-meta { font-size: .75rem; color: var(--muted); margin-top: .2rem; }
+    .saved-delete {
+      position: absolute; top: .5rem; right: .5rem;
+      background: none; border: none; cursor: pointer;
+      color: var(--muted); font-size: .9rem; line-height: 1;
+      padding: .1rem .25rem;
+    }
+    .saved-delete:hover { color: var(--text); }
+
+    /* ── Right column: editor / viewer ─────────────────── */
+    .editor-col {
+      padding: 2rem 1.75rem 3rem;
+    }
+    .editor-header {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 1.25rem; gap: 1rem;
+    }
+    .new-list-btn {
+      font-size: .78rem; color: var(--muted); background: none; border: none;
+      cursor: pointer; white-space: nowrap; text-decoration: underline; padding: 0;
+    }
+    .new-list-btn:hover { color: var(--text); }
+
+    /* name input */
+    .name-input {
+      width: 100%; padding: .6rem .75rem;
+      border: 1px solid var(--hairline); border-radius: 6px;
+      font-family: var(--font-body); font-size: 1rem; font-weight: 600;
+      color: var(--text); background: var(--surface);
+      box-sizing: border-box; margin-bottom: 1rem;
+    }
+    .name-input:focus { outline: none; border-color: var(--accent); }
+    .name-input::placeholder { color: #B0B0B0; font-weight: 400; }
+    .name-input:disabled { background: #F5F5F5; border-color: var(--hairline); cursor: default; }
+
+    /* search */
+    .search-wrap { position: relative; margin-bottom: 1.25rem; }
+    .search-input {
+      width: 100%; padding: .6rem .75rem;
+      border: 1px solid var(--hairline); border-radius: 6px;
+      font-family: var(--font-body); font-size: .9rem;
+      color: var(--text); background: var(--surface);
+      box-sizing: border-box;
+    }
+    .search-input:focus { outline: none; border-color: var(--accent); }
+
+    /* dropdown */
+    .search-dropdown {
+      position: absolute; top: calc(100% + 4px); left: 0; right: 0;
+      background: var(--surface); border: 1px solid var(--hairline);
+      border-radius: 6px; box-shadow: 0 4px 14px rgba(0,0,0,.08);
+      max-height: 300px; overflow-y: auto; z-index: 100; display: none;
+    }
+    .search-dropdown.open { display: block; }
+    .drop-item {
+      display: flex; align-items: center; gap: .6rem;
+      padding: .5rem .85rem; border-bottom: 1px solid var(--hairline);
+      font-size: .875rem;
+    }
+    .drop-item:last-child { border-bottom: none; }
+    .drop-names { flex: 1; min-width: 0; }
+    .drop-name  { font-weight: 550; }
+    .drop-cas   { font-family: var(--font-mono); font-size: .73rem; color: var(--muted); }
+    .drop-fact  { font-size: .77rem; color: var(--muted); flex-shrink: 0;
+                  max-width: 38%; text-align: right; white-space: nowrap;
+                  overflow: hidden; text-overflow: ellipsis; }
+    .drop-add {
+      flex-shrink: 0; font-size: .75rem; font-weight: 600;
+      padding: .22rem .65rem; border-radius: 4px;
+      background: var(--accent); color: #fff; border: none; cursor: pointer;
+    }
+    .drop-add:hover { opacity: .88; }
+    .drop-item.already-added .drop-add {
+      background: #E5E7EB; color: var(--muted); cursor: default;
+    }
+
+    /* reagent rows in editor */
+    .reagent-list { margin-top: .25rem; }
+    .reagent-row {
+      display: grid;
+      grid-template-columns: minmax(0,1fr) auto;
+      gap: .75rem; align-items: start;
+      padding: .85rem 0;
+      border-top: 1px solid var(--hairline);
+    }
+    .reagent-row:last-child { border-bottom: 1px solid var(--hairline); }
+    .rr-name { font-weight: 650; font-size: .9rem; }
+    .rr-cas  { font-family: var(--font-mono); font-size: .72rem; color: var(--muted); margin-top: .1rem; }
+    .rr-chips { display: flex; flex-wrap: wrap; gap: .3rem; margin-top: .5rem; }
+    .chip {
+      display: inline-flex; align-items: center; gap: .22rem;
+      padding: .16rem .45rem; border-radius: 4px;
+      font-size: .73rem; font-weight: 550; line-height: 1.4;
+      border: 1px solid transparent;
+    }
+    .chip-safety  { background: #FEF2F2; color: #991B1B; border-color: #FECACA; }
+    .chip-pipette { background: #EFF6FF; color: #1D4ED8; border-color: #BFDBFE; }
+    .chip-prep    { background: #F0FDF4; color: #166534; border-color: #BBF7D0; }
+    .chip-storage { background: #FAFAFA; color: #374151; border-color: #E5E7EB; }
+    .rr-open {
+      font-size: .73rem; color: var(--muted); text-decoration: none;
+      display: inline-block; margin-top: .35rem;
+    }
+    .rr-open:hover { color: var(--accent); }
+    .rr-no-profile { font-size: .78rem; color: var(--muted); font-style: italic; margin-top: .4rem; }
+    .rr-remove {
+      background: none; border: none; cursor: pointer;
+      color: var(--muted); font-size: 1rem; padding: .1rem .2rem; line-height: 1;
+    }
+    .rr-remove:hover { color: var(--text); }
+
+    /* editor footer */
+    .editor-footer {
+      margin-top: 1.25rem; display: flex; align-items: center; gap: 1rem;
+    }
+    .save-btn {
+      font-size: .875rem; font-weight: 600; padding: .55rem 1.25rem;
+      border-radius: 6px; background: var(--accent); color: #fff;
+      border: none; cursor: pointer;
+    }
+    .save-btn:hover:not(:disabled) { opacity: .88; }
+    .save-btn:disabled { background: #E5E7EB; color: var(--muted); cursor: default; }
+    .save-hint { font-size: .78rem; color: var(--muted); }
+
+    /* view mode */
+    .view-name {
+      font-size: 1.1rem; font-weight: 700; line-height: 1.3;
+    }
+
+    /* empty editor state */
+    .editor-empty {
+      color: var(--muted); font-size: .88rem; padding: 1.5rem 0;
+      border-top: 1px solid var(--hairline);
+    }
+
+    /* mobile */
+    @media (max-width: 640px) {
+      .lists-shell { grid-template-columns: 1fr; }
+      .saved-col { border-right: none; border-bottom: 1px solid var(--hairline); padding: 1.25rem 1rem 1.5rem; }
+      .editor-col { padding: 1.25rem 1rem 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="container inner">
+    <a class="wordmark" href="index.html">liquidhandling<span>.</span></a>
+    <ul>
+      <li><a href="index.html">Reagents</a></li>
+      <li><a href="lists.html" class="active">Make a List</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <div class="lists-shell">
+
+    <!-- ── Left: saved lists ───────────────────────────── -->
+    <aside class="saved-col">
+      <div class="saved-heading">Saved lists</div>
+      <div id="saved-list-container">
+        <p class="saved-empty" id="saved-empty">No saved lists yet.</p>
+      </div>
+    </aside>
+
+    <!-- ── Right: editor / viewer ─────────────────────── -->
+    <section class="editor-col" id="editor-col">
+
+      <!-- Editor mode (default) -->
+      <div id="editor-mode">
+        <div class="editor-header">
+          <span style="font-size:.8rem; font-weight:700; text-transform:uppercase; letter-spacing:.07em; color:var(--muted);">Make a List</span>
+          <button class="new-list-btn" id="discard-btn" style="display:none;">Discard draft</button>
+        </div>
+
+        <input id="list-name" class="name-input" type="text" placeholder="Name your protocol…" maxlength="80" />
+
+        <div class="search-wrap">
+          <input id="reagent-search" class="search-input" type="search"
+                 placeholder="Search reagents by name or CAS…" autocomplete="off" />
+          <div id="search-dropdown" class="search-dropdown"></div>
+        </div>
+
+        <div class="reagent-list" id="reagent-list">
+          <p class="editor-empty" id="editor-empty">Add reagents above to build your list.</p>
+        </div>
+
+        <div class="editor-footer">
+          <button class="save-btn" id="save-btn" disabled>Save list</button>
+          <span class="save-hint" id="save-hint">Enter a name and at least one reagent.</span>
+        </div>
+      </div>
+
+      <!-- View mode (shown when a saved list is selected) -->
+      <div id="view-mode" style="display:none;">
+        <div class="editor-header">
+          <span class="view-name" id="view-name"></span>
+          <button class="new-list-btn" id="new-list-btn">New list</button>
+        </div>
+        <div class="reagent-list" id="view-reagent-list"></div>
+      </div>
+
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    Data sourced from manufacturer SDS sheets and published bench protocols. Rules engine: transparent YAML — no ML.
+  </div>
+</footer>
+
+<script>
+// ── Chip definitions ───────────────────────────────────────────────────────
+const CHIP_DEFS = [
+  { path: 'pipetting.pre_wet_cycles',        label: v => `Pre-wet ${v}×`,              cls: 'chip-pipette' },
+  { path: 'pipetting.dispense_speed',        label: v => `${cap(v)} dispense`,          cls: 'chip-pipette' },
+  { path: 'pipetting.reverse_pipetting',     label: () => 'Reverse pipette',            cls: 'chip-pipette' },
+  { path: 'pipetting.touch_tip_wall',        label: () => 'Touch tip to wall',          cls: 'chip-pipette' },
+  { path: 'pipetting.no_blowout',            label: () => 'No blowout',                 cls: 'chip-pipette' },
+  { path: 'pipetting.air_gap_uL',            label: v => `Air gap ${v} µL`,            cls: 'chip-pipette' },
+  { path: 'pipetting.tip_type',              label: v => `${cap(v)} tip`,               cls: 'chip-pipette' },
+  { path: 'pipetting.aspirate_speed',        label: v => `Aspirate: ${v}`,              cls: 'chip-pipette' },
+  { path: 'pipetting.post_aspirate_delay_s', label: v => `Wait ${v}s after aspirate`,   cls: 'chip-pipette' },
+  { path: 'safety.fume_hood_required',       label: () => 'Fume hood',                  cls: 'chip-safety'  },
+  { path: 'safety.avoid_ignition_sources',   label: () => 'No ignition sources',        cls: 'chip-safety'  },
+  { path: 'safety.acid_resistant_tips',      label: () => 'Acid-resistant tips',        cls: 'chip-safety'  },
+  { path: 'safety.waste_disposal',           label: v => `Waste: ${v}`,                 cls: 'chip-safety'  },
+  { path: 'safety.skin_penetrant_warning',   label: () => 'Skin penetrant — gloves',    cls: 'chip-safety'  },
+  { path: 'safety.minimize_light_exposure',  label: () => 'Minimize light',             cls: 'chip-safety'  },
+  { path: 'safety.avoid_open_bench_weighing_if_toxic', label: () => 'Weigh in hood',   cls: 'chip-safety'  },
+  { path: 'preparation.control_static',      label: () => 'Control static',             cls: 'chip-prep'    },
+  { path: 'preparation.minimize_dust',       label: () => 'Minimize dust',              cls: 'chip-prep'    },
+  { path: 'preparation.weighing_surface',    label: () => 'Weigh on foil/glass',        cls: 'chip-prep'    },
+  { path: 'preparation.minimize_air_exposure',label: () => 'Minimize air exposure',     cls: 'chip-prep'    },
+  { path: 'preparation.weigh_fast',          label: () => 'Weigh quickly',              cls: 'chip-prep'    },
+  { path: 'preparation.cap_immediately',     label: () => 'Cap immediately',            cls: 'chip-prep'    },
+  { path: 'preparation.date_first_opening',  label: () => 'Date on first open',         cls: 'chip-prep'    },
+  { path: 'preparation.add_to_water',        label: () => 'Add reagent to water',       cls: 'chip-prep'    },
+  { path: 'preparation.warm_to_RT_first',    label: () => 'Warm to RT first',           cls: 'chip-prep'    },
+  { path: 'storage.flammable_cabinet',       label: () => 'Flammable cabinet',          cls: 'chip-storage' },
+  { path: 'storage.light_protected',         label: () => 'Light-protected storage',    cls: 'chip-storage' },
+  { path: 'storage.desiccator',              label: () => 'Desiccator',                 cls: 'chip-storage' },
+  { path: 'storage.seal_tightly',            label: () => 'Seal tightly',               cls: 'chip-storage' },
+  { path: 'storage.container',               label: v => `Store in ${v.replace(/_/g,' ')}`, cls: 'chip-storage' },
+];
+
+function cap(s) { return s ? s[0].toUpperCase() + s.slice(1) : ''; }
+
+function nested(obj, path) {
+  return path.split('.').reduce((o, k) => (o && o[k] !== undefined ? o[k] : undefined), obj);
+}
+
+function chipsFor(hp) {
+  const out = [];
+  for (const d of CHIP_DEFS) {
+    const v = nested(hp, d.path);
+    if (v === undefined || v === false || v === null) continue;
+    out.push({ label: d.label(v), cls: d.cls });
+  }
+  return out;
+}
+
+function chipsHtml(chips) {
+  if (!chips.length) return '<p class="rr-no-profile">No handling rules on file.</p>';
+  return `<div class="rr-chips">${chips.map(c => `<span class="chip ${c.cls}">${esc(c.label)}</span>`).join('')}</div>`;
+}
+
+// ── localStorage ───────────────────────────────────────────────────────────
+const LISTS_KEY = 'lh_saved_lists_v2';
+const DRAFT_KEY = 'lh_draft_v2';
+
+function loadLists() {
+  try { return JSON.parse(localStorage.getItem(LISTS_KEY) || '[]'); }
+  catch { return []; }
+}
+function saveLists(arr) { localStorage.setItem(LISTS_KEY, JSON.stringify(arr)); }
+
+function loadDraft() {
+  try { return JSON.parse(localStorage.getItem(DRAFT_KEY) || 'null'); }
+  catch { return null; }
+}
+function saveDraft(d) { localStorage.setItem(DRAFT_KEY, JSON.stringify(d)); }
+function clearDraft() { localStorage.removeItem(DRAFT_KEY); }
+
+// ── State ──────────────────────────────────────────────────────────────────
+let manifest   = [];
+let savedLists = loadLists();           // [{id, name, created, reagents:[]}]
+let draft      = loadDraft() || { name: '', reagents: [] };
+let viewingId  = null;                  // id of saved list currently in view mode
+
+// ── Fetch manifest ─────────────────────────────────────────────────────────
+fetch('data/manifest.json').then(r => r.json()).then(d => { manifest = d; }).catch(() => {});
+
+// ── Search ─────────────────────────────────────────────────────────────────
+const searchEl   = document.getElementById('reagent-search');
+const dropdownEl = document.getElementById('search-dropdown');
+
+function norm(s) { return s.toLowerCase().replace(/[-\s]/g, ''); }
+
+searchEl.addEventListener('input', () => {
+  const q = searchEl.value.trim();
+  if (q.length < 2) { dropdownEl.classList.remove('open'); return; }
+  const qn = norm(q);
+  const hits = manifest
+    .filter(r => norm(r.name).includes(qn) || (r.cas && norm(r.cas).includes(norm(q))))
+    .slice(0, 12);
+  if (!hits.length) { dropdownEl.classList.remove('open'); return; }
+
+  const addedCAS = new Set(draft.reagents.map(r => r.cas));
+  dropdownEl.innerHTML = hits.map(r => {
+    const added = addedCAS.has(r.cas);
+    return `<div class="drop-item${added ? ' already-added' : ''}">
+      <div class="drop-names">
+        <div class="drop-name">${esc(r.name)}</div>
+        <div class="drop-cas">${esc(r.cas)}</div>
+      </div>
+      ${r.summary_fact ? `<span class="drop-fact">${esc(r.summary_fact)}</span>` : ''}
+      <button class="drop-add" data-cas="${esc(r.cas)}" data-name="${esc(r.name)}"
+              ${added ? 'disabled' : ''}>${added ? 'Added' : 'Add'}</button>
+    </div>`;
+  }).join('');
+  dropdownEl.classList.add('open');
+
+  dropdownEl.querySelectorAll('.drop-add:not([disabled])').forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.stopPropagation();
+      addReagent(btn.dataset.cas, btn.dataset.name);
+    });
+  });
+});
+
+document.addEventListener('click', e => {
+  if (!searchEl.contains(e.target) && !dropdownEl.contains(e.target))
+    dropdownEl.classList.remove('open');
+});
+
+// ── Add reagent to draft ───────────────────────────────────────────────────
+async function addReagent(cas, name) {
+  if (draft.reagents.some(r => r.cas === cas)) return;
+
+  let chips = [];
+  try {
+    const p = await fetch(`data/profiles/${cas}.json`).then(r => r.json());
+    chips = chipsFor(p.handling_profile || {});
+  } catch { /* no profile */ }
+
+  draft.reagents.push({ cas, name, chips });
+  saveDraft(draft);
+  renderEditor();
+  updateDropdownAdded();
+}
+
+function updateDropdownAdded() {
+  const addedCAS = new Set(draft.reagents.map(r => r.cas));
+  dropdownEl.querySelectorAll('.drop-item').forEach(item => {
+    const btn = item.querySelector('.drop-add');
+    if (!btn) return;
+    const added = addedCAS.has(btn.dataset.cas);
+    item.classList.toggle('already-added', added);
+    btn.disabled = added;
+    btn.textContent = added ? 'Added' : 'Add';
+  });
+}
+
+// ── Render editor ──────────────────────────────────────────────────────────
+function renderEditor() {
+  const listEl  = document.getElementById('reagent-list');
+  const saveBtn = document.getElementById('save-btn');
+  const hint    = document.getElementById('save-hint');
+  const discard = document.getElementById('discard-btn');
+  const nameEl  = document.getElementById('list-name');
+
+  // sync name input
+  if (nameEl.value !== draft.name) nameEl.value = draft.name;
+
+  const hasName = draft.name.trim().length > 0;
+  const hasReagents = draft.reagents.length > 0;
+  saveBtn.disabled = !(hasName && hasReagents);
+  hint.textContent = !hasName ? 'Enter a name and at least one reagent.'
+    : !hasReagents ? 'Add at least one reagent.'
+    : '';
+  discard.style.display = (hasName || hasReagents) ? '' : 'none';
+
+  if (!hasReagents) {
+    listEl.innerHTML = '<p class="editor-empty" id="editor-empty">Add reagents above to build your list.</p>';
+    return;
+  }
+
+  listEl.innerHTML = draft.reagents.map((r, i) => `
+    <div class="reagent-row" data-idx="${i}">
+      <div>
+        <div class="rr-name">${esc(r.name)}</div>
+        <div class="rr-cas">${esc(r.cas)}</div>
+        ${chipsHtml(r.chips)}
+        <a class="rr-open" href="reagent.html?cas=${encodeURIComponent(r.cas)}">Full profile →</a>
+      </div>
+      <button class="rr-remove" data-idx="${i}" aria-label="Remove ${esc(r.name)}">×</button>
+    </div>`).join('');
+
+  listEl.querySelectorAll('.rr-remove').forEach(btn => {
+    btn.addEventListener('click', () => {
+      draft.reagents.splice(parseInt(btn.dataset.idx), 1);
+      saveDraft(draft);
+      renderEditor();
+      updateDropdownAdded();
+    });
+  });
+}
+
+// ── Name input ─────────────────────────────────────────────────────────────
+document.getElementById('list-name').addEventListener('input', e => {
+  draft.name = e.target.value;
+  saveDraft(draft);
+  renderEditor();
+});
+
+// ── Save list ──────────────────────────────────────────────────────────────
+document.getElementById('save-btn').addEventListener('click', () => {
+  if (!draft.name.trim() || !draft.reagents.length) return;
+  const entry = {
+    id: Date.now().toString(),
+    name: draft.name.trim(),
+    created: new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }),
+    reagents: draft.reagents,
+  };
+  savedLists.unshift(entry);
+  saveLists(savedLists);
+  clearDraft();
+  draft = { name: '', reagents: [] };
+  viewingId = entry.id;
+  renderSavedLists();
+  showViewMode(entry);
+});
+
+// ── Discard draft ──────────────────────────────────────────────────────────
+document.getElementById('discard-btn').addEventListener('click', () => {
+  draft = { name: '', reagents: [] };
+  clearDraft();
+  document.getElementById('list-name').value = '';
+  renderEditor();
+});
+
+// ── New list button (from view mode) ───────────────────────────────────────
+document.getElementById('new-list-btn').addEventListener('click', () => {
+  viewingId = null;
+  showEditorMode();
+  renderSavedLists();
+});
+
+// ── Show view mode ─────────────────────────────────────────────────────────
+function showViewMode(list) {
+  document.getElementById('editor-mode').style.display = 'none';
+  document.getElementById('view-mode').style.display   = '';
+  document.getElementById('view-name').textContent     = list.name;
+
+  const container = document.getElementById('view-reagent-list');
+  container.innerHTML = list.reagents.map(r => `
+    <div class="reagent-row">
+      <div>
+        <div class="rr-name">${esc(r.name)}</div>
+        <div class="rr-cas">${esc(r.cas)}</div>
+        ${chipsHtml(r.chips)}
+        <a class="rr-open" href="reagent.html?cas=${encodeURIComponent(r.cas)}">Full profile →</a>
+      </div>
+    </div>`).join('');
+}
+
+function showEditorMode() {
+  document.getElementById('editor-mode').style.display = '';
+  document.getElementById('view-mode').style.display   = 'none';
+  renderEditor();
+}
+
+// ── Render saved list sidebar ──────────────────────────────────────────────
+function renderSavedLists() {
+  const container = document.getElementById('saved-list-container');
+  if (!savedLists.length) {
+    container.innerHTML = '<p class="saved-empty" id="saved-empty">No saved lists yet.</p>';
+    return;
+  }
+  container.innerHTML = `<div class="saved-list">${savedLists.map(list => `
+    <div class="saved-card${viewingId === list.id ? ' active' : ''}" data-id="${esc(list.id)}">
+      <div class="saved-card-name">${esc(list.name)}</div>
+      <div class="saved-card-meta">${list.reagents.length} reagent${list.reagents.length !== 1 ? 's' : ''} · ${esc(list.created)}</div>
+      <button class="saved-delete" data-id="${esc(list.id)}" aria-label="Delete ${esc(list.name)}">×</button>
+    </div>`).join('')}</div>`;
+
+  container.querySelectorAll('.saved-card').forEach(card => {
+    card.addEventListener('click', e => {
+      if (e.target.classList.contains('saved-delete')) return;
+      const list = savedLists.find(l => l.id === card.dataset.id);
+      if (!list) return;
+      viewingId = list.id;
+      renderSavedLists();
+      showViewMode(list);
+    });
+  });
+
+  container.querySelectorAll('.saved-delete').forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.stopPropagation();
+      savedLists = savedLists.filter(l => l.id !== btn.dataset.id);
+      saveLists(savedLists);
+      if (viewingId === btn.dataset.id) {
+        viewingId = null;
+        showEditorMode();
+      }
+      renderSavedLists();
+    });
+  });
+}
+
+// ── Escape helper ──────────────────────────────────────────────────────────
+function esc(s) {
+  return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ── Init ───────────────────────────────────────────────────────────────────
+renderSavedLists();
+renderEditor();
+</script>
+</body>
+</html>

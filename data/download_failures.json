@@ -1,0 +1,336 @@
+{
+  "schema_version": "1.0",
+  "description": "Ledger of SDS download failures. Each entry requires manual review before ingestion. resolver_status tracks where in the pipeline resolution failed.",
+  "resolver_states": {
+    "exact_sigma_sku": "auto-ingest",
+    "alternate_sigma_sku_same_cas": "auto-ingest",
+    "alternate_vendor_same_cas": "requires override entry in sds-cas-overrides.json",
+    "manual_review_required": "blocked \u2014 resolve identity decision first"
+  },
+  "failures": [
+    {
+      "cas": "10378-22-0",
+      "name": "edta",
+      "tried_skus": [
+        "ED3SS"
+      ],
+      "failure_type": "cas_mismatch",
+      "observed_sds_cas": "85715-60-2",
+      "resolver_status": "manual_review_required",
+      "status": "resolved",
+      "resolution": "User decision: EDTA disodium salt (85715-60-2). Downloaded ED3SS, ingested.",
+      "resolved_at": "2026-05-12"
+    },
+    {
+      "cas": "1217468-11-5",
+      "name": "hygromycin b",
+      "tried_skus": [
+        "H3274"
+      ],
+      "failure_type": "cas_mismatch",
+      "observed_sds_cas": "31282-04-9",
+      "form_note": "1217468-11-5=Hygromycin B free base; 31282-04-9=Hygromycin B (alternate registry). Check PubChem for canonical CAS.",
+      "resolver_status": "manual_review_required",
+      "recommended_action": "Verify canonical CAS for H3274 product. May be a registry alias \u2014 check PubChem CID synonyms for 31282-04-9.",
+      "status": "resolved",
+      "resolution": "State 2 (alternate_sigma_sku_same_cas) found H0654 as current catalog. Downloaded and ingested as 1217468-11-5.",
+      "resolved_at": "2026-05-12"
+    },
+    {
+      "cas": "17353-70-7",
+      "name": "potassium chloride",
+      "tried_skus": [
+        "60339"
+      ],
+      "failure_type": "cas_mismatch",
+      "observed_sds_cas": "298-14-6",
+      "resolver_status": "manual_review_required",
+      "status": "unresolved"
+    },
+    {
+      "cas": "451491-47-7",
+      "name": "cholera toxin",
+      "tried_skus": [
+        "C9903"
+      ],
+      "failure_type": "cas_mismatch",
+      "observed_sds_cas": "131096-89-4",
+      "resolver_status": "manual_review_required",
+      "status": "unresolved"
+    },
+    {
+      "cas": "1262751-08-5",
+      "name": "ovalbumin",
+      "tried_skus": [
+        "S7951"
+      ],
+      "failure_type": "http_404",
+      "observed_sds_cas": null,
+      "resolver_status": "manual_review_required",
+      "status": "unresolved"
+    },
+    {
+      "cas": "1217463-38-1",
+      "name": "streptomycin",
+      "tried_skus": [
+        "S6501",
+        "S9137",
+        "S1400000"
+      ],
+      "failure_type": "cas_mismatch",
+      "observed_sds_cas": "3810-74-0",
+      "form_note": "1217463-38-1=Streptomycin free base; 3810-74-0=Streptomycin sulfate. Sulfate is the standard lab form. Free base is unusual and less stable.",
+      "resolver_status": "manual_review_required",
+      "recommended_action": "Decide canonical form. Streptomycin sulfate (3810-74-0) is almost certainly what papers mean. Update CAS to 3810-74-0 and name to 'streptomycin sulfate'.",
+      "status": "resolved",
+      "resolution": "CAS corrected to 3810-74-0 (streptomycin sulfate) in pubchem_cache. S6501 SDS matches. Ingested as 3810-74-0.",
+      "resolved_at": "2026-05-12"
+    },
+    {
+      "cas": "159536-30-8",
+      "name": "naoh",
+      "tried_skus": [
+        "S5881",
+        "S8045",
+        "795429",
+        "221465",
+        "S8263",
+        "655104",
+        "06203",
+        "S2770"
+      ],
+      "failure_type": "cas_mismatch",
+      "observed_sds_cas": "1310-73-2",
+      "form_note": "159536-30-8=NaOH (possibly pellets/anhydrous specific registry); 1310-73-2=NaOH standard CAS. All Sigma NaOH SDSs report 1310-73-2. 159536-30-8 may be a superseded or vendor-specific registry number.",
+      "resolver_status": "manual_review_required",
+      "recommended_action": "Update CAS to 1310-73-2 (standard NaOH CAS). sigma_sid returned a non-standard CAS; 1310-73-2 is correct for all anhydrous NaOH forms.",
+      "status": "resolved",
+      "resolution": "CAS corrected to 1310-73-2 (standard NaOH CAS) in pubchem_cache. 1310-73-2 was already ingested.",
+      "resolved_at": "2026-05-12"
+    },
+    {
+      "cas": "1453494-74-0",
+      "name": "gabazine",
+      "tried_skus": [
+        "S106"
+      ],
+      "failure_type": "cas_mismatch",
+      "observed_sds_cas": "104104-50-9",
+      "resolver_status": "manual_review_required",
+      "status": "resolved",
+      "resolution": "User decision: gabazine hydrobromide (104104-50-9). Downloaded S106, ingested.",
+      "resolved_at": "2026-05-12"
+    },
+    {
+      "cas": "1256493-34-1",
+      "name": "dynasore",
+      "tried_skus": [
+        "SML0340"
+      ],
+      "failure_type": "http_404",
+      "observed_sds_cas": null,
+      "form_note": "SML0340 SDS URL unavailable on all brand prefixes. Likely discontinued or moved.",
+      "resolver_status": "manual_review_required",
+      "recommended_action": "Search Sigma for current Dynasore catalog. Try SML0340 via catalog page directly; alternatively check SML2340 (Dynasore hydrate).",
+      "status": "resolved",
+      "resolution": "SML0340 URL was a transient 404; succeeded on retry. Ingested as 1256493-34-1.",
+      "resolved_at": "2026-05-12"
+    },
+    {
+      "cas": "59467-94-6",
+      "name": "midazolam",
+      "tried_skus": [
+        "M2419"
+      ],
+      "failure_type": "http_404",
+      "observed_sds_cas": null,
+      "form_note": "M2419 SDS URL 404 on all brand prefixes. Likely moved or replaced.",
+      "resolver_status": "manual_review_required",
+      "recommended_action": "Search Sigma for current midazolam catalog. M2419 may have been replaced. Check M6424 or similar.",
+      "status": "resolved",
+      "resolution": "M2419 URL was a transient 404; succeeded on retry. Ingested as 59467-94-6.",
+      "resolved_at": "2026-05-12"
+    },
+    {
+      "cas": "19473-49-5",
+      "name": "glutamate",
+      "tried_skus": [
+        "G1501"
+      ],
+      "failure_type": "cas_mismatch",
+      "observed_sds_cas": "6382-01-0",
+      "resolver_status": "manual_review_required",
+      "status": "resolved",
+      "resolution": "User decision: monosodium glutamate (6382-01-0). Downloaded G1501, ingested.",
+      "resolved_at": "2026-05-12"
+    },
+    {
+      "cas": "24003-58-5",
+      "name": "qx-314",
+      "tried_skus": [
+        "L5783"
+      ],
+      "failure_type": "cas_mismatch",
+      "observed_sds_cas": "21306-56-9",
+      "resolver_status": "manual_review_required",
+      "status": "resolved",
+      "resolution": "User decision: QX-314 chloride (21306-56-9). Downloaded L5783, ingested.",
+      "resolved_at": "2026-05-12"
+    },
+    {
+      "cas": "6323-99-5",
+      "name": "4-ap",
+      "tried_skus": [
+        "A1910"
+      ],
+      "failure_type": "cas_mismatch",
+      "observed_sds_cas": "20263-07-4",
+      "resolver_status": "manual_review_required",
+      "status": "unresolved"
+    },
+    {
+      "cas": "1083299-87-9",
+      "name": "paraquat",
+      "tried_skus": [
+        "36541"
+      ],
+      "failure_type": "cas_mismatch",
+      "observed_sds_cas": "75365-73-0",
+      "resolver_status": "manual_review_required",
+      "status": "resolved",
+      "resolution": "User decision: paraquat dichloride (75365-73-0). Downloaded 36541, ingested.",
+      "resolved_at": "2026-05-12"
+    },
+    {
+      "cas": "30237-26-4",
+      "name": "fructose",
+      "tried_skus": [
+        "F2543"
+      ],
+      "failure_type": "cas_mismatch",
+      "observed_sds_cas": "57-48-7",
+      "form_note": "30237-26-4=L-fructose; 57-48-7=D-fructose. Opposite enantiomers \u2014 NOT interchangeable for biological assays. D-fructose is the physiological form.",
+      "resolver_status": "manual_review_required",
+      "recommended_action": "sigma_sid returned wrong CAS. Papers almost certainly mean D-fructose (57-48-7). Update CAS to 57-48-7 and re-download F2543 SDS for D-fructose.",
+      "status": "resolved",
+      "resolution": "CAS corrected to 57-48-7 (D-fructose) in pubchem_cache. F2543 SDS matches. Ingested as 57-48-7.",
+      "resolved_at": "2026-05-12"
+    },
+    {
+      "cas": "1134-47-0",
+      "name": "1134-47-0",
+      "tried_skus": [
+        "B5399",
+        "BP028"
+      ],
+      "failure_type": "http_404",
+      "observed_sds_cas": null,
+      "resolver_status": "manual_review_required",
+      "status": "unresolved"
+    },
+    {
+      "cas": "129-56-6",
+      "name": "129-56-6",
+      "tried_skus": [
+        "S5567"
+      ],
+      "failure_type": "http_404",
+      "observed_sds_cas": null,
+      "resolver_status": "manual_review_required",
+      "status": "unresolved"
+    },
+    {
+      "cas": "16941-32-5",
+      "name": "16941-32-5",
+      "tried_skus": [
+        "91201"
+      ],
+      "failure_type": "http_404",
+      "observed_sds_cas": null,
+      "resolver_status": "manual_review_required",
+      "status": "unresolved"
+    },
+    {
+      "cas": "56396-35-1",
+      "name": "56396-35-1",
+      "tried_skus": [
+        "PZ0160"
+      ],
+      "failure_type": "http_404",
+      "observed_sds_cas": null,
+      "resolver_status": "manual_review_required",
+      "status": "unresolved"
+    },
+    {
+      "cas": "62-56-6",
+      "name": "62-56-6",
+      "tried_skus": [
+        "T8656"
+      ],
+      "failure_type": "http_404",
+      "observed_sds_cas": null,
+      "resolver_status": "manual_review_required",
+      "status": "unresolved"
+    },
+    {
+      "cas": "675576-97-3",
+      "name": "675576-97-3",
+      "tried_skus": [
+        "N6287"
+      ],
+      "failure_type": "http_404",
+      "observed_sds_cas": null,
+      "resolver_status": "manual_review_required",
+      "status": "unresolved"
+    },
+    {
+      "cas": "7083-71-8",
+      "name": "7083-71-8",
+      "tried_skus": [
+        "E2375"
+      ],
+      "failure_type": "http_404",
+      "observed_sds_cas": null,
+      "resolver_status": "manual_review_required",
+      "status": "unresolved"
+    },
+    {
+      "cas": "73565-55-6",
+      "name": "73565-55-6",
+      "tried_skus": [
+        "P6407",
+        "P0899",
+        "P1149",
+        "P7280",
+        "P7405",
+        "P7886"
+      ],
+      "failure_type": "http_404",
+      "observed_sds_cas": null,
+      "resolver_status": "manual_review_required",
+      "status": "unresolved"
+    },
+    {
+      "cas": "76343-94-7",
+      "name": "76343-94-7",
+      "tried_skus": [
+        "L5288"
+      ],
+      "failure_type": "http_404",
+      "observed_sds_cas": null,
+      "resolver_status": "manual_review_required",
+      "status": "unresolved"
+    },
+    {
+      "cas": "87-51-4",
+      "name": "87-51-4",
+      "tried_skus": [
+        "I2886"
+      ],
+      "failure_type": "http_404",
+      "observed_sds_cas": null,
+      "resolver_status": "manual_review_required",
+      "status": "unresolved"
+    }
+  ]
+}

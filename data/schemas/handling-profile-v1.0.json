@@ -1,0 +1,180 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ctstankey.github.io/Medra/data/schemas/handling-profile-v1.0.json",
+  "title": "Handling Profile v1.0",
+  "type": "object",
+  "required": [
+    "reagent_name",
+    "cas",
+    "profile_version",
+    "handling_profile",
+    "rules_fired",
+    "conflicts"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "reagent_name": { "type": "string", "minLength": 1 },
+    "cas": { "type": "string", "minLength": 1 },
+    "profile_version": { "const": "1.0" },
+    "handling_profile": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "storage": {
+          "$ref": "#/$defs/action_group",
+          "propertyNames": {
+            "enum": [
+              "container",
+              "date_first_opening",
+              "desiccator",
+              "flammable_cabinet",
+              "freeze_thaw_max_cycles",
+              "light_protected",
+              "lo_bind_recommended",
+              "lo_bind_threshold_ug_mL",
+              "max_age_months",
+              "no_polypropylene_long_term",
+              "no_polystyrene_long_term",
+              "requires_ice",
+              "seal_tightly",
+              "segregate_from_flammables",
+              "segregate_from_organics"
+            ]
+          }
+        },
+        "pipetting": {
+          "$ref": "#/$defs/action_group",
+          "propertyNames": {
+            "enum": [
+              "air_gap_uL",
+              "aspirate_speed",
+              "dispense_speed",
+              "no_blowout",
+              "post_aspirate_delay_s",
+              "pre_wet_cycles",
+              "reverse_pipetting",
+              "tip_type",
+              "touch_tip_wall"
+            ]
+          }
+        },
+        "preparation": {
+          "$ref": "#/$defs/action_group",
+          "propertyNames": {
+            "enum": [
+              "add_to_water",
+              "aliquot_on_first_thaw",
+              "autoclave_after_treatment",
+              "cap_immediately",
+              "carrier_protein",
+              "carrier_protein_threshold_ug_mL",
+              "control_static",
+              "date_first_opening",
+              "expires_months_after_opening",
+              "make_fresh",
+              "make_fresh_for_critical_work",
+              "max_age_in_solution_days",
+              "max_storage_days",
+              "minimize_air_exposure",
+              "minimize_dust",
+              "single_use_aliquots",
+              "storage_single_use",
+              "test_before_use",
+              "thaw_method",
+              "tris_incompatible",
+              "use_in_water_only",
+              "warm_to_RT_first",
+              "weigh_fast",
+              "weighing_surface",
+              "working_concentration_pct"
+            ]
+          }
+        },
+        "safety": {
+          "$ref": "#/$defs/action_group",
+          "propertyNames": {
+            "enum": [
+              "acid_resistant_tips",
+              "avoid_ignition_sources",
+              "avoid_metal_contact",
+              "avoid_open_bench_weighing_if_toxic",
+              "dedicated_waste",
+              "fume_hood_required",
+              "gloves",
+              "minimize_light_exposure",
+              "no_evaporation_to_dryness",
+              "skin_penetrant_warning",
+              "waste_disposal",
+              "waste_stream"
+            ]
+          }
+        },
+        "mixing": {
+          "$ref": "#/$defs/action_group",
+          "propertyNames": {
+            "enum": ["no_vortex", "preferred_method"]
+          }
+        },
+        "labware": {
+          "$ref": "#/$defs/action_group",
+          "propertyNames": {
+            "enum": [
+              "avoid_parafilm_seal",
+              "avoid_polycarbonate",
+              "avoid_polypropylene",
+              "avoid_polystyrene",
+              "avoid_silicone_tubing",
+              "preferred_fluidics",
+              "preferred_seal",
+              "preferred_storage"
+            ]
+          }
+        }
+      }
+    },
+    "rules_fired": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "because", "cite", "confidence", "field_consensus"],
+        "additionalProperties": true,
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "because": { "type": "string" },
+          "cite": { "type": "string" },
+          "confidence": { "enum": ["high", "medium", "low"] },
+          "field_consensus": { "type": "boolean" }
+        }
+      }
+    },
+    "conflicts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["key", "rules", "values", "applied_value"],
+        "additionalProperties": false,
+        "properties": {
+          "key": { "type": "string", "minLength": 1 },
+          "rules": {
+            "type": "array",
+            "minItems": 2,
+            "items": { "type": "string", "minLength": 1 }
+          },
+          "values": {
+            "type": "array",
+            "minItems": 2
+          },
+          "applied_value": true
+        }
+      }
+    }
+  },
+  "$defs": {
+    "action_group": {
+      "type": "object",
+      "additionalProperties": {
+        "type": ["boolean", "integer", "number", "string"]
+      }
+    }
+  }
+}

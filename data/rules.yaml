@@ -1,0 +1,557 @@
+# rules.yaml — Reagent Handling Rules Engine
+# Format:
+#   id: snake_case unique identifier
+#   when: dict of {property: value} or {property: {operator: value}}
+#         Operators: gt, gte, lt, lte, eq, ne
+#         Boolean shorthand: {is_protein: true} means is_protein == true
+#         All conditions in `when` must be satisfied (AND logic)
+#   then: dict of {handling_path: value} using dot notation for nesting
+#   because: plain-text explanation of the rule (the WHY)
+#   cite: source — manufacturer protocol, textbook, paper, or "field consensus"
+#   note: if cite is "field consensus", mark as such for UI display
+
+- id: protein_keep_on_ice
+  when:
+    requires_ice: true
+  then:
+    storage.requires_ice: true
+  because: >
+    This reagent has explicit cold-chain or on-ice handling evidence. For
+    enzymes, antibodies, cytokines, and other activity-sensitive biologics,
+    warming above 4°C can accelerate thermal denaturation, proteolysis, or
+    loss of potency. Keep the working vial on ice unless the manufacturer
+    specifies a short room-temperature handling window.
+  cite: "NEB Enzyme Storage and Handling Guidelines. Sambrook J & Russell DW (2001) Molecular Cloning 3rd ed., Appendix 1."
+
+- id: protein_no_vortex
+  when:
+    is_protein: true
+  then:
+    mixing.no_vortex: true
+    mixing.preferred_method: "inversion_or_gentle_flick"
+  because: >
+    Vortexing drives proteins through the air–water interface at high shear,
+    which promotes unfolding and aggregation. Globular proteins, membrane
+    proteins, and antibodies are all susceptible; even enzymes stored in
+    50% glycerol (which buffers the effect somewhat) benefit from gentle
+    handling. Mix by inversion or a brief flick of the wrist instead.
+  cite: "Sigma-Aldrich Protein Handling Technical Note. Sambrook J & Russell DW (2001) Molecular Cloning 3rd ed., Appendix 1."
+
+- id: protein_glycerol_on_ice
+  when:
+    is_protein: true
+    glycerol_pct: {gte: 50}
+  then:
+    storage.requires_ice: true
+    pipetting.reverse_pipetting: true
+    pipetting.aspirate_speed: "slow"
+    mixing.no_vortex: true
+  because: >
+    Proteins in 50% glycerol stocks (enzymes, antibodies, recombinant carriers)
+    stay liquid at −20°C but denature rapidly above ~4°C. The glycerol stock is
+    viscous, requiring reverse pipetting to eliminate air bubbles. Vortexing
+    creates a high-shear air–water interface that unfolds proteins.
+  cite: "NEB Cloning & PCR guidelines; Eppendorf Technical Guide: Viscous Liquids, 2020."
+
+- id: thaw_serum_gently
+  when:
+    is_serum: true
+  then:
+    preparation.thaw_method: "37C_water_bath_with_periodic_mixing"
+    preparation.aliquot_on_first_thaw: true
+    storage.freeze_thaw_max_cycles: 3
+    mixing.no_vortex: true
+  because: >
+    Sera contain labile complement proteins, growth factors (EGF, IGF-1, FGF),
+    and hormones that are destroyed by slow thawing at room temperature or by
+    repeated freeze-thaw cycling. A 37°C water bath with periodic swirling
+    achieves full thaw in 30–60 minutes while minimising protein denaturation.
+    Aliquoting on first thaw prevents the repeated freeze-thaw cycles that
+    precipitate proteins and reduce growth-promoting activity. Most manufacturers
+    specify ≤3 freeze-thaw cycles for full activity retention.
+  cite: "Gibco FBS Handling and Use Guide. Sigma-Aldrich Fetal Bovine Serum Technical Bulletin F2442. ATCC Animal Cell Culture Guide."
+
+- id: pre_wet_volatile
+  when:
+    vapor_pressure_kPa_20C: {gte: 5}
+  then:
+    pipetting.pre_wet_cycles: 3
+    pipetting.dispense_speed: "fast"
+  because: >
+    High vapor pressure (≥5 kPa at 20°C) causes significant evaporation inside the tip.
+    Without pre-wetting, the headspace is dry air; the solvent flash-evaporates into it,
+    creating a vapour cushion that compresses and releases unpredictably, drifting
+    dispensed volume by 5–15%. Three aspirate-expel cycles saturate the headspace
+    before the actual dispensing step. Fast dispense minimises dwell-time in the tip.
+  cite: "Eppendorf Application Note: Pipetting Volatile Liquids, 2018. NIST WebBook CAS 64-17-5 (vapor pressure 5.95 kPa at 20°C)."
+
+- id: viscous_no_protein
+  when:
+    viscosity_class: "high"
+  then:
+    pipetting.tip_type: "wide_bore"
+    pipetting.reverse_pipetting: true
+    pipetting.aspirate_speed: "slow"
+    pipetting.post_aspirate_delay_s: 3
+  because: >
+    High-viscosity non-protein liquids (e.g., pure glycerol, PEG solutions) resist
+    aspiration, causing back-pressure that stalls the piston and under-delivers volume.
+    Wide-bore tips reduce hydraulic resistance. Reverse pipetting removes the dead-air
+    step. A 2–3 s post-aspirate pause lets the meniscus stabilise before withdrawal.
+  cite: "Eppendorf Technical Guide: Pipetting Viscous Liquids, 2020. Perry's Chemical Engineers' Handbook, 8th ed. (glycerol viscosity 1412 mPa·s at 20°C)."
+
+- id: detergent_no_foam
+  when:
+    is_detergent: true
+  then:
+    pipetting.dispense_speed: "slow"
+    pipetting.touch_tip_wall: true
+    pipetting.no_blowout: true
+    pipetting.air_gap_uL: 0
+  because: >
+    Surfactants above their CMC form micelles that stabilise foam. Any air-liquid
+    interface created by dispensing rapidly or by blowout air bubbles generates
+    persistent foam. Dispensing slowly along the tube wall prevents air entrainment.
+    Touch-off tip on the wall instead of final blowout eliminates the last drop of air.
+  cite: "Corning Life Sciences Application Note: Surfactants in Liquid Handling, 2019. Field consensus."
+
+- id: foam_prone_no_air_entrainment
+  when:
+    is_foaming: true
+  then:
+    pipetting.dispense_speed: "slow"
+    pipetting.touch_tip_wall: true
+    pipetting.no_blowout: true
+    pipetting.air_gap_uL: 0
+  because: >
+    Foam-prone reagents that are not detergents per se still trap persistent
+    foam at any air–liquid interface. Concentrated protein solutions (BSA
+    stocks, sera, recombinant cytokine carrier formulations) foam because
+    globular proteins denature at the air–water interface, exposing
+    hydrophobic residues that stabilise bubble films — same mechanism that
+    drives the egg-white whisk. Lipid suspensions, liposomes, LNPs, and
+    micellar drug formulations foam because their surfactant-like
+    amphiphiles also stabilise interfaces. The handling is identical to
+    detergent foam control: slow dispense along the tube wall, no blowout,
+    no air gap, no shaking. Keeping this as a separate rule from
+    detergent_no_foam preserves the mechanistic distinction in the cited
+    rationale and lets a non-detergent foamer (concentrated BSA, FBS,
+    lipid-formulated drugs) fire the rule without being mislabeled as
+    a detergent. Both rules can fire simultaneously without conflict — they
+    produce identical handling outputs.
+  cite: "Birdi KS (ed.) Handbook of Surface and Colloid Chemistry, 4th ed., Ch. 5 (protein foams). Corning Life Sciences Application Note: Surfactants in Liquid Handling, 2019. Field consensus for lipid suspensions."
+
+- id: light_protect_sensitive
+  when:
+    is_light_sensitive: true
+  then:
+    storage.light_protected: true
+    storage.container: "amber_or_foil"
+    safety.minimize_light_exposure: true
+  because: >
+    Light-sensitive reagents degrade under UV or visible light by different
+    mechanisms depending on the compound class. Fluorophores (DAPI, ethidium
+    bromide) undergo irreversible photobleaching — the chromophore is destroyed;
+    30 seconds of UV transilluminator exposure causes measurable DAPI signal loss.
+    Oxidizers (H₂O₂, NaOCl) photodecompose, losing titer. Peroxide-forming
+    solvents (diethyl ether) form hydroperoxides faster in light. Light-activated
+    monomers (acrylamide) can begin polymerising spontaneously. Amber containers
+    or foil-wrap block the relevant wavelengths for all of these.
+  cite: "Thermo Fisher Scientific: DAPI Technical Data Sheet (D1306). Lakowicz, Principles of Fluorescence Spectroscopy, 3rd ed., Ch. 1. Sigma-Aldrich H₂O₂ Product Information (216763)."
+
+- id: make_fresh_reducing_agent
+  when:
+    oxidizes_in_solution: true
+  then:
+    preparation.max_age_in_solution_days: 7
+    preparation.make_fresh_for_critical_work: true
+    preparation.single_use_aliquots: true
+  because: >
+    Thiol reducing agents (DTT, β-ME) are oxidised by dissolved O₂ in aqueous
+    buffer. DTT has an effective half-life of ~1 week at 4°C; at room temperature
+    in air-exposed buffer this drops to hours. For routine applications (gel loading
+    buffer, standard lysis buffer) solutions up to 7 days old at 4°C are acceptable.
+    For critical applications — disulfide bond reduction, enzyme protection, mass-spec
+    sample prep — make fresh on the day of use, because even modest oxidation
+    eliminates the reducing environment entirely. β-ME oxidises at comparable rates
+    and also volatilises, making fresh prep doubly important for that compound.
+    Note: phosphine-based reducing agents (TCEP) are air-stable and excluded from
+    this rule — see tcep_air_stable.
+  cite: "Cleland WW (1964) Biochemistry 3:480–482 (original DTT paper, redox characterisation). Sigma-Aldrich DTT Product Information Sheet D9779."
+
+- id: fume_hood_fixative
+  when:
+    is_fixative: true
+  then:
+    safety.fume_hood_required: true
+    safety.waste_stream: "formaldehyde"
+    preparation.make_fresh: true
+  because: >
+    PFA dissolves to release formaldehyde, an IARC Group 1 (known) human carcinogen
+    and respiratory sensitiser. Even brief vapour exposure during preparation is a
+    documented occupational hazard. Fresh preparation from powder in PBS (rather
+    than from stored 16% stock solutions) provides better morphological preservation
+    and avoids formate contamination that accumulates in aged solutions.
+  cite: "IARC Monographs Vol. 100F (2012): Formaldehyde classified Group 1. Fox CH et al. (1985) J Histochem Cytochem 33:845–853 (PFA fixation kinetics)."
+
+- id: warm_freeze_prone_liquid
+  when:
+    physical_state: "liquid"
+    freeze_point_C: {gte: 15}
+  then:
+    preparation.warm_to_RT_first: true
+  because: >
+    Liquids with freeze points at or above 15°C (DMSO ~19°C, glycerol ~18°C)
+    can solidify partially or fully in a 4°C cold room or on ice. Pipetting
+    a partially-solidified liquid causes systematic volume errors. The
+    physical_state guard prevents the rule from misfiring on solids whose
+    melting point happens to be reported in freeze_point_C (e.g. NaOH
+    pellets, PFA powder).
+  cite: "Sigma-Aldrich DMSO Product Information Sheet 276855 (freeze point 18.45°C). Perry's Chemical Engineers' Handbook, 8th ed. (glycerol freeze point 17.8°C)."
+
+
+- id: lo_bind_adsorption_prone
+  when:
+    lo_bind_required: true
+  then:
+    storage.lo_bind_recommended: true
+    storage.lo_bind_threshold_ug_mL: 100
+    preparation.single_use_aliquots: true
+    preparation.carrier_protein_threshold_ug_mL: 10
+    preparation.carrier_protein: "BSA_0.1pct"
+  because: >
+    Proteins, oligos, and antibodies lose measurable material to non-specific
+    adsorption onto standard polypropylene within 30–60 minutes, but the effect is
+    concentration-dependent: below ~100 µg/mL, surface losses are significant;
+    above that threshold, bulk protein mass saturates adsorption sites and losses
+    are negligible. Use LoBind tubes (reduced hydrophobic surface chemistry) when
+    working at or below 100 µg/mL. At or below 10 µg/mL, also add a carrier
+    protein (BSA 0.1%) to actively compete for remaining surface sites.
+  cite: "Eppendorf LoBind Technology Technical Note, 2019. Kingston RE et al. (2003) Current Protocols in Mol. Bio.: nucleic acid quantification and dilution."
+
+- id: desiccator_hygroscopic_solid
+  when:
+    is_hygroscopic: true
+    physical_state: {ne: "liquid"}
+  then:
+    storage.desiccator: true
+    preparation.weigh_fast: true
+    preparation.cap_immediately: true
+    preparation.date_first_opening: true
+  because: >
+    Hygroscopic and deliquescent solids absorb atmospheric water during each weighing
+    event. Mass gain directly dilutes the effective molarity of the solution you
+    prepare. Deliquescent solids (e.g., NaOH pellets) can become partially-dissolved
+    slush within minutes in humid air, further confounding accurate weighing. Desiccator
+    storage and fast weighing are the only controls for this.
+  cite: "Sigma-Aldrich Handling Hygroscopic Compounds Technical Note. ASHP Guidelines on Handling Hazardous Drugs (weighing-by-difference rationale)."
+
+- id: oxidizer_segregate
+  when:
+    is_oxidizer: true
+  then:
+    storage.segregate_from_flammables: true
+    storage.segregate_from_organics: true
+    safety.dedicated_waste: "oxidizer"
+    safety.avoid_metal_contact: true
+  because: >
+    Strong oxidizers (hydrogen peroxide 30%, sodium hypochlorite) react
+    exothermically with organic materials and flammables, risking fire or
+    explosion. H₂O₂ decomposes catalytically in contact with iron, copper,
+    or manganese — use glass, polypropylene, or HDPE containers only.
+    Bleach mixed with acids releases chlorine gas; mixed with ammonia or
+    amines releases chloramines — never co-dispose in the same sink drain.
+  cite: "Sigma-Aldrich Hydrogen Peroxide Safety Information (216763). OSHA Sodium Hypochlorite Hazard Bulletin. Bretherick's Handbook of Reactive Chemical Hazards, 7th ed."
+
+- id: peroxide_forming_track
+  when:
+    is_peroxide_forming: true
+    vapor_pressure_kPa_20C: {gte: 5}
+  then:
+    storage.date_first_opening: true
+    storage.max_age_months: 3
+    preparation.test_before_use: "peroxide_strip"
+    safety.no_evaporation_to_dryness: true
+  because: >
+    Volatile peroxide-forming solvents such as diethyl ether, THF, and
+    dioxane form shock-sensitive hydroperoxides on exposure to air and light
+    via autoxidation. Peroxide concentration increases with time and is
+    highest in the last few millilitres as the solvent evaporates. Opening a
+    bottle without a peroxide test when the contents are old or unknown is a
+    documented explosion hazard. Max 3-month working life after opening; test
+    with commercial peroxide strips before each use; discard at 25 ppm
+    peroxide or above. Less volatile, weaker peroxide formers need separate
+    class-specific rules rather than this strict ether-style handling rule.
+  cite: "Jackson HL et al. (1998) Chem Health Safety 5(3): 16–18 (ether peroxide hazards). Prudent Practices in the Laboratory, NRC 2011, Ch. 6."
+
+- id: corrosive_add_to_water
+  when:
+    is_corrosive: true
+  then:
+    preparation.add_to_water: true
+    safety.acid_resistant_tips: true
+    safety.waste_disposal: "follow_institution_policy; neutralize_only_small_compatible_waste_if_trained"
+    safety.fume_hood_required: true
+  because: >
+    Concentrated corrosive reagents (HCl, TFA, NaOH) release significant heat
+    on dilution. Adding water to a concentrated corrosive can boil the liquid
+    and cause spattering; always add the corrosive slowly to water. TFA and
+    HCl volatilise in the hood — decant and dilute in a ventilated space.
+    Waste handling is institution-specific: neutralisation is appropriate
+    only for small compatible corrosive waste streams when performed by
+    trained personnel with the right PPE; otherwise collect through the
+    hazardous-waste program.
+  cite: "Sigma-Aldrich HCl Safety Note 258148. ACS Safety in Academic Chemistry Laboratories, 7th ed., Ch. 4. EPA 40 CFR Part 261 (hazardous waste neutralisation)."
+
+- id: tcep_air_stable
+  when:
+    is_reducing_agent: true
+    oxidizes_in_solution: false
+  then:
+    preparation.make_fresh: false
+    preparation.max_storage_days: 30
+  because: >
+    TCEP (tris(2-carboxyethyl)phosphine) is a phosphine-based reducing agent
+    that is stable to atmospheric oxygen in aqueous solution — unlike thiol
+    reagents (DTT, β-mercaptoethanol) which oxidise within hours to days.
+    TCEP solutions in standard buffer can be stored at 4°C for up to 30 days
+    without significant loss of reducing activity. Single-use aliquots are
+    recommended for irreplaceable stocks but are not obligatory for routine
+    working solutions.
+  cite: "Getz EB et al. (1999) Anal Biochem 273:73–80 (TCEP stability characterisation). Pierce TCEP·HCl Product Manual."
+
+- id: skin_penetrant_hazard
+  when:
+    skin_penetrant: true
+  then:
+    safety.skin_penetrant_warning: true
+    safety.gloves: "nitrile"
+  because: >
+    This reagent crosses intact skin and can carry dissolved solutes
+    transdermally, creating a toxicity route that standard irritation/corrosion
+    labelling underestimates. Documented skin-penetrant laboratory reagents
+    include DMSO, 2-mercaptoethanol, acrylamide, and aniline — all capable of
+    delivering dissolved cargo (drug stocks, toxins) through the skin barrier.
+    Nitrile gloves (not latex, which is permeable to many organic solvents)
+    are required; change gloves immediately after any spill; never handle
+    these reagents bare-handed.
+  cite: "NIOSH skin absorption hazard notes. Braue EH et al. (1999) Occup Environ Med: percutaneous absorption review. Magnusson BM et al. (2004) Pharm Res 21:1602–1609 (DMSO and 2-ME permeation data)."
+
+- id: depc_tris_incompatible
+  when:
+    is_rnase_decontaminant: true
+  then:
+    preparation.tris_incompatible: true
+    preparation.use_in_water_only: true
+    preparation.working_concentration_pct: 0.1
+  because: >
+    DEPC carbamoylates primary amines, including the amine group in Tris buffer.
+    Adding DEPC to Tris-containing solutions does not decontaminate them — it
+    simply inactivates DEPC while leaving RNases untouched. Always prepare
+    DEPC-treated water first (0.1% DEPC in nuclease-free water, stir 1 h),
+    then use that water to prepare Tris or other buffers afterward.
+  cite: "Sambrook J & Russell DW (2001) Molecular Cloning 3rd ed., Appendix 1 (DEPC treatment). Ambion RNase decontamination guide."
+
+- id: depc_autoclave_inactivate
+  when:
+    is_rnase_decontaminant: true
+  then:
+    preparation.autoclave_after_treatment: true
+    preparation.storage_single_use: true
+    preparation.expires_months_after_opening: 3
+  because: >
+    Residual DEPC in treated water carbamoylates adenosine residues in RNA,
+    destroying yield and introducing A260 artefacts. Autoclaving (121°C, 15 min)
+    hydrolyses DEPC completely to CO₂ and ethanol — both volatile and harmless.
+    Do not use DEPC-treated solutions in RNA reactions without autoclaving first.
+    DEPC stock hydrolyses on contact with water; once opened, activity drops
+    within months even in a sealed bottle. Aliquot and store at 4°C.
+  cite: "Chomczynski P (1993) BioTechniques 15:532–534 (TRIzol/DEPC rationale). Sigma-Aldrich DEPC Product Info 40718."
+
+- id: fume_hood_toxic
+  when:
+    fume_hood_required: true
+  then:
+    safety.fume_hood_required: true
+  because: >
+    The SDS (Section 7 or 8) specifies ventilation controls or fume hood use for this
+    reagent. This category spans volatile toxic solvents (pyridine, DMF, heptane),
+    cytotoxic and genotoxic compounds (docetaxel, streptozocin, azoxymethane), and
+    reagents whose vapours or aerosols pose an inhalation hazard. A chemical fume hood
+    provides the primary engineering control — never handle these reagents on the open
+    bench.
+  cite: "OSHA Laboratory Standard 29 CFR 1910.1450. Manufacturer SDS Section 7/8."
+
+- id: flammable_storage
+  when:
+    is_flammable: true
+  then:
+    storage.flammable_cabinet: true
+    safety.avoid_ignition_sources: true
+  because: >
+    Flammable liquids (flash point < 60°C) generate ignitable vapours at or near room
+    temperature. NFPA 30 and OSHA 29 CFR 1910.106 require storage in FM-approved
+    flammable liquid storage cabinets whenever quantities exceed the exempt amount in
+    standard laboratory containers. Class IB/IC solvents (heptane fp −4°C, ethyl
+    acetate fp −4°C, pyridine fp 20°C) have vapour densities > 1 and will pool at
+    floor level near ignition sources such as hot plates and electrical outlets.
+    Hood use is governed by volatility, toxicity, open-container volume, and SDS
+    ventilation language; the flammable flag alone is enough to require storage
+    and ignition-source controls, but not enough to make every small transfer a
+    hood-only operation.
+  cite: "NFPA 30: Flammable and Combustible Liquids Code (2021). OSHA 29 CFR 1910.106 (flammable liquids storage)."
+
+- id: volatile_flammable_hood
+  when:
+    is_flammable: true
+    vapor_pressure_kPa_20C: {gte: 5}
+  then:
+    safety.fume_hood_required: true
+  because: >
+    Volatile flammable liquids can generate ignitable vapour concentrations
+    during open-container transfer, especially when the vapour is heavier than
+    air or the operation involves more than brief capped-vial handling. Use a
+    chemical fume hood or equivalent local exhaust for open transfers to keep
+    vapour below hazardous concentrations and away from ignition sources.
+  cite: "Prudent Practices in the Laboratory, NRC 2011, Ch. 6.C and 9.C. NFPA 30: Flammable and Combustible Liquids Code (2021)."
+
+- id: air_sensitive_seal
+  when:
+    is_air_sensitive: true
+  then:
+    storage.seal_tightly: true
+    preparation.minimize_air_exposure: true
+  because: >
+    Air-sensitive reagents deteriorate on contact with atmospheric oxygen or moisture.
+    Linoleic acid oxidises to cytotoxic lipid peroxides within hours in open air.
+    Rifampicin degrades to the inactive 3-formyl-rifamycin SV quinone on oxidation.
+    Histamine autooxidises at alkaline pH and is also hygroscopic. DMF absorbs moisture
+    and slowly hydrolyses to dimethylamine (an irritant). Keep bottles tightly capped
+    between uses; aliquot into single-use volumes for high-frequency access. For
+    oxygen-critical applications, consider dispensing under argon.
+  cite: "Sigma-Aldrich product information: linoleic acid L1376, rifampicin R3501, DMF D4551. SDS Section 7."
+
+- id: powder_static_dust_control
+  when:
+    physical_state: "powder"
+  then:
+    preparation.control_static: true
+    preparation.weighing_surface: "foil_or_glass_weigh_boat"
+    preparation.minimize_dust: true
+    safety.avoid_open_bench_weighing_if_toxic: true
+  because: >
+    Powders are the highest-risk form for static loss, inaccurate weighing,
+    and inhalation exposure. Fine powders such as SDS, fluorescent dyes,
+    lyophilised proteins, and many bioactive small molecules can cling to
+    plastic boats, jump during transfer, or aerosolise during scooping. Use a
+    foil or glass weighing surface for static-prone material, work gently, and
+    move toxic or sensitising powders into a hood, balance enclosure, or other
+    local containment.
+  cite: "Prudent Practices in the Laboratory, NRC 2011, Ch. 6.D and 6.J. ASHP Guidelines on Handling Hazardous Drugs (powder containment and weighing-by-difference rationale). Field consensus."
+
+# -----------------------------------------------------------------------------
+# Solvent / plasticware compatibility
+# -----------------------------------------------------------------------------
+# Each rule below fires when the relevant material appears in the reagent's
+# `properties.plastic_incompatible` list (array of material strings). The
+# engine's `contains` operator handles list-membership. Keeping one rule per
+# material — rather than one big rule that emits a list output — means each
+# fired rule carries its own `because`/`cite` pair, so the user-facing
+# rule-trace tells you *which* material is the problem and *why*.
+#
+# The taxonomy of values used in `plastic_incompatible` mirrors the headings
+# in `data/tacit-knowledge.md` §"Solvent / plasticware compatibility":
+#   "polystyrene", "polypropylene", "polycarbonate", "silicone", "parafilm"
+# Glass-attacking reagents (HF) are out of scope for this rule family — only
+# one CAS in the database needs them, and "glass" doesn't belong in a list
+# called `plastic_incompatible`. Add a dedicated `etches_glass` flag if/when
+# HF lands.
+
+- id: avoid_polystyrene
+  when:
+    plastic_incompatible: {contains: "polystyrene"}
+  then:
+    labware.avoid_polystyrene: true
+    labware.preferred_storage: "glass_or_polypropylene"
+    storage.no_polystyrene_long_term: true
+  because: >
+    Polystyrene (clear conicals, most cell-culture plates, standard 96-well
+    plates) is dissolved or stress-cracked by chlorinated solvents (CHCl₃,
+    DCM), aromatics (toluene, xylene), and several common organics (THF,
+    acetone, ethyl acetate). Even brief contact leaches styrene oligomers
+    into the sample and crazes the container surface; long contact dissolves
+    the wall outright. Use glass or polypropylene for any reagent on this
+    list. Note that "polystyrene" includes the optically clear lids and
+    bottoms of many imaging plates — those will fog and craze on solvent
+    exposure even when the side walls survive.
+  cite: "Corning Life Sciences Plastics Technical Bulletin (chemical compatibility chart). Sambrook J & Russell DW (2001) Molecular Cloning 3rd ed., Appendix 5. Field consensus."
+
+- id: avoid_polypropylene
+  when:
+    plastic_incompatible: {contains: "polypropylene"}
+  then:
+    labware.avoid_polypropylene: true
+    labware.preferred_storage: "glass_or_ptfe"
+    storage.no_polypropylene_long_term: true
+  because: >
+    Polypropylene (Eppendorf tubes, most "chemical-resistant" labware)
+    tolerates brief exposure to most organics but swells on prolonged
+    contact with DCM, hexane, and concentrated TFA. DMSO additionally
+    leaches plasticisers (phthalates, low-MW oligomers) from many PP
+    formulations over hours-to-days, contaminating sensitive downstream
+    assays (mass spec, cell-based potency, NMR). Short pipetting is
+    generally fine; long-term storage of reagents on this list should be
+    in borosilicate glass or PTFE (Teflon). PP is *required* for HF (HF
+    etches glass) — a glass-substitute case noted in tacit knowledge but
+    not currently encoded as a rule because no HF record exists.
+  cite: "Cole-Parmer Chemical Compatibility Database (polypropylene). Eppendorf Technical Note: DMSO Compatibility, 2017. Reepmeyer JC, d'Avignon DA (2008) J Pharm Biomed Anal 47:1124–1129 (DMSO leachables)."
+
+- id: avoid_polycarbonate
+  when:
+    plastic_incompatible: {contains: "polycarbonate"}
+  then:
+    labware.avoid_polycarbonate: true
+    labware.preferred_storage: "glass_or_polypropylene"
+  because: >
+    Polycarbonate (some centrifuge bottles, microfluidic chips, optically
+    clear plates) is attacked by strong bases (NaOH > 1 M), alcohols at
+    elevated temperature, and many polar aprotic solvents (DMSO, DMF,
+    NMP) — stress-cracking failure is common with high-RCF centrifugation
+    in PC bottles after solvent exposure. For reagents on this list,
+    substitute glass (autoclavable) or polypropylene (where chemical
+    compatibility allows).
+  cite: "Nalgene Labware Chemical Resistance Chart (Thermo Fisher Scientific). Field consensus."
+
+- id: avoid_silicone_tubing
+  when:
+    plastic_incompatible: {contains: "silicone"}
+  then:
+    labware.avoid_silicone_tubing: true
+    labware.preferred_fluidics: "ptfe_or_peek"
+  because: >
+    Silicone tubing absorbs hydrophobic small molecules into the bulk
+    polymer matrix, not just at the surface. Dosing a hydrophobic drug,
+    steroid, or lipid through silicone-tubed peristaltic lines causes
+    measurable loss to the tubing wall on the timescale of seconds to
+    minutes; equilibrium uptake can exceed 50% of the dosed mass for the
+    most lipophilic compounds. Substitute PTFE (Teflon) or PEEK for the
+    fluid path — both have orders-of-magnitude lower absorption for the
+    same compounds. This rule is most relevant for automated fluidics and
+    perfusion experiments; static-storage handling is governed by the
+    other labware rules.
+  cite: "Wang JD et al. (2012) Lab on a Chip 12:1865–1873 (PDMS absorption of small molecules). Toepke MW, Beebe DJ (2006) Lab on a Chip 6:1484–1486."
+
+- id: avoid_parafilm_seal
+  when:
+    plastic_incompatible: {contains: "parafilm"}
+  then:
+    labware.avoid_parafilm_seal: true
+    labware.preferred_seal: "screw_cap_or_ptfe_lined_septum"
+  because: >
+    Parafilm M is a paraffin-polyolefin film that dissolves on contact
+    with most organic solvents (chlorinated solvents, ethers, aromatics,
+    ketones). Sealing a tube containing volatile organics with Parafilm
+    contaminates the sample with dissolved film and breaks the seal as
+    the film thins. Use a screw cap with a PTFE-lined septum, a cap with
+    a PTFE liner, or a flame-sealed glass ampoule instead.
+  cite: "Bemis Parafilm M Technical Bulletin (chemical compatibility). Field consensus."

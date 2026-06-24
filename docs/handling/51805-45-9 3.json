@@ -1,0 +1,56 @@
+{
+  "reagent_name": "Tris(2-carboxyethyl)phosphine hydrochloride",
+  "cas": "51805-45-9",
+  "profile_version": "1.0",
+  "handling_profile": {
+    "preparation": {
+      "add_to_water": true,
+      "make_fresh": false,
+      "max_storage_days": 30,
+      "minimize_air_exposure": true,
+      "control_static": true,
+      "weighing_surface": "foil_or_glass_weigh_boat",
+      "minimize_dust": true
+    },
+    "safety": {
+      "acid_resistant_tips": true,
+      "waste_disposal": "follow_institution_policy; neutralize_only_small_compatible_waste_if_trained",
+      "fume_hood_required": true,
+      "avoid_open_bench_weighing_if_toxic": true
+    },
+    "storage": {
+      "seal_tightly": true
+    }
+  },
+  "rules_fired": [
+    {
+      "id": "corrosive_add_to_water",
+      "because": "Concentrated corrosive reagents (HCl, TFA, NaOH) release significant heat on dilution. Adding water to a concentrated corrosive can boil the liquid and cause spattering; always add the corrosive slowly to water. TFA and HCl volatilise in the hood \u2014 decant and dilute in a ventilated space. Waste handling is institution-specific: neutralisation is appropriate only for small compatible corrosive waste streams when performed by trained personnel with the right PPE; otherwise collect through the hazardous-waste program.",
+      "cite": "Sigma-Aldrich HCl Safety Note 258148. ACS Safety in Academic Chemistry Laboratories, 7th ed., Ch. 4. EPA 40 CFR Part 261 (hazardous waste neutralisation).",
+      "confidence": "high",
+      "field_consensus": false
+    },
+    {
+      "id": "tcep_air_stable",
+      "because": "TCEP (tris(2-carboxyethyl)phosphine) is a phosphine-based reducing agent that is stable to atmospheric oxygen in aqueous solution \u2014 unlike thiol reagents (DTT, \u03b2-mercaptoethanol) which oxidise within hours to days. TCEP solutions in standard buffer can be stored at 4\u00b0C for up to 30 days without significant loss of reducing activity. Single-use aliquots are recommended for irreplaceable stocks but are not obligatory for routine working solutions.",
+      "cite": "Getz EB et al. (1999) Anal Biochem 273:73\u201380 (TCEP stability characterisation). Pierce TCEP\u00b7HCl Product Manual.",
+      "confidence": "low",
+      "field_consensus": false
+    },
+    {
+      "id": "air_sensitive_seal",
+      "because": "Air-sensitive reagents deteriorate on contact with atmospheric oxygen or moisture. Linoleic acid oxidises to cytotoxic lipid peroxides within hours in open air. Rifampicin degrades to the inactive 3-formyl-rifamycin SV quinone on oxidation. Histamine autooxidises at alkaline pH and is also hygroscopic. DMF absorbs moisture and slowly hydrolyses to dimethylamine (an irritant). Keep bottles tightly capped between uses; aliquot into single-use volumes for high-frequency access. For oxygen-critical applications, consider dispensing under argon.",
+      "cite": "Sigma-Aldrich product information: linoleic acid L1376, rifampicin R3501, DMF D4551. SDS Section 7.",
+      "confidence": "high",
+      "field_consensus": false
+    },
+    {
+      "id": "powder_static_dust_control",
+      "because": "Powders are the highest-risk form for static loss, inaccurate weighing, and inhalation exposure. Fine powders such as SDS, fluorescent dyes, lyophilised proteins, and many bioactive small molecules can cling to plastic boats, jump during transfer, or aerosolise during scooping. Use a foil or glass weighing surface for static-prone material, work gently, and move toxic or sensitising powders into a hood, balance enclosure, or other local containment.",
+      "cite": "Prudent Practices in the Laboratory, NRC 2011, Ch. 6.D and 6.J. ASHP Guidelines on Handling Hazardous Drugs (powder containment and weighing-by-difference rationale). Field consensus.",
+      "confidence": "high",
+      "field_consensus": true
+    }
+  ],
+  "conflicts": []
+}

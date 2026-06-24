@@ -1,0 +1,4542 @@
+[
+  {
+    "name": "2-Methylbutane",
+    "cas": "78-78-4",
+    "category": "volatile_solvent",
+    "top_pictogram": "flame",
+    "signal_word": "Danger",
+    "summary_fact": "Pre-wet tips 3\u00d7 before aspirating \u2014 volatile",
+    "rules_fired_count": 4,
+    "file": "78-78-4.json"
+  },
+  {
+    "name": "2-Propanol",
+    "cas": "67-63-0",
+    "category": "volatile_solvent",
+    "top_pictogram": "flame",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 3,
+    "file": "67-63-0.json"
+  },
+  {
+    "name": "Acetic acid",
+    "cas": "64-19-7",
+    "category": "volatile_solvent",
+    "top_pictogram": "flame",
+    "signal_word": "Danger",
+    "summary_fact": "Warm to RT before pipetting \u2014 freezes near RT",
+    "rules_fired_count": 3,
+    "file": "64-19-7.json"
+  },
+  {
+    "name": "Acetic anhydride",
+    "cas": "108-24-7",
+    "category": "volatile_solvent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Add reagent to water, not reverse \u2014 corrosive",
+    "rules_fired_count": 3,
+    "file": "108-24-7.json"
+  },
+  {
+    "name": "Acetone",
+    "cas": "67-64-1",
+    "category": "volatile_solvent",
+    "top_pictogram": "flame",
+    "signal_word": "Danger",
+    "summary_fact": "Pre-wet tips 3\u00d7 before aspirating \u2014 volatile",
+    "rules_fired_count": 4,
+    "file": "67-64-1.json"
+  },
+  {
+    "name": "Acetonitrile",
+    "cas": "75-05-8",
+    "category": "volatile_solvent",
+    "top_pictogram": "flame",
+    "signal_word": "Danger",
+    "summary_fact": "Pre-wet tips 3\u00d7 before aspirating \u2014 volatile",
+    "rules_fired_count": 5,
+    "file": "75-05-8.json"
+  },
+  {
+    "name": "Ammonium hydroxide solution",
+    "cas": "16393-49-0",
+    "category": "volatile_solvent",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "summary_fact": "Pre-wet tips 3\u00d7 before aspirating \u2014 volatile",
+    "rules_fired_count": 2,
+    "file": "16393-49-0.json"
+  },
+  {
+    "name": "Dichloromethane",
+    "cas": "75-09-2",
+    "category": "volatile_solvent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Warning",
+    "summary_fact": "Pre-wet tips 3\u00d7 before aspirating \u2014 volatile",
+    "rules_fired_count": 3,
+    "file": "75-09-2.json"
+  },
+  {
+    "name": "Diethyl ether",
+    "cas": "60-29-7",
+    "category": "volatile_solvent",
+    "top_pictogram": "flame",
+    "signal_word": "Danger",
+    "summary_fact": "Pre-wet tips 3\u00d7 before aspirating \u2014 volatile",
+    "rules_fired_count": 6,
+    "file": "60-29-7.json"
+  },
+  {
+    "name": "Ethyl acetate",
+    "cas": "141-78-6",
+    "category": "volatile_solvent",
+    "top_pictogram": "flame",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "141-78-6.json"
+  },
+  {
+    "name": "Ethyl Alcohol, pure",
+    "cas": "64-17-5",
+    "category": "volatile_solvent",
+    "top_pictogram": "flame",
+    "signal_word": "Danger",
+    "summary_fact": "Pre-wet tips 3\u00d7 before aspirating \u2014 volatile",
+    "rules_fired_count": 3,
+    "file": "64-17-5.json"
+  },
+  {
+    "name": "Formic acid",
+    "cas": "64-18-6",
+    "category": "volatile_solvent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Pre-wet tips 3\u00d7 before aspirating \u2014 volatile",
+    "rules_fired_count": 5,
+    "file": "64-18-6.json"
+  },
+  {
+    "name": "Giemsa Stain, Modified Solution",
+    "cas": "93211-80-4",
+    "category": "volatile_solvent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "93211-80-4.json"
+  },
+  {
+    "name": "Heptane",
+    "cas": "142-82-5",
+    "category": "volatile_solvent",
+    "top_pictogram": "flame",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 3,
+    "file": "142-82-5.json"
+  },
+  {
+    "name": "Hexane",
+    "cas": "110-54-3",
+    "category": "volatile_solvent",
+    "top_pictogram": "flame",
+    "signal_word": "Danger",
+    "summary_fact": "Pre-wet tips 3\u00d7 before aspirating \u2014 volatile",
+    "rules_fired_count": 4,
+    "file": "110-54-3.json"
+  },
+  {
+    "name": "Hydrochloric acid",
+    "cas": "7647-01-0",
+    "category": "volatile_solvent",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "summary_fact": "Pre-wet tips 3\u00d7 before aspirating \u2014 volatile",
+    "rules_fired_count": 3,
+    "file": "7647-01-0.json"
+  },
+  {
+    "name": "Methanol",
+    "cas": "67-56-1",
+    "category": "volatile_solvent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Pre-wet tips 3\u00d7 before aspirating \u2014 volatile",
+    "rules_fired_count": 4,
+    "file": "67-56-1.json"
+  },
+  {
+    "name": "N,N,N\u2032,N\u2032-Tetramethylethylenediamine",
+    "cas": "110-18-9",
+    "category": "volatile_solvent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Add reagent to water, not reverse \u2014 corrosive",
+    "rules_fired_count": 4,
+    "file": "110-18-9.json"
+  },
+  {
+    "name": "N,N-Dimethylformamide",
+    "cas": "68-12-2",
+    "category": "volatile_solvent",
+    "top_pictogram": "flame",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 3,
+    "file": "68-12-2.json"
+  },
+  {
+    "name": "Phenanthrene solution",
+    "cas": "85-01-8",
+    "category": "volatile_solvent",
+    "top_pictogram": "flame",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "85-01-8.json"
+  },
+  {
+    "name": "Piperidine",
+    "cas": "110-89-4",
+    "category": "volatile_solvent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Add reagent to water, not reverse \u2014 corrosive",
+    "rules_fired_count": 3,
+    "file": "110-89-4.json"
+  },
+  {
+    "name": "Propionic acid",
+    "cas": "79-09-4",
+    "category": "volatile_solvent",
+    "top_pictogram": "flame",
+    "signal_word": "Danger",
+    "summary_fact": "Add reagent to water, not reverse \u2014 corrosive",
+    "rules_fired_count": 3,
+    "file": "79-09-4.json"
+  },
+  {
+    "name": "Pyridine",
+    "cas": "110-86-1",
+    "category": "volatile_solvent",
+    "top_pictogram": "flame",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 3,
+    "file": "110-86-1.json"
+  },
+  {
+    "name": "Formaldehyde solution, 36.5-38%",
+    "cas": "50-00-0",
+    "category": "fixative",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Pre-wet tips 3\u00d7 before aspirating \u2014 volatile",
+    "rules_fired_count": 5,
+    "file": "50-00-0.json"
+  },
+  {
+    "name": "Glutaraldehyde solution",
+    "cas": "111-30-8",
+    "category": "fixative",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required, make fresh \u2014 fixative",
+    "rules_fired_count": 4,
+    "file": "111-30-8.json"
+  },
+  {
+    "name": "2-Mercaptoethanol",
+    "cas": "60-24-2",
+    "category": "reducing_agent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "60-24-2.json"
+  },
+  {
+    "name": "DL-Dithiothreitol solution",
+    "cas": "27565-41-9",
+    "category": "reducing_agent",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "summary_fact": "Add reagent to water, not reverse \u2014 corrosive",
+    "rules_fired_count": 2,
+    "file": "27565-41-9.json"
+  },
+  {
+    "name": "L-Ascorbic acid",
+    "cas": "50-81-7",
+    "category": "reducing_agent",
+    "top_pictogram": null,
+    "signal_word": "Warning",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 2,
+    "file": "50-81-7.json"
+  },
+  {
+    "name": "L-Ascorbic acid 2-phosphate",
+    "cas": "1713265-25-8",
+    "category": "reducing_agent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "1713265-25-8.json"
+  },
+  {
+    "name": "L-Cysteine",
+    "cas": "52-90-4",
+    "category": "reducing_agent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "52-90-4.json"
+  },
+  {
+    "name": "L-Glutathione reduced",
+    "cas": "70-18-8",
+    "category": "reducing_agent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "70-18-8.json"
+  },
+  {
+    "name": "N-Acetyl-L-cysteine",
+    "cas": "616-91-1",
+    "category": "reducing_agent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "616-91-1.json"
+  },
+  {
+    "name": "Tris(2-carboxyethyl)phosphine hydrochloride",
+    "cas": "51805-45-9",
+    "category": "reducing_agent",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "summary_fact": "Add reagent to water, not reverse \u2014 corrosive",
+    "rules_fired_count": 4,
+    "file": "51805-45-9.json"
+  },
+  {
+    "name": "Cresyl Violet acetate",
+    "cas": "10510-54-0",
+    "category": "fluorophore",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "10510-54-0.json"
+  },
+  {
+    "name": "DAPI",
+    "cas": "28718-90-3",
+    "category": "fluorophore",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 3,
+    "file": "28718-90-3.json"
+  },
+  {
+    "name": "DAPI, dilactate",
+    "cas": "28718-91-4",
+    "category": "fluorophore",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 2,
+    "file": "28718-91-4.json"
+  },
+  {
+    "name": "Dihydroethidium",
+    "cas": "104821-25-2",
+    "category": "fluorophore",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 2,
+    "file": "104821-25-2.json"
+  },
+  {
+    "name": "Ethidium bromide solution",
+    "cas": "1239-45-8",
+    "category": "fluorophore",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 2,
+    "file": "1239-45-8.json"
+  },
+  {
+    "name": "Hoechst 33258 solution",
+    "cas": "23491-45-4",
+    "category": "fluorophore",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 1,
+    "file": "23491-45-4.json"
+  },
+  {
+    "name": "Hoechst 34580",
+    "cas": "911004-45-0",
+    "category": "fluorophore",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "911004-45-0.json"
+  },
+  {
+    "name": "Tetramethylrhodamine ethyl ester perchlorate",
+    "cas": "115532-52-0",
+    "category": "fluorophore",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 3,
+    "file": "115532-52-0.json"
+  },
+  {
+    "name": "(s)-4,5-dihydro-2-(6-hydroxybenzothiazol-2-",
+    "cas": "2591-17-5",
+    "category": "light_sensitive",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 3,
+    "file": "2591-17-5.json"
+  },
+  {
+    "name": "(\u00b1)-Verapamil hydrochloride",
+    "cas": "152-11-4",
+    "category": "light_sensitive",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 3,
+    "file": "152-11-4.json"
+  },
+  {
+    "name": "(\u2212)-Norepinephrine",
+    "cas": "51-41-2",
+    "category": "light_sensitive",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 2,
+    "file": "51-41-2.json"
+  },
+  {
+    "name": "1,2-Propanediol",
+    "cas": "57-55-6",
+    "category": "light_sensitive",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 1,
+    "file": "57-55-6.json"
+  },
+  {
+    "name": "2\u2032,7\u2032-Dichlorodihydrofluorescein diacetate",
+    "cas": "4091-99-0",
+    "category": "light_sensitive",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 2,
+    "file": "4091-99-0.json"
+  },
+  {
+    "name": "3,3\u2032-Dibutylthiacarbocyanine iodide",
+    "cas": "53213-85-7",
+    "category": "light_sensitive",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 3,
+    "file": "53213-85-7.json"
+  },
+  {
+    "name": "4\u03b1-Phorbol 12-myristate 13-acetate",
+    "cas": "63597-44-4",
+    "category": "light_sensitive",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 1,
+    "file": "63597-44-4.json"
+  },
+  {
+    "name": "5-Bromo-4-chloro-3-indolyl phosphate",
+    "cas": "102185-33-1",
+    "category": "light_sensitive",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 3,
+    "file": "102185-33-1.json"
+  },
+  {
+    "name": "5-Iodo-2\u2032-deoxyuridine",
+    "cas": "54-42-2",
+    "category": "light_sensitive",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Warning",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 3,
+    "file": "54-42-2.json"
+  },
+  {
+    "name": "Acrylamide",
+    "cas": "79-06-1",
+    "category": "light_sensitive",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 4,
+    "file": "79-06-1.json"
+  },
+  {
+    "name": "all trans-Retinal",
+    "cas": "116-31-4",
+    "category": "light_sensitive",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Warning",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 2,
+    "file": "116-31-4.json"
+  },
+  {
+    "name": "Amphotericin B solution",
+    "cas": "1397-89-3",
+    "category": "light_sensitive",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 1,
+    "file": "1397-89-3.json"
+  },
+  {
+    "name": "Atropine",
+    "cas": "51-55-8",
+    "category": "light_sensitive",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 3,
+    "file": "51-55-8.json"
+  },
+  {
+    "name": "Bilirubin",
+    "cas": "635-65-4",
+    "category": "light_sensitive",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 2,
+    "file": "635-65-4.json"
+  },
+  {
+    "name": "BIO",
+    "cas": "667463-62-9",
+    "category": "light_sensitive",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 1,
+    "file": "667463-62-9.json"
+  },
+  {
+    "name": "Calyculin A, from Discodermia calyx",
+    "cas": "101932-71-2",
+    "category": "light_sensitive",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 2,
+    "file": "101932-71-2.json"
+  },
+  {
+    "name": "CNQX",
+    "cas": "115066-14-3",
+    "category": "light_sensitive",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 1,
+    "file": "115066-14-3.json"
+  },
+  {
+    "name": "Colchicine",
+    "cas": "64-86-8",
+    "category": "light_sensitive",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 3,
+    "file": "64-86-8.json"
+  },
+  {
+    "name": "Crystal Violet",
+    "cas": "548-62-9",
+    "category": "light_sensitive",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 3,
+    "file": "548-62-9.json"
+  },
+  {
+    "name": "Dexamethasone",
+    "cas": "50-02-2",
+    "category": "light_sensitive",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 3,
+    "file": "50-02-2.json"
+  },
+  {
+    "name": "Dexamethasone 21-acetate",
+    "cas": "1177-87-3",
+    "category": "light_sensitive",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 2,
+    "file": "1177-87-3.json"
+  },
+  {
+    "name": "Dopamine hydrochloride",
+    "cas": "62-31-7",
+    "category": "light_sensitive",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 2,
+    "file": "62-31-7.json"
+  },
+  {
+    "name": "Doxorubicin hydrochloride",
+    "cas": "25316-40-9",
+    "category": "light_sensitive",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 2,
+    "file": "25316-40-9.json"
+  },
+  {
+    "name": "Dynasore hydrate",
+    "cas": "1202867-00-2",
+    "category": "light_sensitive",
+    "top_pictogram": "environment",
+    "signal_word": "Warning",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 1,
+    "file": "1202867-00-2.json"
+  },
+  {
+    "name": "EX-CELL(R) 325 PF CHO",
+    "cas": "485-49-4",
+    "category": "light_sensitive",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 1,
+    "file": "485-49-4.json"
+  },
+  {
+    "name": "Folic acid",
+    "cas": "59-30-3",
+    "category": "light_sensitive",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 1,
+    "file": "59-30-3.json"
+  },
+  {
+    "name": "Gemcitabine hydrochloride",
+    "cas": "122111-03-9",
+    "category": "light_sensitive",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 2,
+    "file": "122111-03-9.json"
+  },
+  {
+    "name": "Hydrocortisone",
+    "cas": "50-23-7",
+    "category": "light_sensitive",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 2,
+    "file": "50-23-7.json"
+  },
+  {
+    "name": "Hydrogen peroxide solution",
+    "cas": "7722-84-1",
+    "category": "light_sensitive",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 2,
+    "file": "7722-84-1.json"
+  },
+  {
+    "name": "Hydroxy-Dynasore",
+    "cas": "1256493-34-1",
+    "category": "light_sensitive",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 2,
+    "file": "1256493-34-1.json"
+  },
+  {
+    "name": "Hydroxychloroquine sulfate",
+    "cas": "747-36-4",
+    "category": "light_sensitive",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 2,
+    "file": "747-36-4.json"
+  },
+  {
+    "name": "Iodoacetamide",
+    "cas": "144-48-9",
+    "category": "light_sensitive",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 2,
+    "file": "144-48-9.json"
+  },
+  {
+    "name": "Isoprenaline hydrochloride",
+    "cas": "51-30-9",
+    "category": "light_sensitive",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 1,
+    "file": "51-30-9.json"
+  },
+  {
+    "name": "L-(\u2212)-Norepinephrine (+)-bitartrate salt",
+    "cas": "108341-18-0",
+    "category": "light_sensitive",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 2,
+    "file": "108341-18-0.json"
+  },
+  {
+    "name": "L-Cysteine hydrochloride monohydrate",
+    "cas": "7048-04-6",
+    "category": "light_sensitive",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 2,
+    "file": "7048-04-6.json"
+  },
+  {
+    "name": "LIDOCAINE N-ETHYL BROMIDE",
+    "cas": "21306-56-9",
+    "category": "light_sensitive",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 1,
+    "file": "21306-56-9.json"
+  },
+  {
+    "name": "Linoleic acid",
+    "cas": "60-33-3",
+    "category": "light_sensitive",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 2,
+    "file": "60-33-3.json"
+  },
+  {
+    "name": "Linolenic acid",
+    "cas": "463-40-1",
+    "category": "light_sensitive",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 2,
+    "file": "463-40-1.json"
+  },
+  {
+    "name": "m-Phenylenediamine",
+    "cas": "108-45-2",
+    "category": "light_sensitive",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 3,
+    "file": "108-45-2.json"
+  },
+  {
+    "name": "Menadione",
+    "cas": "58-27-5",
+    "category": "light_sensitive",
+    "top_pictogram": "environment",
+    "signal_word": "Warning",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 2,
+    "file": "58-27-5.json"
+  },
+  {
+    "name": "Mevinolin, from Aspergillus sp.",
+    "cas": "75330-75-5",
+    "category": "light_sensitive",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Warning",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 2,
+    "file": "75330-75-5.json"
+  },
+  {
+    "name": "N,N\u2032-Methylenebisacrylamide solution",
+    "cas": "110-26-9",
+    "category": "light_sensitive",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 2,
+    "file": "110-26-9.json"
+  },
+  {
+    "name": "N-Ethylmaleimide",
+    "cas": "128-53-0",
+    "category": "light_sensitive",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 3,
+    "file": "128-53-0.json"
+  },
+  {
+    "name": "Nifedipine",
+    "cas": "21829-25-4",
+    "category": "light_sensitive",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 2,
+    "file": "21829-25-4.json"
+  },
+  {
+    "name": "Oleic acid",
+    "cas": "112-80-1",
+    "category": "light_sensitive",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 2,
+    "file": "112-80-1.json"
+  },
+  {
+    "name": "Ouabain",
+    "cas": "11018-89-6",
+    "category": "light_sensitive",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 2,
+    "file": "11018-89-6.json"
+  },
+  {
+    "name": "Phenol \u2013 chloroform \u2013 isoamyl alcohol",
+    "cas": "136112-00-0",
+    "category": "light_sensitive",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 4,
+    "file": "136112-00-0.json"
+  },
+  {
+    "name": "Potassium ferricyanide(III)",
+    "cas": "13746-66-2",
+    "category": "light_sensitive",
+    "top_pictogram": "environment",
+    "signal_word": "Warning",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 2,
+    "file": "13746-66-2.json"
+  },
+  {
+    "name": "Progesterone",
+    "cas": "57-83-0",
+    "category": "light_sensitive",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 3,
+    "file": "57-83-0.json"
+  },
+  {
+    "name": "Prostaglandin E2",
+    "cas": "363-24-6",
+    "category": "light_sensitive",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 3,
+    "file": "363-24-6.json"
+  },
+  {
+    "name": "Retinoic acid",
+    "cas": "302-79-4",
+    "category": "light_sensitive",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 3,
+    "file": "302-79-4.json"
+  },
+  {
+    "name": "Rotenone",
+    "cas": "83-79-4",
+    "category": "light_sensitive",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 3,
+    "file": "83-79-4.json"
+  },
+  {
+    "name": "Serotonin hydrochloride",
+    "cas": "153-98-0",
+    "category": "light_sensitive",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 3,
+    "file": "153-98-0.json"
+  },
+  {
+    "name": "Sodium oleate",
+    "cas": "143-19-1",
+    "category": "light_sensitive",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 2,
+    "file": "143-19-1.json"
+  },
+  {
+    "name": "Tamoxifen",
+    "cas": "10540-29-1",
+    "category": "light_sensitive",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 2,
+    "file": "10540-29-1.json"
+  },
+  {
+    "name": "U0126 ethanolate",
+    "cas": "1173097-76-1",
+    "category": "light_sensitive",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 2,
+    "file": "1173097-76-1.json"
+  },
+  {
+    "name": "Wortmannin",
+    "cas": "19545-26-7",
+    "category": "light_sensitive",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 3,
+    "file": "19545-26-7.json"
+  },
+  {
+    "name": "3,3\u2032,5,5\u2032-Tetramethylbenzidine",
+    "cas": "54827-17-7",
+    "category": "air_sensitive",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Warning",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "54827-17-7.json"
+  },
+  {
+    "name": "4-(2-Aminoethyl)benzenesulfonyl fluoride",
+    "cas": "30827-99-7",
+    "category": "air_sensitive",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "summary_fact": "Add reagent to water, not reverse \u2014 corrosive",
+    "rules_fired_count": 2,
+    "file": "30827-99-7.json"
+  },
+  {
+    "name": "Anhydrotetracycline hydrochloride",
+    "cas": "13803-65-1",
+    "category": "air_sensitive",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "13803-65-1.json"
+  },
+  {
+    "name": "Benzaldehyde",
+    "cas": "100-52-7",
+    "category": "air_sensitive",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "100-52-7.json"
+  },
+  {
+    "name": "Benzyl alcohol",
+    "cas": "100-51-6",
+    "category": "air_sensitive",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "100-51-6.json"
+  },
+  {
+    "name": "Brefeldin A",
+    "cas": "20350-15-6",
+    "category": "air_sensitive",
+    "top_pictogram": null,
+    "signal_word": "Warning",
+    "summary_fact": "Warm to RT before pipetting \u2014 freezes near RT",
+    "rules_fired_count": 2,
+    "file": "20350-15-6.json"
+  },
+  {
+    "name": "Ethanolamine hydrochloride",
+    "cas": "2002-24-6",
+    "category": "air_sensitive",
+    "top_pictogram": "environment",
+    "signal_word": "Warning",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "2002-24-6.json"
+  },
+  {
+    "name": "Hydroxylamine hydrochloride",
+    "cas": "5470-11-1",
+    "category": "air_sensitive",
+    "top_pictogram": "corrosion",
+    "signal_word": "Warning",
+    "summary_fact": "Add reagent to water, not reverse \u2014 corrosive",
+    "rules_fired_count": 3,
+    "file": "5470-11-1.json"
+  },
+  {
+    "name": "L-Glutamic acid",
+    "cas": "56-86-0",
+    "category": "air_sensitive",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Keep tightly sealed \u2014 degrades in air",
+    "rules_fired_count": 1,
+    "file": "56-86-0.json"
+  },
+  {
+    "name": "N-(3-Dimethylaminopropyl)-N\u2032-",
+    "cas": "25952-53-8",
+    "category": "air_sensitive",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Keep tightly sealed \u2014 degrades in air",
+    "rules_fired_count": 1,
+    "file": "25952-53-8.json"
+  },
+  {
+    "name": "N-acetylcysteine amide",
+    "cas": "38520-57-9",
+    "category": "air_sensitive",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "Keep tightly sealed \u2014 degrades in air",
+    "rules_fired_count": 2,
+    "file": "38520-57-9.json"
+  },
+  {
+    "name": "o-Phenylenediamine",
+    "cas": "95-54-5",
+    "category": "air_sensitive",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "95-54-5.json"
+  },
+  {
+    "name": "Rifampicin",
+    "cas": "13292-46-1",
+    "category": "air_sensitive",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "Keep tightly sealed \u2014 degrades in air",
+    "rules_fired_count": 2,
+    "file": "13292-46-1.json"
+  },
+  {
+    "name": "Sodium deoxycholate monohydrate",
+    "cas": "145224-92-6",
+    "category": "air_sensitive",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "Keep tightly sealed \u2014 degrades in air",
+    "rules_fired_count": 1,
+    "file": "145224-92-6.json"
+  },
+  {
+    "name": "Spermidine",
+    "cas": "124-20-9",
+    "category": "air_sensitive",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "summary_fact": "Add reagent to water, not reverse \u2014 corrosive",
+    "rules_fired_count": 2,
+    "file": "124-20-9.json"
+  },
+  {
+    "name": "tert-Butyl 2,2,2-trichloroacetimidate",
+    "cas": "98946-18-0",
+    "category": "air_sensitive",
+    "top_pictogram": "flame",
+    "signal_word": "Warning",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 3,
+    "file": "98946-18-0.json"
+  },
+  {
+    "name": "Trifluoroacetic acid",
+    "cas": "76-05-1",
+    "category": "air_sensitive",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "summary_fact": "Pre-wet tips 3\u00d7 before aspirating \u2014 volatile",
+    "rules_fired_count": 4,
+    "file": "76-05-1.json"
+  },
+  {
+    "name": "Deoxycholic acid",
+    "cas": "83-44-3",
+    "category": "detergent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "Slow dispense, wall touch-off \u2014 detergent",
+    "rules_fired_count": 3,
+    "file": "83-44-3.json"
+  },
+  {
+    "name": "Digitonin",
+    "cas": "11024-24-1",
+    "category": "detergent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "11024-24-1.json"
+  },
+  {
+    "name": "n-Dodecyl \u03b2-D-maltoside",
+    "cas": "69227-93-6",
+    "category": "detergent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Slow dispense, wall touch-off \u2014 detergent",
+    "rules_fired_count": 2,
+    "file": "69227-93-6.json"
+  },
+  {
+    "name": "Octyl \u03b2-D-glucopyranoside",
+    "cas": "29836-26-8",
+    "category": "detergent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Slow dispense, wall touch-off \u2014 detergent",
+    "rules_fired_count": 2,
+    "file": "29836-26-8.json"
+  },
+  {
+    "name": "Sodium deoxycholate",
+    "cas": "302-95-4",
+    "category": "detergent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "Slow dispense, wall touch-off \u2014 detergent",
+    "rules_fired_count": 1,
+    "file": "302-95-4.json"
+  },
+  {
+    "name": "Triton\u2122 X-100",
+    "cas": "2497-59-8",
+    "category": "detergent",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "summary_fact": "Slow dispense, wall touch-off \u2014 detergent",
+    "rules_fired_count": 1,
+    "file": "2497-59-8.json"
+  },
+  {
+    "name": "1-Thioglycerol",
+    "cas": "96-27-5",
+    "category": "viscous_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Wide-bore tips, slow aspirate \u2014 viscous",
+    "rules_fired_count": 4,
+    "file": "96-27-5.json"
+  },
+  {
+    "name": "Glycerol",
+    "cas": "56-81-5",
+    "category": "viscous_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Wide-bore tips, slow aspirate \u2014 viscous",
+    "rules_fired_count": 2,
+    "file": "56-81-5.json"
+  },
+  {
+    "name": "Zinc chloride",
+    "cas": "7646-85-7",
+    "category": "viscous_reagent",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "summary_fact": "Wide-bore tips, slow aspirate \u2014 viscous",
+    "rules_fired_count": 5,
+    "file": "7646-85-7.json"
+  },
+  {
+    "name": "Dimethyl sulfoxide",
+    "cas": "67-68-5",
+    "category": "dmso",
+    "top_pictogram": null,
+    "signal_word": "Warning",
+    "summary_fact": "Warm to RT before pipetting \u2014 freezes near RT",
+    "rules_fired_count": 3,
+    "file": "67-68-5.json"
+  },
+  {
+    "name": "(S)-3,5-Dihydroxyphenylglycine hydrate",
+    "cas": "1049747-17-2",
+    "category": "hygroscopic_solid",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 4,
+    "file": "1049747-17-2.json"
+  },
+  {
+    "name": "1(S),9(R)-(\u2212)-Bicuculline methiodide",
+    "cas": "40709-69-1",
+    "category": "hygroscopic_solid",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 3,
+    "file": "40709-69-1.json"
+  },
+  {
+    "name": "1,4-Diazabicyclo[2.2.2]octane",
+    "cas": "280-57-9",
+    "category": "hygroscopic_solid",
+    "top_pictogram": "flame",
+    "signal_word": "Danger",
+    "summary_fact": "Desiccator storage, weigh fast \u2014 hygroscopic",
+    "rules_fired_count": 3,
+    "file": "280-57-9.json"
+  },
+  {
+    "name": "3,3\u2032-Diaminobenzidine tetrahydrochloride",
+    "cas": "868272-85-9",
+    "category": "hygroscopic_solid",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 5,
+    "file": "868272-85-9.json"
+  },
+  {
+    "name": "8-Bromoadenosine 3\u2032,5\u2032-cyclic",
+    "cas": "23583-48-4",
+    "category": "hygroscopic_solid",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Desiccator storage, weigh fast \u2014 hygroscopic",
+    "rules_fired_count": 2,
+    "file": "23583-48-4.json"
+  },
+  {
+    "name": "Ampicillin (anhydrous)",
+    "cas": "69-53-4",
+    "category": "hygroscopic_solid",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Desiccator storage, weigh fast \u2014 hygroscopic",
+    "rules_fired_count": 3,
+    "file": "69-53-4.json"
+  },
+  {
+    "name": "Benzamidine hydrochloride",
+    "cas": "1670-14-0",
+    "category": "hygroscopic_solid",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Desiccator storage, weigh fast \u2014 hygroscopic",
+    "rules_fired_count": 2,
+    "file": "1670-14-0.json"
+  },
+  {
+    "name": "Benzamidine hydrochloride hydrate",
+    "cas": "206752-36-5",
+    "category": "hygroscopic_solid",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Desiccator storage, weigh fast \u2014 hygroscopic",
+    "rules_fired_count": 2,
+    "file": "206752-36-5.json"
+  },
+  {
+    "name": "Cesium chloride",
+    "cas": "7647-17-8",
+    "category": "hygroscopic_solid",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Warning",
+    "summary_fact": "Desiccator storage, weigh fast \u2014 hygroscopic",
+    "rules_fired_count": 1,
+    "file": "7647-17-8.json"
+  },
+  {
+    "name": "Cysteamine",
+    "cas": "60-23-1",
+    "category": "hygroscopic_solid",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "Desiccator storage, weigh fast \u2014 hygroscopic",
+    "rules_fired_count": 3,
+    "file": "60-23-1.json"
+  },
+  {
+    "name": "Cytidine",
+    "cas": "65-46-3",
+    "category": "hygroscopic_solid",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Desiccator storage, weigh fast \u2014 hygroscopic",
+    "rules_fired_count": 2,
+    "file": "65-46-3.json"
+  },
+  {
+    "name": "Fast Green FCF",
+    "cas": "2353-45-9",
+    "category": "hygroscopic_solid",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Warning",
+    "summary_fact": "Desiccator storage, weigh fast \u2014 hygroscopic",
+    "rules_fired_count": 2,
+    "file": "2353-45-9.json"
+  },
+  {
+    "name": "Guanidine hydrochloride",
+    "cas": "50-01-1",
+    "category": "hygroscopic_solid",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "Desiccator storage, weigh fast \u2014 hygroscopic",
+    "rules_fired_count": 2,
+    "file": "50-01-1.json"
+  },
+  {
+    "name": "HEPES sodium salt",
+    "cas": "75277-39-3",
+    "category": "hygroscopic_solid",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Desiccator storage, weigh fast \u2014 hygroscopic",
+    "rules_fired_count": 2,
+    "file": "75277-39-3.json"
+  },
+  {
+    "name": "Hexamethylenetetramine",
+    "cas": "100-97-0",
+    "category": "hygroscopic_solid",
+    "top_pictogram": "flame",
+    "signal_word": "Warning",
+    "summary_fact": "Desiccator storage, weigh fast \u2014 hygroscopic",
+    "rules_fired_count": 3,
+    "file": "100-97-0.json"
+  },
+  {
+    "name": "Histamine",
+    "cas": "51-45-6",
+    "category": "hygroscopic_solid",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Desiccator storage, weigh fast \u2014 hygroscopic",
+    "rules_fired_count": 4,
+    "file": "51-45-6.json"
+  },
+  {
+    "name": "Indoxyl \u03b2-D-glucoside",
+    "cas": "487-60-5",
+    "category": "hygroscopic_solid",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Desiccator storage, weigh fast \u2014 hygroscopic",
+    "rules_fired_count": 1,
+    "file": "487-60-5.json"
+  },
+  {
+    "name": "Isopropyl \u03b2-D-1-thiogalactopyranoside",
+    "cas": "367-93-1",
+    "category": "hygroscopic_solid",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Desiccator storage, weigh fast \u2014 hygroscopic",
+    "rules_fired_count": 2,
+    "file": "367-93-1.json"
+  },
+  {
+    "name": "L-Carnitine inner salt",
+    "cas": "541-15-1",
+    "category": "hygroscopic_solid",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Desiccator storage, weigh fast \u2014 hygroscopic",
+    "rules_fired_count": 2,
+    "file": "541-15-1.json"
+  },
+  {
+    "name": "L-Cysteine hydrochloride",
+    "cas": "52-89-1",
+    "category": "hygroscopic_solid",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 3,
+    "file": "52-89-1.json"
+  },
+  {
+    "name": "L-Lysine",
+    "cas": "56-87-1",
+    "category": "hygroscopic_solid",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Desiccator storage, weigh fast \u2014 hygroscopic",
+    "rules_fired_count": 1,
+    "file": "56-87-1.json"
+  },
+  {
+    "name": "Lithium chloride",
+    "cas": "7447-41-8",
+    "category": "hygroscopic_solid",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "Desiccator storage, weigh fast \u2014 hygroscopic",
+    "rules_fired_count": 1,
+    "file": "7447-41-8.json"
+  },
+  {
+    "name": "Potassium chloride",
+    "cas": "7447-40-7",
+    "category": "hygroscopic_solid",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Desiccator storage, weigh fast \u2014 hygroscopic",
+    "rules_fired_count": 2,
+    "file": "7447-40-7.json"
+  },
+  {
+    "name": "Potassium cyanide",
+    "cas": "151-50-8",
+    "category": "hygroscopic_solid",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 4,
+    "file": "151-50-8.json"
+  },
+  {
+    "name": "POTASSIUM HYDROXIDE PELLET",
+    "cas": "1310-58-3",
+    "category": "hygroscopic_solid",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "summary_fact": "Desiccator storage, weigh fast \u2014 hygroscopic",
+    "rules_fired_count": 3,
+    "file": "1310-58-3.json"
+  },
+  {
+    "name": "Potassium phosphate dibasic, anhydrous,",
+    "cas": "7758-11-4",
+    "category": "hygroscopic_solid",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Desiccator storage, weigh fast \u2014 hygroscopic",
+    "rules_fired_count": 1,
+    "file": "7758-11-4.json"
+  },
+  {
+    "name": "Putrescine",
+    "cas": "110-60-1",
+    "category": "hygroscopic_solid",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Desiccator storage, weigh fast \u2014 hygroscopic",
+    "rules_fired_count": 5,
+    "file": "110-60-1.json"
+  },
+  {
+    "name": "Putrescine dihydrochloride",
+    "cas": "333-93-7",
+    "category": "hygroscopic_solid",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Desiccator storage, weigh fast \u2014 hygroscopic",
+    "rules_fired_count": 5,
+    "file": "333-93-7.json"
+  },
+  {
+    "name": "Sodium butyrate",
+    "cas": "156-54-7",
+    "category": "hygroscopic_solid",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "Desiccator storage, weigh fast \u2014 hygroscopic",
+    "rules_fired_count": 2,
+    "file": "156-54-7.json"
+  },
+  {
+    "name": "Sodium phosphate monobasic monohydrate",
+    "cas": "10049-21-5",
+    "category": "hygroscopic_solid",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Desiccator storage, weigh fast \u2014 hygroscopic",
+    "rules_fired_count": 1,
+    "file": "10049-21-5.json"
+  },
+  {
+    "name": "Spermidine trihydrochloride",
+    "cas": "334-50-9",
+    "category": "hygroscopic_solid",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "Desiccator storage, weigh fast \u2014 hygroscopic",
+    "rules_fired_count": 3,
+    "file": "334-50-9.json"
+  },
+  {
+    "name": "Streptozocin",
+    "cas": "18883-66-4",
+    "category": "hygroscopic_solid",
+    "top_pictogram": "flame",
+    "signal_word": "Danger",
+    "summary_fact": "Desiccator storage, weigh fast \u2014 hygroscopic",
+    "rules_fired_count": 5,
+    "file": "18883-66-4.json"
+  },
+  {
+    "name": "Thiamine hydrochloride",
+    "cas": "67-03-8",
+    "category": "hygroscopic_solid",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 3,
+    "file": "67-03-8.json"
+  },
+  {
+    "name": "Thiazolyl Blue Tetrazolium Bromide",
+    "cas": "298-93-1",
+    "category": "hygroscopic_solid",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Warning",
+    "summary_fact": "Amber tube or foil wrap \u2014 photosensitive",
+    "rules_fired_count": 5,
+    "file": "298-93-1.json"
+  },
+  {
+    "name": "Trizma\u00ae hydrochloride",
+    "cas": "1185-53-1",
+    "category": "hygroscopic_solid",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Desiccator storage, weigh fast \u2014 hygroscopic",
+    "rules_fired_count": 1,
+    "file": "1185-53-1.json"
+  },
+  {
+    "name": "\u03b2-Nicotinamide adenine dinucleotide",
+    "cas": "53-84-9",
+    "category": "hygroscopic_solid",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Desiccator storage, weigh fast \u2014 hygroscopic",
+    "rules_fired_count": 2,
+    "file": "53-84-9.json"
+  },
+  {
+    "name": "( R )-(-)-Isoproternol",
+    "cas": "51-31-0",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "51-31-0.json"
+  },
+  {
+    "name": "(+)-Etomoxir sodium salt hydrate",
+    "cas": "1049724-28-8",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "1049724-28-8.json"
+  },
+  {
+    "name": "(+)-JQ1",
+    "cas": "1268524-70-4",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "1268524-70-4.json"
+  },
+  {
+    "name": "(R)-(\u2212)-Phenylephrine hydrochloride",
+    "cas": "61-76-7",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "61-76-7.json"
+  },
+  {
+    "name": "(S)-(+)-Camptothecin",
+    "cas": "7689-03-4",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "7689-03-4.json"
+  },
+  {
+    "name": "(Z)-4-Hydroxytamoxifen",
+    "cas": "68047-06-3",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "68047-06-3.json"
+  },
+  {
+    "name": "(\u2212)-Blebbistatin",
+    "cas": "856925-71-8",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "856925-71-8.json"
+  },
+  {
+    "name": "(\u2212)-Isoproterenol hydrochloride",
+    "cas": "5984-95-2",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "5984-95-2.json"
+  },
+  {
+    "name": "1,4-Dithioerythritol",
+    "cas": "6892-68-8",
+    "category": "general_reagent",
+    "top_pictogram": "environment",
+    "signal_word": "Warning",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "6892-68-8.json"
+  },
+  {
+    "name": "1,6-Hexanediol solution",
+    "cas": "629-11-8",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "629-11-8.json"
+  },
+  {
+    "name": "17\u03b1,20\u03b2-Dihydroxy-4-pregnen-3-one",
+    "cas": "1662-06-2",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "1662-06-2.json"
+  },
+  {
+    "name": "2-Deoxy-D-glucose",
+    "cas": "154-17-6",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "154-17-6.json"
+  },
+  {
+    "name": "25-Hydroxycholesterol",
+    "cas": "2140-46-7",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "2140-46-7.json"
+  },
+  {
+    "name": "2\u2032-Deoxycytidine 5\u2032-triphosphate disodium",
+    "cas": "102783-51-7",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "102783-51-7.json"
+  },
+  {
+    "name": "3,3\u2032,5-Triiodo-L-thyronine",
+    "cas": "6893-02-3",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "6893-02-3.json"
+  },
+  {
+    "name": "3,3\u2032,5-Triiodo-L-thyronine sodium salt",
+    "cas": "55-06-1",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "55-06-1.json"
+  },
+  {
+    "name": "3,3\u2032-Dithiodipropionic acid di(N-",
+    "cas": "57757-57-0",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "57757-57-0.json"
+  },
+  {
+    "name": "3-Isobutyl-1-methylxanthine",
+    "cas": "28822-58-4",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "28822-58-4.json"
+  },
+  {
+    "name": "3-Methyladenine",
+    "cas": "5142-23-4",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "5142-23-4.json"
+  },
+  {
+    "name": "4-Thiouridine",
+    "cas": "13957-31-8",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "13957-31-8.json"
+  },
+  {
+    "name": "5(6)-Carboxyfluorescein diacetate N-",
+    "cas": "150347-59-4",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "150347-59-4.json"
+  },
+  {
+    "name": "5,6-Dichlorobenzimidazole 1-\u03b2-D-",
+    "cas": "53-85-0",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "53-85-0.json"
+  },
+  {
+    "name": "5-Aza-2\u2032-deoxycytidine",
+    "cas": "2353-33-5",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "2353-33-5.json"
+  },
+  {
+    "name": "5-Azacytidine",
+    "cas": "320-67-2",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "320-67-2.json"
+  },
+  {
+    "name": "5-Bromo-2\u2032-deoxyuridine",
+    "cas": "59-14-3",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "59-14-3.json"
+  },
+  {
+    "name": "5-Bromo-4-chloro-3-indolyl \u03b2-D-",
+    "cas": "7240-90-6",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "7240-90-6.json"
+  },
+  {
+    "name": "5-Chloro-2\u2032-deoxyuridine",
+    "cas": "50-90-8",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Warning",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "50-90-8.json"
+  },
+  {
+    "name": "5-Fluoro-2\u2032-deoxyuridine",
+    "cas": "50-91-9",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "50-91-9.json"
+  },
+  {
+    "name": "5-Fluorouracil",
+    "cas": "51-21-8",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "51-21-8.json"
+  },
+  {
+    "name": "[D-pGlu1, D-Phe2, D-Trp3,6]-LH-RH",
+    "cas": "68059-94-9",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "68059-94-9.json"
+  },
+  {
+    "name": "Ac-YVAD-cmk",
+    "cas": "178603-78-6",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "178603-78-6.json"
+  },
+  {
+    "name": "Actinomycin D",
+    "cas": "50-76-0",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "50-76-0.json"
+  },
+  {
+    "name": "Adenine",
+    "cas": "73-24-5",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "73-24-5.json"
+  },
+  {
+    "name": "Adenine hemisulfate salt",
+    "cas": "321-30-2",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "321-30-2.json"
+  },
+  {
+    "name": "Adenine hydrochloride hydrate",
+    "cas": "6055-72-7",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "6055-72-7.json"
+  },
+  {
+    "name": "Adenosine",
+    "cas": "58-61-7",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "58-61-7.json"
+  },
+  {
+    "name": "Adenosine 5\u2032-[\u03b3-thio]triphosphate",
+    "cas": "93839-89-5",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "93839-89-5.json"
+  },
+  {
+    "name": "Adenosine 5\u2032-diphosphate monopotassium",
+    "cas": "72696-48-1",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "72696-48-1.json"
+  },
+  {
+    "name": "Adenosine 5\u2032-triphosphate disodium salt",
+    "cas": "34369-07-8",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "34369-07-8.json"
+  },
+  {
+    "name": "AICAR",
+    "cas": "2627-69-2",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "2627-69-2.json"
+  },
+  {
+    "name": "Ampicillin trihydrate",
+    "cas": "7177-48-2",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "7177-48-2.json"
+  },
+  {
+    "name": "Anisomycin, from Streptomyces griseolus",
+    "cas": "22862-76-6",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "22862-76-6.json"
+  },
+  {
+    "name": "Antipain dihydrochloride, from microbial",
+    "cas": "37682-72-7",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "37682-72-7.json"
+  },
+  {
+    "name": "Aphidicolin, from Nigrospora sphaerica",
+    "cas": "38966-21-1",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "38966-21-1.json"
+  },
+  {
+    "name": "BAPTA-AM",
+    "cas": "126150-97-8",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "126150-97-8.json"
+  },
+  {
+    "name": "Benzyl benzoate",
+    "cas": "120-51-4",
+    "category": "general_reagent",
+    "top_pictogram": "environment",
+    "signal_word": "Warning",
+    "summary_fact": "Warm to RT before pipetting \u2014 freezes near RT",
+    "rules_fired_count": 1,
+    "file": "120-51-4.json"
+  },
+  {
+    "name": "Biocytin",
+    "cas": "576-19-2",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "576-19-2.json"
+  },
+  {
+    "name": "Biocytin hydrochloride",
+    "cas": "98930-70-2",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "98930-70-2.json"
+  },
+  {
+    "name": "Biotin",
+    "cas": "58-85-5",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "58-85-5.json"
+  },
+  {
+    "name": "BIS-TRIS",
+    "cas": "6976-37-0",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "6976-37-0.json"
+  },
+  {
+    "name": "Blasticidine S hydrochloride",
+    "cas": "3513-03-9",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "3513-03-9.json"
+  },
+  {
+    "name": "Boric acid",
+    "cas": "10043-35-3",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "10043-35-3.json"
+  },
+  {
+    "name": "BPTES",
+    "cas": "314045-39-1",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "314045-39-1.json"
+  },
+  {
+    "name": "Bromophenol Blue",
+    "cas": "115-39-9",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "115-39-9.json"
+  },
+  {
+    "name": "Buprenorphine hydrochloride",
+    "cas": "53152-21-9",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Warning",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "53152-21-9.json"
+  },
+  {
+    "name": "Busulfan",
+    "cas": "55-98-1",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "55-98-1.json"
+  },
+  {
+    "name": "Butyric acid",
+    "cas": "107-92-6",
+    "category": "general_reagent",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "summary_fact": "Add reagent to water, not reverse \u2014 corrosive",
+    "rules_fired_count": 2,
+    "file": "107-92-6.json"
+  },
+  {
+    "name": "C75",
+    "cas": "218137-86-1",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "218137-86-1.json"
+  },
+  {
+    "name": "Caffeine",
+    "cas": "58-08-2",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "58-08-2.json"
+  },
+  {
+    "name": "Calcium chloride solution ~1 M in H2O",
+    "cas": "14639-81-7",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "14639-81-7.json"
+  },
+  {
+    "name": "Camostat mesylate",
+    "cas": "59721-29-8",
+    "category": "general_reagent",
+    "top_pictogram": "environment",
+    "signal_word": "Warning",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "59721-29-8.json"
+  },
+  {
+    "name": "Capsaicin",
+    "cas": "404-86-4",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "404-86-4.json"
+  },
+  {
+    "name": "Carbenicillin disodium salt",
+    "cas": "4800-94-6",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "4800-94-6.json"
+  },
+  {
+    "name": "Carbonyl cyanide 3-chlorophenylhydrazone",
+    "cas": "555-60-2",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "555-60-2.json"
+  },
+  {
+    "name": "Carbonyl cyanide 4-",
+    "cas": "370-86-5",
+    "category": "general_reagent",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "summary_fact": "Add reagent to water, not reverse \u2014 corrosive",
+    "rules_fired_count": 2,
+    "file": "370-86-5.json"
+  },
+  {
+    "name": "Carprofen",
+    "cas": "53716-49-7",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "53716-49-7.json"
+  },
+  {
+    "name": "CHIR99021",
+    "cas": "252917-06-9",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "252917-06-9.json"
+  },
+  {
+    "name": "Chk2 Inhibitor II hydrate",
+    "cas": "516480-79-8",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "516480-79-8.json"
+  },
+  {
+    "name": "Chloramphenicol",
+    "cas": "56-75-7",
+    "category": "general_reagent",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "56-75-7.json"
+  },
+  {
+    "name": "Chloroform",
+    "cas": "67-66-3",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Pre-wet tips 3\u00d7 before aspirating \u2014 volatile",
+    "rules_fired_count": 2,
+    "file": "67-66-3.json"
+  },
+  {
+    "name": "Cholesterol",
+    "cas": "57-88-5",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "57-88-5.json"
+  },
+  {
+    "name": "Cholesteryl hemisuccinate",
+    "cas": "1510-21-0",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "1510-21-0.json"
+  },
+  {
+    "name": "Ciprofloxacin",
+    "cas": "85721-33-1",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "85721-33-1.json"
+  },
+  {
+    "name": "Citric acid monohydrate",
+    "cas": "5949-29-1",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "5949-29-1.json"
+  },
+  {
+    "name": "Citric acid, anhydrous, Redi-Dri(TM), ACS",
+    "cas": "77-92-9",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "77-92-9.json"
+  },
+  {
+    "name": "CK-666",
+    "cas": "442633-00-3",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "442633-00-3.json"
+  },
+  {
+    "name": "Clozapine N-oxide",
+    "cas": "34233-69-7",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "34233-69-7.json"
+  },
+  {
+    "name": "CP-456773 sodium salt",
+    "cas": "256373-96-3",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "256373-96-3.json"
+  },
+  {
+    "name": "Cycloheximide",
+    "cas": "66-81-9",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "66-81-9.json"
+  },
+  {
+    "name": "Cyclophosphamide monohydrate",
+    "cas": "6055-19-2",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "6055-19-2.json"
+  },
+  {
+    "name": "Cyclosporin A",
+    "cas": "59865-13-3",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "59865-13-3.json"
+  },
+  {
+    "name": "Cytidine 5\u2032-triphosphate disodium salt",
+    "cas": "36051-68-0",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "36051-68-0.json"
+  },
+  {
+    "name": "Cytochalasin B, from Drechslera dematioidea",
+    "cas": "14930-96-2",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "14930-96-2.json"
+  },
+  {
+    "name": "Cytochalasin D",
+    "cas": "22144-77-0",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "22144-77-0.json"
+  },
+  {
+    "name": "D-(+)-Trehalose dihydrate",
+    "cas": "6138-23-4",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "6138-23-4.json"
+  },
+  {
+    "name": "D-(\u2212)-Fructose",
+    "cas": "57-48-7",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "57-48-7.json"
+  },
+  {
+    "name": "D-Cycloserine",
+    "cas": "68-41-7",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "68-41-7.json"
+  },
+  {
+    "name": "d-Desthiobiotin",
+    "cas": "533-48-2",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "533-48-2.json"
+  },
+  {
+    "name": "D-Mannitol",
+    "cas": "69-65-8",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "69-65-8.json"
+  },
+  {
+    "name": "D-Sorbitol",
+    "cas": "50-70-4",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "50-70-4.json"
+  },
+  {
+    "name": "Diazoxide",
+    "cas": "364-98-7",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "364-98-7.json"
+  },
+  {
+    "name": "DL-2-Amino-5-phosphonopentanoic acid",
+    "cas": "76326-31-3",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "76326-31-3.json"
+  },
+  {
+    "name": "DMH1",
+    "cas": "1206711-16-1",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "1206711-16-1.json"
+  },
+  {
+    "name": "DMXAA",
+    "cas": "117570-53-3",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "117570-53-3.json"
+  },
+  {
+    "name": "DNQX",
+    "cas": "2379-57-9",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "2379-57-9.json"
+  },
+  {
+    "name": "Docetaxel",
+    "cas": "114977-28-5",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "114977-28-5.json"
+  },
+  {
+    "name": "Dorsomorphin",
+    "cas": "866405-64-3",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "866405-64-3.json"
+  },
+  {
+    "name": "Doxycycline monohydrate",
+    "cas": "17086-28-1",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Warning",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "17086-28-1.json"
+  },
+  {
+    "name": "E-64d",
+    "cas": "88321-09-9",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "88321-09-9.json"
+  },
+  {
+    "name": "Efavirenz",
+    "cas": "154598-52-4",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "154598-52-4.json"
+  },
+  {
+    "name": "Eosin Y",
+    "cas": "15086-94-9",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "15086-94-9.json"
+  },
+  {
+    "name": "Epoxomicin",
+    "cas": "134381-21-8",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "134381-21-8.json"
+  },
+  {
+    "name": "EPPS",
+    "cas": "16052-06-5",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "16052-06-5.json"
+  },
+  {
+    "name": "Erastin",
+    "cas": "571203-78-6",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "571203-78-6.json"
+  },
+  {
+    "name": "Erythromycin",
+    "cas": "114-07-8",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "114-07-8.json"
+  },
+  {
+    "name": "Ethanolamine",
+    "cas": "141-43-5",
+    "category": "general_reagent",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "summary_fact": "Add reagent to water, not reverse \u2014 corrosive",
+    "rules_fired_count": 2,
+    "file": "141-43-5.json"
+  },
+  {
+    "name": "Ethyl 3-aminobenzoate methanesulfonate salt",
+    "cas": "886-86-2",
+    "category": "general_reagent",
+    "top_pictogram": "environment",
+    "signal_word": "Warning",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "886-86-2.json"
+  },
+  {
+    "name": "Ethylene carbonate",
+    "cas": "96-49-1",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Warning",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "96-49-1.json"
+  },
+  {
+    "name": "Ethylene glycol",
+    "cas": "107-21-1",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Warning",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "107-21-1.json"
+  },
+  {
+    "name": "Ethylene glycol-bis(2-aminoethylether)-",
+    "cas": "67-42-5",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "67-42-5.json"
+  },
+  {
+    "name": "Ethylene glycol-bis(\u03b2-aminoethyl ether)-",
+    "cas": "13368-13-3",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "13368-13-3.json"
+  },
+  {
+    "name": "Ethylenediaminetetraacetic acid",
+    "cas": "60-00-4",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Warning",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "60-00-4.json"
+  },
+  {
+    "name": "Ethylenediaminetetraacetic acid disodium salt",
+    "cas": "139-33-3",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Warning",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "139-33-3.json"
+  },
+  {
+    "name": "Ethylenediaminetetraacetic acid tetrasodium",
+    "cas": "10378-23-1",
+    "category": "general_reagent",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "10378-23-1.json"
+  },
+  {
+    "name": "Ethylenediaminetetraacetic acid trisodium salt",
+    "cas": "85715-60-2",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "85715-60-2.json"
+  },
+  {
+    "name": "Etoposide",
+    "cas": "33419-42-0",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "33419-42-0.json"
+  },
+  {
+    "name": "FK-506 monohydrate",
+    "cas": "109581-93-3",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "109581-93-3.json"
+  },
+  {
+    "name": "FLAG\u00ae Peptide",
+    "cas": "98849-88-8",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "98849-88-8.json"
+  },
+  {
+    "name": "Flavopiridol hydrochloride hydrate",
+    "cas": "131740-09-5",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "131740-09-5.json"
+  },
+  {
+    "name": "Formamide",
+    "cas": "75-12-7",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "75-12-7.json"
+  },
+  {
+    "name": "Forskolin",
+    "cas": "66575-29-9",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "66575-29-9.json"
+  },
+  {
+    "name": "Fulvestrant",
+    "cas": "129453-61-8",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "129453-61-8.json"
+  },
+  {
+    "name": "G 418 disulfate salt",
+    "cas": "108321-42-2",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "108321-42-2.json"
+  },
+  {
+    "name": "Ganciclovir",
+    "cas": "82410-32-0",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "82410-32-0.json"
+  },
+  {
+    "name": "Gefitinib",
+    "cas": "184475-35-2",
+    "category": "general_reagent",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "184475-35-2.json"
+  },
+  {
+    "name": "Glycine",
+    "cas": "56-40-6",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "56-40-6.json"
+  },
+  {
+    "name": "GSK343",
+    "cas": "1346704-33-3",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "1346704-33-3.json"
+  },
+  {
+    "name": "Guanosine",
+    "cas": "118-00-3",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "118-00-3.json"
+  },
+  {
+    "name": "Guanosine 5\u2032-[\u03b2-thio]diphosphate trilithium",
+    "cas": "97952-36-8",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "97952-36-8.json"
+  },
+  {
+    "name": "Guanosine 5\u2032-[\u03b3-thio]triphosphate",
+    "cas": "94825-44-2",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "94825-44-2.json"
+  },
+  {
+    "name": "Guanosine 5\u2032-diphosphate tris salt, from",
+    "cas": "103192-39-8",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "103192-39-8.json"
+  },
+  {
+    "name": "H-89 dihydrochloride hydrate",
+    "cas": "1049740-55-7",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "1049740-55-7.json"
+  },
+  {
+    "name": "Hematoxylin Solution, Harris Modified",
+    "cas": "517-28-2",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "517-28-2.json"
+  },
+  {
+    "name": "HEPES",
+    "cas": "7365-45-9",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "7365-45-9.json"
+  },
+  {
+    "name": "Histamine dihydrochloride",
+    "cas": "56-92-8",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "56-92-8.json"
+  },
+  {
+    "name": "Histodenz\u2122",
+    "cas": "66108-95-0",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "66108-95-0.json"
+  },
+  {
+    "name": "Homoharringtonine",
+    "cas": "26833-87-4",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "26833-87-4.json"
+  },
+  {
+    "name": "Hydroxyurea",
+    "cas": "127-07-1",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "127-07-1.json"
+  },
+  {
+    "name": "Hygromycin B solution, from Streptomyces",
+    "cas": "1217468-11-5",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "1217468-11-5.json"
+  },
+  {
+    "name": "Hypoxanthine",
+    "cas": "68-94-0",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "68-94-0.json"
+  },
+  {
+    "name": "Imidazole",
+    "cas": "288-32-4",
+    "category": "general_reagent",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "summary_fact": "Add reagent to water, not reverse \u2014 corrosive",
+    "rules_fired_count": 2,
+    "file": "288-32-4.json"
+  },
+  {
+    "name": "Imiquimod",
+    "cas": "99011-02-6",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "99011-02-6.json"
+  },
+  {
+    "name": "Indole-3-acetic acid sodium salt",
+    "cas": "6505-45-9",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "6505-45-9.json"
+  },
+  {
+    "name": "Indomethacin",
+    "cas": "53-86-1",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "53-86-1.json"
+  },
+  {
+    "name": "Influenza Hemagglutinin (HA) Peptide",
+    "cas": "92000-76-5",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "92000-76-5.json"
+  },
+  {
+    "name": "Inosine",
+    "cas": "58-63-9",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "58-63-9.json"
+  },
+  {
+    "name": "Ionomycin, from Streptomyces conglobatus",
+    "cas": "56092-81-0",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "56092-81-0.json"
+  },
+  {
+    "name": "Isobutyric acid",
+    "cas": "79-31-2",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Add reagent to water, not reverse \u2014 corrosive",
+    "rules_fired_count": 2,
+    "file": "79-31-2.json"
+  },
+  {
+    "name": "ISRIB",
+    "cas": "1597403-47-8",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "1597403-47-8.json"
+  },
+  {
+    "name": "Ivermectin",
+    "cas": "71827-03-7",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "71827-03-7.json"
+  },
+  {
+    "name": "IWP-2",
+    "cas": "686770-61-6",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "686770-61-6.json"
+  },
+  {
+    "name": "Jasplakinolide",
+    "cas": "102396-24-7",
+    "category": "general_reagent",
+    "top_pictogram": "environment",
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "102396-24-7.json"
+  },
+  {
+    "name": "Kanamycin B sulfate salt",
+    "cas": "29701-07-3",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "29701-07-3.json"
+  },
+  {
+    "name": "Kanamycin solution, from Streptomyces",
+    "cas": "8063-07-8",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "8063-07-8.json"
+  },
+  {
+    "name": "Kanamycin sulfate, from Streptomyces",
+    "cas": "25389-94-0",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "25389-94-0.json"
+  },
+  {
+    "name": "Kynurenic acid",
+    "cas": "492-27-3",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "492-27-3.json"
+  },
+  {
+    "name": "L-(\u2212)-Malic acid",
+    "cas": "97-67-6",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "97-67-6.json"
+  },
+  {
+    "name": "L-Alanine",
+    "cas": "56-41-7",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "56-41-7.json"
+  },
+  {
+    "name": "L-Arginine",
+    "cas": "74-79-3",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "74-79-3.json"
+  },
+  {
+    "name": "L-Arginine monohydrochloride",
+    "cas": "1119-34-2",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "1119-34-2.json"
+  },
+  {
+    "name": "L-Asparagine",
+    "cas": "70-47-3",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "70-47-3.json"
+  },
+  {
+    "name": "L-Aspartic acid",
+    "cas": "56-84-8",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "56-84-8.json"
+  },
+  {
+    "name": "L-Buthionine-sulfoximine",
+    "cas": "83730-53-4",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "83730-53-4.json"
+  },
+  {
+    "name": "L-Carnitine hydrochloride",
+    "cas": "6645-46-1",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "6645-46-1.json"
+  },
+  {
+    "name": "L-Cystine",
+    "cas": "56-89-3",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "56-89-3.json"
+  },
+  {
+    "name": "L-Glutamic acid potassium salt monohydrate",
+    "cas": "6382-01-0",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "6382-01-0.json"
+  },
+  {
+    "name": "L-Glutamine",
+    "cas": "56-85-9",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "56-85-9.json"
+  },
+  {
+    "name": "L-Histidine",
+    "cas": "71-00-1",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "71-00-1.json"
+  },
+  {
+    "name": "L-Isoleucine",
+    "cas": "73-32-5",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "73-32-5.json"
+  },
+  {
+    "name": "L-Leucine",
+    "cas": "61-90-5",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "61-90-5.json"
+  },
+  {
+    "name": "L-Lysine monohydrochloride",
+    "cas": "657-27-2",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "657-27-2.json"
+  },
+  {
+    "name": "L-Methionine",
+    "cas": "63-68-3",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "63-68-3.json"
+  },
+  {
+    "name": "L-Phenylalanine",
+    "cas": "63-91-2",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "63-91-2.json"
+  },
+  {
+    "name": "L-Proline",
+    "cas": "147-85-3",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "147-85-3.json"
+  },
+  {
+    "name": "L-Serine",
+    "cas": "56-45-1",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "56-45-1.json"
+  },
+  {
+    "name": "L-Threonine",
+    "cas": "72-19-5",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "72-19-5.json"
+  },
+  {
+    "name": "L-Tryptophan",
+    "cas": "73-22-3",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "73-22-3.json"
+  },
+  {
+    "name": "L-Valine",
+    "cas": "72-18-4",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "72-18-4.json"
+  },
+  {
+    "name": "Latrunculin A",
+    "cas": "76343-93-6",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "76343-93-6.json"
+  },
+  {
+    "name": "LDN193189 hydrochloride",
+    "cas": "1062368-62-0",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "1062368-62-0.json"
+  },
+  {
+    "name": "Leupeptin hemisulfate salt",
+    "cas": "103476-89-7",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "103476-89-7.json"
+  },
+  {
+    "name": "Leupeptin hydrochloride",
+    "cas": "24125-16-4",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "24125-16-4.json"
+  },
+  {
+    "name": "Levamisole Hydrochloride",
+    "cas": "16595-80-5",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "16595-80-5.json"
+  },
+  {
+    "name": "Manganese(II) chloride tetrahydrate",
+    "cas": "13446-34-9",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "13446-34-9.json"
+  },
+  {
+    "name": "Mdivi-1",
+    "cas": "338967-87-6",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "338967-87-6.json"
+  },
+  {
+    "name": "Medroxyprogesterone 17-acetate",
+    "cas": "71-58-9",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Warning",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "71-58-9.json"
+  },
+  {
+    "name": "MES",
+    "cas": "4432-31-9",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "4432-31-9.json"
+  },
+  {
+    "name": "MES hydrate",
+    "cas": "1266615-59-1",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "1266615-59-1.json"
+  },
+  {
+    "name": "Metformin hydrochloride",
+    "cas": "1115-70-4",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "1115-70-4.json"
+  },
+  {
+    "name": "Methylene Blue hydrate",
+    "cas": "122965-43-9",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "122965-43-9.json"
+  },
+  {
+    "name": "Metronidazole",
+    "cas": "443-48-1",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "443-48-1.json"
+  },
+  {
+    "name": "MG-132(R)",
+    "cas": "1211877-36-9",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "1211877-36-9.json"
+  },
+  {
+    "name": "Midazolam maleate salt",
+    "cas": "59467-94-6",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "59467-94-6.json"
+  },
+  {
+    "name": "Mifepristone",
+    "cas": "84371-65-3",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "84371-65-3.json"
+  },
+  {
+    "name": "Mirin",
+    "cas": "299953-00-7",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "299953-00-7.json"
+  },
+  {
+    "name": "Mitomycin C, from Streptomyces caespitosus",
+    "cas": "50-07-7",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Warning",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "50-07-7.json"
+  },
+  {
+    "name": "ML 141",
+    "cas": "71203-35-5",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "71203-35-5.json"
+  },
+  {
+    "name": "MOPS",
+    "cas": "1132-61-2",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "1132-61-2.json"
+  },
+  {
+    "name": "Muscimol",
+    "cas": "2763-96-4",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "2763-96-4.json"
+  },
+  {
+    "name": "Mycophenolic acid",
+    "cas": "24280-93-1",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "24280-93-1.json"
+  },
+  {
+    "name": "Myriocin From Mycelia Sterilia",
+    "cas": "35891-70-4",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "35891-70-4.json"
+  },
+  {
+    "name": "N-Methyl-D-aspartic acid",
+    "cas": "6384-92-5",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "6384-92-5.json"
+  },
+  {
+    "name": "N6,2\u2032-O-Dibutyryladenosine 3\u2032,5\u2032-cyclic",
+    "cas": "16980-89-5",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "16980-89-5.json"
+  },
+  {
+    "name": "Nalidixic acid",
+    "cas": "389-08-2",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Warning",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "389-08-2.json"
+  },
+  {
+    "name": "Naloxone hydrochloride dihydrate",
+    "cas": "51481-60-8",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "51481-60-8.json"
+  },
+  {
+    "name": "Necrostatin-1",
+    "cas": "4311-88-0",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "4311-88-0.json"
+  },
+  {
+    "name": "Nicotinamide",
+    "cas": "98-92-0",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "98-92-0.json"
+  },
+  {
+    "name": "Nigericin sodium salt",
+    "cas": "28643-80-3",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "28643-80-3.json"
+  },
+  {
+    "name": "Nile Red",
+    "cas": "7385-67-3",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "7385-67-3.json"
+  },
+  {
+    "name": "NMS-873",
+    "cas": "1418013-75-8",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "1418013-75-8.json"
+  },
+  {
+    "name": "Nocodazole",
+    "cas": "31430-18-9",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Warning",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "31430-18-9.json"
+  },
+  {
+    "name": "Oil Red O",
+    "cas": "1320-06-5",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "1320-06-5.json"
+  },
+  {
+    "name": "Okadaic acid, from Prorocentrum concavum",
+    "cas": "78111-17-8",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "78111-17-8.json"
+  },
+  {
+    "name": "OptiPrep\u2122 Density Gradient Medium",
+    "cas": "92339-11-2",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "92339-11-2.json"
+  },
+  {
+    "name": "Osmium tetroxide",
+    "cas": "20816-12-0",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Add reagent to water, not reverse \u2014 corrosive",
+    "rules_fired_count": 2,
+    "file": "20816-12-0.json"
+  },
+  {
+    "name": "Paclitaxel",
+    "cas": "33069-62-4",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "33069-62-4.json"
+  },
+  {
+    "name": "Palmitic acid",
+    "cas": "57-10-3",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "57-10-3.json"
+  },
+  {
+    "name": "Paraquat dichloride hydrate",
+    "cas": "75365-73-0",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "75365-73-0.json"
+  },
+  {
+    "name": "PD 0325901",
+    "cas": "391210-10-9",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "391210-10-9.json"
+  },
+  {
+    "name": "Penicillin G sodium salt",
+    "cas": "69-57-8",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "69-57-8.json"
+  },
+  {
+    "name": "Pepstatin A",
+    "cas": "26305-03-3",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "26305-03-3.json"
+  },
+  {
+    "name": "Phenol Red",
+    "cas": "143-74-8",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "143-74-8.json"
+  },
+  {
+    "name": "Phenylmethanesulfonyl fluoride",
+    "cas": "329-98-6",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Add reagent to water, not reverse \u2014 corrosive",
+    "rules_fired_count": 2,
+    "file": "329-98-6.json"
+  },
+  {
+    "name": "Phorbol 12-myristate 13-acetate",
+    "cas": "16561-29-8",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Add reagent to water, not reverse \u2014 corrosive",
+    "rules_fired_count": 3,
+    "file": "16561-29-8.json"
+  },
+  {
+    "name": "Phospho(enol)pyruvic acid monopotassium",
+    "cas": "4265-07-0",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "4265-07-0.json"
+  },
+  {
+    "name": "Phosphocreatine di(tris) salt",
+    "cas": "108321-17-1",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "108321-17-1.json"
+  },
+  {
+    "name": "Phosphocreatine disodium salt hydrate",
+    "cas": "19333-65-4",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "19333-65-4.json"
+  },
+  {
+    "name": "Phosphoric acid",
+    "cas": "7664-38-2",
+    "category": "general_reagent",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "summary_fact": "Warm to RT before pipetting \u2014 freezes near RT",
+    "rules_fired_count": 2,
+    "file": "7664-38-2.json"
+  },
+  {
+    "name": "Picric acid solution",
+    "cas": "88-89-1",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "88-89-1.json"
+  },
+  {
+    "name": "Pilocarpine hydrochloride",
+    "cas": "54-71-7",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "54-71-7.json"
+  },
+  {
+    "name": "PIPES",
+    "cas": "5625-37-6",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "5625-37-6.json"
+  },
+  {
+    "name": "Potassium D-gluconate",
+    "cas": "299-27-4",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "299-27-4.json"
+  },
+  {
+    "name": "PP2",
+    "cas": "172889-27-9",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "172889-27-9.json"
+  },
+  {
+    "name": "Probenecid",
+    "cas": "57-66-9",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "57-66-9.json"
+  },
+  {
+    "name": "Puromycin dihydrochloride, from",
+    "cas": "58-58-2",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "58-58-2.json"
+  },
+  {
+    "name": "Rapamycin, from Streptomyces",
+    "cas": "53123-88-9",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Warning",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "53123-88-9.json"
+  },
+  {
+    "name": "Resazurin sodium salt",
+    "cas": "62758-13-8",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "62758-13-8.json"
+  },
+  {
+    "name": "Reversine",
+    "cas": "656820-32-5",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "656820-32-5.json"
+  },
+  {
+    "name": "RO-3306",
+    "cas": "872573-93-8",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "872573-93-8.json"
+  },
+  {
+    "name": "Roscovitine",
+    "cas": "186692-46-6",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "186692-46-6.json"
+  },
+  {
+    "name": "Rosiglitazone",
+    "cas": "122320-73-4",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "122320-73-4.json"
+  },
+  {
+    "name": "SB 202190",
+    "cas": "152121-30-7",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "152121-30-7.json"
+  },
+  {
+    "name": "Simvastatin",
+    "cas": "79902-63-9",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Warning",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "79902-63-9.json"
+  },
+  {
+    "name": "Sodium acetate",
+    "cas": "127-09-3",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "127-09-3.json"
+  },
+  {
+    "name": "Sodium cacodylate trihydrate",
+    "cas": "6131-99-3",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "6131-99-3.json"
+  },
+  {
+    "name": "Sodium chloride",
+    "cas": "7647-14-5",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "7647-14-5.json"
+  },
+  {
+    "name": "Sodium citrate tribasic dihydrate",
+    "cas": "6132-04-3",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "6132-04-3.json"
+  },
+  {
+    "name": "Sodium hydroxide",
+    "cas": "1310-73-2",
+    "category": "general_reagent",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "summary_fact": "Add reagent to water, not reverse \u2014 corrosive",
+    "rules_fired_count": 1,
+    "file": "1310-73-2.json"
+  },
+  {
+    "name": "Sodium orthovanadate",
+    "cas": "13721-39-6",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "13721-39-6.json"
+  },
+  {
+    "name": "Sodium phosphate dibasic dihydrate",
+    "cas": "10028-24-7",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "10028-24-7.json"
+  },
+  {
+    "name": "Sodium phosphate monobasic",
+    "cas": "7558-80-7",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "7558-80-7.json"
+  },
+  {
+    "name": "Sodium phosphate monobasic dihydrate",
+    "cas": "13472-35-0",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "13472-35-0.json"
+  },
+  {
+    "name": "Sodium succinate dibasic",
+    "cas": "150-90-3",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "150-90-3.json"
+  },
+  {
+    "name": "Sodium valproate",
+    "cas": "1069-66-5",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Warning",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "1069-66-5.json"
+  },
+  {
+    "name": "Spectinomycin dihydrochloride pentahydrate",
+    "cas": "22189-32-8",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "22189-32-8.json"
+  },
+  {
+    "name": "Spermine",
+    "cas": "71-44-3",
+    "category": "general_reagent",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "summary_fact": "Add reagent to water, not reverse \u2014 corrosive",
+    "rules_fired_count": 1,
+    "file": "71-44-3.json"
+  },
+  {
+    "name": "SR-95531",
+    "cas": "104104-50-9",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "104104-50-9.json"
+  },
+  {
+    "name": "Streptomycin sulfate salt",
+    "cas": "3810-74-0",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Warning",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "3810-74-0.json"
+  },
+  {
+    "name": "Strychnine",
+    "cas": "57-24-9",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "57-24-9.json"
+  },
+  {
+    "name": "Strychnine hydrochloride",
+    "cas": "1421-86-9",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "1421-86-9.json"
+  },
+  {
+    "name": "Succinic acid",
+    "cas": "110-15-6",
+    "category": "general_reagent",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "110-15-6.json"
+  },
+  {
+    "name": "Sucrose",
+    "cas": "57-50-1",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": "Warning",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "57-50-1.json"
+  },
+  {
+    "name": "Sudan Black B",
+    "cas": "4197-25-5",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Warning",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "4197-25-5.json"
+  },
+  {
+    "name": "Tamoxifen citrate salt",
+    "cas": "54965-24-1",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "54965-24-1.json"
+  },
+  {
+    "name": "Taurine",
+    "cas": "107-35-7",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "107-35-7.json"
+  },
+  {
+    "name": "Temozolomide",
+    "cas": "85622-93-1",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "85622-93-1.json"
+  },
+  {
+    "name": "Tetracycline",
+    "cas": "60-54-8",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Warning",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "60-54-8.json"
+  },
+  {
+    "name": "Tetracycline hydrochloride",
+    "cas": "64-75-5",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Warning",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "64-75-5.json"
+  },
+  {
+    "name": "Thapsigargin",
+    "cas": "67526-95-8",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "67526-95-8.json"
+  },
+  {
+    "name": "Thioflavin T",
+    "cas": "2390-54-7",
+    "category": "general_reagent",
+    "top_pictogram": "skull_crossbones",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "2390-54-7.json"
+  },
+  {
+    "name": "Thymidine",
+    "cas": "50-89-5",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "50-89-5.json"
+  },
+  {
+    "name": "Trichloroacetic acid",
+    "cas": "76-03-9",
+    "category": "general_reagent",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "summary_fact": "Add reagent to water, not reverse \u2014 corrosive",
+    "rules_fired_count": 1,
+    "file": "76-03-9.json"
+  },
+  {
+    "name": "Trichostatin A",
+    "cas": "58880-19-6",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "58880-19-6.json"
+  },
+  {
+    "name": "Triethanolamine",
+    "cas": "102-71-6",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "Warm to RT before pipetting \u2014 freezes near RT",
+    "rules_fired_count": 1,
+    "file": "102-71-6.json"
+  },
+  {
+    "name": "Trimethoprim",
+    "cas": "738-70-5",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Warning",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "738-70-5.json"
+  },
+  {
+    "name": "Tris-EDTA buffer solution",
+    "cas": "93777-65-2",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "93777-65-2.json"
+  },
+  {
+    "name": "Trizma\u00ae base",
+    "cas": "77-86-1",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "77-86-1.json"
+  },
+  {
+    "name": "Trypan Blue solution",
+    "cas": "72-57-1",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "72-57-1.json"
+  },
+  {
+    "name": "Uracil",
+    "cas": "66-22-8",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "66-22-8.json"
+  },
+  {
+    "name": "Urea",
+    "cas": "57-13-6",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "57-13-6.json"
+  },
+  {
+    "name": "Urethane",
+    "cas": "51-79-6",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "51-79-6.json"
+  },
+  {
+    "name": "Uridine",
+    "cas": "58-96-8",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "58-96-8.json"
+  },
+  {
+    "name": "Uridine 5\u2032-triphosphate tris salt",
+    "cas": "108321-53-5",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "108321-53-5.json"
+  },
+  {
+    "name": "Uridine 5\u2032-triphosphate trisodium salt hydrate",
+    "cas": "19817-92-6",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "19817-92-6.json"
+  },
+  {
+    "name": "Valproic acid",
+    "cas": "99-66-1",
+    "category": "general_reagent",
+    "top_pictogram": "corrosion",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 1,
+    "file": "99-66-1.json"
+  },
+  {
+    "name": "VE-821",
+    "cas": "1232410-49-9",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 1,
+    "file": "1232410-49-9.json"
+  },
+  {
+    "name": "Water",
+    "cas": "7732-18-5",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "7732-18-5.json"
+  },
+  {
+    "name": "Xanthine",
+    "cas": "69-89-6",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "69-89-6.json"
+  },
+  {
+    "name": "XAV939",
+    "cas": "284028-89-3",
+    "category": "general_reagent",
+    "top_pictogram": "exclamation_mark",
+    "signal_word": "Warning",
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "284028-89-3.json"
+  },
+  {
+    "name": "Y-27632 dihydrochloride",
+    "cas": "129830-38-2",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "129830-38-2.json"
+  },
+  {
+    "name": "Z-Leu-Leu-Leu-al",
+    "cas": "133407-82-6",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "133407-82-6.json"
+  },
+  {
+    "name": "\u03b2-Estradiol",
+    "cas": "50-28-2",
+    "category": "general_reagent",
+    "top_pictogram": "health_hazard",
+    "signal_word": "Danger",
+    "summary_fact": "Fume hood required \u2014 SDS ventilation control",
+    "rules_fired_count": 2,
+    "file": "50-28-2.json"
+  },
+  {
+    "name": "\u03b2-Nicotinamide adenine dinucleotide, reduced",
+    "cas": "104809-32-7",
+    "category": "general_reagent",
+    "top_pictogram": null,
+    "signal_word": null,
+    "summary_fact": "No handling rule assigned yet",
+    "rules_fired_count": 0,
+    "file": "104809-32-7.json"
+  }
+]

@@ -1,0 +1,390 @@
+{
+  "schema_version": "2.0",
+  "name": "Dimethyl sulfoxide",
+  "cas": "67-68-5",
+  "category": "dmso",
+  "vendor_example": "Sigma D8418",
+  "physical_state": "liquid",
+  "properties": {
+    "is_protein": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "glycerol_pct": null,
+    "viscosity_class": "low",
+    "viscosity_mPas_20C": 2.14,
+    "vapor_pressure_kPa_20C": 0.055,
+    "is_volatile": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_flammable": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "flash_point_C": 87.0,
+    "is_light_sensitive": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_fluorophore": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "excitation_nm": null,
+    "emission_nm": null,
+    "is_reducing_agent": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "oxidizes_in_solution": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "solution_half_life_at_4C_days": null,
+    "make_fresh": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_detergent": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_foaming": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_fixative": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "fume_hood_required": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_hygroscopic": {
+      "value": true,
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "sds_phrase",
+          "ref": "section_7:'hygroscopic'",
+          "agrees": true
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_deliquescent": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "is_corrosive": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_adsorption_prone": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "lo_bind_required": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "freeze_point_C": 17.5,
+    "requires_ice": {
+      "value": false,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": false
+        }
+      ]
+    },
+    "freeze_thaw_max_cycles": null,
+    "skin_penetrant": {
+      "value": true,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "claude_inference",
+          "ref": "phase2_batch_ingest",
+          "agrees": true
+        }
+      ]
+    },
+    "plastic_incompatible": [],
+    "storage_temp_C": null,
+    "is_air_sensitive": {
+      "value": true,
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "sds_phrase",
+          "ref": "section_7:'Store under inert gas'",
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "ghs": {
+    "pictograms": [],
+    "signal_word": "Warning",
+    "hazard_statements": [
+      "H227 Combustible liquid"
+    ]
+  },
+  "sds_facts": {
+    "storage": "Tightly closed.",
+    "ppe": [
+      "chemical-resistant gloves",
+      "safety glasses",
+      "respiratory protection"
+    ],
+    "incompatibilities": []
+  },
+  "bench_knowledge": [
+    {
+      "rule_id": "warm_freeze_prone_liquid",
+      "because": "Liquids with freeze points at or above 15\u00b0C (DMSO ~19\u00b0C, glycerol ~18\u00b0C) can solidify partially or fully in a 4\u00b0C cold room or on ice. Pipetting a partially-solidified liquid causes systematic volume errors. The physical_state guard prevents the rule from misfiring on solids whose melting point happens to be reported in freeze_point_C (e.g. NaOH pellets, PFA powder).",
+      "cite": "Sigma-Aldrich DMSO Product Information Sheet 276855 (freeze point 18.45\u00b0C). Perry's Chemical Engineers' Handbook, 8th ed. (glycerol freeze point 17.8\u00b0C).",
+      "confidence": "high"
+    },
+    {
+      "rule_id": "skin_penetrant_hazard",
+      "because": "This reagent crosses intact skin and can carry dissolved solutes transdermally, creating a toxicity route that standard irritation/corrosion labelling underestimates. Documented skin-penetrant laboratory reagents include DMSO, 2-mercaptoethanol, acrylamide, and aniline \u2014 all capable of delivering dissolved cargo (drug stocks, toxins) through the skin barrier. Nitrile gloves (not latex, which is permeable to many organic solvents) are required; change gloves immediately after any spill; never handle these reagents bare-handed.",
+      "cite": "NIOSH skin absorption hazard notes. Braue EH et al. (1999) Occup Environ Med: percutaneous absorption review. Magnusson BM et al. (2004) Pharm Res 21:1602\u20131609 (DMSO and 2-ME permeation data).",
+      "confidence": "low"
+    },
+    {
+      "rule_id": "air_sensitive_seal",
+      "because": "Air-sensitive reagents deteriorate on contact with atmospheric oxygen or moisture. Linoleic acid oxidises to cytotoxic lipid peroxides within hours in open air. Rifampicin degrades to the inactive 3-formyl-rifamycin SV quinone on oxidation. Histamine autooxidises at alkaline pH and is also hygroscopic. DMF absorbs moisture and slowly hydrolyses to dimethylamine (an irritant). Keep bottles tightly capped between uses; aliquot into single-use volumes for high-frequency access. For oxygen-critical applications, consider dispensing under argon.",
+      "cite": "Sigma-Aldrich product information: linoleic acid L1376, rifampicin R3501, DMF D4551. SDS Section 7.",
+      "confidence": "high"
+    }
+  ],
+  "sds_source": {
+    "revision_date": "04/02/2026",
+    "version": "6.16",
+    "product_number": "D8418",
+    "parsed_sections": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "enrichment_status": "parsed_with_actionable_flags",
+    "unmapped_hcodes": [
+      "H227"
+    ]
+  }
+}

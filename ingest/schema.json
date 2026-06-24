@@ -1,0 +1,185 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Reagent",
+  "description": "CAS#-keyed reagent handling profile. Schema v2.0 adds sourced booleans — every tacit flag carries its evidence chain.",
+  "type": "object",
+  "required": ["schema_version", "name", "cas", "category", "physical_state", "properties", "ghs", "sds_facts", "bench_knowledge"],
+  "additionalProperties": false,
+
+  "definitions": {
+    "sourced_boolean": {
+      "description": "A boolean flag with a mandatory evidence chain. confidence is computed from sources by validate.py.",
+      "type": "object",
+      "required": ["value", "confidence", "sources"],
+      "additionalProperties": false,
+      "properties": {
+        "value":      { "type": ["boolean", "null"] },
+        "confidence": { "type": "string", "enum": ["high", "medium", "low"] },
+        "sources": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["type", "ref", "agrees"],
+            "additionalProperties": false,
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "sds_phrase",
+                  "storage_class",
+                  "ghs_hcode",
+                  "pubchem",
+                  "chebi",
+                  "rule_derived",
+                  "tacit_knowledge",
+                  "claude_inference",
+                  "manufacturer_protocol",
+                  "uniprot"
+                ]
+              },
+              "ref":    { "type": "string" },
+              "agrees": { "type": "boolean" }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "properties": {
+    "schema_version": { "type": "string", "pattern": "^\\d+\\.\\d+$" },
+    "name":           { "type": "string" },
+    "cas":            { "type": ["string", "null"] },
+    "cas_note":       { "type": "string" },
+    "category": {
+      "type": ["string", "null"],
+      "enum": [
+        "enzyme_glycerol",
+        "volatile_solvent",
+        "viscous_reagent",
+        "detergent",
+        "fluorophore",
+        "reducing_agent",
+        "fixative",
+        "dmso",
+        "adsorption_prone",
+        "hygroscopic_solid",
+        null
+      ]
+    },
+    "vendor_example":  { "type": "string" },
+    "physical_state": {
+      "type": "string",
+      "enum": ["liquid", "solid", "powder", "solution"]
+    },
+    "properties": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "is_protein":            { "$ref": "#/definitions/sourced_boolean" },
+        "glycerol_pct":          { "type": ["number",  "null"] },
+        "viscosity_class":       { "type": ["string",  "null"], "enum": ["low", "moderate", "high", null] },
+        "viscosity_mPas_20C":    { "type": ["number",  "null"] },
+        "vapor_pressure_kPa_20C":{ "type": ["number",  "null"] },
+        "is_volatile":           { "$ref": "#/definitions/sourced_boolean" },
+        "is_flammable":          { "$ref": "#/definitions/sourced_boolean" },
+        "flash_point_C":         { "type": ["number",  "null"] },
+        "is_light_sensitive":    { "$ref": "#/definitions/sourced_boolean" },
+        "is_fluorophore":        { "$ref": "#/definitions/sourced_boolean" },
+        "excitation_nm":         { "type": ["number",  "null"] },
+        "emission_nm":           { "type": ["number",  "null"] },
+        "is_reducing_agent":     { "$ref": "#/definitions/sourced_boolean" },
+        "oxidizes_in_solution":  { "$ref": "#/definitions/sourced_boolean" },
+        "solution_half_life_at_4C_days": { "type": ["number", "null"] },
+        "make_fresh":            { "$ref": "#/definitions/sourced_boolean" },
+        "is_detergent":          { "$ref": "#/definitions/sourced_boolean" },
+        "is_foaming":            { "$ref": "#/definitions/sourced_boolean" },
+        "is_fixative":           { "$ref": "#/definitions/sourced_boolean" },
+        "fume_hood_required":    { "$ref": "#/definitions/sourced_boolean" },
+        "is_hygroscopic":        { "$ref": "#/definitions/sourced_boolean" },
+        "is_deliquescent":       { "$ref": "#/definitions/sourced_boolean" },
+        "is_corrosive":          { "$ref": "#/definitions/sourced_boolean" },
+        "is_adsorption_prone":   { "$ref": "#/definitions/sourced_boolean" },
+        "lo_bind_required":      { "$ref": "#/definitions/sourced_boolean" },
+        "freeze_point_C":        { "type": ["number",  "null"] },
+        "requires_ice":          { "$ref": "#/definitions/sourced_boolean" },
+        "freeze_thaw_max_cycles":{ "type": ["integer", "null"] },
+        "skin_penetrant":        { "$ref": "#/definitions/sourced_boolean" },
+        "plastic_incompatible":  { "type": "array", "items": { "type": "string" } },
+        "storage_temp_C":        { "type": ["number",  "null"] },
+        "is_oxidizer":              { "$ref": "#/definitions/sourced_boolean" },
+        "is_air_sensitive":         { "$ref": "#/definitions/sourced_boolean" },
+        "is_peroxide_forming":      { "$ref": "#/definitions/sourced_boolean" },
+        "is_water_reactive":        { "$ref": "#/definitions/sourced_boolean" },
+        "is_rnase_decontaminant":   { "$ref": "#/definitions/sourced_boolean" },
+        "is_serum":                 { "$ref": "#/definitions/sourced_boolean" }
+      }
+    },
+    "ghs": {
+      "type": "object",
+      "required": ["pictograms", "signal_word", "hazard_statements"],
+      "additionalProperties": false,
+      "properties": {
+        "pictograms":        { "type": "array", "items": { "type": "string" } },
+        "signal_word":       { "type": ["string", "null"] },
+        "hazard_statements": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "sds_facts": {
+      "type": "object",
+      "required": ["storage", "ppe", "incompatibilities"],
+      "additionalProperties": false,
+      "properties": {
+        "storage":           { "type": "string" },
+        "ppe":               { "type": "array", "items": { "type": "string" } },
+        "incompatibilities": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "bench_knowledge": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          { "type": "string" },
+          {
+            "type": "object",
+            "required": ["rule_id", "because"],
+            "additionalProperties": false,
+            "properties": {
+              "rule_id":    { "type": ["string", "null"] },
+              "because":   { "type": "string" },
+              "cite":      { "type": "string" },
+              "confidence": { "type": "string", "enum": ["high", "medium", "low"] }
+            }
+          }
+        ]
+      }
+    },
+    "sds_source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "revision_date":  { "type": ["string", "null"] },
+        "version":        { "type": ["string", "null"] },
+        "product_number": { "type": ["string", "null"] },
+        "parsed_sections": {
+          "type": "array",
+          "items": { "type": "integer" }
+        },
+        "enrichment_status": {
+          "type": "string",
+          "enum": [
+            "parsed_with_actionable_flags",
+            "parsed_no_actionable_flags",
+            "pdf_missing",
+            "parse_failed"
+          ]
+        },
+        "unmapped_hcodes": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^H\\d{3}$" }
+        }
+      }
+    }
+  }
+}

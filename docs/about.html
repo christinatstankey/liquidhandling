@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Liquid Handling</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <style>
+    .about-body { max-width: 660px; padding: 3rem 0 5rem; }
+    .about-body p { margin-top: 1rem; font-size: .95rem; color: #374151; line-height: 1.75; }
+    .about-body h2 { margin-top: 2.5rem; font-size: 1.1rem; }
+    .about-body ul { margin-top: .75rem; padding-left: 1.25rem; }
+    .about-body li { font-size: .9rem; color: #374151; line-height: 1.7; margin-top: .35rem; }
+    .about-body code { font-size: .85em; }
+    .pipeline-table { width: 100%; border-collapse: collapse; margin-top: 1rem; font-size: .875rem; }
+    .pipeline-table th { text-align: left; font-size: .75rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: .06em; color: var(--muted); border-bottom: 1px solid var(--hairline); padding: .5rem .75rem; }
+    .pipeline-table td { padding: .55rem .75rem; border-bottom: 1px solid var(--hairline); color: #374151; vertical-align: top; }
+    .pipeline-table td:first-child { font-family: var(--font-mono); font-size: .8rem; color: var(--accent); white-space: nowrap; }
+    .conf-pill { display: inline-block; font-size: .7rem; font-weight: 600; padding: .1em .45em;
+      border-radius: 3px; font-family: var(--font-mono); }
+    .conf-high   { background: #ECFDF5; color: #065F46; }
+    .conf-medium { background: #FFFBEB; color: #92400E; }
+    .conf-low    { background: #F9FAFB; color: #6B7280; border: 1px solid #E5E7EB; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="container inner">
+    <a class="wordmark" href="index.html">liquidhandling<span>.</span></a>
+    <ul>
+      <li><a href="index.html">Reagents</a></li>
+      <li><a href="lists.html">Make a List</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="container">
+  <div class="about-body">
+    <h1>About</h1>
+
+    <h2>The problem</h2>
+    <p>
+      Safety Data Sheets tell you a reagent is flammable, irritating, or hazardous. They do not tell
+      your liquid handler to pre-wet tips three times before aspirating volatile liquids, to use
+      wide-bore tips for viscous solutions, or to slow down aspiration to keep detergents from
+      foaming.
+    </p>
+    <p>
+      That knowledge lives in the heads of experienced bench scientists. It is passed on verbally,
+      buried in methods sections, or learned by ruining an experiment. The gap between "safe to handle"
+      and "correct to pipette" is where liquid handlers can fail.
+    </p>
+
+    <h2>What this does</h2>
+    <p>
+      This database is a transparent rules layer between chemical evidence and robot instructions.
+      Each reagent is keyed by CAS number and has a structured JSON profile built from Sigma-Aldrich
+      SDS facts, PubChem properties, and ChEBI roles. A declarative YAML rules engine maps those
+      fields to handling instructions. Every rule cites a reagent property or a published source.
+    </p>
+    <p>
+      The output is a JSON handling profile a liquid handler can consume directly:
+    </p>
+    <ul>
+      <li>Aspiration speed and technique (reverse pipetting, pre-wet cycles, wide-bore tips)</li>
+      <li>Container and storage controls (amber handling, dry storage, flammable cabinet)</li>
+      <li>Preparation requirements (make fresh, warm to room temperature, minimize light or air exposure)</li>
+      <li>Safety controls (fume hood, gloves, waste stream, segregation)</li>
+    </ul>
+    <p>
+      Each instruction carries a confidence level derived from the evidence chain. SDS-extracted,
+      PubChem-derived, and ChEBI-backed facts are high confidence. Field consensus and placeholder
+      fallback sources are lower confidence, and uncorroborated tacit flags remain
+      <code>null</code> rather than guessing.
+    </p>
+
+    <h2>Data pipeline</h2>
+    <p>
+      The current corpus is Sigma-Aldrich reagents with resolvable CAS numbers, sourced from
+      frequency-ranked Sigma citations in Cell Press STAR methods sections. The pipeline parses
+      local SDS PDFs, enriches the resulting records, applies manual corrections, validates schema
+      v2.0, and regenerates static handling profiles under <code>data/handling/</code>.
+      Source types are explicitly tracked so downstream consumers can evaluate reliability:
+    </p>
+    <table class="pipeline-table">
+      <thead>
+        <tr><th>Source type</th><th>What it provides</th><th>Confidence</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>sds_phrase</td>
+          <td>Literal phrase match in SDS §7/§10 (e.g., "hygroscopic", "flammable")</td>
+          <td><span class="conf-pill conf-high">high</span></td>
+        </tr>
+        <tr>
+          <td>ghs_hcode</td>
+          <td>GHS hazard code from SDS §2 (e.g., H228 → flammable solid)</td>
+          <td><span class="conf-pill conf-high">high</span></td>
+        </tr>
+        <tr>
+          <td>storage_class</td>
+          <td>ADR storage class from SDS §7 (e.g., 3 → flammable liquid)</td>
+          <td><span class="conf-pill conf-high">high</span></td>
+        </tr>
+        <tr>
+          <td>pubchem</td>
+          <td>Numeric properties and public hazard annotations (e.g., vapor pressure, flash point, LogP)</td>
+          <td><span class="conf-pill conf-high">high</span></td>
+        </tr>
+        <tr>
+          <td>chebi</td>
+          <td>ChEBI ontology role (e.g., CHEBI:25944 → fluorophore → light-sensitive)</td>
+          <td><span class="conf-pill conf-high">high</span></td>
+        </tr>
+        <tr>
+          <td>rule_derived</td>
+          <td>Flag inferred from another sourced flag by a declared rule (e.g., fluorophore → light-sensitive)</td>
+          <td><span class="conf-pill conf-high">inherits</span></td>
+        </tr>
+        <tr>
+          <td>tacit_knowledge</td>
+          <td>Bench-practice rule source from the curated tacit-knowledge taxonomy</td>
+          <td><span class="conf-pill conf-low">low</span></td>
+        </tr>
+        <tr>
+          <td>claude_inference</td>
+          <td>Fallback marker for not-yet-assessed or legacy MVP fields; new bulk records do not invent true/false values from it</td>
+          <td><span class="conf-pill conf-low">low</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>What it isn't</h2>
+    <p>
+      This is not an SDS database, EH&amp;S compliance tool, or general protocol library. It is
+      scoped right now to Sigma-Aldrich small molecules, solvents, dyes, salts, fixatives, powders,
+      and detergents with CAS numbers.
+    </p>
+    <p>
+      Out of scope by design: enzymes and biologics from specialty vendors, cell culture handling,
+      buffer preparation workflows, and freeform protocol text. Those require different evidence
+      paths than the current CAS/Sigma SDS workflow, so they were excluded rather than mixed into
+      the small-molecule pipeline.
+    </p>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    Data sourced from Sigma-Aldrich SDS sheets, PubChem, ChEBI, and cited handling rules. Rules engine: transparent YAML — no ML.
+  </div>
+</footer>
+
+</body>
+</html>

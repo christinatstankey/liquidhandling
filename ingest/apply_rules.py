@@ -1,0 +1,251 @@
+#!/usr/bin/env python3
+"""
+apply_rules.py — apply data/rules.yaml to a reagent JSON and emit a handling profile.
+
+Usage:
+    python3 ingest/apply_rules.py data/reagents/64-17-5.json
+    python3 ingest/apply_rules.py data/reagents/64-17-5.json --out docs/data/profiles/64-17-5.json
+"""
+import argparse
+import json
+import sys
+from pathlib import Path
+from typing import Any
+
+import yaml
+
+REPO_ROOT = Path(__file__).parent.parent
+RULES_PATH = REPO_ROOT / "data" / "rules.yaml"
+
+
+def _flag_value(properties: dict, key: str) -> Any:
+    """
+    Read a property value from a properties dict, handling both flat (v1)
+    and sourced_boolean (v2) shapes transparently.
+    """
+    raw = properties.get(key)
+    if isinstance(raw, dict) and "value" in raw:
+        return raw["value"]
+    return raw
+
+
+def _flag_confidence(properties: dict, key: str) -> str:
+    """Return the stored confidence for a sourced_boolean, or 'high' for flat values."""
+    raw = properties.get(key)
+    if isinstance(raw, dict) and "confidence" in raw:
+        return raw["confidence"]
+    return "high"
+
+
+def _set_nested(d: dict, dotted_key: str, value: Any) -> None:
+    """Set d[a][b][c] = value given dotted_key 'a.b.c'. Creates dicts as needed."""
+    parts = dotted_key.split(".")
+    node = d
+    for part in parts[:-1]:
+        node = node.setdefault(part, {})
+    node[parts[-1]] = value
+
+
+def _evaluate_condition(prop_value: Any, condition: Any) -> bool:
+    """
+    Evaluate one condition against a property value.
+
+    condition forms:
+      - a plain value (bool, str, number): equality check
+      - a dict like {gt: 5} / {gte: 5} / {lt: 5} / {lte: 5} / {eq: x} / {ne: x}
+      - a dict like {contains: x} — list-membership; the property must be a
+        list and `x` must appear in it. Used for array properties like
+        `plastic_incompatible` so a single rule can fire on one material
+        without needing a dedicated boolean for each.
+    """
+    if prop_value is None:
+        return False
+
+    if isinstance(condition, dict):
+        _KNOWN_OPS = {"gt", "gte", "lt", "lte", "eq", "ne", "contains"}
+        for op, operand in condition.items():
+            if op not in _KNOWN_OPS:
+                raise ValueError(
+                    f"Unknown condition operator {op!r} in rules.yaml; "
+                    f"valid operators: {sorted(_KNOWN_OPS)}"
+                )
+            if op == "gt"  and not (prop_value > operand):   return False
+            if op == "gte" and not (prop_value >= operand):  return False
+            if op == "lt"  and not (prop_value < operand):   return False
+            if op == "lte" and not (prop_value <= operand):  return False
+            if op == "eq"  and not (prop_value == operand):  return False
+            if op == "ne"  and not (prop_value != operand):  return False
+            if op == "contains":
+                # `contains` requires a list-valued property; anything else
+                # (None, scalar) is treated as "does not satisfy" so the rule
+                # doesn't fire on missing/malformed data.
+                if not isinstance(prop_value, list):
+                    return False
+                if operand not in prop_value:
+                    return False
+        return True
+    else:
+        return prop_value == condition
+
+
+def evaluate_rule(rule: dict, properties: dict) -> bool:
+    """
+    Return True if all `when` conditions are satisfied.
+    Uses _flag_value() so it handles both flat (v1) and sourced_boolean (v2) shapes.
+    """
+    when = rule.get("when", {})
+    if not isinstance(when, dict) or not when:
+        raise ValueError(f"Rule {rule.get('id', '<missing id>')!r} must define a non-empty 'when' block.")
+    for key, condition in when.items():
+        prop_value = _flag_value(properties, key)
+        if not _evaluate_condition(prop_value, condition):
+            return False
+    return True
+
+
+def validate_rules(rules: list[dict]) -> None:
+    """Fail fast on rules that would accidentally fire on every reagent."""
+    for rule in rules:
+        when = rule.get("when")
+        if not isinstance(when, dict) or not when:
+            rule_id = rule.get("id", "<missing id>")
+            raise ValueError(f"Rule {rule_id!r} must define a non-empty 'when' block.")
+
+
+def _rule_confidence(rule: dict, properties: dict) -> str:
+    """
+    Confidence of the fired rule = lowest confidence among the flags that triggered it.
+    Falls back to 'high' for numeric/flat properties.
+    """
+    tiers = {"high": 0, "medium": 1, "low": 2}
+    worst = "high"
+    for key in rule.get("when", {}):
+        conf = _flag_confidence(properties, key)
+        if tiers.get(conf, 2) > tiers.get(worst, 0):
+            worst = conf
+    return worst
+
+
+def apply_rules(reagent: dict, rules: list[dict]) -> dict:
+    """
+    Fire applicable rules and assemble a handling profile.
+
+    Returns:
+        {
+          "handling_profile": {...},   # merged `then` directives from fired rules
+          "rules_fired": [             # details of each fired rule
+              {"id": ..., "because": ..., "cite": ...,
+               "confidence": ..., "field_consensus": bool},
+              ...
+          ],
+          "conflicts": []              # placeholder — surfaced in future phase
+        }
+    """
+    validate_rules(rules)
+
+    properties = reagent.get("properties", {})
+    # physical_state is a top-level field — add it for rule matching
+    props_extended = dict(properties)
+    props_extended["physical_state"] = reagent.get("physical_state")
+
+    handling_profile: dict = {}
+    rules_fired: list[dict] = []
+    # Track which rule first claimed each output key, to detect conflicts.
+    key_owner: dict[str, tuple[str, Any]] = {}
+    conflicts: list[dict] = []
+
+    for rule in rules:
+        if evaluate_rule(rule, props_extended):
+            then = rule.get("then", {})
+            for dotted_key, value in then.items():
+                if dotted_key in key_owner:
+                    prev_rule_id, prev_value = key_owner[dotted_key]
+                    if prev_value != value:
+                        # Two rules disagree on this output key — surface it.
+                        conflicts.append({
+                            "key":    dotted_key,
+                            "rules":  [prev_rule_id, rule["id"]],
+                            "values": [prev_value, value],
+                            "applied_value": prev_value,
+                        })
+                    # Either way, do not overwrite the first-set value.
+                    continue
+                key_owner[dotted_key] = (rule["id"], value)
+                _set_nested(handling_profile, dotted_key, value)
+
+            cite = rule.get("cite", "")
+            is_field_consensus = "field consensus" in cite.lower()
+            rules_fired.append({
+                "id": rule["id"],
+                "because": rule.get("because", "").strip(),
+                "cite": cite,
+                "confidence": _rule_confidence(rule, props_extended),
+                "field_consensus": is_field_consensus,
+            })
+
+    return {
+        "reagent_name": reagent.get("name"),
+        "cas": reagent.get("cas"),
+        "profile_version": "1.0",
+        "handling_profile": handling_profile,
+        "rules_fired": rules_fired,
+        "conflicts": conflicts,
+    }
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Apply rules.yaml to a reagent JSON.")
+    parser.add_argument("reagent_path", help="Path to reagent JSON file")
+    parser.add_argument("--out", help="Write handling profile to this path instead of stdout")
+    parser.add_argument(
+        "--write-bench-knowledge", action="store_true",
+        help="Overwrite bench_knowledge in the source reagent JSON with the "
+             "'because' text from each fired rule (deterministic, no prose).",
+    )
+    args = parser.parse_args()
+
+    reagent_path = Path(args.reagent_path)
+    if not reagent_path.exists():
+        print(f"ERROR: reagent file not found: {reagent_path}", file=sys.stderr)
+        sys.exit(1)
+
+    with open(reagent_path) as f:
+        reagent = json.load(f)
+
+    with open(RULES_PATH) as f:
+        rules = yaml.safe_load(f)
+
+    profile = apply_rules(reagent, rules)
+
+    # Optionally overwrite bench_knowledge in the source reagent JSON.
+    # Each entry is a structured dict so the rule_id and cite are traceable.
+    if args.write_bench_knowledge:
+        bullets = [
+            {
+                "rule_id":    r["id"],
+                "because":    r["because"],
+                "cite":       r["cite"],
+                "confidence": r["confidence"],
+            }
+            for r in profile["rules_fired"]
+        ]
+        reagent["bench_knowledge"] = bullets
+        # Remove striking_fact if still present (field is retired).
+        reagent.pop("striking_fact", None)
+        reagent_path.write_text(json.dumps(reagent, indent=2) + "\n")
+        n = len(bullets)
+        print(f"bench_knowledge updated ({n} bullet{'s' if n != 1 else ''} from fired rules) → {reagent_path}")
+
+    output = json.dumps(profile, indent=2)
+
+    if args.out:
+        out_path = Path(args.out)
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        out_path.write_text(output)
+        print(f"Handling profile written to {out_path}")
+    else:
+        print(output)
+
+
+if __name__ == "__main__":
+    main()

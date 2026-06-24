@@ -1,0 +1,396 @@
+{
+  "schema_version": "2.0",
+  "name": "Zinc chloride",
+  "cas": "7646-85-7",
+  "category": null,
+  "vendor_example": "SIGALD 793523",
+  "physical_state": "powder",
+  "properties": {
+    "is_protein": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "glycerol_pct": null,
+    "viscosity_class": "high",
+    "viscosity_mPas_20C": 200.0,
+    "vapor_pressure_kPa_20C": null,
+    "is_volatile": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_flammable": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "flash_point_C": null,
+    "is_light_sensitive": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_fluorophore": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "excitation_nm": null,
+    "emission_nm": null,
+    "is_reducing_agent": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "oxidizes_in_solution": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "solution_half_life_at_4C_days": null,
+    "make_fresh": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_detergent": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_foaming": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_fixative": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "fume_hood_required": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_hygroscopic": {
+      "value": true,
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "sds_phrase",
+          "ref": "section_7:'Hygroscopic'",
+          "agrees": true
+        }
+      ]
+    },
+    "is_deliquescent": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_corrosive": {
+      "value": true,
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "ghs_hcode",
+          "ref": "H314",
+          "agrees": true
+        },
+        {
+          "type": "storage_class",
+          "ref": "Storage class : 8",
+          "agrees": true
+        }
+      ]
+    },
+    "is_adsorption_prone": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "lo_bind_required": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "freeze_point_C": null,
+    "requires_ice": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "freeze_thaw_max_cycles": null,
+    "skin_penetrant": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "plastic_incompatible": [],
+    "storage_temp_C": null,
+    "is_oxidizer": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_air_sensitive": {
+      "value": true,
+      "confidence": "high",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        },
+        {
+          "type": "sds_phrase",
+          "ref": "section_7:'Store under nitrogen'",
+          "agrees": true
+        }
+      ]
+    },
+    "is_peroxide_forming": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_water_reactive": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_rnase_decontaminant": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    },
+    "is_serum": {
+      "value": null,
+      "confidence": "low",
+      "sources": [
+        {
+          "type": "claude_inference",
+          "ref": "not_yet_assessed",
+          "agrees": false
+        }
+      ]
+    }
+  },
+  "ghs": {
+    "pictograms": [
+      "corrosion",
+      "environment",
+      "exclamation_mark"
+    ],
+    "signal_word": "Danger",
+    "hazard_statements": [
+      "H302 Harmful if swallowed",
+      "H314 Causes severe skin burns and eye damage",
+      "H410 Very toxic to aquatic life with long lasting effects"
+    ]
+  },
+  "sds_facts": {
+    "storage": "Tightly closed. Dry.",
+    "ppe": [
+      "nitrile gloves",
+      "safety goggles",
+      "respiratory protection"
+    ],
+    "incompatibilities": [
+      "various metals"
+    ]
+  },
+  "bench_knowledge": [
+    {
+      "rule_id": "viscous_no_protein",
+      "because": "High-viscosity non-protein liquids (e.g., pure glycerol, PEG solutions) resist aspiration, causing back-pressure that stalls the piston and under-delivers volume. Wide-bore tips reduce hydraulic resistance. Reverse pipetting removes the dead-air step. A 2\u20133 s post-aspirate pause lets the meniscus stabilise before withdrawal.",
+      "cite": "Eppendorf Technical Guide: Pipetting Viscous Liquids, 2020. Perry's Chemical Engineers' Handbook, 8th ed. (glycerol viscosity 1412 mPa\u00b7s at 20\u00b0C).",
+      "confidence": "high"
+    },
+    {
+      "rule_id": "desiccator_hygroscopic_solid",
+      "because": "Hygroscopic and deliquescent solids absorb atmospheric water during each weighing event. Mass gain directly dilutes the effective molarity of the solution you prepare. Deliquescent solids (e.g., NaOH pellets) can become partially-dissolved slush within minutes in humid air, further confounding accurate weighing. Desiccator storage and fast weighing are the only controls for this.",
+      "cite": "Sigma-Aldrich Handling Hygroscopic Compounds Technical Note. ASHP Guidelines on Handling Hazardous Drugs (weighing-by-difference rationale).",
+      "confidence": "high"
+    },
+    {
+      "rule_id": "corrosive_add_to_water",
+      "because": "Concentrated corrosive reagents (HCl, TFA, NaOH) release significant heat on dilution. Adding water to a concentrated corrosive can boil the liquid and cause spattering; always add the corrosive slowly to water. TFA and HCl volatilise in the hood \u2014 decant and dilute in a ventilated space. Waste handling is institution-specific: neutralisation is appropriate only for small compatible corrosive waste streams when performed by trained personnel with the right PPE; otherwise collect through the hazardous-waste program.",
+      "cite": "Sigma-Aldrich HCl Safety Note 258148. ACS Safety in Academic Chemistry Laboratories, 7th ed., Ch. 4. EPA 40 CFR Part 261 (hazardous waste neutralisation).",
+      "confidence": "high"
+    },
+    {
+      "rule_id": "air_sensitive_seal",
+      "because": "Air-sensitive reagents deteriorate on contact with atmospheric oxygen or moisture. Linoleic acid oxidises to cytotoxic lipid peroxides within hours in open air. Rifampicin degrades to the inactive 3-formyl-rifamycin SV quinone on oxidation. Histamine autooxidises at alkaline pH and is also hygroscopic. DMF absorbs moisture and slowly hydrolyses to dimethylamine (an irritant). Keep bottles tightly capped between uses; aliquot into single-use volumes for high-frequency access. For oxygen-critical applications, consider dispensing under argon.",
+      "cite": "Sigma-Aldrich product information: linoleic acid L1376, rifampicin R3501, DMF D4551. SDS Section 7.",
+      "confidence": "high"
+    },
+    {
+      "rule_id": "powder_static_dust_control",
+      "because": "Powders are the highest-risk form for static loss, inaccurate weighing, and inhalation exposure. Fine powders such as SDS, fluorescent dyes, lyophilised proteins, and many bioactive small molecules can cling to plastic boats, jump during transfer, or aerosolise during scooping. Use a foil or glass weighing surface for static-prone material, work gently, and move toxic or sensitising powders into a hood, balance enclosure, or other local containment.",
+      "cite": "Prudent Practices in the Laboratory, NRC 2011, Ch. 6.D and 6.J. ASHP Guidelines on Handling Hazardous Drugs (powder containment and weighing-by-difference rationale). Field consensus.",
+      "confidence": "high"
+    }
+  ],
+  "sds_source": {
+    "revision_date": "04/21/2026",
+    "version": "6.9",
+    "product_number": "793523",
+    "parsed_sections": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "enrichment_status": "parsed_with_actionable_flags",
+    "unmapped_hcodes": [
+      "H302",
+      "H410"
+    ]
+  }
+}

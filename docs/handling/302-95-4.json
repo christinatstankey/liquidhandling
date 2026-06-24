@@ -1,0 +1,23 @@
+{
+  "reagent_name": "Sodium deoxycholate",
+  "cas": "302-95-4",
+  "profile_version": "1.0",
+  "handling_profile": {
+    "pipetting": {
+      "dispense_speed": "slow",
+      "touch_tip_wall": true,
+      "no_blowout": true,
+      "air_gap_uL": 0
+    }
+  },
+  "rules_fired": [
+    {
+      "id": "detergent_no_foam",
+      "because": "Surfactants above their CMC form micelles that stabilise foam. Any air-liquid interface created by dispensing rapidly or by blowout air bubbles generates persistent foam. Dispensing slowly along the tube wall prevents air entrainment. Touch-off tip on the wall instead of final blowout eliminates the last drop of air.",
+      "cite": "Corning Life Sciences Application Note: Surfactants in Liquid Handling, 2019. Field consensus.",
+      "confidence": "high",
+      "field_consensus": true
+    }
+  ],
+  "conflicts": []
+}

@@ -1,0 +1,31 @@
+# --- OS cruft ---
+.DS_Store
+
+# --- Python ---
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- Source SDS PDFs ---
+# Copyrighted Sigma-Aldrich safety data sheets. Local source of truth only;
+# only extracted JSON is committed. Never redistribute (CLAUDE.md non-negotiable #6).
+data/sds-pdfs/
+
+# --- Third-party article cache ---
+# ~1.2 GB of cached PMC OpenAccess XML downloaded from published Cell Press
+# papers. Regenerable, large, and third-party content — never commit.
+research/star_methods/xml_cache/
+
+# --- Secrets / credentials (defensive; none present today) ---
+.env
+.env.*
+*.key
+*.pem
+credentials.json
+*secret*
+*token*

@@ -1,0 +1,37 @@
+{
+  "reagent_name": "Hydroxychloroquine sulfate",
+  "cas": "747-36-4",
+  "profile_version": "1.0",
+  "handling_profile": {
+    "storage": {
+      "light_protected": true,
+      "container": "amber_or_foil"
+    },
+    "safety": {
+      "minimize_light_exposure": true,
+      "avoid_open_bench_weighing_if_toxic": true
+    },
+    "preparation": {
+      "control_static": true,
+      "weighing_surface": "foil_or_glass_weigh_boat",
+      "minimize_dust": true
+    }
+  },
+  "rules_fired": [
+    {
+      "id": "light_protect_sensitive",
+      "because": "Light-sensitive reagents degrade under UV or visible light by different mechanisms depending on the compound class. Fluorophores (DAPI, ethidium bromide) undergo irreversible photobleaching \u2014 the chromophore is destroyed; 30 seconds of UV transilluminator exposure causes measurable DAPI signal loss. Oxidizers (H\u2082O\u2082, NaOCl) photodecompose, losing titer. Peroxide-forming solvents (diethyl ether) form hydroperoxides faster in light. Light-activated monomers (acrylamide) can begin polymerising spontaneously. Amber containers or foil-wrap block the relevant wavelengths for all of these.",
+      "cite": "Thermo Fisher Scientific: DAPI Technical Data Sheet (D1306). Lakowicz, Principles of Fluorescence Spectroscopy, 3rd ed., Ch. 1. Sigma-Aldrich H\u2082O\u2082 Product Information (216763).",
+      "confidence": "high",
+      "field_consensus": false
+    },
+    {
+      "id": "powder_static_dust_control",
+      "because": "Powders are the highest-risk form for static loss, inaccurate weighing, and inhalation exposure. Fine powders such as SDS, fluorescent dyes, lyophilised proteins, and many bioactive small molecules can cling to plastic boats, jump during transfer, or aerosolise during scooping. Use a foil or glass weighing surface for static-prone material, work gently, and move toxic or sensitising powders into a hood, balance enclosure, or other local containment.",
+      "cite": "Prudent Practices in the Laboratory, NRC 2011, Ch. 6.D and 6.J. ASHP Guidelines on Handling Hazardous Drugs (powder containment and weighing-by-difference rationale). Field consensus.",
+      "confidence": "high",
+      "field_consensus": true
+    }
+  ],
+  "conflicts": []
+}

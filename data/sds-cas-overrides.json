@@ -1,0 +1,139 @@
+{
+  "schema_version": "1.0",
+  "description": "Manual overrides for CAS mismatches between sigma_sid-resolved CAS and the CAS printed in the downloaded SDS. Every entry requires explicit identity review — do not add overrides to paper over ambiguous forms.",
+  "overrides": [
+    {
+      "correct_cas": "56092-82-1",
+      "wrong_cas": "1315085-41-6",
+      "name": "Ionomycin calcium salt",
+      "action": "renamed_file",
+      "reason": "1315085-41-6 is a secondary PubChem accession; CID 6446270 (56092-82-1) is the canonical entry for ionomycin calcium salt"
+    },
+    {
+      "correct_cas": "1320-06-5",
+      "wrong_cas": "14288-70-1",
+      "name": "Oil Red O",
+      "action": "renamed_file",
+      "reason": "Both map to same compound (CID 2724054); 1320-06-5 is the primary Sigma standard CAS"
+    },
+    {
+      "correct_cas": "5328-37-0",
+      "wrong_cas": "147-81-9",
+      "name": "L-(+)-Arabinose",
+      "action": "renamed_file",
+      "reason": "147-81-9 = DL-Arabinose (racemate, CID 854); 5328-37-0 = L-Arabinose (CID 439195) — wrong stereoisomer in filename"
+    },
+    {
+      "correct_cas": "934389-88-5",
+      "wrong_cas": "154447-36-6",
+      "name": "LY-294,002 hydrochloride",
+      "action": "renamed_file",
+      "reason": "154447-36-6 = LY294002 free base (CID 3973); 934389-88-5 = HCl salt (CID 11957589) — reagent name specifies HCl salt"
+    },
+    {
+      "correct_cas": "151-21-3",
+      "wrong_cas": "155614-07-6",
+      "name": "Sodium dodecyl sulfate",
+      "action": "renamed_file",
+      "reason": "155614-07-6 = SDS-1-14C (radioactive isotope, CID 6330930); 151-21-3 = standard SDS (CID 3423265)"
+    },
+    {
+      "correct_cas": "606-68-8",
+      "wrong_cas": "1949720-50-6",
+      "name": "beta-Nicotinamide adenine dinucleotide, reduced",
+      "action": "renamed_file",
+      "reason": "Both represent NADH disodium salt; 606-68-8 is the canonical Sigma CAS"
+    },
+    {
+      "correct_cas": "59-23-4",
+      "wrong_cas": "26566-61-0",
+      "name": "D-(+)-Galactose",
+      "action": "renamed_file",
+      "reason": "26566-61-0 = open-chain D-galactose CAS; 59-23-4 = standard D-Galactose (CID 6036)"
+    },
+    {
+      "correct_cas": "16941-32-5",
+      "wrong_cas": "28270-04-4",
+      "name": "Glucagon",
+      "action": "renamed_file",
+      "reason": "28270-04-4 = Glucagon HCl salt (CID 16186213); 16941-32-5 = free base (CID 16132283) — reagent name has no HCl suffix"
+    },
+    {
+      "correct_cas": "254753-54-3",
+      "wrong_cas": "329689-23-8",
+      "name": "Monastrol",
+      "action": "renamed_file",
+      "reason": "329689-23-8 = (±)-racemic Monastrol (CID 2987927); 254753-54-3 = Sigma standard Monastrol (CID 794323)"
+    },
+    {
+      "correct_cas": "298-83-9",
+      "wrong_cas": "38184-50-8",
+      "name": "Nitro Blue Tetrazolium",
+      "action": "renamed_file",
+      "reason": "38184-50-8 = NBT chloride salt (CID 9281); 298-83-9 = Sigma standard NBT (CID 9282)"
+    },
+    {
+      "correct_cas": "50-99-7",
+      "wrong_cas": "492-62-6",
+      "name": "D-(+)-Glucose",
+      "action": "renamed_file",
+      "reason": "492-62-6 = alpha-D-glucose (CID 79025); 50-99-7 = D-glucose anhydrous (CID 5793), Sigma standard"
+    },
+    {
+      "correct_cas": "1401-55-4",
+      "wrong_cas": "5424-20-4",
+      "name": "Tannic acid",
+      "action": "renamed_file",
+      "reason": "1401-55-4 is the Sigma SDS CAS for tannic acid (complex mixture; not registered in PubChem). SDS PDF is authoritative."
+    },
+    {
+      "correct_cas": "107-43-7",
+      "wrong_cas": "6640-00-2",
+      "name": "Betaine",
+      "action": "renamed_file",
+      "reason": "6640-00-2 = betaine zwitterion CAS (CID 248); 107-43-7 = Betaine (CID 247), Sigma standard"
+    },
+    {
+      "correct_cas": "154804-51-0",
+      "wrong_cas": "819-83-0",
+      "name": "beta-Glycerophosphate disodium salt hydrate",
+      "action": "renamed_file",
+      "reason": "819-83-0 = anhydrous glycerophosphate (CID 6101544); 154804-51-0 = hydrate form (CID 44828775) — reagent name specifies hydrate"
+    },
+    {
+      "correct_cas": "83730-53-4",
+      "wrong_cas": "97590-40-4",
+      "name": "L-Buthionine-sulfoximine",
+      "action": "renamed_file",
+      "reason": "Both map to CID 119565; 83730-53-4 is the Sigma standard CAS for L-BSO"
+    },
+    {
+      "correct_cas": "7083-71-8",
+      "wrong_cas": "316-42-7",
+      "name": "Emetine dihydrochloride",
+      "action": "fixed_internal_field",
+      "reason": "Sigma E2375 = Emetine dihydrochloride hydrate, CAS 7083-71-8 (CID 201899); internal field 316-42-7 = monoHCl (CID 6603320) — wrong salt form"
+    },
+    {
+      "correct_cas": "73565-55-6",
+      "wrong_cas": "27964-99-4",
+      "name": "Poly-D-lysine hydrobromide",
+      "action": "fixed_internal_field",
+      "reason": "73565-55-6 is the established polymer CAS for poly-D-lysine HBr; 27964-99-4 = D-lysine HBr monomer (CID 87493163)"
+    },
+    {
+      "correct_cas": "675576-97-3",
+      "wrong_cas": "548472-68-0",
+      "name": "Nutlin-3a (duplicate deleted)",
+      "action": "deleted_duplicate",
+      "reason": "548472-68-0.json and 675576-97-3.json both claimed to be Nutlin-3a (Sigma SML0580). 675576-97-3 is the correct CAS for the S-enantiomer (active form). 548472-68-0 = racemic Nutlin-3. Duplicate entry removed."
+    },
+    {
+      "correct_cas": "675576-97-3",
+      "wrong_cas": "548472-68-0",
+      "name": "Nutlin-3a",
+      "action": "fixed_internal_field",
+      "reason": "File 675576-97-3.json had internal cas 548472-68-0 (racemic Nutlin-3); corrected to 675576-97-3 (Nutlin-3a, S-enantiomer, Sigma SML0580)"
+    }
+  ]
+}

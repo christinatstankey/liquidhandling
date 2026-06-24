@@ -1,0 +1,33 @@
+{
+  "reagent_name": "Ethyl 3-aminobenzoate methanesulfonate salt",
+  "cas": "886-86-2",
+  "profile_version": "1.0",
+  "handling_profile": {
+    "safety": {
+      "fume_hood_required": true,
+      "avoid_open_bench_weighing_if_toxic": true
+    },
+    "preparation": {
+      "control_static": true,
+      "weighing_surface": "foil_or_glass_weigh_boat",
+      "minimize_dust": true
+    }
+  },
+  "rules_fired": [
+    {
+      "id": "fume_hood_toxic",
+      "because": "The SDS (Section 7 or 8) specifies ventilation controls or fume hood use for this reagent. This category spans volatile toxic solvents (pyridine, DMF, heptane), cytotoxic and genotoxic compounds (docetaxel, streptozocin, azoxymethane), and reagents whose vapours or aerosols pose an inhalation hazard. A chemical fume hood provides the primary engineering control \u2014 never handle these reagents on the open bench.",
+      "cite": "OSHA Laboratory Standard 29 CFR 1910.1450. Manufacturer SDS Section 7/8.",
+      "confidence": "high",
+      "field_consensus": false
+    },
+    {
+      "id": "powder_static_dust_control",
+      "because": "Powders are the highest-risk form for static loss, inaccurate weighing, and inhalation exposure. Fine powders such as SDS, fluorescent dyes, lyophilised proteins, and many bioactive small molecules can cling to plastic boats, jump during transfer, or aerosolise during scooping. Use a foil or glass weighing surface for static-prone material, work gently, and move toxic or sensitising powders into a hood, balance enclosure, or other local containment.",
+      "cite": "Prudent Practices in the Laboratory, NRC 2011, Ch. 6.D and 6.J. ASHP Guidelines on Handling Hazardous Drugs (powder containment and weighing-by-difference rationale). Field consensus.",
+      "confidence": "high",
+      "field_consensus": true
+    }
+  ],
+  "conflicts": []
+}
