@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://ctstankey.github.io/Medra/data/schemas/handling-profile-v1.0.json",
+  "$id": "https://christinatstankey.github.io/liquidhandling/data/schemas/handling-profile-v1.0.json",
   "title": "Handling Profile v1.0",
   "type": "object",
   "required": [
